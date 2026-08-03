@@ -1,0 +1,408 @@
+{
+ "NGA|Inflation|en": {
+  "status": "done_degraded",
+  "title": "PESTEL — NGA — Inflation",
+  "country": "NGA",
+  "indicator": "Inflation",
+  "lang": "en",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:58:49.792704"
+ },
+ "NGA|Inflation|fr": {
+  "status": "done_degraded",
+  "title": "PESTEL — NGA — Inflation",
+  "country": "NGA",
+  "indicator": "Inflation",
+  "lang": "fr",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:58:50.355255"
+ },
+ "NGA|Interest rate|en": {
+  "status": "done_degraded",
+  "title": "PESTEL — NGA — Interest rate",
+  "country": "NGA",
+  "indicator": "Interest rate",
+  "lang": "en",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:58:53.320873"
+ },
+ "NGA|Interest rate|fr": {
+  "status": "done_degraded",
+  "title": "PESTEL — NGA — Interest rate",
+  "country": "NGA",
+  "indicator": "Interest rate",
+  "lang": "fr",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:58:54.706063"
+ },
+ "ARG|GDP growth|en": {
+  "status": "done_degraded",
+  "title": "PESTEL — ARG — GDP growth",
+  "country": "ARG",
+  "indicator": "GDP growth",
+  "lang": "en",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:58:58.492869"
+ },
+ "ARG|GDP growth|fr": {
+  "status": "done_degraded",
+  "title": "PESTEL — ARG — GDP growth",
+  "country": "ARG",
+  "indicator": "GDP growth",
+  "lang": "fr",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:58:58.968196"
+ },
+ "ARG|Inflation|en": {
+  "status": "done_degraded",
+  "title": "PESTEL — ARG — Inflation",
+  "country": "ARG",
+  "indicator": "Inflation",
+  "lang": "en",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:59:02.895602"
+ },
+ "ARG|Inflation|fr": {
+  "status": "done_degraded",
+  "title": "PESTEL — ARG — Inflation",
+  "country": "ARG",
+  "indicator": "Inflation",
+  "lang": "fr",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:59:03.340465"
+ },
+ "ARG|Interest rate|en": {
+  "status": "done_degraded",
+  "title": "PESTEL — ARG — Interest rate",
+  "country": "ARG",
+  "indicator": "Interest rate",
+  "lang": "en",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:59:06.495533"
+ },
+ "ARG|Interest rate|fr": {
+  "status": "done_degraded",
+  "title": "PESTEL — ARG — Interest rate",
+  "country": "ARG",
+  "indicator": "Interest rate",
+  "lang": "fr",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:59:10.048214"
+ },
+ "SAU|GDP growth|en": {
+  "status": "done_degraded",
+  "title": "PESTEL — SAU — GDP growth",
+  "country": "SAU",
+  "indicator": "GDP growth",
+  "lang": "en",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:59:13.467621"
+ },
+ "SAU|GDP growth|fr": {
+  "status": "done_degraded",
+  "title": "PESTEL — SAU — GDP growth",
+  "country": "SAU",
+  "indicator": "GDP growth",
+  "lang": "fr",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:59:13.893767"
+ },
+ "SAU|Inflation|en": {
+  "status": "done_degraded",
+  "title": "PESTEL — SAU — Inflation",
+  "country": "SAU",
+  "indicator": "Inflation",
+  "lang": "en",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:59:17.771752"
+ },
+ "SAU|Inflation|fr": {
+  "status": "done_degraded",
+  "title": "PESTEL — SAU — Inflation",
+  "country": "SAU",
+  "indicator": "Inflation",
+  "lang": "fr",
+  "category": "Economic",
+  "web_context_available": false,
+  "confidence": "low",
+  "context": {
+   "points": []
+  },
+  "outlook": {
+   "risks": [],
+   "opportunities": [],
+   "uncertainties": [
+    "Insufficient information"
+   ]
+  },
+  "limitations": [
+   "No verified web source available.",
+   "Qualitative context not generated.",
+   "Outlook not generated.",
+   "Validation: LLM/JSON error: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-7b-instruct', 'code': 404}, 'user_id': 'user_3HP5tgHaQSBGyNWzTtWjEdjTnqV'}"
+  ],
+  "sources": [],
+  "usage": {},
+  "generated_at": "2026-08-03T11:59:18.188948"
+ }
+}
