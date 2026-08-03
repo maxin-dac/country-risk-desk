@@ -29,6 +29,8 @@ def get_json(url, params):
 
 def fetch_country_list():
     p = get_json(f"{BASE}/country", {"format": "json", "per_page": 400})
+    if not isinstance(p, list) or len(p) < 2 or not isinstance(p[1], list):
+        raise RuntimeError(f"Unexpected country list payload: {str(p)[:200]}")
     out = []
     for c in p[1]:
         region = c.get("region") or {}
@@ -36,6 +38,8 @@ def fetch_country_list():
             continue
         out.append({"iso3": c["iso3Code"], "name_en": c["name"],
                     "region_en": region.get("value", "")})
+    if len(out) < 150:
+        raise RuntimeError(f"Country list incomplete ({len(out)} countries) — aborting to avoid bad data")
     return out
 
 def fetch_series(wb_code, wb_ind):
