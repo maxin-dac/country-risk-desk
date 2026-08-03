@@ -32,8 +32,7 @@ def _live(country, indicator, lang, _day):
 def live_report(country, indicator, lang):
     day = datetime.date.today().isoformat()
     r = _live(country, indicator, lang, day)
-    fatal = r.get("status") == "error" or "Missing" in str(r.get("search_error") or "")
-    if fatal:
+    if r.get("status") != "done":
         _live.clear(country, indicator, lang, day)
     return r
 
