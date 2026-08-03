@@ -25,3 +25,9 @@ ALLOWED_SEARCH_DOMAINS = [d.strip() for d in env(
     "ALLOWED_SEARCH_DOMAINS",
     "reuters.com,bloomberg.com,imf.org,worldbank.org,ft.com").split(",") if d.strip()]
 MAX_SEARCH_RESULTS = int(env("MAX_SEARCH_RESULTS", "3"))
+
+INDICATOR_HINTS = {
+    "GDP growth": "real GDP growth rate economic activity outlook",
+    "Inflation": "CPI consumer price index inflation rate",
+    "Interest rate": "lending interest rate central bank monetary policy",
+}
