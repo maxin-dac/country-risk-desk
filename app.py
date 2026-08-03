@@ -3,6 +3,7 @@ import streamlit as st
 
 from src import config
 from src.csv_loader import get_stats, load_csv
+from src.graph import build_agent
 from src.i18n import INDICATORS, cname, iname, t
 from src.pdf_export import generate_pdf_bytes
 from src.ui_theme import CSS, masthead
@@ -19,6 +20,23 @@ def get_briefs():
     p = pathlib.Path(config.BRIEFS_PATH)
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
+@st.cache_resource(show_spinner=False)
+def get_agent():
+    return build_agent(get_df())
+
+@st.cache_data(ttl=86400, show_spinner=False)
+def _live(country, indicator, lang, _day):
+    return get_agent().invoke({"country": country, "indicator": indicator,
+                               "lang": lang}).get("final_report", {})
+
+def live_report(country, indicator, lang):
+    day = datetime.date.today().isoformat()
+    r = _live(country, indicator, lang, day)
+    fatal = r.get("status") == "error" or "Missing" in str(r.get("search_error") or "")
+    if fatal:
+        _live.clear(country, indicator, lang, day)
+    return r
+
 def assemble_report(df, briefs, country, indicator, lang):
     stats = get_stats(df, country, indicator)
     if not stats.get("available"):
@@ -32,7 +50,7 @@ def assemble_report(df, briefs, country, indicator, lang):
         "web_context_available": qual.get("web_context_available", False),
         "confidence": qual.get("confidence", "low"),
         "context": qual.get("context", {"points": []}),
-        "outlook": qual.get("outlook", {"risks": [], "opportunities": [], "uncertainties": []}),
+        "outlook": qual.get("outlook", {"risques": [], "opportunities": [], "uncertainties": []}),
         "limitations": qual.get("limitations", []),
         "sources": qual.get("sources", []),
         "generated_at": qual.get("generated_at", ""),
@@ -98,20 +116,45 @@ today = datetime.date.today().isoformat()
 with st.sidebar:
     st.markdown(f"### {t('params', 'en')} / {t('params', 'fr')}")
     lang = st.selectbox("Langue / Language", ["fr", "en"],
-                        format_func=lambda x: "🇫🇷 Français" if x == "fr" else "🇬🇧 English")
+                        format_func=lambda x: "🇫🇷 Français" if x == "fr" else "🇬 English")
     country = st.selectbox(t("country", lang), sorted(df.country.unique()),
                            format_func=lambda c: f"{cname(c, lang)} ({c})")
     inds = sorted(df[df.country == country].indicator.unique())
     indicator = st.selectbox(t("indicator", lang), inds,
                              format_func=lambda x: iname(x, lang) if x in INDICATORS else x)
-    st.markdown(f"<div class='coverage'>{t('library_note', lang)}</div>", unsafe_allow_html=True)
+    go_live = st.button(t("live", lang))
+    st.markdown(f"<div class='coverage'>{t('live_note', lang)} · {t('library_note', lang)}</div>",
+                unsafe_allow_html=True)
+
+sel_key = f"{country}|{indicator}|{lang}"
+
+if go_live:
+    if not (config.TAVILY_API_KEY and config.LLM_API_KEY):
+        st.warning(t("no_keys", lang))
+    else:
+        with st.spinner(t("searching", lang)):
+            st.session_state.live = {"key": sel_key,
+                                     "report": live_report(country, indicator, lang)}
+        st.rerun()
+
+live = st.session_state.get("live")
+is_live = bool(live and live["key"] == sel_key)
+report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
 
 ticks = [f"<b>{c}</b> {cname(c, lang).upper()}" for c in sorted(df.country.unique())[:16]]
 st.markdown(masthead(df.country.nunique(), df.indicator.nunique(), today,
                      config.LLM_MODEL, lang, ticks), unsafe_allow_html=True)
 
-report = assemble_report(df, briefs, country, indicator, lang)
+if is_live:
+    st.caption(t("live_done", lang))
 st.markdown(report_html(report, lang), unsafe_allow_html=True)
+
+with st.expander("Diagnostics"):
+    st.json({"mode": "live" if is_live else "library",
+             "status": report.get("status"),
+             "search_error": report.get("search_error"),
+             "sources": len(report.get("sources", [])),
+             "confidence": report.get("confidence")})
 
 if report.get("status") != "error":
     try:

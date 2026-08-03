@@ -75,6 +75,12 @@ STR = {
     "error": ("Error", "Erreur"),
     "library_note": ("Pre-computed briefs · no key · no wait · auto-refreshed monthly",
                      "Briefs pré-calculés · sans clé · sans attente · rafraîchis chaque mois"),
+    "live": ("Run live search", "Lancer la recherche en direct"),
+    "live_note": ("Server-side keys — visitors need nothing.",
+                  "Clés côté serveur — rien à fournir côté visiteur."),
+    "no_keys": ("Server keys missing (Tavily / LLM).",
+                "Clés serveur manquantes (Tavily / LLM)."),
+    "live_done": ("Live brief — cached 24 h", "Brief en direct — caché 24 h"),
 }
 
 
