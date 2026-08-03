@@ -33,14 +33,38 @@ def fetch_country_list():
         raise RuntimeError(f"Unexpected country list payload: {str(p)[:200]}")
     out = []
     for c in p[1]:
+        iso3 = c.get("iso3Code") or c.get("id")
         region = c.get("region") or {}
-        if region.get("id") == "NA" or not c.get("iso3Code"):
+        if region.get("id") == "NA" or not iso3:
             continue
-        out.append({"iso3": c["iso3Code"], "name_en": c["name"],
-                    "region_en": region.get("value", "")})
+        out.append({"iso3": iso3,
+                "name_en": (c.get("name") or "").strip(),
+                "region_en": (region.get("value") or "").strip()})
     if len(out) < 150:
-        raise RuntimeError(f"Country list incomplete ({len(out)} countries) — aborting to avoid bad data")
+        meta = str(p[0])[:200] if p else ""
+        sample = str(p[1][:1])[:300] if p[1] else "empty"
+        raise RuntimeError(f"Country list incomplete ({len(out)}) — meta: {meta} — sample: {sample}")
     return out
+
+def load_country_list():
+    try:
+        countries = fetch_country_list()
+        pd.DataFrame(countries).to_csv(CATALOG, index=False)
+        return countries
+    except Exception as e:
+        print(f"[WARN] live country list failed: {e}")
+        if CATALOG.exists():
+            try:
+                df = pd.read_csv(CATALOG, dtype=str).fillna("")
+            except Exception:
+                df = pd.DataFrame()
+            if not df.empty:
+                countries = [{"iso3": r.iso3, "name_en": r.name_en, "region_en": r.region_en}
+                             for r in df.itertuples()]
+                if countries:
+                    print(f"[OK] using committed catalog ({len(countries)} countries)")
+                    return countries
+    raise RuntimeError("No country list available (live fetch failed, no committed catalog)")
 
 def fetch_series(wb_code, wb_ind):
     p = get_json(f"{BASE}/country/{wb_code}/indicator/{wb_ind}",
@@ -51,9 +75,8 @@ def fetch_series(wb_code, wb_ind):
 
 def main():
     DATA.mkdir(exist_ok=True)
-    countries = fetch_country_list()
-    pd.DataFrame(countries).to_csv(CATALOG, index=False)
-    print(f"{len(countries)} countries in World Bank catalog")
+    countries = load_country_list()
+    print(f"{len(countries)} countries in catalog")
 
     existing = pd.read_csv(OUT) if OUT.exists() else pd.DataFrame()
     done = set(zip(existing.country, existing.indicator)) if not existing.empty else set()
