@@ -25,7 +25,9 @@ def get_json(url, params):
         except Exception as e:
             last = e
             time.sleep(3 * (attempt + 1))
-    raise last
+    if last is not None:
+        raise last
+    raise RuntimeError("get_json failed")
 
 def fetch_country_list():
     p = get_json(f"{BASE}/country", {"format": "json", "per_page": 400})
@@ -89,6 +91,7 @@ def main():
     existing = pd.read_csv(OUT) if OUT.exists() else pd.DataFrame()
     done = set(zip(existing.country, existing.indicator)) if not existing.empty else set()
     rows = existing.to_dict("records") if not existing.empty else []
+    print(f"[INFO] {len(done)} country/indicator pairs already in CSV")
     fails = []
     for label, (wb_ind, unit) in INDS.items():
         missing = [iso for iso in valid if (iso, label) not in done]
@@ -106,18 +109,23 @@ def main():
             iso = (it.get("country") or {}).get("id")
             if iso in missing and it.get("value") is not None:
                 per.setdefault(iso, []).append(it)
+        matched = sum(len(v) for v in per.values())
+        print(f"[INFO] {label}: {len(series)} items fetched, {matched} kept")
+        if matched == 0:
+            fails.append(label)
+            print(f"[FAIL] {label}: zero rows matched — data discarded, will retry next run")
+            continue
         for iso in missing:
             items = per.get(iso, [])
             for it in items:
                 rows.append({"country": iso, "indicator": label, "category": "Economic",
                              "date": f"{it['date']}-12-31", "value": it["value"], "unit": unit,
                              "region": valid[iso]["region_en"], "source": "World Bank"})
-            print(f"[OK]   {iso} | {label}: {len(items)} rows")
         time.sleep(2)
-    df = pd.DataFrame(rows)
+    df = pd.DataFrame(rows).drop_duplicates()
     df.to_csv(OUT, index=False)
     print(f"\n{len(df)} rows in {OUT}")
-    print(f"{len(fails)} indicator-level failures — re-run to retry" if fails else "All series complete")
+    print(f"{len(fails)} failures — re-run to retry" if fails else "All series complete")
 
 if __name__ == "__main__":
     main()
