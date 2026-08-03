@@ -1,9 +1,11 @@
 # 🛰 Country Risk Desk
 
+> [🇫🇷 Français](README.fr.md) | 🇬🇧 English
+
 **Macro-financial country briefs grounded in verified sources.**
 Bilingual 🇫🇷/🇬🇧 · No key, no sign-up, no wait.
 
-[![Live demo](https://img.shields.io/badge/▶_Live_demo-0A2C3A?style=for-the-badge)](https://maxin-dac-pestel-risk-desk.streamlit.app)
+[![Live demo](https://img.shields.io/badge/▶_Live_demo-0A2C3A?style=for-the-badge)](https://maxin-dac-country-risk-desk.streamlit.app)
 ![Python](https://img.shields.io/badge/Python_3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
@@ -82,6 +84,10 @@ One click exports the full brief as a **PDF**, in either language.
 ## Roadmap
 
 - Wider indicator set (debt, trade, energy) · ESG layer · country alerts.
+
+---
+
+*Data Source © World Bank; excerpts © their respective publishers, quoted with attribution for analysis purposes.*
 
 ---
 
