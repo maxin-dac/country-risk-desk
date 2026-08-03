@@ -69,7 +69,7 @@ One click exports the full brief as a **PDF**, in either language.
 
 ## Run it locally
 
-    git clone https://github.com/maxin-dac/pestel-risk-desk.git
+    git clone https://github.com/maxin-dac/country-risk-desk.git
     cd pestel-risk-desk
     pip install -r requirements.txt
     # .env with your own keys (never committed):
