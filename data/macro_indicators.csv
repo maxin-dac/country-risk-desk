@@ -1,0 +1,1401 @@
+country,indicator,category,date,value,unit,region,source
+VNM,Inflation,Economic,2025-12-31,3.3099931421974,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2024-12-31,3.62109273885844,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2023-12-31,3.25289282667662,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2022-12-31,3.15650749963112,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2021-12-31,1.83471554810462,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2020-12-31,3.22093436652515,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2019-12-31,2.79582367452244,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2018-12-31,3.53962805942641,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2017-12-31,3.52025688811618,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2016-12-31,2.66824816969082,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2015-12-31,0.631200905175685,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2014-12-31,4.08455446637625,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2013-12-31,6.59267475899192,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2012-12-31,9.09470339557193,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2011-12-31,18.6777322770706,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2010-12-31,9.20746648778413,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2009-12-31,6.71698269988631,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2008-12-31,23.1154483474477,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2007-12-31,8.34444889773847,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2006-12-31,7.41801715108469,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2005-12-31,8.28457243128667,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2004-12-31,7.75494748709606,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2003-12-31,3.23464817293925,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2002-12-31,3.83082838168468,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2001-12-31,-0.43154451172818,%,East Asia & Pacific,World Bank
+VNM,Inflation,Economic,2000-12-31,-1.71033727851111,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2023-12-31,9.323,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2022-12-31,8.01333333333333,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2021-12-31,7.811,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2020-12-31,7.6475,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2019-12-31,7.7075,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2018-12-31,7.371875,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2017-12-31,7.0675,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2016-12-31,6.96,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2015-12-31,7.1175,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2014-12-31,8.665,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2013-12-31,10.3741666666667,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2012-12-31,13.4716666666667,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2011-12-31,16.9538333333333,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2010-12-31,13.13525,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2009-12-31,10.069,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2008-12-31,15.7835714285714,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2007-12-31,11.18,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2006-12-31,11.17625,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2005-12-31,11.025,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2004-12-31,9.7225,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2003-12-31,9.48,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2002-12-31,9.06166666666667,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2001-12-31,9.42,%,East Asia & Pacific,World Bank
+VNM,Interest rate,Economic,2000-12-31,10.55,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2025-12-31,8.01882998978245,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2024-12-31,7.03955197123018,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2023-12-31,4.97865959483225,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2022-12-31,8.53750041218142,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2021-12-31,2.55372852648131,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2020-12-31,2.86541320912272,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2019-12-31,7.35926270105006,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2018-12-31,7.46500685572751,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2017-12-31,6.94019037359206,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2016-12-31,6.69000892660424,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2015-12-31,6.98715430598611,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2014-12-31,6.42224312118567,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2013-12-31,5.55351081026072,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2012-12-31,5.5045447041189,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2011-12-31,6.41316889681683,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2010-12-31,6.42324482239482,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2009-12-31,5.39789754014181,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2008-12-31,5.66177120891362,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2007-12-31,7.12950448605439,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2006-12-31,6.97795481056711,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2005-12-31,7.54724772895918,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2004-12-31,7.53641060890386,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2003-12-31,6.89906349055258,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2002-12-31,6.32082099160833,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2001-12-31,6.19289331233377,%,East Asia & Pacific,World Bank
+VNM,GDP growth,Economic,2000-12-31,6.78731640463151,%,East Asia & Pacific,World Bank
+BRA,Inflation,Economic,2025-12-31,5.01675279604836,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2024-12-31,4.36746407652337,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2023-12-31,4.59356282283204,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2022-12-31,9.28010608956873,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2021-12-31,8.30165975585673,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2020-12-31,3.21176803803376,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2019-12-31,3.73297621216894,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2018-12-31,3.66485028376729,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2017-12-31,3.44637335032669,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2016-12-31,8.73914352329393,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2015-12-31,9.02990102416136,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2014-12-31,6.32904015516139,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2013-12-31,6.20431066640101,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2012-12-31,5.40349914036997,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2011-12-31,6.6364496221309,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2010-12-31,5.03872690108075,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2009-12-31,4.88803479876799,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2008-12-31,5.67859390284168,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2007-12-31,3.64127299102652,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2006-12-31,4.18356812896909,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2005-12-31,6.86953720898964,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2004-12-31,6.59718509985963,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2003-12-31,14.7149197228147,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2002-12-31,8.45016437708331,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2001-12-31,6.84035902487523,%,Latin America & Caribbean,World Bank
+BRA,Inflation,Economic,2000-12-31,7.04414105947266,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2025-12-31,45.3333333333333,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2024-12-31,40.225,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2023-12-31,43.6,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2022-12-31,39.4,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2021-12-31,30.0166666666667,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2020-12-31,29.0416666666667,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2019-12-31,37.475,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2018-12-31,39.0833333333333,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2017-12-31,46.9166666666667,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2016-12-31,52.1,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2015-12-31,43.9583333333333,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2014-12-31,32.0083333333333,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2013-12-31,27.3916666666667,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2012-12-31,36.6366666666667,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2011-12-31,43.8833333333333,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2010-12-31,39.9916666666667,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2009-12-31,44.65,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2008-12-31,47.25,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2007-12-31,43.7166666666666,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2006-12-31,50.8083333333333,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2005-12-31,55.3833333333333,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2004-12-31,54.925,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2003-12-31,67.0833333333333,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2002-12-31,62.875,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2001-12-31,57.6166666666667,%,Latin America & Caribbean,World Bank
+BRA,Interest rate,Economic,2000-12-31,56.83,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2025-12-31,2.2857464902475,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2024-12-31,3.41931516501906,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2023-12-31,3.24165532906981,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2022-12-31,3.01669435393015,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2021-12-31,4.76260437908608,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2020-12-31,-3.2767587964736,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2019-12-31,1.22077782360842,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2018-12-31,1.783666761634,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2017-12-31,1.32286905404399,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2016-12-31,-3.27591690782192,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2015-12-31,-3.54576339269425,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2014-12-31,0.503955740242247,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2013-12-31,3.00482266944432,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2012-12-31,1.92117598576537,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2011-12-31,3.97442307944702,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2010-12-31,7.52822581815364,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2009-12-31,-0.125812002161169,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2008-12-31,5.09419544658736,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2007-12-31,6.06987060678338,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2006-12-31,3.96198871122617,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2005-12-31,3.20213206130431,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2004-12-31,5.75996463670954,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2003-12-31,1.14082899824888,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2002-12-31,3.05346185909312,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2001-12-31,1.38989640095637,%,Latin America & Caribbean,World Bank
+BRA,GDP growth,Economic,2000-12-31,4.38794944745618,%,Latin America & Caribbean,World Bank
+EGY,Inflation,Economic,2025-12-31,14.0735136645934,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2024-12-31,28.2705899322083,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2023-12-31,33.8847763115546,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2022-12-31,13.8956609775178,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2021-12-31,5.21404940513043,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2020-12-31,5.04493288977539,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2019-12-31,9.15279959324804,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2018-12-31,14.4014657807422,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2017-12-31,29.5066083940039,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2016-12-31,13.813606214829,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2015-12-31,10.370490343517,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2014-12-31,10.0702154687481,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2013-12-31,9.46971981064921,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2012-12-31,7.11172943343083,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2011-12-31,10.0649259874818,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2010-12-31,11.2651882653185,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2009-12-31,11.7634954386443,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2008-12-31,18.3168316831684,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2007-12-31,9.3189690579923,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2006-12-31,7.64452644526434,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2005-12-31,4.86939696871988,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2004-12-31,11.270619332052,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2003-12-31,4.50777636319304,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2002-12-31,2.73723855000334,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2001-12-31,2.26975720475956,%,Middle East & North Africa,World Bank
+EGY,Inflation,Economic,2000-12-31,2.68380535348546,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2024-12-31,24.2916666666667,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2023-12-31,17.7583333333333,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2022-12-31,10.5833333333333,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2021-12-31,9.425,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2020-12-31,11.3666666666667,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2019-12-31,16.1166666666667,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2018-12-31,18.3166666666667,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2017-12-31,18.175,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2016-12-31,13.6,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2015-12-31,11.625,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2014-12-31,11.7083333333333,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2013-12-31,12.2916666666667,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2012-12-31,12.0,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2011-12-31,11.0333333333333,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2010-12-31,11.0083333333333,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2009-12-31,11.975,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2008-12-31,12.325,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2007-12-31,12.5083333333333,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2006-12-31,12.6,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2005-12-31,13.1416666666667,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2004-12-31,13.375,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2003-12-31,13.5333333333333,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2002-12-31,13.7916666666667,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2001-12-31,13.2916666666667,%,Middle East & North Africa,World Bank
+EGY,Interest rate,Economic,2000-12-31,13.2158333333333,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2025-12-31,4.39201068570188,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2024-12-31,2.3991692678251,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2023-12-31,3.76028052279247,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2022-12-31,6.58784560870467,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2021-12-31,3.29064601193245,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2020-12-31,3.55016483883115,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2019-12-31,5.55209307084222,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2018-12-31,5.33110861887155,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2017-12-31,4.18122099961562,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2016-12-31,4.34664345601914,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2015-12-31,4.37201907781687,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2014-12-31,2.91591188052836,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2013-12-31,2.18546605363386,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2012-12-31,2.22619979818487,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2011-12-31,1.76457194806041,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2010-12-31,5.14723485746742,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2009-12-31,4.67359980000663,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2008-12-31,7.15628356711522,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2007-12-31,7.08782742675582,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2006-12-31,6.84383819369884,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2005-12-31,4.4717444710621,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2004-12-31,4.09207161019908,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2003-12-31,3.19345473756772,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2002-12-31,2.39020402675627,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2001-12-31,3.53525197391507,%,Middle East & North Africa,World Bank
+EGY,GDP growth,Economic,2000-12-31,6.37000382991766,%,Middle East & North Africa,World Bank
+IND,Inflation,Economic,2025-12-31,2.39884954182294,%,South Asia,World Bank
+IND,Inflation,Economic,2024-12-31,4.95303550973661,%,South Asia,World Bank
+IND,Inflation,Economic,2023-12-31,5.64914318907925,%,South Asia,World Bank
+IND,Inflation,Economic,2022-12-31,6.69903414079858,%,South Asia,World Bank
+IND,Inflation,Economic,2021-12-31,5.13140747176364,%,South Asia,World Bank
+IND,Inflation,Economic,2020-12-31,6.6234367762853,%,South Asia,World Bank
+IND,Inflation,Economic,2019-12-31,3.72950573539123,%,South Asia,World Bank
+IND,Inflation,Economic,2018-12-31,3.93882646691643,%,South Asia,World Bank
+IND,Inflation,Economic,2017-12-31,3.32817337461305,%,South Asia,World Bank
+IND,Inflation,Economic,2016-12-31,4.94821634062134,%,South Asia,World Bank
+IND,Inflation,Economic,2015-12-31,4.90697344127249,%,South Asia,World Bank
+IND,Inflation,Economic,2014-12-31,6.66565671867899,%,South Asia,World Bank
+IND,Inflation,Economic,2013-12-31,10.0178784746104,%,South Asia,World Bank
+IND,Inflation,Economic,2012-12-31,9.47899691419793,%,South Asia,World Bank
+IND,Inflation,Economic,2011-12-31,8.9117933648336,%,South Asia,World Bank
+IND,Inflation,Economic,2010-12-31,11.9893899204245,%,South Asia,World Bank
+IND,Inflation,Economic,2009-12-31,10.8823529411764,%,South Asia,World Bank
+IND,Inflation,Economic,2008-12-31,8.34926704907575,%,South Asia,World Bank
+IND,Inflation,Economic,2007-12-31,6.37288135593231,%,South Asia,World Bank
+IND,Inflation,Economic,2006-12-31,5.79652337561634,%,South Asia,World Bank
+IND,Inflation,Economic,2005-12-31,4.24634362031924,%,South Asia,World Bank
+IND,Inflation,Economic,2004-12-31,3.76725173477517,%,South Asia,World Bank
+IND,Inflation,Economic,2003-12-31,3.80585899528853,%,South Asia,World Bank
+IND,Inflation,Economic,2002-12-31,4.29715203929562,%,South Asia,World Bank
+IND,Inflation,Economic,2001-12-31,3.77929312235637,%,South Asia,World Bank
+IND,Inflation,Economic,2000-12-31,4.0094359104519,%,South Asia,World Bank
+IND,Interest rate,Economic,2022-12-31,8.56714285714286,%,South Asia,World Bank
+IND,Interest rate,Economic,2021-12-31,8.69833333333333,%,South Asia,World Bank
+IND,Interest rate,Economic,2020-12-31,9.15,%,South Asia,World Bank
+IND,Interest rate,Economic,2019-12-31,9.46625,%,South Asia,World Bank
+IND,Interest rate,Economic,2018-12-31,9.45416666666667,%,South Asia,World Bank
+IND,Interest rate,Economic,2017-12-31,9.50833333333333,%,South Asia,World Bank
+IND,Interest rate,Economic,2016-12-31,9.6725,%,South Asia,World Bank
+IND,Interest rate,Economic,2015-12-31,10.0083333333333,%,South Asia,World Bank
+IND,Interest rate,Economic,2014-12-31,10.25,%,South Asia,World Bank
+IND,Interest rate,Economic,2013-12-31,10.2916666666667,%,South Asia,World Bank
+IND,Interest rate,Economic,2012-12-31,10.6041666666667,%,South Asia,World Bank
+IND,Interest rate,Economic,2011-12-31,10.1666666666667,%,South Asia,World Bank
+IND,Interest rate,Economic,2010-12-31,8.33335,%,South Asia,World Bank
+IND,Interest rate,Economic,2009-12-31,12.1875,%,South Asia,World Bank
+IND,Interest rate,Economic,2008-12-31,13.3125,%,South Asia,World Bank
+IND,Interest rate,Economic,2007-12-31,13.0208333333333,%,South Asia,World Bank
+IND,Interest rate,Economic,2006-12-31,11.1875,%,South Asia,World Bank
+IND,Interest rate,Economic,2005-12-31,10.75,%,South Asia,World Bank
+IND,Interest rate,Economic,2004-12-31,10.9166666666667,%,South Asia,World Bank
+IND,Interest rate,Economic,2003-12-31,11.4583333333333,%,South Asia,World Bank
+IND,Interest rate,Economic,2002-12-31,11.9166666666667,%,South Asia,World Bank
+IND,Interest rate,Economic,2001-12-31,12.0833333333333,%,South Asia,World Bank
+IND,Interest rate,Economic,2000-12-31,12.2916666666667,%,South Asia,World Bank
+IND,GDP growth,Economic,2025-12-31,7.56666179284244,%,South Asia,World Bank
+IND,GDP growth,Economic,2024-12-31,7.09927893176518,%,South Asia,World Bank
+IND,GDP growth,Economic,2023-12-31,7.210224629335,%,South Asia,World Bank
+IND,GDP growth,Economic,2022-12-31,7.6093649776932,%,South Asia,World Bank
+IND,GDP growth,Economic,2021-12-31,9.68959249191741,%,South Asia,World Bank
+IND,GDP growth,Economic,2020-12-31,-5.77772470687303,%,South Asia,World Bank
+IND,GDP growth,Economic,2019-12-31,3.87143694070524,%,South Asia,World Bank
+IND,GDP growth,Economic,2018-12-31,6.45385134495295,%,South Asia,World Bank
+IND,GDP growth,Economic,2017-12-31,6.79538341902422,%,South Asia,World Bank
+IND,GDP growth,Economic,2016-12-31,8.25630550176662,%,South Asia,World Bank
+IND,GDP growth,Economic,2015-12-31,7.99625378567987,%,South Asia,World Bank
+IND,GDP growth,Economic,2014-12-31,7.41022760516977,%,South Asia,World Bank
+IND,GDP growth,Economic,2013-12-31,6.38610640091713,%,South Asia,World Bank
+IND,GDP growth,Economic,2012-12-31,5.45638755164772,%,South Asia,World Bank
+IND,GDP growth,Economic,2011-12-31,5.24131620024293,%,South Asia,World Bank
+IND,GDP growth,Economic,2010-12-31,8.49758470165625,%,South Asia,World Bank
+IND,GDP growth,Economic,2009-12-31,7.8618888330338,%,South Asia,World Bank
+IND,GDP growth,Economic,2008-12-31,3.08669805950082,%,South Asia,World Bank
+IND,GDP growth,Economic,2007-12-31,7.66081506510766,%,South Asia,World Bank
+IND,GDP growth,Economic,2006-12-31,8.06073257305057,%,South Asia,World Bank
+IND,GDP growth,Economic,2005-12-31,7.92343062131789,%,South Asia,World Bank
+IND,GDP growth,Economic,2004-12-31,7.92293661307978,%,South Asia,World Bank
+IND,GDP growth,Economic,2003-12-31,7.86038147545045,%,South Asia,World Bank
+IND,GDP growth,Economic,2002-12-31,3.80397532120038,%,South Asia,World Bank
+IND,GDP growth,Economic,2001-12-31,4.82396626397303,%,South Asia,World Bank
+IND,GDP growth,Economic,2000-12-31,3.84099115686554,%,South Asia,World Bank
+IDN,Inflation,Economic,2025-12-31,1.9133344329508,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2024-12-31,2.18151273615189,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2023-12-31,3.66938654859761,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2022-12-31,4.20946463714784,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2021-12-31,1.56007882983334,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2020-12-31,1.91983527270793,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2019-12-31,3.03058460941661,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2018-12-31,3.19834755924996,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2017-12-31,3.80879857691949,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2016-12-31,3.52580452815451,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2015-12-31,6.36312061196646,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2014-12-31,6.39492882396559,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2013-12-31,6.41249457900391,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2012-12-31,4.2795142691943,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2011-12-31,5.35604849112582,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2010-12-31,5.13420639015885,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2009-12-31,4.38641311792074,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2008-12-31,10.2266663272483,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2007-12-31,6.40656087966005,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2006-12-31,13.108670985346,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2005-12-31,10.4532001873347,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2004-12-31,6.06406189133648,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2003-12-31,6.75731256333564,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2002-12-31,11.9001200338414,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2001-12-31,11.5001160550887,%,East Asia & Pacific,World Bank
+IDN,Inflation,Economic,2000-12-31,3.68862037056682,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2025-12-31,8.50158323159017,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2024-12-31,8.79568784927158,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2023-12-31,8.92666666666667,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2022-12-31,8.52,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2021-12-31,8.9225,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2020-12-31,9.54416666666667,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2019-12-31,10.3658333333333,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2018-12-31,10.5366666666667,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2017-12-31,11.0733333333333,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2016-12-31,11.8883333333333,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2015-12-31,12.6625,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2014-12-31,12.605,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2013-12-31,11.6575,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2012-12-31,11.795,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2011-12-31,12.4033333333333,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2010-12-31,13.2516666666667,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2009-12-31,14.4983333333333,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2008-12-31,13.5983333333333,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2007-12-31,13.8616666666667,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2006-12-31,15.9791666666667,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2005-12-31,14.0508333333333,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2004-12-31,14.1241666666667,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2003-12-31,16.935,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2002-12-31,18.945,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2001-12-31,18.5475,%,East Asia & Pacific,World Bank
+IDN,Interest rate,Economic,2000-12-31,18.455,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2025-12-31,5.10808904438025,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2024-12-31,5.03257477088519,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2023-12-31,5.04883117855516,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2022-12-31,5.30719722664799,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2021-12-31,3.70288562827751,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2020-12-31,-2.06551182934165,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2019-12-31,5.01928768046282,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2018-12-31,5.17429153955024,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2017-12-31,5.06978590134916,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2016-12-31,5.03306918280177,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2015-12-31,4.87632230022123,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2014-12-31,5.006668425755,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2013-12-31,5.5572636889101,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2012-12-31,6.03005065305615,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2011-12-31,6.16978420771008,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2010-12-31,6.22385418062366,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2009-12-31,4.62887118256153,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2008-12-31,6.01370360009123,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2007-12-31,6.34502222667214,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2006-12-31,5.50095178520348,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2005-12-31,5.69257130383384,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2004-12-31,5.03087394501685,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2003-12-31,4.78036912167654,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2002-12-31,4.49947539085764,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2001-12-31,3.64346644721492,%,East Asia & Pacific,World Bank
+IDN,GDP growth,Economic,2000-12-31,4.9200677470169,%,East Asia & Pacific,World Bank
+MEX,Inflation,Economic,2025-12-31,3.80668650726485,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2024-12-31,4.72225588452932,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2023-12-31,5.52796087314389,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2022-12-31,7.8962761916855,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2021-12-31,5.68920847683753,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2020-12-31,3.39683415570006,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2019-12-31,3.63596142127046,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2018-12-31,4.89935015356551,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2017-12-31,6.04145724018986,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2016-12-31,2.8217078474766,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2015-12-31,2.72064064964023,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2014-12-31,4.01861608078679,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2013-12-31,3.80639069747204,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2012-12-31,4.11150981070289,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2011-12-31,3.40737824605742,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2010-12-31,4.15672722680174,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2009-12-31,5.29735584228856,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2008-12-31,5.12498274575896,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2007-12-31,3.96684905458235,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2006-12-31,3.62946762439132,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2005-12-31,3.98805714597437,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2004-12-31,4.68840884843143,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2003-12-31,4.54690012118718,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2002-12-31,5.03072733151295,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2001-12-31,6.36773806235037,%,Latin America & Caribbean,World Bank
+MEX,Inflation,Economic,2000-12-31,9.49156149435403,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2025-12-31,8.78583333333333,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2024-12-31,11.2233333333333,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2023-12-31,11.5916666666667,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2022-12-31,8.17916666666667,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2021-12-31,4.89166666666667,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2020-12-31,6.34166666666667,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2019-12-31,8.42916666666667,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2018-12-31,8.04,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2017-12-31,7.3325,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2016-12-31,4.75416666666667,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2015-12-31,3.43916666666667,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2014-12-31,3.55166666666667,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2013-12-31,4.27083333333333,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2012-12-31,4.68083333333333,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2011-12-31,4.91083333333333,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2010-12-31,5.28083333333333,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2009-12-31,7.065,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2008-12-31,8.70576785663225,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2007-12-31,7.56083333333333,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2006-12-31,7.51183478062322,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2005-12-31,9.695,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2004-12-31,7.43833333333333,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2003-12-31,7.0225,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2002-12-31,8.21083333333333,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2001-12-31,12.795,%,Latin America & Caribbean,World Bank
+MEX,Interest rate,Economic,2000-12-31,16.9283333333333,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2025-12-31,0.561683456144578,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2024-12-31,1.35057631384696,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2023-12-31,3.1067964131456,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2022-12-31,3.70975708309098,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2021-12-31,6.04848347173572,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2020-12-31,-8.35403459379062,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2019-12-31,-0.392690513290532,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2018-12-31,1.97208211101069,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2017-12-31,1.87172854648381,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2016-12-31,1.7724932254128,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2015-12-31,2.70232343024026,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2014-12-31,2.50376350783593,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2013-12-31,0.852101550164704,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2012-12-31,3.55321076010608,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2011-12-31,3.44404505297089,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2010-12-31,4.9713345832195,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2009-12-31,-6.29525056697287,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2008-12-31,0.943331872912935,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2007-12-31,2.0778639395329,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2006-12-31,4.80501351664901,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2005-12-31,2.11324711473297,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2004-12-31,3.56544102622887,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2003-12-31,1.18554486709559,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2002-12-31,-0.236588001922641,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2001-12-31,-0.450845253215945,%,Latin America & Caribbean,World Bank
+MEX,GDP growth,Economic,2000-12-31,5.02928399378261,%,Latin America & Caribbean,World Bank
+TUR,Inflation,Economic,2025-12-31,34.8811629820306,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2024-12-31,58.5064507300342,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2023-12-31,53.8594087593315,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2022-12-31,72.3088359891207,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2021-12-31,19.5964926913324,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2020-12-31,12.2789574462574,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2019-12-31,15.1768215720022,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2018-12-31,16.3324638988929,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2017-12-31,11.1443110840764,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2016-12-31,7.7751341532833,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2015-12-31,7.67085364845885,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2014-12-31,8.85457271364316,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2013-12-31,7.49309030547693,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2012-12-31,8.89156996512163,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2011-12-31,6.471879671151,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2010-12-31,8.56644420552976,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2009-12-31,6.25097663090626,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2008-12-31,10.4441283764885,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2007-12-31,8.75618090972632,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2006-12-31,9.59724212288446,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2005-12-31,8.17916036802008,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2004-12-31,8.59826168115262,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2003-12-31,21.6024384490573,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2002-12-31,44.964120947985,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2001-12-31,54.4001887619074,%,Europe & Central Asia,World Bank
+TUR,Inflation,Economic,2000-12-31,54.9153705812683,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2025-12-31,3.60462514082589,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2024-12-31,3.3276230893799,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2023-12-31,5.04512369812289,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2022-12-31,5.44122511322401,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2021-12-31,11.811094450607,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2020-12-31,1.80306247087255,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2019-12-31,1.30162365464503,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2018-12-31,3.46815306092219,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2017-12-31,7.82585730002594,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2016-12-31,3.32366508200445,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2015-12-31,5.80557386628684,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2014-12-31,4.60079447270559,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2013-12-31,8.48825689298511,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2012-12-31,4.80762696633448,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2011-12-31,10.9799625273598,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2010-12-31,8.54219848467686,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2009-12-31,-4.88269401706633,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2008-12-31,0.920118221365883,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2007-12-31,5.10818513903604,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2006-12-31,7.06762607623939,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2005-12-31,9.11157745861635,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2004-12-31,9.92540551918624,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2003-12-31,5.79909321038525,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2002-12-31,6.43550883793114,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2001-12-31,-5.45940838563062,%,Europe & Central Asia,World Bank
+TUR,GDP growth,Economic,2000-12-31,6.98528697817062,%,Europe & Central Asia,World Bank
+ZAF,Inflation,Economic,2025-12-31,3.20550474112603,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2024-12-31,4.36115246518962,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2023-12-31,6.0752438457966,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2022-12-31,7.03987272546482,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2021-12-31,4.61874544887136,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2020-12-31,3.23238831615113,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2019-12-31,4.10285075461156,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2018-12-31,4.50987264867388,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2017-12-31,5.18618655524149,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2016-12-31,6.60290842394872,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2015-12-31,4.51869094892506,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2014-12-31,6.13282953059149,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2013-12-31,5.78016910069176,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2012-12-31,5.73797139141739,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2011-12-31,5.0008533879502,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2010-12-31,4.06749555950263,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2009-12-31,7.23809523809527,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2008-12-31,9.90998456005467,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2007-12-31,6.17781214809388,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2006-12-31,3.2439076541923,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2005-12-31,2.06285308223427,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2004-12-31,-0.692039437857687,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2003-12-31,5.67942414068799,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2002-12-31,9.494713780996,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2001-12-31,5.70189483049608,%,Sub-Saharan Africa,World Bank
+ZAF,Inflation,Economic,2000-12-31,5.33895913599828,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2025-12-31,10.6875,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2024-12-31,11.625,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2023-12-31,11.5,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2022-12-31,8.79166666666667,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2021-12-31,7.04166666666667,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2020-12-31,7.70833333333333,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2019-12-31,10.125,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2018-12-31,10.0833333333333,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2017-12-31,10.375,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2016-12-31,10.4583333333333,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2015-12-31,9.41666666666667,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2014-12-31,9.125,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2013-12-31,8.5,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2012-12-31,8.75,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2011-12-31,9.0,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2010-12-31,9.83333333333333,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2009-12-31,11.7083333333333,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2008-12-31,15.125,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2007-12-31,13.1666666666667,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2006-12-31,11.1666666666667,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2005-12-31,10.625,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2004-12-31,11.2916666666667,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2003-12-31,14.9583333333333,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2002-12-31,15.75,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2001-12-31,13.7708333333333,%,Sub-Saharan Africa,World Bank
+ZAF,Interest rate,Economic,2000-12-31,14.5,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2025-12-31,1.11462608103956,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2024-12-31,0.534843531905139,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2023-12-31,0.80610455095804,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2022-12-31,2.05813661692193,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2021-12-31,4.85864865060148,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2020-12-31,-6.1689177146757,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2019-12-31,0.25993557687633,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2018-12-31,1.55678384721676,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2017-12-31,1.15794695181735,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2016-12-31,0.664552307858116,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2015-12-31,1.32186223678229,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2014-12-31,1.41382645223793,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2013-12-31,2.48546800826588,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2012-12-31,2.39623238465745,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2011-12-31,3.16855627858818,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2010-12-31,3.03973288127956,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2009-12-31,-1.53808913525583,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2008-12-31,3.1910438863288,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2007-12-31,5.36047405394162,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2006-12-31,5.60380645895889,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2005-12-31,5.27705197295467,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2004-12-31,4.55455990721774,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2003-12-31,2.94907546754213,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2002-12-31,3.70037440406668,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2001-12-31,2.70000000019104,%,Sub-Saharan Africa,World Bank
+ZAF,GDP growth,Economic,2000-12-31,4.20000000067826,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2025-12-31,23.0101235833333,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2024-12-31,33.2416590552749,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2023-12-31,24.659550203114,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2022-12-31,18.8471877843274,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2021-12-31,16.9528457221608,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2020-12-31,13.2460234276598,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2019-12-31,11.3964223378115,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2018-12-31,12.0951065173432,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2017-12-31,16.5022662139641,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2016-12-31,15.6968126387972,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2015-12-31,9.00943498007706,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2014-12-31,8.04741087967907,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2013-12-31,8.49551838265678,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2012-12-31,12.2242413020582,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2011-12-31,10.8261371880018,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2010-12-31,13.7400521363694,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2009-12-31,12.5379242951095,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2008-12-31,11.583054796681,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2007-12-31,5.38610421570143,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2006-12-31,8.22743678120907,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2005-12-31,17.8634933661605,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2004-12-31,14.9980338183251,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2003-12-31,14.0317836131437,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2002-12-31,12.8765792031099,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2001-12-31,18.8736462093863,%,Sub-Saharan Africa,World Bank
+NGA,Inflation,Economic,2000-12-31,6.9332921556516,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2023-12-31,14.010553734975,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2022-12-31,12.3345442352326,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2021-12-31,11.4831327947137,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2020-12-31,13.6420216718796,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2019-12-31,15.3765869808333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2018-12-31,16.9038969646886,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2017-12-31,17.5533333333333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2016-12-31,16.8680157641191,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2015-12-31,16.8491666666667,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2014-12-31,16.5483333333333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2013-12-31,16.7225,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2012-12-31,16.7916666666667,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2011-12-31,16.02,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2010-12-31,17.585,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2009-12-31,18.9908333333333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2008-12-31,15.1358333333333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2007-12-31,16.9391666666667,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2006-12-31,16.8933333333333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2005-12-31,17.9483333333333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2004-12-31,19.1808333333333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2003-12-31,20.7141666666667,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2002-12-31,24.7708333333333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2001-12-31,23.4383333333333,%,Sub-Saharan Africa,World Bank
+NGA,Interest rate,Economic,2000-12-31,21.2741666666667,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2025-12-31,4.01336180700973,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2024-12-31,4.07106650147703,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2023-12-31,3.31590368111438,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2022-12-31,4.31882949157136,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2021-12-31,1.109252540249,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2020-12-31,-6.36889840468527,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2019-12-31,2.20842927835211,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2018-12-31,1.92275734199798,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2017-12-31,0.805886619091581,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2016-12-31,-1.61686894903467,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2015-12-31,2.65269329541779,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2014-12-31,6.30971865521856,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2013-12-31,6.67133539308232,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2012-12-31,4.23006117492493,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2011-12-31,5.30792420293915,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2010-12-31,8.00565591623166,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2009-12-31,8.03692510100366,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2008-12-31,6.76447277784263,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2007-12-31,6.59113036066867,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2006-12-31,6.05942803202491,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2005-12-31,6.43851652535925,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2004-12-31,9.25055822923169,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2003-12-31,7.34719496793299,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2002-12-31,15.3291557409618,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2001-12-31,5.91768464924425,%,Sub-Saharan Africa,World Bank
+NGA,GDP growth,Economic,2000-12-31,5.01593475936546,%,Sub-Saharan Africa,World Bank
+ARG,Inflation,Economic,2024-12-31,219.883929014578,%,Latin America & Caribbean,World Bank
+ARG,Inflation,Economic,2023-12-31,133.488935594175,%,Latin America & Caribbean,World Bank
+ARG,Inflation,Economic,2022-12-31,72.430757531824,%,Latin America & Caribbean,World Bank
+ARG,Inflation,Economic,2021-12-31,48.4093786255199,%,Latin America & Caribbean,World Bank
+ARG,Inflation,Economic,2020-12-31,42.0150947376509,%,Latin America & Caribbean,World Bank
+ARG,Inflation,Economic,2019-12-31,53.5483043492339,%,Latin America & Caribbean,World Bank
+ARG,Inflation,Economic,2018-12-31,34.2772237131003,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2025-12-31,46.0191666666667,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2024-12-31,61.7066666666666,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2023-12-31,95.8941666666667,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2022-12-31,52.3991666666667,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2021-12-31,35.5583333333333,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2020-12-31,29.3875,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2019-12-31,67.2541666666667,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2018-12-31,48.5166666666667,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2017-12-31,26.5808333333333,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2016-12-31,31.2325,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2015-12-31,24.9158333333333,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2014-12-31,24.0091666666667,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2013-12-31,17.1491666666667,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2012-12-31,14.0608333333333,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2011-12-31,14.0875,%,Latin America & Caribbean,World Bank
+ARG,Interest rate,Economic,2010-12-31,10.5575,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2025-12-31,4.36733330217022,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2024-12-31,-1.34293072157739,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2023-12-31,-1.85578803046339,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2022-12-31,6.02074537534855,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2021-12-31,10.4418119882506,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2020-12-31,-9.9004848136464,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2019-12-31,-2.00086100285785,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2018-12-31,-2.61739646282038,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2017-12-31,2.81850297775918,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2016-12-31,-2.08032784377811,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2015-12-31,2.73115982828944,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2014-12-31,-2.51261532081394,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2013-12-31,2.40532378079436,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2012-12-31,-1.0264204544321,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2011-12-31,6.00395169280579,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2010-12-31,10.1253981561002,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2009-12-31,-5.91852507634947,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2008-12-31,4.05723310346406,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2007-12-31,9.00765087504757,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2006-12-31,8.04715150043027,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2005-12-31,8.85165992013437,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2004-12-31,9.02957330068152,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2003-12-31,8.83704079576924,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2002-12-31,-10.8944848285903,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2001-12-31,-4.40883968258557,%,Latin America & Caribbean,World Bank
+ARG,GDP growth,Economic,2000-12-31,-0.78899893905691,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2025-12-31,4.21293601694293,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2024-12-31,4.29763891572524,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2023-12-31,7.58168251407962,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2022-12-31,11.643866711056,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2021-12-31,4.52456838259144,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2020-12-31,3.04549084804326,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2019-12-31,2.55754475703327,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2018-12-31,2.43488981353057,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2017-12-31,2.18271846868519,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2016-12-31,3.78619355893118,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2015-12-31,4.34877353217044,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2014-12-31,4.71867527854672,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2013-12-31,1.7895555398459,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2012-12-31,3.00744840213047,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2011-12-31,3.34121694259302,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2010-12-31,1.41071107954321,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2009-12-31,0.353045178360937,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2008-12-31,8.71626873039607,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2007-12-31,4.40779938398044,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2006-12-31,3.39201733699405,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2005-12-31,3.05257621387849,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2004-12-31,1.05473871403517,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2003-12-31,2.8101787574361,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2002-12-31,2.48939816650705,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2001-12-31,3.56910053001467,%,Latin America & Caribbean,World Bank
+CHL,Inflation,Economic,2000-12-31,3.84327295706565,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2018-12-31,4.17801925025561,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2017-12-31,4.55285507889072,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2016-12-31,5.58839657725206,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2015-12-31,5.51492732291402,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2014-12-31,8.09805824839012,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2013-12-31,9.26187678192101,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2012-12-31,10.0572624433615,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2011-12-31,9.03015252269429,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2010-12-31,4.75482680518703,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2009-12-31,7.25063476884463,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2008-12-31,13.261771366415,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2007-12-31,8.67125848644778,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2006-12-31,7.99948207856606,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2005-12-31,6.67787900981346,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2004-12-31,5.12700362788107,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2003-12-31,6.17877873086097,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2002-12-31,7.75807289652374,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2001-12-31,11.8910098561076,%,Latin America & Caribbean,World Bank
+CHL,Interest rate,Economic,2000-12-31,14.8433912347788,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2025-12-31,2.45925474781374,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2024-12-31,2.80512637106611,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2023-12-31,0.677024831595858,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2022-12-31,2.06391864254198,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2021-12-31,11.3374032409913,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2020-12-31,-6.1396969411886,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2019-12-31,0.644223402631923,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2018-12-31,3.99002947789977,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2017-12-31,1.35769537343957,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2016-12-31,1.753038749071,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2015-12-31,2.15194249981184,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2014-12-31,1.79264947139259,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2013-12-31,3.30850824710085,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2012-12-31,6.15534001855494,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2011-12-31,6.22389678509138,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2010-12-31,5.85165102224047,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2009-12-31,-1.11803723642878,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2008-12-31,3.78939280635238,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2007-12-31,5.16823098528431,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2006-12-31,6.04999082563968,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2005-12-31,5.83704571917758,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2004-12-31,6.67425416822923,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2003-12-31,4.72324526861041,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2002-12-31,3.20279913520113,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2001-12-31,3.15403492459967,%,Latin America & Caribbean,World Bank
+CHL,GDP growth,Economic,2000-12-31,4.9716214882971,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2025-12-31,5.14222911946201,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2024-12-31,6.60908593728228,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2023-12-31,11.7359044948689,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2022-12-31,10.1772313546166,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2021-12-31,3.49505757399448,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2020-12-31,2.52663500084706,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2019-12-31,3.52301932741447,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2018-12-31,3.24056932930569,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2017-12-31,4.31431325695011,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2016-12-31,7.51346024627675,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2015-12-31,4.9898311584953,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2014-12-31,2.89883787761738,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2013-12-31,2.01699224310383,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2012-12-31,3.16930188840055,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2011-12-31,3.4150334477625,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2010-12-31,2.27200227892008,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2009-12-31,4.20251661216482,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2008-12-31,6.99688495554511,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2007-12-31,5.54438485815156,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2006-12-31,4.29342363628927,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2005-12-31,5.05101962689696,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2004-12-31,5.90402005546502,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2003-12-31,7.1297886294186,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2002-12-31,6.35150728778872,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2001-12-31,7.96556090304834,%,Latin America & Caribbean,World Bank
+COL,Inflation,Economic,2000-12-31,9.22534818585366,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2025-12-31,14.3114389316572,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2024-12-31,16.3744226380092,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2023-12-31,21.0306368304862,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2022-12-31,15.8075088706303,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2021-12-31,9.3378484091001,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2020-12-31,9.85052425129014,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2019-12-31,11.7690653821827,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2018-12-31,12.1148777449182,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2017-12-31,13.6858303184817,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2016-12-31,14.6454318106769,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2015-12-31,11.4499872575296,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2014-12-31,10.8673350376127,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2013-12-31,10.9855861710036,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2012-12-31,12.5850402049247,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2011-12-31,11.2199184470583,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2010-12-31,9.38148993683401,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2009-12-31,13.0080746033842,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2008-12-31,17.1756231436697,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2007-12-31,15.3818501011015,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2006-12-31,12.893913084832,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2005-12-31,14.5608333333333,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2004-12-31,15.0830567168883,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2003-12-31,15.187101145088,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2002-12-31,16.3267983308288,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2001-12-31,20.72,%,Latin America & Caribbean,World Bank
+COL,Interest rate,Economic,2000-12-31,18.7866666666667,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2025-12-31,2.64201548985928,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2024-12-31,1.49330728771066,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2023-12-31,0.841819555752039,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2022-12-31,7.32827729427979,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2021-12-31,10.8011981904878,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2020-12-31,-7.18591413760859,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2019-12-31,3.18685539245533,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2018-12-31,2.56432428277704,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2017-12-31,1.35936086788746,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2016-12-31,2.08738250162794,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2015-12-31,2.95590137527523,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2014-12-31,4.49903000110972,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2013-12-31,5.13399351995672,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2012-12-31,3.91263576716115,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2011-12-31,6.94789198173555,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2010-12-31,4.49465897070922,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2009-12-31,1.13964864548062,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2008-12-31,3.28344618616541,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2007-12-31,6.73819469090975,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2006-12-31,6.71686869844402,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2005-12-31,4.82876110773741,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2004-12-31,5.33302206759905,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2003-12-31,3.91827190322513,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2002-12-31,2.50398046659659,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2001-12-31,1.67789830787579,%,Latin America & Caribbean,World Bank
+COL,GDP growth,Economic,2000-12-31,2.92486148176778,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2025-12-31,1.53125450314273,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2024-12-31,2.00770739412712,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2023-12-31,6.45561348369586,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2022-12-31,8.33370630096231,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2021-12-31,4.27166381536798,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2020-12-31,2.00241205759292,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2019-12-31,2.25212191358027,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2018-12-31,1.50915423024742,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2017-12-31,2.99490045809443,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2016-12-31,3.55717663556279,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2015-12-31,3.39809194746308,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2014-12-31,3.41194579807465,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2013-12-31,2.76789666082002,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2012-12-31,3.61121294940163,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2011-12-31,3.36931095333853,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2010-12-31,1.52832059732901,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2009-12-31,2.936231535967,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2008-12-31,5.78587598206755,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2007-12-31,1.77998644680372,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2006-12-31,2.00225801248819,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2005-12-31,1.61630193862544,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2004-12-31,3.66247320092233,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2003-12-31,2.25937753363072,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2002-12-31,0.193135003853722,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2001-12-31,1.97709878502053,%,Latin America & Caribbean,World Bank
+PER,Inflation,Economic,2000-12-31,3.75733833344474,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2022-12-31,12.5972583333333,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2021-12-31,10.9795083333333,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2020-12-31,12.9383333333333,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2019-12-31,14.38545,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2018-12-31,14.539125,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2017-12-31,16.7874916666667,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2016-12-31,16.4662,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2015-12-31,16.1058277777778,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2014-12-31,15.7433166666667,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2013-12-31,18.13925,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2012-12-31,19.2369083333333,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2011-12-31,18.677925,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2010-12-31,18.9768683333333,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2009-12-31,21.0419233333333,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2008-12-31,23.6734449024808,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2007-12-31,22.8556480555556,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2006-12-31,23.9333333333333,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2005-12-31,25.5338357716344,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2004-12-31,24.6745640588226,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2003-12-31,21.0156649712755,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2002-12-31,20.7653572885806,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2001-12-31,24.9783333333333,%,Latin America & Caribbean,World Bank
+PER,Interest rate,Economic,2000-12-31,29.9958333333333,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2025-12-31,3.43056395124466,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2024-12-31,3.5152749274832,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2023-12-31,-0.350699814345759,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2022-12-31,2.81819976419922,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2021-12-31,13.4166456126513,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2020-12-31,-10.9333065010382,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2019-12-31,2.24063176875049,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2018-12-31,3.969351341365,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2017-12-31,2.51883544233135,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2016-12-31,3.95331871520767,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2015-12-31,3.25224477218451,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2014-12-31,2.38215737180541,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2013-12-31,5.85251821084928,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2012-12-31,6.13972470560435,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2011-12-31,6.32719240161117,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2010-12-31,8.33245910749577,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2009-12-31,1.0958236592427,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2008-12-31,9.1265683014642,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2007-12-31,8.5183877690955,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2006-12-31,7.5288990440594,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2005-12-31,6.28506032509601,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2004-12-31,4.95820320611745,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2003-12-31,4.16502313666112,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2002-12-31,5.45352893818767,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2001-12-31,0.617892325624297,%,Latin America & Caribbean,World Bank
+PER,GDP growth,Economic,2000-12-31,2.69437139806912,%,Latin America & Caribbean,World Bank
+POL,Inflation,Economic,2025-12-31,3.81419531520146,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2024-12-31,3.79060897630197,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2023-12-31,11.5289127961105,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2022-12-31,14.4294507575758,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2021-12-31,5.05502704719272,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2020-12-31,3.37446972618589,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2019-12-31,2.22747880938291,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2018-12-31,1.81295156542689,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2017-12-31,2.07593553673859,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2016-12-31,-0.664767331433962,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2015-12-31,-0.874125874125862,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2014-12-31,0.0538213132399802,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2013-12-31,0.991982606332335,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2012-12-31,3.56037151702793,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2011-12-31,4.23940149625932,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2010-12-31,2.58069370250548,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2009-12-31,3.79539242483399,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2008-12-31,4.16497193524779,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2007-12-31,2.4587431238539,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2006-12-31,1.28469394366416,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2005-12-31,2.18379872390251,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2004-12-31,3.38264681884699,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2003-12-31,0.682701375787632,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2002-12-31,1.90528215048054,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2001-12-31,5.4083354556615,%,Europe & Central Asia,World Bank
+POL,Inflation,Economic,2000-12-31,9.90017538843065,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2025-12-31,3.5727250346774,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2024-12-31,3.02841630700273,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2023-12-31,0.249610834017872,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2022-12-31,5.25545697386036,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2021-12-31,6.92718266052501,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2020-12-31,-2.03556882399977,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2019-12-31,4.58045817256199,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2018-12-31,6.2458584723942,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2017-12-31,5.15245773325907,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2016-12-31,3.03117767594847,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2015-12-31,4.43176700264478,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2014-12-31,3.92050862390032,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2013-12-31,0.684240607051805,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2012-12-31,1.51178167644575,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2011-12-31,5.25546256612796,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2010-12-31,3.16892748258036,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2009-12-31,2.61512859291683,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2008-12-31,4.38377069274605,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2007-12-31,6.7604478527626,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2006-12-31,6.20210710934373,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2005-12-31,3.26082274679216,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2004-12-31,5.09079546409544,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2003-12-31,3.52337117234833,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2002-12-31,1.90119437968586,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2001-12-31,1.23374464400356,%,Europe & Central Asia,World Bank
+POL,GDP growth,Economic,2000-12-31,4.65633252988236,%,Europe & Central Asia,World Bank
+THA,Inflation,Economic,2025-12-31,-0.133634356480207,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2024-12-31,0.398333333333422,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2023-12-31,1.22908986612448,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2022-12-31,6.07589952842433,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2021-12-31,1.23104516549814,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2020-12-31,-0.846087518861799,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2019-12-31,0.705524801910317,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2018-12-31,1.06683487370758,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2017-12-31,0.664415139830893,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2016-12-31,0.186235191075453,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2015-12-31,-0.898143410569433,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2014-12-31,1.89455652481545,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2013-12-31,2.18617704418967,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2012-12-31,3.00948610403357,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2011-12-31,3.81191694558332,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2010-12-31,3.24758842443725,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2009-12-31,-0.845716092316721,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2008-12-31,5.46848949649846,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2007-12-31,2.24154095286802,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2006-12-31,4.63747436011764,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2005-12-31,4.54036919634536,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2004-12-31,2.75914926231082,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2003-12-31,1.80434994635718,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2002-12-31,0.697308976625449,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2001-12-31,1.62690887314091,%,East Asia & Pacific,World Bank
+THA,Inflation,Economic,2000-12-31,1.59196917460972,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2025-12-31,3.9425,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2024-12-31,4.51416666666667,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2023-12-31,4.28583333333333,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2022-12-31,3.13833333333333,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2021-12-31,3.06,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2020-12-31,3.2925,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2019-12-31,4.08416666666666,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2018-12-31,4.14666666666666,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2017-12-31,4.41658283333333,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2016-12-31,4.46834552349908,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2015-12-31,4.73187498877014,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2014-12-31,4.94915214812624,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2013-12-31,5.06043360051236,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2012-12-31,5.18731410654716,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2011-12-31,5.06756761337228,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2010-12-31,4.33403991889774,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2009-12-31,4.77599754065056,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2008-12-31,5.82188819286142,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2007-12-31,6.04656836196979,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2006-12-31,6.27380728455047,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2005-12-31,4.71935005845093,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2004-12-31,4.55308715722008,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2001-12-31,7.27083333333333,%,East Asia & Pacific,World Bank
+THA,Interest rate,Economic,2000-12-31,7.83333333333333,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2025-12-31,2.44247444990198,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2024-12-31,2.94859986593323,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2023-12-31,2.24883437970568,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2022-12-31,2.63784213566305,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2021-12-31,1.55858232076893,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2020-12-31,-6.09306312966953,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2019-12-31,2.11455779628278,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2018-12-31,4.22287028746071,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2017-12-31,4.1776810321001,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2016-12-31,3.43515771692182,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2015-12-31,3.13404724911635,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2014-12-31,0.984468863619426,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2013-12-31,2.68749556320556,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2012-12-31,7.24279620249642,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2011-12-31,0.840132083053334,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2010-12-31,7.51339053261624,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2009-12-31,-0.690618232300579,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2008-12-31,1.72569884866334,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2007-12-31,5.43515169050809,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2006-12-31,4.96781089246107,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2005-12-31,4.18763842884337,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2004-12-31,6.28934214285795,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2003-12-31,7.18924330340971,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2002-12-31,6.14903605210036,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2001-12-31,3.44424900968372,%,East Asia & Pacific,World Bank
+THA,GDP growth,Economic,2000-12-31,4.45524704335014,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2025-12-31,1.38060872293692,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2024-12-31,1.834100204499,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2023-12-31,2.48886560125754,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2022-12-31,3.37869862549928,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2021-12-31,2.47710241465447,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2020-12-31,-1.1387021539305,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2019-12-31,0.662891865764326,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2018-12-31,0.884709160571235,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2017-12-31,3.87120115774237,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2016-12-31,2.09056659525742,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2015-12-31,2.10438980238359,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2014-12-31,3.14299050879095,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2013-12-31,2.10501231233612,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2012-12-31,1.66357102479206,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2011-12-31,3.1744709215131,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2010-12-31,1.62285235577035,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2009-12-31,0.583308405623702,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2008-12-31,5.44078221100769,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2007-12-31,2.02735317779569,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2006-12-31,3.60923564224389,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2005-12-31,2.97507092684449,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2004-12-31,1.42127115937402,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2003-12-31,1.08967632577286,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2002-12-31,1.80787246281536,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2001-12-31,1.41678473206098,%,East Asia & Pacific,World Bank
+MYS,Inflation,Economic,2000-12-31,1.53474023697699,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2025-12-31,4.82472886111111,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2024-12-31,5.282681,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2023-12-31,5.31737500641025,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2022-12-31,3.90802666666667,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2021-12-31,3.44410640384615,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2020-12-31,3.94420769234615,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2019-12-31,4.87689294871795,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2018-12-31,4.92844038461538,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2017-12-31,4.60807808641975,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2016-12-31,4.53106666666667,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2015-12-31,4.565375,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2014-12-31,4.587025,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2013-12-31,4.6498,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2012-12-31,4.78583333333333,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2011-12-31,4.915,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2010-12-31,5.0,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2009-12-31,5.08416666666666,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2008-12-31,6.08,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2007-12-31,6.40916666666667,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2006-12-31,6.48583333333333,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2005-12-31,5.9525,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2004-12-31,6.04583333333333,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2003-12-31,6.30083333333333,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2002-12-31,6.52833333333334,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2001-12-31,7.12666666666667,%,East Asia & Pacific,World Bank
+MYS,Interest rate,Economic,2000-12-31,7.67333333333333,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2025-12-31,5.17127082911057,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2024-12-31,5.10545921024041,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2023-12-31,3.5370638041057,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2022-12-31,9.03173723044451,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2021-12-31,3.31534954399166,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2020-12-31,-5.45684658426701,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2019-12-31,4.41318742129586,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2018-12-31,4.84308697634881,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2017-12-31,5.81272240983328,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2016-12-31,4.44978139761541,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2015-12-31,5.09153242155011,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2014-12-31,6.00672194558203,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2013-12-31,4.69372252557893,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2012-12-31,5.47345419253853,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2011-12-31,5.29391283414003,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2010-12-31,7.42484738326097,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2009-12-31,-1.51352871598714,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2008-12-31,4.83176988913097,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2007-12-31,6.29878592740947,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2006-12-31,5.5848470671515,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2005-12-31,5.33213916141486,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2004-12-31,6.78343772370305,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2003-12-31,5.7884992858875,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2002-12-31,5.39098830692797,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2001-12-31,0.517675319192861,%,East Asia & Pacific,World Bank
+MYS,GDP growth,Economic,2000-12-31,8.85886816969386,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2025-12-31,1.6587364525509,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2024-12-31,3.21260487006347,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2023-12-31,5.97802515541409,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2022-12-31,5.82115811213955,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2021-12-31,3.92718022100332,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2020-12-31,2.3931623931624,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2019-12-31,2.39206534422404,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2018-12-31,5.30934661627707,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2017-12-31,2.85318772590947,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2016-12-31,1.25369880080982,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2015-12-31,0.674192536845408,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2014-12-31,3.59782343864211,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2013-12-31,2.58268766141795,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2012-12-31,3.02696391124796,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2011-12-31,4.7184170471842,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2010-12-31,3.78983634797591,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2009-12-31,4.21903052064628,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2008-12-31,8.26044703595725,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2007-12-31,2.90000000000003,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2006-12-31,5.4852320675105,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2005-12-31,6.51685393258433,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2004-12-31,4.82921083627795,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2003-12-31,2.28915662650607,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2002-12-31,2.72277227722765,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2001-12-31,5.34550195567142,%,East Asia & Pacific,World Bank
+PHL,Inflation,Economic,2000-12-31,3.9771250324928,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2019-12-31,7.09583333333333,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2018-12-31,6.1185,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2017-12-31,5.62725,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2016-12-31,5.642,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2015-12-31,5.57825,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2014-12-31,5.52591666666666,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2013-12-31,5.76683333333333,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2012-12-31,5.6795,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2011-12-31,6.66325,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2010-12-31,7.67266666666667,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2009-12-31,8.56616666666667,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2008-12-31,8.75108333333334,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2007-12-31,8.69141666666667,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2006-12-31,9.77866666666667,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2005-12-31,10.1849166666667,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2004-12-31,10.079,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2003-12-31,9.47166666666667,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2002-12-31,9.1385,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2001-12-31,12.4015833333333,%,East Asia & Pacific,World Bank
+PHL,Interest rate,Economic,2000-12-31,10.90725,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2025-12-31,4.40240158710621,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2024-12-31,5.71474526128652,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2023-12-31,5.51894967856043,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2022-12-31,7.58098212785563,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2021-12-31,5.71473313185116,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2020-12-31,-9.51829474045297,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2019-12-31,6.11852566221303,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2018-12-31,6.34148557153473,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2017-12-31,6.9309883258402,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2016-12-31,7.14945675000752,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2015-12-31,6.34830971672761,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2014-12-31,6.34798748260867,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2013-12-31,6.75053130142255,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2012-12-31,6.89695171050985,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2011-12-31,3.85823282795663,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2010-12-31,7.33449996034538,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2009-12-31,1.44832306275669,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2008-12-31,4.34448730509183,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2007-12-31,6.51929155018938,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2006-12-31,5.31641682136939,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2005-12-31,4.94250511877678,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2004-12-31,6.56922851180626,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2003-12-31,5.08691113513073,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2002-12-31,3.71625500158383,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2001-12-31,3.04923134463486,%,East Asia & Pacific,World Bank
+PHL,GDP growth,Economic,2000-12-31,4.38250500083399,%,East Asia & Pacific,World Bank
+KEN,Inflation,Economic,2025-12-31,4.06912878540729,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2024-12-31,4.48978854243448,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2023-12-31,7.67139634029402,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2022-12-31,7.65986268272224,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2021-12-31,6.10793603659176,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2020-12-31,5.40516207933392,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2019-12-31,5.23963795764792,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2018-12-31,4.6898064677633,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2017-12-31,8.00564967709945,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2016-12-31,6.29724953814625,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2015-12-31,6.58215429284779,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2014-12-31,6.87815499275949,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2013-12-31,5.71749357037733,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2012-12-31,9.37777003547598,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2011-12-31,14.0224913014704,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2010-12-31,3.96138889115385,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2009-12-31,9.23412592394652,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2008-12-31,26.2398166445063,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2007-12-31,9.75888023027529,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2006-12-31,14.4537342081708,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2005-12-31,10.3127783574683,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2004-12-31,11.6240355442426,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2003-12-31,9.81569062979654,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2002-12-31,1.96130821739162,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2001-12-31,5.73859814341467,%,Sub-Saharan Africa,World Bank
+KEN,Inflation,Economic,2000-12-31,9.98002515350979,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2024-12-31,16.5931072517574,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2023-12-31,13.588501716128,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2022-12-31,12.3358409030593,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2021-12-31,12.0799983467507,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2020-12-31,11.9957846171539,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2019-12-31,12.4411328875146,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2018-12-31,13.0607588353757,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2017-12-31,13.6675725164372,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2016-12-31,16.5596306460545,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2015-12-31,16.086613785739,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2014-12-31,16.5139307062948,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2013-12-31,17.3134576914047,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2012-12-31,19.7234066533954,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2011-12-31,15.0467599904394,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2010-12-31,14.3715,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2009-12-31,14.8045412422178,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2008-12-31,14.0169393773033,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2007-12-31,13.340343675809,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2006-12-31,13.6355339080567,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2005-12-31,12.8825,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2004-12-31,12.5316666666667,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2003-12-31,16.5733333333333,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2002-12-31,18.4533333333333,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2001-12-31,19.6658333333333,%,Sub-Saharan Africa,World Bank
+KEN,Interest rate,Economic,2000-12-31,22.3391666666667,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2025-12-31,4.63261093844984,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2024-12-31,4.66019594571891,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2023-12-31,5.71999241214208,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2022-12-31,4.85998104287999,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2021-12-31,7.59048947333467,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2020-12-31,-0.272766327438816,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2019-12-31,5.11415885767801,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2018-12-31,5.64794640709219,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2017-12-31,3.83795817364721,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2016-12-31,4.21351706814744,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2015-12-31,4.96772112759767,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2014-12-31,5.02011100232484,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2013-12-31,3.7978483925754,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2012-12-31,4.56867961444982,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2011-12-31,5.1211061197056,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2010-12-31,8.05847360290906,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2009-12-31,3.30693981631089,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2008-12-31,0.232282744812977,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2007-12-31,6.85072976998784,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2006-12-31,6.47249430015484,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2005-12-31,5.90666607980057,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2004-12-31,5.10429977629738,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2003-12-31,2.93247554570904,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2002-12-31,0.546859530175595,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2001-12-31,3.77990649795343,%,Sub-Saharan Africa,World Bank
+KEN,GDP growth,Economic,2000-12-31,0.599695390807426,%,Sub-Saharan Africa,World Bank
+MAR,Inflation,Economic,2025-12-31,0.701902154839545,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2024-12-31,0.985256592004507,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2023-12-31,6.09114152504141,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2022-12-31,6.65704202759067,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2021-12-31,1.40195883962006,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2020-12-31,0.705968661338261,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2019-12-31,0.303386036590383,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2018-12-31,1.80391671141896,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2017-12-31,0.754663249323619,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2016-12-31,1.63531114327064,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2015-12-31,1.5579071134626,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2014-12-31,0.442310053557048,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2013-12-31,1.88065466724086,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2012-12-31,1.28712240079219,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2011-12-31,0.9069249096918,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2010-12-31,0.993557401226392,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2009-12-31,0.971862998667636,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2008-12-31,3.71484311494064,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2007-12-31,2.04208512673344,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2006-12-31,3.28476166954811,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2005-12-31,0.982641660015951,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2004-12-31,1.49344403381774,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2003-12-31,1.16773367477592,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2002-12-31,2.79561966936936,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2001-12-31,0.619801875297975,%,Middle East & North Africa,World Bank
+MAR,Inflation,Economic,2000-12-31,1.89463456763464,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2025-12-31,4.59524349182247,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2024-12-31,3.79336515978963,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2023-12-31,3.65564411017931,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2022-12-31,1.81269242194809,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2021-12-31,8.15473889823681,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2020-12-31,-7.17820744246774,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2019-12-31,2.89097476137077,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2018-12-31,3.06564133025955,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2017-12-31,5.05789816173446,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2016-12-31,0.52118550608968,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2015-12-31,4.34458297635238,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2014-12-31,2.7192440802029,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2013-12-31,4.12221286860944,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2012-12-31,3.06234368502997,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2011-12-31,5.52464523319847,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2010-12-31,3.49955709403216,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2009-12-31,3.74576940136258,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2008-12-31,5.68453936284732,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2007-12-31,3.44106776690418,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2006-12-31,7.7908200104027,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2005-12-31,3.19224973015831,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2004-12-31,4.57138016516208,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2003-12-31,6.17110214953244,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2002-12-31,3.73019737485745,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2001-12-31,7.72182519577728,%,Middle East & North Africa,World Bank
+MAR,GDP growth,Economic,2000-12-31,2.58218091499747,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2025-12-31,2.08420853585036,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2024-12-31,1.68792112375809,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2023-12-31,2.32708518362706,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2022-12-31,2.47407371925372,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2021-12-31,3.06328988941548,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2020-12-31,3.37234961012303,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2019-12-31,-1.19298644533328,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2018-12-31,2.46594308994843,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2017-12-31,-0.834845735027162,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2016-12-31,2.05347076823965,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2015-12-31,1.22269318552328,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2014-12-31,2.24185348779063,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2013-12-31,3.51104209799866,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2012-12-31,2.86627029905053,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2011-12-31,5.8262163739404,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2010-12-31,5.33941733020905,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2009-12-31,5.0572227614833,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2008-12-31,9.87024816760266,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2007-12-31,4.16782358431579,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2006-12-31,2.20902314069647,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2005-12-31,0.479231671630955,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2004-12-31,0.5155078977673,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2003-12-31,0.612195358172966,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2002-12-31,0.247186492339686,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2001-12-31,-1.12094804896791,%,Middle East & North Africa,World Bank
+SAU,Inflation,Economic,2000-12-31,-1.12499838517645,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2025-12-31,4.50246560191663,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2024-12-31,2.64893068308965,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2023-12-31,0.542592439393161,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2022-12-31,12.0005874752929,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2021-12-31,6.51959698325419,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2020-12-31,-3.80478901996312,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2019-12-31,1.65158925617395,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2018-12-31,3.2269508901591,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2017-12-31,1.18210705878283,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2016-12-31,1.70404739202878,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2015-12-31,4.65512316652699,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2014-12-31,4.02467158380668,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2013-12-31,2.94563789152025,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2012-12-31,5.76157382270968,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2011-12-31,11.758820686671,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2010-12-31,5.0395150823517,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2009-12-31,-1.06671711240203,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2008-12-31,6.2379875365458,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2007-12-31,2.21365396372528,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2006-12-31,3.31348473625901,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2005-12-31,5.94489623934835,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2004-12-31,8.63100545880309,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2003-12-31,8.76873381743964,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2002-12-31,-0.688390130317757,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2001-12-31,0.344593196175438,%,Middle East & North Africa,World Bank
+SAU,GDP growth,Economic,2000-12-31,4.71813422138024,%,Middle East & North Africa,World Bank

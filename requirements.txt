@@ -1,0 +1,7 @@
+streamlit>=1.36
+pandas>=2.2
+langgraph>=0.2
+openai>=1.35
+tavily-python>=0.3.9
+xhtml2pdf>=0.2.16
+requests>=2.32
