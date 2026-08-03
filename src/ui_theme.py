@@ -70,6 +70,6 @@ def masthead(n_c, n_i, date_str, model, lang, ticker_items):
 <span><span class="dot dot-ok"></span>{t('st_search', lang)} · Tavily</span>
 <span><span class="dot dot-ok"></span>{t('st_data', lang)} · World Bank API</span>
 <span><span class="dot dot-warn"></span>{t('st_mode', lang)}</span></div>
-<div class="coverage">{t('coverage', lang)} : {n_c} {t('countries_w', lang)} · {n_i} {t('indicators_w', lang)} · {t('official_only', lang)}</div>
+<div class="coverage">{t('coverage', lang)} : {n_c} {t('countries_w', lang)} · {t('official_only', lang)}</div>
 </div>
 <div class="ticker"><div class="ticker-track">{tick} &nbsp;·&nbsp; {tick}</div></div>"""

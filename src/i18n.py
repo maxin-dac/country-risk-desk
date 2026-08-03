@@ -41,7 +41,7 @@ STR = {
     "coverage": ("Coverage", "Couverture"),
     "countries_w": ("countries", "pays"),
     "indicators_w": ("indicators", "indicateurs"),
-    "official_only": ("official sources only", "sources officielles uniquement"),
+    "official_only": ("official sources", "sources officielles"),
     "params": ("Brief parameters", "Paramètres du brief"),
     "country": ("Country", "Pays"),
     "indicator": ("Macro indicator", "Indicateur macro"),

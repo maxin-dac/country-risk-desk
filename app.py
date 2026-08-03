@@ -8,7 +8,7 @@ from src.i18n import INDICATORS, cname, iname, t
 from src.pdf_export import generate_pdf_bytes
 from src.ui_theme import CSS, masthead
 
-st.set_page_config(page_title="PESTEL Risk Desk", layout="wide")
+st.set_page_config(page_title="PESTEL Risk Desk", page_icon="\U0001F6F0", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
 
 @st.cache_data(show_spinner=False)
@@ -122,8 +122,6 @@ with st.sidebar:
     indicator = st.selectbox(t("indicator", lang), inds,
                              format_func=lambda x: iname(x, lang) if x in INDICATORS else x)
     go_live = st.button(t("live", lang))
-    st.markdown(f"<div class='coverage'>{t('live_note', lang)} · {t('library_note', lang)}</div>",
-                unsafe_allow_html=True)
 
 sel_key = f"{country}|{indicator}|{lang}"
 
@@ -148,12 +146,6 @@ if is_live:
     st.caption(t("live_done", lang))
 st.markdown(report_html(report, lang), unsafe_allow_html=True)
 
-with st.expander("Diagnostics"):
-    st.json({"mode": "live" if is_live else "library",
-             "status": report.get("status"),
-             "search_error": report.get("search_error"),
-             "sources": len(report.get("sources", [])),
-             "confidence": report.get("confidence")})
 
 if report.get("status") != "error":
     try:
