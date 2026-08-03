@@ -17,14 +17,14 @@ def get_json(url, params):
     last = None
     for attempt in range(3):
         try:
-            r = session.get(url, params=params, headers=HEADERS, timeout=60)
+            r = session.get(url, params=params, headers=HEADERS, timeout=90)
             r.raise_for_status()
             if "application/json" not in r.headers.get("content-type", ""):
                 raise RuntimeError(f"Non-JSON response: {r.text[:120]}")
             return r.json()
         except Exception as e:
             last = e
-            time.sleep(2 * (attempt + 1))
+            time.sleep(3 * (attempt + 1))
     raise last
 
 def fetch_country_list():
@@ -38,12 +38,10 @@ def fetch_country_list():
         if region.get("id") == "NA" or not iso3:
             continue
         out.append({"iso3": iso3,
-                "name_en": (c.get("name") or "").strip(),
-                "region_en": (region.get("value") or "").strip()})
+                    "name_en": (c.get("name") or "").strip(),
+                    "region_en": (region.get("value") or "").strip()})
     if len(out) < 150:
-        meta = str(p[0])[:200] if p else ""
-        sample = str(p[1][:1])[:300] if p[1] else "empty"
-        raise RuntimeError(f"Country list incomplete ({len(out)}) — meta: {meta} — sample: {sample}")
+        raise RuntimeError(f"Country list incomplete ({len(out)}) — meta: {str(p[0])[:200]}")
     return out
 
 def load_country_list():
@@ -64,48 +62,62 @@ def load_country_list():
                 if countries:
                     print(f"[OK] using committed catalog ({len(countries)} countries)")
                     return countries
-    raise RuntimeError("No country list available (live fetch failed, no committed catalog)")
+    raise RuntimeError("No country list available")
 
-def fetch_series(wb_code, wb_ind):
-    p = get_json(f"{BASE}/country/{wb_code}/indicator/{wb_ind}",
-                 {"format": "json", "date": "2000:2024", "per_page": 300})
-    if not isinstance(p, list) or len(p) < 2:
-        raise RuntimeError(f"Unexpected payload: {str(p)[:120]}")
-    return p[1] or []
+def fetch_all_series(wb_ind):
+    rows, page = [], 1
+    while True:
+        p = get_json(f"{BASE}/country/all/indicator/{wb_ind}",
+                     {"format": "json", "date": "2000:2024", "per_page": 1000, "page": page})
+        if not isinstance(p, list) or len(p) < 2:
+            raise RuntimeError(f"Unexpected payload: {str(p)[:120]}")
+        rows.extend(p[1] or [])
+        pages = int((p[0] or {}).get("pages", 1))
+        print(f"    page {page}/{pages}")
+        if page >= pages:
+            break
+        page += 1
+        time.sleep(1)
+    return rows
 
 def main():
     DATA.mkdir(exist_ok=True)
     countries = load_country_list()
+    valid = {c["iso3"]: c for c in countries}
     print(f"{len(countries)} countries in catalog")
 
     existing = pd.read_csv(OUT) if OUT.exists() else pd.DataFrame()
     done = set(zip(existing.country, existing.indicator)) if not existing.empty else set()
     rows = existing.to_dict("records") if not existing.empty else []
     fails = []
-    for c in countries:
-        for label, (wb_ind, unit) in INDS.items():
-            if (c["iso3"], label) in done:
-                continue
-            try:
-                series = fetch_series(c["iso3"], wb_ind)
-            except Exception as e:
-                fails.append((c["iso3"], label, str(e)))
-                print(f"[FAIL] {c['iso3']} | {label}: {e}")
-                continue
-            n = 0
-            for it in series:
-                if it.get("value") is None:
-                    continue
-                rows.append({"country": c["iso3"], "indicator": label, "category": "Economic",
+    for label, (wb_ind, unit) in INDS.items():
+        missing = [iso for iso in valid if (iso, label) not in done]
+        if not missing:
+            print(f"[SKIP] {label}: all countries already fetched")
+            continue
+        try:
+            series = fetch_all_series(wb_ind)
+        except Exception as e:
+            fails.append(label)
+            print(f"[FAIL] {label}: {e}")
+            continue
+        per = {}
+        for it in series:
+            iso = (it.get("country") or {}).get("id")
+            if iso in missing and it.get("value") is not None:
+                per.setdefault(iso, []).append(it)
+        for iso in missing:
+            items = per.get(iso, [])
+            for it in items:
+                rows.append({"country": iso, "indicator": label, "category": "Economic",
                              "date": f"{it['date']}-12-31", "value": it["value"], "unit": unit,
-                             "region": c["region_en"], "source": "World Bank"})
-                n += 1
-            print(f"[OK]   {c['iso3']} | {label}: {n} rows")
-            time.sleep(0.5)
+                             "region": valid[iso]["region_en"], "source": "World Bank"})
+            print(f"[OK]   {iso} | {label}: {len(items)} rows")
+        time.sleep(2)
     df = pd.DataFrame(rows)
     df.to_csv(OUT, index=False)
     print(f"\n{len(df)} rows in {OUT}")
-    print(f"{len(fails)} failures — re-run to retry them" if fails else "All series complete")
+    print(f"{len(fails)} indicator-level failures — re-run to retry" if fails else "All series complete")
 
 if __name__ == "__main__":
     main()
