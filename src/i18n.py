@@ -25,6 +25,10 @@ COUNTRIES = {
 
 # CSV key -> (en, fr)
 INDICATORS = {
+    "External debt": ("External debt", "Dette externe"),
+
+    "Interest rate": ("Interest rate", "Taux d'interet"),
+
     "Current account": ("Current account balance", "Solde du compte courant"),
     "Gov debt": ("Government debt", "Dette publique"),
     "Reserves": ("Total reserves", "Réserves totales"),

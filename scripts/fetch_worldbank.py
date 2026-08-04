@@ -4,7 +4,9 @@ import requests
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://api.worldbank.org/v2"
-INDS = {"GDP growth": ("NY.GDP.MKTP.KD.ZG", "%"),
+INDS = {
+        "External debt": ("DT.DOD.DECT.GN.ZS", "% GNI"),
+"GDP growth": ("NY.GDP.MKTP.KD.ZG", "%"),
         "Inflation": ("FP.CPI.TOTL.ZG", "%"),
         "Interest rate": ("FR.INR.LEND", "%"),
         "Current account": ("BN.CAB.XOKA.GD.ZS", "% GDP"),

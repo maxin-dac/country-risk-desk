@@ -27,6 +27,8 @@ ALLOWED_SEARCH_DOMAINS = [d.strip() for d in env(
 MAX_SEARCH_RESULTS = int(env("MAX_SEARCH_RESULTS", "3"))
 
 INDICATOR_HINTS = {
+    "External debt": "external debt percent of GNI debt service",
+
     "Current account": "current account balance external deficit surplus",
     "Gov debt": "government public debt GDP fiscal sustainability",
     "Reserves": "foreign exchange reserves months of imports",
