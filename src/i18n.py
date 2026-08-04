@@ -24,6 +24,11 @@ COUNTRIES = {
 
 # CSV key -> (en, fr)
 INDICATORS = {
+    "Current account": ("Current account balance", "Solde du compte courant"),
+    "Gov debt": ("Government debt", "Dette publique"),
+    "Reserves": ("Total reserves", "Réserves totales"),
+    "Unemployment": ("Unemployment rate", "Taux de chômage"),
+
     "Inflation": ("Inflation", "Inflation"),
     "Policy rate": ("Policy rate", "Taux directeur"),
     "GDP growth": ("GDP growth", "Croissance du PIB"),

@@ -27,6 +27,11 @@ ALLOWED_SEARCH_DOMAINS = [d.strip() for d in env(
 MAX_SEARCH_RESULTS = int(env("MAX_SEARCH_RESULTS", "3"))
 
 INDICATOR_HINTS = {
+    "Current account": "current account balance external deficit surplus",
+    "Gov debt": "government public debt GDP fiscal sustainability",
+    "Reserves": "foreign exchange reserves months of imports",
+    "Unemployment": "unemployment rate labor market",
+
     "GDP growth": "real GDP growth rate economic activity outlook",
     "Inflation": "CPI consumer price index inflation rate",
     "Interest rate": "lending interest rate central bank monetary policy",

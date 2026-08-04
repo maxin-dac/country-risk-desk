@@ -1,4 +1,4 @@
-import pathlib, sys, time
+import pathlib, time
 import pandas as pd
 import requests
 
@@ -6,8 +6,12 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://api.worldbank.org/v2"
 INDS = {"GDP growth": ("NY.GDP.MKTP.KD.ZG", "%"),
         "Inflation": ("FP.CPI.TOTL.ZG", "%"),
-        "Interest rate": ("FR.INR.LEND", "%")}
-HEADERS = {"User-Agent": "pestel-risk-desk/1.0 (portfolio project)"}
+        "Interest rate": ("FR.INR.LEND", "%"),
+        "Current account": ("BN.CAB.XOKA.GD.ZS", "% GDP"),
+        "Gov debt": ("GC.DOD.TOTL.GD.ZS", "% GDP"),
+        "Reserves": ("FI.RES.TOTL.MO", "months"),
+        "Unemployment": ("SL.UEM.TOTL.ZS", "%")}
+HEADERS = {"User-Agent": "country-risk-desk/1.2 (portfolio project)"}
 DATA = ROOT / "data"
 OUT = DATA / "macro_indicators.csv"
 CATALOG = DATA / "countries.csv"
@@ -113,11 +117,10 @@ def main():
         print(f"[INFO] {label}: {len(series)} items fetched, {matched} kept")
         if matched == 0:
             fails.append(label)
-            print(f"[FAIL] {label}: zero rows matched — data discarded, will retry next run")
+            print(f"[FAIL] {label}: zero rows matched — discarded, will retry next run")
             continue
         for iso in missing:
-            items = per.get(iso, [])
-            for it in items:
+            for it in per.get(iso, []):
                 rows.append({"country": iso, "indicator": label, "category": "Economic",
                              "date": f"{it['date']}-12-31", "value": it["value"], "unit": unit,
                              "region": valid[iso]["region_en"], "source": "World Bank"})
