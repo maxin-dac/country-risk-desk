@@ -110,7 +110,7 @@ def main():
             continue
         per = {}
         for it in series:
-            iso = (it.get("country") or {}).get("id")
+            iso = it.get("countryiso3code") or (it.get("country") or {}).get("id")
             if iso in missing and it.get("value") is not None:
                 per.setdefault(iso, []).append(it)
         matched = sum(len(v) for v in per.values())
