@@ -14,6 +14,8 @@ RULES = [
          en="Current account deficit beyond -5 % of GDP", fr="Déficit courant au-delà de -5 % du PIB"),
     dict(id="unemp_high", indicator="Unemployment", cond=lambda v: v > 15, desc=True,
          en="Unemployment above 15 %", fr="Chômage supérieur à 15 %"),
+    dict(id="electricity_low", indicator="Electricity access", cond=lambda v: v < 50, desc=False,
+         en="Access to electricity below 50 %", fr="Accès à l'électricité sous 50 %"),
 ]
 
 

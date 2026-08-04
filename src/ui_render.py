@@ -30,7 +30,7 @@ def evidence_html(items, lang, kind=""):
         out.append(f'<p class="kv"><span class="chip {kind}">{ids}</span>{text}</p>{quotes}')
     return "".join(out)
 
-def report_html(r, lang):
+def report_html(r, lang, chart=""):
     if r.get("status") == "error":
         return f'<div class="insufficient">{t("error", lang)} — {html.escape(str(r.get("error", "")))}</div>'
     out = r.get("outlook", {})
@@ -48,7 +48,7 @@ def report_html(r, lang):
     lims_html = f'<h3 style="margin-top:1rem">{t("sec_limits", lang)}</h3><ul>{lims}</ul>' if lims else ""
     return f"""
 <div class="brief data"><h3>01 · {t('sec_constat', lang)}</h3>
-<div class="bignum">{big}</div><div class="deltaline">{deltas}</div></div>
+<div class="bignum">{big}</div><div class="deltaline">{deltas}</div>{chart}</div>
 <div class="brief ctx"><h3>02 · {t('sec_context', lang)}</h3>{ctx}</div>
 <div class="brief risk"><h3>03 · {t('sec_risks', lang)}</h3>{risks}</div>
 <div class="brief opp"><h3>04 · {t('sec_opps', lang)}</h3>{opps}</div>

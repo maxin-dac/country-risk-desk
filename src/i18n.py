@@ -25,6 +25,13 @@ COUNTRIES = {
 
 # CSV key -> (en, fr)
 INDICATORS = {
+    "Political stability": ("Political stability", "Stabilité politique"),
+    "Control of corruption": ("Control of corruption", "Contrôle de la corruption"),
+
+    "CO2 per capita": ("CO2 emissions per capita", "Émissions CO2 par habitant"),
+    "Electricity access": ("Access to electricity", "Accès à l'électricité"),
+    "Women in workforce": ("Women in labor force", "Femmes dans la population active"),
+
     "External debt": ("External debt", "Dette externe"),
 
     "Interest rate": ("Interest rate", "Taux d'interet"),
@@ -41,6 +48,7 @@ INDICATORS = {
 
 # UI strings -> (en, fr)
 STR = {
+
     "mode": ("Mode", "Mode"),
     "mode_brief": ("Country brief", "Brief pays"),
     "mode_compare": ("Comparison", "Comparaison"),

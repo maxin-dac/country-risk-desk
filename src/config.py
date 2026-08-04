@@ -27,6 +27,13 @@ ALLOWED_SEARCH_DOMAINS = [d.strip() for d in env(
 MAX_SEARCH_RESULTS = int(env("MAX_SEARCH_RESULTS", "3"))
 
 INDICATOR_HINTS = {
+    "Political stability": "political stability violence security risk",
+    "Control of corruption": "corruption control governance institutions",
+
+    "CO2 per capita": "carbon dioxide emissions per capita energy transition",
+    "Electricity access": "access to electricity electrification rate",
+    "Women in workforce": "female labor force participation gender",
+
     "External debt": "external debt percent of GNI debt service",
 
     "Current account": "current account balance external deficit surplus",

@@ -5,7 +5,7 @@ from src import config
 from src.csv_loader import get_stats, load_csv
 from src.graph import build_agent
 from src.alerts import compute_alerts
-from src.compare import render_compare
+from src.compare import line_chart, render_compare
 from src.i18n import INDICATORS, cname, iname, t
 from src.pdf_export import generate_pdf_bytes
 from src.ui_render import report_html
@@ -21,6 +21,51 @@ st.markdown("""<style>
   border-radius:.75rem;
   padding:.25rem .75rem;
 }
+</style>""", unsafe_allow_html=True)
+
+st.markdown("""<style>
+/* ===== sidebar différencié ===== */
+section[data-testid="stSidebar"]{
+  background:linear-gradient(180deg,#10202e 0%,#0b1620 100%);
+  border-right:1px solid rgba(76,201,240,.22);
+}
+section[data-testid="stSidebar"] > div{background:transparent}
+section[data-testid="stSidebar"] h3{
+  color:#e6edf3;
+  border-bottom:2px solid rgba(76,201,240,.35);
+  padding-bottom:.45rem;
+  margin-bottom:.6rem;
+}
+section[data-testid="stSidebar"] label{
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:.68rem;
+  font-weight:700;
+  color:#8fd0f4;
+}
+section[data-testid="stSidebar"] [data-testid="stSelectbox"] > div,
+section[data-testid="stSidebar"] [data-testid="stMultiSelect"] > div{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(159,179,200,.35);
+  border-radius:.55rem;
+}
+section[data-testid="stSidebar"] [data-testid="stSelectbox"] > div:focus-within,
+section[data-testid="stSidebar"] [data-testid="stMultiSelect"] > div:focus-within{
+  border-color:#4cc9f0;
+}
+/* ===== boutons cohérents ===== */
+.stButton button{
+  border-radius:.55rem;
+  border:1px solid rgba(76,201,240,.4);
+  background:rgba(76,201,240,.08);
+  color:#d7e2ec;
+  font-weight:600;
+}
+.stButton button:hover{background:rgba(76,201,240,.18);border-color:#4cc9f0}
+/* ===== détails ===== */
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-thumb{background:rgba(159,179,200,.35);border-radius:4px}
+h3{color:#cfe8f7}
 </style>""", unsafe_allow_html=True)
 
 @st.cache_data(show_spinner=False)
@@ -128,7 +173,17 @@ if mode == "brief":
     report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
     if is_live:
         st.caption(t("live_done", lang))
-    st.markdown(report_html(report, lang), unsafe_allow_html=True)
+    html_all = report_html(report, lang)
+    marker = '<div class="brief ctx">'
+    if report.get("status") != "error" and marker in html_all:
+        head, _, rest = html_all.partition(marker)
+        st.markdown(head, unsafe_allow_html=True)
+        fig = line_chart(df, indicator, [country], lang)
+        fig.update_layout(title=dict(text=f"{iname(indicator, lang)} — {cname(country, lang)}"))
+        st.plotly_chart(fig, use_container_width=True)
+        st.markdown(marker + rest, unsafe_allow_html=True)
+    else:
+        st.markdown(html_all, unsafe_allow_html=True)
     if report.get("status") != "error":
         try:
             st.download_button(t("export", lang), generate_pdf_bytes(report, lang),

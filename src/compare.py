@@ -9,7 +9,7 @@ COLORS = ["#4cc9f0", "#f72585", "#b5e48c", "#ffd166", "#ef476f", "#06d6a0",
           "#118ab2", "#f4a261", "#9b5de5", "#e63946", "#2a9d8f", "#e9c46a"]
 
 IND_ORDER = ["GDP growth", "Inflation", "Interest rate", "Current account",
-             "Gov debt", "External debt", "Reserves", "Unemployment"]
+             "Gov debt", "External debt", "Reserves", "Unemployment", "CO2 per capita", "Electricity access", "Women in workforce", "Political stability", "Control of corruption"]
 
 
 def _latest(df):
@@ -22,7 +22,7 @@ def _layout(fig, title):
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
         font=dict(color="#d7e2ec", size=11), showlegend=False,
         title=dict(text=title, font=dict(size=13, color="#9fb3c8")),
-        xaxis=dict(showgrid=False, dtick=4),
+        xaxis=dict(showgrid=False, dtick=4, tickformat="d"),
         yaxis=dict(gridcolor="rgba(255,255,255,.08)", zerolinecolor="rgba(255,255,255,.15)"),
     )
     return fig
@@ -91,3 +91,4 @@ def render_compare(df, countries, lang):
                  use_container_width=True)
     st.markdown(f"<h3>{t('compare_map', lang)}</h3>", unsafe_allow_html=True)
     st.plotly_chart(positioning_scatter(df, countries, lang), use_container_width=True)
+
