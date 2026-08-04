@@ -1,7 +1,6 @@
 import html
 
 from src.i18n import t
-from src.reliability import source_score, score_band
 
 def fmt_stats(s, lang):
     if not s.get("available"):
@@ -41,22 +40,10 @@ def report_html(r, lang):
     opps = evidence_html(out.get("opportunities", []), lang, "opp")
     uncer = "".join(f"<li>{html.escape(str(u))}</li>" for u in out.get("uncertainties", [])) \
         or f"<li>{t('insufficient', lang)}</li>"
-    _qc = {}
-    for _item in list(r.get("context", {}).get("points", []) or []) + list(out.get("risks", []) or []) + list(out.get("opportunities", []) or []):
-        if isinstance(_item, dict):
-            _sid = _item.get("src") or _item.get("source_id")
-            if _sid:
-                _qc[_sid] = _qc.get(_sid, 0) + 1
-    _REL_STYLE = {"high": "background:#e7f6ec;color:#1b7f3b;border:1px solid #bfe3cc",
-                  "good": "background:#fdf4e3;color:#a15c00;border:1px solid #eed9b0",
-                  "limited": "background:#fdeaea;color:#b3261e;border:1px solid #f3c1be"}
-    def _src_li(s):
-        sc = source_score(s, _qc.get(s.get("id"), 0))
-        band = score_band(sc)
-        return (f'<li class="src">[{html.escape(s["id"])}] <a href="{html.escape(s["url"])}" target="_blank">'
-                f'{html.escape(s["title"])}</a> <span class="chip">{html.escape(s["domain"])}</span> '
-                f'<span class="chip" style="{_REL_STYLE[band]}">{t("reliability", lang)} : {sc}/100 · {t("band_" + band, lang)}</span></li>')
-    srcs = "".join(_src_li(s) for s in r.get("sources", [])) or f'<div class="insufficient">{t("no_sources", lang)}</div>'
+    srcs = "".join(
+        f'<li class="src">[{html.escape(s["id"])}] <a href="{html.escape(s["url"])}" target="_blank">'
+        f'{html.escape(s["title"])}</a> <span class="chip">{html.escape(s["domain"])}</span></li>'
+        for s in r.get("sources", [])) or f'<div class="insufficient">{t("no_sources", lang)}</div>'
     lims = "".join(f"<li>{html.escape(str(x))}</li>" for x in r.get("limitations", []))
     lims_html = f'<h3 style="margin-top:1rem">{t("sec_limits", lang)}</h3><ul>{lims}</ul>' if lims else ""
     return f"""

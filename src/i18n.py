@@ -41,10 +41,6 @@ INDICATORS = {
 
 # UI strings -> (en, fr)
 STR = {
-    "reliability": ("Reliability", "Fiabilité"),
-    "band_high": ("High", "Élevée"),
-    "band_good": ("Good", "Bonne"),
-    "band_limited": ("Limited", "Limitée"),
 
     "eyebrow": ("Macro-intelligence // PESTEL — Session of", "Macro-intelligence // PESTEL — Session du"),
     "title_a": ("Country Risk", "Risque Pays"),
