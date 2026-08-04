@@ -41,6 +41,8 @@ INDICATORS = {
 
 # UI strings -> (en, fr)
 STR = {
+    "alerts_title": ("Threshold alerts", "Alertes seuil"),
+
 
     "eyebrow": ("Macro-intelligence // PESTEL — Session of", "Macro-intelligence // PESTEL — Session du"),
     "title_a": ("Country Risk", "Risque Pays"),
