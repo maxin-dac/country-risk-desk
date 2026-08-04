@@ -11,7 +11,7 @@ from src.pdf_export import generate_pdf_bytes
 from src.ui_render import report_html
 from src.ui_theme import CSS, masthead
 
-st.set_page_config(page_title="PESTEL Risk Desk", page_icon="\U0001F6F0", layout="wide")
+st.set_page_config(page_title="Country Risk Desk", page_icon="\U0001F6F0", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
 st.markdown("""<style>
 [data-testid="stVerticalBlock"] > div:has(.alerts-flag){display:none}
@@ -100,7 +100,7 @@ def assemble_report(df, briefs, country, indicator, lang):
     qual = briefs.get(f"{country}|{indicator}|{lang}") or {}
     return {
         "status": "done" if qual else "done_numeric",
-        "title": f"PESTEL — {country} — {indicator}",
+        "title": f"Country Risk Desk — {country} — {indicator}",
         "country": country, "indicator": indicator, "lang": lang,
         "category": stats.get("category", ""), "stats": stats,
         "web_context_available": qual.get("web_context_available", False),

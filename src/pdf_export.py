@@ -62,8 +62,8 @@ ul {{margin: 6px 0; padding-left: 16px;}}
 footer {{margin-top: 16px; border-top: 1px solid #D8DED9; padding-top: 6px; font-size: 7px; color: #5C6F66;}}
 </style></head><body>
 <header>
-<div class="eyebrow">Macro-intelligence // PESTEL</div>
-<h1>PESTEL — {html.escape(c_label)} — {html.escape(i_label)}</h1>
+<div class="eyebrow">Macro-intelligence // Country Risk Desk</div>
+<h1>Country Risk Desk — {html.escape(c_label)} — {html.escape(i_label)}</h1>
 <div class="eyebrow">{t('generated', lang)} {html.escape(r.get('generated_at', ''))} · {t('confidence', lang)}: {html.escape(str(r.get('confidence', '')))}</div>
 </header>
 <h2>01 · {t('sec_constat', lang)}</h2>

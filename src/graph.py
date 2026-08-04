@@ -61,7 +61,7 @@ def build_agent(df):
     def n_finalize(s):
         st_, d = s.get("stats", {}), s.get("draft") or {}
         return {"status": "done", "final_report": {
-            "status": "done", "title": f"PESTEL — {s['country']} — {s['indicator']}",
+            "status": "done", "title": f"Country Risk Desk — {s['country']} — {s['indicator']}",
             "country": s["country"], "indicator": s["indicator"], "lang": s.get("lang", "en"),
             "category": st_.get("category", ""), "stats": st_,
             "web_context_available": d.get("web_context_available", False),
@@ -83,7 +83,7 @@ def build_agent(df):
             limits.append(f"Validation: {s['validation_error']}")
         return {"status": "done_degraded", "final_report": {
             "status": "done_degraded",
-            "title": f"PESTEL — {s.get('country', '?')} — {s.get('indicator', '?')}",
+            "title": f"Country Risk Desk — {s.get('country', '?')} — {s.get('indicator', '?')}",
             "country": s.get("country", ""), "indicator": s.get("indicator", ""),
             "lang": s.get("lang", "en"), "category": st_.get("category", ""), "stats": st_,
             "web_context_available": False, "confidence": "low",

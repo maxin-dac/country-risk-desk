@@ -5,10 +5,10 @@ import requests
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://api.worldbank.org/v2"
 INDS = {
-        "Political stability": ("PV.EST", "index"),
-        "Control of corruption": ("CC.EST", "index"),
+        "Political stability": ("GOV_WGI_PV.EST", "index"),
+        "Control of corruption": ("GOV_WGI_CC.EST", "index"),
 
-        "CO2 per capita": ("EN.ATM.CO2E.PC", "t CO2/cap"),
+        "CO2 per capita": ("EN.GHG.ALL.PC.CE.AR5", "t GHG/cap"),
         "Electricity access": ("EG.ELC.ACCS.ZS", "%"),
         "Women in workforce": ("SL.TLF.CACT.FE.ZS", "%"),
 

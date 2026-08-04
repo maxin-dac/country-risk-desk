@@ -30,7 +30,7 @@ INDICATOR_HINTS = {
     "Political stability": "political stability violence security risk",
     "Control of corruption": "corruption control governance institutions",
 
-    "CO2 per capita": "carbon dioxide emissions per capita energy transition",
+    "CO2 per capita": "greenhouse gas emissions per capita climate",
     "Electricity access": "access to electricity electrification rate",
     "Women in workforce": "female labor force participation gender",
 

@@ -28,7 +28,7 @@ INDICATORS = {
     "Political stability": ("Political stability", "Stabilité politique"),
     "Control of corruption": ("Control of corruption", "Contrôle de la corruption"),
 
-    "CO2 per capita": ("CO2 emissions per capita", "Émissions CO2 par habitant"),
+    "CO2 per capita": ("GHG emissions per capita", "Émissions GES par habitant"),
     "Electricity access": ("Access to electricity", "Accès à l'électricité"),
     "Women in workforce": ("Women in labor force", "Femmes dans la population active"),
 
@@ -62,7 +62,7 @@ STR = {
     "alerts_title": ("Threshold alerts", "Alertes seuil"),
 
 
-    "eyebrow": ("Macro-intelligence // PESTEL — Session of", "Macro-intelligence // PESTEL — Session du"),
+    "eyebrow": ("Macro-intelligence // Country Risk Desk — Session of", "Macro-intelligence // Country Risk Desk — Session du"),
     "title_a": ("Country Risk", "Risque Pays"),
     "title_b": ("Desk", "Desk"),
     "st_llm": ("Model", "Modèle"),

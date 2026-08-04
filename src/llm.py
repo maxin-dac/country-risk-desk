@@ -3,7 +3,7 @@ from openai import OpenAI
 from . import config
 
 def _client():
-    headers = ({"HTTP-Referer": "https://github.com/pestel-risk-desk", "X-Title": "PESTEL Risk Desk"}
+    headers = ({"HTTP-Referer": "https://github.com/maxin-dac/country-risk-desk", "X-Title": "Country Risk Desk"}
                if config.LLM_PROVIDER == "openrouter" else {})
     return OpenAI(base_url=config.LLM_BASE_URL, api_key=config.LLM_API_KEY or "na",
                   timeout=config.LLM_TIMEOUT, default_headers=headers)

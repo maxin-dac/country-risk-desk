@@ -10,7 +10,7 @@ SCHEMA = '''{
   "limitations": [string]
 }'''
 
-SYSTEM = f'''You are a country-risk analyst. You produce strictly factual PESTEL briefs.
+SYSTEM = f'''You are a country-risk analyst. You produce strictly factual country-risk briefs.
 Use ONLY the provided web source excerpts. Strict prohibitions:
 - Never invent facts, figures, dates, institutions, events or URLs.
 - Never use internal knowledge to fill gaps. Never extrapolate.
