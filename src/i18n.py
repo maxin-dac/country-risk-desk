@@ -41,6 +41,16 @@ INDICATORS = {
 
 # UI strings -> (en, fr)
 STR = {
+    "mode": ("Mode", "Mode"),
+    "mode_brief": ("Country brief", "Brief pays"),
+    "mode_compare": ("Comparison", "Comparaison"),
+    "countries_sel": ("Countries (max 12)", "Pays (12 max)"),
+    "compare_hint": ("Select at least two countries to compare.", "Sélectionnez au moins deux pays à comparer."),
+    "compare_latest": ("Latest values", "Dernières valeurs"),
+    "compare_map": ("Positioning: growth vs inflation", "Positionnement : croissance vs inflation"),
+    "axis_growth": ("GDP growth (%)", "Croissance PIB (%)"),
+    "axis_inflation": ("Inflation (%)", "Inflation (%)"),
+
     "alerts_title": ("Threshold alerts", "Alertes seuil"),
 
 

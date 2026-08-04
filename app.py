@@ -1,10 +1,11 @@
-import datetime, html, json, pathlib
+import datetime, json, pathlib
 import streamlit as st
 
 from src import config
 from src.csv_loader import get_stats, load_csv
 from src.graph import build_agent
 from src.alerts import compute_alerts
+from src.compare import render_compare
 from src.i18n import INDICATORS, cname, iname, t
 from src.pdf_export import generate_pdf_bytes
 from src.ui_render import report_html
@@ -73,33 +74,37 @@ today = datetime.date.today().isoformat()
 with st.sidebar:
     st.markdown(f"### {t('params', 'en')} / {t('params', 'fr')}")
     lang = st.selectbox("Langue / Language", ["fr", "en"],
-                        format_func=lambda x: "🇫🇷 Français" if x == "fr" else "🇬 English")
-    country = st.selectbox(t("country", lang), sorted(df.country.unique()),
-                           format_func=lambda c: f"{cname(c, lang)} ({c})", key="country_sel")
-    inds = sorted(df[df.country == country].indicator.unique())
-    indicator = st.selectbox(t("indicator", lang), inds,
-                             format_func=lambda x: iname(x, lang) if x in INDICATORS else x)
-    go_live = st.button(t("live", lang))
-
-sel_key = f"{country}|{indicator}|{lang}"
-
-if go_live:
-    if not (config.TAVILY_API_KEY and config.LLM_API_KEY):
-        st.warning(t("no_keys", lang))
+                        format_func=lambda x: "\U0001F1EB\U0001F1F7 Français" if x == "fr" else "\U0001F1EC\U0001F1E7 English")
+    mode = st.radio(t("mode", lang), ["brief", "compare"], horizontal=True,
+                    format_func=lambda m: t("mode_brief", lang) if m == "brief" else t("mode_compare", lang))
+    if mode == "brief":
+        country = st.selectbox(t("country", lang), sorted(df.country.unique()),
+                               format_func=lambda c: f"{cname(c, lang)} ({c})", key="country_sel")
+        inds = sorted(df[df.country == country].indicator.unique())
+        indicator = st.selectbox(t("indicator", lang), inds,
+                                 format_func=lambda x: iname(x, lang) if x in INDICATORS else x)
+        go_live = st.button(t("live", lang))
     else:
-        with st.spinner(t("searching", lang)):
-            st.session_state.live = {"key": sel_key,
-                                     "report": live_report(country, indicator, lang)}
-        st.rerun()
+        allc = sorted(df.country.unique())
+        countries = st.multiselect(t("countries_sel", lang), allc,
+                                   default=[c for c in ("MAR", "USA", "DEU") if c in allc],
+                                   max_selections=12,
+                                   format_func=lambda c: f"{cname(c, lang)} ({c})")
 
-live = st.session_state.get("live")
-is_live = bool(live and live["key"] == sel_key)
-report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
+if mode == "brief":
+    sel_key = f"{country}|{indicator}|{lang}"
+    if go_live:
+        if not (config.TAVILY_API_KEY and config.LLM_API_KEY):
+            st.warning(t("no_keys", lang))
+        else:
+            with st.spinner(t("searching", lang)):
+                st.session_state.live = {"key": sel_key,
+                                         "report": live_report(country, indicator, lang)}
+            st.rerun()
 
 ticks = [f"<b>{c}</b> {cname(c, lang).upper()}" for c in sorted(df.country.unique())[:16]]
 st.markdown(masthead(df.country.nunique(), df.indicator.nunique(), today,
                      config.LLM_MODEL, lang, ticks), unsafe_allow_html=True)
-
 
 alerts = compute_alerts(df)
 if alerts:
@@ -117,14 +122,18 @@ if alerts:
                 rest = " · ".join(f"{cname(i2, lang)} ({v2:.0f})" for i2, v2 in a["hits"][8:])
                 st.caption(rest)
 
-if is_live:
-    st.caption(t("live_done", lang))
-st.markdown(report_html(report, lang), unsafe_allow_html=True)
-
-
-if report.get("status") != "error":
-    try:
-        st.download_button(t("export", lang), generate_pdf_bytes(report, lang),
-                           f"pestel_{country}_{indicator}.pdf".lower(), "application/pdf")
-    except Exception as e:
-        st.warning(f"{t('pdf_fail', lang)}: {e}")
+if mode == "brief":
+    live = st.session_state.get("live")
+    is_live = bool(live and live["key"] == sel_key)
+    report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
+    if is_live:
+        st.caption(t("live_done", lang))
+    st.markdown(report_html(report, lang), unsafe_allow_html=True)
+    if report.get("status") != "error":
+        try:
+            st.download_button(t("export", lang), generate_pdf_bytes(report, lang),
+                               f"pestel_{country}_{indicator}.pdf".lower(), "application/pdf")
+        except Exception as e:
+            st.warning(f"{t('pdf_fail', lang)}: {e}")
+else:
+    render_compare(df, countries, lang)
