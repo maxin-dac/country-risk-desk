@@ -40,7 +40,7 @@ def live_report(country, indicator, lang):
 def assemble_report(df, briefs, country, indicator, lang):
     stats = get_stats(df, country, indicator)
     if not stats.get("available"):
-        return {"status": "error", "error": f"No CSV data for {country} / {indicator}"}
+        return {"status": "error", "error": f"No data for {country} / {indicator}"}
     qual = briefs.get(f"{country}|{indicator}|{lang}") or {}
     return {
         "status": "done" if qual else "done_numeric",

@@ -1,3 +1,4 @@
+import pathlib
 # ISO3 -> (en, fr, world_bank_code, region)
 COUNTRIES = {
     "VNM": ("Vietnam", "Vietnam", "VN", "East Asia & Pacific"),
@@ -55,7 +56,7 @@ STR = {
                    "1 brief = 1 recherche + 1 appel LLM · cache 24 h · citations verbatim obligatoires"),
     "searching": ("Fetching sources · calling model · validating citations…",
                   "Recherche de sources · appel du modèle · validation des citations…"),
-    "sec_constat": ("Figures — CSV data (World Bank)", "Constat chiffré — données CSV (Banque mondiale)"),
+    "sec_constat": ("Figures — Data (Latest from World Bank)", "Constat chiffré — Données (Les plus récentes de la Banque mondiale)"),
     "sec_context": ("Qualitative context — verified sources", "Contexte qualitatif — sources vérifiées"),
     "sec_risks": ("12-month risks", "Risques à 12 mois"),
     "sec_opps": ("12-month opportunities", "Opportunités à 12 mois"),
@@ -93,7 +94,38 @@ def t(key, lang="en"):
     return STR[key][1 if lang == "fr" else 0]
 
 def cname(iso3, lang="en"):
-    return COUNTRIES[iso3][1 if lang == "fr" else 0]
+    if iso3 in COUNTRIES:
+        return COUNTRIES[iso3][1 if lang == "fr" else 0]
+    return _country_names(lang).get(iso3) or _country_names("en").get(iso3, iso3)
 
 def iname(key, lang="en"):
     return INDICATORS[key][1 if lang == "fr" else 0]
+
+_COUNTRY_CACHE = {}
+
+def _country_names(lang="en"):
+    global _COUNTRY_CACHE
+    if lang in _COUNTRY_CACHE:
+        return _COUNTRY_CACHE[lang]
+    names = {}
+    try:
+        from babel import Locale
+        import pycountry
+        terr = Locale("fr" if lang == "fr" else "en").territories
+        for c in pycountry.countries:
+            if c.alpha_2 in terr:
+                names[c.alpha_3] = terr[c.alpha_2]
+    except Exception:
+        pass
+    import csv
+    p = pathlib.Path(__file__).resolve().parent.parent / "data" / "countries.csv"
+    try:
+        with open(p, encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                iso = (row.get("iso3") or "").strip()
+                if iso:
+                    names.setdefault(iso, (row.get("name_en") or iso).strip())
+    except Exception:
+        pass
+    _COUNTRY_CACHE[lang] = names
+    return names
