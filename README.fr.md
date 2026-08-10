@@ -4,17 +4,17 @@
 > **Solution** : un desk open source et bilingue qui combine **13 indicateurs de la Banque Mondiale** (217 économies, 2000–2024) avec un **contexte qualitatif issu de sources de confiance** (Reuters, Bloomberg, FMI, Banque Mondiale, FT). Un agent LangGraph rédige chaque brief, puis une couche de validation contrôle chaque affirmation contre des citations verbatim : **tout ce qui n'est pas fondé est retiré avant affichage**. Sans clé, sans inscription, sans attente.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Python_3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
-  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/Plotly-636AFD?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
-  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/LLM-Groq-F55036?style=for-the-badge" alt="LLM Groq" />
-  <img src="https://img.shields.io/badge/Web_Search-Tavily-00B4D8?style=for-the-badge" alt="Web Search Tavily" />
-  <img src="https://img.shields.io/badge/Data-World_Bank-00693E?style=for-the-badge" alt="Data World Bank" />
-  <img src="https://img.shields.io/badge/Bilingual-FR_|_EN-008080?style=for-the-badge" alt="Bilingual FR EN" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License" />
+  <img src="https://img.shields.io/badge/Python_3.11+-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langchain&logoColor=white" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/Plotly-636AFD?style=flat&logo=plotly&logoColor=white" alt="Plotly" />
+  <img src="https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white" alt="pandas" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/LLM-Groq-F55036?style=flat&logo=groq&logoColor=white" alt="LLM Groq" />
+  <img src="https://img.shields.io/badge/Web_Search-Tavily-00B4D8?style=flat&logoColor=white" alt="Web Search Tavily" />
+  <img src="https://img.shields.io/badge/Data-World_Bank-00693E?style=flat&logoColor=white" alt="Data World Bank" />
+  <img src="https://img.shields.io/badge/Bilingual-FR_|_EN-008080?style=flat&logoColor=white" alt="Bilingual FR EN" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat&logoColor=white" alt="MIT License" />
 </p>
 
 <p align="left">
@@ -118,10 +118,10 @@ Indicateurs v2 : Gini, IDE, transferts de migrants, dépendance aux matières pr
 
 <p align="left">
   <a href="https://github.com/maxin-dac">
-    <img src="https://img.shields.io/badge/GitHub-maxin--dac-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-maxin--dac-181717?style=flat&logo=github&logoColor=white" alt="GitHub" />
   </a>
   <a href="https://www.linkedin.com/in/maximendacleu">
-    <img src="https://img.shields.io/badge/LinkedIn-maximendacleu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-maximendacleu-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 </p>
 
