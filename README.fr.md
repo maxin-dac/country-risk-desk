@@ -32,7 +32,6 @@
 ## En résumé
 
 - **Ce que ça fait** : génère des briefs macro-financiers pour 217 économies - lecture quantitative Banque Mondiale, contexte qualitatif vérifié et cité verbatim, risques & opportunités à 12 mois synthétisés par un LLM **contrôlé affirmation par affirmation**.
-- **Compétences mobilisées** : IA agentique (LangGraph), LLM fondé & validation de citations, recherche web restreinte aux domaines de confiance, data engineering, CI/CD, UX bilingue, export PDF.
 - **Démo** : [country-risk-desk.streamlit.app](https://country-risk-desk.streamlit.app/)
 - **Stack** : Python · Streamlit · LangGraph · Groq · Tavily · Plotly · pandas · GitHub Actions · World Bank API
 

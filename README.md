@@ -32,7 +32,6 @@
 ## Summary
 
 - **What it does**: generates macro-financial briefs for 217 economies - World Bank quantitative read, verified qualitative context quoted verbatim, and 12-month risks & opportunities synthesized by an LLM **checked claim by claim**.
-- **Skills involved**: agentic AI (LangGraph), grounded LLMs & claim-level validation, trusted-domain web search, data engineering, CI/CD, bilingual UX, PDF export.
 - **Demo**: [country-risk-desk.streamlit.app](https://country-risk-desk.streamlit.app/)
 - **Stack**: Python · Streamlit · LangGraph · Groq · Tavily · Plotly · pandas · GitHub Actions · World Bank API
 
@@ -130,4 +129,4 @@ v2 indicators: Gini, FDI inflows, remittances, commodity dependence · pushed al
 
 ## License
 
-Portfolio project distributed under the MIT License. Data © World Bank; excerpts © their respective publishers, quoted with attribution for analysis purposes.
+Project distributed under the MIT License. Data © World Bank; excerpts © their respective publishers, quoted with attribution for analysis purposes.
