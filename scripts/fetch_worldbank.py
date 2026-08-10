@@ -56,7 +56,7 @@ def fetch_country_list():
                     "name_en": (c.get("name") or "").strip(),
                     "region_en": (region.get("value") or "").strip()})
     if len(out) < 150:
-        raise RuntimeError(f"Country list incomplete ({len(out)}) — meta: {str(p[0])[:200]}")
+        raise RuntimeError(f"Country list incomplete ({len(out)}) - meta: {str(p[0])[:200]}")
     return out
 
 def load_country_list():
@@ -126,7 +126,7 @@ def main():
         print(f"[INFO] {label}: {len(series)} items fetched, {matched} kept")
         if matched == 0:
             fails.append(label)
-            print(f"[FAIL] {label}: zero rows matched — discarded, will retry next run")
+            print(f"[FAIL] {label}: zero rows matched - discarded, will retry next run")
             continue
         for iso in missing:
             for it in per.get(iso, []):
@@ -137,7 +137,7 @@ def main():
     df = pd.DataFrame(rows).drop_duplicates()
     df.to_csv(OUT, index=False)
     print(f"\n{len(df)} rows in {OUT}")
-    print(f"{len(fails)} failures — re-run to retry" if fails else "All series complete")
+    print(f"{len(fails)} failures - re-run to retry" if fails else "All series complete")
 
 if __name__ == "__main__":
     main()

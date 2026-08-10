@@ -100,7 +100,7 @@ def assemble_report(df, briefs, country, indicator, lang):
     qual = briefs.get(f"{country}|{indicator}|{lang}") or {}
     return {
         "status": "done" if qual else "done_numeric",
-        "title": f"Country Risk Desk — {country} — {indicator}",
+        "title": f"Country Risk Desk - {country} - {indicator}",
         "country": country, "indicator": indicator, "lang": lang,
         "category": stats.get("category", ""), "stats": stats,
         "web_context_available": qual.get("web_context_available", False),
@@ -154,7 +154,7 @@ st.markdown(masthead(df.country.nunique(), df.indicator.nunique(), today,
 alerts = compute_alerts(df)
 if alerts:
     st.markdown('<div class="alerts-flag"></div>', unsafe_allow_html=True)
-    with st.expander(f"⚠ {t('alerts_title', lang)} — {sum(len(a['hits']) for a in alerts)}", expanded=False):
+    with st.expander(f"⚠ {t('alerts_title', lang)} - {sum(len(a['hits']) for a in alerts)}", expanded=False):
         for a in alerts:
             label = a["fr"] if lang == "fr" else a["en"]
             st.markdown(f"**{label}** · {len(a['hits'])}")
@@ -179,7 +179,7 @@ if mode == "brief":
         head, _, rest = html_all.partition(marker)
         st.markdown(head, unsafe_allow_html=True)
         fig = line_chart(df, indicator, [country], lang)
-        fig.update_layout(title=dict(text=f"{iname(indicator, lang)} — {cname(country, lang)}"))
+        fig.update_layout(title=dict(text=f"{iname(indicator, lang)} - {cname(country, lang)}"))
         st.plotly_chart(fig, use_container_width=True)
         st.markdown(marker + rest, unsafe_allow_html=True)
     else:

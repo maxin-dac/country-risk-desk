@@ -1,7 +1,7 @@
 {
  "NGA|Inflation|en": {
   "status": "done_degraded",
-  "title": "PESTEL — NGA — Inflation",
+  "title": "PESTEL - NGA - Inflation",
   "country": "NGA",
   "indicator": "Inflation",
   "lang": "en",
@@ -30,7 +30,7 @@
  },
  "NGA|Inflation|fr": {
   "status": "done_degraded",
-  "title": "PESTEL — NGA — Inflation",
+  "title": "PESTEL - NGA - Inflation",
   "country": "NGA",
   "indicator": "Inflation",
   "lang": "fr",
@@ -59,7 +59,7 @@
  },
  "NGA|Interest rate|en": {
   "status": "done_degraded",
-  "title": "PESTEL — NGA — Interest rate",
+  "title": "PESTEL - NGA - Interest rate",
   "country": "NGA",
   "indicator": "Interest rate",
   "lang": "en",
@@ -88,7 +88,7 @@
  },
  "NGA|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "PESTEL — NGA — Interest rate",
+  "title": "PESTEL - NGA - Interest rate",
   "country": "NGA",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -117,7 +117,7 @@
  },
  "ARG|GDP growth|en": {
   "status": "done_degraded",
-  "title": "PESTEL — ARG — GDP growth",
+  "title": "PESTEL - ARG - GDP growth",
   "country": "ARG",
   "indicator": "GDP growth",
   "lang": "en",
@@ -146,7 +146,7 @@
  },
  "ARG|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "PESTEL — ARG — GDP growth",
+  "title": "PESTEL - ARG - GDP growth",
   "country": "ARG",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -175,7 +175,7 @@
  },
  "ARG|Inflation|en": {
   "status": "done_degraded",
-  "title": "PESTEL — ARG — Inflation",
+  "title": "PESTEL - ARG - Inflation",
   "country": "ARG",
   "indicator": "Inflation",
   "lang": "en",
@@ -204,7 +204,7 @@
  },
  "ARG|Inflation|fr": {
   "status": "done_degraded",
-  "title": "PESTEL — ARG — Inflation",
+  "title": "PESTEL - ARG - Inflation",
   "country": "ARG",
   "indicator": "Inflation",
   "lang": "fr",
@@ -233,7 +233,7 @@
  },
  "ARG|Interest rate|en": {
   "status": "done_degraded",
-  "title": "PESTEL — ARG — Interest rate",
+  "title": "PESTEL - ARG - Interest rate",
   "country": "ARG",
   "indicator": "Interest rate",
   "lang": "en",
@@ -262,7 +262,7 @@
  },
  "ARG|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "PESTEL — ARG — Interest rate",
+  "title": "PESTEL - ARG - Interest rate",
   "country": "ARG",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -291,7 +291,7 @@
  },
  "SAU|GDP growth|en": {
   "status": "done_degraded",
-  "title": "PESTEL — SAU — GDP growth",
+  "title": "PESTEL - SAU - GDP growth",
   "country": "SAU",
   "indicator": "GDP growth",
   "lang": "en",
@@ -320,7 +320,7 @@
  },
  "SAU|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "PESTEL — SAU — GDP growth",
+  "title": "PESTEL - SAU - GDP growth",
   "country": "SAU",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -349,7 +349,7 @@
  },
  "SAU|Inflation|en": {
   "status": "done_degraded",
-  "title": "PESTEL — SAU — Inflation",
+  "title": "PESTEL - SAU - Inflation",
   "country": "SAU",
   "indicator": "Inflation",
   "lang": "en",
@@ -378,7 +378,7 @@
  },
  "SAU|Inflation|fr": {
   "status": "done_degraded",
-  "title": "PESTEL — SAU — Inflation",
+  "title": "PESTEL - SAU - Inflation",
   "country": "SAU",
   "indicator": "Inflation",
   "lang": "fr",
@@ -407,7 +407,7 @@
  },
  "VNM|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — CO2 per capita",
+  "title": "Country Risk Desk - VNM - CO2 per capita",
   "country": "VNM",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -439,7 +439,7 @@
  },
  "VNM|CO2 per capita|fr": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — CO2 per capita",
+  "title": "Country Risk Desk - VNM - CO2 per capita",
   "country": "VNM",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -524,7 +524,7 @@
  },
  "VNM|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Control of corruption",
+  "title": "Country Risk Desk - VNM - Control of corruption",
   "country": "VNM",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -553,7 +553,7 @@
  },
  "VNM|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Control of corruption",
+  "title": "Country Risk Desk - VNM - Control of corruption",
   "country": "VNM",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -585,7 +585,7 @@
  },
  "VNM|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Current account",
+  "title": "Country Risk Desk - VNM - Current account",
   "country": "VNM",
   "indicator": "Current account",
   "lang": "en",
@@ -617,7 +617,7 @@
  },
  "VNM|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Current account",
+  "title": "Country Risk Desk - VNM - Current account",
   "country": "VNM",
   "indicator": "Current account",
   "lang": "fr",
@@ -649,7 +649,7 @@
  },
  "VNM|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Electricity access",
+  "title": "Country Risk Desk - VNM - Electricity access",
   "country": "VNM",
   "indicator": "Electricity access",
   "lang": "en",
@@ -678,7 +678,7 @@
  },
  "VNM|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Electricity access",
+  "title": "Country Risk Desk - VNM - Electricity access",
   "country": "VNM",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -707,7 +707,7 @@
  },
  "VNM|External debt|en": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — External debt",
+  "title": "Country Risk Desk - VNM - External debt",
   "country": "VNM",
   "indicator": "External debt",
   "lang": "en",
@@ -762,7 +762,7 @@
  },
  "VNM|External debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — External debt",
+  "title": "Country Risk Desk - VNM - External debt",
   "country": "VNM",
   "indicator": "External debt",
   "lang": "fr",
@@ -794,7 +794,7 @@
  },
  "VNM|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — GDP growth",
+  "title": "Country Risk Desk - VNM - GDP growth",
   "country": "VNM",
   "indicator": "GDP growth",
   "lang": "en",
@@ -823,7 +823,7 @@
  },
  "VNM|GDP growth|fr": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — GDP growth",
+  "title": "Country Risk Desk - VNM - GDP growth",
   "country": "VNM",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -904,7 +904,7 @@
  },
  "VNM|Inflation|en": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — Inflation",
+  "title": "Country Risk Desk - VNM - Inflation",
   "country": "VNM",
   "indicator": "Inflation",
   "lang": "en",
@@ -974,7 +974,7 @@
  },
  "VNM|Inflation|fr": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — Inflation",
+  "title": "Country Risk Desk - VNM - Inflation",
   "country": "VNM",
   "indicator": "Inflation",
   "lang": "fr",
@@ -1057,7 +1057,7 @@
  },
  "VNM|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Interest rate",
+  "title": "Country Risk Desk - VNM - Interest rate",
   "country": "VNM",
   "indicator": "Interest rate",
   "lang": "en",
@@ -1086,7 +1086,7 @@
  },
  "VNM|Interest rate|fr": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — Interest rate",
+  "title": "Country Risk Desk - VNM - Interest rate",
   "country": "VNM",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -1170,7 +1170,7 @@
  },
  "VNM|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Political stability",
+  "title": "Country Risk Desk - VNM - Political stability",
   "country": "VNM",
   "indicator": "Political stability",
   "lang": "en",
@@ -1202,7 +1202,7 @@
  },
  "VNM|Political stability|fr": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — Political stability",
+  "title": "Country Risk Desk - VNM - Political stability",
   "country": "VNM",
   "indicator": "Political stability",
   "lang": "fr",
@@ -1273,7 +1273,7 @@
     "url": "https://www.imf.org/-/media/files/publications/weo/2026/april/english/ch3.pdf",
     "domain": "imf.org",
     "published_date": "Tue, 07 Apr 2026 14:33:24 GMT",
-    "content": "evidence suggests that macroeconomic stabilization achieved under IMF-supported programs can help reduce country risk premiums (Gehring and Lang 2020). The first scenario assumes that the wedges generated by the two-pronged confidence shocks associated with conflict gradually converge to their preconflict levels over eight years. [...] • Country risk premiums and uncertainty. Investment often remains depressed in postconflict econo-mies, particularly in developing economies that 21 Examples of countries undergoing rapid reconstruction of physical capital after large destruction include Germany, Japan, and Vietnam (Davis and Weinstein 2002; Brakman, Garretsen, and Schramm 2004). rely on foreign capital—including foreign direct investment—to finance investment and face elevated perceptions of economic and political risk (Le and [...] > random variation in the assignment of World Bank project leaders with differing levels of managerial ability finds that stronger project management reduces conflict in aid-receiving subnational regions, highlighting the role of aid effectiveness in lowering the likelihood of violence (Moscona 2025).\n> Peace continues Conflict restarts Fragile Nonfragile\n\nFigure 3.8. Peace Duration and Macroeconomic Correlates of \n\nFragile Peace \n\n(Percent)",
+    "content": "evidence suggests that macroeconomic stabilization achieved under IMF-supported programs can help reduce country risk premiums (Gehring and Lang 2020). The first scenario assumes that the wedges generated by the two-pronged confidence shocks associated with conflict gradually converge to their preconflict levels over eight years. [...] • Country risk premiums and uncertainty. Investment often remains depressed in postconflict econo-mies, particularly in developing economies that 21 Examples of countries undergoing rapid reconstruction of physical capital after large destruction include Germany, Japan, and Vietnam (Davis and Weinstein 2002; Brakman, Garretsen, and Schramm 2004). rely on foreign capital-including foreign direct investment-to finance investment and face elevated perceptions of economic and political risk (Le and [...] > random variation in the assignment of World Bank project leaders with differing levels of managerial ability finds that stronger project management reduces conflict in aid-receiving subnational regions, highlighting the role of aid effectiveness in lowering the likelihood of violence (Moscona 2025).\n> Peace continues Conflict restarts Fragile Nonfragile\n\nFigure 3.8. Peace Duration and Macroeconomic Correlates of \n\nFragile Peace \n\n(Percent)",
     "id": "S2"
    }
   ],
@@ -1286,7 +1286,7 @@
  },
  "VNM|Reserves|en": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — Reserves",
+  "title": "Country Risk Desk - VNM - Reserves",
   "country": "VNM",
   "indicator": "Reserves",
   "lang": "en",
@@ -1375,7 +1375,7 @@
  },
  "VNM|Reserves|fr": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — Reserves",
+  "title": "Country Risk Desk - VNM - Reserves",
   "country": "VNM",
   "indicator": "Reserves",
   "lang": "fr",
@@ -1455,7 +1455,7 @@
  },
  "VNM|Unemployment|en": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — Unemployment",
+  "title": "Country Risk Desk - VNM - Unemployment",
   "country": "VNM",
   "indicator": "Unemployment",
   "lang": "en",
@@ -1558,7 +1558,7 @@
  },
  "VNM|Unemployment|fr": {
   "status": "done",
-  "title": "Country Risk Desk — VNM — Unemployment",
+  "title": "Country Risk Desk - VNM - Unemployment",
   "country": "VNM",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -1665,7 +1665,7 @@
  },
  "VNM|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Women in workforce",
+  "title": "Country Risk Desk - VNM - Women in workforce",
   "country": "VNM",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -1694,7 +1694,7 @@
  },
  "VNM|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — VNM — Women in workforce",
+  "title": "Country Risk Desk - VNM - Women in workforce",
   "country": "VNM",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -1726,7 +1726,7 @@
  },
  "BRA|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — CO2 per capita",
+  "title": "Country Risk Desk - BRA - CO2 per capita",
   "country": "BRA",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -1758,7 +1758,7 @@
  },
  "BRA|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — CO2 per capita",
+  "title": "Country Risk Desk - BRA - CO2 per capita",
   "country": "BRA",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -1790,7 +1790,7 @@
  },
  "BRA|Control of corruption|en": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Control of corruption",
+  "title": "Country Risk Desk - BRA - Control of corruption",
   "country": "BRA",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -1860,7 +1860,7 @@
     "url": "https://www.worldbank.org/ext/en/country/brazil",
     "domain": "worldbank.org",
     "published_date": "Wed, 03 Dec 2025 00:00:00 GMT",
-    "content": "Brazil maintains solid macroeconomic buffers, including ample international reserves, low external debt, a credible Central Bank, and exchange rate flexibility. [...] The World Bank Group will continue to prioritize high-impact engagements that go beyond the scale of its financing, supporting Brazil’s development across these pillars.\n\nLast Updated: April 8th, 2026\n\nRead More\n\nRead Less\n\nsec-spacing\n\nsection-none\n\nsec-spacing-bottom\n\nsection-xhuge\n\nstyle\n\ndefault, title-text-button-container\n\nTHE LATEST FROM BRAZIL\n\nDiscover the human stories behind our projects and reports in Brazil—news that highlight real impact and local voices.\n\nSee all Blogs [...] It also emphasizes strengthening social protection and education for disadvantaged groups, advancing institutional reforms, promoting transparency, and fighting corruption. Mobilizing private capital is a central goal, with IFC and MIGA playing key roles. The CPF encourages close collaboration with development partners.\n\nThe previous CPF, covering FY2018–2023, was significantly adjusted in the 2022 Performance and Learning Review to respond to the COVID-19 pandemic.",
+    "content": "Brazil maintains solid macroeconomic buffers, including ample international reserves, low external debt, a credible Central Bank, and exchange rate flexibility. [...] The World Bank Group will continue to prioritize high-impact engagements that go beyond the scale of its financing, supporting Brazil’s development across these pillars.\n\nLast Updated: April 8th, 2026\n\nRead More\n\nRead Less\n\nsec-spacing\n\nsection-none\n\nsec-spacing-bottom\n\nsection-xhuge\n\nstyle\n\ndefault, title-text-button-container\n\nTHE LATEST FROM BRAZIL\n\nDiscover the human stories behind our projects and reports in Brazil-news that highlight real impact and local voices.\n\nSee all Blogs [...] It also emphasizes strengthening social protection and education for disadvantaged groups, advancing institutional reforms, promoting transparency, and fighting corruption. Mobilizing private capital is a central goal, with IFC and MIGA playing key roles. The CPF encourages close collaboration with development partners.\n\nThe previous CPF, covering FY2018–2023, was significantly adjusted in the 2022 Performance and Learning Review to respond to the COVID-19 pandemic.",
     "id": "S3"
    }
   ],
@@ -1873,7 +1873,7 @@
  },
  "BRA|Control of corruption|fr": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Control of corruption",
+  "title": "Country Risk Desk - BRA - Control of corruption",
   "country": "BRA",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -1941,7 +1941,7 @@
     "url": "https://www.worldbank.org/ext/en/country/brazil",
     "domain": "worldbank.org",
     "published_date": "Wed, 03 Dec 2025 00:00:00 GMT",
-    "content": "Brazil maintains solid macroeconomic buffers, including ample international reserves, low external debt, a credible Central Bank, and exchange rate flexibility. [...] The World Bank Group will continue to prioritize high-impact engagements that go beyond the scale of its financing, supporting Brazil’s development across these pillars.\n\nLast Updated: April 8th, 2026\n\nRead More\n\nRead Less\n\nsec-spacing\n\nsection-none\n\nsec-spacing-bottom\n\nsection-xhuge\n\nstyle\n\ndefault, title-text-button-container\n\nTHE LATEST FROM BRAZIL\n\nDiscover the human stories behind our projects and reports in Brazil—news that highlight real impact and local voices.\n\nSee all Blogs [...] It also emphasizes strengthening social protection and education for disadvantaged groups, advancing institutional reforms, promoting transparency, and fighting corruption. Mobilizing private capital is a central goal, with IFC and MIGA playing key roles. The CPF encourages close collaboration with development partners.\n\nThe previous CPF, covering FY2018–2023, was significantly adjusted in the 2022 Performance and Learning Review to respond to the COVID-19 pandemic.",
+    "content": "Brazil maintains solid macroeconomic buffers, including ample international reserves, low external debt, a credible Central Bank, and exchange rate flexibility. [...] The World Bank Group will continue to prioritize high-impact engagements that go beyond the scale of its financing, supporting Brazil’s development across these pillars.\n\nLast Updated: April 8th, 2026\n\nRead More\n\nRead Less\n\nsec-spacing\n\nsection-none\n\nsec-spacing-bottom\n\nsection-xhuge\n\nstyle\n\ndefault, title-text-button-container\n\nTHE LATEST FROM BRAZIL\n\nDiscover the human stories behind our projects and reports in Brazil-news that highlight real impact and local voices.\n\nSee all Blogs [...] It also emphasizes strengthening social protection and education for disadvantaged groups, advancing institutional reforms, promoting transparency, and fighting corruption. Mobilizing private capital is a central goal, with IFC and MIGA playing key roles. The CPF encourages close collaboration with development partners.\n\nThe previous CPF, covering FY2018–2023, was significantly adjusted in the 2022 Performance and Learning Review to respond to the COVID-19 pandemic.",
     "id": "S3"
    }
   ],
@@ -1954,7 +1954,7 @@
  },
  "BRA|Current account|en": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Current account",
+  "title": "Country Risk Desk - BRA - Current account",
   "country": "BRA",
   "indicator": "Current account",
   "lang": "en",
@@ -2008,7 +2008,7 @@
  },
  "BRA|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — Current account",
+  "title": "Country Risk Desk - BRA - Current account",
   "country": "BRA",
   "indicator": "Current account",
   "lang": "fr",
@@ -2040,7 +2040,7 @@
  },
  "BRA|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — Electricity access",
+  "title": "Country Risk Desk - BRA - Electricity access",
   "country": "BRA",
   "indicator": "Electricity access",
   "lang": "en",
@@ -2069,7 +2069,7 @@
  },
  "BRA|Electricity access|fr": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Electricity access",
+  "title": "Country Risk Desk - BRA - Electricity access",
   "country": "BRA",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -2161,7 +2161,7 @@
  },
  "BRA|External debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — External debt",
+  "title": "Country Risk Desk - BRA - External debt",
   "country": "BRA",
   "indicator": "External debt",
   "lang": "en",
@@ -2190,7 +2190,7 @@
  },
  "BRA|External debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — External debt",
+  "title": "Country Risk Desk - BRA - External debt",
   "country": "BRA",
   "indicator": "External debt",
   "lang": "fr",
@@ -2209,11 +2209,11 @@
      ]
     },
     {
-     "text": "Les arriérés de service de la dette extérieure ont été accumulés avec les institutions multilatérales — Arab Bank for Economic Development in Africa (BADEA), la European Investment Bank (EIB), Islamic [...].",
+     "text": "Les arriérés de service de la dette extérieure ont été accumulés avec les institutions multilatérales - Arab Bank for Economic Development in Africa (BADEA), la European Investment Bank (EIB), Islamic [...].",
      "evidence": [
       {
        "source_id": "S1",
-       "quote": "External debt service arrears have been accumulated with both multilateral institutions — Arab Bank for Economic Development in Africa (BADEA ), the European Investment Bank (EIB), Islamic"
+       "quote": "External debt service arrears have been accumulated with both multilateral institutions - Arab Bank for Economic Development in Africa (BADEA ), the European Investment Bank (EIB), Islamic"
       }
      ]
     },
@@ -2249,11 +2249,11 @@
      ]
     },
     {
-     "text": "Les arriérés de service de la dette extérieure ont été accumulés avec les institutions multilatérales — Arab Bank for Economic Development in Africa (BADEA), la European Investment Bank (EIB), Islamic [...].",
+     "text": "Les arriérés de service de la dette extérieure ont été accumulés avec les institutions multilatérales - Arab Bank for Economic Development in Africa (BADEA), la European Investment Bank (EIB), Islamic [...].",
      "evidence": [
       {
        "source_id": "S1",
-       "quote": "External debt service arrears have been accumulated with both multilateral institutions — Arab Bank for Economic Development in Africa (BADEA ), the European Investment Bank (EIB), Islamic"
+       "quote": "External debt service arrears have been accumulated with both multilateral institutions - Arab Bank for Economic Development in Africa (BADEA ), the European Investment Bank (EIB), Islamic"
       }
      ]
     },
@@ -2286,7 +2286,7 @@
     "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1mozea2026001-source-pdf.pdf",
     "domain": "imf.org",
     "published_date": "Thu, 19 Feb 2026 14:24:13 GMT",
-    "content": "average 35 percent of total domestic debt . Similarly, servicing external debt will become more \n\nchallenging under the baseline due to the declining path of grants and concessional financing \n\nshown in the deterioration of the debt service -to -exports and debt service -to -revenue ratio s\n\ncompared to the 2024 DSA (Figure 1 , bottom charts ). [...] million 8 (Text Table 4). As of end -2025, additional external debt service arrears of USD 230 million or \n\n0.9 percent of GDP have been incurred , delayed by 79 days on average , some of which delayed by 8\n\nmonths . External debt service arrears have been accumulated with both multilateral institutions —\n\nArab Bank for Economic Development in Africa (BADEA ), the European Investment Bank (EIB), Islamic [...] • The PV of external public debt -to -GDP is projected at 45.3 percent at end -202 5, staying above \n\nthreshold of 30 percent until 203 2, compared to 2030 in the 2024 DSA. \n\n• The PV of external public debt -to -exports peaks at 126 percent in 202 5, compared to 1 28\n\npercent in the 2024 DSA , remain ing below the threshold of 140 percent over the projection \n\nperiod .\n\n• External public debt service -to -exports remains below the threshold until 2028 when it reache s",
+    "content": "average 35 percent of total domestic debt . Similarly, servicing external debt will become more \n\nchallenging under the baseline due to the declining path of grants and concessional financing \n\nshown in the deterioration of the debt service -to -exports and debt service -to -revenue ratio s\n\ncompared to the 2024 DSA (Figure 1 , bottom charts ). [...] million 8 (Text Table 4). As of end -2025, additional external debt service arrears of USD 230 million or \n\n0.9 percent of GDP have been incurred , delayed by 79 days on average , some of which delayed by 8\n\nmonths . External debt service arrears have been accumulated with both multilateral institutions -\n\nArab Bank for Economic Development in Africa (BADEA ), the European Investment Bank (EIB), Islamic [...] • The PV of external public debt -to -GDP is projected at 45.3 percent at end -202 5, staying above \n\nthreshold of 30 percent until 203 2, compared to 2030 in the 2024 DSA. \n\n• The PV of external public debt -to -exports peaks at 126 percent in 202 5, compared to 1 28\n\npercent in the 2024 DSA , remain ing below the threshold of 140 percent over the projection \n\nperiod .\n\n• External public debt service -to -exports remains below the threshold until 2028 when it reache s",
     "id": "S1"
    }
   ],
@@ -2299,7 +2299,7 @@
  },
  "BRA|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — GDP growth",
+  "title": "Country Risk Desk - BRA - GDP growth",
   "country": "BRA",
   "indicator": "GDP growth",
   "lang": "en",
@@ -2331,7 +2331,7 @@
  },
  "BRA|GDP growth|fr": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — GDP growth",
+  "title": "Country Risk Desk - BRA - GDP growth",
   "country": "BRA",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -2433,7 +2433,7 @@
  },
  "BRA|Gov debt|en": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Gov debt",
+  "title": "Country Risk Desk - BRA - Gov debt",
   "country": "BRA",
   "indicator": "Gov debt",
   "lang": "en",
@@ -2501,7 +2501,7 @@
     "url": "https://www.imf.org/-/media/files/publications/fiscal-monitor/2026/april/english/text.pdf",
     "domain": "imf.org",
     "published_date": "Mon, 11 May 2026 15:13:31 GMT",
-    "content": "gilt yield climbed from 4.23 percent on the eve of the war (February 27, 2026) to 4.83 percent on April 1, 2026— the latest observation at the time of drafting. The fiscal outlook offers little respite. Although the global primary-deficit-to-GDP ratio is projected to narrow modestly by 2031 by about half a percentage point from its current level of 2.2 percent (Figure 1.4), that expected improvement is insufficient to stabilize the debt ratio, much less put debt on a downward path. Over the [...] Brazil: General government data broadly follow GFSM 2014. Municipalities’ primary balances follow below-the-line borrowing requirements. Accrual data for non-interest revenues are not available. Gross public debt includes the Treasury bills on the central bank’s balance sheet, including those not used under repurchase agreements. Net public debt consolidates nonfinancial public sector and central bank debt. The authorities’ definition of general government gross debt excludes government [...] Source: IMF staff estimates and projections. Note: The estimates and projections are based on statistical information available through April 1, 2026, but may not reflect the latest published data in all cases. For the date of the last data update for each economy, please refer to the notes provided in the online World Economic Outlook database. All country averages are weighted by nominal GDP converted to US dollars (adjusted by purchasing power parity only for world output) at average market",
+    "content": "gilt yield climbed from 4.23 percent on the eve of the war (February 27, 2026) to 4.83 percent on April 1, 2026- the latest observation at the time of drafting. The fiscal outlook offers little respite. Although the global primary-deficit-to-GDP ratio is projected to narrow modestly by 2031 by about half a percentage point from its current level of 2.2 percent (Figure 1.4), that expected improvement is insufficient to stabilize the debt ratio, much less put debt on a downward path. Over the [...] Brazil: General government data broadly follow GFSM 2014. Municipalities’ primary balances follow below-the-line borrowing requirements. Accrual data for non-interest revenues are not available. Gross public debt includes the Treasury bills on the central bank’s balance sheet, including those not used under repurchase agreements. Net public debt consolidates nonfinancial public sector and central bank debt. The authorities’ definition of general government gross debt excludes government [...] Source: IMF staff estimates and projections. Note: The estimates and projections are based on statistical information available through April 1, 2026, but may not reflect the latest published data in all cases. For the date of the last data update for each economy, please refer to the notes provided in the online World Economic Outlook database. All country averages are weighted by nominal GDP converted to US dollars (adjusted by purchasing power parity only for world output) at average market",
     "id": "S2"
    },
    {
@@ -2522,7 +2522,7 @@
  },
  "BRA|Gov debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Gov debt",
+  "title": "Country Risk Desk - BRA - Gov debt",
   "country": "BRA",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -2581,7 +2581,7 @@
     "url": "https://www.imf.org/-/media/files/publications/fiscal-monitor/2026/april/english/text.pdf",
     "domain": "imf.org",
     "published_date": "Mon, 11 May 2026 15:13:31 GMT",
-    "content": "gilt yield climbed from 4.23 percent on the eve of the war (February 27, 2026) to 4.83 percent on April 1, 2026— the latest observation at the time of drafting. The fiscal outlook offers little respite. Although the global primary-deficit-to-GDP ratio is projected to narrow modestly by 2031 by about half a percentage point from its current level of 2.2 percent (Figure 1.4), that expected improvement is insufficient to stabilize the debt ratio, much less put debt on a downward path. Over the [...] Brazil: General government data broadly follow GFSM 2014. Municipalities’ primary balances follow below-the-line borrowing requirements. Accrual data for non-interest revenues are not available. Gross public debt includes the Treasury bills on the central bank’s balance sheet, including those not used under repurchase agreements. Net public debt consolidates nonfinancial public sector and central bank debt. The authorities’ definition of general government gross debt excludes government [...] Source: IMF staff estimates and projections. Note: The estimates and projections are based on statistical information available through April 1, 2026, but may not reflect the latest published data in all cases. For the date of the last data update for each economy, please refer to the notes provided in the online World Economic Outlook database. All country averages are weighted by nominal GDP converted to US dollars (adjusted by purchasing power parity only for world output) at average market",
+    "content": "gilt yield climbed from 4.23 percent on the eve of the war (February 27, 2026) to 4.83 percent on April 1, 2026- the latest observation at the time of drafting. The fiscal outlook offers little respite. Although the global primary-deficit-to-GDP ratio is projected to narrow modestly by 2031 by about half a percentage point from its current level of 2.2 percent (Figure 1.4), that expected improvement is insufficient to stabilize the debt ratio, much less put debt on a downward path. Over the [...] Brazil: General government data broadly follow GFSM 2014. Municipalities’ primary balances follow below-the-line borrowing requirements. Accrual data for non-interest revenues are not available. Gross public debt includes the Treasury bills on the central bank’s balance sheet, including those not used under repurchase agreements. Net public debt consolidates nonfinancial public sector and central bank debt. The authorities’ definition of general government gross debt excludes government [...] Source: IMF staff estimates and projections. Note: The estimates and projections are based on statistical information available through April 1, 2026, but may not reflect the latest published data in all cases. For the date of the last data update for each economy, please refer to the notes provided in the online World Economic Outlook database. All country averages are weighted by nominal GDP converted to US dollars (adjusted by purchasing power parity only for world output) at average market",
     "id": "S2"
    },
    {
@@ -2602,7 +2602,7 @@
  },
  "BRA|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — Inflation",
+  "title": "Country Risk Desk - BRA - Inflation",
   "country": "BRA",
   "indicator": "Inflation",
   "lang": "en",
@@ -2634,7 +2634,7 @@
  },
  "BRA|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — Inflation",
+  "title": "Country Risk Desk - BRA - Inflation",
   "country": "BRA",
   "indicator": "Inflation",
   "lang": "fr",
@@ -2666,7 +2666,7 @@
  },
  "BRA|Interest rate|en": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Interest rate",
+  "title": "Country Risk Desk - BRA - Interest rate",
   "country": "BRA",
   "indicator": "Interest rate",
   "lang": "en",
@@ -2767,7 +2767,7 @@
  },
  "BRA|Interest rate|fr": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Interest rate",
+  "title": "Country Risk Desk - BRA - Interest rate",
   "country": "BRA",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -2859,7 +2859,7 @@
  },
  "BRA|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — Political stability",
+  "title": "Country Risk Desk - BRA - Political stability",
   "country": "BRA",
   "indicator": "Political stability",
   "lang": "en",
@@ -2891,7 +2891,7 @@
  },
  "BRA|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — Political stability",
+  "title": "Country Risk Desk - BRA - Political stability",
   "country": "BRA",
   "indicator": "Political stability",
   "lang": "fr",
@@ -2923,7 +2923,7 @@
  },
  "BRA|Reserves|en": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Reserves",
+  "title": "Country Risk Desk - BRA - Reserves",
   "country": "BRA",
   "indicator": "Reserves",
   "lang": "en",
@@ -3006,7 +3006,7 @@
  },
  "BRA|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — Reserves",
+  "title": "Country Risk Desk - BRA - Reserves",
   "country": "BRA",
   "indicator": "Reserves",
   "lang": "fr",
@@ -3038,7 +3038,7 @@
  },
  "BRA|Unemployment|en": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Unemployment",
+  "title": "Country Risk Desk - BRA - Unemployment",
   "country": "BRA",
   "indicator": "Unemployment",
   "lang": "en",
@@ -3113,7 +3113,7 @@
     "url": "https://www.worldbank.org/ext/en/country/brazil",
     "domain": "worldbank.org",
     "published_date": "Wed, 03 Dec 2025 00:00:00 GMT",
-    "content": "Real GDP grew by 3.4% in 2024, but is projected to slow to 2.3% in 2025 and to 1.6% in 2026 due to higher interest rates, a weaker external environment, and slower household consumption. Inflation is forecast to gradually decline to 4.2% by 2027, within the Central Bank’s target range. Poverty (at $6.85/day) decreased from 21.7% in 2023 to 20.9% in 2024, supported by strong job creation (2.8 million new jobs), record-low unemployment (6.2%), and a 4.8% increase in real wages. However, poverty [...] Brazil maintains solid macroeconomic buffers, including ample international reserves, low external debt, a credible Central Bank, and exchange rate flexibility. [...] col-lg-10\n\nBrazil’s economy has shown resilience, with average growth exceeding 3% over the past three years. Robust private consumption—supported by social transfers—has driven demand, while services and agriculture have led supply-side expansion. A growing labor market has contributed to reductions in poverty and inequality.",
+    "content": "Real GDP grew by 3.4% in 2024, but is projected to slow to 2.3% in 2025 and to 1.6% in 2026 due to higher interest rates, a weaker external environment, and slower household consumption. Inflation is forecast to gradually decline to 4.2% by 2027, within the Central Bank’s target range. Poverty (at $6.85/day) decreased from 21.7% in 2023 to 20.9% in 2024, supported by strong job creation (2.8 million new jobs), record-low unemployment (6.2%), and a 4.8% increase in real wages. However, poverty [...] Brazil maintains solid macroeconomic buffers, including ample international reserves, low external debt, a credible Central Bank, and exchange rate flexibility. [...] col-lg-10\n\nBrazil’s economy has shown resilience, with average growth exceeding 3% over the past three years. Robust private consumption-supported by social transfers-has driven demand, while services and agriculture have led supply-side expansion. A growing labor market has contributed to reductions in poverty and inequality.",
     "id": "S3"
    }
   ],
@@ -3126,7 +3126,7 @@
  },
  "BRA|Unemployment|fr": {
   "status": "done",
-  "title": "Country Risk Desk — BRA — Unemployment",
+  "title": "Country Risk Desk - BRA - Unemployment",
   "country": "BRA",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -3219,7 +3219,7 @@
     "url": "https://www.worldbank.org/ext/en/country/brazil",
     "domain": "worldbank.org",
     "published_date": "Wed, 03 Dec 2025 00:00:00 GMT",
-    "content": "Real GDP grew by 3.4% in 2024, but is projected to slow to 2.3% in 2025 and to 1.6% in 2026 due to higher interest rates, a weaker external environment, and slower household consumption. Inflation is forecast to gradually decline to 4.2% by 2027, within the Central Bank’s target range. Poverty (at $6.85/day) decreased from 21.7% in 2023 to 20.9% in 2024, supported by strong job creation (2.8 million new jobs), record-low unemployment (6.2%), and a 4.8% increase in real wages. However, poverty [...] Brazil maintains solid macroeconomic buffers, including ample international reserves, low external debt, a credible Central Bank, and exchange rate flexibility. [...] col-lg-10\n\nBrazil’s economy has shown resilience, with average growth exceeding 3% over the past three years. Robust private consumption—supported by social transfers—has driven demand, while services and agriculture have led supply-side expansion. A growing labor market has contributed to reductions in poverty and inequality.",
+    "content": "Real GDP grew by 3.4% in 2024, but is projected to slow to 2.3% in 2025 and to 1.6% in 2026 due to higher interest rates, a weaker external environment, and slower household consumption. Inflation is forecast to gradually decline to 4.2% by 2027, within the Central Bank’s target range. Poverty (at $6.85/day) decreased from 21.7% in 2023 to 20.9% in 2024, supported by strong job creation (2.8 million new jobs), record-low unemployment (6.2%), and a 4.8% increase in real wages. However, poverty [...] Brazil maintains solid macroeconomic buffers, including ample international reserves, low external debt, a credible Central Bank, and exchange rate flexibility. [...] col-lg-10\n\nBrazil’s economy has shown resilience, with average growth exceeding 3% over the past three years. Robust private consumption-supported by social transfers-has driven demand, while services and agriculture have led supply-side expansion. A growing labor market has contributed to reductions in poverty and inequality.",
     "id": "S3"
    }
   ],
@@ -3232,7 +3232,7 @@
  },
  "BRA|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — Women in workforce",
+  "title": "Country Risk Desk - BRA - Women in workforce",
   "country": "BRA",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -3264,7 +3264,7 @@
  },
  "BRA|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — BRA — Women in workforce",
+  "title": "Country Risk Desk - BRA - Women in workforce",
   "country": "BRA",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -3296,7 +3296,7 @@
  },
  "EGY|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — CO2 per capita",
+  "title": "Country Risk Desk - EGY - CO2 per capita",
   "country": "EGY",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -3328,7 +3328,7 @@
  },
  "EGY|CO2 per capita|fr": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — CO2 per capita",
+  "title": "Country Risk Desk - EGY - CO2 per capita",
   "country": "EGY",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -3413,7 +3413,7 @@
  },
  "EGY|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Control of corruption",
+  "title": "Country Risk Desk - EGY - Control of corruption",
   "country": "EGY",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -3445,7 +3445,7 @@
  },
  "EGY|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Control of corruption",
+  "title": "Country Risk Desk - EGY - Control of corruption",
   "country": "EGY",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -3477,7 +3477,7 @@
  },
  "EGY|Current account|en": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — Current account",
+  "title": "Country Risk Desk - EGY - Current account",
   "country": "EGY",
   "indicator": "Current account",
   "lang": "en",
@@ -3596,7 +3596,7 @@
  },
  "EGY|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Current account",
+  "title": "Country Risk Desk - EGY - Current account",
   "country": "EGY",
   "indicator": "Current account",
   "lang": "fr",
@@ -3628,7 +3628,7 @@
  },
  "EGY|Electricity access|en": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — Electricity access",
+  "title": "Country Risk Desk - EGY - Electricity access",
   "country": "EGY",
   "indicator": "Electricity access",
   "lang": "en",
@@ -3709,7 +3709,7 @@
  },
  "EGY|Electricity access|fr": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — Electricity access",
+  "title": "Country Risk Desk - EGY - Electricity access",
   "country": "EGY",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -3803,7 +3803,7 @@
  },
  "EGY|External debt|en": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — External debt",
+  "title": "Country Risk Desk - EGY - External debt",
   "country": "EGY",
   "indicator": "External debt",
   "lang": "en",
@@ -3851,7 +3851,7 @@
     "url": "https://www.imf.org/-/media/files/publications/cr/2025/english/1mwiea2025001-source-pdf.pdf",
     "domain": "imf.org",
     "published_date": "Fri, 24 Oct 2025 02:28:30 GMT",
-    "content": "## STAFF REPORT FOR THE 2025 ARTICLE IV \n\n## CONSULTATION —DEBT SUSTAINABILIT Y ANALYSIS \n\nMalawi’s external and overall public debt is assessed as “in distress ,” unchanged from the previous Debt \n\nSustainability Analysis ( DSA) published in November 202 3. This DSA presents an analysis of Malawi’s \n\ndebt outlook prior to the authorities’ planned external debt restructuring, the negotiations of which are \n\nongoing, but where progress has been limited to official bilateral creditors only . [...] Debt stock and service (percent of GDP, unless otherwise indicated) External debt (public sector) 43.2 37.4 31.6 29.1 25.8 22.7 19.6 16.9 NPV of public external debt (percent of exports) 205.1 229.8 223.3 202.8 192.9 179.3 166.3 154.1 Domestic public debt 3 40.4 50.2 48.6 51.5 55.6 59.5 63.2 66.1 Total public debt 3 83.6 87.6 80.2 80.6 81.4 82.2 82.8 83.0 External debt service (percent of exports) 11.6 11.7 64.0 21.2 17.1 14.9 14.6 13.0 External debt service (percent of revenue excl. grants) [...] 2/ Variables include real GDP growth, GDP deflator (in U.S. dollar terms), non-interest current account in percent of GDP, and non-debt creating flows. \n\n3/ Includes official and private transfers and FDI. \n\nDebt service-to-exports ratio \n\nDebt service-to-revenue ratio \n\nPV of debt-to-exports ratio \n\nProjections 1/ \n\nPV of debt-to GDP ratio MALAWI \n\nINTERNATIONAL MONETARY FUND 23 \n\nTable 4. Malawi : Sensitivity Analysis for Key Indicators of Public Debt, 2025 -35",
+    "content": "## STAFF REPORT FOR THE 2025 ARTICLE IV \n\n## CONSULTATION -DEBT SUSTAINABILIT Y ANALYSIS \n\nMalawi’s external and overall public debt is assessed as “in distress ,” unchanged from the previous Debt \n\nSustainability Analysis ( DSA) published in November 202 3. This DSA presents an analysis of Malawi’s \n\ndebt outlook prior to the authorities’ planned external debt restructuring, the negotiations of which are \n\nongoing, but where progress has been limited to official bilateral creditors only . [...] Debt stock and service (percent of GDP, unless otherwise indicated) External debt (public sector) 43.2 37.4 31.6 29.1 25.8 22.7 19.6 16.9 NPV of public external debt (percent of exports) 205.1 229.8 223.3 202.8 192.9 179.3 166.3 154.1 Domestic public debt 3 40.4 50.2 48.6 51.5 55.6 59.5 63.2 66.1 Total public debt 3 83.6 87.6 80.2 80.6 81.4 82.2 82.8 83.0 External debt service (percent of exports) 11.6 11.7 64.0 21.2 17.1 14.9 14.6 13.0 External debt service (percent of revenue excl. grants) [...] 2/ Variables include real GDP growth, GDP deflator (in U.S. dollar terms), non-interest current account in percent of GDP, and non-debt creating flows. \n\n3/ Includes official and private transfers and FDI. \n\nDebt service-to-exports ratio \n\nDebt service-to-revenue ratio \n\nPV of debt-to-exports ratio \n\nProjections 1/ \n\nPV of debt-to GDP ratio MALAWI \n\nINTERNATIONAL MONETARY FUND 23 \n\nTable 4. Malawi : Sensitivity Analysis for Key Indicators of Public Debt, 2025 -35",
     "id": "S1"
    },
    {
@@ -3872,7 +3872,7 @@
  },
  "EGY|External debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — External debt",
+  "title": "Country Risk Desk - EGY - External debt",
   "country": "EGY",
   "indicator": "External debt",
   "lang": "fr",
@@ -3904,7 +3904,7 @@
  },
  "EGY|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — GDP growth",
+  "title": "Country Risk Desk - EGY - GDP growth",
   "country": "EGY",
   "indicator": "GDP growth",
   "lang": "en",
@@ -3936,7 +3936,7 @@
  },
  "EGY|GDP growth|fr": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — GDP growth",
+  "title": "Country Risk Desk - EGY - GDP growth",
   "country": "EGY",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -4032,7 +4032,7 @@
  },
  "EGY|Gov debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Gov debt",
+  "title": "Country Risk Desk - EGY - Gov debt",
   "country": "EGY",
   "indicator": "Gov debt",
   "lang": "en",
@@ -4064,7 +4064,7 @@
  },
  "EGY|Gov debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — Gov debt",
+  "title": "Country Risk Desk - EGY - Gov debt",
   "country": "EGY",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -4157,7 +4157,7 @@
     "url": "https://www.imf.org/-/media/files/publications/fiscal-monitor/2026/april/english/text.pdf",
     "domain": "imf.org",
     "published_date": "Mon, 11 May 2026 15:13:31 GMT",
-    "content": "Ecuador: Fiscal projections for 2026–31 are excluded due to ongoing program discussions. \n\nEgypt: Fiscal projections are mainly based on budget sector operations. Projections are based on the budget for FY2024/25 and the IMF’s macroeconomic outlook. \n\nEstonia: The forecast incorporates the authorities’ budget for 2026, adopted tax changes, recent developments, and staff ’s macroeconomic assumptions. [...] gilt yield climbed from 4.23 percent on the eve of the war (February 27, 2026) to 4.83 percent on April 1, 2026— the latest observation at the time of drafting. The fiscal outlook offers little respite. Although the global primary-deficit-to-GDP ratio is projected to narrow modestly by 2031 by about half a percentage point from its current level of 2.2 percent (Figure 1.4), that expected improvement is insufficient to stabilize the debt ratio, much less put debt on a downward path. Over the [...] Country-specific data and projections for key fiscal variables are based on the April 2026 World Economic Outlook database, unless indicated otherwise, and compiled by IMF staff. Historical data and projections are based on the information IMF country desk officers gather in the context of their missions and through their ongoing analysis of the evolving situation in each country; data are updated continually as more information becomes available. Structural breaks in data may be adjusted to",
+    "content": "Ecuador: Fiscal projections for 2026–31 are excluded due to ongoing program discussions. \n\nEgypt: Fiscal projections are mainly based on budget sector operations. Projections are based on the budget for FY2024/25 and the IMF’s macroeconomic outlook. \n\nEstonia: The forecast incorporates the authorities’ budget for 2026, adopted tax changes, recent developments, and staff ’s macroeconomic assumptions. [...] gilt yield climbed from 4.23 percent on the eve of the war (February 27, 2026) to 4.83 percent on April 1, 2026- the latest observation at the time of drafting. The fiscal outlook offers little respite. Although the global primary-deficit-to-GDP ratio is projected to narrow modestly by 2031 by about half a percentage point from its current level of 2.2 percent (Figure 1.4), that expected improvement is insufficient to stabilize the debt ratio, much less put debt on a downward path. Over the [...] Country-specific data and projections for key fiscal variables are based on the April 2026 World Economic Outlook database, unless indicated otherwise, and compiled by IMF staff. Historical data and projections are based on the information IMF country desk officers gather in the context of their missions and through their ongoing analysis of the evolving situation in each country; data are updated continually as more information becomes available. Structural breaks in data may be adjusted to",
     "id": "S2"
    },
    {
@@ -4178,7 +4178,7 @@
  },
  "EGY|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Inflation",
+  "title": "Country Risk Desk - EGY - Inflation",
   "country": "EGY",
   "indicator": "Inflation",
   "lang": "en",
@@ -4210,7 +4210,7 @@
  },
  "EGY|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Inflation",
+  "title": "Country Risk Desk - EGY - Inflation",
   "country": "EGY",
   "indicator": "Inflation",
   "lang": "fr",
@@ -4242,7 +4242,7 @@
  },
  "EGY|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Interest rate",
+  "title": "Country Risk Desk - EGY - Interest rate",
   "country": "EGY",
   "indicator": "Interest rate",
   "lang": "en",
@@ -4271,7 +4271,7 @@
  },
  "EGY|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Interest rate",
+  "title": "Country Risk Desk - EGY - Interest rate",
   "country": "EGY",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -4300,7 +4300,7 @@
  },
  "EGY|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Political stability",
+  "title": "Country Risk Desk - EGY - Political stability",
   "country": "EGY",
   "indicator": "Political stability",
   "lang": "en",
@@ -4332,7 +4332,7 @@
  },
  "EGY|Political stability|fr": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — Political stability",
+  "title": "Country Risk Desk - EGY - Political stability",
   "country": "EGY",
   "indicator": "Political stability",
   "lang": "fr",
@@ -4387,7 +4387,7 @@
  },
  "EGY|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Reserves",
+  "title": "Country Risk Desk - EGY - Reserves",
   "country": "EGY",
   "indicator": "Reserves",
   "lang": "en",
@@ -4419,7 +4419,7 @@
  },
  "EGY|Reserves|fr": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — Reserves",
+  "title": "Country Risk Desk - EGY - Reserves",
   "country": "EGY",
   "indicator": "Reserves",
   "lang": "fr",
@@ -4511,7 +4511,7 @@
  },
  "EGY|Unemployment|en": {
   "status": "done",
-  "title": "Country Risk Desk — EGY — Unemployment",
+  "title": "Country Risk Desk - EGY - Unemployment",
   "country": "EGY",
   "indicator": "Unemployment",
   "lang": "en",
@@ -4552,7 +4552,7 @@
      "evidence": [
       {
        "source_id": "S3",
-       "quote": "poverty—measured using the lower-middle-income country (LMIC) international poverty line (US$4.20/day in 2021 PPP terms)—increased by about five percentage"
+       "quote": "poverty-measured using the lower-middle-income country (LMIC) international poverty line (US$4.20/day in 2021 PPP terms)-increased by about five percentage"
       }
      ]
     }
@@ -4596,7 +4596,7 @@
     "url": "https://www.imf.org/-/media/files/publications/weo/2026/april/english/statsappendix.pdf",
     "domain": "imf.org",
     "published_date": "Wed, 22 Apr 2026 19:13:34 GMT",
-    "content": "Composites for fiscal data are sums of individual country data after conversion to US dollars at the aver-age market exchange rates in the years indicated. Composite unemployment rates and employment growth are weighted by labor force as a share of group labor force. Composites relating to external sector statistics are sums of individual country data after conversion to US dollars at the average market exchange rates in the years indicated for balance of payments data and at end-of-year market [...] meth-odologies for the compilation of national statistics, including analytical frameworks, concepts, definitions, classifications, and valuation procedures used in the production of economic statistics. The WEO database reflects information from both national source agencies and international organizations. Most countries’ macroeconomic data as presented in the WEO conform broadly to the 2008 version of the System of National Accounts (SNA 2008). The IMF’s sector statistical standards—the [...] West Bank and Gaza: Estimates and projections for 2025–31 are excluded from publication owing to the unusually high degree of uncertainty. The latest actual annual data for consumer prices, population, and government finances are for 2025. Annual data for the unemployment rate are available up to 2022. \n\nYemen: The revised data reflect the territory under control of the Internationally Recognized Government (IRG). WORLD ECONOMIC OUTLOOK: G LO bAL  ECONOM y IN  ThE Sh ADOW  OF  WAR",
+    "content": "Composites for fiscal data are sums of individual country data after conversion to US dollars at the aver-age market exchange rates in the years indicated. Composite unemployment rates and employment growth are weighted by labor force as a share of group labor force. Composites relating to external sector statistics are sums of individual country data after conversion to US dollars at the average market exchange rates in the years indicated for balance of payments data and at end-of-year market [...] meth-odologies for the compilation of national statistics, including analytical frameworks, concepts, definitions, classifications, and valuation procedures used in the production of economic statistics. The WEO database reflects information from both national source agencies and international organizations. Most countries’ macroeconomic data as presented in the WEO conform broadly to the 2008 version of the System of National Accounts (SNA 2008). The IMF’s sector statistical standards-the [...] West Bank and Gaza: Estimates and projections for 2025–31 are excluded from publication owing to the unusually high degree of uncertainty. The latest actual annual data for consumer prices, population, and government finances are for 2025. Annual data for the unemployment rate are available up to 2022. \n\nYemen: The revised data reflect the territory under control of the Internationally Recognized Government (IRG). WORLD ECONOMIC OUTLOOK: G LO bAL  ECONOM y IN  ThE Sh ADOW  OF  WAR",
     "id": "S1"
    },
    {
@@ -4612,7 +4612,7 @@
     "url": "https://www.worldbank.org/ext/en/country/egypt",
     "domain": "worldbank.org",
     "published_date": "Wed, 03 Dec 2025 00:00:00 GMT",
-    "content": "Labor market conditions improved, with employment at 43.8 percent and labor force participation rates at 46.7 percent in Q2 FY26, though both remain below historical averages. [...] Near-term prospects indicate challenges to the nascent recovery. Real GDP growth is projected at 4.3 percent in FY26 (from 4.4 percent in FY25 and 2.4 percent in FY24). [...] Inflation fell from a peak of 38 percent in late 2023 to 13.4 percent in February 2026. This enabled cumulative policy rate cuts of 825 basis points between April 2025 and February 2026. Inflation has an impact on household purchasing power. World Bank estimates indicate that the national poverty rate was 33.5 percent in 2021/22, and that poverty—measured using the lower-middle-income country (LMIC) international poverty line (US$4.20/day in 2021 PPP terms)—increased by about five percentage",
+    "content": "Labor market conditions improved, with employment at 43.8 percent and labor force participation rates at 46.7 percent in Q2 FY26, though both remain below historical averages. [...] Near-term prospects indicate challenges to the nascent recovery. Real GDP growth is projected at 4.3 percent in FY26 (from 4.4 percent in FY25 and 2.4 percent in FY24). [...] Inflation fell from a peak of 38 percent in late 2023 to 13.4 percent in February 2026. This enabled cumulative policy rate cuts of 825 basis points between April 2025 and February 2026. Inflation has an impact on household purchasing power. World Bank estimates indicate that the national poverty rate was 33.5 percent in 2021/22, and that poverty-measured using the lower-middle-income country (LMIC) international poverty line (US$4.20/day in 2021 PPP terms)-increased by about five percentage",
     "id": "S3"
    }
   ],
@@ -4625,7 +4625,7 @@
  },
  "EGY|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Unemployment",
+  "title": "Country Risk Desk - EGY - Unemployment",
   "country": "EGY",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -4657,7 +4657,7 @@
  },
  "EGY|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Women in workforce",
+  "title": "Country Risk Desk - EGY - Women in workforce",
   "country": "EGY",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -4689,7 +4689,7 @@
  },
  "EGY|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — EGY — Women in workforce",
+  "title": "Country Risk Desk - EGY - Women in workforce",
   "country": "EGY",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -4721,7 +4721,7 @@
  },
  "IND|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — CO2 per capita",
+  "title": "Country Risk Desk - IND - CO2 per capita",
   "country": "IND",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -4753,7 +4753,7 @@
  },
  "IND|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — CO2 per capita",
+  "title": "Country Risk Desk - IND - CO2 per capita",
   "country": "IND",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -4785,7 +4785,7 @@
  },
  "IND|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — Control of corruption",
+  "title": "Country Risk Desk - IND - Control of corruption",
   "country": "IND",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -4817,7 +4817,7 @@
  },
  "IND|Control of corruption|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Control of corruption",
+  "title": "Country Risk Desk - IND - Control of corruption",
   "country": "IND",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -4915,7 +4915,7 @@
  },
  "IND|Current account|en": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Current account",
+  "title": "Country Risk Desk - IND - Current account",
   "country": "IND",
   "indicator": "Current account",
   "lang": "en",
@@ -4980,7 +4980,7 @@
  },
  "IND|Current account|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Current account",
+  "title": "Country Risk Desk - IND - Current account",
   "country": "IND",
   "indicator": "Current account",
   "lang": "fr",
@@ -5045,7 +5045,7 @@
  },
  "IND|Electricity access|en": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Electricity access",
+  "title": "Country Risk Desk - IND - Electricity access",
   "country": "IND",
   "indicator": "Electricity access",
   "lang": "en",
@@ -5146,7 +5146,7 @@
  },
  "IND|Electricity access|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Electricity access",
+  "title": "Country Risk Desk - IND - Electricity access",
   "country": "IND",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -5228,7 +5228,7 @@
  },
  "IND|External debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — External debt",
+  "title": "Country Risk Desk - IND - External debt",
   "country": "IND",
   "indicator": "External debt",
   "lang": "en",
@@ -5260,7 +5260,7 @@
  },
  "IND|External debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IND — External debt",
+  "title": "Country Risk Desk - IND - External debt",
   "country": "IND",
   "indicator": "External debt",
   "lang": "fr",
@@ -5352,7 +5352,7 @@
  },
  "IND|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — GDP growth",
+  "title": "Country Risk Desk - IND - GDP growth",
   "country": "IND",
   "indicator": "GDP growth",
   "lang": "en",
@@ -5384,7 +5384,7 @@
  },
  "IND|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — GDP growth",
+  "title": "Country Risk Desk - IND - GDP growth",
   "country": "IND",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -5416,7 +5416,7 @@
  },
  "IND|Gov debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — Gov debt",
+  "title": "Country Risk Desk - IND - Gov debt",
   "country": "IND",
   "indicator": "Gov debt",
   "lang": "en",
@@ -5448,7 +5448,7 @@
  },
  "IND|Gov debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Gov debt",
+  "title": "Country Risk Desk - IND - Gov debt",
   "country": "IND",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -5528,7 +5528,7 @@
  },
  "IND|Inflation|en": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Inflation",
+  "title": "Country Risk Desk - IND - Inflation",
   "country": "IND",
   "indicator": "Inflation",
   "lang": "en",
@@ -5639,7 +5639,7 @@
  },
  "IND|Inflation|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Inflation",
+  "title": "Country Risk Desk - IND - Inflation",
   "country": "IND",
   "indicator": "Inflation",
   "lang": "fr",
@@ -5740,7 +5740,7 @@
  },
  "IND|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — Interest rate",
+  "title": "Country Risk Desk - IND - Interest rate",
   "country": "IND",
   "indicator": "Interest rate",
   "lang": "en",
@@ -5772,7 +5772,7 @@
  },
  "IND|Interest rate|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Interest rate",
+  "title": "Country Risk Desk - IND - Interest rate",
   "country": "IND",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -5851,7 +5851,7 @@
  },
  "IND|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — Political stability",
+  "title": "Country Risk Desk - IND - Political stability",
   "country": "IND",
   "indicator": "Political stability",
   "lang": "en",
@@ -5880,7 +5880,7 @@
  },
  "IND|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — Political stability",
+  "title": "Country Risk Desk - IND - Political stability",
   "country": "IND",
   "indicator": "Political stability",
   "lang": "fr",
@@ -5912,7 +5912,7 @@
  },
  "IND|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — Reserves",
+  "title": "Country Risk Desk - IND - Reserves",
   "country": "IND",
   "indicator": "Reserves",
   "lang": "en",
@@ -5944,7 +5944,7 @@
  },
  "IND|Reserves|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Reserves",
+  "title": "Country Risk Desk - IND - Reserves",
   "country": "IND",
   "indicator": "Reserves",
   "lang": "fr",
@@ -6037,7 +6037,7 @@
  },
  "IND|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — Unemployment",
+  "title": "Country Risk Desk - IND - Unemployment",
   "country": "IND",
   "indicator": "Unemployment",
   "lang": "en",
@@ -6069,7 +6069,7 @@
  },
  "IND|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — Unemployment",
+  "title": "Country Risk Desk - IND - Unemployment",
   "country": "IND",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -6101,7 +6101,7 @@
  },
  "IND|Women in workforce|en": {
   "status": "done",
-  "title": "Country Risk Desk — IND — Women in workforce",
+  "title": "Country Risk Desk - IND - Women in workforce",
   "country": "IND",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -6171,11 +6171,11 @@
    ],
    "opportunities": [
     {
-     "text": "Creating conducive conditions for the generation of more and better jobs—particularly for women through labor-intensive sectors—can drive productivity.",
+     "text": "Creating conducive conditions for the generation of more and better jobs-particularly for women through labor-intensive sectors-can drive productivity.",
      "evidence": [
       {
        "source_id": "S1",
-       "quote": "create conducive conditions for the generation of more and better jobs—particularly for women through labor-intensive sectors—and drive productivity"
+       "quote": "create conducive conditions for the generation of more and better jobs-particularly for women through labor-intensive sectors-and drive productivity"
       }
      ]
     }
@@ -6189,7 +6189,7 @@
     "url": "https://www.worldbank.org/ext/en/country/india",
     "domain": "worldbank.org",
     "published_date": "Wed, 03 Dec 2025 00:00:00 GMT",
-    "content": "productivity.  Simultaneously, the country must deepen structural reforms to strengthen infrastructure, improve health and learning outcomes, boost manufacturing and digital innovation, while continuing to safeguard macroeconomic stability. Unlocking India’s demographic dividend will depend on investing in human capital and raising female labor force participation from 35.6 percent to 50 percent by 2047. Achieving inclusive and sustainable growth will also require coordinated action across all [...] Despite these achievements, critical development challenges persist. These include high levels of informality in the labor market, low female labor force participation, unequal access to quality health and education services, regional disparities in development outcomes, and increasing vulnerability to climate change and natural disasters. Addressing these complex challenges will be essential as India looks ahead to its centenary milestones. [...] To achieve its vision of becoming a high-income economy by 2047, India will need to sustain an average annual growth rate of 7.8 percent over the next two decades. This will require bold and sustained reforms to increase both public and private investment (increasing the real investment rate from around 33.5 percent of GDP to 40 percent by 2035), create conducive conditions for the generation of more and better jobs—particularly for women through labor-intensive sectors—and drive productivity.",
+    "content": "productivity.  Simultaneously, the country must deepen structural reforms to strengthen infrastructure, improve health and learning outcomes, boost manufacturing and digital innovation, while continuing to safeguard macroeconomic stability. Unlocking India’s demographic dividend will depend on investing in human capital and raising female labor force participation from 35.6 percent to 50 percent by 2047. Achieving inclusive and sustainable growth will also require coordinated action across all [...] Despite these achievements, critical development challenges persist. These include high levels of informality in the labor market, low female labor force participation, unequal access to quality health and education services, regional disparities in development outcomes, and increasing vulnerability to climate change and natural disasters. Addressing these complex challenges will be essential as India looks ahead to its centenary milestones. [...] To achieve its vision of becoming a high-income economy by 2047, India will need to sustain an average annual growth rate of 7.8 percent over the next two decades. This will require bold and sustained reforms to increase both public and private investment (increasing the real investment rate from around 33.5 percent of GDP to 40 percent by 2035), create conducive conditions for the generation of more and better jobs-particularly for women through labor-intensive sectors-and drive productivity.",
     "id": "S1"
    }
   ],
@@ -6202,7 +6202,7 @@
  },
  "IND|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IND — Women in workforce",
+  "title": "Country Risk Desk - IND - Women in workforce",
   "country": "IND",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -6234,7 +6234,7 @@
  },
  "IDN|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — CO2 per capita",
+  "title": "Country Risk Desk - IDN - CO2 per capita",
   "country": "IDN",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -6263,7 +6263,7 @@
  },
  "IDN|CO2 per capita|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — CO2 per capita",
+  "title": "Country Risk Desk - IDN - CO2 per capita",
   "country": "IDN",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -6348,7 +6348,7 @@
  },
  "IDN|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — Control of corruption",
+  "title": "Country Risk Desk - IDN - Control of corruption",
   "country": "IDN",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -6380,7 +6380,7 @@
  },
  "IDN|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — Control of corruption",
+  "title": "Country Risk Desk - IDN - Control of corruption",
   "country": "IDN",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -6412,7 +6412,7 @@
  },
  "IDN|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — Current account",
+  "title": "Country Risk Desk - IDN - Current account",
   "country": "IDN",
   "indicator": "Current account",
   "lang": "en",
@@ -6444,7 +6444,7 @@
  },
  "IDN|Current account|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Current account",
+  "title": "Country Risk Desk - IDN - Current account",
   "country": "IDN",
   "indicator": "Current account",
   "lang": "fr",
@@ -6527,7 +6527,7 @@
  },
  "IDN|Electricity access|en": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Electricity access",
+  "title": "Country Risk Desk - IDN - Electricity access",
   "country": "IDN",
   "indicator": "Electricity access",
   "lang": "en",
@@ -6627,7 +6627,7 @@
  },
  "IDN|Electricity access|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Electricity access",
+  "title": "Country Risk Desk - IDN - Electricity access",
   "country": "IDN",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -6741,7 +6741,7 @@
  },
  "IDN|External debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — External debt",
+  "title": "Country Risk Desk - IDN - External debt",
   "country": "IDN",
   "indicator": "External debt",
   "lang": "en",
@@ -6773,7 +6773,7 @@
  },
  "IDN|External debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — External debt",
+  "title": "Country Risk Desk - IDN - External debt",
   "country": "IDN",
   "indicator": "External debt",
   "lang": "fr",
@@ -6846,7 +6846,7 @@
  },
  "IDN|GDP growth|en": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — GDP growth",
+  "title": "Country Risk Desk - IDN - GDP growth",
   "country": "IDN",
   "indicator": "GDP growth",
   "lang": "en",
@@ -6948,7 +6948,7 @@
  },
  "IDN|GDP growth|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — GDP growth",
+  "title": "Country Risk Desk - IDN - GDP growth",
   "country": "IDN",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -7068,7 +7068,7 @@
  },
  "IDN|Gov debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — Gov debt",
+  "title": "Country Risk Desk - IDN - Gov debt",
   "country": "IDN",
   "indicator": "Gov debt",
   "lang": "en",
@@ -7100,7 +7100,7 @@
  },
  "IDN|Gov debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Gov debt",
+  "title": "Country Risk Desk - IDN - Gov debt",
   "country": "IDN",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -7283,7 +7283,7 @@
     "url": "https://www.imf.org/-/media/files/publications/fiscal-monitor/2026/april/english/text.pdf",
     "domain": "imf.org",
     "published_date": "Mon, 11 May 2026 15:13:31 GMT",
-    "content": "Indonesia: The IMF staff ’s projections are based on the latest budget, extrapolating using projected nominal GDP (and its components as needed) with application of judgment to reflect the authorities’ spending and revenue policies over the medium term. \n\nIreland: Fiscal projections are based on the country’s Budget 2026. \n\nIsrael: Fiscal projections are for the general government and take into account the draft 2026 budget approved by the Knesset in the first reading on March 17, 2026. [...] gilt yield climbed from 4.23 percent on the eve of the war (February 27, 2026) to 4.83 percent on April 1, 2026— the latest observation at the time of drafting. The fiscal outlook offers little respite. Although the global primary-deficit-to-GDP ratio is projected to narrow modestly by 2031 by about half a percentage point from its current level of 2.2 percent (Figure 1.4), that expected improvement is insufficient to stabilize the debt ratio, much less put debt on a downward path. Over the [...] Source: IMF staff estimates and projections. Note: The estimates and projections are based on statistical information available through April 1, 2026, but may not reflect the latest published data in all cases. For the date of the last data update for each economy, please refer to the notes provided in the online World Economic Outlook database. All country averages are weighted by nominal GDP converted to US dollars (adjusted by purchasing power parity only for world output) at average market",
+    "content": "Indonesia: The IMF staff ’s projections are based on the latest budget, extrapolating using projected nominal GDP (and its components as needed) with application of judgment to reflect the authorities’ spending and revenue policies over the medium term. \n\nIreland: Fiscal projections are based on the country’s Budget 2026. \n\nIsrael: Fiscal projections are for the general government and take into account the draft 2026 budget approved by the Knesset in the first reading on March 17, 2026. [...] gilt yield climbed from 4.23 percent on the eve of the war (February 27, 2026) to 4.83 percent on April 1, 2026- the latest observation at the time of drafting. The fiscal outlook offers little respite. Although the global primary-deficit-to-GDP ratio is projected to narrow modestly by 2031 by about half a percentage point from its current level of 2.2 percent (Figure 1.4), that expected improvement is insufficient to stabilize the debt ratio, much less put debt on a downward path. Over the [...] Source: IMF staff estimates and projections. Note: The estimates and projections are based on statistical information available through April 1, 2026, but may not reflect the latest published data in all cases. For the date of the last data update for each economy, please refer to the notes provided in the online World Economic Outlook database. All country averages are weighted by nominal GDP converted to US dollars (adjusted by purchasing power parity only for world output) at average market",
     "id": "S2"
    },
    {
@@ -7304,7 +7304,7 @@
  },
  "IDN|Inflation|en": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Inflation",
+  "title": "Country Risk Desk - IDN - Inflation",
   "country": "IDN",
   "indicator": "Inflation",
   "lang": "en",
@@ -7374,7 +7374,7 @@
  },
  "IDN|Inflation|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Inflation",
+  "title": "Country Risk Desk - IDN - Inflation",
   "country": "IDN",
   "indicator": "Inflation",
   "lang": "fr",
@@ -7444,7 +7444,7 @@
  },
  "IDN|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — Interest rate",
+  "title": "Country Risk Desk - IDN - Interest rate",
   "country": "IDN",
   "indicator": "Interest rate",
   "lang": "en",
@@ -7473,7 +7473,7 @@
  },
  "IDN|Interest rate|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Interest rate",
+  "title": "Country Risk Desk - IDN - Interest rate",
   "country": "IDN",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -7510,7 +7510,7 @@
  },
  "IDN|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — Political stability",
+  "title": "Country Risk Desk - IDN - Political stability",
   "country": "IDN",
   "indicator": "Political stability",
   "lang": "en",
@@ -7542,7 +7542,7 @@
  },
  "IDN|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — Political stability",
+  "title": "Country Risk Desk - IDN - Political stability",
   "country": "IDN",
   "indicator": "Political stability",
   "lang": "fr",
@@ -7574,7 +7574,7 @@
  },
  "IDN|Reserves|en": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Reserves",
+  "title": "Country Risk Desk - IDN - Reserves",
   "country": "IDN",
   "indicator": "Reserves",
   "lang": "en",
@@ -7685,7 +7685,7 @@
  },
  "IDN|Reserves|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Reserves",
+  "title": "Country Risk Desk - IDN - Reserves",
   "country": "IDN",
   "indicator": "Reserves",
   "lang": "fr",
@@ -7756,7 +7756,7 @@
  },
  "IDN|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — Unemployment",
+  "title": "Country Risk Desk - IDN - Unemployment",
   "country": "IDN",
   "indicator": "Unemployment",
   "lang": "en",
@@ -7788,7 +7788,7 @@
  },
  "IDN|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — IDN — Unemployment",
+  "title": "Country Risk Desk - IDN - Unemployment",
   "country": "IDN",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -7820,7 +7820,7 @@
  },
  "IDN|Women in workforce|en": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Women in workforce",
+  "title": "Country Risk Desk - IDN - Women in workforce",
   "country": "IDN",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -7929,7 +7929,7 @@
  },
  "IDN|Women in workforce|fr": {
   "status": "done",
-  "title": "Country Risk Desk — IDN — Women in workforce",
+  "title": "Country Risk Desk - IDN - Women in workforce",
   "country": "IDN",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -8004,7 +8004,7 @@
  },
  "MEX|CO2 per capita|en": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — CO2 per capita",
+  "title": "Country Risk Desk - MEX - CO2 per capita",
   "country": "MEX",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -8111,7 +8111,7 @@
  },
  "MEX|CO2 per capita|fr": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — CO2 per capita",
+  "title": "Country Risk Desk - MEX - CO2 per capita",
   "country": "MEX",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -8190,7 +8190,7 @@
     "url": "https://www.reuters.com/sustainability/cop/climate-crossroads-decade-after-paris-agreement-2026-02-16/",
     "domain": "reuters.com",
     "published_date": "Mon, 16 Feb 2026 11:28:56 GMT",
-    "content": "Feb 16 (Reuters) - Ten years after the Paris Agreement took effect, newly released climate datasets show the world warming at an accelerating pace, with 2025 ranking among the three hottest years ever recorded, and sea‑ice, ocean heat and sea levels crossing new thresholds. Global fossil fuel carbon dioxide emissions are projected to climb to a record 38.1 billion tonnes in 2025, driven by rising coal, oil and gas use despite rapid growth in renewable energy, according to the latest Global Carbon Budget report. The report — produced by an international team of more than 130 scientists — estimates global fossil fuel CO₂ emissions will rise 1.1% next year, pushing atmospheric CO₂ concentrations to roughly 52% above pre‑industrial levels. The U.S. National Oceanic and Atmospheric Administration’s (NOAA) 2025 Arctic Report Card confirmed that October 2024–September 2025 was the warmest period since 1900, and the region continues to warm more than twice as fast as the global average.",
+    "content": "Feb 16 (Reuters) - Ten years after the Paris Agreement took effect, newly released climate datasets show the world warming at an accelerating pace, with 2025 ranking among the three hottest years ever recorded, and sea‑ice, ocean heat and sea levels crossing new thresholds. Global fossil fuel carbon dioxide emissions are projected to climb to a record 38.1 billion tonnes in 2025, driven by rising coal, oil and gas use despite rapid growth in renewable energy, according to the latest Global Carbon Budget report. The report - produced by an international team of more than 130 scientists - estimates global fossil fuel CO₂ emissions will rise 1.1% next year, pushing atmospheric CO₂ concentrations to roughly 52% above pre‑industrial levels. The U.S. National Oceanic and Atmospheric Administration’s (NOAA) 2025 Arctic Report Card confirmed that October 2024–September 2025 was the warmest period since 1900, and the region continues to warm more than twice as fast as the global average.",
     "id": "S1"
    },
    {
@@ -8219,7 +8219,7 @@
  },
  "MEX|Control of corruption|en": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — Control of corruption",
+  "title": "Country Risk Desk - MEX - Control of corruption",
   "country": "MEX",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -8284,7 +8284,7 @@
  },
  "MEX|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Control of corruption",
+  "title": "Country Risk Desk - MEX - Control of corruption",
   "country": "MEX",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -8316,7 +8316,7 @@
  },
  "MEX|Current account|en": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — Current account",
+  "title": "Country Risk Desk - MEX - Current account",
   "country": "MEX",
   "indicator": "Current account",
   "lang": "en",
@@ -8418,7 +8418,7 @@
  },
  "MEX|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Current account",
+  "title": "Country Risk Desk - MEX - Current account",
   "country": "MEX",
   "indicator": "Current account",
   "lang": "fr",
@@ -8450,7 +8450,7 @@
  },
  "MEX|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Electricity access",
+  "title": "Country Risk Desk - MEX - Electricity access",
   "country": "MEX",
   "indicator": "Electricity access",
   "lang": "en",
@@ -8482,7 +8482,7 @@
  },
  "MEX|Electricity access|fr": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — Electricity access",
+  "title": "Country Risk Desk - MEX - Electricity access",
   "country": "MEX",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -8575,7 +8575,7 @@
  },
  "MEX|External debt|en": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — External debt",
+  "title": "Country Risk Desk - MEX - External debt",
   "country": "MEX",
   "indicator": "External debt",
   "lang": "en",
@@ -8652,7 +8652,7 @@
  },
  "MEX|External debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — External debt",
+  "title": "Country Risk Desk - MEX - External debt",
   "country": "MEX",
   "indicator": "External debt",
   "lang": "fr",
@@ -8728,7 +8728,7 @@
  },
  "MEX|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — GDP growth",
+  "title": "Country Risk Desk - MEX - GDP growth",
   "country": "MEX",
   "indicator": "GDP growth",
   "lang": "en",
@@ -8757,7 +8757,7 @@
  },
  "MEX|GDP growth|fr": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — GDP growth",
+  "title": "Country Risk Desk - MEX - GDP growth",
   "country": "MEX",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -8840,7 +8840,7 @@
  },
  "MEX|Gov debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Gov debt",
+  "title": "Country Risk Desk - MEX - Gov debt",
   "country": "MEX",
   "indicator": "Gov debt",
   "lang": "en",
@@ -8872,7 +8872,7 @@
  },
  "MEX|Gov debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — Gov debt",
+  "title": "Country Risk Desk - MEX - Gov debt",
   "country": "MEX",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -8964,7 +8964,7 @@
  },
  "MEX|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Inflation",
+  "title": "Country Risk Desk - MEX - Inflation",
   "country": "MEX",
   "indicator": "Inflation",
   "lang": "en",
@@ -8993,7 +8993,7 @@
  },
  "MEX|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Inflation",
+  "title": "Country Risk Desk - MEX - Inflation",
   "country": "MEX",
   "indicator": "Inflation",
   "lang": "fr",
@@ -9022,7 +9022,7 @@
  },
  "MEX|Interest rate|en": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — Interest rate",
+  "title": "Country Risk Desk - MEX - Interest rate",
   "country": "MEX",
   "indicator": "Interest rate",
   "lang": "en",
@@ -9132,7 +9132,7 @@
  },
  "MEX|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Interest rate",
+  "title": "Country Risk Desk - MEX - Interest rate",
   "country": "MEX",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -9164,7 +9164,7 @@
  },
  "MEX|Political stability|en": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — Political stability",
+  "title": "Country Risk Desk - MEX - Political stability",
   "country": "MEX",
   "indicator": "Political stability",
   "lang": "en",
@@ -9219,7 +9219,7 @@
  },
  "MEX|Political stability|fr": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — Political stability",
+  "title": "Country Risk Desk - MEX - Political stability",
   "country": "MEX",
   "indicator": "Political stability",
   "lang": "fr",
@@ -9274,7 +9274,7 @@
  },
  "MEX|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Reserves",
+  "title": "Country Risk Desk - MEX - Reserves",
   "country": "MEX",
   "indicator": "Reserves",
   "lang": "en",
@@ -9306,7 +9306,7 @@
  },
  "MEX|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Reserves",
+  "title": "Country Risk Desk - MEX - Reserves",
   "country": "MEX",
   "indicator": "Reserves",
   "lang": "fr",
@@ -9338,7 +9338,7 @@
  },
  "MEX|Unemployment|en": {
   "status": "done",
-  "title": "Country Risk Desk — MEX — Unemployment",
+  "title": "Country Risk Desk - MEX - Unemployment",
   "country": "MEX",
   "indicator": "Unemployment",
   "lang": "en",
@@ -9421,7 +9421,7 @@
  },
  "MEX|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Unemployment",
+  "title": "Country Risk Desk - MEX - Unemployment",
   "country": "MEX",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -9453,7 +9453,7 @@
  },
  "MEX|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Women in workforce",
+  "title": "Country Risk Desk - MEX - Women in workforce",
   "country": "MEX",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -9482,7 +9482,7 @@
  },
  "MEX|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — MEX — Women in workforce",
+  "title": "Country Risk Desk - MEX - Women in workforce",
   "country": "MEX",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -9514,7 +9514,7 @@
  },
  "TUR|CO2 per capita|en": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — CO2 per capita",
+  "title": "Country Risk Desk - TUR - CO2 per capita",
   "country": "TUR",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -9568,7 +9568,7 @@
     "url": "https://www.imf.org/-/media/files/publications/weo/2026/april/english/text.pdf",
     "domain": "imf.org",
     "published_date": "Wed, 22 Apr 2026 21:25:34 GMT",
-    "content": "> −5 1−4 −3 −2 −1 0036912 036912 Sources: Caldara and others 2026; and IMF staff calculations. Note: The analysis uses local projections, controlling for lagged country-specific geopolitical risk and changes in macroeconomic variables, as well as country and time fixed effects. Geopolitical risk is measured based on newspaper archives. See Caldara and others (2026) for details. The country-level data were downloaded from  The lines denote point estimates, and the shaded areas denote 90 percent [...] Climate, Economic Development, and the World Income Distribution  October 2017, Box 3.5 Mitigating Climate Change  October 2017, Box 3.6 The Price of Manufactured Low-Carbon Energy Technologies  April 2019, Box 3.1 What’s Happening with Global Carbon Emissions?  October 2019, Box 1.SF.1 Mitigating Climate Change—Growth and Distribution-Friendly Strategies  October 2020, Chapter 3 Glossary  October 2020, Box 3.1 Zooming in on the Electricity Sector: The First Step toward Decarbonization  October [...] 1, 2026, but may not reflect the latest published data in all cases. For the date of the last data update for each economy, please refer to the notes provided in the online WEO database. The following conventions are used throughout the WEO:",
+    "content": "> −5 1−4 −3 −2 −1 0036912 036912 Sources: Caldara and others 2026; and IMF staff calculations. Note: The analysis uses local projections, controlling for lagged country-specific geopolitical risk and changes in macroeconomic variables, as well as country and time fixed effects. Geopolitical risk is measured based on newspaper archives. See Caldara and others (2026) for details. The country-level data were downloaded from  The lines denote point estimates, and the shaded areas denote 90 percent [...] Climate, Economic Development, and the World Income Distribution  October 2017, Box 3.5 Mitigating Climate Change  October 2017, Box 3.6 The Price of Manufactured Low-Carbon Energy Technologies  April 2019, Box 3.1 What’s Happening with Global Carbon Emissions?  October 2019, Box 1.SF.1 Mitigating Climate Change-Growth and Distribution-Friendly Strategies  October 2020, Chapter 3 Glossary  October 2020, Box 3.1 Zooming in on the Electricity Sector: The First Step toward Decarbonization  October [...] 1, 2026, but may not reflect the latest published data in all cases. For the date of the last data update for each economy, please refer to the notes provided in the online WEO database. The following conventions are used throughout the WEO:",
     "id": "S1"
    },
    {
@@ -9589,7 +9589,7 @@
  },
  "TUR|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — CO2 per capita",
+  "title": "Country Risk Desk - TUR - CO2 per capita",
   "country": "TUR",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -9621,7 +9621,7 @@
  },
  "TUR|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — Control of corruption",
+  "title": "Country Risk Desk - TUR - Control of corruption",
   "country": "TUR",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -9653,7 +9653,7 @@
  },
  "TUR|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — Control of corruption",
+  "title": "Country Risk Desk - TUR - Control of corruption",
   "country": "TUR",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -9685,7 +9685,7 @@
  },
  "TUR|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — Current account",
+  "title": "Country Risk Desk - TUR - Current account",
   "country": "TUR",
   "indicator": "Current account",
   "lang": "en",
@@ -9717,7 +9717,7 @@
  },
  "TUR|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — Current account",
+  "title": "Country Risk Desk - TUR - Current account",
   "country": "TUR",
   "indicator": "Current account",
   "lang": "fr",
@@ -9749,7 +9749,7 @@
  },
  "TUR|Electricity access|en": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Electricity access",
+  "title": "Country Risk Desk - TUR - Electricity access",
   "country": "TUR",
   "indicator": "Electricity access",
   "lang": "en",
@@ -9869,7 +9869,7 @@
  },
  "TUR|Electricity access|fr": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Electricity access",
+  "title": "Country Risk Desk - TUR - Electricity access",
   "country": "TUR",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -9954,7 +9954,7 @@
  },
  "TUR|External debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — External debt",
+  "title": "Country Risk Desk - TUR - External debt",
   "country": "TUR",
   "indicator": "External debt",
   "lang": "en",
@@ -9986,7 +9986,7 @@
  },
  "TUR|External debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — External debt",
+  "title": "Country Risk Desk - TUR - External debt",
   "country": "TUR",
   "indicator": "External debt",
   "lang": "fr",
@@ -10086,7 +10086,7 @@
  },
  "TUR|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — GDP growth",
+  "title": "Country Risk Desk - TUR - GDP growth",
   "country": "TUR",
   "indicator": "GDP growth",
   "lang": "en",
@@ -10118,7 +10118,7 @@
  },
  "TUR|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — GDP growth",
+  "title": "Country Risk Desk - TUR - GDP growth",
   "country": "TUR",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -10150,7 +10150,7 @@
  },
  "TUR|Gov debt|en": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Gov debt",
+  "title": "Country Risk Desk - TUR - Gov debt",
   "country": "TUR",
   "indicator": "Gov debt",
   "lang": "en",
@@ -10261,7 +10261,7 @@
  },
  "TUR|Gov debt|fr": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Gov debt",
+  "title": "Country Risk Desk - TUR - Gov debt",
   "country": "TUR",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -10334,7 +10334,7 @@
  },
  "TUR|Inflation|en": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Inflation",
+  "title": "Country Risk Desk - TUR - Inflation",
   "country": "TUR",
   "indicator": "Inflation",
   "lang": "en",
@@ -10417,7 +10417,7 @@
  },
  "TUR|Inflation|fr": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Inflation",
+  "title": "Country Risk Desk - TUR - Inflation",
   "country": "TUR",
   "indicator": "Inflation",
   "lang": "fr",
@@ -10511,7 +10511,7 @@
  },
  "TUR|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — Political stability",
+  "title": "Country Risk Desk - TUR - Political stability",
   "country": "TUR",
   "indicator": "Political stability",
   "lang": "en",
@@ -10540,7 +10540,7 @@
  },
  "TUR|Political stability|fr": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Political stability",
+  "title": "Country Risk Desk - TUR - Political stability",
   "country": "TUR",
   "indicator": "Political stability",
   "lang": "fr",
@@ -10650,7 +10650,7 @@
  },
  "TUR|Reserves|en": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Reserves",
+  "title": "Country Risk Desk - TUR - Reserves",
   "country": "TUR",
   "indicator": "Reserves",
   "lang": "en",
@@ -10779,7 +10779,7 @@
  },
  "TUR|Reserves|fr": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Reserves",
+  "title": "Country Risk Desk - TUR - Reserves",
   "country": "TUR",
   "indicator": "Reserves",
   "lang": "fr",
@@ -10880,7 +10880,7 @@
  },
  "TUR|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — Unemployment",
+  "title": "Country Risk Desk - TUR - Unemployment",
   "country": "TUR",
   "indicator": "Unemployment",
   "lang": "en",
@@ -10912,7 +10912,7 @@
  },
  "TUR|Unemployment|fr": {
   "status": "done",
-  "title": "Country Risk Desk — TUR — Unemployment",
+  "title": "Country Risk Desk - TUR - Unemployment",
   "country": "TUR",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -10977,7 +10977,7 @@
     "url": "https://www.imf.org/-/media/files/publications/weo/2026/april/english/statsappendix.pdf",
     "domain": "imf.org",
     "published_date": "Wed, 22 Apr 2026 19:13:34 GMT",
-    "content": "Türkiye: The baseline assumes that the monetary policy stance will remain contractionary, in line with announced and observed policies. \n\nUnited Kingdom: Monetary policy assumptions are based on the IMF staff ’s assessment of the most likely path for interest rates, considering the broader macroeconomic outlook, model results, the Bank of England’s inflation forecasts and communications, and market expectations. [...] Composites for fiscal data are sums of individual country data after conversion to US dollars at the aver-age market exchange rates in the years indicated. Composite unemployment rates and employment growth are weighted by labor force as a share of group labor force. Composites relating to external sector statistics are sums of individual country data after conversion to US dollars at the average market exchange rates in the years indicated for balance of payments data and at end-of-year market [...] meth-odologies for the compilation of national statistics, including analytical frameworks, concepts, definitions, classifications, and valuation procedures used in the production of economic statistics. The WEO database reflects information from both national source agencies and international organizations. Most countries’ macroeconomic data as presented in the WEO conform broadly to the 2008 version of the System of National Accounts (SNA 2008). The IMF’s sector statistical standards—the",
+    "content": "Türkiye: The baseline assumes that the monetary policy stance will remain contractionary, in line with announced and observed policies. \n\nUnited Kingdom: Monetary policy assumptions are based on the IMF staff ’s assessment of the most likely path for interest rates, considering the broader macroeconomic outlook, model results, the Bank of England’s inflation forecasts and communications, and market expectations. [...] Composites for fiscal data are sums of individual country data after conversion to US dollars at the aver-age market exchange rates in the years indicated. Composite unemployment rates and employment growth are weighted by labor force as a share of group labor force. Composites relating to external sector statistics are sums of individual country data after conversion to US dollars at the average market exchange rates in the years indicated for balance of payments data and at end-of-year market [...] meth-odologies for the compilation of national statistics, including analytical frameworks, concepts, definitions, classifications, and valuation procedures used in the production of economic statistics. The WEO database reflects information from both national source agencies and international organizations. Most countries’ macroeconomic data as presented in the WEO conform broadly to the 2008 version of the System of National Accounts (SNA 2008). The IMF’s sector statistical standards-the",
     "id": "S1"
    },
    {
@@ -11006,7 +11006,7 @@
  },
  "TUR|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — Women in workforce",
+  "title": "Country Risk Desk - TUR - Women in workforce",
   "country": "TUR",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -11035,7 +11035,7 @@
  },
  "TUR|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — TUR — Women in workforce",
+  "title": "Country Risk Desk - TUR - Women in workforce",
   "country": "TUR",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -11064,7 +11064,7 @@
  },
  "ZAF|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — CO2 per capita",
+  "title": "Country Risk Desk - ZAF - CO2 per capita",
   "country": "ZAF",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -11096,7 +11096,7 @@
  },
  "ZAF|CO2 per capita|fr": {
   "status": "done",
-  "title": "Country Risk Desk — ZAF — CO2 per capita",
+  "title": "Country Risk Desk - ZAF - CO2 per capita",
   "country": "ZAF",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -11150,7 +11150,7 @@
     "url": "https://www.reuters.com/sustainability/cop/climate-crossroads-decade-after-paris-agreement-2026-02-16/",
     "domain": "reuters.com",
     "published_date": "Mon, 16 Feb 2026 11:28:56 GMT",
-    "content": "Feb 16 (Reuters) - Ten years after the Paris Agreement took effect, newly released climate datasets show the world warming at an accelerating pace, with 2025 ranking among the three hottest years ever recorded, and sea‑ice, ocean heat and sea levels crossing new thresholds. Global fossil fuel carbon dioxide emissions are projected to climb to a record 38.1 billion tonnes in 2025, driven by rising coal, oil and gas use despite rapid growth in renewable energy, according to the latest Global Carbon Budget report. The report — produced by an international team of more than 130 scientists — estimates global fossil fuel CO₂ emissions will rise 1.1% next year, pushing atmospheric CO₂ concentrations to roughly 52% above pre‑industrial levels. The U.S. National Oceanic and Atmospheric Administration’s (NOAA) 2025 Arctic Report Card confirmed that October 2024–September 2025 was the warmest period since 1900, and the region continues to warm more than twice as fast as the global average.",
+    "content": "Feb 16 (Reuters) - Ten years after the Paris Agreement took effect, newly released climate datasets show the world warming at an accelerating pace, with 2025 ranking among the three hottest years ever recorded, and sea‑ice, ocean heat and sea levels crossing new thresholds. Global fossil fuel carbon dioxide emissions are projected to climb to a record 38.1 billion tonnes in 2025, driven by rising coal, oil and gas use despite rapid growth in renewable energy, according to the latest Global Carbon Budget report. The report - produced by an international team of more than 130 scientists - estimates global fossil fuel CO₂ emissions will rise 1.1% next year, pushing atmospheric CO₂ concentrations to roughly 52% above pre‑industrial levels. The U.S. National Oceanic and Atmospheric Administration’s (NOAA) 2025 Arctic Report Card confirmed that October 2024–September 2025 was the warmest period since 1900, and the region continues to warm more than twice as fast as the global average.",
     "id": "S1"
    },
    {
@@ -11179,7 +11179,7 @@
  },
  "ZAF|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Control of corruption",
+  "title": "Country Risk Desk - ZAF - Control of corruption",
   "country": "ZAF",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -11208,7 +11208,7 @@
  },
  "ZAF|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Control of corruption",
+  "title": "Country Risk Desk - ZAF - Control of corruption",
   "country": "ZAF",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -11237,7 +11237,7 @@
  },
  "ZAF|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Current account",
+  "title": "Country Risk Desk - ZAF - Current account",
   "country": "ZAF",
   "indicator": "Current account",
   "lang": "en",
@@ -11266,7 +11266,7 @@
  },
  "ZAF|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Current account",
+  "title": "Country Risk Desk - ZAF - Current account",
   "country": "ZAF",
   "indicator": "Current account",
   "lang": "fr",
@@ -11295,7 +11295,7 @@
  },
  "ZAF|Electricity access|en": {
   "status": "done",
-  "title": "Country Risk Desk — ZAF — Electricity access",
+  "title": "Country Risk Desk - ZAF - Electricity access",
   "country": "ZAF",
   "indicator": "Electricity access",
   "lang": "en",
@@ -11365,7 +11365,7 @@
  },
  "ZAF|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Electricity access",
+  "title": "Country Risk Desk - ZAF - Electricity access",
   "country": "ZAF",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -11394,7 +11394,7 @@
  },
  "ZAF|External debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — External debt",
+  "title": "Country Risk Desk - ZAF - External debt",
   "country": "ZAF",
   "indicator": "External debt",
   "lang": "en",
@@ -11423,7 +11423,7 @@
  },
  "ZAF|External debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — External debt",
+  "title": "Country Risk Desk - ZAF - External debt",
   "country": "ZAF",
   "indicator": "External debt",
   "lang": "fr",
@@ -11452,7 +11452,7 @@
  },
  "ZAF|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — GDP growth",
+  "title": "Country Risk Desk - ZAF - GDP growth",
   "country": "ZAF",
   "indicator": "GDP growth",
   "lang": "en",
@@ -11481,7 +11481,7 @@
  },
  "ZAF|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — GDP growth",
+  "title": "Country Risk Desk - ZAF - GDP growth",
   "country": "ZAF",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -11510,7 +11510,7 @@
  },
  "ZAF|Gov debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Gov debt",
+  "title": "Country Risk Desk - ZAF - Gov debt",
   "country": "ZAF",
   "indicator": "Gov debt",
   "lang": "en",
@@ -11539,7 +11539,7 @@
  },
  "ZAF|Gov debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Gov debt",
+  "title": "Country Risk Desk - ZAF - Gov debt",
   "country": "ZAF",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -11568,7 +11568,7 @@
  },
  "ZAF|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Inflation",
+  "title": "Country Risk Desk - ZAF - Inflation",
   "country": "ZAF",
   "indicator": "Inflation",
   "lang": "en",
@@ -11597,7 +11597,7 @@
  },
  "ZAF|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Inflation",
+  "title": "Country Risk Desk - ZAF - Inflation",
   "country": "ZAF",
   "indicator": "Inflation",
   "lang": "fr",
@@ -11626,7 +11626,7 @@
  },
  "ZAF|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Interest rate",
+  "title": "Country Risk Desk - ZAF - Interest rate",
   "country": "ZAF",
   "indicator": "Interest rate",
   "lang": "en",
@@ -11655,7 +11655,7 @@
  },
  "ZAF|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Interest rate",
+  "title": "Country Risk Desk - ZAF - Interest rate",
   "country": "ZAF",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -11684,7 +11684,7 @@
  },
  "ZAF|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Political stability",
+  "title": "Country Risk Desk - ZAF - Political stability",
   "country": "ZAF",
   "indicator": "Political stability",
   "lang": "en",
@@ -11713,7 +11713,7 @@
  },
  "ZAF|Political stability|fr": {
   "status": "done",
-  "title": "Country Risk Desk — ZAF — Political stability",
+  "title": "Country Risk Desk - ZAF - Political stability",
   "country": "ZAF",
   "indicator": "Political stability",
   "lang": "fr",
@@ -11764,7 +11764,7 @@
     "url": "https://www.imf.org/-/media/files/publications/reo/afr/2026/april/english/text.pdf",
     "domain": "imf.org",
     "published_date": "Wed, 29 Apr 2026 14:17:55 GMT",
-    "content": "contrast to Gen-Z protests in Madagascar, coup attempts in Benin and Guinea-Bissau, security challenges in the \n\nSahel and Democratic Republic of the Congo, and election-related violence in Tanzania. With several elections \n\nscheduled for 2026–27, there is a risk that reform efforts slow, and social tensions rise, including from rising fuel \n\nand food prices. 2 Simulations are carried out using the IMF’s AFRMOD model (Andrle and others 2015). In particular, oil prices increase by 100 percent [...] Sources: IMF Country Team Survey Data; IMF, World Economic Outlook database, and IMF staff calculations. Note: Respondents could select multiple answers. \n\n “High debt risk” reflects the share of countries with a debt risk status high or in distress from IMF countries debt \n\nsustainability analysis. \n\n “External imbalances” reflects the share of sub-Saharan African countries with either reserves in months of imports [...] REGIONAL ECONOMIC OUTLOOK —SUB-SAHARAN AFRICA INTERNATIONAL MONETARY FUND  • APRIL 2026 6Climate shocks and disruptions to fertilizer supply chains are likely to affect agricultural activity negatively and \n\nundermine food security. The recent floods in south eastern Africa are a reminder that the region is highly \n\nvulnerable to weather shocks, while shortfalls in the provision of fertilizers may reduce agricultural productivity",
+    "content": "contrast to Gen-Z protests in Madagascar, coup attempts in Benin and Guinea-Bissau, security challenges in the \n\nSahel and Democratic Republic of the Congo, and election-related violence in Tanzania. With several elections \n\nscheduled for 2026–27, there is a risk that reform efforts slow, and social tensions rise, including from rising fuel \n\nand food prices. 2 Simulations are carried out using the IMF’s AFRMOD model (Andrle and others 2015). In particular, oil prices increase by 100 percent [...] Sources: IMF Country Team Survey Data; IMF, World Economic Outlook database, and IMF staff calculations. Note: Respondents could select multiple answers. \n\n “High debt risk” reflects the share of countries with a debt risk status high or in distress from IMF countries debt \n\nsustainability analysis. \n\n “External imbalances” reflects the share of sub-Saharan African countries with either reserves in months of imports [...] REGIONAL ECONOMIC OUTLOOK -SUB-SAHARAN AFRICA INTERNATIONAL MONETARY FUND  • APRIL 2026 6Climate shocks and disruptions to fertilizer supply chains are likely to affect agricultural activity negatively and \n\nundermine food security. The recent floods in south eastern Africa are a reminder that the region is highly \n\nvulnerable to weather shocks, while shortfalls in the provision of fertilizers may reduce agricultural productivity",
     "id": "S1"
    }
   ],
@@ -11777,7 +11777,7 @@
  },
  "ZAF|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Reserves",
+  "title": "Country Risk Desk - ZAF - Reserves",
   "country": "ZAF",
   "indicator": "Reserves",
   "lang": "en",
@@ -11806,7 +11806,7 @@
  },
  "ZAF|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Reserves",
+  "title": "Country Risk Desk - ZAF - Reserves",
   "country": "ZAF",
   "indicator": "Reserves",
   "lang": "fr",
@@ -11835,7 +11835,7 @@
  },
  "ZAF|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Unemployment",
+  "title": "Country Risk Desk - ZAF - Unemployment",
   "country": "ZAF",
   "indicator": "Unemployment",
   "lang": "en",
@@ -11864,7 +11864,7 @@
  },
  "ZAF|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Unemployment",
+  "title": "Country Risk Desk - ZAF - Unemployment",
   "country": "ZAF",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -11893,7 +11893,7 @@
  },
  "ZAF|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Women in workforce",
+  "title": "Country Risk Desk - ZAF - Women in workforce",
   "country": "ZAF",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -11922,7 +11922,7 @@
  },
  "ZAF|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ZAF — Women in workforce",
+  "title": "Country Risk Desk - ZAF - Women in workforce",
   "country": "ZAF",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -11951,7 +11951,7 @@
  },
  "NGA|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — CO2 per capita",
+  "title": "Country Risk Desk - NGA - CO2 per capita",
   "country": "NGA",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -11980,7 +11980,7 @@
  },
  "NGA|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — CO2 per capita",
+  "title": "Country Risk Desk - NGA - CO2 per capita",
   "country": "NGA",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -12009,7 +12009,7 @@
  },
  "NGA|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Control of corruption",
+  "title": "Country Risk Desk - NGA - Control of corruption",
   "country": "NGA",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -12038,7 +12038,7 @@
  },
  "NGA|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Control of corruption",
+  "title": "Country Risk Desk - NGA - Control of corruption",
   "country": "NGA",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -12067,7 +12067,7 @@
  },
  "NGA|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Current account",
+  "title": "Country Risk Desk - NGA - Current account",
   "country": "NGA",
   "indicator": "Current account",
   "lang": "en",
@@ -12096,7 +12096,7 @@
  },
  "NGA|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Current account",
+  "title": "Country Risk Desk - NGA - Current account",
   "country": "NGA",
   "indicator": "Current account",
   "lang": "fr",
@@ -12125,7 +12125,7 @@
  },
  "NGA|Electricity access|en": {
   "status": "done",
-  "title": "Country Risk Desk — NGA — Electricity access",
+  "title": "Country Risk Desk - NGA - Electricity access",
   "country": "NGA",
   "indicator": "Electricity access",
   "lang": "en",
@@ -12208,7 +12208,7 @@
  },
  "NGA|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Electricity access",
+  "title": "Country Risk Desk - NGA - Electricity access",
   "country": "NGA",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -12237,7 +12237,7 @@
  },
  "NGA|External debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — External debt",
+  "title": "Country Risk Desk - NGA - External debt",
   "country": "NGA",
   "indicator": "External debt",
   "lang": "en",
@@ -12266,7 +12266,7 @@
  },
  "NGA|External debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — External debt",
+  "title": "Country Risk Desk - NGA - External debt",
   "country": "NGA",
   "indicator": "External debt",
   "lang": "fr",
@@ -12295,7 +12295,7 @@
  },
  "NGA|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — GDP growth",
+  "title": "Country Risk Desk - NGA - GDP growth",
   "country": "NGA",
   "indicator": "GDP growth",
   "lang": "en",
@@ -12324,7 +12324,7 @@
  },
  "NGA|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — GDP growth",
+  "title": "Country Risk Desk - NGA - GDP growth",
   "country": "NGA",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -12353,7 +12353,7 @@
  },
  "NGA|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Political stability",
+  "title": "Country Risk Desk - NGA - Political stability",
   "country": "NGA",
   "indicator": "Political stability",
   "lang": "en",
@@ -12382,7 +12382,7 @@
  },
  "NGA|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Political stability",
+  "title": "Country Risk Desk - NGA - Political stability",
   "country": "NGA",
   "indicator": "Political stability",
   "lang": "fr",
@@ -12411,7 +12411,7 @@
  },
  "NGA|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Reserves",
+  "title": "Country Risk Desk - NGA - Reserves",
   "country": "NGA",
   "indicator": "Reserves",
   "lang": "en",
@@ -12440,7 +12440,7 @@
  },
  "NGA|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Reserves",
+  "title": "Country Risk Desk - NGA - Reserves",
   "country": "NGA",
   "indicator": "Reserves",
   "lang": "fr",
@@ -12469,7 +12469,7 @@
  },
  "NGA|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Unemployment",
+  "title": "Country Risk Desk - NGA - Unemployment",
   "country": "NGA",
   "indicator": "Unemployment",
   "lang": "en",
@@ -12498,7 +12498,7 @@
  },
  "NGA|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Unemployment",
+  "title": "Country Risk Desk - NGA - Unemployment",
   "country": "NGA",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -12527,7 +12527,7 @@
  },
  "NGA|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Women in workforce",
+  "title": "Country Risk Desk - NGA - Women in workforce",
   "country": "NGA",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -12556,7 +12556,7 @@
  },
  "NGA|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — NGA — Women in workforce",
+  "title": "Country Risk Desk - NGA - Women in workforce",
   "country": "NGA",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -12585,7 +12585,7 @@
  },
  "ARG|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — CO2 per capita",
+  "title": "Country Risk Desk - ARG - CO2 per capita",
   "country": "ARG",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -12614,7 +12614,7 @@
  },
  "ARG|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — CO2 per capita",
+  "title": "Country Risk Desk - ARG - CO2 per capita",
   "country": "ARG",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -12643,7 +12643,7 @@
  },
  "ARG|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Control of corruption",
+  "title": "Country Risk Desk - ARG - Control of corruption",
   "country": "ARG",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -12672,7 +12672,7 @@
  },
  "ARG|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Control of corruption",
+  "title": "Country Risk Desk - ARG - Control of corruption",
   "country": "ARG",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -12701,7 +12701,7 @@
  },
  "ARG|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Current account",
+  "title": "Country Risk Desk - ARG - Current account",
   "country": "ARG",
   "indicator": "Current account",
   "lang": "en",
@@ -12730,7 +12730,7 @@
  },
  "ARG|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Current account",
+  "title": "Country Risk Desk - ARG - Current account",
   "country": "ARG",
   "indicator": "Current account",
   "lang": "fr",
@@ -12759,7 +12759,7 @@
  },
  "ARG|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Electricity access",
+  "title": "Country Risk Desk - ARG - Electricity access",
   "country": "ARG",
   "indicator": "Electricity access",
   "lang": "en",
@@ -12788,7 +12788,7 @@
  },
  "ARG|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Electricity access",
+  "title": "Country Risk Desk - ARG - Electricity access",
   "country": "ARG",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -12820,7 +12820,7 @@
  },
  "ARG|External debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — External debt",
+  "title": "Country Risk Desk - ARG - External debt",
   "country": "ARG",
   "indicator": "External debt",
   "lang": "en",
@@ -12849,7 +12849,7 @@
  },
  "ARG|External debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — External debt",
+  "title": "Country Risk Desk - ARG - External debt",
   "country": "ARG",
   "indicator": "External debt",
   "lang": "fr",
@@ -12878,7 +12878,7 @@
  },
  "ARG|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Political stability",
+  "title": "Country Risk Desk - ARG - Political stability",
   "country": "ARG",
   "indicator": "Political stability",
   "lang": "en",
@@ -12907,7 +12907,7 @@
  },
  "ARG|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Political stability",
+  "title": "Country Risk Desk - ARG - Political stability",
   "country": "ARG",
   "indicator": "Political stability",
   "lang": "fr",
@@ -12936,7 +12936,7 @@
  },
  "ARG|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Reserves",
+  "title": "Country Risk Desk - ARG - Reserves",
   "country": "ARG",
   "indicator": "Reserves",
   "lang": "en",
@@ -12965,7 +12965,7 @@
  },
  "ARG|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Reserves",
+  "title": "Country Risk Desk - ARG - Reserves",
   "country": "ARG",
   "indicator": "Reserves",
   "lang": "fr",
@@ -12994,7 +12994,7 @@
  },
  "ARG|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Unemployment",
+  "title": "Country Risk Desk - ARG - Unemployment",
   "country": "ARG",
   "indicator": "Unemployment",
   "lang": "en",
@@ -13023,7 +13023,7 @@
  },
  "ARG|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Unemployment",
+  "title": "Country Risk Desk - ARG - Unemployment",
   "country": "ARG",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -13052,7 +13052,7 @@
  },
  "ARG|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Women in workforce",
+  "title": "Country Risk Desk - ARG - Women in workforce",
   "country": "ARG",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -13081,7 +13081,7 @@
  },
  "ARG|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARG — Women in workforce",
+  "title": "Country Risk Desk - ARG - Women in workforce",
   "country": "ARG",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -13110,7 +13110,7 @@
  },
  "USA|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — CO2 per capita",
+  "title": "Country Risk Desk - USA - CO2 per capita",
   "country": "USA",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -13139,7 +13139,7 @@
  },
  "USA|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — CO2 per capita",
+  "title": "Country Risk Desk - USA - CO2 per capita",
   "country": "USA",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -13168,7 +13168,7 @@
  },
  "USA|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Control of corruption",
+  "title": "Country Risk Desk - USA - Control of corruption",
   "country": "USA",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -13197,7 +13197,7 @@
  },
  "USA|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Control of corruption",
+  "title": "Country Risk Desk - USA - Control of corruption",
   "country": "USA",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -13226,7 +13226,7 @@
  },
  "USA|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Current account",
+  "title": "Country Risk Desk - USA - Current account",
   "country": "USA",
   "indicator": "Current account",
   "lang": "en",
@@ -13255,7 +13255,7 @@
  },
  "USA|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Current account",
+  "title": "Country Risk Desk - USA - Current account",
   "country": "USA",
   "indicator": "Current account",
   "lang": "fr",
@@ -13284,7 +13284,7 @@
  },
  "USA|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Electricity access",
+  "title": "Country Risk Desk - USA - Electricity access",
   "country": "USA",
   "indicator": "Electricity access",
   "lang": "en",
@@ -13313,7 +13313,7 @@
  },
  "USA|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Electricity access",
+  "title": "Country Risk Desk - USA - Electricity access",
   "country": "USA",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -13345,7 +13345,7 @@
  },
  "USA|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — GDP growth",
+  "title": "Country Risk Desk - USA - GDP growth",
   "country": "USA",
   "indicator": "GDP growth",
   "lang": "en",
@@ -13374,7 +13374,7 @@
  },
  "USA|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — GDP growth",
+  "title": "Country Risk Desk - USA - GDP growth",
   "country": "USA",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -13403,7 +13403,7 @@
  },
  "USA|Gov debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Gov debt",
+  "title": "Country Risk Desk - USA - Gov debt",
   "country": "USA",
   "indicator": "Gov debt",
   "lang": "en",
@@ -13432,7 +13432,7 @@
  },
  "USA|Gov debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Gov debt",
+  "title": "Country Risk Desk - USA - Gov debt",
   "country": "USA",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -13461,7 +13461,7 @@
  },
  "USA|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Inflation",
+  "title": "Country Risk Desk - USA - Inflation",
   "country": "USA",
   "indicator": "Inflation",
   "lang": "en",
@@ -13490,7 +13490,7 @@
  },
  "USA|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Inflation",
+  "title": "Country Risk Desk - USA - Inflation",
   "country": "USA",
   "indicator": "Inflation",
   "lang": "fr",
@@ -13519,7 +13519,7 @@
  },
  "USA|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Interest rate",
+  "title": "Country Risk Desk - USA - Interest rate",
   "country": "USA",
   "indicator": "Interest rate",
   "lang": "en",
@@ -13548,7 +13548,7 @@
  },
  "USA|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Interest rate",
+  "title": "Country Risk Desk - USA - Interest rate",
   "country": "USA",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -13577,7 +13577,7 @@
  },
  "USA|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Political stability",
+  "title": "Country Risk Desk - USA - Political stability",
   "country": "USA",
   "indicator": "Political stability",
   "lang": "en",
@@ -13606,7 +13606,7 @@
  },
  "USA|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Political stability",
+  "title": "Country Risk Desk - USA - Political stability",
   "country": "USA",
   "indicator": "Political stability",
   "lang": "fr",
@@ -13635,7 +13635,7 @@
  },
  "USA|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Reserves",
+  "title": "Country Risk Desk - USA - Reserves",
   "country": "USA",
   "indicator": "Reserves",
   "lang": "en",
@@ -13664,7 +13664,7 @@
  },
  "USA|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Reserves",
+  "title": "Country Risk Desk - USA - Reserves",
   "country": "USA",
   "indicator": "Reserves",
   "lang": "fr",
@@ -13693,7 +13693,7 @@
  },
  "USA|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Unemployment",
+  "title": "Country Risk Desk - USA - Unemployment",
   "country": "USA",
   "indicator": "Unemployment",
   "lang": "en",
@@ -13722,7 +13722,7 @@
  },
  "USA|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Unemployment",
+  "title": "Country Risk Desk - USA - Unemployment",
   "country": "USA",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -13751,7 +13751,7 @@
  },
  "USA|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Women in workforce",
+  "title": "Country Risk Desk - USA - Women in workforce",
   "country": "USA",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -13780,7 +13780,7 @@
  },
  "USA|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — USA — Women in workforce",
+  "title": "Country Risk Desk - USA - Women in workforce",
   "country": "USA",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -13809,7 +13809,7 @@
  },
  "CHN|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — CO2 per capita",
+  "title": "Country Risk Desk - CHN - CO2 per capita",
   "country": "CHN",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -13838,7 +13838,7 @@
  },
  "CHN|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — CO2 per capita",
+  "title": "Country Risk Desk - CHN - CO2 per capita",
   "country": "CHN",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -13867,7 +13867,7 @@
  },
  "CHN|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Control of corruption",
+  "title": "Country Risk Desk - CHN - Control of corruption",
   "country": "CHN",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -13896,7 +13896,7 @@
  },
  "CHN|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Control of corruption",
+  "title": "Country Risk Desk - CHN - Control of corruption",
   "country": "CHN",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -13925,7 +13925,7 @@
  },
  "CHN|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Current account",
+  "title": "Country Risk Desk - CHN - Current account",
   "country": "CHN",
   "indicator": "Current account",
   "lang": "en",
@@ -13954,7 +13954,7 @@
  },
  "CHN|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Current account",
+  "title": "Country Risk Desk - CHN - Current account",
   "country": "CHN",
   "indicator": "Current account",
   "lang": "fr",
@@ -13983,7 +13983,7 @@
  },
  "CHN|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Electricity access",
+  "title": "Country Risk Desk - CHN - Electricity access",
   "country": "CHN",
   "indicator": "Electricity access",
   "lang": "en",
@@ -14012,7 +14012,7 @@
  },
  "CHN|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Electricity access",
+  "title": "Country Risk Desk - CHN - Electricity access",
   "country": "CHN",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -14041,7 +14041,7 @@
  },
  "CHN|External debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — External debt",
+  "title": "Country Risk Desk - CHN - External debt",
   "country": "CHN",
   "indicator": "External debt",
   "lang": "en",
@@ -14070,7 +14070,7 @@
  },
  "CHN|External debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — External debt",
+  "title": "Country Risk Desk - CHN - External debt",
   "country": "CHN",
   "indicator": "External debt",
   "lang": "fr",
@@ -14099,7 +14099,7 @@
  },
  "CHN|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — GDP growth",
+  "title": "Country Risk Desk - CHN - GDP growth",
   "country": "CHN",
   "indicator": "GDP growth",
   "lang": "en",
@@ -14128,7 +14128,7 @@
  },
  "CHN|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — GDP growth",
+  "title": "Country Risk Desk - CHN - GDP growth",
   "country": "CHN",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -14157,7 +14157,7 @@
  },
  "CHN|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Inflation",
+  "title": "Country Risk Desk - CHN - Inflation",
   "country": "CHN",
   "indicator": "Inflation",
   "lang": "en",
@@ -14186,7 +14186,7 @@
  },
  "CHN|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Inflation",
+  "title": "Country Risk Desk - CHN - Inflation",
   "country": "CHN",
   "indicator": "Inflation",
   "lang": "fr",
@@ -14215,7 +14215,7 @@
  },
  "CHN|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Interest rate",
+  "title": "Country Risk Desk - CHN - Interest rate",
   "country": "CHN",
   "indicator": "Interest rate",
   "lang": "en",
@@ -14244,7 +14244,7 @@
  },
  "CHN|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Interest rate",
+  "title": "Country Risk Desk - CHN - Interest rate",
   "country": "CHN",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -14273,7 +14273,7 @@
  },
  "CHN|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Political stability",
+  "title": "Country Risk Desk - CHN - Political stability",
   "country": "CHN",
   "indicator": "Political stability",
   "lang": "en",
@@ -14305,7 +14305,7 @@
  },
  "CHN|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Political stability",
+  "title": "Country Risk Desk - CHN - Political stability",
   "country": "CHN",
   "indicator": "Political stability",
   "lang": "fr",
@@ -14334,7 +14334,7 @@
  },
  "CHN|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Reserves",
+  "title": "Country Risk Desk - CHN - Reserves",
   "country": "CHN",
   "indicator": "Reserves",
   "lang": "en",
@@ -14363,7 +14363,7 @@
  },
  "CHN|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Reserves",
+  "title": "Country Risk Desk - CHN - Reserves",
   "country": "CHN",
   "indicator": "Reserves",
   "lang": "fr",
@@ -14392,7 +14392,7 @@
  },
  "CHN|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Unemployment",
+  "title": "Country Risk Desk - CHN - Unemployment",
   "country": "CHN",
   "indicator": "Unemployment",
   "lang": "en",
@@ -14421,7 +14421,7 @@
  },
  "CHN|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Unemployment",
+  "title": "Country Risk Desk - CHN - Unemployment",
   "country": "CHN",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -14450,7 +14450,7 @@
  },
  "CHN|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Women in workforce",
+  "title": "Country Risk Desk - CHN - Women in workforce",
   "country": "CHN",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -14479,7 +14479,7 @@
  },
  "CHN|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — CHN — Women in workforce",
+  "title": "Country Risk Desk - CHN - Women in workforce",
   "country": "CHN",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -14508,7 +14508,7 @@
  },
  "DEU|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — CO2 per capita",
+  "title": "Country Risk Desk - DEU - CO2 per capita",
   "country": "DEU",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -14537,7 +14537,7 @@
  },
  "DEU|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — CO2 per capita",
+  "title": "Country Risk Desk - DEU - CO2 per capita",
   "country": "DEU",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -14566,7 +14566,7 @@
  },
  "DEU|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Control of corruption",
+  "title": "Country Risk Desk - DEU - Control of corruption",
   "country": "DEU",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -14595,7 +14595,7 @@
  },
  "DEU|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Control of corruption",
+  "title": "Country Risk Desk - DEU - Control of corruption",
   "country": "DEU",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -14624,7 +14624,7 @@
  },
  "DEU|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Current account",
+  "title": "Country Risk Desk - DEU - Current account",
   "country": "DEU",
   "indicator": "Current account",
   "lang": "en",
@@ -14653,7 +14653,7 @@
  },
  "DEU|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Current account",
+  "title": "Country Risk Desk - DEU - Current account",
   "country": "DEU",
   "indicator": "Current account",
   "lang": "fr",
@@ -14682,7 +14682,7 @@
  },
  "DEU|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Electricity access",
+  "title": "Country Risk Desk - DEU - Electricity access",
   "country": "DEU",
   "indicator": "Electricity access",
   "lang": "en",
@@ -14711,7 +14711,7 @@
  },
  "DEU|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Electricity access",
+  "title": "Country Risk Desk - DEU - Electricity access",
   "country": "DEU",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -14740,7 +14740,7 @@
  },
  "DEU|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — GDP growth",
+  "title": "Country Risk Desk - DEU - GDP growth",
   "country": "DEU",
   "indicator": "GDP growth",
   "lang": "en",
@@ -14769,7 +14769,7 @@
  },
  "DEU|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — GDP growth",
+  "title": "Country Risk Desk - DEU - GDP growth",
   "country": "DEU",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -14798,7 +14798,7 @@
  },
  "DEU|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Inflation",
+  "title": "Country Risk Desk - DEU - Inflation",
   "country": "DEU",
   "indicator": "Inflation",
   "lang": "en",
@@ -14827,7 +14827,7 @@
  },
  "DEU|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Inflation",
+  "title": "Country Risk Desk - DEU - Inflation",
   "country": "DEU",
   "indicator": "Inflation",
   "lang": "fr",
@@ -14856,7 +14856,7 @@
  },
  "DEU|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Political stability",
+  "title": "Country Risk Desk - DEU - Political stability",
   "country": "DEU",
   "indicator": "Political stability",
   "lang": "en",
@@ -14888,7 +14888,7 @@
  },
  "DEU|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Political stability",
+  "title": "Country Risk Desk - DEU - Political stability",
   "country": "DEU",
   "indicator": "Political stability",
   "lang": "fr",
@@ -14917,7 +14917,7 @@
  },
  "DEU|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Reserves",
+  "title": "Country Risk Desk - DEU - Reserves",
   "country": "DEU",
   "indicator": "Reserves",
   "lang": "en",
@@ -14946,7 +14946,7 @@
  },
  "DEU|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Reserves",
+  "title": "Country Risk Desk - DEU - Reserves",
   "country": "DEU",
   "indicator": "Reserves",
   "lang": "fr",
@@ -14975,7 +14975,7 @@
  },
  "DEU|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Unemployment",
+  "title": "Country Risk Desk - DEU - Unemployment",
   "country": "DEU",
   "indicator": "Unemployment",
   "lang": "en",
@@ -15004,7 +15004,7 @@
  },
  "DEU|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Unemployment",
+  "title": "Country Risk Desk - DEU - Unemployment",
   "country": "DEU",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -15033,7 +15033,7 @@
  },
  "DEU|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Women in workforce",
+  "title": "Country Risk Desk - DEU - Women in workforce",
   "country": "DEU",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -15062,7 +15062,7 @@
  },
  "DEU|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — DEU — Women in workforce",
+  "title": "Country Risk Desk - DEU - Women in workforce",
   "country": "DEU",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -15091,7 +15091,7 @@
  },
  "FRA|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — CO2 per capita",
+  "title": "Country Risk Desk - FRA - CO2 per capita",
   "country": "FRA",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -15120,7 +15120,7 @@
  },
  "FRA|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — CO2 per capita",
+  "title": "Country Risk Desk - FRA - CO2 per capita",
   "country": "FRA",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -15149,7 +15149,7 @@
  },
  "FRA|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Control of corruption",
+  "title": "Country Risk Desk - FRA - Control of corruption",
   "country": "FRA",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -15178,7 +15178,7 @@
  },
  "FRA|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Control of corruption",
+  "title": "Country Risk Desk - FRA - Control of corruption",
   "country": "FRA",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -15207,7 +15207,7 @@
  },
  "FRA|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Current account",
+  "title": "Country Risk Desk - FRA - Current account",
   "country": "FRA",
   "indicator": "Current account",
   "lang": "en",
@@ -15236,7 +15236,7 @@
  },
  "FRA|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Current account",
+  "title": "Country Risk Desk - FRA - Current account",
   "country": "FRA",
   "indicator": "Current account",
   "lang": "fr",
@@ -15265,7 +15265,7 @@
  },
  "FRA|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Electricity access",
+  "title": "Country Risk Desk - FRA - Electricity access",
   "country": "FRA",
   "indicator": "Electricity access",
   "lang": "en",
@@ -15294,7 +15294,7 @@
  },
  "FRA|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Electricity access",
+  "title": "Country Risk Desk - FRA - Electricity access",
   "country": "FRA",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -15323,7 +15323,7 @@
  },
  "FRA|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — GDP growth",
+  "title": "Country Risk Desk - FRA - GDP growth",
   "country": "FRA",
   "indicator": "GDP growth",
   "lang": "en",
@@ -15352,7 +15352,7 @@
  },
  "FRA|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — GDP growth",
+  "title": "Country Risk Desk - FRA - GDP growth",
   "country": "FRA",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -15381,7 +15381,7 @@
  },
  "FRA|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Inflation",
+  "title": "Country Risk Desk - FRA - Inflation",
   "country": "FRA",
   "indicator": "Inflation",
   "lang": "en",
@@ -15410,7 +15410,7 @@
  },
  "FRA|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Inflation",
+  "title": "Country Risk Desk - FRA - Inflation",
   "country": "FRA",
   "indicator": "Inflation",
   "lang": "fr",
@@ -15439,7 +15439,7 @@
  },
  "FRA|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Political stability",
+  "title": "Country Risk Desk - FRA - Political stability",
   "country": "FRA",
   "indicator": "Political stability",
   "lang": "en",
@@ -15468,7 +15468,7 @@
  },
  "FRA|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Political stability",
+  "title": "Country Risk Desk - FRA - Political stability",
   "country": "FRA",
   "indicator": "Political stability",
   "lang": "fr",
@@ -15497,7 +15497,7 @@
  },
  "FRA|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Reserves",
+  "title": "Country Risk Desk - FRA - Reserves",
   "country": "FRA",
   "indicator": "Reserves",
   "lang": "en",
@@ -15526,7 +15526,7 @@
  },
  "FRA|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Reserves",
+  "title": "Country Risk Desk - FRA - Reserves",
   "country": "FRA",
   "indicator": "Reserves",
   "lang": "fr",
@@ -15555,7 +15555,7 @@
  },
  "FRA|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Unemployment",
+  "title": "Country Risk Desk - FRA - Unemployment",
   "country": "FRA",
   "indicator": "Unemployment",
   "lang": "en",
@@ -15584,7 +15584,7 @@
  },
  "FRA|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Unemployment",
+  "title": "Country Risk Desk - FRA - Unemployment",
   "country": "FRA",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -15613,7 +15613,7 @@
  },
  "FRA|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Women in workforce",
+  "title": "Country Risk Desk - FRA - Women in workforce",
   "country": "FRA",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -15642,7 +15642,7 @@
  },
  "FRA|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — FRA — Women in workforce",
+  "title": "Country Risk Desk - FRA - Women in workforce",
   "country": "FRA",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -15671,7 +15671,7 @@
  },
  "GBR|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — CO2 per capita",
+  "title": "Country Risk Desk - GBR - CO2 per capita",
   "country": "GBR",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -15700,7 +15700,7 @@
  },
  "GBR|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — CO2 per capita",
+  "title": "Country Risk Desk - GBR - CO2 per capita",
   "country": "GBR",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -15729,7 +15729,7 @@
  },
  "GBR|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Control of corruption",
+  "title": "Country Risk Desk - GBR - Control of corruption",
   "country": "GBR",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -15758,7 +15758,7 @@
  },
  "GBR|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Control of corruption",
+  "title": "Country Risk Desk - GBR - Control of corruption",
   "country": "GBR",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -15787,7 +15787,7 @@
  },
  "GBR|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Current account",
+  "title": "Country Risk Desk - GBR - Current account",
   "country": "GBR",
   "indicator": "Current account",
   "lang": "en",
@@ -15816,7 +15816,7 @@
  },
  "GBR|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Current account",
+  "title": "Country Risk Desk - GBR - Current account",
   "country": "GBR",
   "indicator": "Current account",
   "lang": "fr",
@@ -15845,7 +15845,7 @@
  },
  "GBR|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Electricity access",
+  "title": "Country Risk Desk - GBR - Electricity access",
   "country": "GBR",
   "indicator": "Electricity access",
   "lang": "en",
@@ -15874,7 +15874,7 @@
  },
  "GBR|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Electricity access",
+  "title": "Country Risk Desk - GBR - Electricity access",
   "country": "GBR",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -15903,7 +15903,7 @@
  },
  "GBR|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — GDP growth",
+  "title": "Country Risk Desk - GBR - GDP growth",
   "country": "GBR",
   "indicator": "GDP growth",
   "lang": "en",
@@ -15932,7 +15932,7 @@
  },
  "GBR|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — GDP growth",
+  "title": "Country Risk Desk - GBR - GDP growth",
   "country": "GBR",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -15961,7 +15961,7 @@
  },
  "GBR|Gov debt|en": {
   "status": "done",
-  "title": "Country Risk Desk — GBR — Gov debt",
+  "title": "Country Risk Desk - GBR - Gov debt",
   "country": "GBR",
   "indicator": "Gov debt",
   "lang": "en",
@@ -16085,7 +16085,7 @@
  },
  "GBR|Gov debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Gov debt",
+  "title": "Country Risk Desk - GBR - Gov debt",
   "country": "GBR",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -16114,7 +16114,7 @@
  },
  "GBR|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Inflation",
+  "title": "Country Risk Desk - GBR - Inflation",
   "country": "GBR",
   "indicator": "Inflation",
   "lang": "en",
@@ -16143,7 +16143,7 @@
  },
  "GBR|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Inflation",
+  "title": "Country Risk Desk - GBR - Inflation",
   "country": "GBR",
   "indicator": "Inflation",
   "lang": "fr",
@@ -16172,7 +16172,7 @@
  },
  "GBR|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Interest rate",
+  "title": "Country Risk Desk - GBR - Interest rate",
   "country": "GBR",
   "indicator": "Interest rate",
   "lang": "en",
@@ -16201,7 +16201,7 @@
  },
  "GBR|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Interest rate",
+  "title": "Country Risk Desk - GBR - Interest rate",
   "country": "GBR",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -16230,7 +16230,7 @@
  },
  "GBR|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Political stability",
+  "title": "Country Risk Desk - GBR - Political stability",
   "country": "GBR",
   "indicator": "Political stability",
   "lang": "en",
@@ -16259,7 +16259,7 @@
  },
  "GBR|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Political stability",
+  "title": "Country Risk Desk - GBR - Political stability",
   "country": "GBR",
   "indicator": "Political stability",
   "lang": "fr",
@@ -16288,7 +16288,7 @@
  },
  "GBR|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Reserves",
+  "title": "Country Risk Desk - GBR - Reserves",
   "country": "GBR",
   "indicator": "Reserves",
   "lang": "en",
@@ -16317,7 +16317,7 @@
  },
  "GBR|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Reserves",
+  "title": "Country Risk Desk - GBR - Reserves",
   "country": "GBR",
   "indicator": "Reserves",
   "lang": "fr",
@@ -16346,7 +16346,7 @@
  },
  "GBR|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Unemployment",
+  "title": "Country Risk Desk - GBR - Unemployment",
   "country": "GBR",
   "indicator": "Unemployment",
   "lang": "en",
@@ -16375,7 +16375,7 @@
  },
  "GBR|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Unemployment",
+  "title": "Country Risk Desk - GBR - Unemployment",
   "country": "GBR",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -16404,7 +16404,7 @@
  },
  "GBR|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Women in workforce",
+  "title": "Country Risk Desk - GBR - Women in workforce",
   "country": "GBR",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -16433,7 +16433,7 @@
  },
  "GBR|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — GBR — Women in workforce",
+  "title": "Country Risk Desk - GBR - Women in workforce",
   "country": "GBR",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -16462,7 +16462,7 @@
  },
  "JPN|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — CO2 per capita",
+  "title": "Country Risk Desk - JPN - CO2 per capita",
   "country": "JPN",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -16491,7 +16491,7 @@
  },
  "JPN|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — CO2 per capita",
+  "title": "Country Risk Desk - JPN - CO2 per capita",
   "country": "JPN",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -16520,7 +16520,7 @@
  },
  "JPN|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Control of corruption",
+  "title": "Country Risk Desk - JPN - Control of corruption",
   "country": "JPN",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -16549,7 +16549,7 @@
  },
  "JPN|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Control of corruption",
+  "title": "Country Risk Desk - JPN - Control of corruption",
   "country": "JPN",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -16578,7 +16578,7 @@
  },
  "JPN|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Current account",
+  "title": "Country Risk Desk - JPN - Current account",
   "country": "JPN",
   "indicator": "Current account",
   "lang": "en",
@@ -16607,7 +16607,7 @@
  },
  "JPN|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Current account",
+  "title": "Country Risk Desk - JPN - Current account",
   "country": "JPN",
   "indicator": "Current account",
   "lang": "fr",
@@ -16636,7 +16636,7 @@
  },
  "JPN|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Electricity access",
+  "title": "Country Risk Desk - JPN - Electricity access",
   "country": "JPN",
   "indicator": "Electricity access",
   "lang": "en",
@@ -16665,7 +16665,7 @@
  },
  "JPN|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Electricity access",
+  "title": "Country Risk Desk - JPN - Electricity access",
   "country": "JPN",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -16694,7 +16694,7 @@
  },
  "JPN|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — GDP growth",
+  "title": "Country Risk Desk - JPN - GDP growth",
   "country": "JPN",
   "indicator": "GDP growth",
   "lang": "en",
@@ -16723,7 +16723,7 @@
  },
  "JPN|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — GDP growth",
+  "title": "Country Risk Desk - JPN - GDP growth",
   "country": "JPN",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -16752,7 +16752,7 @@
  },
  "JPN|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Inflation",
+  "title": "Country Risk Desk - JPN - Inflation",
   "country": "JPN",
   "indicator": "Inflation",
   "lang": "en",
@@ -16781,7 +16781,7 @@
  },
  "JPN|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Inflation",
+  "title": "Country Risk Desk - JPN - Inflation",
   "country": "JPN",
   "indicator": "Inflation",
   "lang": "fr",
@@ -16810,7 +16810,7 @@
  },
  "JPN|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Interest rate",
+  "title": "Country Risk Desk - JPN - Interest rate",
   "country": "JPN",
   "indicator": "Interest rate",
   "lang": "en",
@@ -16839,7 +16839,7 @@
  },
  "JPN|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Interest rate",
+  "title": "Country Risk Desk - JPN - Interest rate",
   "country": "JPN",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -16868,7 +16868,7 @@
  },
  "JPN|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Political stability",
+  "title": "Country Risk Desk - JPN - Political stability",
   "country": "JPN",
   "indicator": "Political stability",
   "lang": "en",
@@ -16897,7 +16897,7 @@
  },
  "JPN|Political stability|fr": {
   "status": "done",
-  "title": "Country Risk Desk — JPN — Political stability",
+  "title": "Country Risk Desk - JPN - Political stability",
   "country": "JPN",
   "indicator": "Political stability",
   "lang": "fr",
@@ -16957,7 +16957,7 @@
     "url": "https://www.imf.org/-/media/files/publications/weo/2026/april/english/text.pdf",
     "domain": "imf.org",
     "published_date": "Wed, 22 Apr 2026 21:25:34 GMT",
-    "content": "sharply in Japan in January 2026 to below the 2 percent target for the first time since the second quarter of 2022, with the decline largely reflecting the provisional gasoline tax abolition. Risk-off sentiment following the outbreak of the Middle East conflict has led to a moderate tightening of global financial conditions, but they remain accom-modative from a historical point of view (see the April 2026 Global Financial Stability Report ). Concerns about a resurgence of inflation have raised [...] pov-erty in commodity-importing countries could exacer-bate those countries’ external imbalances and put those with limited reserves at risk of balance of payments distress and social unrest. Political instability could ensue, with the economic toll of the ongoing conflicts imposing knock-on effects on preexisting domestic political tensions. Sub-Saharan African economies may be especially susceptible to such dynamics. An increase in risk aversion or increased frictions in cross-border [...] • Country risk premiums and uncertainty. Investment often remains depressed in postconflict econo-mies, particularly in developing economies that 21 Examples of countries undergoing rapid reconstruction of physical capital after large destruction include Germany, Japan, and Vietnam (Davis and Weinstein 2002; Brakman, Garretsen, and Schramm 2004). rely on foreign capital—including foreign direct investment—to finance investment and face elevated perceptions of economic and political risk (Le and",
+    "content": "sharply in Japan in January 2026 to below the 2 percent target for the first time since the second quarter of 2022, with the decline largely reflecting the provisional gasoline tax abolition. Risk-off sentiment following the outbreak of the Middle East conflict has led to a moderate tightening of global financial conditions, but they remain accom-modative from a historical point of view (see the April 2026 Global Financial Stability Report ). Concerns about a resurgence of inflation have raised [...] pov-erty in commodity-importing countries could exacer-bate those countries’ external imbalances and put those with limited reserves at risk of balance of payments distress and social unrest. Political instability could ensue, with the economic toll of the ongoing conflicts imposing knock-on effects on preexisting domestic political tensions. Sub-Saharan African economies may be especially susceptible to such dynamics. An increase in risk aversion or increased frictions in cross-border [...] • Country risk premiums and uncertainty. Investment often remains depressed in postconflict econo-mies, particularly in developing economies that 21 Examples of countries undergoing rapid reconstruction of physical capital after large destruction include Germany, Japan, and Vietnam (Davis and Weinstein 2002; Brakman, Garretsen, and Schramm 2004). rely on foreign capital-including foreign direct investment-to finance investment and face elevated perceptions of economic and political risk (Le and",
     "id": "S1"
    },
    {
@@ -16965,7 +16965,7 @@
     "url": "https://www.imf.org/-/media/files/publications/weo/2026/april/english/ch3.pdf",
     "domain": "imf.org",
     "published_date": "Tue, 07 Apr 2026 14:33:24 GMT",
-    "content": "stability Financing and international assistance Inclusive policies −0.4 −0.2 00.2 0.4 0.6 0.8 1.0 [...] • Country risk premiums and uncertainty. Investment often remains depressed in postconflict econo-mies, particularly in developing economies that 21 Examples of countries undergoing rapid reconstruction of physical capital after large destruction include Germany, Japan, and Vietnam (Davis and Weinstein 2002; Brakman, Garretsen, and Schramm 2004). rely on foreign capital—including foreign direct investment—to finance investment and face elevated perceptions of economic and political risk (Le and [...] evidence suggests that macroeconomic stabilization achieved under IMF-supported programs can help reduce country risk premiums (Gehring and Lang 2020). The first scenario assumes that the wedges generated by the two-pronged confidence shocks associated with conflict gradually converge to their preconflict levels over eight years.",
+    "content": "stability Financing and international assistance Inclusive policies −0.4 −0.2 00.2 0.4 0.6 0.8 1.0 [...] • Country risk premiums and uncertainty. Investment often remains depressed in postconflict econo-mies, particularly in developing economies that 21 Examples of countries undergoing rapid reconstruction of physical capital after large destruction include Germany, Japan, and Vietnam (Davis and Weinstein 2002; Brakman, Garretsen, and Schramm 2004). rely on foreign capital-including foreign direct investment-to finance investment and face elevated perceptions of economic and political risk (Le and [...] evidence suggests that macroeconomic stabilization achieved under IMF-supported programs can help reduce country risk premiums (Gehring and Lang 2020). The first scenario assumes that the wedges generated by the two-pronged confidence shocks associated with conflict gradually converge to their preconflict levels over eight years.",
     "id": "S2"
    },
    {
@@ -16986,7 +16986,7 @@
  },
  "JPN|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Reserves",
+  "title": "Country Risk Desk - JPN - Reserves",
   "country": "JPN",
   "indicator": "Reserves",
   "lang": "en",
@@ -17015,7 +17015,7 @@
  },
  "JPN|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Reserves",
+  "title": "Country Risk Desk - JPN - Reserves",
   "country": "JPN",
   "indicator": "Reserves",
   "lang": "fr",
@@ -17044,7 +17044,7 @@
  },
  "JPN|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Unemployment",
+  "title": "Country Risk Desk - JPN - Unemployment",
   "country": "JPN",
   "indicator": "Unemployment",
   "lang": "en",
@@ -17073,7 +17073,7 @@
  },
  "JPN|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Unemployment",
+  "title": "Country Risk Desk - JPN - Unemployment",
   "country": "JPN",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -17102,7 +17102,7 @@
  },
  "JPN|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Women in workforce",
+  "title": "Country Risk Desk - JPN - Women in workforce",
   "country": "JPN",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -17131,7 +17131,7 @@
  },
  "JPN|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — JPN — Women in workforce",
+  "title": "Country Risk Desk - JPN - Women in workforce",
   "country": "JPN",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -17160,7 +17160,7 @@
  },
  "KOR|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — CO2 per capita",
+  "title": "Country Risk Desk - KOR - CO2 per capita",
   "country": "KOR",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -17189,7 +17189,7 @@
  },
  "KOR|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — CO2 per capita",
+  "title": "Country Risk Desk - KOR - CO2 per capita",
   "country": "KOR",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -17218,7 +17218,7 @@
  },
  "KOR|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Control of corruption",
+  "title": "Country Risk Desk - KOR - Control of corruption",
   "country": "KOR",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -17247,7 +17247,7 @@
  },
  "KOR|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Control of corruption",
+  "title": "Country Risk Desk - KOR - Control of corruption",
   "country": "KOR",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -17276,7 +17276,7 @@
  },
  "KOR|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Current account",
+  "title": "Country Risk Desk - KOR - Current account",
   "country": "KOR",
   "indicator": "Current account",
   "lang": "en",
@@ -17305,7 +17305,7 @@
  },
  "KOR|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Current account",
+  "title": "Country Risk Desk - KOR - Current account",
   "country": "KOR",
   "indicator": "Current account",
   "lang": "fr",
@@ -17334,7 +17334,7 @@
  },
  "KOR|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Electricity access",
+  "title": "Country Risk Desk - KOR - Electricity access",
   "country": "KOR",
   "indicator": "Electricity access",
   "lang": "en",
@@ -17363,7 +17363,7 @@
  },
  "KOR|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Electricity access",
+  "title": "Country Risk Desk - KOR - Electricity access",
   "country": "KOR",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -17392,7 +17392,7 @@
  },
  "KOR|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — GDP growth",
+  "title": "Country Risk Desk - KOR - GDP growth",
   "country": "KOR",
   "indicator": "GDP growth",
   "lang": "en",
@@ -17421,7 +17421,7 @@
  },
  "KOR|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — GDP growth",
+  "title": "Country Risk Desk - KOR - GDP growth",
   "country": "KOR",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -17450,7 +17450,7 @@
  },
  "KOR|Gov debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Gov debt",
+  "title": "Country Risk Desk - KOR - Gov debt",
   "country": "KOR",
   "indicator": "Gov debt",
   "lang": "en",
@@ -17479,7 +17479,7 @@
  },
  "KOR|Gov debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Gov debt",
+  "title": "Country Risk Desk - KOR - Gov debt",
   "country": "KOR",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -17508,7 +17508,7 @@
  },
  "KOR|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Inflation",
+  "title": "Country Risk Desk - KOR - Inflation",
   "country": "KOR",
   "indicator": "Inflation",
   "lang": "en",
@@ -17537,7 +17537,7 @@
  },
  "KOR|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Inflation",
+  "title": "Country Risk Desk - KOR - Inflation",
   "country": "KOR",
   "indicator": "Inflation",
   "lang": "fr",
@@ -17566,7 +17566,7 @@
  },
  "KOR|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Interest rate",
+  "title": "Country Risk Desk - KOR - Interest rate",
   "country": "KOR",
   "indicator": "Interest rate",
   "lang": "en",
@@ -17595,7 +17595,7 @@
  },
  "KOR|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Interest rate",
+  "title": "Country Risk Desk - KOR - Interest rate",
   "country": "KOR",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -17624,7 +17624,7 @@
  },
  "KOR|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Political stability",
+  "title": "Country Risk Desk - KOR - Political stability",
   "country": "KOR",
   "indicator": "Political stability",
   "lang": "en",
@@ -17653,7 +17653,7 @@
  },
  "KOR|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Political stability",
+  "title": "Country Risk Desk - KOR - Political stability",
   "country": "KOR",
   "indicator": "Political stability",
   "lang": "fr",
@@ -17682,7 +17682,7 @@
  },
  "KOR|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Reserves",
+  "title": "Country Risk Desk - KOR - Reserves",
   "country": "KOR",
   "indicator": "Reserves",
   "lang": "en",
@@ -17711,7 +17711,7 @@
  },
  "KOR|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Reserves",
+  "title": "Country Risk Desk - KOR - Reserves",
   "country": "KOR",
   "indicator": "Reserves",
   "lang": "fr",
@@ -17740,7 +17740,7 @@
  },
  "KOR|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Unemployment",
+  "title": "Country Risk Desk - KOR - Unemployment",
   "country": "KOR",
   "indicator": "Unemployment",
   "lang": "en",
@@ -17769,7 +17769,7 @@
  },
  "KOR|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Unemployment",
+  "title": "Country Risk Desk - KOR - Unemployment",
   "country": "KOR",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -17798,7 +17798,7 @@
  },
  "KOR|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Women in workforce",
+  "title": "Country Risk Desk - KOR - Women in workforce",
   "country": "KOR",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -17830,7 +17830,7 @@
  },
  "KOR|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — KOR — Women in workforce",
+  "title": "Country Risk Desk - KOR - Women in workforce",
   "country": "KOR",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -17859,7 +17859,7 @@
  },
  "SAU|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — CO2 per capita",
+  "title": "Country Risk Desk - SAU - CO2 per capita",
   "country": "SAU",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -17888,7 +17888,7 @@
  },
  "SAU|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — CO2 per capita",
+  "title": "Country Risk Desk - SAU - CO2 per capita",
   "country": "SAU",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -17917,7 +17917,7 @@
  },
  "SAU|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Control of corruption",
+  "title": "Country Risk Desk - SAU - Control of corruption",
   "country": "SAU",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -17946,7 +17946,7 @@
  },
  "SAU|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Control of corruption",
+  "title": "Country Risk Desk - SAU - Control of corruption",
   "country": "SAU",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -17975,7 +17975,7 @@
  },
  "SAU|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Current account",
+  "title": "Country Risk Desk - SAU - Current account",
   "country": "SAU",
   "indicator": "Current account",
   "lang": "en",
@@ -18004,7 +18004,7 @@
  },
  "SAU|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Current account",
+  "title": "Country Risk Desk - SAU - Current account",
   "country": "SAU",
   "indicator": "Current account",
   "lang": "fr",
@@ -18033,7 +18033,7 @@
  },
  "SAU|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Electricity access",
+  "title": "Country Risk Desk - SAU - Electricity access",
   "country": "SAU",
   "indicator": "Electricity access",
   "lang": "en",
@@ -18062,7 +18062,7 @@
  },
  "SAU|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Electricity access",
+  "title": "Country Risk Desk - SAU - Electricity access",
   "country": "SAU",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -18091,7 +18091,7 @@
  },
  "SAU|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Political stability",
+  "title": "Country Risk Desk - SAU - Political stability",
   "country": "SAU",
   "indicator": "Political stability",
   "lang": "en",
@@ -18120,7 +18120,7 @@
  },
  "SAU|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Political stability",
+  "title": "Country Risk Desk - SAU - Political stability",
   "country": "SAU",
   "indicator": "Political stability",
   "lang": "fr",
@@ -18149,7 +18149,7 @@
  },
  "SAU|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Reserves",
+  "title": "Country Risk Desk - SAU - Reserves",
   "country": "SAU",
   "indicator": "Reserves",
   "lang": "en",
@@ -18178,7 +18178,7 @@
  },
  "SAU|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Reserves",
+  "title": "Country Risk Desk - SAU - Reserves",
   "country": "SAU",
   "indicator": "Reserves",
   "lang": "fr",
@@ -18207,7 +18207,7 @@
  },
  "SAU|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Unemployment",
+  "title": "Country Risk Desk - SAU - Unemployment",
   "country": "SAU",
   "indicator": "Unemployment",
   "lang": "en",
@@ -18236,7 +18236,7 @@
  },
  "SAU|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Unemployment",
+  "title": "Country Risk Desk - SAU - Unemployment",
   "country": "SAU",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -18265,7 +18265,7 @@
  },
  "SAU|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Women in workforce",
+  "title": "Country Risk Desk - SAU - Women in workforce",
   "country": "SAU",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -18294,7 +18294,7 @@
  },
  "SAU|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — SAU — Women in workforce",
+  "title": "Country Risk Desk - SAU - Women in workforce",
   "country": "SAU",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -18323,7 +18323,7 @@
  },
  "ARE|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — CO2 per capita",
+  "title": "Country Risk Desk - ARE - CO2 per capita",
   "country": "ARE",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -18355,7 +18355,7 @@
  },
  "ARE|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — CO2 per capita",
+  "title": "Country Risk Desk - ARE - CO2 per capita",
   "country": "ARE",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -18384,7 +18384,7 @@
  },
  "ARE|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Control of corruption",
+  "title": "Country Risk Desk - ARE - Control of corruption",
   "country": "ARE",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -18413,7 +18413,7 @@
  },
  "ARE|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Control of corruption",
+  "title": "Country Risk Desk - ARE - Control of corruption",
   "country": "ARE",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -18442,7 +18442,7 @@
  },
  "ARE|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Current account",
+  "title": "Country Risk Desk - ARE - Current account",
   "country": "ARE",
   "indicator": "Current account",
   "lang": "en",
@@ -18471,7 +18471,7 @@
  },
  "ARE|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Current account",
+  "title": "Country Risk Desk - ARE - Current account",
   "country": "ARE",
   "indicator": "Current account",
   "lang": "fr",
@@ -18500,7 +18500,7 @@
  },
  "ARE|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Electricity access",
+  "title": "Country Risk Desk - ARE - Electricity access",
   "country": "ARE",
   "indicator": "Electricity access",
   "lang": "en",
@@ -18529,7 +18529,7 @@
  },
  "ARE|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Electricity access",
+  "title": "Country Risk Desk - ARE - Electricity access",
   "country": "ARE",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -18558,7 +18558,7 @@
  },
  "ARE|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — GDP growth",
+  "title": "Country Risk Desk - ARE - GDP growth",
   "country": "ARE",
   "indicator": "GDP growth",
   "lang": "en",
@@ -18587,7 +18587,7 @@
  },
  "ARE|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — GDP growth",
+  "title": "Country Risk Desk - ARE - GDP growth",
   "country": "ARE",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -18616,7 +18616,7 @@
  },
  "ARE|Gov debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Gov debt",
+  "title": "Country Risk Desk - ARE - Gov debt",
   "country": "ARE",
   "indicator": "Gov debt",
   "lang": "en",
@@ -18645,7 +18645,7 @@
  },
  "ARE|Gov debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Gov debt",
+  "title": "Country Risk Desk - ARE - Gov debt",
   "country": "ARE",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -18674,7 +18674,7 @@
  },
  "ARE|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Inflation",
+  "title": "Country Risk Desk - ARE - Inflation",
   "country": "ARE",
   "indicator": "Inflation",
   "lang": "en",
@@ -18703,7 +18703,7 @@
  },
  "ARE|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Inflation",
+  "title": "Country Risk Desk - ARE - Inflation",
   "country": "ARE",
   "indicator": "Inflation",
   "lang": "fr",
@@ -18732,7 +18732,7 @@
  },
  "ARE|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Political stability",
+  "title": "Country Risk Desk - ARE - Political stability",
   "country": "ARE",
   "indicator": "Political stability",
   "lang": "en",
@@ -18761,7 +18761,7 @@
  },
  "ARE|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Political stability",
+  "title": "Country Risk Desk - ARE - Political stability",
   "country": "ARE",
   "indicator": "Political stability",
   "lang": "fr",
@@ -18790,7 +18790,7 @@
  },
  "ARE|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Reserves",
+  "title": "Country Risk Desk - ARE - Reserves",
   "country": "ARE",
   "indicator": "Reserves",
   "lang": "en",
@@ -18819,7 +18819,7 @@
  },
  "ARE|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Reserves",
+  "title": "Country Risk Desk - ARE - Reserves",
   "country": "ARE",
   "indicator": "Reserves",
   "lang": "fr",
@@ -18848,7 +18848,7 @@
  },
  "ARE|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Unemployment",
+  "title": "Country Risk Desk - ARE - Unemployment",
   "country": "ARE",
   "indicator": "Unemployment",
   "lang": "en",
@@ -18877,7 +18877,7 @@
  },
  "ARE|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Unemployment",
+  "title": "Country Risk Desk - ARE - Unemployment",
   "country": "ARE",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -18906,7 +18906,7 @@
  },
  "ARE|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Women in workforce",
+  "title": "Country Risk Desk - ARE - Women in workforce",
   "country": "ARE",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -18935,7 +18935,7 @@
  },
  "ARE|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — ARE — Women in workforce",
+  "title": "Country Risk Desk - ARE - Women in workforce",
   "country": "ARE",
   "indicator": "Women in workforce",
   "lang": "fr",
@@ -18964,7 +18964,7 @@
  },
  "RUS|CO2 per capita|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — CO2 per capita",
+  "title": "Country Risk Desk - RUS - CO2 per capita",
   "country": "RUS",
   "indicator": "CO2 per capita",
   "lang": "en",
@@ -18993,7 +18993,7 @@
  },
  "RUS|CO2 per capita|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — CO2 per capita",
+  "title": "Country Risk Desk - RUS - CO2 per capita",
   "country": "RUS",
   "indicator": "CO2 per capita",
   "lang": "fr",
@@ -19022,7 +19022,7 @@
  },
  "RUS|Control of corruption|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Control of corruption",
+  "title": "Country Risk Desk - RUS - Control of corruption",
   "country": "RUS",
   "indicator": "Control of corruption",
   "lang": "en",
@@ -19051,7 +19051,7 @@
  },
  "RUS|Control of corruption|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Control of corruption",
+  "title": "Country Risk Desk - RUS - Control of corruption",
   "country": "RUS",
   "indicator": "Control of corruption",
   "lang": "fr",
@@ -19080,7 +19080,7 @@
  },
  "RUS|Current account|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Current account",
+  "title": "Country Risk Desk - RUS - Current account",
   "country": "RUS",
   "indicator": "Current account",
   "lang": "en",
@@ -19109,7 +19109,7 @@
  },
  "RUS|Current account|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Current account",
+  "title": "Country Risk Desk - RUS - Current account",
   "country": "RUS",
   "indicator": "Current account",
   "lang": "fr",
@@ -19138,7 +19138,7 @@
  },
  "RUS|Electricity access|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Electricity access",
+  "title": "Country Risk Desk - RUS - Electricity access",
   "country": "RUS",
   "indicator": "Electricity access",
   "lang": "en",
@@ -19167,7 +19167,7 @@
  },
  "RUS|Electricity access|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Electricity access",
+  "title": "Country Risk Desk - RUS - Electricity access",
   "country": "RUS",
   "indicator": "Electricity access",
   "lang": "fr",
@@ -19199,7 +19199,7 @@
  },
  "RUS|External debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — External debt",
+  "title": "Country Risk Desk - RUS - External debt",
   "country": "RUS",
   "indicator": "External debt",
   "lang": "en",
@@ -19228,7 +19228,7 @@
  },
  "RUS|External debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — External debt",
+  "title": "Country Risk Desk - RUS - External debt",
   "country": "RUS",
   "indicator": "External debt",
   "lang": "fr",
@@ -19257,7 +19257,7 @@
  },
  "RUS|GDP growth|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — GDP growth",
+  "title": "Country Risk Desk - RUS - GDP growth",
   "country": "RUS",
   "indicator": "GDP growth",
   "lang": "en",
@@ -19286,7 +19286,7 @@
  },
  "RUS|GDP growth|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — GDP growth",
+  "title": "Country Risk Desk - RUS - GDP growth",
   "country": "RUS",
   "indicator": "GDP growth",
   "lang": "fr",
@@ -19315,7 +19315,7 @@
  },
  "RUS|Gov debt|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Gov debt",
+  "title": "Country Risk Desk - RUS - Gov debt",
   "country": "RUS",
   "indicator": "Gov debt",
   "lang": "en",
@@ -19344,7 +19344,7 @@
  },
  "RUS|Gov debt|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Gov debt",
+  "title": "Country Risk Desk - RUS - Gov debt",
   "country": "RUS",
   "indicator": "Gov debt",
   "lang": "fr",
@@ -19373,7 +19373,7 @@
  },
  "RUS|Inflation|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Inflation",
+  "title": "Country Risk Desk - RUS - Inflation",
   "country": "RUS",
   "indicator": "Inflation",
   "lang": "en",
@@ -19402,7 +19402,7 @@
  },
  "RUS|Inflation|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Inflation",
+  "title": "Country Risk Desk - RUS - Inflation",
   "country": "RUS",
   "indicator": "Inflation",
   "lang": "fr",
@@ -19431,7 +19431,7 @@
  },
  "RUS|Interest rate|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Interest rate",
+  "title": "Country Risk Desk - RUS - Interest rate",
   "country": "RUS",
   "indicator": "Interest rate",
   "lang": "en",
@@ -19460,7 +19460,7 @@
  },
  "RUS|Interest rate|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Interest rate",
+  "title": "Country Risk Desk - RUS - Interest rate",
   "country": "RUS",
   "indicator": "Interest rate",
   "lang": "fr",
@@ -19489,7 +19489,7 @@
  },
  "RUS|Political stability|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Political stability",
+  "title": "Country Risk Desk - RUS - Political stability",
   "country": "RUS",
   "indicator": "Political stability",
   "lang": "en",
@@ -19518,7 +19518,7 @@
  },
  "RUS|Political stability|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Political stability",
+  "title": "Country Risk Desk - RUS - Political stability",
   "country": "RUS",
   "indicator": "Political stability",
   "lang": "fr",
@@ -19547,7 +19547,7 @@
  },
  "RUS|Reserves|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Reserves",
+  "title": "Country Risk Desk - RUS - Reserves",
   "country": "RUS",
   "indicator": "Reserves",
   "lang": "en",
@@ -19576,7 +19576,7 @@
  },
  "RUS|Reserves|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Reserves",
+  "title": "Country Risk Desk - RUS - Reserves",
   "country": "RUS",
   "indicator": "Reserves",
   "lang": "fr",
@@ -19605,7 +19605,7 @@
  },
  "RUS|Unemployment|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Unemployment",
+  "title": "Country Risk Desk - RUS - Unemployment",
   "country": "RUS",
   "indicator": "Unemployment",
   "lang": "en",
@@ -19634,7 +19634,7 @@
  },
  "RUS|Unemployment|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Unemployment",
+  "title": "Country Risk Desk - RUS - Unemployment",
   "country": "RUS",
   "indicator": "Unemployment",
   "lang": "fr",
@@ -19663,7 +19663,7 @@
  },
  "RUS|Women in workforce|en": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Women in workforce",
+  "title": "Country Risk Desk - RUS - Women in workforce",
   "country": "RUS",
   "indicator": "Women in workforce",
   "lang": "en",
@@ -19692,7 +19692,7 @@
  },
  "RUS|Women in workforce|fr": {
   "status": "done_degraded",
-  "title": "Country Risk Desk — RUS — Women in workforce",
+  "title": "Country Risk Desk - RUS - Women in workforce",
   "country": "RUS",
   "indicator": "Women in workforce",
   "lang": "fr",

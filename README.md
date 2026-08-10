@@ -31,7 +31,7 @@
 
 ## Summary
 
-- **What it does**: generates macro-financial briefs for 217 economies — World Bank quantitative read, verified qualitative context quoted verbatim, and 12-month risks & opportunities synthesized by an LLM **checked claim by claim**.
+- **What it does**: generates macro-financial briefs for 217 economies - World Bank quantitative read, verified qualitative context quoted verbatim, and 12-month risks & opportunities synthesized by an LLM **checked claim by claim**.
 - **Skills involved**: agentic AI (LangGraph), grounded LLMs & claim-level validation, trusted-domain web search, data engineering, CI/CD, bilingual UX, PDF export.
 - **Demo**: [country-risk-desk.streamlit.app](https://country-risk-desk.streamlit.app/)
 - **Stack**: Python · Streamlit · LangGraph · Groq · Tavily · Plotly · pandas · GitHub Actions · World Bank API
@@ -44,16 +44,16 @@
 | 02 | Qualitative context: verified claims, each backed by a verbatim quote | Reuters, Bloomberg, IMF, World Bank, FT |
 | 03 | 12-month risks | grounded LLM synthesis |
 | 04 | 12-month opportunities | grounded LLM synthesis |
-| 05 | Uncertainties | — |
-| 06 | Cited sources, clickable and domain-validated | — |
+| 05 | Uncertainties | - |
+| 06 | Cited sources, clickable and domain-validated | - |
 
 **13 indicators**: GDP growth, inflation, interest rate, current account, government debt, external debt, reserves, unemployment · GHG emissions per capita, electricity access, women in labor force, political stability, control of corruption.
 
 ## Three Ways to Read the Desk
 
-- **Country brief** — the structured report above, exportable to PDF in both languages.
-- **Comparison** — up to 12 countries side by side: interactive per-indicator curves, latest-values table, growth-vs-inflation positioning map.
-- **Threshold alerts** — inflation > 10 %, reserves < 3 months of imports, debt > 90 % of GDP…; one click jumps to the country.
+- **Country brief** - the structured report above, exportable to PDF in both languages.
+- **Comparison** - up to 12 countries side by side: interactive per-indicator curves, latest-values table, growth-vs-inflation positioning map.
+- **Threshold alerts** - inflation > 10 %, reserves < 3 months of imports, debt > 90 % of GDP…; one click jumps to the country.
 
 ## Honesty by Design
 
@@ -64,8 +64,8 @@
 
 ## Two Modes, Zero Visitor Constraints
 
-- **Instant library** — data and pre-computed briefs refreshed monthly by GitHub Actions; opening a brief is immediate.
-- **Live search** — on demand, a LangGraph agent searches (Tavily, trusted domains), drafts (LLM via Groq), validates every claim, and caches for 24 h. Keys live server-side.
+- **Instant library** - data and pre-computed briefs refreshed monthly by GitHub Actions; opening a brief is immediate.
+- **Live search** - on demand, a LangGraph agent searches (Tavily, trusted domains), drafts (LLM via Groq), validates every claim, and caches for 24 h. Keys live server-side.
 
 ## Run It Locally
 
@@ -115,7 +115,7 @@ v2 indicators: Gini, FDI inflows, remittances, commodity dependence · pushed al
 
 ## Author
 
-**Maxime NDACLEU** — Data Analyst & Business Intelligence Analyst
+**Maxime NDACLEU** - Data Analyst & Business Intelligence Analyst
 
 <p align="left">
   <a href="https://github.com/maxin-dac">

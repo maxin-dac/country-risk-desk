@@ -1,4 +1,4 @@
-"""Mode comparaison — graphiques Plotly et tableau croise."""
+"""Mode comparaison - graphiques Plotly et tableau croise."""
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
@@ -87,7 +87,7 @@ def render_compare(df, countries, lang):
             with cols[j]:
                 st.plotly_chart(line_chart(df, ind, countries, lang), use_container_width=True)
     st.markdown(f"<h3>{t('compare_latest', lang)}</h3>", unsafe_allow_html=True)
-    st.dataframe(latest_pivot(df, countries, lang).style.format("{:.1f}", na_rep="—"),
+    st.dataframe(latest_pivot(df, countries, lang).style.format("{:.1f}", na_rep="-"),
                  use_container_width=True)
     st.markdown(f"<h3>{t('compare_map', lang)}</h3>", unsafe_allow_html=True)
     st.plotly_chart(positioning_scatter(df, countries, lang), use_container_width=True)

@@ -14,7 +14,7 @@ def fmt_stats(s, lang):
     if s.get("change_12m_pct") is not None:
         parts.append(f"{s['change_12m_pct']:+.1f}% {t('d12', lang)}")
     if s.get("regional_median") is not None:
-        parts.append(f"{t('reg_median', lang)}: {s['regional_median']:.2f} {s.get('unit', '')} — "
+        parts.append(f"{t('reg_median', lang)}: {s['regional_median']:.2f} {s.get('unit', '')} - "
                      f"{t('pos_' + s['regional_position'], lang)}")
     return big, " · ".join(parts)
 
@@ -32,7 +32,7 @@ def evidence_html(items, lang, kind=""):
 
 def report_html(r, lang, chart=""):
     if r.get("status") == "error":
-        return f'<div class="insufficient">{t("error", lang)} — {html.escape(str(r.get("error", "")))}</div>'
+        return f'<div class="insufficient">{t("error", lang)} - {html.escape(str(r.get("error", "")))}</div>'
     out = r.get("outlook", {})
     big, deltas = fmt_stats(r.get("stats", {}), lang)
     ctx = evidence_html(r.get("context", {}).get("points", []), lang)

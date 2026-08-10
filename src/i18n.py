@@ -62,7 +62,7 @@ STR = {
     "alerts_title": ("Threshold alerts", "Alertes seuil"),
 
 
-    "eyebrow": ("Macro-intelligence // Country Risk Desk — Session of", "Macro-intelligence // Country Risk Desk — Session du"),
+    "eyebrow": ("Macro-intelligence // Country Risk Desk - Session of", "Macro-intelligence // Country Risk Desk - Session du"),
     "title_a": ("Country Risk", "Risque Pays"),
     "title_b": ("Desk", "Desk"),
     "st_llm": ("Model", "Modèle"),
@@ -81,14 +81,14 @@ STR = {
                    "1 brief = 1 recherche + 1 appel LLM · cache 24 h · citations verbatim obligatoires"),
     "searching": ("Fetching sources · calling model · validating citations…",
                   "Recherche de sources · appel du modèle · validation des citations…"),
-    "sec_constat": ("Figures — Data (Latest from World Bank)", "Constat chiffré — Données (Les plus récentes de la Banque mondiale)"),
-    "sec_context": ("Qualitative context — verified sources", "Contexte qualitatif — sources vérifiées"),
+    "sec_constat": ("Figures - Data (Latest from World Bank)", "Constat chiffré - Données (Les plus récentes de la Banque mondiale)"),
+    "sec_context": ("Qualitative context - verified sources", "Contexte qualitatif - sources vérifiées"),
     "sec_risks": ("12-month risks", "Risques à 12 mois"),
     "sec_opps": ("12-month opportunities", "Opportunités à 12 mois"),
     "sec_sources": ("Cited sources", "Sources citées"),
     "sec_limits": ("Limitations", "Limites"),
-    "insufficient": ("Insufficient information — no verified source available",
-                     "Information insuffisante — aucune source vérifiée disponible"),
+    "insufficient": ("Insufficient information - no verified source available",
+                     "Information insuffisante - aucune source vérifiée disponible"),
     "no_sources": ("No verified web source", "Aucune source web vérifiée"),
     "export": ("Export brief (PDF)", "Exporter le brief (PDF)"),
     "pdf_fail": ("PDF export unavailable", "Export PDF indisponible"),
@@ -107,11 +107,11 @@ STR = {
     "library_note": ("Pre-computed briefs · no key · no wait · auto-refreshed monthly",
                      "Briefs pré-calculés · sans clé · sans attente · rafraîchis chaque mois"),
     "live": ("Run live search", "Lancer la recherche en direct"),
-    "live_note": ("Server-side keys — visitors need nothing.",
-                  "Clés côté serveur — rien à fournir côté visiteur."),
+    "live_note": ("Server-side keys - visitors need nothing.",
+                  "Clés côté serveur - rien à fournir côté visiteur."),
     "no_keys": ("Server keys missing (Tavily / LLM).",
                 "Clés serveur manquantes (Tavily / LLM)."),
-    "live_done": ("Live brief — cached 24 h", "Brief en direct — caché 24 h"),
+    "live_done": ("Live brief - cached 24 h", "Brief en direct - caché 24 h"),
 }
 
 

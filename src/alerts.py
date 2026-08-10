@@ -1,4 +1,4 @@
-"""Alertes seuil — calcul deterministe sur les dernieres valeurs Banque Mondiale."""
+"""Alertes seuil - calcul deterministe sur les dernieres valeurs Banque Mondiale."""
 import pandas as pd
 
 RULES = [

@@ -32,17 +32,17 @@ def generate_pdf_bytes(r, lang="en"):
         deltas = " · ".join(x for x in [
             f"{s.get('change_3m_pct'):+.1f}% {t('d3', lang)}" if s.get("change_3m_pct") is not None else None,
             f"{s.get('change_12m_pct'):+.1f}% {t('d12', lang)}" if s.get("change_12m_pct") is not None else None,
-            (f"{t('reg_median', lang)}: {s.get('regional_median'):.2f} {s.get('unit', '')} — "
+            (f"{t('reg_median', lang)}: {s.get('regional_median'):.2f} {s.get('unit', '')} - "
              f"{t('pos_' + s.get('regional_position', 'near'), lang)}")
             if s.get("regional_median") is not None else None,
         ] if x)
         srcs = "".join(
             f'<li>[{html.escape(x["id"])}] <a href="{html.escape(x["url"])}">'
-            f'{html.escape(x["title"])}</a> — {html.escape(x["domain"])}</li>'
+            f'{html.escape(x["title"])}</a> - {html.escape(x["domain"])}</li>'
             for x in r.get("sources", [])) or f"<li>{t('no_sources', lang)}</li>"
         uncer = "".join(f"<li>{html.escape(str(u))}</li>" for u in out.get("uncertainties", [])) \
             or f"<li>{t('insufficient', lang)}</li>"
-        lims = "".join(f"<li>{html.escape(str(x))}</li>" for x in r.get("limitations", [])) or "<li>—</li>"
+        lims = "".join(f"<li>{html.escape(str(x))}</li>" for x in r.get("limitations", [])) or "<li>-</li>"
         ctx_points = r.get("context", {}).get("points", [])
         doc = f"""<!doctype html><html lang="{lang}"><head><meta charset="utf-8">
 <style>
@@ -63,7 +63,7 @@ footer {{margin-top: 16px; border-top: 1px solid #D8DED9; padding-top: 6px; font
 </style></head><body>
 <header>
 <div class="eyebrow">Macro-intelligence // Country Risk Desk</div>
-<h1>Country Risk Desk — {html.escape(c_label)} — {html.escape(i_label)}</h1>
+<h1>Country Risk Desk - {html.escape(c_label)} - {html.escape(i_label)}</h1>
 <div class="eyebrow">{t('generated', lang)} {html.escape(r.get('generated_at', ''))} · {t('confidence', lang)}: {html.escape(str(r.get('confidence', '')))}</div>
 </header>
 <h2>01 · {t('sec_constat', lang)}</h2>

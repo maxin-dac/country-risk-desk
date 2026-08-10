@@ -31,7 +31,7 @@
 
 ## En résumé
 
-- **Ce que ça fait** : génère des briefs macro-financiers pour 217 économies — lecture quantitative Banque Mondiale, contexte qualitatif vérifié et cité verbatim, risques & opportunités à 12 mois synthétisés par un LLM **contrôlé affirmation par affirmation**.
+- **Ce que ça fait** : génère des briefs macro-financiers pour 217 économies - lecture quantitative Banque Mondiale, contexte qualitatif vérifié et cité verbatim, risques & opportunités à 12 mois synthétisés par un LLM **contrôlé affirmation par affirmation**.
 - **Compétences mobilisées** : IA agentique (LangGraph), LLM fondé & validation de citations, recherche web restreinte aux domaines de confiance, data engineering, CI/CD, UX bilingue, export PDF.
 - **Démo** : [country-risk-desk.streamlit.app](https://country-risk-desk.streamlit.app/)
 - **Stack** : Python · Streamlit · LangGraph · Groq · Tavily · Plotly · pandas · GitHub Actions · World Bank API
@@ -44,16 +44,16 @@
 | 02 | Contexte qualitatif : affirmations vérifiées, chacune étayée par une citation verbatim | Reuters, Bloomberg, FMI, Banque Mondiale, FT |
 | 03 | Risques à 12 mois | synthèse LLM fondée |
 | 04 | Opportunités à 12 mois | synthèse LLM fondée |
-| 05 | Incertitudes | — |
-| 06 | Sources citées, cliquables et validées par domaine | — |
+| 05 | Incertitudes | - |
+| 06 | Sources citées, cliquables et validées par domaine | - |
 
 **13 indicateurs** : croissance, inflation, taux d'intérêt, compte courant, dette publique, dette externe, réserves, chômage · GES/hab., accès à l'électricité, femmes dans la population active, stabilité politique, contrôle de la corruption.
 
 ## Trois lectures du desk
 
-- **Brief pays** — rapport structuré, exportable en PDF dans les deux langues.
-- **Comparaison** — jusqu'à 12 pays côte à côte : courbes interactives, tableau des dernières valeurs, carte de positionnement croissance × inflation.
-- **Alertes seuil** — inflation > 10 %, réserves < 3 mois d'importations, dette > 90 % du PIB… ; un clic saute vers le pays.
+- **Brief pays** - rapport structuré, exportable en PDF dans les deux langues.
+- **Comparaison** - jusqu'à 12 pays côte à côte : courbes interactives, tableau des dernières valeurs, carte de positionnement croissance × inflation.
+- **Alertes seuil** - inflation > 10 %, réserves < 3 mois d'importations, dette > 90 % du PIB… ; un clic saute vers le pays.
 
 ## L'honnêteté par conception
 
@@ -64,8 +64,8 @@
 
 ## Deux modes, zéro contrainte visiteur
 
-- **Bibliothèque instantanée** — données et briefs pré-calculés rafraîchis chaque mois par GitHub Actions ; l'ouverture d'un brief est immédiate.
-- **Recherche en direct** — à la demande, un agent LangGraph recherche (Tavily, domaines de confiance), rédige (LLM via Groq), valide chaque affirmation et met en cache 24 h. Les clés restent côté serveur.
+- **Bibliothèque instantanée** - données et briefs pré-calculés rafraîchis chaque mois par GitHub Actions ; l'ouverture d'un brief est immédiate.
+- **Recherche en direct** - à la demande, un agent LangGraph recherche (Tavily, domaines de confiance), rédige (LLM via Groq), valide chaque affirmation et met en cache 24 h. Les clés restent côté serveur.
 
 ## Lancer en local
 
@@ -115,7 +115,7 @@ Indicateurs v2 : Gini, IDE, transferts de migrants, dépendance aux matières pr
 
 ## Auteur
 
-**Maxime NDACLEU** — Data Analyst & Business Intelligence Analyst
+**Maxime NDACLEU** - Data Analyst & Business Intelligence Analyst
 
 <p align="left">
   <a href="https://github.com/maxin-dac">

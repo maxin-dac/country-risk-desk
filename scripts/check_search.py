@@ -7,4 +7,4 @@ print("Tavily key set:", bool(config.TAVILY_API_KEY))
 sources, err = search_web_context("Vietnam", "Inflation", "CPI consumer price index inflation rate")
 print("Error:", err)
 for s in sources:
-    print(f"[{s['id']}] {s['domain']} — {s['title'][:80]}")
+    print(f"[{s['id']}] {s['domain']} - {s['title'][:80]}")

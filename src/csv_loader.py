@@ -68,5 +68,5 @@ def format_stats(st_):
         lines.append(f"12-month change: {st_['change_12m_pct']:+.1f}%")
     if st_.get("regional_median") is not None:
         lines.append(f"Regional median ({st_['region']}, {st_['regional_countries']} countries): "
-                     f"{st_['regional_median']:.2f} {st_['unit']} — position: {st_['regional_position']}")
+                     f"{st_['regional_median']:.2f} {st_['unit']} - position: {st_['regional_position']}")
     return "\n".join(lines)
