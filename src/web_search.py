@@ -23,10 +23,10 @@ def search_web_context(country_en, indicator, hint=""):
     client = TavilyClient(api_key=config.TAVILY_API_KEY)
     try:
         try:
-            raw = client.search(query=q, search_depth="basic", max_results=6,
-                                include_domains=config.ALLOWED_SEARCH_DOMAINS, topic="news", days=180)
+            raw = client.search(query=q, search_depth="advanced", max_results=8,
+                                include_domains=config.ALLOWED_SEARCH_DOMAINS, days=180)
         except TypeError:
-            raw = client.search(query=q, search_depth="basic", max_results=6,
+            raw = client.search(query=q, search_depth="advanced", max_results=8,
                                 include_domains=config.ALLOWED_SEARCH_DOMAINS)
     except Exception as e:
         return [], f"Search error: {e}"
@@ -36,7 +36,7 @@ def search_web_context(country_en, indicator, hint=""):
         if not url or url in seen:
             continue
         dom = _domain(url)
-        matching_dom = next((d for d in config.ALLOWED_SEARCH_DOMAINS if dom == d or dom.endswith("." + d)), None)
+        matching_dom = next((d for d in config.ALLOWED_SEARCH_DOMAINS if d in dom), None)
         if not matching_dom:
             continue
         seen.add(url)
@@ -44,7 +44,7 @@ def search_web_context(country_en, indicator, hint=""):
         rank = TIERS.get(tier_dom, 1) * 10 + (5 if _recent(it.get("published_date")) else 0) + float(it.get("score") or 0)
         scored.append((rank, {"title": it.get("title", ""), "url": url, "domain": dom,
                               "published_date": it.get("published_date"),
-                              "content": (it.get("content") or "")[:1200]}))
+                              "content": (it.get("content") or "")[:2000]}))
     scored.sort(key=lambda x: x[0], reverse=True)
     sources = [dict(s, id=f"S{i}") for i, (_, s) in enumerate(scored[:config.MAX_SEARCH_RESULTS], 1)]
     return (sources, None) if sources else ([], "No quality source found in allowed domains")

@@ -4,25 +4,87 @@ from . import config
 
 def _parse(content):
     content = (content or "").strip()
-    m = re.search(r"`(?:json)?\s*(.*?)`", content, re.DOTALL)
+    candidates = [content]
+    candidates.extend(m.group(1).strip() for m in re.finditer(
+        r"```(?:json)?\s*(.*?)```", content, re.DOTALL | re.IGNORECASE))
+    decoder = json.JSONDecoder()
+    for start, char in enumerate(content):
+        if char == "{":
+            try:
+                candidates.append(content[start:])
+                break
+            except Exception:
+                pass
     try:
-        return json.loads((m.group(1) if m else content).strip())
+        raw = next((candidate for candidate in candidates if _is_json_object(candidate, decoder)), None)
+        if raw is None:
+            raise json.JSONDecodeError("No JSON object found", content, 0)
+        report = decoder.raw_decode(raw.strip())[0]
+        if not isinstance(report, dict):
+            return {"error": "LLM response is not a JSON object", "raw": content}
+        return _normalize_report(report)
     except json.JSONDecodeError:
         return {"error": "Invalid JSON response from LLM", "raw": content}
 
+
+def _is_json_object(value, decoder):
+    try:
+        parsed, _ = decoder.raw_decode(value.strip())
+        return isinstance(parsed, dict)
+    except json.JSONDecodeError:
+        return False
+
+
+def _clean_items(items):
+    if not isinstance(items, list):
+        return []
+    cleaned = []
+    for item in items:
+        if isinstance(item, str) and item.strip():
+            item = {"text": item}
+        if not isinstance(item, dict):
+            continue
+        text = next((item.get(key) for key in ("text", "claim", "description", "summary")
+                     if str(item.get(key, "")).strip()), "")
+        if not str(text).strip():
+            continue
+        normalized = dict(item)
+        normalized["text"] = str(text).strip()
+        if "evidence" not in normalized:
+            normalized["evidence"] = item.get("proof", item.get("sources", []))
+        if not isinstance(normalized["evidence"], list):
+            normalized["evidence"] = []
+        normalized["evidence"] = [
+            evidence if isinstance(evidence, dict)
+            else {"source_id": evidence, "quote": ""}
+            for evidence in normalized["evidence"]]
+        cleaned.append(normalized)
+    return cleaned
+
+
+def _normalize_report(report):
+    context = report.get("context")
+    if not isinstance(context, dict):
+        context = {}
+    outlook = report.get("outlook")
+    if not isinstance(outlook, dict):
+        outlook = {}
+    context["points"] = _clean_items(context.get("points", context.get("claims")))
+    outlook["risks"] = _clean_items(outlook.get("risks", outlook.get("risques")))
+    outlook["opportunities"] = _clean_items(
+        outlook.get("opportunities", outlook.get("opportunites", outlook.get("opportunités"))))
+    outlook["uncertainties"] = (outlook.get("uncertainties")
+                                 if isinstance(outlook.get("uncertainties"), list)
+                                 else [])
+    report["context"] = context
+    report["outlook"] = outlook
+    report.setdefault("web_context_available", False)
+    return report
+
 def call_llm_json(messages):
-    # Nettoyer le nom du modèle pour éviter les doublons (ex: "groq/groq/model")
-    model_name = config.LLM_MODEL.replace(f"{config.LLM_PROVIDER}/", "")
-    primary_model = f"{config.LLM_PROVIDER}/{model_name}"
-    
-    # Fallbacks intelligents en cas de limite de débit (429)
-    fallbacks = []
-    if config.LLM_PROVIDER == "groq":
-        fallbacks = [f"openrouter/{model_name}", "openrouter/meta-llama/llama-3-70b-instruct"]
-    elif config.LLM_PROVIDER == "openrouter":
-        fallbacks = [f"groq/{model_name}", "openrouter/meta-llama/llama-3-70b-instruct"]
-    else:
-        fallbacks = ["openrouter/meta-llama/llama-3-70b-instruct"]
+    model_name = config.LLM_MODEL.removeprefix("openrouter/")
+    primary_model = f"openrouter/{model_name}"
+    fallbacks = ["openrouter/meta-llama/llama-3-70b-instruct"]
 
     kwargs = {
         "model": primary_model,
@@ -33,16 +95,10 @@ def call_llm_json(messages):
         "fallbacks": fallbacks,
     }
 
-    # Format JSON natif pour les providers qui le supportent
-    if config.LLM_PROVIDER in ("groq", "openai", "openrouter"):
-        kwargs["response_format"] = {"type": "json_object"}
-
-    # Headers personnalisés pour OpenRouter (bonne pratique)
-    if config.LLM_PROVIDER == "openrouter":
-        kwargs["extra_headers"] = {
-            "HTTP-Referer": "https://github.com/maxin-dac/country-risk-desk",
-            "X-Title": "Country Risk Desk"
-        }
+    kwargs["extra_headers"] = {
+        "HTTP-Referer": "https://github.com/maxin-dac/country-risk-desk",
+        "X-Title": "Country Risk Desk"
+    }
 
     try:
         response = completion(**kwargs)

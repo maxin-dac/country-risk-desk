@@ -17,6 +17,28 @@ class State(TypedDict, total=False):
     draft: Optional[Dict]; validation_error: Optional[str]; retries: int
     usage: Dict[str, int]; final_report: Optional[Dict]
 
+
+def _deduplicate_points(points, threshold=0.85):
+    """Remove duplicate or near-duplicate points using text similarity."""
+    if not points:
+        return points
+    from difflib import SequenceMatcher
+    unique = []
+    for point in points:
+        text = point.get("text", "").lower().strip()
+        is_dup = False
+        for existing in unique:
+            existing_text = existing.get("text", "").lower().strip()
+            if len(text) > 20 and len(existing_text) > 20:
+                similarity = SequenceMatcher(None, text, existing_text).ratio()
+                if similarity >= threshold:
+                    is_dup = True
+                    break
+        if not is_dup:
+            unique.append(point)
+    return unique
+
+
 def build_agent(df):
     def n_input(s):
         if s["country"] not in set(df.country.unique()):
@@ -44,6 +66,10 @@ def build_agent(df):
             u = dict(s.get("usage") or {})
             for k, v in usage.items():
                 u[k] = u.get(k, 0) + v
+            if isinstance(draft, dict) and draft.get("error"):
+                return {"draft": None, "usage": u,
+                        "validation_error": f"LLM error: {draft['error']}",
+                        "retries": s.get("retries", 0) + 1}
             return {"draft": draft, "usage": u, "validation_error": None}
         except Exception as e:
             return {"draft": None, "validation_error": f"LLM/JSON error: {e}",
@@ -75,8 +101,19 @@ def build_agent(df):
 
     def n_fallback(s):
         st_ = s.get("stats", {})
-        limits = ["No verified web source available.", "Qualitative context not generated.",
-                  "Outlook not generated."]
+        sources = s.get("sources", [])
+        context_points = []
+        for source in sources:
+            excerpt = " ".join((source.get("content") or "").split())[:500]
+            if excerpt:
+                context_points.append({
+                    "text": excerpt,
+                    "evidence": [{"source_id": source["id"], "quote": excerpt}],
+                })
+        limits = (["Qualitative context not generated.", "Outlook not generated."]
+                  if sources else ["No verified web source available.",
+                                   "Qualitative context not generated.",
+                                   "Outlook not generated."])
         if s.get("search_error"):
             limits.append(f"Search: {s['search_error']}")
         if s.get("validation_error"):
@@ -87,9 +124,9 @@ def build_agent(df):
             "country": s.get("country", ""), "indicator": s.get("indicator", ""),
             "lang": s.get("lang", "en"), "category": st_.get("category", ""), "stats": st_,
             "web_context_available": False, "confidence": "low",
-            "context": {"points": []},
+            "context": {"points": context_points},
             "outlook": {"risks": [], "opportunities": [], "uncertainties": ["Insufficient information"]},
-            "limitations": limits, "sources": [], "usage": s.get("usage", {}),
+            "limitations": limits, "sources": sources, "usage": s.get("usage", {}),
             "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat()}}
 
     def n_error(s):

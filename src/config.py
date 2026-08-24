@@ -8,11 +8,24 @@ try:
 except Exception:
     pass
 
-def env(key, default=None):
-    return os.getenv(key, default)
+try:
+    import streamlit as st
+    _STREAMLIT_SECRETS = st.secrets
+except Exception:
+    _STREAMLIT_SECRETS = {}
 
-LLM_PROVIDER = env("LLM_PROVIDER", "openrouter")
-LLM_BASE_URL = env("LLM_BASE_URL", "https://openrouter.ai/api/v1")
+def env(key, default=None):
+    value = os.getenv(key)
+    if value:
+        return value
+    try:
+        value = _STREAMLIT_SECRETS.get(key)
+    except Exception:
+        value = None
+    return value if value else default
+
+LLM_PROVIDER = "openrouter"
+LLM_BASE_URL = "https://openrouter.ai/api/v1"
 LLM_API_KEY = env("LLM_API_KEY", "")
 LLM_MODEL = env("LLM_MODEL", "qwen/qwen-2.5-7b-instruct:free")
 LLM_TEMPERATURE = float(env("LLM_TEMPERATURE", "0.2"))

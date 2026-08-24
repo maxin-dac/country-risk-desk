@@ -34,12 +34,12 @@ section[data-testid="stSidebar"] label{font-family:var(--mono);font-size:.7rem;l
  transition:transform .18s,box-shadow .18s,background .18s;box-shadow:0 0 0 1px rgba(63,214,140,.35),0 8px 24px rgba(63,214,140,.12)}
 .stButton>button:hover{transform:translateY(-2px);background:#63E6A6;box-shadow:0 0 0 1px rgba(63,214,140,.6),0 12px 30px rgba(63,214,140,.22)}
 .brief{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:6px;
- padding:1.1rem 1.3rem;margin-bottom:1rem;transition:transform .2s,border-color .2s,box-shadow .2s;opacity:0;animation:rise .55s ease forwards}
+ padding:1.1rem 1.3rem;margin-bottom:1rem;transition:transform .2s,border-color .2s,box-shadow .2s;animation:rise .55s ease both}
 .brief:hover{transform:translateY(-3px);border-color:rgba(231,237,233,.22);box-shadow:0 14px 34px rgba(0,0,0,.35)}
 .brief:nth-of-type(1){animation-delay:.05s}.brief:nth-of-type(2){animation-delay:.15s}
 .brief:nth-of-type(3){animation-delay:.25s}.brief:nth-of-type(4){animation-delay:.35s}.brief:nth-of-type(5){animation-delay:.45s}
 .brief:nth-of-type(6){animation-delay:.55s}
-@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
 .brief h3{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
  margin:0 0 .8rem;padding-bottom:.5rem;border-bottom:1px solid var(--line)}
 .brief.data{border-left:3px solid var(--data)}.brief.ctx{border-left:3px solid var(--warn)}
