@@ -1,7 +1,7 @@
 import re
 
 def _norm(s):
-    return re.sub(r"\s+", " ", s or "").strip()
+    return re.sub(r"\s+", " ", s or "").strip().lower()
 
 def _check_items(items, by_id, label, errors):
     if not isinstance(items, list):

@@ -16,13 +16,14 @@ def _latest(df):
     return df.sort_values("date").groupby(["country", "indicator"], as_index=False).tail(1)
 
 
-def _layout(fig, title):
+def _layout(fig, title, is_time_series=True):
+    xaxis_opts = dict(showgrid=False, dtick=4, tickformat="d") if is_time_series else dict(showgrid=True, gridcolor="rgba(255,255,255,.08)", zerolinecolor="rgba(255,255,255,.15)")
     fig.update_layout(
         height=300, margin=dict(l=8, r=8, t=34, b=8),
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
         font=dict(color="#d7e2ec", size=11), showlegend=False,
         title=dict(text=title, font=dict(size=13, color="#9fb3c8")),
-        xaxis=dict(showgrid=False, dtick=4, tickformat="d"),
+        xaxis=xaxis_opts,
         yaxis=dict(gridcolor="rgba(255,255,255,.08)", zerolinecolor="rgba(255,255,255,.15)"),
     )
     return fig
@@ -68,7 +69,7 @@ def positioning_scatter(df, countries, lang):
     fig.add_hline(y=5, line_dash="dash", line_color="rgba(220,38,38,.5)")
     fig.add_vline(x=0, line_dash="dash", line_color="rgba(220,38,38,.5)")
     fig.update_layout(xaxis_title=t("axis_growth", lang), yaxis_title=t("axis_inflation", lang))
-    return _layout(fig, t("compare_map", lang))
+    return _layout(fig, t("compare_map", lang), is_time_series=False)
 
 
 def render_compare(df, countries, lang):

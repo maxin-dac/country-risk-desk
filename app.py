@@ -90,7 +90,7 @@ def live_report(country, indicator, lang):
     day = datetime.date.today().isoformat()
     r = _live(country, indicator, lang, day)
     if r.get("status") != "done":
-        _live.clear(country, indicator, lang, day)
+        _live.clear()
     return r
 
 def assemble_report(df, briefs, country, indicator, lang):

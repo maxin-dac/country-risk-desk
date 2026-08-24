@@ -36,10 +36,12 @@ def search_web_context(country_en, indicator, hint=""):
         if not url or url in seen:
             continue
         dom = _domain(url)
-        if dom not in config.ALLOWED_SEARCH_DOMAINS:
+        matching_dom = next((d for d in config.ALLOWED_SEARCH_DOMAINS if dom == d or dom.endswith("." + d)), None)
+        if not matching_dom:
             continue
         seen.add(url)
-        rank = TIERS.get(dom, 1) * 10 + (5 if _recent(it.get("published_date")) else 0) + float(it.get("score") or 0)
+        tier_dom = next((d for d in TIERS if dom == d or dom.endswith("." + d)), None)
+        rank = TIERS.get(tier_dom, 1) * 10 + (5 if _recent(it.get("published_date")) else 0) + float(it.get("score") or 0)
         scored.append((rank, {"title": it.get("title", ""), "url": url, "domain": dom,
                               "published_date": it.get("published_date"),
                               "content": (it.get("content") or "")[:1800]}))

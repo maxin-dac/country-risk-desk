@@ -71,7 +71,7 @@ def build_agent(df):
             "limitations": d.get("limitations", []),
             "sources": s.get("sources", []), "search_error": s.get("search_error"),
             "usage": s.get("usage", {}),
-            "generated_at": datetime.datetime.utcnow().isoformat()}}
+            "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat()}}
 
     def n_fallback(s):
         st_ = s.get("stats", {})
@@ -90,7 +90,7 @@ def build_agent(df):
             "context": {"points": []},
             "outlook": {"risks": [], "opportunities": [], "uncertainties": ["Insufficient information"]},
             "limitations": limits, "sources": [], "usage": s.get("usage", {}),
-            "generated_at": datetime.datetime.utcnow().isoformat()}}
+            "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat()}}
 
     def n_error(s):
         return {"status": "error",
