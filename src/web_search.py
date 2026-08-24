@@ -44,7 +44,7 @@ def search_web_context(country_en, indicator, hint=""):
         rank = TIERS.get(tier_dom, 1) * 10 + (5 if _recent(it.get("published_date")) else 0) + float(it.get("score") or 0)
         scored.append((rank, {"title": it.get("title", ""), "url": url, "domain": dom,
                               "published_date": it.get("published_date"),
-                              "content": (it.get("content") or "")[:1800]}))
+                              "content": (it.get("content") or "")[:1200]}))
     scored.sort(key=lambda x: x[0], reverse=True)
     sources = [dict(s, id=f"S{i}") for i, (_, s) in enumerate(scored[:config.MAX_SEARCH_RESULTS], 1)]
     return (sources, None) if sources else ([], "No quality source found in allowed domains")
