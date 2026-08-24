@@ -11,15 +11,16 @@ def _parse(content):
         return {"error": "Invalid JSON response from LLM", "raw": content}
 
 def call_llm_json(messages):
-    # 1. Modèle principal basé sur votre config
-    primary_model = f"{config.LLM_PROVIDER}/{config.LLM_MODEL}"
+    # Nettoyer le nom du modèle pour éviter les doublons (ex: "groq/groq/model")
+    model_name = config.LLM_MODEL.replace(f"{config.LLM_PROVIDER}/", "")
+    primary_model = f"{config.LLM_PROVIDER}/{model_name}"
     
-    # 2. Fallbacks intelligents : si le primaire échoue (ex: 429), on essaie les suivants
+    # Fallbacks intelligents en cas de limite de débit (429)
     fallbacks = []
     if config.LLM_PROVIDER == "groq":
-        fallbacks = [f"openrouter/{config.LLM_MODEL}", "openrouter/meta-llama/llama-3-70b-instruct"]
+        fallbacks = [f"openrouter/{model_name}", "openrouter/meta-llama/llama-3-70b-instruct"]
     elif config.LLM_PROVIDER == "openrouter":
-        fallbacks = [f"groq/{config.LLM_MODEL}", "openrouter/meta-llama/llama-3-70b-instruct"]
+        fallbacks = [f"groq/{model_name}", "openrouter/meta-llama/llama-3-70b-instruct"]
     else:
         fallbacks = ["openrouter/meta-llama/llama-3-70b-instruct"]
 
@@ -28,7 +29,8 @@ def call_llm_json(messages):
         "messages": messages,
         "temperature": config.LLM_TEMPERATURE,
         "max_tokens": config.LLM_MAX_TOKENS,
-        "fallbacks": fallbacks,  # <--- La magie de la résilience est ici
+        "api_key": config.LLM_API_KEY,  # <--- C'EST CETTE LIGNE QUI MANQUAIT !
+        "fallbacks": fallbacks,
     }
 
     # Format JSON natif pour les providers qui le supportent
@@ -38,7 +40,7 @@ def call_llm_json(messages):
     # Headers personnalisés pour OpenRouter (bonne pratique)
     if config.LLM_PROVIDER == "openrouter":
         kwargs["extra_headers"] = {
-            "HTTP-": "https://github.com/maxin-dac/country-risk-desk",
+            "HTTP-Referer": "https://github.com/maxin-dac/country-risk-desk",
             "X-Title": "Country Risk Desk"
         }
 
@@ -54,5 +56,5 @@ def call_llm_json(messages):
         return _parse(raw_content), usage
         
     except Exception as e:
-        # Si TOUS les fallbacks échouent, on retourne une erreur propre au lieu de crasher
+        # Si TOUS les fallbacks échouent, on retourne une erreur propre
         return {"error": f"LLM call failed after fallbacks: {str(e)}"}, {}

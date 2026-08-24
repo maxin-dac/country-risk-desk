@@ -9,3 +9,4 @@ babel
 pycountry
 plotly
 litellm
+python-dotenv
