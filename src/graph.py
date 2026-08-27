@@ -32,12 +32,14 @@ def build_report(country, indicator, lang):
     # 4. Construction du contexte qualitatif = extraits bruts Tavily
     context_points = []
     for src in sources:
-        excerpt = (src.get("content") or "").strip()
+        excerpt = (src.get("excerpt") or src.get("content") or "").strip()
         if excerpt:
             context_points.append({
                 "text": excerpt[:400] + ("..." if len(excerpt) > 400 else ""),
                 "evidence": [{"source_id": src["id"], "quote": excerpt[:300]}],
             })
+
+    context_points = context_points[:3]
 
     # 5. Limites automatiques
     limitations = []

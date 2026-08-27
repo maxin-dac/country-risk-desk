@@ -58,3 +58,6 @@ INDICATOR_HINTS = {
     "Inflation": "CPI consumer price index inflation rate",
     "Interest rate": "lending interest rate central bank monetary policy",
 }
+
+import os as _os
+SEARCH_PROVIDER = _os.getenv("SEARCH_PROVIDER", "tavily")
