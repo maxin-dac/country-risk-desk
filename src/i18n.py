@@ -154,3 +154,56 @@ def _country_names(lang="en"):
         pass
     _COUNTRY_CACHE[lang] = names
     return names
+
+INDICATORS.update({
+    "Debt service": ("External debt service (% of exports)", "Service de la dette externe (% exports)"),
+    "Rule of law": ("Rule of law", "Etat de droit"),
+    "Regulatory quality": ("Regulatory quality", "Qualite reglementaire"),
+    "Gini": ("Income inequality (Gini)", "Inegalites de revenu (Gini)"),
+    "Youth unemployment": ("Youth unemployment (15-24)", "Chomage des jeunes (15-24 ans)"),
+    "Dependency ratio": ("Demographic dependency ratio", "Ratio de dependance demographique"),
+    "Commodity dependence": ("Commodity export dependence", "Dependance aux matieres premieres"),
+})
+
+PILLAR_ORDER = ["External & sovereign", "Macroeconomic",
+                "Political & institutional", "Social & structural"]
+
+PILLARS = {
+    "Reserves": ("External & sovereign", "Externe & souverain"),
+    "Current account": ("External & sovereign", "Externe & souverain"),
+    "External debt": ("External & sovereign", "Externe & souverain"),
+    "Debt service": ("External & sovereign", "Externe & souverain"),
+    "GDP growth": ("Macroeconomic", "Macro-economique"),
+    "Inflation": ("Macroeconomic", "Macro-economique"),
+    "Gov debt": ("Macroeconomic", "Macro-economique"),
+    "Unemployment": ("Macroeconomic", "Macro-economique"),
+    "Political stability": ("Political & institutional", "Politique & institutionnel"),
+    "Control of corruption": ("Political & institutional", "Politique & institutionnel"),
+    "Rule of law": ("Political & institutional", "Politique & institutionnel"),
+    "Regulatory quality": ("Political & institutional", "Politique & institutionnel"),
+    "Gini": ("Social & structural", "Social & structurel"),
+    "Youth unemployment": ("Social & structural", "Social & structurel"),
+    "Dependency ratio": ("Social & structural", "Social & structurel"),
+    "Commodity dependence": ("Social & structural", "Social & structurel"),
+}
+
+INDICATORS.update({
+    "Fiscal balance": ("Fiscal balance (% of GDP)", "Solde budgetaire (% PIB)"),
+    "Gen gov debt": ("General government gross debt (% of GDP)", "Dette publique brute generale (% PIB)"),
+})
+if "PILLARS" in globals():
+    PILLARS.update({
+        "Fiscal balance": ("Macroeconomic", "Macro-economique"),
+        "Gen gov debt": ("Macroeconomic", "Macro-economique"),
+    })
+
+STR.update({
+    "sec_proj": ("IMF projections (WEO 2027-2031)", "Projections FMI (WEO 2027-2031)"),
+})
+
+RISK_ORDER = [
+    "Reserves", "Current account", "External debt", "Debt service",
+    "GDP growth", "Inflation", "Fiscal balance", "Gen gov debt", "Unemployment",
+    "Political stability", "Control of corruption", "Rule of law", "Regulatory quality",
+    "Gini", "Youth unemployment", "Dependency ratio", "Commodity dependence",
+]

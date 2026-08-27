@@ -5,8 +5,9 @@ from src import config
 from src.csv_loader import get_stats, load_csv
 from src.graph import build_report
 from src.alerts import compute_alerts
+from src.risk_scoring import country_scores, score_html
 from src.compare import line_chart, render_compare
-from src.i18n import INDICATORS, cname, iname, t
+from src.i18n import INDICATORS, PILLARS, PILLAR_ORDER, cname, iname, t, RISK_ORDER
 from src.pdf_export import generate_pdf_bytes
 from src.ui_render import report_html
 from src.ui_theme import CSS, masthead
@@ -77,6 +78,11 @@ def get_briefs():
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
 
+@st.cache_data(show_spinner=False)
+def get_scores():
+    return country_scores(load_csv(config.CSV_PATH))
+
+
 @st.cache_data(ttl=86400, show_spinner=False)
 def _live(country, indicator, lang, _day):
     return build_report(country, indicator, lang)
@@ -123,8 +129,9 @@ with st.sidebar:
     if mode == "brief":
         country = st.selectbox(t("country", lang), sorted(df.country.unique()),
                                format_func=lambda c: f"{cname(c, lang)} ({c})", key="country_sel")
-        inds = sorted(df[df.country == country].indicator.unique())
-        indicator = st.selectbox(t("indicator", lang), inds,
+        avail = set(df[df.country == country].indicator.unique())
+        ordered = [i for i in RISK_ORDER if i in avail]
+        indicator = st.selectbox(t("indicator", lang), ordered,
                                  format_func=lambda x: iname(x, lang) if x in INDICATORS else x)
         go_live = st.button(t("live", lang))
     else:
@@ -166,6 +173,7 @@ if alerts:
                 st.caption(rest)
 
 if mode == "brief":
+    st.markdown(score_html(country, get_scores(), lang), unsafe_allow_html=True)
     live = st.session_state.get("live")
     is_live = bool(live and live["key"] == sel_key)
     report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)

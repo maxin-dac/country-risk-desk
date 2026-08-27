@@ -1,139 +1,115 @@
-"""Moteur de regles deterministes - genere risques et opportunites a partir des donnees Banque Mondiale."""
+import pandas as pd
+"""Moteur de regles deterministes - risques et opportunites par pilier."""
 
-# Risques : seuils negatifs a surveiller
 RISK_RULES = [
-    dict(id="inflation_high", indicator="Inflation",
-         cond=lambda v: v > 10,
-         en=lambda v: f"Inflation critically high at {v:.1f}%, eroding purchasing power and real wages.",
-         fr=lambda v: f"Inflation critique a {v:.1f}%, erodant le pouvoir d'achat et les salaires reels."),
-    dict(id="recession", indicator="GDP growth",
-         cond=lambda v: v < 0,
-         en=lambda v: f"Economic contraction: GDP fell by {v:.1f}%, signaling recession.",
-         fr=lambda v: f"Contraction economique : le PIB a recule de {v:.1f}%, signe de recession."),
-    dict(id="reserves_low", indicator="Reserves",
-         cond=lambda v: v < 3,
-         en=lambda v: f"Reserves cover only {v:.1f} months of imports, exposing the currency to external shocks.",
-         fr=lambda v: f"Les reserves ne couvrent que {v:.1f} mois d'importations, exposant la monnaie aux chocs externes."),
-    dict(id="debt_high", indicator="Gov debt",
-         cond=lambda v: v > 90,
-         en=lambda v: f"Government debt at {v:.1f}% of GDP, limiting fiscal space and raising refinancing risk.",
-         fr=lambda v: f"Dette publique a {v:.1f}% du PIB, limitant la marge de manouvre budgetaire et le risque de refinancement."),
-    dict(id="ca_deficit", indicator="Current account",
-         cond=lambda v: v < -5,
-         en=lambda v: f"Current account deficit of {v:.1f}% of GDP, requiring sustained foreign capital inflows.",
-         fr=lambda v: f"Deficit courant de {v:.1f}% du PIB, necessitant des flux de capitaux etrangers soutenus."),
-    dict(id="unemp_high", indicator="Unemployment",
-         cond=lambda v: v > 15,
-         en=lambda v: f"Unemployment at {v:.1f}%, indicating labor market distress and social pressure.",
-         fr=lambda v: f"Chomage a {v:.1f}%, signalant un marche du travail en difficulte et une pression sociale."),
-    dict(id="electricity_low", indicator="Electricity access",
-         cond=lambda v: v < 50,
-         en=lambda v: f"Only {v:.1f}% of population has electricity access, a major infrastructure gap.",
-         fr=lambda v: f"Seulement {v:.1f}% de la population a acces a l'electricite, un deficit infrastructurel majeur."),
-    dict(id="ext_debt_high", indicator="External debt",
-         cond=lambda v: v > 80,
-         en=lambda v: f"External debt at {v:.1f}% of GNI, creating vulnerability to exchange rate and rate shocks.",
-         fr=lambda v: f"Dette externe a {v:.1f}% du RNB, creant une vulnerabilite au taux de change et aux taux."),
-    dict(id="political_instability", indicator="Political stability",
-         cond=lambda v: v < -1.0,
-         en=lambda v: f"Political stability index at {v:.2f}, indicating institutional fragility.",
-         fr=lambda v: f"Indice de stabilite politique a {v:.2f}, signalant une fragilite institutionnelle."),
-    dict(id="corruption_high", indicator="Control of corruption",
-         cond=lambda v: v < -0.5,
-         en=lambda v: f"Control of corruption at {v:.2f}, undermining business environment and fiscal efficiency.",
-         fr=lambda v: f"Controle de la corruption a {v:.2f}, affectant le climat des affaires et l'efficacite budgetaire."),
+    # Externe & souverain
+    dict(id="reserves_low", indicator="Reserves", cond=lambda v: v < 3,
+         en=lambda v: f"Reserves cover only {v:.1f} months of imports: transfer and convertibility risk.",
+         fr=lambda v: f"Les reserves ne couvrent que {v:.1f} mois d'importations : risque de transfert et de convertibilite."),
+    dict(id="ca_deficit", indicator="Current account", cond=lambda v: v < -5,
+         en=lambda v: f"Current account deficit of {v:.1f}% of GDP: structural need for external financing.",
+         fr=lambda v: f"Deficit courant de {v:.1f}% du PIB : besoin structurel de financement externe."),
+    dict(id="ext_debt_high", indicator="External debt", cond=lambda v: v > 80,
+         en=lambda v: f"External debt at {v:.1f}% of GNI: high exposure to exchange-rate and rate shocks.",
+         fr=lambda v: f"Dette externe a {v:.1f}% du RNB : forte exposition aux chocs de change et de taux."),
+    dict(id="debt_service_high", indicator="Debt service", cond=lambda v: v > 25,
+         en=lambda v: f"Debt service absorbs {v:.1f}% of exports: restructuring risk on external obligations.",
+         fr=lambda v: f"Le service de la dette absorbe {v:.1f}% des exports : risque de restructuration des obligations externes."),
+    # Macro-economique
+    dict(id="inflation_high", indicator="Inflation", cond=lambda v: v > 10,
+         en=lambda v: f"Inflation at {v:.1f}%: erosion of purchasing power and monetary instability.",
+         fr=lambda v: f"Inflation a {v:.1f}% : erosion du pouvoir d'achat et instabilite monetaire."),
+    dict(id="recession", indicator="GDP growth", cond=lambda v: v < 0,
+         en=lambda v: f"GDP contraction of {v:.1f}%: recession risk materialized.",
+         fr=lambda v: f"Contraction du PIB de {v:.1f}% : risque de recession materialise."),
+    dict(id="debt_high", indicator="Gov debt", cond=lambda v: v > 90,
+         en=lambda v: f"Government debt at {v:.1f}% of GDP: limited fiscal space, refinancing risk.",
+         fr=lambda v: f"Dette publique a {v:.1f}% du PIB : marge budgetaire limitee, risque de refinancement."),
+    dict(id="unemp_high", indicator="Unemployment", cond=lambda v: v > 15,
+         en=lambda v: f"Unemployment at {v:.1f}%: labor-market distress and social pressure.",
+         fr=lambda v: f"Chomage a {v:.1f}% : marche du travail en difficulte et pression sociale."),
+    # Politique & institutionnel
+    dict(id="pol_instability", indicator="Political stability", cond=lambda v: v < -1.0,
+         en=lambda v: f"Political stability at {v:.2f}: institutional fragility and policy uncertainty.",
+         fr=lambda v: f"Stabilite politique a {v:.2f} : fragilite institutionnelle et incertitude sur les politiques."),
+    dict(id="rule_of_law_low", indicator="Rule of law", cond=lambda v: v < -0.5,
+         en=lambda v: f"Rule of law at {v:.2f}: legal insecurity, expropriation risk for investors.",
+         fr=lambda v: f"Etat de droit a {v:.2f} : insecurite juridique, risque d'expropriation pour les investisseurs."),
+    dict(id="reg_quality_low", indicator="Regulatory quality", cond=lambda v: v < -0.5,
+         en=lambda v: f"Regulatory quality at {v:.2f}: unpredictable business environment.",
+         fr=lambda v: f"Qualite reglementaire a {v:.2f} : environnement des affaires imprevisible."),
+    dict(id="corruption_high", indicator="Control of corruption", cond=lambda v: v < -0.5,
+         en=lambda v: f"Control of corruption at {v:.2f}: governance and fiscal-efficiency risk.",
+         fr=lambda v: f"Controle de la corruption a {v:.2f} : risque de gouvernance et d'efficacite budgetaire."),
+    # Social & structurel
+    dict(id="gini_high", indicator="Gini", cond=lambda v: v > 45,
+         en=lambda v: f"Gini at {v:.0f}: high inequality, latent social-contestation risk.",
+         fr=lambda v: f"Gini a {v:.0f} : inegalites elevees, risque latent de contestation sociale."),
+    dict(id="youth_unemp_high", indicator="Youth unemployment", cond=lambda v: v > 25,
+         en=lambda v: f"Youth unemployment at {v:.1f}%: structural instability risk.",
+         fr=lambda v: f"Chomage des jeunes a {v:.1f}% : risque structurel d'instabilite."),
+    dict(id="dependency_high", indicator="Dependency ratio", cond=lambda v: v > 80,
+         en=lambda v: f"Dependency ratio at {v:.0f}%: demographic pressure on public finances.",
+         fr=lambda v: f"Ratio de dependance a {v:.0f}% : pression demographique sur les finances publiques."),
+    dict(id="commodity_high", indicator="Commodity dependence", cond=lambda v: v > 60,
+         en=lambda v: f"{v:.0f}% of merchandise exports are commodities: terms-of-trade vulnerability.",
+         fr=lambda v: f"{v:.0f}% des exports de marchandises sont des matieres premieres : vulnerabilite aux termes de l'echange."),
 ]
 
-# Opportunites : seuils positifs a valoriser
 OPP_RULES = [
-    dict(id="strong_growth", indicator="GDP growth",
-         cond=lambda v: v > 5,
-         en=lambda v: f"Robust growth of {v:.1f}% signals strong economic momentum and investment appeal.",
-         fr=lambda v: f"Croissance robuste de {v:.1f}% signalant un dynamisme economique et un attrait pour l'investissement."),
-    dict(id="low_inflation", indicator="Inflation",
-         cond=lambda v: 0 < v < 3,
-         en=lambda v: f"Stable inflation at {v:.1f}% preserves purchasing power and anchors expectations.",
-         fr=lambda v: f"Inflation stable a {v:.1f}% preservant le pouvoir d'achat et ancrant les anticipations."),
-    dict(id="ca_surplus", indicator="Current account",
-         cond=lambda v: v > 3,
-         en=lambda v: f"Current account surplus of {v:.1f}% of GDP, building external buffers.",
-         fr=lambda v: f"Excedent courant de {v:.1f}% du PIB, constituant des tampons externes."),
-    dict(id="low_unemp", indicator="Unemployment",
-         cond=lambda v: v < 5,
-         en=lambda v: f"Tight labor market at {v:.1f}% unemployment, supporting domestic demand.",
-         fr=lambda v: f"Marche du travail tendu a {v:.1f}% de chomage, soutenant la demande interieure."),
-    dict(id="electricity_high", indicator="Electricity access",
-         cond=lambda v: v > 95,
-         en=lambda v: f"Near-universal electricity access ({v:.1f}%) supports productive capacity.",
-         fr=lambda v: f"Acces quasi universel a l'electricite ({v:.1f}%) soutenant la capacite productive."),
-    dict(id="reserves_strong", indicator="Reserves",
-         cond=lambda v: v > 12,
-         en=lambda v: f"Reserves cover {v:.1f} months of imports, providing strong external buffer.",
-         fr=lambda v: f"Les reserves couvrent {v:.1f} mois d'importations, offrant un tampon externe solide."),
-    dict(id="political_stability", indicator="Political stability",
-         cond=lambda v: v > 0.5,
-         en=lambda v: f"Political stability index at {v:.2f}, supporting policy predictability.",
-         fr=lambda v: f"Indice de stabilite politique a {v:.2f}, soutenant la previsibilite des politiques."),
-    dict(id="corruption_control", indicator="Control of corruption",
-         cond=lambda v: v > 0.5,
-         en=lambda v: f"Strong control of corruption ({v:.2f}), improving business climate.",
-         fr=lambda v: f"Fort controle de la corruption ({v:.2f}), ameliorant le climat des affaires."),
-    dict(id="women_workforce", indicator="Women in workforce",
-         cond=lambda v: v > 55,
-         en=lambda v: f"Women represent {v:.1f}% of labor force, indicating inclusive labor market.",
-         fr=lambda v: f"Les femmes representent {v:.1f}% de la population active, indiquant un marche du travail inclusif."),
-    dict(id="low_co2", indicator="CO2 per capita",
-         cond=lambda v: v < 2,
-         en=lambda v: f"Low emissions at {v:.1f} t CO2/capita, limiting transition risk.",
-         fr=lambda v: f"Faibles emissions a {v:.1f} t CO2/hab., limitant le risque de transition."),
+    dict(id="reserves_strong", indicator="Reserves", cond=lambda v: v > 12,
+         en=lambda v: f"Reserves cover {v:.1f} months of imports: strong external buffer.",
+         fr=lambda v: f"Les reserves couvrent {v:.1f} mois d'importations : tampon externe solide."),
+    dict(id="ca_surplus", indicator="Current account", cond=lambda v: v > 3,
+         en=lambda v: f"Current account surplus of {v:.1f}% of GDP: external position supportive.",
+         fr=lambda v: f"Excedent courant de {v:.1f}% du PIB : position externe favorable."),
+    dict(id="strong_growth", indicator="GDP growth", cond=lambda v: v > 5,
+         en=lambda v: f"Robust growth of {v:.1f}%: strong momentum and investment appeal.",
+         fr=lambda v: f"Croissance robuste de {v:.1f}% : dynamisme fort et attrait pour l'investissement."),
+    dict(id="low_inflation", indicator="Inflation", cond=lambda v: 0 < v < 3,
+         en=lambda v: f"Inflation anchored at {v:.1f}%: macroeconomic stability.",
+         fr=lambda v: f"Inflation ancree a {v:.1f}% : stabilite macroeconomique."),
+    dict(id="rule_of_law_high", indicator="Rule of law", cond=lambda v: v > 0.5,
+         en=lambda v: f"Rule of law at {v:.2f}: strong legal protection for investors.",
+         fr=lambda v: f"Etat de droit a {v:.2f} : protection juridique solide pour les investisseurs."),
+    dict(id="reg_quality_high", indicator="Regulatory quality", cond=lambda v: v > 0.5,
+         en=lambda v: f"Regulatory quality at {v:.2f}: predictable and supportive business rules.",
+         fr=lambda v: f"Qualite reglementaire a {v:.2f} : regles du jeu previsibles et favorables."),
+    dict(id="low_unemp", indicator="Unemployment", cond=lambda v: v < 5,
+         en=lambda v: f"Unemployment at {v:.1f}%: tight labor market supporting demand.",
+         fr=lambda v: f"Chomage a {v:.1f}% : marche du travail tendu soutenant la demande."),
+    dict(id="youth_unemp_low", indicator="Youth unemployment", cond=lambda v: v < 12,
+         en=lambda v: f"Youth unemployment at {v:.1f}%: social cohesion supportive.",
+         fr=lambda v: f"Chomage des jeunes a {v:.1f}% : cohesion sociale favorable."),
+    dict(id="commodity_low", indicator="Commodity dependence", cond=lambda v: v < 15,
+         en=lambda v: f"Only {v:.0f}% of exports are commodities: diversified export base.",
+         fr=lambda v: f"Seulement {v:.0f}% des exports sont des matieres premieres : base exportatrice diversifiee."),
 ]
 
 
 def generate_outlook(stats):
-    """Genere les listes de risques, opportunites et incertitudes a partir des stats."""
     if not stats.get("available"):
         return {"risks": [], "opportunities": [], "uncertainties": []}
-
     v = stats.get("latest_value")
     ind = stats.get("indicator")
     risks, opps, uncs = [], [], []
-
-    # Risques
     for rule in RISK_RULES:
         if rule["indicator"] == ind and rule["cond"](v):
-            risks.append({
-                "text_en": rule["en"](v),
-                "text_fr": rule["fr"](v),
-                "rule_id": rule["id"],
-                "value": v,
-            })
-
-    # Opportunites
+            risks.append({"text_en": rule["en"](v), "text_fr": rule["fr"](v),
+                          "rule_id": rule["id"], "value": v})
     for rule in OPP_RULES:
         if rule["indicator"] == ind and rule["cond"](v):
-            opps.append({
-                "text_en": rule["en"](v),
-                "text_fr": rule["fr"](v),
-                "rule_id": rule["id"],
-                "value": v,
-            })
-
-    # Incertitudes : donnees anciennes ou manquantes
+            opps.append({"text_en": rule["en"](v), "text_fr": rule["fr"](v),
+                         "rule_id": rule["id"], "value": v})
     if stats.get("change_12m_pct") is None and stats.get("change_3m_pct") is None:
-        uncs.append({
-            "text_en": "Limited historical data available to assess the trend.",
-            "text_fr": "Donnees historiques limitees pour evaluer la tendance.",
-        })
+        uncs.append({"text_en": "Limited historical data to assess the trend.",
+                     "text_fr": "Donnees historiques limitees pour evaluer la tendance."})
     if stats.get("regional_median") is None:
-        uncs.append({
-            "text_en": "Regional comparison unavailable for this indicator.",
-            "text_fr": "Comparaison regionale indisponible pour cet indicateur.",
-        })
-
+        uncs.append({"text_en": "Regional comparison unavailable for this indicator.",
+                     "text_fr": "Comparaison regionale indisponible pour cet indicateur."})
     return {"risks": risks, "opportunities": opps, "uncertainties": uncs}
 
 
-# --- API legacy pour compatibilite avec compute_alerts (bandeau d'alertes global) ---
 RULES = [
     dict(id="inflation_high", indicator="Inflation", cond=lambda v: v > 10, desc=True,
          en="Inflation above 10 %", fr="Inflation superieure a 10 %"),
@@ -143,21 +119,62 @@ RULES = [
          en="Reserves below 3 months of imports", fr="Reserves sous 3 mois d'importations"),
     dict(id="debt_high", indicator="Gov debt", cond=lambda v: v > 90, desc=True,
          en="Government debt above 90 % of GDP", fr="Dette publique au-dessus de 90 % du PIB"),
+    dict(id="debt_service_high", indicator="Debt service", cond=lambda v: v > 25, desc=True,
+         en="Debt service above 25 % of exports", fr="Service de la dette au-dessus de 25 % des exports"),
     dict(id="ca_deficit", indicator="Current account", cond=lambda v: v < -5, desc=False,
          en="Current account deficit beyond -5 % of GDP", fr="Deficit courant au-dela de -5 % du PIB"),
     dict(id="unemp_high", indicator="Unemployment", cond=lambda v: v > 15, desc=True,
          en="Unemployment above 15 %", fr="Chomage superieur a 15 %"),
-    dict(id="electricity_low", indicator="Electricity access", cond=lambda v: v < 50, desc=False,
-         en="Access to electricity below 50 %", fr="Acces a l'electricite sous 50 %"),
+    dict(id="youth_unemp_high", indicator="Youth unemployment", cond=lambda v: v > 25, desc=True,
+         en="Youth unemployment above 25 %", fr="Chomage des jeunes superieur a 25 %"),
+    dict(id="rule_of_law_low", indicator="Rule of law", cond=lambda v: v < -1.0, desc=False,
+         en="Rule of law below -1.0", fr="Etat de droit sous -1,0"),
 ]
 
 
 def compute_alerts(df):
-    latest = df.sort_values("date").groupby(["country", "indicator"], as_index=False).tail(1)
+    """Bandeau d'alertes global - version defensive (ne plante jamais)."""
     out = []
+    if df is None or "value" not in df.columns:
+        return out
+    latest = df.sort_values("date").groupby(["country", "indicator"], as_index=False).tail(1)
     for rule in RULES:
-        sub = latest[latest.indicator == rule["indicator"]].dropna(subset=["value"])
-        hit = sub[sub.value.astype(float).map(rule["cond"])]
-        hit = hit.sort_values("value", ascending=not rule["desc"])
-        out.append({**rule, "hits": [(r.country, float(r.value)) for r in hit.itertuples()]})
+        sub = latest.loc[latest["indicator"] == rule["indicator"]].dropna(subset=["value"]).copy()
+        if sub.empty:
+            continue
+        nums = pd.to_numeric(sub["value"], errors="coerce")
+        mask = nums.map(rule["cond"]).fillna(False).astype(bool).values
+        hit = sub.loc[mask].copy()
+        if hit.empty:
+            continue
+        hit["_sort"] = pd.to_numeric(hit["value"], errors="coerce")
+        hit = hit.sort_values("_sort", ascending=not rule["desc"])
+        out.append({**rule,
+                    "hits": [(r["country"], float(r["value"])) for _, r in hit.iterrows()]})
     return [a for a in out if a["hits"]]
+
+if "RISK_RULES" in globals():
+    RISK_RULES += [
+        dict(id="fiscal_deficit", indicator="Fiscal balance", cond=lambda v: v < -5,
+             en=lambda v: f"Fiscal deficit of {abs(v):.1f}% of GDP: sustained consolidation needed.",
+             fr=lambda v: f"Deficit budgetaire de {abs(v):.1f}% du PIB : assainissement soutenu necessaire."),
+        dict(id="ggdebt_high", indicator="Gen gov debt", cond=lambda v: v > 90,
+             en=lambda v: f"General government debt at {v:.1f}% of GDP: high refinancing risk.",
+             fr=lambda v: f"Dette publique generale a {v:.1f}% du PIB : risque de refinancement eleve."),
+    ]
+if "OPP_RULES" in globals():
+    OPP_RULES += [
+        dict(id="fiscal_surplus", indicator="Fiscal balance", cond=lambda v: v > 1,
+             en=lambda v: f"Fiscal surplus of {v:.1f}% of GDP: comfortable policy space.",
+             fr=lambda v: f"Excedent budgetaire de {v:.1f}% du PIB : marge de manouvre confortable."),
+        dict(id="ggdebt_low", indicator="Gen gov debt", cond=lambda v: v < 40,
+             en=lambda v: f"General government debt at {v:.1f}% of GDP: solid fiscal position.",
+             fr=lambda v: f"Dette publique generale a {v:.1f}% du PIB : position budgetaire solide."),
+    ]
+if "RULES" in globals():
+    RULES += [
+        dict(id="fiscal_deficit", indicator="Fiscal balance", cond=lambda v: v < -5, desc=False,
+             en="Fiscal deficit beyond -5 % of GDP", fr="Deficit budgetaire au-dela de -5 % du PIB"),
+        dict(id="ggdebt_high", indicator="Gen gov debt", cond=lambda v: v > 90, desc=True,
+             en="General government debt above 90 % of GDP", fr="Dette publique generale au-dessus de 90 % du PIB"),
+    ]

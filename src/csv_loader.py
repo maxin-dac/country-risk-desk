@@ -3,7 +3,7 @@ import pandas as pd
 REQUIRED = {"country", "indicator", "category", "date", "value", "unit", "region"}
 
 def load_csv(path):
-    df = pd.read_csv(path)
+    df = pd.read_csv(path, dtype={"region": str, "country": str, "indicator": str, "unit": str, "source": str})
     missing = REQUIRED - set(df.columns)
     if missing:
         raise ValueError(f"Missing columns: {missing}")

@@ -1,5 +1,6 @@
 import html
 from src.i18n import t
+from src.projections import projections_html
 
 
 def fmt_stats(s, lang):
@@ -25,6 +26,9 @@ def evidence_html(items, lang, kind=""):
         return f'<div class="insufficient">{t("insufficient", lang)}</div>'
     out = []
     for it in items:
+        if isinstance(it, str):
+            out.append(f'<p class="kv">{html.escape(it)}</p>')
+            continue
         # Texte bilingue pour les regles (risques/opportunites)
         if "text_en" in it and "text_fr" in it:
             text = html.escape(it["text_fr"] if lang == "fr" else it["text_en"])
@@ -36,6 +40,13 @@ def evidence_html(items, lang, kind=""):
             text = html.escape(str(it.get("text", "")))
             out.append(f'<p class="kv"><span class="chip {kind}">{ids}</span> {text}</p>')
     return " ".join(out)
+
+
+def _unc_text(u, lang):
+    if isinstance(u, dict):
+        return (u.get("text_fr" if lang == "fr" else "text_en")
+                or u.get("text_en") or u.get("text_fr") or "")
+    return str(u)
 
 
 def report_html(r, lang, chart=""):
@@ -51,7 +62,7 @@ def report_html(r, lang, chart=""):
     uncer_items = out.get("uncertainties", [])
     if uncer_items:
         uncer_html = " ".join(
-            f"<li>{html.escape(u['text_fr'] if lang == 'fr' else u['text_en'])}</li>"
+            f"<li>{html.escape(_unc_text(u, lang))}</li>"
             for u in uncer_items
         )
     else:
@@ -65,6 +76,11 @@ def report_html(r, lang, chart=""):
     lims = " ".join(f"<li>{html.escape(str(x))}</li>" for x in r.get("limitations", []))
     lims_html = f'<h3 style="margin-top:1rem">{t("sec_limits", lang)}</h3><ul>{lims}</ul>' if lims else ""
 
+    st_ = r.get("stats") or {}
+    proj_html = projections_html(r.get("country", ""), r.get("indicator", ""), lang,
+                                 latest_value=st_.get("latest_value"),
+                                 change_12m=st_.get("change_12m_pct"),
+                                 unit=st_.get("unit", ""))
     return f"""
 <div class="brief data"><h3>01 · {t('sec_constat', lang)}</h3>
   <div class="bignum">{big}</div> <div class="deltaline">{deltas}</div>{chart}</div>
@@ -72,4 +88,5 @@ def report_html(r, lang, chart=""):
 <div class="brief risk"><h3>03 · {t('sec_risks', lang)}</h3>{risks}</div>
 <div class="brief opp"><h3>04 · {t('sec_opps', lang)}</h3>{opps}</div>
 <div class="brief"><h3>05 · {t('uncertainties', lang)}</h3><ul>{uncer_html}</ul></div>
-<div class="brief"><h3>06 · {t('sec_sources', lang)}</h3><ul>{srcs}</ul>{lims_html}</div>"""
+<div class="brief proj"><h3>06 · {t('sec_proj', lang)}</h3>{proj_html}</div>
+<div class="brief"><h3>07 · {t('sec_sources', lang)}</h3><ul>{srcs}</ul>{lims_html}</div>"""
