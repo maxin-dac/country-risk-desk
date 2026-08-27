@@ -5,7 +5,7 @@ from src import config
 from src.csv_loader import get_stats, load_csv
 from src.graph import build_report
 from src.alerts import compute_alerts
-from src.risk_scoring import country_scores, score_html
+from src.risk_scoring import top_risk_html, country_scores, score_html
 from src.compare import line_chart, render_compare
 from src.i18n import INDICATORS, PILLARS, PILLAR_ORDER, cname, iname, t, RISK_ORDER
 from src.pdf_export import generate_pdf_bytes
@@ -155,6 +155,9 @@ if mode == "brief":
 ticks = [f"<b>{c}</b> {cname(c, lang).upper()}" for c in sorted(df.country.unique())[:16]]
 st.markdown(masthead(df.country.nunique(), df.indicator.nunique(), today,
                      "deterministic", lang, ticks), unsafe_allow_html=True)
+
+with st.expander("Top 10 pays les plus risques" if lang == "fr" else "Top 10 riskiest countries", expanded=False):
+    st.markdown(top_risk_html(get_scores(), lang), unsafe_allow_html=True)
 
 alerts = compute_alerts(df)
 if alerts:

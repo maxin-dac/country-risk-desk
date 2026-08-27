@@ -1,6 +1,8 @@
 """Aggregate country-risk scoring (0-100, higher = riskier). Deterministic and explainable."""
 import pandas as pd
 
+from .i18n import cname
+
 # indicator -> (higher_is_worse, best_value, worst_value)
 ANCHORS = {
     "Inflation": (True, 2.0, 20.0),
@@ -135,3 +137,25 @@ def score_html(country, scores, lang):
             f'<span style="color:{color};font-weight:700">{lab_txt}</span>'
             f'<span style="color:#9fb3c4;font-size:.8rem">{rank_txt}</span></div>'
             f'{rows}</div>')
+
+
+def top_risk_html(scores, lang, n=10):
+    """Classement des n pays les plus risques (score decroissant)."""
+    order = sorted(scores.items(),
+                   key=lambda kv: kv[1]["overall"], reverse=True)[:n]
+    rows = ""
+    for i, (iso, s) in enumerate(order, 1):
+        o = s["overall"]
+        lab = label_for(o)
+        lab_txt = lab[1] if lang == "fr" else lab[0]
+        color = ("#2ecc71" if o < 35 else "#f1c40f" if o < 55
+                 else "#e67e22" if o < 70 else "#e74c3c")
+        rows += (f'<tr style="border-bottom:1px solid rgba(159,179,200,.15)">'
+                 f'<td style="padding:.3rem .5rem;color:#9fb3c4">{i}</td>'
+                 f'<td style="padding:.3rem .5rem">{cname(iso, lang)} '
+                 f'<span style="color:#9fb3c4">({iso})</span></td>'
+                 f'<td style="padding:.3rem .5rem;color:{color};font-weight:700">'
+                 f'{o:.0f}/100</td>'
+                 f'<td style="padding:.3rem .5rem;color:{color}">{lab_txt}</td></tr>')
+    return ('<table style="width:100%;border-collapse:collapse;font-size:.85rem">'
+            + rows + '</table>')
