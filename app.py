@@ -3,7 +3,7 @@ import streamlit as st
 
 from src import config
 from src.csv_loader import get_stats, load_csv
-from src.graph import build_agent
+from src.graph import build_report
 from src.alerts import compute_alerts
 from src.compare import line_chart, render_compare
 from src.i18n import INDICATORS, cname, iname, t
@@ -11,7 +11,7 @@ from src.pdf_export import generate_pdf_bytes
 from src.ui_render import report_html
 from src.ui_theme import CSS, masthead
 
-st.set_page_config(page_title="Country Risk Desk", page_icon="\U0001F6F0", layout="wide")
+st.set_page_config(page_title="Country Risk Desk", page_icon="🛰", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
 st.markdown("""<style>
 [data-testid="stVerticalBlock"] > div:has(.alerts-flag){display:none}
@@ -24,7 +24,6 @@ st.markdown("""<style>
 </style>""", unsafe_allow_html=True)
 
 st.markdown("""<style>
-/* ===== sidebar différencié ===== */
 section[data-testid="stSidebar"]{
   background:linear-gradient(180deg,#10202e 0%,#0b1620 100%);
   border-right:1px solid rgba(76,201,240,.22);
@@ -53,7 +52,6 @@ section[data-testid="stSidebar"] [data-testid="stSelectbox"] > div:focus-within,
 section[data-testid="stSidebar"] [data-testid="stMultiSelect"] > div:focus-within{
   border-color:#4cc9f0;
 }
-/* ===== boutons cohérents ===== */
 .stButton button{
   border-radius:.55rem;
   border:1px solid rgba(76,201,240,.4);
@@ -62,29 +60,27 @@ section[data-testid="stSidebar"] [data-testid="stMultiSelect"] > div:focus-withi
   font-weight:600;
 }
 .stButton button:hover{background:rgba(76,201,240,.18);border-color:#4cc9f0}
-/* ===== détails ===== */
 ::-webkit-scrollbar{width:8px;height:8px}
 ::-webkit-scrollbar-thumb{background:rgba(159,179,200,.35);border-radius:4px}
 h3{color:#cfe8f7}
 </style>""", unsafe_allow_html=True)
 
+
 @st.cache_data(show_spinner=False)
 def get_df():
     return load_csv(config.CSV_PATH)
+
 
 @st.cache_data(show_spinner=False)
 def get_briefs():
     p = pathlib.Path(config.BRIEFS_PATH)
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
-@st.cache_resource(show_spinner=False)
-def get_agent():
-    return build_agent(get_df())
 
 @st.cache_data(ttl=86400, show_spinner=False)
 def _live(country, indicator, lang, _day):
-    return get_agent().invoke({"country": country, "indicator": indicator,
-                               "lang": lang}).get("final_report", {})
+    return build_report(country, indicator, lang)
+
 
 def live_report(country, indicator, lang):
     day = datetime.date.today().isoformat()
@@ -92,6 +88,7 @@ def live_report(country, indicator, lang):
     if r.get("status") != "done":
         _live.clear()
     return r
+
 
 def assemble_report(df, briefs, country, indicator, lang):
     stats = get_stats(df, country, indicator)
@@ -106,11 +103,12 @@ def assemble_report(df, briefs, country, indicator, lang):
         "web_context_available": qual.get("web_context_available", False),
         "confidence": qual.get("confidence", "low"),
         "context": qual.get("context", {"points": []}),
-        "outlook": qual.get("outlook", {"risques": [], "opportunities": [], "uncertainties": []}),
+        "outlook": qual.get("outlook", {"risks": [], "opportunities": [], "uncertainties": []}),
         "limitations": qual.get("limitations", []),
         "sources": qual.get("sources", []),
         "generated_at": qual.get("generated_at", ""),
     }
+
 
 df = get_df()
 briefs = get_briefs()
@@ -119,7 +117,7 @@ today = datetime.date.today().isoformat()
 with st.sidebar:
     st.markdown(f"### {t('params', 'en')} / {t('params', 'fr')}")
     lang = st.selectbox("Langue / Language", ["fr", "en"],
-                        format_func=lambda x: "\U0001F1EB\U0001F1F7 Français" if x == "fr" else "\U0001F1EC\U0001F1E7 English")
+                        format_func=lambda x: "🇫🇷 Français" if x == "fr" else "🇬🇧 English")
     mode = st.radio(t("mode", lang), ["brief", "compare"], horizontal=True,
                     format_func=lambda m: t("mode_brief", lang) if m == "brief" else t("mode_compare", lang))
     if mode == "brief":
@@ -139,17 +137,17 @@ with st.sidebar:
 if mode == "brief":
     sel_key = f"{country}|{indicator}|{lang}"
     if go_live:
-        if not (config.TAVILY_API_KEY and config.LLM_API_KEY):
-            st.warning(t("no_keys", lang))
-        else:
-            with st.spinner(t("searching", lang)):
-                st.session_state.live = {"key": sel_key,
-                                         "report": live_report(country, indicator, lang)}
-            st.rerun()
+        if not config.TAVILY_API_KEY:
+            st.warning("Tavily API key missing - only quantitative data available." if lang == "en"
+                       else "Cle API Tavily manquante - seules les donnees quantitatives sont disponibles.")
+        with st.spinner(t("searching", lang)):
+            st.session_state.live = {"key": sel_key,
+                                     "report": live_report(country, indicator, lang)}
+        st.rerun()
 
 ticks = [f"<b>{c}</b> {cname(c, lang).upper()}" for c in sorted(df.country.unique())[:16]]
 st.markdown(masthead(df.country.nunique(), df.indicator.nunique(), today,
-                     config.LLM_MODEL, lang, ticks), unsafe_allow_html=True)
+                     "deterministic", lang, ticks), unsafe_allow_html=True)
 
 alerts = compute_alerts(df)
 if alerts:
@@ -208,10 +206,10 @@ st.sidebar.markdown("""
 ">
     <p style="margin: 0 0 0.75rem 0; font-weight: 600; letter-spacing: 0.05em; opacity: 0.9;">© 2026 Maxime NDACLEU</p>
     <div style="display: flex; justify-content: center; gap: 1.25rem;">
-        <a href="https://github.com/maxin-dac" target="_blank" style="color: #8fd0f4; text-decoration: none; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.6'" onmouseout="this.style.opacity='1'">
+        <a href="https://github.com/maxin-dac" target="_blank" style="color: #8fd0f4; text-decoration: none;">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
         </a>
-        <a href="https://www.linkedin.com/in/maximendacleu" target="_blank" style="color: #8fd0f4; text-decoration: none; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.6'" onmouseout="this.style.opacity='1'">
+        <a href="https://www.linkedin.com/in/maximendacleu" target="_blank" style="color: #8fd0f4; text-decoration: none;">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
         </a>
     </div>
