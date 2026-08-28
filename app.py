@@ -1,5 +1,6 @@
 import datetime, json, pathlib
 import streamlit as st
+
 from src import config
 from src.csv_loader import get_stats, load_csv
 from src.graph import build_report
@@ -12,7 +13,7 @@ from src.pdf_export import generate_pdf_bytes
 from src.ui_render import report_html
 from src.ui_theme import CSS, masthead
 
-st.set_page_config(page_title="Country Risk Desk", page_icon="🛰", layout="wide")
+st.set_page_config(page_title="Country Risk Desk", page_icon="\U0001f6f0", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
 
 
@@ -35,8 +36,10 @@ def get_scores():
 def render_dashboard(df, alerts, lang):
     st.markdown("### " + ("Tableau de bord risque global" if lang == "fr" else "Global risk dashboard"))
     scores = get_scores()
+
     with st.expander("World risk map" if lang == "en" else "Carte mondiale du risque", expanded=True):
         st.plotly_chart(dashboard.world_map(scores, lang), width="stretch")
+
     col1, col2 = st.columns([2, 1])
     with col1:
         st.plotly_chart(dashboard.score_distribution(scores, lang), width="stretch")
@@ -60,40 +63,48 @@ def render_dashboard(df, alerts, lang):
             if st.button(f"{_label} : {_n}", key=f"dash_cat_{_key}",
                          type="primary" if _active else "secondary"):
                 st.session_state["dash_filter"] = None if _active else _key
+
     _flt = st.session_state.get("dash_filter")
     if _flt:
         _cond = {c[0]: c[2] for c in cats}[_flt]
-        _members = sorted(((iso, s["overall"]) for iso, s in scores.items()
-                           if _cond(s["overall"])),
-                          key=lambda kv: kv[1], reverse=True)
+        _members = sorted(
+            ((iso, s["overall"]) for iso, s in scores.items() if _cond(s["overall"])),
+            key=lambda kv: kv[1], reverse=True)
         _lab = {c[0]: c[1] for c in cats}[_flt]
         st.markdown(f"##### {_lab} - {len(_members)}")
         for _i in range(0, len(_members), 6):
             _cols = st.columns(6)
             for _j, (_iso, _sc) in enumerate(_members[_i:_i + 6]):
-                _cols[_j].button(f"{cname(_iso, lang)} · {_sc:.0f}",
-                                 key=f"dash_m_{_flt}_{_iso}",
-                                 on_click=lambda i2=_iso: st.session_state.update(
-                                     {"country_sel": i2, "mode_sel": "brief"}))
+                _cols[_j].button(
+                    f"{cname(_iso, lang)} \u00b7 {_sc:.0f}",
+                    key=f"dash_m_{_flt}_{_iso}",
+                    on_click=lambda i2=_iso: st.session_state.update(
+                        {"country_sel": i2, "mode_sel": "brief"}))
+
     st.markdown("#### " + ("Top 10 riskiest countries" if lang == "en" else "Top 10 pays les plus risques"))
     st.markdown(top_risk_html(scores, lang), unsafe_allow_html=True)
+
     if alerts:
         st.markdown('<div class="alerts-red-flag"></div>', unsafe_allow_html=True)
         st.markdown("#### " + t("alerts_title", lang))
         for a in alerts:
             label = a["fr"] if lang == "fr" else a["en"]
-            st.markdown(f"**{label}** · {len(a['hits'])}")
+            st.markdown(f"**{label}** \u00b7 {len(a['hits'])}")
             top = a["hits"][:8]
             cols = st.columns(len(top))
             for i, (iso, v) in enumerate(top):
-                cols[i].button(f"{cname(iso, lang)} · {v:.0f}", key=f"al_{a['id']}_{iso}",
-                               on_click=lambda i2=iso: st.session_state.update(
-                                   {"country_sel": i2, "mode_sel": "brief"}))
+                cols[i].button(
+                    f"{cname(iso, lang)} \u00b7 {v:.0f}",
+                    key=f"al_{a['id']}_{iso}",
+                    on_click=lambda i2=iso: st.session_state.update(
+                        {"country_sel": i2, "mode_sel": "brief"}))
             if len(a["hits"]) > 8:
-                rest = " · ".join(f"{cname(i2, lang)} ({v2:.0f})" for i2, v2 in a["hits"][8:])
+                rest = " \u00b7 ".join(
+                    f"{cname(i2, lang)} ({v2:.0f})" for i2, v2 in a["hits"][8:])
                 st.caption(rest)
 
 
+@st.cache_data(show_spinner=False)
 def _live(country, indicator, lang, _day):
     return build_report(country, indicator, lang)
 
@@ -127,50 +138,68 @@ def assemble_report(df, briefs, country, indicator, lang):
     }
 
 
+# ---- Main ----
 df = get_df()
 briefs = get_briefs()
 today = datetime.date.today().isoformat()
 
 with st.sidebar:
     st.markdown(f"### {t('params', 'en')} / {t('params', 'fr')}")
-    lang = st.selectbox("Langue / Language", ["fr", "en"],
-                        format_func=lambda x: "🇫🇷 Français" if x == "fr" else "🇬🇧 English")
-    mode = st.radio(t("mode", lang), ["brief", "compare", "dashboard"], horizontal=True,
-                    format_func=lambda m: t("mode_brief", lang) if m == "brief"
-                    else t("mode_dashboard", lang) if m == "dashboard" else t("mode_compare", lang),
-                    key="mode_sel")
+    lang = st.selectbox(
+        "Langue / Language", ["fr", "en"],
+        format_func=lambda x: "\U0001f1eb\U0001f1f7 Fran\u00e7ais" if x == "fr" else "\U0001f1ec\U0001f1e7 English")
+
+    mode = st.radio(
+        t("mode", lang), ["brief", "compare", "dashboard"],
+        horizontal=True,
+        format_func=lambda m: (t("mode_brief", lang) if m == "brief"
+                               else t("mode_dashboard", lang) if m == "dashboard"
+                               else t("mode_compare", lang)),
+        key="mode_sel")
     st.markdown("---")
+
     if mode == "brief":
-        country = st.selectbox(t("country", lang), sorted(df.country.unique()),
-                               format_func=lambda c: f"{cname(c, lang)} ({c})", key="country_sel")
+        country = st.selectbox(
+            t("country", lang), sorted(df.country.unique()),
+            format_func=lambda c: f"{cname(c, lang)} ({c})",
+            key="country_sel")
         avail = set(df[df.country == country].indicator.unique())
         ordered = [i for i in RISK_ORDER if i in avail]
-        indicator = st.selectbox(t("indicator", lang), ordered,
-                                 format_func=lambda x: iname(x, lang) if x in INDICATORS else x)
+        indicator = st.selectbox(
+            t("indicator", lang), ordered,
+            format_func=lambda x: iname(x, lang) if x in INDICATORS else x)
         go_live = st.button(t("live", lang))
     elif mode == "compare":
         allc = sorted(df.country.unique())
-        countries = st.multiselect(t("countries_sel", lang), allc,
-                                   default=[c for c in ("MAR", "USA", "DEU") if c in allc],
-                                   max_selections=12,
-                                   format_func=lambda c: f"{cname(c, lang)} ({c})")
+        countries = st.multiselect(
+            t("countries_sel", lang), allc,
+            default=[c for c in ("MAR", "USA", "DEU") if c in allc],
+            max_selections=12,
+            format_func=lambda c: f"{cname(c, lang)} ({c})")
+    else:
+        go_live = False
 
 if mode == "brief":
     sel_key = f"{country}|{indicator}|{lang}"
     if go_live:
         if not config.TAVILY_API_KEY:
-            st.warning("Tavily API key missing - only quantitative data available." if lang == "en"
-                       else "Cle API Tavily manquante - seules les donnees quantitatives sont disponibles.")
+            st.warning(
+                "Tavily API key missing - only quantitative data available."
+                if lang == "en" else
+                "Cle API Tavily manquante - seules les donnees quantitatives sont disponibles.")
         with st.spinner(t("searching", lang)):
-            st.session_state.live = {"key": sel_key,
-                                     "report": live_report(country, indicator, lang)}
+            st.session_state.live = {
+                "key": sel_key,
+                "report": live_report(country, indicator, lang)}
         st.rerun()
 
-ticks = [f"<b>{c}</b> {cname(c, lang).upper()}" for c in sorted(df.country.unique())[:16]]
-st.markdown(masthead(df.country.nunique(),
-                     len([i for i in RISK_ORDER if i in set(df.indicator)]),
-                     today, "deterministic", lang, ticks),
-            unsafe_allow_html=True)
+ticks = [f"<b>{c}</b> {cname(c, lang).upper()}"
+         for c in sorted(df.country.unique())[:16]]
+st.markdown(
+    masthead(df.country.nunique(),
+             len([i for i in RISK_ORDER if i in set(df.indicator)]),
+             today, "deterministic", lang, ticks),
+    unsafe_allow_html=True)
 
 alerts = compute_alerts(df)
 
@@ -183,6 +212,7 @@ if mode == "brief":
         st.caption(t("live_done", lang))
     html_all = report_html(report, lang)
     marker = '<div class="brief ctx">'
+
     if report.get("status") != "error" and marker in html_all:
         head, _, rest = html_all.partition(marker)
         with st.container():
@@ -194,33 +224,44 @@ if mode == "brief":
         st.markdown(marker + rest, unsafe_allow_html=True)
     else:
         st.markdown(html_all, unsafe_allow_html=True)
+
     if report.get("status") != "error":
         try:
-            st.download_button(t("export", lang), generate_pdf_bytes(report, lang),
-                               f"pestel_{country}_{indicator}.pdf".lower(), "application/pdf")
+            st.download_button(
+                t("export", lang),
+                generate_pdf_bytes(report, lang),
+                f"pestel_{country}_{indicator}.pdf".lower(),
+                "application/pdf")
         except Exception as e:
             st.warning(f"{t('pdf_fail', lang)}: {e}")
+
         series = df[(df.country == country) & (df.indicator == indicator)]
-        st.download_button("Download data (CSV)" if lang == "en" else "Telecharger les donnees (CSV)",
-                           series.to_csv(index=False),
-                           f"country_risk_{country}_{indicator}.csv", "text/csv")
+        st.download_button(
+            "Download data (CSV)" if lang == "en" else "Telecharger les donnees (CSV)",
+            series.to_csv(index=False),
+            f"country_risk_{country}_{indicator}.csv",
+            "text/csv")
+
         import io as _bio
         _xb = _bio.BytesIO()
         series.to_excel(_xb, index=False)
-        st.download_button("Download data (Excel)" if lang == "en" else "Telecharger les donnees (Excel)",
-                           _xb.getvalue(), f"country_risk_{country}_{indicator}.xlsx",
-                           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        st.download_button(
+            "Download data (Excel)" if lang == "en" else "Telecharger les donnees (Excel)",
+            _xb.getvalue(),
+            f"country_risk_{country}_{indicator}.xlsx",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
 elif mode == "compare":
     render_compare(df, countries, lang)
 else:
     render_dashboard(df, alerts, lang)
 
 st.sidebar.markdown("""
-<div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(148,163,184,.2); text-align: center; color: #8fa3b8; font-size: 0.75rem;">
-  <p style="margin: 0 0 0.75rem 0; font-weight: 600; letter-spacing: 0.05em;">© 2026 Maxime NDACLEU</p>
-  <div style="display: flex; justify-content: center; gap: 1.25rem;">
-    <a href="https://github.com/maxin-dac" target="_blank" style="color: #8fa3b8;">GitHub</a>
-    <a href="https://www.linkedin.com/in/maximendacleu" target="_blank" style="color: #8fa3b8;">LinkedIn</a>
-  </div>
-</div>
+<div style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(148,163,184,.2);
+text-align:center;color:#8fa3b8;font-size:.75rem;">
+<p style="margin:0 0 .75rem 0;font-weight:600;letter-spacing:.05em;">\u00a9 2026 Maxime NDACLEU</p>
+<div style="display:flex;justify-content:center;gap:1.25rem;">
+<a href="https://github.com/maxin-dac" target="_blank" style="color:#8fa3b8;">GitHub</a>
+<a href="https://www.linkedin.com/in/maximendacleu" target="_blank" style="color:#8fa3b8;">LinkedIn</a>
+</div></div>
 """, unsafe_allow_html=True)

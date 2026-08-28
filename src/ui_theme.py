@@ -1,7 +1,10 @@
-"""Theme global - Country Risk Desk."""
-import pathlib
+"""Theme global - Country Risk Desk.
+Le CSS vit dans assets/theme.css (source unique).
+Ce module le charge, l'enveloppe dans <style> et expose masthead().
+"""
+import pathlib as _pl
 
-_CSS_PATH = pathlib.Path(__file__).resolve().parent.parent / "assets" / "theme.css"
+_CSS_PATH = _pl.Path(__file__).resolve().parent.parent / "assets" / "theme.css"
 _raw = _CSS_PATH.read_text(encoding="utf-8") if _CSS_PATH.exists() else ""
 CSS = "<style>\n" + _raw + "\n</style>"
 
@@ -10,23 +13,23 @@ def masthead(n_countries, n_indicators, today, model, lang, ticks=None):
     fr = lang == "fr"
     chips = "".join([
         f'<span class="mh-chip"><i style="background:var(--accent)"></i>'
-        f'{("Engine", "Moteur")[fr]} · {model}</span>',
+        f'{"Moteur" if fr else "Engine"} \u00b7 {model}</span>',
         f'<span class="mh-chip"><i style="background:var(--accent2)"></i>'
-        f'{("Search", "Recherche")[fr]} · Tavily / DuckDuckGo</span>',
+        f'{"Recherche" if fr else "Search"} \u00b7 Tavily / DuckDuckGo</span>',
         f'<span class="mh-chip"><i style="background:var(--gold)"></i>'
-        f'{("Data", "Donnees")[fr]} · WB + IMF WEO + WGI</span>',
+        f'{"Donnees" if fr else "Data"} \u00b7 WB + IMF WEO + WGI</span>',
         f'<span class="mh-chip"><i style="background:var(--opp)"></i>'
-        f'{("100% free demo", "Demo 100 % gratuite")[fr]}</span>',
+        f'{"Demo 100 % gratuite" if fr else "100% free demo"}</span>',
     ])
-    _tk = " · ".join(ticks) if ticks else ""
+    _tk = " \u00b7 ".join(ticks) if ticks else ""
     tickline = (f'<div class="mh-ticks"><div class="mh-ticks-track">{_tk}'
-                f'&nbsp;&nbsp;·&nbsp;&nbsp;{_tk}</div></div>'
+                f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;{_tk}</div></div>'
                 if ticks else "")
-    cov = (("COVERAGE" if not fr else "COUVERTURE") + " : "
-           + str(n_countries) + (" COUNTRIES" if not fr else " PAYS")
-           + " · " + str(n_indicators)
-           + (" INDICATORS" if not fr else " INDICATEURS")
-           + (" · OFFICIAL SOURCES" if not fr else " · SOURCES OFFICIELLES"))
+    cov = (("COUVERTURE" if fr else "COVERAGE") + " : "
+           + str(n_countries) + (" PAYS" if fr else " COUNTRIES")
+           + " \u00b7 " + str(n_indicators)
+           + (" INDICATEURS" if fr else " INDICATORS")
+           + (" \u00b7 SOURCES OFFICIELLES" if fr else " \u00b7 OFFICIAL SOURCES"))
     return f"""
 <div class="masthead">
   <div class="mh-eyebrow">MACRO-INTELLIGENCE // {today}</div>

@@ -11,7 +11,7 @@ def fmt_stats(s, lang):
            f"<small style='font-size:.45em;color:var(--muted)'>({s['latest_date']})</small>")
     parts = []
     if s.get("change_3m_pct") is not None:
-        a = "▲" if s["change_3m_pct"] > 0 else "▼" if s["change_3m_pct"] < 0 else "◆"
+        a = "\u25b2" if s["change_3m_pct"] > 0 else "\u25bc" if s["change_3m_pct"] < 0 else "\u25c6"
         parts.append(f"{a} {s['change_3m_pct']:+.1f}% {t('d3', lang)}")
     if s.get("change_12m_pct") is not None:
         parts.append(f"{s['change_12m_pct']:+.1f}% {t('d12', lang)}")
@@ -29,7 +29,7 @@ def fmt_stats(s, lang):
         else:
             lab = "en amelioration" if lang == "fr" else "improving"
         parts.append(("Tendance 5 ans : " if lang == "fr" else "5-yr trend: ") + lab)
-    return big, " · ".join(parts)
+    return big, " \u00b7 ".join(parts)
 
 
 def evidence_html(items, lang, kind="", empty_msg=None):
@@ -61,13 +61,24 @@ def _unc_text(u, lang):
 def report_html(r, lang, chart=""):
     if r.get("status") == "error":
         return f'<div class="insufficient">{t("error", lang)} - {html.escape(str(r.get("error", "")))}</div>'
+
     out = r.get("outlook", {})
     big, deltas = fmt_stats(r.get("stats", {}), lang)
+
     ctx = evidence_html(r.get("context", {}).get("points", []), lang)
-    risks = evidence_html(out.get("risks", []), lang, "risk",
-                          empty_msg=("No risk signal triggered for this indicator (thresholds not crossed)." if lang == "en" else "Aucun signal de risque declenche pour cet indicateur (seuils non franchis)."))
-    opps = evidence_html(out.get("opportunities", []), lang, "opp",
-                         empty_msg=("No opportunity signal triggered for this indicator (thresholds not crossed)." if lang == "en" else "Aucune opportunite majeure detectee pour cet indicateur (seuils non franchis)."))
+
+    risks = evidence_html(
+        out.get("risks", []), lang, "risk",
+        empty_msg=("No risk signal triggered for this indicator (thresholds not crossed)."
+                   if lang == "en" else
+                   "Aucun signal de risque declenche pour cet indicateur (seuils non franchis)."))
+
+    opps = evidence_html(
+        out.get("opportunities", []), lang, "opp",
+        empty_msg=("No opportunity signal triggered for this indicator (thresholds not crossed)."
+                   if lang == "en" else
+                   "Aucune opportunite majeure detectee pour cet indicateur (seuils non franchis)."))
+
     uncer_items = out.get("uncertainties", [])
     if uncer_items:
         uncer_html = " ".join(
@@ -76,23 +87,35 @@ def report_html(r, lang, chart=""):
         )
     else:
         uncer_html = f"<li>{t('insufficient', lang)}</li>"
+
     srcs = " ".join(
-        f'<li class="src">[{html.escape(s["id"])}] <a href="{html.escape(s["url"])}" target="_blank">'
-        f'{html.escape(s["title"])}</a> <span class="chip">{html.escape(s["domain"])}</span></li>'
-        for s in r.get("sources", [])) or f'<div class="insufficient">{t("no_sources", lang)}</div>'
-    lims = " ".join(f"<li>{html.escape(str(x))}</li>" for x in r.get("limitations", []))
-    lims_html = f'<h3 style="margin-top:1rem">{t("sec_limits", lang)}</h3><ul>{lims}</ul>' if lims else ""
+        f'<li class="src">[{html.escape(s["id"])}] '
+        f'<a href="{html.escape(s["url"])}" target="_blank">'
+        f'{html.escape(s["title"])}</a> '
+        f'<span class="chip">{html.escape(s["domain"])}</span></li>'
+        for s in r.get("sources", [])
+    ) or f'<div class="insufficient">{t("no_sources", lang)}</div>'
+
+    lims = " ".join(
+        f"<li>{html.escape(str(x))}</li>"
+        for x in r.get("limitations", [])
+    )
+    lims_html = (f'<h3 style="margin-top:1rem">{t("sec_limits", lang)}</h3><ul>{lims}</ul>'
+                 if lims else "")
+
     st_ = r.get("stats") or {}
-    proj_html = projections_html(r.get("country", ""), r.get("indicator", ""), lang,
-                                 latest_value=st_.get("latest_value"),
-                                 change_12m=st_.get("change_12m_pct"),
-                                 unit=st_.get("unit", ""))
+    proj_html = projections_html(
+        r.get("country", ""), r.get("indicator", ""), lang,
+        latest_value=st_.get("latest_value"),
+        change_12m=st_.get("change_12m_pct"),
+        unit=st_.get("unit", ""))
+
     return f"""
-<div class="brief data"><h3>01 · {t('sec_constat', lang)}</h3>
+<div class="brief data"><h3>01 \u00b7 {t('sec_constat', lang)}</h3>
 <div class="bignum">{big}</div>  <div class="deltaline">{deltas}</div>{chart}</div>
-<div class="brief ctx"><h3>02 · {t('sec_context', lang)}</h3>{ctx}</div>
-<div class="brief risk"><h3>03 · {t('sec_risks', lang)}</h3>{risks}</div>
-<div class="brief opp"><h3>04 · {t('sec_opps', lang)}</h3>{opps}</div>
-<div class="brief"><h3>05 · {t('uncertainties', lang)}</h3><ul>{uncer_html}</ul></div>
-<div class="brief proj"><h3>06 · {t('sec_proj', lang)}</h3>{proj_html}</div>
-<div class="brief"><h3>07 · {t('sec_sources', lang)}</h3><ul>{srcs}</ul>{lims_html}</div>"""
+<div class="brief ctx"><h3>02 \u00b7 {t('sec_context', lang)}</h3>{ctx}</div>
+<div class="brief risk"><h3>03 \u00b7 {t('sec_risks', lang)}</h3>{risks}</div>
+<div class="brief opp"><h3>04 \u00b7 {t('sec_opps', lang)}</h3>{opps}</div>
+<div class="brief"><h3>05 \u00b7 {t('uncertainties', lang)}</h3><ul>{uncer_html}</ul></div>
+<div class="brief proj"><h3>06 \u00b7 {t('sec_proj', lang)}</h3>{proj_html}</div>
+<div class="brief"><h3>07 \u00b7 {t('sec_sources', lang)}</h3><ul>{srcs}</ul>{lims_html}</div>"""
