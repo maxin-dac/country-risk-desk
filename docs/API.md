@@ -93,16 +93,7 @@ _Pas de docstring._
 
 ## `src.watchlist`
 
-Personal watchlist with JSON persistence (session-only fallback).
-
-### `load()`
-
-_Pas de docstring._
-
-### `save(items)`
-
-_Pas de docstring._
-
+_Import impossible: No module named 'src.watchlist'_
 
 ## `src.plot_theme`
 
@@ -179,12 +170,16 @@ _Pas de docstring._
 
 _Pas de docstring._
 
+### `uname(unit, lang)`
+
+_Pas de docstring._
+
 
 ## `src.ui_render`
 
 Rendu HTML des briefs (sections 01 a 07) et formatage des statistiques.
 
-### `evidence_html(items, lang, kind='')`
+### `evidence_html(items, lang, kind='', empty_msg=None)`
 
 Affiche les extraits bruts Tavily ou les regles declenchees.
 
