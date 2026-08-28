@@ -10,7 +10,7 @@ def world_map(scores, lang):
     fig = go.Figure(data=go.Choropleth(
         locations=list(scores.keys()),
         z=[s["overall"] for s in scores.values()],
-        text=[f"{iso}: {s['overall']:.0f}{unit_suffix('Risk score')}"
+        text=[f"{iso}: {s['overall']:.0f}{unit_suffix('Risk score', lang)}"
               for iso, s in scores.items()],
         colorscale=[
             [0, "#2ecc71"], [0.35, "#f1c40f"], [0.55, "#e67e22"],
@@ -20,7 +20,7 @@ def world_map(scores, lang):
         marker_line_color="rgba(159,179,200,.25)",
         marker_line_width=0.5,
         colorbar=dict(
-            title=dict(text="Risk" + unit_suffix("Risk score"),
+            title=dict(text=("Risk" if lang == "en" else "Risque") + unit_suffix("Risk score", lang),
                        font=dict(color="#9fb3c8", size=11)),
             thickness=20, len=0.5, tick0=0, dtick=20,
             tickfont=dict(color="#9fb3c8", size=10),

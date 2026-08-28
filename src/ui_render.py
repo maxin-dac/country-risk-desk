@@ -1,6 +1,6 @@
 """Rendu HTML des briefs (sections 01 a 07) et formatage des statistiques."""
 import html
-from src.i18n import t
+from src.i18n import t, uname
 from src.projections import projections_html
 from src.sources_view import results_html as sources_results_html
 
@@ -8,7 +8,7 @@ from src.sources_view import results_html as sources_results_html
 def fmt_stats(s, lang):
     if not s.get("available"):
         return t("insufficient", lang), " "
-    big = (f"{s['latest_value']:.2f} {s.get('unit', '')}  "
+    big = (f"{s['latest_value']:.2f} {uname(s.get('unit', ''), lang)}  "
            f" <small style='font-size:.45em;color:var(--muted)'>({s['latest_date']})</small> ")
     parts = []
     if s.get("change_3m_pct") is not None:
@@ -17,7 +17,7 @@ def fmt_stats(s, lang):
     if s.get("change_12m_pct") is not None:
         parts.append(f"{s['change_12m_pct']:+.1f}% {t('d12', lang)}")
     if s.get("regional_median") is not None:
-        parts.append(f"{t('reg_median', lang)}: {s['regional_median']:.2f} {s.get('unit', '')} - "
+        parts.append(f"{t('reg_median', lang)}: {s['regional_median']:.2f} {uname(s.get('unit', ''), lang)} - "
                      f"{t('pos_' + s['regional_position'], lang)}")
     tr = s.get("trend_5y_norm")
     if tr is not None:
@@ -96,7 +96,7 @@ def report_html(r, lang, chart=""):
     proj_html = projections_html(r.get("country", ""), r.get("indicator", ""), lang,
                                  latest_value=st_.get("latest_value"),
                                  change_12m=st_.get("change_12m_pct"),
-                                 unit=st_.get("unit", ""))
+                                 unit=uname(st_.get("unit", ""), lang))
     return f"""
 <div class="brief data"><h3>01 · {t('sec_constat', lang)}</h3>
   <div class="bignum">{big}</div> <div class="deltaline">{deltas}</div>{chart}</div>

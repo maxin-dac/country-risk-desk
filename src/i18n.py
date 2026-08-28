@@ -222,3 +222,43 @@ STR.update({
     "sec_constat": ("Key figures", "Constat chiffre"),
     "mode_dashboard": ("Global view", "Vue globale"),
 })
+
+
+# ---- Traduction des unites (source CSV en anglais) ----
+UNIT_FR = {
+    "months": "mois", "months of imports": "mois d'importations",
+    "% GDP": "% PIB", "% GNI": "% RNB", "% exports": "% exports",
+    "%": "%", "index": "indice",
+}
+
+
+def uname(unit, lang):
+    u = unit or ""
+    return UNIT_FR.get(u, u) if lang == "fr" else u
+
+
+INDICATORS.update({
+    "Reserves": ("Reserves", "Reserves totales"),
+    "Current account": ("Current account", "Solde du compte courant"),
+    "External debt": ("External debt", "Dette externe (% RNB)"),
+    "Debt service": ("Debt service", "Service de la dette externe (% exports)"),
+    "GDP growth": ("GDP growth", "Croissance du PIB"),
+    "Inflation": ("Inflation", "Inflation"),
+    "Fiscal balance": ("Fiscal balance", "Solde budgetaire (% PIB)"),
+    "Gen gov debt": ("Gen gov debt", "Dette publique brute generale (% PIB)"),
+    "Gov debt": ("Gov debt", "Dette publique (% PIB)"),
+    "Unemployment": ("Unemployment", "Chomage"),
+    "Youth unemployment": ("Youth unemployment", "Chomage des jeunes"),
+    "Political stability": ("Political stability", "Stabilite politique"),
+    "Control of corruption": ("Control of corruption", "Controle de la corruption"),
+    "Rule of law": ("Rule of law", "Etat de droit"),
+    "Regulatory quality": ("Regulatory quality", "Qualite reglementaire"),
+    "Gini": ("Gini", "Inegalites (Gini)"),
+    "Dependency ratio": ("Dependency ratio", "Ratio de dependance"),
+    "Commodity dependence": ("Commodity dependence", "Dependance matieres premieres"),
+    "Interest rate": ("Interest rate", "Taux d'interet"),
+    "Policy rate": ("Policy rate", "Taux directeur"),
+    "CO2 per capita": ("CO2 per capita", "CO2 par habitant"),
+    "Electricity access": ("Electricity access", "Acces a l'electricite"),
+    "Women in workforce": ("Women in workforce", "Femmes en activite"),
+})
