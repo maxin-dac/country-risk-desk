@@ -25,6 +25,8 @@ ANCHORS = {
     "Commodity dependence": (True, 10.0, 70.0),
 }
 
+HIGHER_IS_WORSE = {k for k, (hiw, _, _) in ANCHORS.items() if hiw}
+
 PILLAR_WEIGHTS = {
     "External & sovereign": 0.30,
     "Macroeconomic": 0.30,

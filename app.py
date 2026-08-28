@@ -5,6 +5,7 @@ from src import config
 from src.csv_loader import get_stats, load_csv
 from src.graph import build_report
 from src.alerts import compute_alerts
+from src import watchlist, dashboard
 from src.risk_scoring import top_risk_html, country_scores, score_html
 from src.compare import line_chart, render_compare
 from src.i18n import INDICATORS, PILLARS, PILLAR_ORDER, cname, iname, t, RISK_ORDER
@@ -14,6 +15,16 @@ from src.ui_theme import CSS, masthead
 
 st.set_page_config(page_title="Country Risk Desk", page_icon="🛰", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
+st.markdown("""<style>
+/* Visuels Plotly : fond transparent, sans contour */
+.js-plotly-plot .main-svg,
+.js-plotly-plot .plot-container {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.spark-box { background: transparent; border: none; margin: .4rem 0; }
+</style>""", unsafe_allow_html=True)
 st.markdown("""<style>
 [data-testid="stVerticalBlock"] > div:has(.alerts-flag){display:none}
 [data-testid="stVerticalBlock"] > div:has(.alerts-flag) + div{
@@ -83,6 +94,68 @@ def get_scores():
     return country_scores(load_csv(config.CSV_PATH))
 
 
+def render_dashboard(df, alerts, lang):
+    st.markdown("### " + ("Tableau de bord risque global" if lang == "fr" else "Global risk dashboard"))
+    
+    scores = get_scores()
+    
+    # 1. Carte du monde
+    with st.expander("World risk map" if lang == "en" else "Carte mondiale du risque", expanded=True):
+        st.plotly_chart(dashboard.world_map(scores, lang), use_container_width=True)
+    
+    # 2. Distribution des scores + statistiques
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        st.plotly_chart(dashboard.score_distribution(scores, lang), use_container_width=True)
+    with col2:
+        st.markdown("#### " + ("Summary" if lang == "en" else "Synthese"))
+        vals = [s["overall"] for s in scores.values()]
+        low = sum(1 for v in vals if v < 35)
+        mod = sum(1 for v in vals if 35 <= v < 55)
+        high = sum(1 for v in vals if 55 <= v < 70)
+        crit = sum(1 for v in vals if v >= 70)
+        st.metric("Total countries", len(vals))
+        st.metric("Low risk (< 35)", low)
+        st.metric("Moderate (35-54)", mod)
+        st.metric("Elevated (55-69)", high)
+        st.metric("Critical (≥ 70)", crit)
+    
+    # 3. Top 10 + alertes
+    st.markdown("#### " + ("Top 10 riskiest countries" if lang == "en" else "Top 10 pays les plus risques"))
+    st.markdown(top_risk_html(scores, lang), unsafe_allow_html=True)
+    
+    if alerts:
+        st.markdown("#### " + t("alerts_title", lang))
+        for a in alerts:
+            label = a["fr"] if lang == "fr" else a["en"]
+            st.markdown(f"**{label}** · {len(a['hits'])}")
+            top = a["hits"][:8]
+            cols = st.columns(len(top))
+            for i, (iso, v) in enumerate(top):
+                cols[i].button(f"{cname(iso, lang)} · {v:.0f}", key=f"al_{a['id']}_{iso}",
+                               on_click=lambda i2=iso: st.session_state.update(
+                                   {"country_sel": i2, "mode_sel": "brief"}))
+            if len(a["hits"]) > 8:
+                rest = " · ".join(f"{cname(i2, lang)} ({v2:.0f})" for i2, v2 in a["hits"][8:])
+                st.caption(rest)
+    
+    # 4. Evolution temporelle
+    with st.expander("Score evolution (2020-2024)" if lang == "en" else "Evolution du score (2020-2024)", expanded=False):
+        top_changes, period_scores = dashboard.temporal_comparison(df, lang)
+        if top_changes is None:
+            st.info("Insufficient data for temporal comparison" if lang == "en" 
+                    else "Donnees insuffisantes pour la comparaison temporelle")
+        else:
+            st.markdown("##### " + ("Biggest changes" if lang == "en" else "Plus fortes variations"))
+            for iso, s1, s2, delta in top_changes:
+                color = "#2ecc71" if delta < 0 else "#e74c3c"
+                arrow = "▼" if delta < 0 else "▲"
+                st.markdown(f"**{cname(iso, lang)}**: {s1:.0f} → {s2:.0f} "
+                           f"<span style='color:{color}'>{arrow} {delta:+.1f}</span>",
+                           unsafe_allow_html=True)
+
+
+
 @st.cache_data(ttl=86400, show_spinner=False)
 def _live(country, indicator, lang, _day):
     return build_report(country, indicator, lang)
@@ -124,8 +197,18 @@ with st.sidebar:
     st.markdown(f"### {t('params', 'en')} / {t('params', 'fr')}")
     lang = st.selectbox("Langue / Language", ["fr", "en"],
                         format_func=lambda x: "🇫🇷 Français" if x == "fr" else "🇬🇧 English")
-    mode = st.radio(t("mode", lang), ["brief", "compare"], horizontal=True,
-                    format_func=lambda m: t("mode_brief", lang) if m == "brief" else t("mode_compare", lang))
+    mode = st.radio(t("mode", lang), ["brief", "compare", "dashboard"], horizontal=True,
+                    format_func=lambda m: t("mode_brief", lang) if m == "brief"
+                    else t("mode_dashboard", lang) if m == "dashboard" else t("mode_compare", lang),
+                    key="mode_sel")
+    st.markdown("---")
+    st.markdown("### Liste de suivi" if lang == "fr" else "### Watchlist")
+    wl = st.multiselect(
+        "Pays suivis (8 max)" if lang == "fr" else "Followed countries (max 8)",
+        sorted(df.country.unique()), default=watchlist.load(), max_selections=8,
+        format_func=lambda c: f"{cname(c, lang)} ({c})", key="wl_sel")
+    if wl != watchlist.load():
+        watchlist.save(wl)
     if mode == "brief":
         country = st.selectbox(t("country", lang), sorted(df.country.unique()),
                                format_func=lambda c: f"{cname(c, lang)} ({c})", key="country_sel")
@@ -134,7 +217,7 @@ with st.sidebar:
         indicator = st.selectbox(t("indicator", lang), ordered,
                                  format_func=lambda x: iname(x, lang) if x in INDICATORS else x)
         go_live = st.button(t("live", lang))
-    else:
+    elif mode == "compare":
         allc = sorted(df.country.unique())
         countries = st.multiselect(t("countries_sel", lang), allc,
                                    default=[c for c in ("MAR", "USA", "DEU") if c in allc],
@@ -156,27 +239,19 @@ ticks = [f"<b>{c}</b> {cname(c, lang).upper()}" for c in sorted(df.country.uniqu
 st.markdown(masthead(df.country.nunique(), df.indicator.nunique(), today,
                      "deterministic", lang, ticks), unsafe_allow_html=True)
 
-with st.expander("Top 10 pays les plus risques" if lang == "fr" else "Top 10 riskiest countries", expanded=False):
-    st.markdown(top_risk_html(get_scores(), lang), unsafe_allow_html=True)
-
 alerts = compute_alerts(df)
-if alerts:
-    st.markdown('<div class="alerts-flag"></div>', unsafe_allow_html=True)
-    with st.expander(f"⚠ {t('alerts_title', lang)} - {sum(len(a['hits']) for a in alerts)}", expanded=False):
-        for a in alerts:
-            label = a["fr"] if lang == "fr" else a["en"]
-            st.markdown(f"**{label}** · {len(a['hits'])}")
-            top = a["hits"][:8]
-            cols = st.columns(len(top))
-            for i, (iso, v) in enumerate(top):
-                cols[i].button(f"{cname(iso, lang)} · {v:.0f}", key=f"al_{a['id']}_{iso}",
-                               on_click=lambda i2=iso: st.session_state.update({"country_sel": i2}))
-            if len(a["hits"]) > 8:
-                rest = " · ".join(f"{cname(i2, lang)} ({v2:.0f})" for i2, v2 in a["hits"][8:])
-                st.caption(rest)
 
 if mode == "brief":
     st.markdown(score_html(country, get_scores(), lang), unsafe_allow_html=True)
+    if wl:
+        _sc = get_scores()
+        _cols = st.columns(len(wl))
+        for _i, _iso in enumerate(wl):
+            _s = _sc.get(_iso)
+            _lab = f"{cname(_iso, lang)} - {_s['overall']:.0f}" if _s else cname(_iso, lang)
+            if _cols[_i].button(_lab, key=f"wl_go_{_iso}"):
+                st.session_state["country_sel"] = _iso
+                st.rerun()
     live = st.session_state.get("live")
     is_live = bool(live and live["key"] == sel_key)
     report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
@@ -199,8 +274,20 @@ if mode == "brief":
                                f"pestel_{country}_{indicator}.pdf".lower(), "application/pdf")
         except Exception as e:
             st.warning(f"{t('pdf_fail', lang)}: {e}")
-else:
+        _series = df[(df.country == country) & (df.indicator == indicator)]
+        st.download_button("Download data (CSV)" if lang == "en" else "Telecharger les donnees (CSV)",
+                           _series.to_csv(index=False),
+                           f"country_risk_{country}_{indicator}.csv", "text/csv")
+        import io as _bio
+        _xb = _bio.BytesIO()
+        _series.to_excel(_xb, index=False)
+        st.download_button("Download data (Excel)" if lang == "en" else "Telecharger les donnees (Excel)",
+                           _xb.getvalue(), f"country_risk_{country}_{indicator}.xlsx",
+                           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+elif mode == "compare":
     render_compare(df, countries, lang)
+else:
+    render_dashboard(df, alerts, lang)
 
 # ==========================================
 # SIDEBAR FOOTER : Copyright & Social Links

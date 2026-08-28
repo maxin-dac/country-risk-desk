@@ -3,30 +3,17 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from src.i18n import cname, iname, t
+from src.i18n import RISK_ORDER, cname, iname, t
+from src.plot_theme import apply_theme, unit_suffix
 
 COLORS = ["#4cc9f0", "#f72585", "#b5e48c", "#ffd166", "#ef476f", "#06d6a0",
           "#118ab2", "#f4a261", "#9b5de5", "#e63946", "#2a9d8f", "#e9c46a"]
 
-IND_ORDER = ["GDP growth", "Inflation", "Interest rate", "Current account",
-             "Gov debt", "External debt", "Reserves", "Unemployment", "CO2 per capita", "Electricity access", "Women in workforce", "Political stability", "Control of corruption"]
+IND_ORDER = list(RISK_ORDER)
 
 
 def _latest(df):
     return df.sort_values("date").groupby(["country", "indicator"], as_index=False).tail(1)
-
-
-def _layout(fig, title, is_time_series=True):
-    xaxis_opts = dict(showgrid=False, dtick=4, tickformat="d") if is_time_series else dict(showgrid=True, gridcolor="rgba(255,255,255,.08)", zerolinecolor="rgba(255,255,255,.15)")
-    fig.update_layout(
-        height=300, margin=dict(l=8, r=8, t=34, b=8),
-        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#d7e2ec", size=11), showlegend=False,
-        title=dict(text=title, font=dict(size=13, color="#9fb3c8")),
-        xaxis=xaxis_opts,
-        yaxis=dict(gridcolor="rgba(255,255,255,.08)", zerolinecolor="rgba(255,255,255,.15)"),
-    )
-    return fig
 
 
 def line_chart(df, indicator, countries, lang):
@@ -37,9 +24,17 @@ def line_chart(df, indicator, countries, lang):
         d = sub[sub.country == c].sort_values("year")
         if d.empty:
             continue
-        fig.add_trace(go.Scatter(x=d.year, y=d.value, mode="lines",
-                                 line=dict(color=COLORS[i % len(COLORS)], width=2)))
-    return _layout(fig, iname(indicator, lang))
+        fig.add_trace(go.Scatter(
+            x=d.year, y=d.value, mode="lines",
+            name=cname(c, lang),
+            line=dict(color=COLORS[i % len(COLORS)], width=2.2),
+        ))
+    fig.update_layout(showlegend=True,
+                      legend=dict(orientation="h", yanchor="bottom", y=-0.25,
+                                  xanchor="center", x=0.5,
+                                  font=dict(color="#9fb3c8", size=10)))
+    return apply_theme(fig, title=iname(indicator, lang),
+                       unit=unit_suffix(indicator, lang))
 
 
 def latest_pivot(df, countries, lang):
@@ -48,7 +43,15 @@ def latest_pivot(df, countries, lang):
     piv = sub.pivot(index="country", columns="indicator", values="value")
     piv = piv.reindex([c for c in countries if c in set(piv.index)])
     piv.index = [f"{cname(c, lang)} ({c})" for c in piv.index]
-    return piv[[c for c in IND_ORDER if c in piv.columns]]
+    # Colonnes avec unites (sans doublon si le nom en contient deja une)
+    def _lab(ind):
+        base = iname(ind, lang)
+        u = unit_suffix(ind, lang)
+        return base if u and base.endswith(u) else base + u
+    piv = piv.rename(columns={c: _lab(c) for c in piv.columns})
+    return piv[[c for c in [_lab(i) for i in IND_ORDER
+                            if i in df.indicator.unique()]
+                if c in piv.columns]]
 
 
 def positioning_scatter(df, countries, lang):
@@ -62,14 +65,26 @@ def positioning_scatter(df, countries, lang):
             ys.append(float(n.iloc[0]))
             names.append(cname(c, lang))
             cols.append(COLORS[i % len(COLORS)])
-    fig = go.Figure(go.Scatter(x=xs, y=ys, mode="markers+text", text=names,
-                               textposition="top center",
-                               textfont=dict(color="#d7e2ec", size=10),
-                               marker=dict(size=11, color=cols)))
+    fig = go.Figure(go.Scatter(
+        x=xs, y=ys, mode="markers+text", text=names,
+        textposition="top center",
+        textfont=dict(color="#d7e2ec", size=10),
+        marker=dict(size=11, color=cols, opacity=0.85,
+                    line=dict(color="rgba(255,255,255,.4)", width=1)),
+    ))
     fig.add_hline(y=5, line_dash="dash", line_color="rgba(220,38,38,.5)")
     fig.add_vline(x=0, line_dash="dash", line_color="rgba(220,38,38,.5)")
-    fig.update_layout(xaxis_title=t("axis_growth", lang), yaxis_title=t("axis_inflation", lang))
-    return _layout(fig, t("compare_map", lang), is_time_series=False)
+    return apply_theme(fig,
+                       title=t("compare_map", lang),
+                       unit="(%)")
+
+
+@st.cache_data(show_spinner=False)
+def _scores():
+    from src import config
+    from src.csv_loader import load_csv
+    from src.risk_scoring import country_scores
+    return country_scores(load_csv(config.CSV_PATH))
 
 
 def render_compare(df, countries, lang):
@@ -80,16 +95,26 @@ def render_compare(df, countries, lang):
         f'<span class="chip" style="border-left:4px solid {COLORS[i % len(COLORS)]}">{cname(c, lang)}</span>'
         for i, c in enumerate(countries))
     st.markdown(f"<div style='margin:.5rem 0'>{chips}</div>", unsafe_allow_html=True)
+    sc = _scores()
+    ranked = sorted([c for c in countries if c in sc],
+                    key=lambda c: sc[c]["overall"], reverse=True)
+    if ranked:
+        row = " · ".join(
+            f"{cname(c, lang)}: <b>{sc[c]['overall']:.0f}</b>{unit_suffix('Risk score')}"
+            for c in ranked)
+        st.markdown(
+            ("**Risque relatif (decroissant) :** " if lang == "fr"
+             else "**Relative risk (descending):** ") + row, unsafe_allow_html=True)
     inds = [i for i in IND_ORDER if i in set(df.indicator)]
     for start in range(0, len(inds), 2):
         pair = inds[start:start + 2]
         cols = st.columns(len(pair))
         for j, ind in enumerate(pair):
             with cols[j]:
-                st.plotly_chart(line_chart(df, ind, countries, lang), use_container_width=True)
+                st.plotly_chart(line_chart(df, ind, countries, lang),
+                                use_container_width=True)
     st.markdown(f"<h3>{t('compare_latest', lang)}</h3>", unsafe_allow_html=True)
     st.dataframe(latest_pivot(df, countries, lang).style.format("{:.1f}", na_rep="-"),
                  use_container_width=True)
     st.markdown(f"<h3>{t('compare_map', lang)}</h3>", unsafe_allow_html=True)
     st.plotly_chart(positioning_scatter(df, countries, lang), use_container_width=True)
-

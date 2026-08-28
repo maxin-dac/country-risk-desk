@@ -42,6 +42,18 @@ def get_stats(df, country, indicator):
         "change_3m_pct": _pct(last.value, p3.value) if p3 is not None else None,
         "change_12m_pct": _pct(last.value, p12.value) if p12 is not None else None,
     }
+    hist = s[s.date >= last.date - pd.DateOffset(years=5)]
+    if len(hist) >= 3:
+        x = (hist.date - hist.date.min()).dt.days / 365.25
+        y = hist.value.astype(float)
+        dx = x - x.mean()
+        denom = float((dx * dx).sum())
+        if denom > 0:
+            slope = float((dx * (y - y.mean())).sum()) / denom
+            med = float(y.median())
+            if med:
+                out["trend_5y_norm"] = slope / abs(med)
+
     reg = df[(df.indicator == indicator) & (df.region == out["region"])].dropna(subset=["date", "value"])
     reg = reg[reg.date >= last.date - pd.Timedelta(days=730)]
     if not reg.empty:

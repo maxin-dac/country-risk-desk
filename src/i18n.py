@@ -207,3 +207,12 @@ RISK_ORDER = [
     "Political stability", "Control of corruption", "Rule of law", "Regulatory quality",
     "Gini", "Youth unemployment", "Dependency ratio", "Commodity dependence",
 ]
+
+STR.update({
+    "st_llm": ("Engine", "Moteur"),
+})
+
+STR.update({
+    "sec_constat": ("Key figures", "Constat chiffre"),
+    "mode_dashboard": ("Global view", "Vue globale"),
+})

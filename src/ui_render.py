@@ -17,6 +17,17 @@ def fmt_stats(s, lang):
     if s.get("regional_median") is not None:
         parts.append(f"{t('reg_median', lang)}: {s['regional_median']:.2f} {s.get('unit', '')} - "
                      f"{t('pos_' + s['regional_position'], lang)}")
+    tr = s.get("trend_5y_norm")
+    if tr is not None:
+        from src.risk_scoring import HIGHER_IS_WORSE
+        worse = s.get("indicator") in HIGHER_IS_WORSE
+        if abs(tr) < 0.02:
+            lab = "stable"
+        elif (tr > 0) == worse:
+            lab = "en deterioration" if lang == "fr" else "deteriorating"
+        else:
+            lab = "en amelioration" if lang == "fr" else "improving"
+        parts.append(("Tendance 5 ans : " if lang == "fr" else "5-yr trend: ") + lab)
     return big, " · ".join(parts)
 
 

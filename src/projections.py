@@ -53,9 +53,10 @@ def _sparkline(series, unit):
         f'<text x="{x:.1f}" y="{h - 4}" font-size="9" fill="#8fa8bd" '
         f'text-anchor="middle">{yr}</text>'
         for x, yr in zip(xs, years))
-    return (f'<svg viewBox="0 0 {w} {h}" style="width:100%;max-width:640px">'
+    return (f'<div class="spark-box">'
+            f'<svg viewBox="0 0 {w} {h}" style="width:100%;max-width:640px;display:block">'
             f'<polyline points="{pts}" fill="none" stroke="#4cc9f0" '
-            f'stroke-width="2"/>{dots}{labels}</svg>')
+            f'stroke-width="2"/>{dots}{labels}</svg></div>')
 
 
 def projections_html(country, indicator, lang, latest_value=None,
@@ -104,7 +105,7 @@ def projections_html(country, indicator, lang, latest_value=None,
                 " Divergence: the recent 12-month trend reverses in the IMF "
                 "trajectory - a turning point is expected.")
 
-    chips = " · ".join(f"{yr}: {series[yr]:.1f}" for yr in years)
+    chips = " · ".join(f"{yr}: {series[yr]:.1f}" for yr in years) + f" {unit}"
     return (f'<p class="kv">{reading}{divergence}</p>'
             f'<div class="deltaline" style="margin:.4rem 0">{chips} {unit}</div>'
             + _sparkline(series, unit))
