@@ -3,3 +3,6 @@
 __pycache__/
 .venv/
 reports/\ndata/watchlist.json\n
+*.pyc
+.pytest_cache/
+data/watchlist.json

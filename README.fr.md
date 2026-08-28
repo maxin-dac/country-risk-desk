@@ -1,127 +1,123 @@
 # 🛰 Country Risk Desk
 
-**Briefs macro-financiers pays, fondés sur des sources vérifiées.**  
-Bilingue 🇫🇷/🇬🇧 · Sans clé, sans inscription, sans attente.
+**Desk de risque pays macro-financier 100 % déterministe.**
+Bilingue 🇫🇷/🇬🇧 · 226 économies · 17 indicateurs · 4 piliers · sources officielles uniquement.
 
-[![Live demo](https://img.shields.io/badge/▶_Live_demo-0A2C3A?style=for-the-badge)](https://country-risk-desk.streamlit.app)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![LiteLLM](https://img.shields.io/badge/LiteLLM-00D2FF?style=flat&logo=server&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-636AFD?style=flat&logo=plotly&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-![LLM](https://img.shields.io/badge/LLM-OpenRouter-F55036?style=flat&logo=openai&logoColor=white)
-![Tavily](https://img.shields.io/badge/Web_Search-Tavily-00B4D8?style=flat&logo=search&logoColor=white)
-![World Bank](https://img.shields.io/badge/Data-World_Bank-00693E?style=flat&logo=database&logoColor=white)
-![Bilingual](https://img.shields.io/badge/Bilingual-FR_|_EN-008080?style=flat&logo=translate&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=flat&logo=opensourceinitiative&logoColor=white)
-![Brief overview](assets/screenshot-brief.png)
+<p align="left">
+<img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/Streamlit-1.45%2B-FF4B4B?style=flat&logo=streamlit&logoColor=white" alt="Streamlit" />
+<img src="https://img.shields.io/badge/pandas-2.x-150458?style=flat&logo=pandas&logoColor=white" alt="pandas" />
+<img src="https://img.shields.io/badge/NumPy-1.26%2B-013243?style=flat&logo=numpy&logoColor=white" alt="NumPy" />
+<img src="https://img.shields.io/badge/Plotly-5.x-636AFD?style=flat&logo=plotly&logoColor=white" alt="Plotly" />
+<img src="https://img.shields.io/badge/openpyxl-Excel-107C41?style=flat&logo=microsoftexcel&logoColor=white" alt="openpyxl" />
+<img src="https://img.shields.io/badge/World_Bank-WDI-00693E?style=flat&logo=database&logoColor=white" alt="World Bank WDI" />
+<img src="https://img.shields.io/badge/World_Bank-WGI_2024-1F8B4C?style=flat&logo=database&logoColor=white" alt="World Bank WGI" />
+<img src="https://img.shields.io/badge/IMF-WEO_Apr_2026-003C71?style=flat&logo=database&logoColor=white" alt="IMF WEO" />
+<img src="https://img.shields.io/badge/Tavily-recherche_optionnelle-00B4D8?style=flat&logo=search&logoColor=white" alt="Tavily" />
+<img src="https://img.shields.io/badge/DuckDuckGo-DE5833?style=flat&logo=duckduckgo&logoColor=white" alt="DuckDuckGo" />
+<img src="https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white" alt="CI" />
+<img src="https://img.shields.io/badge/Bilingual-FR_%7C_EN-008080?style=flat&logo=translate&logoColor=white" alt="Bilingual" />
+<img src="https://img.shields.io/badge/License-MIT-yellow?style=flat&logo=opensourceinitiative&logoColor=white" alt="License" />
+</p>
 
----
+![Aperçu](assets/aperçu.jpeg)
 
-## Ce que fait l'application
+## Ce que fait l’application
 
-Choisissez l'une des **217 économies** et l'un des **13 indicateurs** :
+Choisissez l’une des **226 économies** et l’un des **17 indicateurs de risque**, et obtenez un brief complet et sourcé :
 
-- **Noyau macro** — croissance du PIB, inflation, taux d'intérêt, compte courant, dette publique, dette externe, réserves, chômage
-- **ESG & gouvernance** — émissions de GES par habitant, accès à l'électricité, femmes dans la population active, stabilité politique, contrôle de la corruption
+| # | Section | Contenu |
+|---|---------|---------|
+| — | **Score de risque** | Score agrégé 0-100 (4 piliers, pondérations 30/30/20/20), rang mondial, barres par pilier |
+| 01 | Constat chiffré | Dernière valeur + date, variations 3/12 mois, médiane régionale, tendance 5 ans, courbe fusionnée |
+| 02 | Contexte — sources officielles | Vue « moteur de recherche » : titres vérifiés, mots indexés, snippet propre si qualité suffisante, liens à suivre |
+| 03 | Risques à 12 mois | Règles de seuils déterministes (inflation > 10 %, réserves < 3 mois d’imports, dette > 90 % PIB…) |
+| 04 | Opportunités à 12 mois | Règles miroir d’opportunité |
+| 05 | Incertitudes | Explicites quand l’information est mince — jamais inventées |
+| 06 | Projections FMI | Trajectoire WEO (avril 2026) 2027-2031 + détection de divergence vs tendance 12 mois |
+| 07 | Sources & limites | Bibliographie cliquable (FMI, Banque Mondiale, WGI) + limites honnêtes |
 
-| # | Section | Source |
-|---|---------|--------|
-| 01 | Lecture quantitative : dernière valeur, variations, médiane régionale + **courbe de progression 2000–2024** | Banque Mondiale (WDI + WGI) |
-| 02 | Contexte qualitatif : affirmations vérifiées, chacune étayée par une **citation verbatim** | Reuters, Bloomberg, FMI, Banque Mondiale, FT |
-| 03 | Risques à 12 mois | synthèse LLM fondée |
-| 04 | Opportunités à 12 mois | synthèse LLM fondée |
-| 05 | Incertitudes | — |
-| 06 | Sources citées, cliquables et validées par domaine | — |
+## Trois lectures du desk
 
-### Trois lectures du desk
+- **Brief pays** - le rapport structuré ci-dessus ; exportable en **PDF (FR/EN)**, **CSV**, **Excel**.
+- **Comparaison** - jusqu’à 12 pays : courbes par indicateur avec unités, tableau des dernières valeurs, positionnement croissance × inflation, classement par risque relatif.
+- **Vue globale** - carte choroplèthe du risque, distribution des scores à catégories cliquables, Top 10, alertes seuil (rouges, un clic → brief du pays).
 
-- **Brief pays** — le rapport structuré ci-dessus, exportable en PDF dans les deux langues.
-- **Comparaison** — jusqu'à 12 pays côte à côte : courbes interactives par indicateur, tableau des dernières valeurs, carte de positionnement croissance × inflation.
-- **Alertes seuil** — pays franchissant les seuils d'analyste (inflation > 10 %, réserves < 3 mois d'importations, dette > 90 % du PIB…) ; un clic saute vers le pays.
+## Provenance des données
 
-## L'honnêteté par conception
+| Source | Contenu |
+|--------|---------|
+| Banque Mondiale WDI | 13 séries macro/sociales, 2000-2024 |
+| Banque Mondiale WGI 2024 | Stabilité politique, corruption, état de droit, qualité réglementaire |
+| FMI WEO (avril 2026) | Solde budgétaire, dette brute générale - historique + projections 2027-2031 |
+| Calcul interne | Service de la dette externe (TDS / exports de biens & services) |
 
-- **Pas de source vérifiée → « Information insuffisante ».** Le système n'invente jamais d'analyse.
-- Chaque affirmation qualitative affiche son identifiant de source (`S1`, `S2`…) et la citation exacte sur laquelle elle a été contrôlée.
-- Une couche de validation croise la sortie du LLM avec les sources récupérées ; les affirmations non fondées sont retirées avant affichage.
-- La provenance des données est affichée, jamais masquée ; les valeurs manquantes de la Banque Mondiale sont affichées comme telles.
+## Honnêteté & explicabilité par conception
 
-## Deux modes, zéro contrainte visiteur
-
-- **Bibliothèque instantanée** — les données et les briefs pré-calculés sont rafraîchis **chaque mois par GitHub Actions** et commités dans ce dépôt. L'ouverture d'un brief est immédiate ; rien ne s'exécute côté visiteur.
-- **Recherche en direct** — à la demande, un agent LangGraph effectue une recherche web restreinte à des domaines de confiance (Tavily), rédige le brief (LLM via LiteLLM avec fallbacks OpenRouter), valide chaque affirmation et met le résultat en cache pendant 24 h. Les clés restent côté serveur ; le visiteur ne fournit rien.
-
-## Architecture
-
-```text
-country-risk-desk/
-├── app.py                  # entrée Streamlit mince (état, caches, orchestration)
-── src/
-│ ├── ui_render.py          # rendu HTML des briefs
-│ ├── ui_theme.py           # design system (CSS, bandeau)
-│ ├── i18n.py               # chaînes FR/EN ; noms de pays et d'indicateurs (CLDR via Babel)
-│ ├── graph.py              # agent LangGraph : recherche → rédaction → validation → assemblage
-│ ├── web_search.py         # recherche Tavily, restreinte aux domaines de confiance
-│ ├── llm.py                # routeur LiteLLM (OpenRouter)
-│ ├── validation.py         # vérification des citations et des domaines
-│ ├── csv_loader.py         # statistiques Banque Mondiale (dernière valeur, deltas, médiane régionale)
-│ ├── alerts.py             # moteur d'alertes seuil
-│ ├── compare.py            # graphiques de comparaison (Plotly)
-│ └── pdf_export.py         # export PDF bilingue
-── scripts/
-│ ├── fetch_worldbank.py    # récupération Banque Mondiale par lots (217 économies × 13 indicateurs)
-│ └── generate_library.py   # pré-calcul mensuel des briefs
-── .github/workflows/       # rafraîchissement mensuel + auto-commit
-└── assets/                 # captures d'écran et images
-```
-
-https://country-risk-desk.streamlit.app/
+- Chaque jugement est une règle ou un seuil documenté - voir `docs/ARCHITECTURE.md`.
+- Pas de source vérifiée → *« Information insuffisante »*, jamais comblé artificiellement.
+- Valeurs FMI / Banque Mondiale manquantes affichées comme manquantes.
 
 ## Lancer en local
 
+    git clone https://github.com/maxin-dac/country-risk-desk.git
+    cd country-risk-desk
+    pip install -r requirements.txt
+    streamlit run app.py
+
+Aucune clé requise. Optionnel : `TAVILY_API_KEY` dans `.env` pour la recherche qualitative en direct (repli DuckDuckGo gratuit sinon).
+
+## Structure du projet
+
 ```bash
-git clone https://github.com/maxin-dac/country-risk-desk.git
-cd country-risk-desk
-pip install -r requirements.txt
-
-# .env avec vos propres clés (jamais commité) :
-#   TAVILY_API_KEY=...
-#   LLM_PROVIDER=openrouter
-#   LLM_API_KEY=...
-#   LLM_MODEL=meta-llama/llama-3.1-8b-instruct
-#   LLM_BASE_URL=https://openrouter.ai/api/v1
-
-streamlit run app.py
+    country-risk-desk/
+    ├── app.py               # entrée Streamlit (brief / comparaison / vue globale)
+    ├── src/
+    │   ├── csv_loader.py    # chargement CSV + stats (variations, médiane, tendance 5 ans)
+    │   ├── risk_scoring.py  # sous-scores, score agrégé, Top 10
+    │   ├── alerts.py        # moteur d’alertes seuil
+    │   ├── projections.py   # trajectoire FMI + divergence
+    │   ├── dashboard.py     # choroplèthe, distribution, vue globale
+    │   ├── compare.py       # graphiques & tableaux de comparaison
+    │   ├── sources_view.py  # rendu « résultats de recherche » de la section 02
+    │   ├── web_search.py    # recherche qualifiée Tavily / DuckDuckGo
+    │   ├── graph.py         # assemblage déterministe des briefs
+    │   ├── ui_render.py     # rendu HTML des briefs
+    │   ├── ui_theme.py      # design system + masthead
+    │   ├── plot_theme.py    # thème Plotly + unités (source de vérité)
+    │   ├── i18n.py          # FR/EN, RISK_ORDER, unités
+    │   └── pdf_export.py    # export PDF bilingue
+    ├── scripts/             # récupération des données (BM, WGI, FMI) + générateur de doc
+    ├── data/                # CSV/XLSX commités (rafraîchissables)
+    ├── docs/                # ARCHITECTURE.md + API.md
+    ├── tests/               # pytest (règles & scoring)
+    └── assets/              # theme.css + captures
 ```
 
-## Limites
+## Rafraîchir les données
 
-- La couverture qualitative dépend de la disponibilité des médias de confiance par pays ; une couverture faible est signalée comme insuffisante, jamais comblée artificiellement.
-- La dette publique et les indices de gouvernance ont une couverture Banque Mondiale plus lacunaire.
-- Les quotas des niveaux gratuits LLM/recherche peuvent ralentir la génération en direct en cas d'usage intensif.
+```bash
+    python scripts/fetch_worldbank.py
+    python scripts/fetch_wgi.py
+    python scripts/fetch_imf.py
+    python scripts/fetch_risk_extras.py
+```
 
-## Feuille de route
+## Documentation & tests
 
-Indicateurs v2 : Gini, IDE, transferts de migrants, dépendance aux matières premières · alertes poussées · notes de scénario.
-
----
+- `docs/ARCHITECTURE.md` - piliers, ancres, pondérations, règles, sources.
+- `docs/API.md` - référence : `python scripts/build_docs.py`.
+- `pytest` - tests unitaires des règles et du scoring.
 
 ## Auteur
 
 **Maxime NDACLEU** - Data Analyst & Business Intelligence Analyst
 
-<p align="left">
-  <a href="https://github.com/maxin-dac">
-  </a>
-  <a href="https://www.linkedin.com/in/maximendacleu">
-  </a>
+<p>
+<a href="https://github.com/maxin-dac"><img src="https://img.shields.io/badge/GitHub-maxin--dac-181717?style=flat&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://www.linkedin.com/in/maximendacleu"><img src="https://img.shields.io/badge/LinkedIn-maximendacleu-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
-
----
 
 ## Licence
 
-Projet distribué sous licence MIT. Données © Banque Mondiale ; extraits © leurs éditeurs respectifs, cités avec attribution à des fins d'analyse.
+MIT. Données © Banque Mondiale / FMI ; extraits © leurs éditeurs respectifs, cités avec attribution à des fins d’analyse.
