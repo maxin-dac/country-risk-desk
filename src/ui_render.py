@@ -8,7 +8,7 @@ def fmt_stats(s, lang):
     if not s.get("available"):
         return t("insufficient", lang), ""
     big = (f"{s['latest_value']:.2f} {s.get('unit', '')} "
-           f"<small style=\'font-size:.45em;color:var(--muted)\'>({s['latest_date']})</small>")
+           f"<small style='font-size:.45em;color:var(--muted)'>({s['latest_date']})</small>")
     parts = []
     if s.get("change_3m_pct") is not None:
         a = "▲" if s["change_3m_pct"] > 0 else "▼" if s["change_3m_pct"] < 0 else "◆"

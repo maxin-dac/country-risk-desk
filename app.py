@@ -210,7 +210,6 @@ if mode == "brief":
         st.download_button("Download data (Excel)" if lang == "en" else "Telecharger les donnees (Excel)",
                            _xb.getvalue(), f"country_risk_{country}_{indicator}.xlsx",
                            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
-
 elif mode == "compare":
     render_compare(df, countries, lang)
 else:
@@ -218,10 +217,10 @@ else:
 
 st.sidebar.markdown("""
 <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(148,163,184,.2); text-align: center; color: #8fa3b8; font-size: 0.75rem;">
-<p style="margin: 0 0 0.75rem 0; font-weight: 600; letter-spacing: 0.05em;">© 2026 Maxime NDACLEU</p>
-<div style="display: flex; justify-content: center; gap: 1.25rem;">
-<a href="https://github.com/maxin-dac" target="_blank" style="color: #8fa3b8;">GitHub</a>
-<a href="https://www.linkedin.com/in/maximendacleu" target="_blank" style="color: #8fa3b8;">LinkedIn</a>
-</div>
+  <p style="margin: 0 0 0.75rem 0; font-weight: 600; letter-spacing: 0.05em;">© 2026 Maxime NDACLEU</p>
+  <div style="display: flex; justify-content: center; gap: 1.25rem;">
+    <a href="https://github.com/maxin-dac" target="_blank" style="color: #8fa3b8;">GitHub</a>
+    <a href="https://www.linkedin.com/in/maximendacleu" target="_blank" style="color: #8fa3b8;">LinkedIn</a>
+  </div>
 </div>
 """, unsafe_allow_html=True)

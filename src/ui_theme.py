@@ -1,7 +1,4 @@
-"""Theme global - Country Risk Desk.
-Le CSS vit dans assets/theme.css (source unique, editable sans Python).
-Ce module le charge, l'enveloppe dans <style> et expose masthead().
-"""
+"""Theme global - Country Risk Desk."""
 import pathlib
 
 _CSS_PATH = pathlib.Path(__file__).resolve().parent.parent / "assets" / "theme.css"
