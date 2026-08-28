@@ -2,6 +2,7 @@
 import html
 from src.i18n import t
 from src.projections import projections_html
+from src.sources_view import results_html as sources_results_html
 
 
 def fmt_stats(s, lang):
@@ -32,10 +33,10 @@ def fmt_stats(s, lang):
     return big, " · ".join(parts)
 
 
-def evidence_html(items, lang, kind=""):
+def evidence_html(items, lang, kind="", empty_msg=None):
     """Affiche les extraits bruts Tavily ou les regles declenchees."""
     if not items:
-        return f'<div class="insufficient">{t("insufficient", lang)}</div>'
+        return f'<div class="insufficient">{empty_msg or t("insufficient", lang)}</div>'
     out = []
     for it in items:
         if isinstance(it, str):
@@ -68,8 +69,10 @@ def report_html(r, lang, chart=""):
     out = r.get("outlook", {})
     big, deltas = fmt_stats(r.get("stats", {}), lang)
     ctx = evidence_html(r.get("context", {}).get("points", []), lang)
-    risks = evidence_html(out.get("risks", []), lang, "risk")
-    opps = evidence_html(out.get("opportunities", []), lang, "opp")
+    risks = evidence_html(out.get("risks", []), lang, "risk",
+                    empty_msg=("No risk signal triggered for this indicator (thresholds not crossed)." if lang == "en" else "Aucun signal de risque declenche pour cet indicateur (seuils non franchis)."))
+    opps = evidence_html(out.get("opportunities", []), lang, "opp",
+                    empty_msg=("No opportunity signal triggered for this indicator (thresholds not crossed)." if lang == "en" else "Aucune opportunite majeure detectee pour cet indicateur (seuils non franchis)."))
 
     uncer_items = out.get("uncertainties", [])
     if uncer_items:
@@ -89,6 +92,7 @@ def report_html(r, lang, chart=""):
     lims_html = f'<h3 style="margin-top:1rem">{t("sec_limits", lang)}</h3><ul>{lims}</ul>' if lims else ""
 
     st_ = r.get("stats") or {}
+    src_results = sources_results_html(r.get("sources", []), lang)
     proj_html = projections_html(r.get("country", ""), r.get("indicator", ""), lang,
                                  latest_value=st_.get("latest_value"),
                                  change_12m=st_.get("change_12m_pct"),
@@ -96,7 +100,7 @@ def report_html(r, lang, chart=""):
     return f"""
 <div class="brief data"><h3>01 · {t('sec_constat', lang)}</h3>
   <div class="bignum">{big}</div> <div class="deltaline">{deltas}</div>{chart}</div>
-<div class="brief ctx"><h3>02 · {t('sec_context', lang)}</h3>{ctx}</div>
+<div class="brief ctx"><h3>02 · {t('sec_context', lang)}</h3>{src_results}</div>
 <div class="brief risk"><h3>03 · {t('sec_risks', lang)}</h3>{risks}</div>
 <div class="brief opp"><h3>04 · {t('sec_opps', lang)}</h3>{opps}</div>
 <div class="brief"><h3>05 · {t('uncertainties', lang)}</h3><ul>{uncer_html}</ul></div>

@@ -102,9 +102,9 @@ def render_compare(df, countries, lang):
         row = " · ".join(
             f"{cname(c, lang)}: <b>{sc[c]['overall']:.0f}</b>{unit_suffix('Risk score')}"
             for c in ranked)
-        st.markdown(
-            ("**Risque relatif (decroissant) :** " if lang == "fr"
-             else "**Relative risk (descending):** ") + row, unsafe_allow_html=True)
+        st.markdown("#### " + ("Risque relatif (decroissant)" if lang == "fr"
+                               else "Relative risk (descending)"))
+        st.markdown(row, unsafe_allow_html=True)
     inds = [i for i in IND_ORDER if i in set(df.indicator)]
     for start in range(0, len(inds), 2):
         pair = inds[start:start + 2]

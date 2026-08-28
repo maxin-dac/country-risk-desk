@@ -134,7 +134,7 @@ def score_html(country, scores, lang):
     return (f'<div class="brief" style="border-left:4px solid {color}">'
             f'<h3>{title}</h3>'
             f'<div style="display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap">'
-            f'<span style="font-size:2.2rem;font-weight:800;color:{color}">'
+            f'<span class="bignum solid" style="color:{color}">'
             f'{o:.0f}/100</span>'
             f'<span style="color:{color};font-weight:700">{lab_txt}</span>'
             f'<span style="color:#9fb3c4;font-size:.8rem">{rank_txt}</span></div>'

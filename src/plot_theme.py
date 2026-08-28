@@ -49,13 +49,13 @@ def apply_theme(fig, title="", unit=None, y_indicator=None, y_label=None,
     fig.update_layout(
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#d7e2ec", size=11),
-        title=dict(text=title, font=dict(size=13, color="#9fb3c8"), x=0.02),
+        font=dict(color="#e5eef9", size=11),
+        title=dict(text=title, font=dict(size=13, color="#8fa3b8"), x=0.02),
         margin=dict(l=50, r=20, t=40, b=40),
         showlegend=False,
     )
-    fig.update_xaxes(showgrid=True, gridcolor="rgba(159,179,200,.08)",
-                     zeroline=False, tickfont=dict(color="#9fb3c8", size=10))
-    fig.update_yaxes(showgrid=True, gridcolor="rgba(159,179,200,.08)",
-                     zeroline=False, tickfont=dict(color="#9fb3c8", size=10))
+    fig.update_xaxes(showgrid=True, gridcolor="rgba(148,163,184,.10)",
+                     zeroline=False, tickfont=dict(color="#8fa3b8", size=10))
+    fig.update_yaxes(showgrid=True, gridcolor="rgba(148,163,184,.10)",
+                     zeroline=False, tickfont=dict(color="#8fa3b8", size=10))
     return fig
