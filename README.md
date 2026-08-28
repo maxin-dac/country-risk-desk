@@ -67,8 +67,6 @@ Pick any of **226 economies** and one of **17 risk indicators**, and get a compl
     streamlit run app.py
 ```
 
-No key required. Optional: `TAVILY_API_KEY` in `.env` for live qualitative search (free DuckDuckGo fallback otherwise).
-
 ## Project structure
 
 ```bash

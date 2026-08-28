@@ -65,8 +65,6 @@ Choisissez l’une des **226 économies** et l’un des **17 indicateurs de risq
     pip install -r requirements.txt
     streamlit run app.py
 
-Aucune clé requise. Optionnel : `TAVILY_API_KEY` dans `.env` pour la recherche qualitative en direct (repli DuckDuckGo gratuit sinon).
-
 ## Structure du projet
 
 ```bash

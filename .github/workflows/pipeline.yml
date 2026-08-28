@@ -1,0 +1,134 @@
+name: Pipeline (CI + refresh mensuel)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # Le 1er de chaque mois a 04:00 UTC
+    - cron: "0 4 1 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  # ------------------------------------------------
+  # JOB 1 : CI a chaque push / PR
+  # ------------------------------------------------
+  ci:
+    name: Tests unitaires
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: pytest
+        run: pytest -q
+
+      - name: Build docs (verification)
+        run: python scripts/build_docs.py
+
+  # ------------------------------------------------
+  # JOB 2 : Refresh mensuel des donnees officielles
+  # ------------------------------------------------
+  refresh:
+    name: Refresh donnees officielles
+    needs: ci
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch World Bank WDI
+        run: python scripts/fetch_worldbank.py
+        continue-on-error: false
+
+      - name: Fetch World Bank WGI
+        run: python scripts/fetch_wgi.py
+        continue-on-error: false
+
+      - name: Fetch IMF WEO
+        run: python scripts/fetch_imf.py
+        continue-on-error: false
+
+      - name: Calcul service de la dette
+        run: python scripts/fetch_risk_extras.py
+        continue-on-error: false
+
+      - name: Tests de non-regression apres refresh
+        run: pytest -q
+
+      - name: Regenerer la reference API
+        run: python scripts/build_docs.py
+
+      - name: Detecter les changements
+        id: diff
+        run: |
+          if [[ -n "$(git status --porcelain data/ docs/)" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit & push data + docs
+        if: steps.diff.outputs.changed == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "data: refresh mensuel sources officielles (WB + WGI + IMF)"
+          branch: main
+          file_pattern: "data/* docs/API.md"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+
+  # ------------------------------------------------
+  # JOB 3 : Release mensuelle automatique
+  # ------------------------------------------------
+  release:
+    name: Release mensuelle
+    needs: refresh
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Creer tag + release vYYYY.MM
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v$(date -u +%Y.%m)
+          release_name: "Release $(date -u +'%B %Y')"
+          body: |
+            Donnees officielles mises a jour :
+            - Banque Mondiale WDI / WGI 2024
+            - FMI WEO (derniere edition)
+            - Scoring & alertes recalcules sur la base fraiche
+
+            Voir le commit `data:` dans l'historique pour le detail.
+          draft: false
+          prerelease: false
