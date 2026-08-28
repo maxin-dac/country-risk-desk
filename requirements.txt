@@ -13,3 +13,6 @@ python-dotenv
 
 # Dev & CI
 pytest>=8.0
+
+# Data fetching
+openpyxl>=3.1.0
