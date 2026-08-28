@@ -65,15 +65,13 @@ def _unc_text(u, lang):
 def report_html(r, lang, chart=""):
     if r.get("status") == "error":
         return f'<div class="insufficient">{t("error", lang)} - {html.escape(str(r.get("error", "")))}</div>'
-
+    
     out = r.get("outlook", {})
     big, deltas = fmt_stats(r.get("stats", {}), lang)
     ctx = evidence_html(r.get("context", {}).get("points", []), lang)
-    risks = evidence_html(out.get("risks", []), lang, "risk",
-                    empty_msg=("No risk signal triggered for this indicator (thresholds not crossed)." if lang == "en" else "Aucun signal de risque declenche pour cet indicateur (seuils non franchis)."))
-    opps = evidence_html(out.get("opportunities", []), lang, "opp",
-                    empty_msg=("No opportunity signal triggered for this indicator (thresholds not crossed)." if lang == "en" else "Aucune opportunite majeure detectee pour cet indicateur (seuils non franchis)."))
-
+    risks = evidence_html(out.get("risks", []), lang, "risk")
+    opps = evidence_html(out.get("opportunities", []), lang, "opp")
+    
     uncer_items = out.get("uncertainties", [])
     if uncer_items:
         uncer_html = " ".join(
@@ -82,25 +80,25 @@ def report_html(r, lang, chart=""):
         )
     else:
         uncer_html = f"<li>{t('insufficient', lang)}</li>"
-
+    
     srcs = " ".join(
         f'<li class="src">[{html.escape(s["id"])}] <a href="{html.escape(s["url"])}" target="_blank">'
         f'{html.escape(s["title"])}</a> <span class="chip">{html.escape(s["domain"])}</span></li>'
         for s in r.get("sources", [])) or f'<div class="insufficient">{t("no_sources", lang)}</div>'
-
+    
     lims = " ".join(f"<li>{html.escape(str(x))}</li>" for x in r.get("limitations", []))
     lims_html = f'<h3 style="margin-top:1rem">{t("sec_limits", lang)}</h3><ul>{lims}</ul>' if lims else ""
-
+    
     st_ = r.get("stats") or {}
-    src_results = sources_results_html(r.get("sources", []), lang)
     proj_html = projections_html(r.get("country", ""), r.get("indicator", ""), lang,
-                                 latest_value=st_.get("latest_value"),
-                                 change_12m=st_.get("change_12m_pct"),
-                                 unit=uname(st_.get("unit", ""), lang))
+                                  latest_value=st_.get("latest_value"),
+                                  change_12m=st_.get("change_12m_pct"),
+                                  unit=st_.get("unit", ""))
+    
     return f"""
 <div class="brief data"><h3>01 · {t('sec_constat', lang)}</h3>
-  <div class="bignum">{big}</div> <div class="deltaline">{deltas}</div>{chart}</div>
-<div class="brief ctx"><h3>02 · {t('sec_context', lang)}</h3>{src_results}</div>
+<div class="bignum">{big}</div>  <div class="deltaline">{deltas}</div>{chart}</div>
+<div class="brief ctx"><h3>02 · {t('sec_context', lang)}</h3>{ctx}</div>
 <div class="brief risk"><h3>03 · {t('sec_risks', lang)}</h3>{risks}</div>
 <div class="brief opp"><h3>04 · {t('sec_opps', lang)}</h3>{opps}</div>
 <div class="brief"><h3>05 · {t('uncertainties', lang)}</h3><ul>{uncer_html}</ul></div>

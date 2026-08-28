@@ -10,3 +10,6 @@ pycountry
 plotly
 litellm
 python-dotenv
+
+# Dev & CI
+pytest>=8.0

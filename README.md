@@ -58,6 +58,12 @@ Pick any of **226 economies** and one of **17 risk indicators**, and get a compl
 - No verified source → *“Insufficient information”*, never padded.
 - Missing IMF / World Bank values displayed as missing.
 
+## Live demo
+
+<a href="https://country-risk-desk.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a> on **Streamlit Cloud**
+
+<a href="https://country-risk-desk.onrender.com/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-0A2C3A?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" /></a> on **Render**
+
 ## Run it locally
 
 ```bash

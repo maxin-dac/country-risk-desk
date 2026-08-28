@@ -58,6 +58,12 @@ Choisissez l’une des **226 économies** et l’un des **17 indicateurs de risq
 - Pas de source vérifiée → *« Information insuffisante »*, jamais comblé artificiellement.
 - Valeurs FMI / Banque Mondiale manquantes affichées comme manquantes.
 
+## Live demo
+
+<a href="https://country-risk-desk.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a> sur **Streamlit Cloud**
+
+<a href="https://country-risk-desk.onrender.com/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-0A2C3A?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" /></a> sur **Render**
+
 ## Lancer en local
 
     git clone https://github.com/maxin-dac/country-risk-desk.git
