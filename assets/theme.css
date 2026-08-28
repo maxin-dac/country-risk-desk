@@ -483,3 +483,120 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   font-size:3.2rem;font-weight:700;letter-spacing:.03em;line-height:1.05;
 }
 .mh-title-dot{-webkit-text-fill-color:var(--risk);color:var(--risk)}
+
+/* ---- Harmonie : tous les visuels en cartes pleines (comme les briefs) ---- */
+.js-plotly-plot .plot-container{
+  background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
+  border:1px solid var(--line) !important;
+  border-radius:16px !important;
+  box-shadow:var(--shadow-md) !important;
+  padding:.4rem .5rem !important;
+}
+.js-plotly-plot .main-svg{background:transparent !important}
+.spark-box{
+  background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
+  border:1px solid var(--line) !important;
+  border-radius:16px !important;
+  box-shadow:var(--shadow-md) !important;
+}
+
+/* ---- Coins arrondis complets (racine + overflow) + tables en cartes ---- */
+.js-plotly-plot{
+  background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
+  border:1px solid var(--line) !important;
+  border-radius:16px !important;
+  box-shadow:var(--shadow-md) !important;
+  overflow:hidden !important;
+  padding:.4rem .5rem;
+}
+.js-plotly-plot .plot-container,
+.js-plotly-plot .main-svg{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+/* Tableaux : meme traitement que les cartes */
+[data-testid="stDataFrame"]{
+  background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
+  border:1px solid var(--line) !important;
+  border-radius:16px !important;
+  box-shadow:var(--shadow-md) !important;
+  overflow:hidden !important;
+}
+[data-testid="stDataFrame"] > div{
+  border-radius:16px !important;
+  overflow:hidden !important;
+}
+/* Exception : la carte fusionnee 01 reste integree (pas de carte dans la carte) */
+[data-testid="stVerticalBlock"]:has(.fused-flag) .js-plotly-plot{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  padding:0;
+}
+
+/* ==== CORRECTION FINALE : cartes pleines, coins 4 cotes, tables ==== */
+.js-plotly-plot{
+  background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
+  border:1px solid var(--line) !important;
+  border-radius:16px !important;
+  box-shadow:var(--shadow-md) !important;
+  overflow:hidden !important;
+  padding:.4rem .5rem;
+}
+.js-plotly-plot .plot-container,
+.js-plotly-plot .main-svg{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+[data-testid="stDataFrame"]{
+  background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
+  border:1px solid var(--line) !important;
+  border-radius:16px !important;
+  box-shadow:var(--shadow-md) !important;
+  overflow:hidden !important;
+}
+[data-testid="stDataFrame"] > div{
+  border-radius:16px !important;
+  overflow:hidden !important;
+}
+[data-testid="stVerticalBlock"]:has(.fused-flag) .js-plotly-plot{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  padding:0;
+}
+.sr-line{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap}
+.sr-words{margin:.4rem 0 .2rem}
+.sr-title:hover{text-decoration:underline}
+[data-testid="stVerticalBlock"]:has(.fused-flag) .brief.data:hover{transform:none}
+
+/* ==== ULTIME : une seule bordure, 4 coins arrondis, zero double ==== */
+[data-testid="stPlotlyChart"]{
+  background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%);
+  border:1px solid var(--line);
+  border-radius:16px;
+  box-shadow:var(--shadow-md);
+  overflow:hidden;
+  padding:.4rem .5rem;
+}
+.js-plotly-plot,
+.js-plotly-plot .plot-container,
+.js-plotly-plot .svg-container,
+.js-plotly-plot .main-svg{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+}
+/* Carte fusionnee 01 : pas de carte dans la carte */
+[data-testid="stVerticalBlock"]:has(.fused-flag) [data-testid="stPlotlyChart"]{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  padding:0;
+}
+
+/* ---- Titre : une seule barre basse, pas de trait entre eyebrow et titre ---- */
+.mh-title-block::before{content:none}

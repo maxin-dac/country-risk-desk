@@ -10,6 +10,8 @@ _CSS_PATH = pathlib.Path(__file__).resolve().parent.parent / "assets" / "theme.c
 CSS = "<style>\n" + (_CSS_PATH.read_text(encoding="utf-8") if _CSS_PATH.exists() else "") + "\n</style>"
 
 
+
+
 def masthead(n_countries, n_indicators, today, model, lang, ticks=None):
     fr = lang == "fr"
     chips = "".join([
@@ -41,3 +43,13 @@ def masthead(n_countries, n_indicators, today, model, lang, ticks=None):
   <div class="mh-cov">{cov}</div>
   {tickline}
 </div>"""
+
+# _CRD_WRAP : source unique + balise <style> garantie
+import pathlib as _pl
+_p = _pl.Path(__file__).resolve().parent.parent / "assets" / "theme.css"
+if _p.exists():
+    _x = _p.read_text(encoding="utf-8")
+    if "CORRECTION FINALE" not in CSS:
+        CSS = CSS + "\n" + _x
+if not CSS.lstrip().startswith("<style"):
+    CSS = "<style>\n" + CSS + "\n</style>"

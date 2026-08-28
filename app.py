@@ -41,12 +41,12 @@ def render_dashboard(df, alerts, lang):
     
     # 1. Carte du monde
     with st.expander("World risk map" if lang == "en" else "Carte mondiale du risque", expanded=True):
-        st.plotly_chart(dashboard.world_map(scores, lang), use_container_width=True)
+        st.plotly_chart(dashboard.world_map(scores, lang), width='stretch')
     
     # 2. Distribution des scores + statistiques
     col1, col2 = st.columns([2, 1])
     with col1:
-        st.plotly_chart(dashboard.score_distribution(scores, lang), use_container_width=True)
+        st.plotly_chart(dashboard.score_distribution(scores, lang), width='stretch')
     with col2:
         st.markdown("#### " + ("Summary" if lang == "en" else "Synthese"))
         vals = [s["overall"] for s in scores.values()]
@@ -211,7 +211,7 @@ if mode == "brief":
             st.markdown(head, unsafe_allow_html=True)
             fig = line_chart(df, indicator, [country], lang)
             fig.update_layout(title=dict(text=f"{iname(indicator, lang)} - {cname(country, lang)}"))
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
         st.markdown(marker + rest, unsafe_allow_html=True)
     else:
         st.markdown(html_all, unsafe_allow_html=True)
