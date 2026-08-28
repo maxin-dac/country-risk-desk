@@ -1,15 +1,12 @@
 """Theme global - Country Risk Desk.
-
 Le CSS vit dans assets/theme.css (source unique, editable sans Python).
 Ce module le charge, l'enveloppe dans <style> et expose masthead().
 """
 import pathlib
 
 _CSS_PATH = pathlib.Path(__file__).resolve().parent.parent / "assets" / "theme.css"
-
-CSS = "<style>\n" + (_CSS_PATH.read_text(encoding="utf-8") if _CSS_PATH.exists() else "") + "\n</style>"
-
-
+_raw = _CSS_PATH.read_text(encoding="utf-8") if _CSS_PATH.exists() else ""
+CSS = "<style>\n" + _raw + "\n</style>"
 
 
 def masthead(n_countries, n_indicators, today, model, lang, ticks=None):
@@ -43,13 +40,3 @@ def masthead(n_countries, n_indicators, today, model, lang, ticks=None):
   <div class="mh-cov">{cov}</div>
   {tickline}
 </div>"""
-
-# _CRD_WRAP : source unique + balise <style>
-import pathlib as _pl
-_p = _pl.Path(__file__).resolve().parent.parent / "assets" / "theme.css"
-if _p.exists():
-    _x = _p.read_text(encoding="utf-8")
-    if "CORRECTION FINALE" not in CSS:
-        CSS = CSS + "\n" + _x
-if not CSS.lstrip().startswith("<style"):
-    CSS = "<style>\n" + CSS + "\n</style>"
