@@ -5,7 +5,7 @@ from src import config
 from src.csv_loader import get_stats, load_csv
 from src.graph import build_report
 from src.alerts import compute_alerts
-from src import watchlist, dashboard
+from src import dashboard
 from src.risk_scoring import top_risk_html, country_scores, score_html
 from src.compare import line_chart, render_compare
 from src.i18n import INDICATORS, PILLARS, PILLAR_ORDER, cname, iname, t, RISK_ORDER
@@ -146,14 +146,6 @@ with st.sidebar:
                     format_func=lambda m: t("mode_brief", lang) if m == "brief"
                     else t("mode_dashboard", lang) if m == "dashboard" else t("mode_compare", lang),
                     key="mode_sel")
-    st.markdown("---")
-    st.markdown("### Liste de suivi" if lang == "fr" else "### Watchlist")
-    wl = st.multiselect(
-        "Pays suivis (8 max)" if lang == "fr" else "Followed countries (max 8)",
-        sorted(df.country.unique()), default=watchlist.load(), max_selections=8,
-        format_func=lambda c: f"{cname(c, lang)} ({c})", key="wl_sel")
-    if wl != watchlist.load():
-        watchlist.save(wl)
     if mode == "brief":
         country = st.selectbox(t("country", lang), sorted(df.country.unique()),
                                format_func=lambda c: f"{cname(c, lang)} ({c})", key="country_sel")
@@ -188,15 +180,6 @@ alerts = compute_alerts(df)
 
 if mode == "brief":
     st.markdown(score_html(country, get_scores(), lang), unsafe_allow_html=True)
-    if wl:
-        _sc = get_scores()
-        _cols = st.columns(len(wl))
-        for _i, _iso in enumerate(wl):
-            _s = _sc.get(_iso)
-            _lab = f"{cname(_iso, lang)} - {_s['overall']:.0f}" if _s else cname(_iso, lang)
-            if _cols[_i].button(_lab, key=f"wl_go_{_iso}"):
-                st.session_state["country_sel"] = _iso
-                st.rerun()
     live = st.session_state.get("live")
     is_live = bool(live and live["key"] == sel_key)
     report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
@@ -236,9 +219,7 @@ elif mode == "compare":
 else:
     render_dashboard(df, alerts, lang)
 
-# ==========================================
 # SIDEBAR FOOTER : Copyright & Social Links
-# ==========================================
 st.sidebar.markdown("""
 <div style="
     margin-top: 3rem; 

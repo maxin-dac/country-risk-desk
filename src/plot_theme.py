@@ -4,7 +4,7 @@
 - Unites affichees dans le titre du visuel (pas de titres d'axes)
 """
 
-# Unites par indicateur (en, fr) - source de verite unique
+# Unites par indicateur (en, fr)
 UNITS = {
     "Reserves": ("months of imports", "mois d'importations"),
     "Current account": ("% GDP", "% PIB"),

@@ -44,7 +44,7 @@ def masthead(n_countries, n_indicators, today, model, lang, ticks=None):
   {tickline}
 </div>"""
 
-# _CRD_WRAP : source unique + balise <style> garantie
+# _CRD_WRAP : source unique + balise <style>
 import pathlib as _pl
 _p = _pl.Path(__file__).resolve().parent.parent / "assets" / "theme.css"
 if _p.exists():
