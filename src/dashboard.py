@@ -20,10 +20,10 @@ def world_map(scores, lang):
         marker_line_color="rgba(159,179,200,.25)",
         marker_line_width=0.5,
         colorbar=dict(
-            title="Risk" + unit_suffix("Risk score"),
+            title=dict(text="Risk" + unit_suffix("Risk score"),
+                       font=dict(color="#9fb3c8", size=11)),
             thickness=20, len=0.5, tick0=0, dtick=20,
             tickfont=dict(color="#9fb3c8", size=10),
-            titlefont=dict(color="#9fb3c8", size=11),
         ),
     ))
     fig.update_layout(

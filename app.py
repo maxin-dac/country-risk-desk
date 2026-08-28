@@ -16,6 +16,44 @@ from src.ui_theme import CSS, masthead
 st.set_page_config(page_title="Country Risk Desk", page_icon="🛰", layout="wide")
 st.markdown(CSS, unsafe_allow_html=True)
 st.markdown("""<style>
+/* Alertes seuil (vue globale) : boutons rouges + halo doux, sans animation */
+[data-testid="stVerticalBlock"] > div:has(.alerts-red-flag) { display: none; }
+[data-testid="stVerticalBlock"] > div:has(.alerts-red-flag) ~ div [data-testid="stButton"] {
+  border: none !important;
+  background: transparent !important;
+  outline: none !important;
+}
+[data-testid="stVerticalBlock"] > div:has(.alerts-red-flag) ~ div button,
+[data-testid="stVerticalBlock"] > div:has(.alerts-red-flag) ~ div button:hover,
+[data-testid="stVerticalBlock"] > div:has(.alerts-red-flag) ~ div button:focus,
+[data-testid="stVerticalBlock"] > div:has(.alerts-red-flag) ~ div button:active {
+  background: rgba(231, 76, 60, 0.12) !important;
+  border: 1px solid rgba(231, 76, 60, 0.65) !important;
+  color: #ff6b5b !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.30) !important;
+}
+[data-testid="stVerticalBlock"] > div:has(.alerts-red-flag) ~ div button:hover {
+  box-shadow: 0 0 16px rgba(231, 76, 60, 0.50) !important;
+  color: #ff8a7a !important;
+}
+</style>""", unsafe_allow_html=True)
+
+st.markdown("""<style>
+/* Alertes seuil : boutons en rouge pour signaler le risque */
+section[data-testid="stVerticalBlock"] div[data-testid="stButton"] > button[kind="primary"] {
+    background: rgba(231, 76, 60, 0.12) !important;
+    border: 1px solid #e74c3c !important;
+    color: #e74c3c !important;
+    font-weight: 600 !important;
+}
+section[data-testid="stVerticalBlock"] div[data-testid="stButton"] > button[kind="primary"]:hover {
+    background: rgba(231, 76, 60, 0.25) !important;
+    color: #ff6b5b !important;
+}
+</style>""", unsafe_allow_html=True)
+
+st.markdown("""<style>
 /* Visuels Plotly : fond transparent, sans contour */
 .js-plotly-plot .main-svg,
 .js-plotly-plot .plot-container {
@@ -110,21 +148,45 @@ def render_dashboard(df, alerts, lang):
     with col2:
         st.markdown("#### " + ("Summary" if lang == "en" else "Synthese"))
         vals = [s["overall"] for s in scores.values()]
-        low = sum(1 for v in vals if v < 35)
-        mod = sum(1 for v in vals if 35 <= v < 55)
-        high = sum(1 for v in vals if 55 <= v < 70)
-        crit = sum(1 for v in vals if v >= 70)
-        st.metric("Total countries", len(vals))
-        st.metric("Low risk (< 35)", low)
-        st.metric("Moderate (35-54)", mod)
-        st.metric("Elevated (55-69)", high)
-        st.metric("Critical (≥ 70)", crit)
+        cats = [
+            ("low", "Low risk (< 35)" if lang == "en" else "Risque faible (< 35)",
+             lambda v: v < 35),
+            ("mod", "Moderate (35-54)" if lang == "en" else "Modere (35-54)",
+             lambda v: 35 <= v < 55),
+            ("high", "Elevated (55-69)" if lang == "en" else "Eleve (55-69)",
+             lambda v: 55 <= v < 70),
+            ("crit", "Critical (>= 70)" if lang == "en" else "Critique (>= 70)",
+             lambda v: v >= 70),
+        ]
+        st.metric("Total countries" if lang == "en" else "Total pays", len(vals))
+        for _key, _label, _cond in cats:
+            _n = sum(1 for v in vals if _cond(v))
+            _active = st.session_state.get("dash_filter") == _key
+            if st.button(f"{_label} : {_n}", key=f"dash_cat_{_key}",
+                         type="primary" if _active else "secondary"):
+                st.session_state["dash_filter"] = None if _active else _key
+    _flt = st.session_state.get("dash_filter")
+    if _flt:
+        _cond = {c[0]: c[2] for c in cats}[_flt]
+        _members = sorted(((iso, s["overall"]) for iso, s in scores.items()
+                           if _cond(s["overall"])),
+                          key=lambda kv: kv[1], reverse=True)
+        _lab = {c[0]: c[1] for c in cats}[_flt]
+        st.markdown(f"##### {_lab} - {len(_members)}")
+        for _i in range(0, len(_members), 6):
+            _cols = st.columns(6)
+            for _j, (_iso, _sc) in enumerate(_members[_i:_i + 6]):
+                _cols[_j].button(f"{cname(_iso, lang)} · {_sc:.0f}",
+                                 key=f"dash_m_{_flt}_{_iso}",
+                                 on_click=lambda i2=_iso: st.session_state.update(
+                                     {"country_sel": i2, "mode_sel": "brief"}))
     
     # 3. Top 10 + alertes
     st.markdown("#### " + ("Top 10 riskiest countries" if lang == "en" else "Top 10 pays les plus risques"))
     st.markdown(top_risk_html(scores, lang), unsafe_allow_html=True)
     
     if alerts:
+        st.markdown('<div class="alerts-red-flag"></div>', unsafe_allow_html=True)
         st.markdown("#### " + t("alerts_title", lang))
         for a in alerts:
             label = a["fr"] if lang == "fr" else a["en"]
@@ -138,25 +200,6 @@ def render_dashboard(df, alerts, lang):
             if len(a["hits"]) > 8:
                 rest = " · ".join(f"{cname(i2, lang)} ({v2:.0f})" for i2, v2 in a["hits"][8:])
                 st.caption(rest)
-    
-    # 4. Evolution temporelle
-    with st.expander("Score evolution (2020-2024)" if lang == "en" else "Evolution du score (2020-2024)", expanded=False):
-        top_changes, period_scores = dashboard.temporal_comparison(df, lang)
-        if top_changes is None:
-            st.info("Insufficient data for temporal comparison" if lang == "en" 
-                    else "Donnees insuffisantes pour la comparaison temporelle")
-        else:
-            st.markdown("##### " + ("Biggest changes" if lang == "en" else "Plus fortes variations"))
-            for iso, s1, s2, delta in top_changes:
-                color = "#2ecc71" if delta < 0 else "#e74c3c"
-                arrow = "▼" if delta < 0 else "▲"
-                st.markdown(f"**{cname(iso, lang)}**: {s1:.0f} → {s2:.0f} "
-                           f"<span style='color:{color}'>{arrow} {delta:+.1f}</span>",
-                           unsafe_allow_html=True)
-
-
-
-@st.cache_data(ttl=86400, show_spinner=False)
 def _live(country, indicator, lang, _day):
     return build_report(country, indicator, lang)
 
