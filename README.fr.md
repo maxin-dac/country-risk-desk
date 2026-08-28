@@ -3,6 +3,8 @@
 **Desk de risque pays macro-financier 100 % déterministe.**
 Bilingue 🇫🇷/🇬🇧 · 226 économies · 17 indicateurs · 4 piliers · sources officielles uniquement.
 
+> **Version anglaise :** [README.md](README.md)
+
 <p align="left">
 <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/Streamlit-1.45%2B-FF4B4B?style=flat&logo=streamlit&logoColor=white" alt="Streamlit" />

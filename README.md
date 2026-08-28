@@ -3,6 +3,8 @@
 **Deterministic macro-financial country risk desk.**
 Bilingual 🇫🇷/🇬🇧 · 226 economies · 17 indicators · 4 pillars · official sources only.
 
+> **French version:** [README.fr.md](README.fr.md)
+
 <p align="left">
 <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/Streamlit-1.45%2B-FF4B4B?style=flat&logo=streamlit&logoColor=white" alt="Streamlit" />
