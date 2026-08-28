@@ -1,3 +1,4 @@
+"""Rendu HTML des briefs (sections 01 a 07) et formatage des statistiques."""
 import html
 from src.i18n import t
 from src.projections import projections_html

@@ -127,3 +127,9 @@ v2 indicators: Gini, FDI inflows, remittances, commodity dependence · pushed al
 ## License
 
 Project distributed under the MIT License. Data © World Bank; excerpts © their respective publishers, quoted with attribution for analysis purposes.
+
+
+## Documentation interne
+- `docs/ARCHITECTURE.md` : methodologie complete (piliers, scoring, regles, sources)
+- `docs/API.md` : reference API generee par `python scripts/build_docs.py`
+- Version HTML (optionnel) : `pip install pdoc && pdoc src -o docs/html`

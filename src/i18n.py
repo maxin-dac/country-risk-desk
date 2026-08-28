@@ -1,3 +1,9 @@
+"""Internationalisation FR/EN: pays, indicateurs, libelles UI.
+
+RISK_ORDER est la liste blanche des indicateurs du cadre de risque
+(source de verite partagee par le brief, la comparaison et les exports).
+UNITS/plot_theme portent les unites affichees dans les titres de visuels.
+"""
 import pathlib
 # ISO3 -> (en, fr, world_bank_code, region)
 COUNTRIES = {

@@ -1,8 +1,17 @@
+"""Chargement et statistiques des series macro (CSV unique).
+
+Fonctions publiques:
+    load_csv(path): DataFrame valide et type (date, valeur, codes).
+    get_stats(df, country, indicator): derniere valeur (+date), variations
+        3/12 mois, mediane regionale, position relative, tendance 5 ans.
+    format_stats(stats): serialization texte (logs, exports).
+"""
 import pandas as pd
 
 REQUIRED = {"country", "indicator", "category", "date", "value", "unit", "region"}
 
 def load_csv(path):
+    """Lire le CSV macro, valider les colonnes requises, typer date/valeur."""
     df = pd.read_csv(path, dtype={"region": str, "country": str, "indicator": str, "unit": str, "source": str})
     missing = REQUIRED - set(df.columns)
     if missing:
@@ -25,6 +34,13 @@ def _pct(cur, prev):
     return (cur - prev) / abs(prev) * 100 if prev else None
 
 def get_stats(df, country, indicator):
+    """Statistiques du couple pays/indicateur.
+
+    Returns:
+        dict: latest_value/latest_date, change_3m_pct, change_12m_pct,
+        regional_median, regional_position, trend_5y_norm (pente 5 ans
+        normalisee par la mediane), unit_display.
+    """
     s = df[(df.country == country) & (df.indicator == indicator)] \
         .dropna(subset=["date", "value"]).sort_values("date")
     if s.empty:
@@ -67,6 +83,7 @@ def get_stats(df, country, indicator):
     return out
 
 def format_stats(st_):
+    """Serialiser les statistiques en texte lisible (logs, exports)."""
     if not st_.get("available"):
         return "No CSV data for this country/indicator."
     lines = [
