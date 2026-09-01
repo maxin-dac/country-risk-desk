@@ -3,7 +3,7 @@ import streamlit as st
 from src import config
 from src import dashboard
 from src import ratings as rat
-from src.alerts import compute_alerts
+from src.alerts import compute_alerts, generate_outlook
 from src.compare import line_chart, render_compare
 from src.csv_loader import get_stats, load_csv
 from src.i18n import INDICATORS, RISK_ORDER, cname, iname, t
@@ -20,22 +20,30 @@ def get_df():
     return load_csv(config.CSV_PATH)
 
 
-@st.cache_data(show_spinner=False)
-def get_briefs():
-    p = pathlib.Path(config.BRIEFS_PATH)
-    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
-
-
 def render_dashboard(df, alerts, lang):
     st.markdown("### " + ("Global macroeconomic dashboard" if lang == "en"
                           else "Tableau de bord macroeconomique global"))
-    map_layer = st.radio(
-        "Map layer / Couche carte",
-        ["S&P", "Moody's", "Fitch"],
-        horizontal=True, key="map_layer")
+    map_layer = st.radio("Map layer / Couche carte",
+                         ["S&P", "Moody's", "Fitch"],
+                         horizontal=True, key="map_layer")
     with st.expander("World map of sovereign ratings" if lang == "en"
                      else "Carte mondiale des notations souveraines", expanded=True):
         st.plotly_chart(dashboard.world_map_ratings(map_layer, lang), width="stretch")
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        st.plotly_chart(dashboard.rating_distribution(map_layer, lang), width="stretch")
+    with col2:
+        st.markdown("#### " + ("Summary" if lang == "en" else "Synthese"))
+        g = dashboard.grade_summary(df, map_layer)
+        st.metric("Rated countries" if lang == "en" else "Pays notes", g["rated"])
+        st.metric("Investment grade", g["ig"])
+        st.metric("Speculative grade", g["spec"])
+        st.metric("Default / withdrawn" if lang == "en" else "Defaut / retire", g["def"])
+        st.metric("Not rated" if lang == "en" else "Non notes", g["unrated"])
+        st.caption(
+            f"Notations : {map_layer}. Source : Wikipedia, instantane 2026-09-01."
+            if lang == "fr" else
+            f"Ratings: {map_layer}. Source: Wikipedia, snapshot 2026-09-01.")
     if alerts:
         st.markdown("#### " + ("Reference threshold monitor" if lang == "en"
                                else "Suivi des seuils de reference"))
@@ -56,31 +64,25 @@ def render_dashboard(df, alerts, lang):
                                 {"country_sel": i2, "mode_sel": "brief"}))
 
 
-
-def assemble_report(df, briefs, country, indicator, lang):
+def assemble_report(df, country, indicator, lang):
     stats = get_stats(df, country, indicator)
     if not stats.get("available"):
         return {"status": "error", "error": f"No data for {country} / {indicator}"}
-    qual = briefs.get(f"{country}|{indicator}|{lang}") or {}
     return {
-        "status": "done" if qual else "done_numeric",
+        "status": "done_numeric",
         "title": f"Country Risk Desk - {country} - {indicator}",
         "country": country, "indicator": indicator, "lang": lang,
         "category": stats.get("category", ""),
         "stats": stats,
-        "web_context_available": False,
-        "confidence": qual.get("confidence", "low"),
-        "context": {"points": []},
-        "outlook": qual.get("outlook", {"risks": [], "opportunities": [], "uncertainties": []}),
-        "limitations": qual.get("limitations", []),
-        "sources": qual.get("sources", []),
-        "generated_at": qual.get("generated_at", ""),
+        "outlook": generate_outlook(stats),
+        "limitations": [],
+        "sources": [],
+        "generated_at": "",
     }
 
 
 # ---- Main ----
 df = get_df()
-briefs = get_briefs()
 today = datetime.date.today().isoformat()
 
 with st.sidebar:
@@ -127,7 +129,7 @@ alerts = compute_alerts(df)
 
 if mode == "brief":
     st.markdown(rat.rating_card(country, lang), unsafe_allow_html=True)
-    report = assemble_report(df, briefs, country, indicator, lang)
+    report = assemble_report(df, country, indicator, lang)
     html_all = report_html(report, lang)
     if report.get("status") != "error":
         i0 = html_all.find('<div class="brief')

@@ -1,4 +1,5 @@
-"""Notation souveraine : S&P / Moody's / Fitch (donnees publiees, CSV par agence)."""
+"""Notation souveraine : S&P / Moody's / Fitch (donnees publiees, CSV par agence).
+Aucun calcul : chaque tuile affiche note + perspective + date telles que publiees."""
 import csv
 import pathlib
 
@@ -39,9 +40,7 @@ def country_rating(df, iso):
 
 def _out_cls(o):
     ol = (o or "").lower()
-    if "withdrawn" in ol:
-        return "withdrawn"
-    return ol
+    return "withdrawn" if "withdrawn" in ol else ol
 
 
 def rating_card(iso, lang):
