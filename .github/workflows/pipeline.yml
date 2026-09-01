@@ -78,6 +78,10 @@ jobs:
         run: python scripts/fetch_imf.py
         continue-on-error: false
 
+      - name: Notations souveraines (Wikipedia)
+        run: python scripts/fetch_ratings.py
+        continue-on-error: true
+
       - name: Calcul service de la dette
         run: python scripts/fetch_risk_extras.py
         continue-on-error: false

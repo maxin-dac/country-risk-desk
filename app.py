@@ -10,6 +10,7 @@ from src.risk_scoring import top_risk_html, country_scores, score_html
 from src.compare import line_chart, render_compare
 from src.i18n import INDICATORS, PILLARS, PILLAR_ORDER, cname, iname, t, RISK_ORDER
 from src.pdf_export import generate_pdf_bytes
+from src import ratings as rat
 from src.ui_render import report_html
 from src.ui_theme import CSS, masthead
 
@@ -128,6 +129,7 @@ def assemble_report(df, briefs, country, indicator, lang):
         "country": country, "indicator": indicator, "lang": lang,
         "category": stats.get("category", ""),
         "stats": stats,
+        "ratings": rat.country_rating(df, country),
         "web_context_available": qual.get("web_context_available", False),
         "confidence": qual.get("confidence", "low"),
         "context": qual.get("context", {"points": []}),
@@ -208,6 +210,9 @@ if mode == "brief":
     live = st.session_state.get("live")
     is_live = bool(live and live["key"] == sel_key)
     report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
+    _rr = report.setdefault("ratings", rat.country_rating(df, country))
+    if is_live:
+        _rr["live"] = rat.live_ratings(cname(country, lang))
     if is_live:
         st.caption(t("live_done", lang))
     html_all = report_html(report, lang)

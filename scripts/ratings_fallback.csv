@@ -1,0 +1,16 @@
+iso,country,sp,moodys,fitch,updated
+USA,United States,AA+,Aaa,AAA,2026-01-01
+DEU,Germany,AAA,Aaa,AAA,2026-01-01
+FRA,France,AA,Aa2,AA-,2026-01-01
+GBR,United Kingdom,AA,Aa3,AA-,2026-01-01
+JPN,Japan,A+,A1,A,2026-01-01
+CHN,China,A+,A1,A+,2026-01-01
+IND,India,BBB-,Baa3,BBB-,2026-01-01
+BRA,Brazil,BB-,Ba3,BB-,2026-01-01
+MAR,Morocco,BB+,Ba1,BB+,2026-01-01
+ZAF,South Africa,BB-,Ba2,BB-,2026-01-01
+ARG,Argentina,CCC+,Caa3,CCC,2026-01-01
+TUR,Turkey,B+,B2,B+,2026-01-01
+EGY,Egypt,B,B3,B,2026-01-01
+NGA,Nigeria,B-,B3,B-,2026-01-01
+KEN,Kenya,B,B3,B,2026-01-01

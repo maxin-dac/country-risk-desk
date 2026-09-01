@@ -262,3 +262,10 @@ INDICATORS.update({
     "Electricity access": ("Electricity access", "Acces a l'electricite"),
     "Women in workforce": ("Women in workforce", "Femmes en activite"),
 })
+
+STR.update({
+    "sec_rating": ("Sovereign rating", "Notation souveraine"),
+    "rate_proxy": ("Desk proxy (computed)", "Proxy desk (calcule)"),
+    "rate_official": ("Official ratings (S&P / Moody's / Fitch)", "Notations officielles (S&P / Moody's / Fitch)"),
+    "rate_live": ("Web echo (DuckDuckGo, to verify)", "Echo web (DuckDuckGo, a verifier)"),
+})
