@@ -80,7 +80,7 @@ def rating_card(iso, lang):
            "publi&eacute;es par chaque agence.")
     return ('<div class="brief rating"><h3>' + title + "</h3>"
             '<div class="rate-grid">' + "".join(tiles) + "</div>"
-            '<div class="rate-src">' + src + "</div></div>")
+            "</div>")
 
 
 def country_rating(df, iso):

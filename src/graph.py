@@ -1,5 +1,5 @@
 """Orchestrateur deterministe - remplace l'agent LangGraph.
-Aucun appel LLM. Generation par regles et extraction brute Tavily."""
+Aucun appel LLM. Generation par regles et extraction web multi-sources."""
 import datetime
 from . import config
 from .csv_loader import get_stats
@@ -19,7 +19,7 @@ def build_report(country, indicator, lang):
     if not stats.get("available"):
         return {"status": "error", "error": f"No data for {country} / {indicator}"}
 
-    # 2. Recherche web Tavily (extraits bruts, pas de synthese)
+    # 2. Recherche web multi-sources (extraits bruts)
     sources, search_error = search_web_context(
         cname(country, "en"),
         indicator,
@@ -29,7 +29,7 @@ def build_report(country, indicator, lang):
     # 3. Generation des risques/opportunites par regles
     outlook = generate_outlook(stats)
 
-    # 4. Construction du contexte qualitatif = extraits bruts Tavily
+    # 4. Construction du contexte qualitatif = extraits bruts
     context_points = []
     for src in sources:
         excerpt = (src.get("excerpt") or src.get("content") or "").strip()

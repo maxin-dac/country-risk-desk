@@ -1,15 +1,15 @@
-import datetime, json, pathlib
+import datetime, io, json, pathlib
 import streamlit as st
 from src import config
-from src.csv_loader import get_stats, load_csv
-from src.graph import build_report
-from src.alerts import compute_alerts
 from src import dashboard
 from src import ratings as rat
-from src.risk_scoring import top_risk_html, country_scores, score_html
+from src.alerts import compute_alerts
 from src.compare import line_chart, render_compare
+from src.csv_loader import get_stats, load_csv
+from src.graph import build_report
 from src.i18n import INDICATORS, PILLARS, PILLAR_ORDER, cname, iname, t, RISK_ORDER
 from src.pdf_export import generate_pdf_bytes
+from src.risk_scoring import country_scores, score_html, top_risk_html
 from src.ui_render import report_html
 from src.ui_theme import CSS, masthead
 
@@ -123,7 +123,6 @@ def assemble_report(df, briefs, country, indicator, lang):
         "country": country, "indicator": indicator, "lang": lang,
         "category": stats.get("category", ""),
         "stats": stats,
-        "ratings": rat.country_rating(df, country),
         "web_context_available": qual.get("web_context_available", False),
         "confidence": qual.get("confidence", "low"),
         "context": qual.get("context", {"points": []}),
@@ -176,11 +175,6 @@ with st.sidebar:
 if mode == "brief":
     sel_key = f"{country}|{indicator}|{lang}"
     if go_live:
-        if not config.TAVILY_API_KEY:
-            st.warning(
-                "Tavily API key missing - only quantitative data available."
-                if lang == "en" else
-                "Cle API Tavily manquante - seules les donnees quantitatives sont disponibles.")
         with st.spinner(t("searching", lang)):
             st.session_state.live = {
                 "key": sel_key,
@@ -204,8 +198,6 @@ if mode == "brief":
     is_live = bool(live and live["key"] == sel_key)
     report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
     if is_live:
-        _rt = report.setdefault("ratings", rat.country_rating(df, country))
-        _rt["live"] = rat.live_ratings(cname(country, lang))
         st.caption(t("live_done", lang))
     html_all = report_html(report, lang)
     marker = '<div class="brief ctx">'
@@ -235,8 +227,7 @@ if mode == "brief":
             series.to_csv(index=False),
             f"country_risk_{country}_{indicator}.csv",
             "text/csv")
-        import io as _bio
-        _xb = _bio.BytesIO()
+        _xb = io.BytesIO()
         series.to_excel(_xb, index=False)
         st.download_button(
             "Download data (Excel)" if lang == "en" else "Telecharger les donnees (Excel)",
