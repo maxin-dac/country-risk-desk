@@ -2,10 +2,10 @@ streamlit>=1.36
 pandas>=2.2
 xhtml2pdf>=0.2.16
 requests>=2.32
-babel
-pycountry
-plotly
-python-dotenv
+babel>=2.14.0
+pycountry>=23.12.11
+plotly>=5.18.0
+python-dotenv>=1.0.1
 # Dev & CI
 pytest>=8.0
 # Data fetching

@@ -69,7 +69,6 @@ def report_html(r, lang, chart=""):
     st_ = r.get("stats") or {}
     proj_html = projections_html(
         r.get("country", ""), r.get("indicator", ""), lang,
-        latest_value=st_.get("latest_value"),
         change_12m=st_.get("change_12m_pct"),
         unit=st_.get("unit", ""))
     sections = [("sec_constat",

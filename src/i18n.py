@@ -146,7 +146,7 @@ def _country_names(lang="en"):
         for c in pycountry.countries:
             if c.alpha_2 in terr:
                 names[c.alpha_3] = terr[c.alpha_2]
-    except Exception:
+    except (ImportError, AttributeError, ValueError, OSError):
         pass
     import csv
     p = pathlib.Path(__file__).resolve().parent.parent / "data" / "countries.csv"
@@ -156,7 +156,7 @@ def _country_names(lang="en"):
                 iso = (row.get("iso3") or "").strip()
                 if iso:
                     names.setdefault(iso, (row.get("name_en") or iso).strip())
-    except Exception:
+    except (OSError, IOError, UnicodeDecodeError, ValueError):
         pass
     _COUNTRY_CACHE[lang] = names
     return names

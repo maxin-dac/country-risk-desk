@@ -59,8 +59,7 @@ def _sparkline(series, unit):
             f'stroke-width="2"/>{dots}{labels}</svg></div>')
 
 
-def projections_html(country, indicator, lang, latest_value=None,
-                     change_12m=None, unit=""):
+def projections_html(country, indicator, lang, change_12m=None, unit=""):
     series, punit = get_series(country, indicator)
     unit = unit or punit
     if not series:

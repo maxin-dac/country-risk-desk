@@ -10,7 +10,7 @@ AGENCIES = [("sp", "S&P"), ("fi", "Fitch"), ("mo", "Moody's")]
 _cache = None
 
 
-def _load():
+def load():
     global _cache
     if _cache is None:
         _cache = {}
@@ -31,10 +31,10 @@ def _load():
 
 
 def country_ratings(iso):
-    return _load().get(iso)
+    return load().get(iso)
 
 
-def country_rating(df, iso):
+def country_rating(iso):
     return country_ratings(iso) or {}
 
 

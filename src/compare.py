@@ -19,7 +19,7 @@ def _latest(df):
 def line_chart(df, indicator, countries, lang):
     fig = go.Figure()
     sub = df[(df.indicator == indicator) & (df.country.isin(countries))].copy()
-    sub["year"] = pd.to_datetime(sub["date"]).dt.year
+    sub["year"] = pd.to_datetime(sub["date"], errors="coerce").dt.year
     for i, c in enumerate(countries):
         d = sub[sub.country == c].sort_values("year")
         if d.empty:

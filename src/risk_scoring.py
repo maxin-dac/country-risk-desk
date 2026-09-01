@@ -1,7 +1,7 @@
 """Aggregate country-risk scoring (0-100, higher = riskier). Deterministic and explainable."""
 import pandas as pd
 
-from .i18n import cname
+from src.i18n import cname
 
 # indicator -> (higher_is_worse, best_value, worst_value)
 ANCHORS = {

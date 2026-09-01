@@ -35,10 +35,8 @@ def unit_suffix(indicator, lang="en"):
     return "(" + u[1 if lang == "fr" else 0] + ")"
 
 
-def apply_theme(fig, title="", unit=None, y_indicator=None, y_label=None,
-                x_label=None, x_indicator=None):
-    """Theme transparent + unite dans le titre. Les anciens kwargs
-    (y_label, x_label, x_indicator) sont acceptes mais ignores."""
+def apply_theme(fig, title="", unit=None, y_indicator=None):
+    """Theme transparent + unite dans le titre."""
     if unit is None and y_indicator:
         unit = unit_suffix(y_indicator)
     if unit:

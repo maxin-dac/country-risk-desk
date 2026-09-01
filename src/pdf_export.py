@@ -3,7 +3,7 @@ from io import BytesIO
 
 from xhtml2pdf import pisa
 
-from .i18n import COUNTRIES, INDICATORS, cname, iname, t
+from src.i18n import COUNTRIES, INDICATORS, cname, iname, t
 
 
 def _items(items, color, lang):

@@ -23,7 +23,7 @@ def _key(layer):
 
 
 def world_map_ratings(layer, lang):
-    rows = rat._load()
+    rows = rat.load()
     k = _key(layer)
     iso, z, txt = [], [], []
     for code, r in rows.items():
@@ -52,7 +52,7 @@ def world_map_ratings(layer, lang):
 
 
 def rating_distribution(layer, lang):
-    rows = rat._load()
+    rows = rat.load()
     k = _key(layer)
     ords = [_rating_ord((r.get(k + "_r") or "").strip()) for r in rows.values()
             if (r.get(k + "_r") or "").strip()]
@@ -76,7 +76,7 @@ def rating_distribution(layer, lang):
     return fig
 
 def grade_summary(df, layer):
-    rows = rat._load()
+    rows = rat.load()
     k = _key(layer)
     ig = spec = defw = unrated = 0
     for c in (df.country.unique() if df is not None else []):
