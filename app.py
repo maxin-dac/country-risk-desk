@@ -35,8 +35,15 @@ def get_scores():
 def render_dashboard(df, alerts, lang):
     st.markdown("### " + ("Tableau de bord risque global" if lang == "fr" else "Global risk dashboard"))
     scores = get_scores()
+    map_layer = st.radio(
+        "Map layer / Couche carte",
+        ["Score desk", "S&P", "Moody's", "Fitch", "Consensus"],
+        horizontal=True, key="map_layer")
     with st.expander("World risk map" if lang == "en" else "Carte mondiale du risque", expanded=True):
-        st.plotly_chart(dashboard.world_map(scores, lang), width="stretch")
+        if map_layer == "Score desk":
+            st.plotly_chart(dashboard.world_map(scores, lang), width="stretch")
+        else:
+            st.plotly_chart(dashboard.world_map_ratings(map_layer, lang), width="stretch")
     col1, col2 = st.columns([2, 1])
     with col1:
         st.plotly_chart(dashboard.score_distribution(scores, lang), width="stretch")
@@ -60,6 +67,8 @@ def render_dashboard(df, alerts, lang):
             if st.button(f"{_label} : {_n}", key=f"dash_cat_{_key}",
                          type="primary" if _active else "secondary"):
                 st.session_state["dash_filter"] = None if _active else _key
+    st.markdown("#### " + ("Desk score vs agency consensus" if lang == "en" else "Score desk vs consensus agences"))
+    st.plotly_chart(dashboard.rating_vs_score(scores, lang), width="stretch")
     _flt = st.session_state.get("dash_filter")
     if _flt:
         _cond = {c[0]: c[2] for c in cats}[_flt]

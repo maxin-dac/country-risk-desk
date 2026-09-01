@@ -98,3 +98,88 @@ def temporal_comparison(df, lang):
         variations.append((c, s1, s2, s2 - s1))
     variations.sort(key=lambda x: abs(x[3]), reverse=True)
     return variations[:20], period_scores
+
+
+# ==== Couche notations souveraines ====
+_NOTCH_ORD = {
+    "AAA": 0, "AA+": 1, "AA": 2, "AA-": 3, "A+": 4, "A": 5, "A-": 6,
+    "BBB+": 7, "BBB": 8, "BBB-": 9, "BB+": 10, "BB": 11, "BB-": 12,
+    "B+": 13, "B": 14, "B-": 15, "CCC+": 16, "CCC": 17, "CCC-": 18,
+    "CC": 19, "C": 20, "D": 21, "SD": 21, "RD": 21,
+    "Aaa": 0, "Aa1": 1, "Aa2": 2, "Aa3": 3, "A1": 4, "A2": 5, "A3": 6,
+    "Baa1": 7, "Baa2": 8, "Baa3": 9, "Ba1": 10, "Ba2": 11, "Ba3": 12,
+    "B1": 13, "B2": 14, "B3": 15, "Caa1": 16, "Caa2": 17, "Caa3": 18,
+    "Ca": 19, "C": 20,
+}
+
+
+def _rating_ord(v):
+    return _NOTCH_ORD.get((v or "").strip())
+
+
+def world_map_ratings(layer, lang):
+    import plotly.graph_objects as go
+    from src import ratings as rat
+    rows = rat._load()
+    iso, z, txt = [], [], []
+    for code, r in rows.items():
+        outl = None
+        if layer == "S&P":
+            ordv, lab = _rating_ord(r.get("sp_r")), (r.get("sp_r") or "")
+            outl = r.get("sp_o")
+        elif layer == "Moody's":
+            ordv, lab = _rating_ord(r.get("mo_r")), (r.get("mo_r") or "")
+            outl = r.get("mo_o")
+        elif layer == "Fitch":
+            ordv, lab = _rating_ord(r.get("fi_r")), (r.get("fi_r") or "")
+            outl = r.get("fi_o")
+        else:
+            vals = [_rating_ord(r.get(k)) for k in ("sp_r", "mo_r", "fi_r")]
+            vals = [v for v in vals if v is not None]
+            ordv = round(sum(vals) / len(vals)) if vals else None
+            lab = "/".join((r.get(k) or "-") for k in ("sp_r", "mo_r", "fi_r"))
+        iso.append(code)
+        z.append(ordv)
+        txt.append(f"{code} · {lab or 'Non classe'}" + (f" · {outl}" if outl else ""))
+    fig = go.Figure(go.Choropleth(
+        locations=iso, z=z, text=txt, locationmode="ISO-3",
+        colorscale="RdYlGn_r", zmin=0, zmax=21,
+        hovertemplate="%{text}<extra></extra>"))
+    fig.update_traces(colorbar=dict(
+        tickvals=[0, 3, 6, 9, 12, 15, 18, 21],
+        ticktext=["AAA", "AA-", "A-", "BBB-", "BB-", "B-", "CCC-", "D"]))
+    fig.update_layout(margin=dict(l=0, r=0, t=0, b=0), height=520,
+                      geo=dict(bgcolor="rgba(0,0,0,0)", showframe=False))
+    return fig
+
+
+def rating_vs_score(scores, lang):
+    import plotly.graph_objects as go
+    from src import ratings as rat
+    rows = rat._load()
+    x, y, tt = [], [], []
+    for code, s in scores.items():
+        r = rows.get(code)
+        if not r:
+            continue
+        vals = [_rating_ord(r.get(k)) for k in ("sp_r", "mo_r", "fi_r")]
+        vals = [v for v in vals if v is not None]
+        if not vals:
+            continue
+        x.append(sum(vals) / len(vals))
+        y.append(s["overall"])
+        tt.append(code)
+    fig = go.Figure(go.Scatter(
+        x=x, y=y, mode="markers", text=tt,
+        marker=dict(size=9, color=y, colorscale="RdYlGn_r",
+                    line=dict(width=1, color="rgba(255,255,255,.35)")),
+        hovertemplate="%{text} · consensus %{x:.1f} · score %{y:.0f}<extra></extra>"))
+    fig.update_layout(
+        title=("Score desk vs consensus des agences" if lang == "fr"
+               else "Desk score vs agency consensus"),
+        xaxis_title=("Consensus agences (0 = AAA, 21 = D)" if lang == "fr"
+                     else "Agency consensus (0 = AAA, 21 = D)"),
+        yaxis_title=("Score de risque desk" if lang == "fr" else "Desk risk score"),
+        margin=dict(l=50, r=20, t=40, b=50), height=420,
+        plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
+    return fig
