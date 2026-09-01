@@ -110,9 +110,6 @@ def report_html(r, lang, chart=""):
         change_12m=st_.get("change_12m_pct"),
         unit=st_.get("unit", ""))
 
-    _rt = r.get("ratings")
-    rating_block = (f'<div class="brief rating"><h3>08 \u00b7 {t("sec_rating", lang)}</h3>'
-                    + ratings_html(_rt, lang) + '</div>') if _rt else ""
     return f"""
 <div class="brief data"><h3>01 \u00b7 {t('sec_constat', lang)}</h3>
 <div class="bignum">{big}</div>  <div class="deltaline">{deltas}</div>{chart}</div>
@@ -121,34 +118,4 @@ def report_html(r, lang, chart=""):
 <div class="brief opp"><h3>04 \u00b7 {t('sec_opps', lang)}</h3>{opps}</div>
 <div class="brief"><h3>05 \u00b7 {t('uncertainties', lang)}</h3><ul>{uncer_html}</ul></div>
 <div class="brief proj"><h3>06 \u00b7 {t('sec_proj', lang)}</h3>{proj_html}</div>
-<div class="brief"><h3>07 \u00b7 {t('sec_sources', lang)}</h3><ul>{srcs}</ul>{lims_html}</div>
-{rating_block}"""
-
-
-def ratings_html(rt, lang):
-    if not rt:
-        return f'<div class="insufficient">{t("insufficient", lang)}</div>'
-    px = rt.get("proxy")
-    off = rt.get("official")
-    live = rt.get("live") or []
-    out = []
-    if px:
-        out.append(f'<div class="rate-line"><span class="rate-big">{px["letter"]}</span>'
-                   f'<span class="rate-eq">\u2248 {px["moody"]} (Moody\'s) \u00b7 {t("rate_proxy", lang)}</span></div>')
-        out.append(f'<div class="rate-scale"><i style="left:{px["composite"]:.0f}%"></i></div>')
-        rows = "".join(
-            f'<tr><td>{d["key"]}</td><td>{d["value"]}</td><td>{d["stress"]}/100</td></tr>'
-            for d in px["drivers"])
-        out.append(f'<table class="rate-tbl">{rows}</table>')
-    else:
-        out.append(f'<div class="insufficient">{t("insufficient", lang)}</div>')
-    if off:
-        out.append(f'<h4 style="margin-top:.8rem">{t("rate_official", lang)}</h4>'
-                   f'<div class="sr-words"><span class="chip">S&P {off.get("sp", "-")}</span>'
-                   f'<span class="chip">Moody\'s {off.get("moodys", "-")}</span>'
-                   f'<span class="chip">Fitch {off.get("fitch", "-")}</span></div>')
-    if live:
-        chips = "".join(f'<span class="chip">{l["agency"]} {l["letter"]}</span>' for l in live)
-        out.append(f'<h4 style="margin-top:.8rem">{t("rate_live", lang)}</h4>'
-                   f'<div class="sr-words">{chips}</div>')
-    return "".join(out)
+<div class="brief"><h3>07 \u00b7 {t('sec_sources', lang)}</h3><ul>{srcs}</ul>{lims_html}</div>"""

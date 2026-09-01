@@ -215,6 +215,10 @@ if mode == "brief":
         _rr["live"] = rat.live_ratings(cname(country, lang))
     if is_live:
         st.caption(t("live_done", lang))
+    _rt = report.get("ratings") or rat.country_rating(df, country)
+    if report.get("status") != "error":
+        st.markdown(rat.rating_card(_rt, lang), unsafe_allow_html=True)
+
     html_all = report_html(report, lang)
     marker = '<div class="brief ctx">'
 
@@ -230,9 +234,6 @@ if mode == "brief":
     else:
         st.markdown(html_all, unsafe_allow_html=True)
 
-    _rt = report.get("ratings")
-    if _rt and report.get("status") != "error":
-        st.markdown(rat.rating_card(_rt, lang), unsafe_allow_html=True)
 
     if report.get("status") != "error":
         try:
