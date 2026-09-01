@@ -64,13 +64,16 @@ def rating_distribution(layer, lang):
         marker_line_width=1, opacity=0.85))
     fig.update_layout(
         xaxis=dict(tickvals=[0, 3, 6, 9, 12, 15, 18, 21],
-                   ticktext=["AAA", "AA-", "A-", "BBB-", "BB-", "B-", "CCC-", "D"]),
-        title=(f"Rating distribution ({layer})" if lang == "en"
-               else f"Distribution des notations ({layer})"),
-        margin=dict(l=40, r=20, t=40, b=40), height=420,
+                   ticktext=["AAA", "AA-", "A-", "BBB-", "BB-", "B-", "CCC-", "D"],
+                   tickfont=dict(size=11, color="#9fb3c8"),
+                   showgrid=False),
+        yaxis=dict(tickfont=dict(size=10, color="#9fb3c8")),
+        title=dict(text=(f"Rating distribution ({layer})" if lang == "en"
+                         else f"Distribution des notations ({layer})"),
+                   font=dict(size=14, color="#9fb3c8")),
+        margin=dict(l=40, r=20, t=50, b=70), height=460,
         plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
     return fig
-
 
 def grade_summary(df, layer):
     rows = rat._load()

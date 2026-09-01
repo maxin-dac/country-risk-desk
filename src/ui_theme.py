@@ -15,7 +15,7 @@ def masthead(n_countries, n_indicators, today, model, lang, ticks=None):
         f'<span class="mh-chip"><i style="background:var(--accent)"></i>'
         f'{("Engine", "Moteur")[fr]} \u00b7 {model}</span>',
         f'<span class="mh-chip"><i style="background:var(--gold)"></i>'
-        f'{("Data", "Donnees")[fr]} \u00b7 WB + IMF WEO + WGI</span>',
+        f'{("Data", "Donn\u00e9es")[fr]} \u00b7 WB + IMF WEO + WGI</span>',
         f'<span class="mh-chip"><i style="background:var(--opp)"></i>'
         f'{("Ratings", "Notations")[fr]} \u00b7 8 agencies</span>',
         f'<span class="mh-chip"><i style="background:var(--opp)"></i>'

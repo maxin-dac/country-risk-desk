@@ -114,7 +114,25 @@ def render_compare(df, countries, lang):
                 st.plotly_chart(line_chart(df, ind, countries, lang),
                                 width='stretch')
     st.markdown(f"<h3>{t('compare_latest', lang)}</h3>", unsafe_allow_html=True)
-    st.dataframe(latest_pivot(df, countries, lang).style.format("{:.1f}", na_rep="-"),
+    st.dataframe(_dedup(latest_pivot(df, countries, lang)).style.format("{:.1f}", na_rep="-"),
                  width='stretch')
     st.markdown(f"<h3>{t('compare_map', lang)}</h3>", unsafe_allow_html=True)
     st.plotly_chart(positioning_scatter(df, countries, lang), width='stretch')
+
+
+def _dedup(df):
+    """Rend les noms de colonnes uniques (securite pivot)."""
+    if df.columns.is_unique:
+        return df
+    seen = {}
+    cols = []
+    for col in df.columns:
+        if col in seen:
+            seen[col] += 1
+            cols.append(f"{col} ({seen[col]})")
+        else:
+            seen[col] = 1
+            cols.append(col)
+    df = df.copy()
+    df.columns = cols
+    return df

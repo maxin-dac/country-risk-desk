@@ -23,7 +23,7 @@ def get_df():
 def render_dashboard(df, alerts, lang):
     st.markdown("### " + ("Global macroeconomic dashboard" if lang == "en"
                           else "Tableau de bord macroeconomique global"))
-    map_layer = st.radio("Map layer / Couche carte",
+    map_layer = st.radio(("Rating agency" if lang == "en" else "Agence de notation"),
                          ["S&P", "Moody's", "Fitch"],
                          horizontal=True, key="map_layer")
     with st.expander("World map of sovereign ratings" if lang == "en"
@@ -33,13 +33,13 @@ def render_dashboard(df, alerts, lang):
     with col1:
         st.plotly_chart(dashboard.rating_distribution(map_layer, lang), width="stretch")
     with col2:
-        st.markdown("#### " + ("Summary" if lang == "en" else "Synthese"))
+        st.markdown("#### " + ("Summary" if lang == "en" else "Synth\u00e8se"))
         g = dashboard.grade_summary(df, map_layer)
-        st.metric("Rated countries" if lang == "en" else "Pays notes", g["rated"])
+        st.metric("Rated countries" if lang == "en" else "Pays not\u00e9s", g["rated"])
         st.metric("Investment grade", g["ig"])
         st.metric("Speculative grade", g["spec"])
-        st.metric("Default / withdrawn" if lang == "en" else "Defaut / retire", g["def"])
-        st.metric("Not rated" if lang == "en" else "Non notes", g["unrated"])
+        st.metric("Default / withdrawn" if lang == "en" else "D\u00e9faut / retir\u00e9", g["def"])
+        st.metric("Not rated" if lang == "en" else "Non not\u00e9s", g["unrated"])
         st.caption(
             f"Notations : {map_layer}. Source : Wikipedia, instantane 2026-09-01."
             if lang == "fr" else
@@ -122,7 +122,7 @@ ticks = [f"<b>{c}</b> {cname(c, lang).upper()}"
 st.markdown(
     masthead(df.country.nunique(),
              len([i for i in RISK_ORDER if i in set(df.indicator)]),
-             today, "deterministic", lang, ticks),
+             today, ("deterministic" if lang == "en" else "d\u00e9terministe"), lang, ticks),
     unsafe_allow_html=True)
 
 alerts = compute_alerts(df)
@@ -157,14 +157,14 @@ if mode == "brief":
             st.warning(f"{t('pdf_fail', lang)}: {e}")
         series = df[(df.country == country) & (df.indicator == indicator)]
         st.download_button(
-            "Download data (CSV)" if lang == "en" else "Telecharger les donnees (CSV)",
+            "Download data (CSV)" if lang == "en" else "T\u00e9l\u00e9charger les donn\u00e9es (CSV)",
             series.to_csv(index=False),
             f"country_risk_{country}_{indicator}.csv",
             "text/csv")
         _xb = io.BytesIO()
         series.to_excel(_xb, index=False)
         st.download_button(
-            "Download data (Excel)" if lang == "en" else "Telecharger les donnees (Excel)",
+            "Download data (Excel)" if lang == "en" else "T\u00e9l\u00e9charger les donn\u00e9es (Excel)",
             _xb.getvalue(),
             f"country_risk_{country}_{indicator}.xlsx",
             "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")

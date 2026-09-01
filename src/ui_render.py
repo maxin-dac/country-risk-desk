@@ -25,9 +25,9 @@ def fmt_stats(s, lang):
         if abs(tr) < 0.02:
             lab = "stable"
         elif (tr > 0) == worse:
-            lab = "en deterioration" if lang == "fr" else "deteriorating"
+            lab = "en d\u00e9t\u00e9rioration" if lang == "fr" else "deteriorating"
         else:
-            lab = "en amelioration" if lang == "fr" else "improving"
+            lab = "en am\u00e9lioration" if lang == "fr" else "improving"
         parts.append(("Tendance 5 ans : " if lang == "fr" else "5-yr trend: ") + lab)
     return big, " \u00b7 ".join(parts)
 
@@ -60,12 +60,12 @@ def report_html(r, lang, chart=""):
         out.get("risks", []), lang, "risk",
         empty_msg=("No risk signal triggered for this indicator (thresholds not crossed)."
                    if lang == "en" else
-                   "Aucun signal de risque declenche pour cet indicateur (seuils non franchis)."))
+                   "Aucun signal de risque d\u00e9clench\u00e9 pour cet indicateur (seuils non franchis)."))
     opps = evidence_html(
         out.get("opportunities", []), lang, "opp",
         empty_msg=("No opportunity signal triggered for this indicator (thresholds not crossed)."
                    if lang == "en" else
-                   "Aucune opportunite majeure detectee pour cet indicateur (seuils non franchis)."))
+                   "Aucune opportunit\u00e9 majeure d\u00e9tect\u00e9e pour cet indicateur (seuils non franchis)."))
     st_ = r.get("stats") or {}
     proj_html = projections_html(
         r.get("country", ""), r.get("indicator", ""), lang,

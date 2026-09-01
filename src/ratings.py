@@ -45,7 +45,7 @@ def _out_cls(o):
 
 def rating_card(iso, lang):
     row = country_ratings(iso) or {}
-    un = "Unrated" if lang == "en" else "Non classe"
+    un = "Unrated" if lang == "en" else "Non class\u00e9"
     title = "Sovereign ratings" if lang == "en" else "Notation souveraine"
     tiles = []
     for key, name in AGENCIES:
@@ -64,7 +64,7 @@ def rating_card(iso, lang):
                 f'<div class="rt none">{un}</div><div class="rd">&mdash;</div></div>')
     src = ("Source: Wikipedia - List of countries by credit rating (snapshot 2026-09-01)."
            if lang == "en" else
-           "Source : Wikipedia - List of countries by credit rating (instantane 2026-09-01).")
+           "Source : Wikipedia - List of countries by credit rating (instantan\u00e9 2026-09-01).")
     return ('<div class="brief rating"><h3>' + title + '</h3>'
             '<div class="rate-grid">' + "".join(tiles) + '</div>'
             '<div class="rate-src">' + src + '</div></div>')
