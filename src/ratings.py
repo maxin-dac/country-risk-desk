@@ -138,7 +138,7 @@ def rating_card(rt, lang):
     px = rt.get("proxy")
     off = rt.get("official")
     live = rt.get("live") or []
-    out = ['<div class="brief rating"><h3>08 \u00b7 ' + _L("title", lang) + '</h3>']
+    out = ['<div class="brief rating"><h3>' + _L("title", lang) + '</h3>']
     if px:
         out.append('<div class="rate-line"><span class="rate-big">' + px["letter"] +
                    '</span><span class="rate-eq">\u2248 ' + px["moody"] +
