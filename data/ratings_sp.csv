@@ -1,0 +1,142 @@
+iso,country,rating,outlook,date
+ALB,Albania,BB,Stable,21 March 2025
+AND,Andorra,A-,Stable,10 May 2024
+AGO,Angola,B-,Stable,4 February 2022
+ARG,Argentina,B-,Stable,10 June 2026
+ARM,Armenia,BB-,Stable,25 August 2023
+ABW,Aruba,BBB+,Stable,24 March 2025
+AUS,Australia,AAA,Stable,16 February 2003
+AUT,Austria,AA+,Stable,13 January 2012
+AZE,Azerbaijan,BB+,Positive,29 January 2016
+BHS,Bahamas,BB-,Stable,26 September 2025
+BHR,Bahrain,B,Stable,21 November 2025
+BGD,Bangladesh,B+,Stable,30 July 2024
+BRB,Barbados,B+,Stable,24 October 2025
+BEL,Belgium,AA,Negative,25 April 2025
+BLZ,Belize,B-,Stable,9 November 2021
+BEN,Benin,BB-,Stable,19 April 2024
+BMU,Bermuda,A+,Stable,28 April 2015
+BOL,Bolivia,CCC+,Stable,23 March 2026
+BIH,Bosnia and Herzegovina,B+,Stable,4 August 2023
+BWA,Botswana,BBB,Negative,12 September 2025
+BRA,Brazil,BB,Stable,19 December 2023
+BGR,Bulgaria,BBB+,Stable,10 July 2025
+BFA,Burkina Faso,CCC+,Stable,26 January 2022
+CPV,Cabo Verde,B,Positive,16 August 2024
+CMR,Cameroon,B-,Stable,22 March 2024
+CAN,Canada,AAA,Stable,29 July 2002
+TCD,Chad,B-,Stable,28 October 2024
+CHL,Chile,A,Stable,24 March 2021
+CHN,China,A+,Stable,21 September 2017
+COL,Colombia,BB,Negative,26 June 2025
+COK,Cook Islands,B+,Positive,11 November 2020
+CRI,Costa Rica,BB,Stable,22 October 2025
+CIV,Cote d'Ivoire,BB,Stable,18 October 2024
+HRV,Croatia,A,Stable,14 March 2026
+CUW,Curacao,BBB-,Stable,22 February 2022
+CYP,Cyprus,A-,Positive,20 March 2026
+CZE,Czech Republic,AA-,Stable,28 March 2025
+COD,DR Congo,B-,Stable,28 January 2022
+DNK,Denmark,AAA,Stable,6 February 2026
+DOM,Dominican Republic,BB,Stable,19 December 2022
+ECU,Ecuador,B-,Stable,1 September 2020
+EGY,Egypt,B,Stable,10 October 2025
+SLV,El Salvador,B-,Stable,7 November 2023
+EST,Estonia,A+,Stable,31 May 2024
+ETH,Ethiopia,SD,,15 December 2023
+FLK,Falkland Islands,A+,Stable,22 September 2021
+FJI,Fiji,B+,Stable,22 September 2021
+FIN,Finland,AA+,Stable,10 October 2014
+FRA,France,A+,Stable,17 October 2025
+GEO,Georgia,BB,Stable,11 October 2019
+DEU,Germany,AAA,Stable,17 August 1983
+GHA,Ghana,B-,Stable,7 November 2025
+GRC,Greece,BBB,Stable,18 April 2025
+GTM,Guatemala,BB+,Stable,23 May 2025
+GGY,Guernsey,A+,Stable,13 January 2023
+GIN,Guinea,B+,Stable,18 September 2025
+HND,Honduras,BB-,Negative,19 July 2017
+HKG,Hong Kong,AA+,Stable,22 September 2017
+HUN,Hungary,BBB-,Negative,11 April 2025
+ISL,Iceland,A+,Positive,6 March 2026
+IND,India,BBB,Stable,14 August 2025
+IDN,Indonesia,BBB,Stable,31 May 2019
+IRQ,Iraq,B-,Stable,3 September 2015
+IRL,Ireland,AA+,Stable,20 March 2026
+ISR,Israel,A,Stable,1 October 2024
+ITA,Italy,BBB+,Stable,11 April 2025
+JAM,Jamaica,BB,Stable,25 September 2025
+JPN,Japan,A+,Stable,16 September 2015
+JEY,Jersey,AA-,Stable,16 January 2021
+JOR,Jordan,BB-,Stable,6 September 2024
+KAZ,Kazakhstan,BBB,Positive,21 August 2026
+KEN,Kenya,B,Stable,22 August 2025
+KWT,Kuwait,AA-,Stable,21 November 2025
+KGZ,Kyrgyzstan,B+,Stable,28 March 2025
+LAO,Laos,CCC+,Positive,23 October 2025
+LVA,Latvia,A,Stable,31 May 2024
+LBN,Lebanon,SD,,11 March 2020
+LIE,Liechtenstein,AAA,Stable,2 December 1996
+LTU,Lithuania,A,Stable,31 May 2024
+LUX,Luxembourg,AAA,Stable,28 April 1994
+MDG,Madagascar,B-,Negative,11 April 2022
+MYS,Malaysia,A-,Stable,19 September 2025
+MLT,Malta,A-,Stable,14 October 2016
+MUS,Mauritius,BBB-,Stable,21 July 2023
+MEX,Mexico,BBB,Stable,26 March 2020
+MDA,Moldova,BB-,Stable,10 October 2025
+MNG,Mongolia,BB-,Stable,30 October 2025
+MNE,Montenegro,B+,Stable,30 August 2024
+MSR,Montserrat,BBB-,Stable,2 September 2011
+MAR,Morocco,BBB-,Stable,26 September 2025
+MOZ,Mozambique,CCC+,Negative,22 November 2019
+NLD,Netherlands,AAA,Stable,20 November 2015
+NZL,New Zealand,AA+,Stable,21 February 2021
+NIC,Nicaragua,B+,Stable,23 October 2024
+NGA,Nigeria,B-,Positive,26 March 2020
+MKD,North Macedonia,BB-,Stable,24 May 2013
+NOR,Norway,AAA,Stable,9 July 1975
+OMN,Oman,BBB-,Stable,27 September 2024
+PAK,Pakistan,B-,Stable,24 July 2025
+PAN,Panama,BBB-,Stable,26 November 2024
+PNG,Papua New Guinea,B-,Stable,29 April 2020
+PRY,Paraguay,BBB-,Stable,17 December 2025
+PER,Peru,BBB-,Stable,25 April 2024
+PHL,Philippines,BBB+,Positive,30 April 2019
+POL,Poland,A-,Stable,12 October 2018
+PRT,Portugal,A+,Stable,29 August 2025
+QAT,Qatar,AA,Stable,4 November 2022
+COG,Congo,CCC+,Stable,30 October 2024
+ROU,Romania,BBB-,Negative,16 May 2014
+RWA,Rwanda,B+,Stable,9 August 2019
+SHN,Saint Helena,BBB-,Stable,31 March 2023
+SMR,San Marino,BBB+,Stable,1 August 2025
+SAU,Saudi Arabia,A+,Stable,14 March 2025
+SEN,Senegal,CCC+,,14 November 2025
+SRB,Serbia,BBB-,Stable,4 October 2024
+SGP,Singapore,AAA,Stable,6 March 1995
+SVK,Slovakia,A,Negative,24 April 2026
+SVN,Slovenia,AA,Stable,6 June 2025
+ZAF,South Africa,BB,Positive,14 November 2025
+KOR,South Korea,AA,Stable,8 August 2016
+ESP,Spain,A+,Stable,12 September 2025
+LKA,Sri Lanka,CCC+,Stable,19 September 2025
+SUR,Suriname,CCC+,Stable,6 December 2023
+SWE,Sweden,AAA,Stable,16 February 2004
+CHE,Switzerland,AAA,Stable,1 October 1988
+TWN,Taiwan,AA+,Stable,29 April 2022
+TJK,Tajikistan,B,Stable,16 August 2024
+THA,Thailand,BBB+,Stable,26 August 2004
+TGO,Togo,B+,Stable,18 April 2025
+TTO,Trinidad and Tobago,BBB-,Negative,26 March 2020
+TUR,Turkey,BB-,Stable,1 November 2024
+TCA,Turks and Caicos Islands,A-,Stable,26 February 2025
+UGA,Uganda,B-,Positive,6 October 2023
+UKR,Ukraine,CCC+,Stable,22 January 2026
+ARE,United Arab Emirates,AA,Stable,2 July 2007
+GBR,United Kingdom,AA,Stable,27 June 2016
+USA,United States,AA+,Stable,5 August 2011
+URY,Uruguay,BBB+,Stable,26 April 2023
+UZB,Uzbekistan,BB,Stable,21 November 2025
+VNM,Vietnam,BB+,Stable,26 May 2022
+ZMB,Zambia,CCC+,Stable,21 November 2025

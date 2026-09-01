@@ -8,7 +8,6 @@ from src.compare import line_chart, render_compare
 from src.csv_loader import get_stats, load_csv
 from src.i18n import INDICATORS, RISK_ORDER, cname, iname, t
 from src.pdf_export import generate_pdf_bytes
-from src.risk_scoring import country_scores, score_html, top_risk_html
 from src.ui_render import report_html
 from src.ui_theme import CSS, masthead
 
@@ -27,84 +26,35 @@ def get_briefs():
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
 
-@st.cache_data(show_spinner=False)
-def get_scores():
-    return country_scores(load_csv(config.CSV_PATH))
-
-
 def render_dashboard(df, alerts, lang):
-    st.markdown("### " + ("Tableau de bord risque global" if lang == "fr" else "Global risk dashboard"))
-    scores = get_scores()
+    st.markdown("### " + ("Global macroeconomic dashboard" if lang == "en"
+                          else "Tableau de bord macroeconomique global"))
     map_layer = st.radio(
         "Map layer / Couche carte",
-        ["Score desk", "S&P", "Moody's", "Fitch", "Consensus"],
+        ["S&P", "Moody's", "Fitch"],
         horizontal=True, key="map_layer")
-    with st.expander("World risk map" if lang == "en" else "Carte mondiale du risque", expanded=True):
-        if map_layer == "Score desk":
-            st.plotly_chart(dashboard.world_map(scores, lang), width="stretch")
-        else:
-            st.plotly_chart(dashboard.world_map_ratings(map_layer, lang), width="stretch")
-    col1, col2 = st.columns([2, 1])
-    with col1:
-        st.plotly_chart(dashboard.score_distribution(scores, lang), width="stretch")
-    with col2:
-        st.markdown("#### " + ("Summary" if lang == "en" else "Synthese"))
-        vals = [s["overall"] for s in scores.values()]
-        cats = [
-            ("low", "Low risk (< 35)" if lang == "en" else "Risque faible (< 35)",
-             lambda v: v < 35),
-            ("mod", "Moderate (35-54)" if lang == "en" else "Modere (35-54)",
-             lambda v: 35 <= v < 55),
-            ("high", "Elevated (55-69)" if lang == "en" else "Eleve (55-69)",
-             lambda v: 55 <= v < 70),
-            ("crit", "Critical (>= 70)" if lang == "en" else "Critique (>= 70)",
-             lambda v: v >= 70),
-        ]
-        st.metric("Total countries" if lang == "en" else "Total pays", len(vals))
-        for _key, _label, _cond in cats:
-            _n = sum(1 for v in vals if _cond(v))
-            _active = st.session_state.get("dash_filter") == _key
-            if st.button(f"{_label} : {_n}", key=f"dash_cat_{_key}",
-                         type="primary" if _active else "secondary"):
-                st.session_state["dash_filter"] = None if _active else _key
-    st.markdown("#### " + ("Desk score vs agency consensus" if lang == "en" else "Score desk vs consensus agences"))
-    st.plotly_chart(dashboard.rating_vs_score(scores, lang), width="stretch")
-    _flt = st.session_state.get("dash_filter")
-    if _flt:
-        _cond = {c[0]: c[2] for c in cats}[_flt]
-        _members = sorted(
-            ((iso, s["overall"]) for iso, s in scores.items() if _cond(s["overall"])),
-            key=lambda kv: kv[1], reverse=True)
-        _lab = {c[0]: c[1] for c in cats}[_flt]
-        st.markdown(f"##### {_lab} - {len(_members)}")
-        for _i in range(0, len(_members), 6):
-            _cols = st.columns(6)
-            for _j, (_iso, _sc) in enumerate(_members[_i:_i + 6]):
-                _cols[_j].button(
-                    f"{cname(_iso, lang)} \u00b7 {_sc:.0f}",
-                    key=f"dash_m_{_flt}_{_iso}",
-                    on_click=lambda i2=_iso: st.session_state.update(
-                        {"country_sel": i2, "mode_sel": "brief"}))
-    st.markdown("#### " + ("Top 10 riskiest countries" if lang == "en" else "Top 10 pays les plus risques"))
-    st.markdown(top_risk_html(scores, lang), unsafe_allow_html=True)
+    with st.expander("World map of sovereign ratings" if lang == "en"
+                     else "Carte mondiale des notations souveraines", expanded=True):
+        st.plotly_chart(dashboard.world_map_ratings(map_layer, lang), width="stretch")
     if alerts:
-        st.markdown('<div class="alerts-red-flag"></div>', unsafe_allow_html=True)
-        st.markdown("#### " + t("alerts_title", lang))
+        st.markdown("#### " + ("Reference threshold monitor" if lang == "en"
+                               else "Suivi des seuils de reference"))
+        st.caption(
+            "Seuils indicatifs appliques aux donnees officielles : le franchissement d'un seuil est une lecture factuelle, non un jugement sur le pays."
+            if lang == "fr" else
+            "Indicative thresholds applied to official data: crossing a threshold is a factual reading, not a judgement on the country.")
         for a in alerts:
             label = a["fr"] if lang == "fr" else a["en"]
-            st.markdown(f"**{label}** \u00b7 {len(a['hits'])}")
-            top = a["hits"][:8]
-            cols = st.columns(len(top))
-            for i, (iso, v) in enumerate(top):
-                cols[i].button(
-                    f"{cname(iso, lang)} \u00b7 {v:.0f}",
-                    key=f"al_{a['id']}_{iso}",
-                    on_click=lambda i2=iso: st.session_state.update(
-                        {"country_sel": i2, "mode_sel": "brief"}))
-            if len(a["hits"]) > 8:
-                rest = " \u00b7 ".join(
-                    f"{cname(i2, lang)} ({v2:.0f})" for i2, v2 in a["hits"][8:])
-                st.caption(rest)
+            with st.expander(f"{label} \u00b7 {len(a['hits'])}"):
+                for _i in range(0, len(a["hits"]), 4):
+                    _cols = st.columns(4)
+                    for _j, (_iso, _v) in enumerate(a["hits"][_i:_i + 4]):
+                        _cols[_j].button(
+                            f"{cname(_iso, lang)} \u00b7 {_v:.0f}",
+                            key=f"al_{a['id']}_{_iso}",
+                            on_click=lambda i2=_iso: st.session_state.update(
+                                {"country_sel": i2, "mode_sel": "brief"}))
+
 
 
 def assemble_report(df, briefs, country, indicator, lang):
@@ -137,7 +87,8 @@ with st.sidebar:
     st.markdown(f"### {t('params', 'en')} / {t('params', 'fr')}")
     lang = st.selectbox(
         "Langue / Language", ["fr", "en"],
-        format_func=lambda x: "\U0001f1eb\U0001f1f7 Fran\u00e7ais" if x == "fr" else "\U0001f1ec\U0001f1e7 English")
+        format_func=lambda x: "\U0001f1eb\U0001f1f7 Fran\u00e7ais" if x == "fr"
+        else "\U0001f1ec\U0001f1e7 English")
     mode = st.radio(
         t("mode", lang), ["brief", "compare", "dashboard"],
         horizontal=True,
@@ -175,20 +126,22 @@ st.markdown(
 alerts = compute_alerts(df)
 
 if mode == "brief":
-    st.markdown(score_html(country, get_scores(), lang), unsafe_allow_html=True)
     st.markdown(rat.rating_card(country, lang), unsafe_allow_html=True)
     report = assemble_report(df, briefs, country, indicator, lang)
     html_all = report_html(report, lang)
-    marker = '<div class="brief ctx">'
-    if report.get("status") != "error" and marker in html_all:
-        head, _, rest = html_all.partition(marker)
-        with st.container():
-            st.markdown('<div class="fused-flag"></div>', unsafe_allow_html=True)
-            st.markdown(head, unsafe_allow_html=True)
-            fig = line_chart(df, indicator, [country], lang)
-            fig.update_layout(title=dict(text=f"{iname(indicator, lang)} - {cname(country, lang)}"))
-            st.plotly_chart(fig, width="stretch")
-        st.markdown(marker + rest, unsafe_allow_html=True)
+    if report.get("status") != "error":
+        i0 = html_all.find('<div class="brief')
+        i1 = html_all.find('<div class="brief', i0 + 1) if i0 != -1 else -1
+        if i1 != -1:
+            with st.container():
+                st.markdown('<div class="fused-flag"></div>', unsafe_allow_html=True)
+                st.markdown(html_all[:i1], unsafe_allow_html=True)
+                fig = line_chart(df, indicator, [country], lang)
+                fig.update_layout(title=dict(text=f"{iname(indicator, lang)} - {cname(country, lang)}"))
+                st.plotly_chart(fig, width="stretch")
+            st.markdown(html_all[i1:], unsafe_allow_html=True)
+        else:
+            st.markdown(html_all, unsafe_allow_html=True)
     else:
         st.markdown(html_all, unsafe_allow_html=True)
     if report.get("status") != "error":

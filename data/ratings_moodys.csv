@@ -1,0 +1,137 @@
+iso,country,rating,outlook,date
+AGO,Angola,B3,Positive,24 October 2023
+ALB,Albania,B1,Stable,19 October 2024
+ARG,Argentina,B3,Positive,21 July 2026
+ARM,Armenia,Ba3,Stable,22 June 2023
+AUS,Australia,Aaa,Stable,28 June 2022
+AUT,Austria,Aa1,Stable,24 February 2023
+AZE,Azerbaijan,Ba1,Stable,5 August 2022
+BHS,Bahamas,B1,Stable,6 October 2022
+BHR,Bahrain,B2,Stable,22 April 2022
+BGD,Bangladesh,B1,Stable,30 May 2023
+BRB,Barbados,B3,Stable,3 August 2023
+BLR,Belarus,C,Stable,2 June 2023
+BEL,Belgium,Aa3,Stable,28 April 2023
+BLZ,Belize,Caa2,Stable,16 November 2022
+BEN,Benin,B1,Stable,18 September 2023
+BMU,Bermuda,A2,Stable,21 June 2022
+BOL,Bolivia,Caa1,Negative,30 June 2023
+BIH,Bosnia and Herzegovina,B3,Stable,22 July 2022
+BWA,Botswana,A3,Stable,27 October 2023
+BRA,Brazil,Ba1,Positive,7 October 2024
+BGR,Bulgaria,Baa1,Stable,3 February 2023
+KHM,Cambodia,B2,Negative,15 November 2022
+CMR,Cameroon,Caa1,Stable,27 July 2023
+CAN,Canada,Aaa,Stable,3 November 2022
+CYM,Cayman Islands,Aa3,Stable,8 June 2023
+CHL,Chile,A2,Stable,15 September 2022
+CHN,China,A1,Stable,27 April 2026
+COL,Colombia,Baa2,Stable,8 June 2023
+COG,Congo,Caa2,Stable,3 November 2023
+CRI,Costa Rica,Ba3,Positive,18 September 2024
+CIV,Cote d'Ivoire,Ba3,Positive,27 June 2022
+HRV,Croatia,A3,Stable,7 November 2024
+CUB,Cuba,Ca,Ratings withdrawn,18 November 2021
+CYP,Cyprus,A3,Stable,22 November 2024
+CZE,Czech Republic,Aa3,Stable,24 November 2023
+DNK,Denmark,Aaa,Stable,11 February 2022
+DOM,Dominican Republic,Ba3,Positive,10 August 2023
+COD,DR Congo,B3,Stable,11 November 2022
+ECU,Ecuador,Caa3,Stable,27 February 2023
+EGY,Egypt,Caa1,Negative,18 January 2024
+SLV,El Salvador,B3,Stable,26 November 2024
+EST,Estonia,A1,Stable,29 April 2022
+SWZ,Eswatini,B3,Positive,1 December 2023
+ETH,Ethiopia,Caa3,Stable,15 September 2023
+FJI,Fiji,B1,Stable,7 October 2022
+FIN,Finland,Aa1,Stable,29 July 2022
+FRA,France,Aa3,Stable,14 December 2024
+GAB,Gabon,Caa1,Negative,12 September 2023
+GEO,Georgia,Ba2,Negative,28 April 2022
+DEU,Germany,Aaa,Stable,10 February 2023
+GHA,Ghana,Caa3,Stable,9 June 2023
+GRC,Greece,Baa3,Stable,14 March 2025
+GTM,Guatemala,Ba1,Stable,15 June 2022
+HND,Honduras,B1,Stable,3 October 2023
+HKG,Hong Kong,Aa3,Negative,6 December 2023
+HUN,Hungary,Ba1,Negative,30 December 2025
+ISL,Iceland,A1,Stable,19 September 2024
+IND,India,Baa3,Stable,18 August 2023
+IDN,Indonesia,Baa2,Negative,5 February 2026
+IRQ,Iraq,Caa1,Stable,24 November 2023
+IRL,Ireland,Aa3,Stable,21 April 2023
+IMN,Isle of Man,Aa3,Stable,27 October 2023
+ISR,Israel,Baa1,Negative,27 September 2024
+ITA,Italy,Baa2,Stable,21 November 2025
+JAM,Jamaica,B1,Positive,18 October 2023
+JPN,Japan,A1,Stable,8 November 2023
+JOR,Jordan,B1,Positive,17 November 2022
+KAZ,Kazakhstan,Baa1,Positive,9 September 2024
+KEN,Kenya,B3,Negative,28 July 2023
+KWT,Kuwait,A1,Stable,26 May 2022
+KGZ,Kyrgyzstan,B3,Negative,17 October 2022
+LVA,Latvia,A3,Stable,29 April 2022
+LBN,Lebanon,C,Stable,13 December 2023
+LTU,Lithuania,A2,Stable,29 April 2022
+LUX,Luxembourg,Aaa,Stable,17 March 2023
+MAC,Macao,Aa3,Negative,6 December 2022
+MYS,Malaysia,A3,Stable,14 April 2023
+MDV,Maldives,Caa2,Stable,11 September 2024
+MLI,Mali,Caa2,Stable,9 September 2022
+MLT,Malta,A2,Stable,18 November 2022
+MUS,Mauritius,Baa3,Stable,28 July 2022
+MEX,Mexico,Baa2,Stable,8 July 2022
+MDA,Moldova,B2,Stable,3 April 2026
+MNG,Mongolia,B3,Stable,14 February 2023
+MNE,Montenegro,Ba3,Stable,27 September 2024
+MAR,Morocco,Ba1,Positive,6 March 2026
+MOZ,Mozambique,Caa2,Stable,22 September 2023
+NAM,Namibia,B1,Stable,5 April 2022
+NLD,Netherlands,Aaa,Stable,27 January 2023
+NZL,New Zealand,Aaa,Stable,21 April 2022
+NIC,Nicaragua,B3,Stable,30 March 2022
+NGA,Nigeria,Caa1,Positive,8 December 2023
+NOR,Norway,Aaa,Stable,6 May 2022
+OMN,Oman,Baa3,Stable,7 December 2023
+PAK,Pakistan,Caa1,Positive,13 August 2025
+PAN,Panama,Baa3,Stable,31 October 2023
+PNG,Papua New Guinea,B2,Stable,10 November 2022
+PRY,Paraguay,Baa3,Stable,26 July 2024
+PER,Peru,Baa1,Negative,31 January 2023
+PHL,Philippines,Baa2,Stable,15 September 2022
+POL,Poland,A2,Stable,29 April 2022
+PRT,Portugal,A3,Stable,17 November 2023
+QAT,Qatar,Aa3,Positive,2 November 2022
+ROU,Romania,Baa3,Stable,3 November 2023
+RUS,Russia,Ca,Ratings withdrawn,6 March 2022
+RWA,Rwanda,B2,Stable,8 September 2023
+VCT,Saint Vincent and the Grenadines,B3,Stable,1 March 2022
+SAU,Saudi Arabia,Aa3,Stable,22 November 2024
+SEN,Senegal,Ba3,Stable,18 March 2022
+SRB,Serbia,Ba2,Stable,8 September 2023
+SGP,Singapore,Aaa,Stable,17 May 2022
+SVK,Slovakia,A3,Stable,13 December 2024
+SVN,Slovenia,A2,Stable,27 February 2026
+ZAF,South Africa,Ba2,Stable,1 April 2022
+KOR,South Korea,Aa2,Stable,21 April 2022
+ESP,Spain,A3,Positive,27 September 2025
+LKA,Sri Lanka,Caa1,Positive,23 December 2024
+SUR,Suriname,Caa3,Stable,17 February 2023
+SWE,Sweden,Aaa,Stable,25 March 2022
+CHE,Switzerland,Aaa,Stable,17 February 2023
+TWN,Taiwan,Aa3,Stable,22 September 2022
+TJK,Tajikistan,B3,Stable,12 October 2023
+THA,Thailand,Baa1,Stable,7 April 2022
+TTO,Trinidad and Tobago,Ba2,Positive,10 July 2023
+TUN,Tunisia,Caa1,Stable,28 February 2025
+TUR,Turkey,B1,Positive,19 July 2024
+UGA,Uganda,B2,Negative,18 November 2022
+UKR,Ukraine,Ca,Stable,10 February 2023
+ARE,United Arab Emirates,Aa2,Stable,21 March 2023
+GBR,United Kingdom,Aa3,Stable,20 October 2023
+USA,United States,Aa1,Stable,16 May 2025
+URY,Uruguay,Baa1,Stable,15 March 2024
+UZB,Uzbekistan,Ba3,Stable,20 January 2023
+VEN,Venezuela,C,Ratings withdrawn,9 March 2018
+VNM,Vietnam,Ba2,Stable,6 September 2022
+ZMB,Zambia,Caa3,Stable,21 October 2022
