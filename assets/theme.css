@@ -612,3 +612,20 @@ background:linear-gradient(90deg,var(--opp) 0%,var(--warn) 55%,var(--risk) 100%)
 .rate-tbl{width:100%;border-collapse:collapse;font-size:.8rem;font-family:var(--mono)}
 .rate-tbl td{padding:.28rem .4rem;border-bottom:1px solid var(--line2);color:var(--text2)}
 .rate-tbl td:last-child{text-align:right}
+
+/* ---- Notation souveraine : grille d'agences ---- */
+.brief.rating{border-left:4px solid var(--gold2);box-shadow:0 4px 20px rgba(232,192,120,.15)}
+.rate-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
+@media (max-width:1100px){.rate-grid{grid-template-columns:repeat(2,1fr)}}
+.rate-tile{border:1px solid var(--line);border-radius:12px;padding:.6rem .7rem;background:rgba(15,22,38,.4)}
+.rate-tile .ag{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
+.rate-tile .rt{font-family:var(--mono);font-size:1.35rem;font-weight:700;color:var(--gold2);line-height:1.1}
+.rate-tile .rt.none{font-size:.8rem;color:var(--muted2);font-weight:500}
+.rate-tile.no{opacity:.55;border-style:dashed}
+.ro{display:inline-block;margin-top:.25rem;font-family:var(--mono);font-size:.62rem;padding:.08rem .5rem;border-radius:999px;border:1px solid var(--line)}
+.out-stable{color:var(--text2)}
+.out-positive{color:var(--opp2);border-color:rgba(46,204,113,.4)}
+.out-negative{color:var(--risk2);border-color:rgba(231,76,60,.4)}
+.out-withdrawn,.out-none{color:var(--muted2)}
+.rd{margin-top:.3rem;font-family:var(--mono);font-size:.62rem;color:var(--muted2)}
+.rate-src{margin-top:.7rem;font-size:.72rem;color:var(--muted2)}

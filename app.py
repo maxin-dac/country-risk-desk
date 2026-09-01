@@ -1,16 +1,15 @@
 import datetime, json, pathlib
 import streamlit as st
-
 from src import config
 from src.csv_loader import get_stats, load_csv
 from src.graph import build_report
 from src.alerts import compute_alerts
 from src import dashboard
+from src import ratings as rat
 from src.risk_scoring import top_risk_html, country_scores, score_html
 from src.compare import line_chart, render_compare
 from src.i18n import INDICATORS, PILLARS, PILLAR_ORDER, cname, iname, t, RISK_ORDER
 from src.pdf_export import generate_pdf_bytes
-from src import ratings as rat
 from src.ui_render import report_html
 from src.ui_theme import CSS, masthead
 
@@ -37,10 +36,8 @@ def get_scores():
 def render_dashboard(df, alerts, lang):
     st.markdown("### " + ("Tableau de bord risque global" if lang == "fr" else "Global risk dashboard"))
     scores = get_scores()
-
     with st.expander("World risk map" if lang == "en" else "Carte mondiale du risque", expanded=True):
         st.plotly_chart(dashboard.world_map(scores, lang), width="stretch")
-
     col1, col2 = st.columns([2, 1])
     with col1:
         st.plotly_chart(dashboard.score_distribution(scores, lang), width="stretch")
@@ -64,7 +61,6 @@ def render_dashboard(df, alerts, lang):
             if st.button(f"{_label} : {_n}", key=f"dash_cat_{_key}",
                          type="primary" if _active else "secondary"):
                 st.session_state["dash_filter"] = None if _active else _key
-
     _flt = st.session_state.get("dash_filter")
     if _flt:
         _cond = {c[0]: c[2] for c in cats}[_flt]
@@ -81,10 +77,8 @@ def render_dashboard(df, alerts, lang):
                     key=f"dash_m_{_flt}_{_iso}",
                     on_click=lambda i2=_iso: st.session_state.update(
                         {"country_sel": i2, "mode_sel": "brief"}))
-
     st.markdown("#### " + ("Top 10 riskiest countries" if lang == "en" else "Top 10 pays les plus risques"))
     st.markdown(top_risk_html(scores, lang), unsafe_allow_html=True)
-
     if alerts:
         st.markdown('<div class="alerts-red-flag"></div>', unsafe_allow_html=True)
         st.markdown("#### " + t("alerts_title", lang))
@@ -150,7 +144,6 @@ with st.sidebar:
     lang = st.selectbox(
         "Langue / Language", ["fr", "en"],
         format_func=lambda x: "\U0001f1eb\U0001f1f7 Fran\u00e7ais" if x == "fr" else "\U0001f1ec\U0001f1e7 English")
-
     mode = st.radio(
         t("mode", lang), ["brief", "compare", "dashboard"],
         horizontal=True,
@@ -159,7 +152,6 @@ with st.sidebar:
                                else t("mode_compare", lang)),
         key="mode_sel")
     st.markdown("---")
-
     if mode == "brief":
         country = st.selectbox(
             t("country", lang), sorted(df.country.unique()),
@@ -207,21 +199,16 @@ alerts = compute_alerts(df)
 
 if mode == "brief":
     st.markdown(score_html(country, get_scores(), lang), unsafe_allow_html=True)
+    st.markdown(rat.rating_card(country, lang), unsafe_allow_html=True)
     live = st.session_state.get("live")
     is_live = bool(live and live["key"] == sel_key)
     report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
-    _rr = report.setdefault("ratings", rat.country_rating(df, country))
     if is_live:
-        _rr["live"] = rat.live_ratings(cname(country, lang))
-    if is_live:
+        _rt = report.setdefault("ratings", rat.country_rating(df, country))
+        _rt["live"] = rat.live_ratings(cname(country, lang))
         st.caption(t("live_done", lang))
-    _rt = report.get("ratings") or rat.country_rating(df, country)
-    if report.get("status") != "error":
-        st.markdown(rat.rating_card(_rt, lang), unsafe_allow_html=True)
-
     html_all = report_html(report, lang)
     marker = '<div class="brief ctx">'
-
     if report.get("status") != "error" and marker in html_all:
         head, _, rest = html_all.partition(marker)
         with st.container():
@@ -233,8 +220,6 @@ if mode == "brief":
         st.markdown(marker + rest, unsafe_allow_html=True)
     else:
         st.markdown(html_all, unsafe_allow_html=True)
-
-
     if report.get("status") != "error":
         try:
             st.download_button(
@@ -244,14 +229,12 @@ if mode == "brief":
                 "application/pdf")
         except Exception as e:
             st.warning(f"{t('pdf_fail', lang)}: {e}")
-
         series = df[(df.country == country) & (df.indicator == indicator)]
         st.download_button(
             "Download data (CSV)" if lang == "en" else "Telecharger les donnees (CSV)",
             series.to_csv(index=False),
             f"country_risk_{country}_{indicator}.csv",
             "text/csv")
-
         import io as _bio
         _xb = _bio.BytesIO()
         series.to_excel(_xb, index=False)
