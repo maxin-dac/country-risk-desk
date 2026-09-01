@@ -181,7 +181,7 @@ Rendu HTML des briefs (sections 01 a 07) et formatage des statistiques.
 
 ### `evidence_html(items, lang, kind='', empty_msg=None)`
 
-Affiche les extraits bruts Tavily ou les regles declenchees.
+_Pas de docstring._
 
 ### `fmt_stats(s, lang)`
 
