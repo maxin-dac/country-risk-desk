@@ -230,6 +230,10 @@ if mode == "brief":
     else:
         st.markdown(html_all, unsafe_allow_html=True)
 
+    _rt = report.get("ratings")
+    if _rt and report.get("status") != "error":
+        st.markdown(rat.rating_card(_rt, lang), unsafe_allow_html=True)
+
     if report.get("status") != "error":
         try:
             st.download_button(
