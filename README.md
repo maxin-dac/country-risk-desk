@@ -37,9 +37,9 @@ Country Risk Desk provides a structured analysis brief for each of the 226 cover
 
 ## Three reading modes
 
-- **Country brief** ------ the structured report described above; exportable to PDF (French or English), CSV, and Excel formats.
-- **Compare** ------ up to 12 countries simultaneously: indicator charts with units, table of the latest published values, growth × inflation positioning.
-- **Dashboard** ------ map of sovereign ratings by agency, rating distribution, summary of covered countries (rated countries, investment grade, speculative grade, default or withdrawn, unrated countries), and threshold monitoring; each entry links to the relevant country brief.
+- **Country brief** - the structured report described above; exportable to PDF (French or English), CSV, and Excel formats.
+- **Compare** - up to 12 countries simultaneously: indicator charts with units, table of the latest published values, growth × inflation positioning.
+- **Dashboard** - map of sovereign ratings by agency, rating distribution, summary of covered countries (rated countries, investment grade, speculative grade, default or withdrawn, unrated countries), and threshold monitoring; each entry links to the relevant country brief.
 
 ## Data sources
 
