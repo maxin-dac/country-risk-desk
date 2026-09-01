@@ -6,8 +6,7 @@ from src import ratings as rat
 from src.alerts import compute_alerts
 from src.compare import line_chart, render_compare
 from src.csv_loader import get_stats, load_csv
-from src.graph import build_report
-from src.i18n import INDICATORS, PILLARS, PILLAR_ORDER, cname, iname, t, RISK_ORDER
+from src.i18n import INDICATORS, RISK_ORDER, cname, iname, t
 from src.pdf_export import generate_pdf_bytes
 from src.risk_scoring import country_scores, score_html, top_risk_html
 from src.ui_render import report_html
@@ -99,19 +98,6 @@ def render_dashboard(df, alerts, lang):
                 st.caption(rest)
 
 
-@st.cache_data(show_spinner=False)
-def _live(country, indicator, lang, _day):
-    return build_report(country, indicator, lang)
-
-
-def live_report(country, indicator, lang):
-    day = datetime.date.today().isoformat()
-    r = _live(country, indicator, lang, day)
-    if r.get("status") != "done":
-        _live.clear()
-    return r
-
-
 def assemble_report(df, briefs, country, indicator, lang):
     stats = get_stats(df, country, indicator)
     if not stats.get("available"):
@@ -123,9 +109,9 @@ def assemble_report(df, briefs, country, indicator, lang):
         "country": country, "indicator": indicator, "lang": lang,
         "category": stats.get("category", ""),
         "stats": stats,
-        "web_context_available": qual.get("web_context_available", False),
+        "web_context_available": False,
         "confidence": qual.get("confidence", "low"),
-        "context": qual.get("context", {"points": []}),
+        "context": {"points": []},
         "outlook": qual.get("outlook", {"risks": [], "opportunities": [], "uncertainties": []}),
         "limitations": qual.get("limitations", []),
         "sources": qual.get("sources", []),
@@ -161,7 +147,6 @@ with st.sidebar:
         indicator = st.selectbox(
             t("indicator", lang), ordered,
             format_func=lambda x: iname(x, lang) if x in INDICATORS else x)
-        go_live = st.button(t("live", lang))
     elif mode == "compare":
         allc = sorted(df.country.unique())
         countries = st.multiselect(
@@ -169,17 +154,6 @@ with st.sidebar:
             default=[c for c in ("MAR", "USA", "DEU") if c in allc],
             max_selections=12,
             format_func=lambda c: f"{cname(c, lang)} ({c})")
-    else:
-        go_live = False
-
-if mode == "brief":
-    sel_key = f"{country}|{indicator}|{lang}"
-    if go_live:
-        with st.spinner(t("searching", lang)):
-            st.session_state.live = {
-                "key": sel_key,
-                "report": live_report(country, indicator, lang)}
-        st.rerun()
 
 ticks = [f"<b>{c}</b> {cname(c, lang).upper()}"
          for c in sorted(df.country.unique())[:16]]
@@ -194,11 +168,7 @@ alerts = compute_alerts(df)
 if mode == "brief":
     st.markdown(score_html(country, get_scores(), lang), unsafe_allow_html=True)
     st.markdown(rat.rating_card(country, lang), unsafe_allow_html=True)
-    live = st.session_state.get("live")
-    is_live = bool(live and live["key"] == sel_key)
-    report = live["report"] if is_live else assemble_report(df, briefs, country, indicator, lang)
-    if is_live:
-        st.caption(t("live_done", lang))
+    report = assemble_report(df, briefs, country, indicator, lang)
     html_all = report_html(report, lang)
     marker = '<div class="brief ctx">'
     if report.get("status") != "error" and marker in html_all:

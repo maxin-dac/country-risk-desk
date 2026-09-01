@@ -1,5 +1,5 @@
 """Theme global - Country Risk Desk.
-Le CSS vit dans assets/theme.css (source unique).
+Le CSS vit dans assets/theme.css (source unique, editable sans Python).
 Ce module le charge, l'enveloppe dans <style> et expose masthead().
 """
 import pathlib as _pl
@@ -11,25 +11,25 @@ CSS = "<style>\n" + _raw + "\n</style>"
 
 def masthead(n_countries, n_indicators, today, model, lang, ticks=None):
     fr = lang == "fr"
-    chips = "".join([
+    chips = " ".join([
         f'<span class="mh-chip"><i style="background:var(--accent)"></i>'
-        f'{"Moteur" if fr else "Engine"} \u00b7 {model}</span>',
-        f'<span class="mh-chip"><i style="background:var(--accent2)"></i>'
-        f'{"Recherche" if fr else "Search"} \u00b7 Tavily / DuckDuckGo</span>',
+        f'{("Engine", "Moteur")[fr]} \u00b7 {model}</span>',
         f'<span class="mh-chip"><i style="background:var(--gold)"></i>'
-        f'{"Donnees" if fr else "Data"} \u00b7 WB + IMF WEO + WGI</span>',
+        f'{("Data", "Donnees")[fr]} \u00b7 WB + IMF WEO + WGI</span>',
         f'<span class="mh-chip"><i style="background:var(--opp)"></i>'
-        f'{"Demo 100 % gratuite" if fr else "100% free demo"}</span>',
+        f'{("Ratings", "Notations")[fr]} \u00b7 8 agencies</span>',
+        f'<span class="mh-chip"><i style="background:var(--opp)"></i>'
+        f'{("100% free demo", "Demo 100 % gratuite")[fr]}</span>',
     ])
     _tk = " \u00b7 ".join(ticks) if ticks else ""
     tickline = (f'<div class="mh-ticks"><div class="mh-ticks-track">{_tk}'
                 f'&nbsp;&nbsp;\u00b7&nbsp;&nbsp;{_tk}</div></div>'
                 if ticks else "")
-    cov = (("COUVERTURE" if fr else "COVERAGE") + " : "
-           + str(n_countries) + (" PAYS" if fr else " COUNTRIES")
+    cov = (("COVERAGE" if not fr else "COUVERTURE") + " : "
+           + str(n_countries) + (" COUNTRIES" if not fr else " PAYS")
            + " \u00b7 " + str(n_indicators)
-           + (" INDICATEURS" if fr else " INDICATORS")
-           + (" \u00b7 SOURCES OFFICIELLES" if fr else " \u00b7 OFFICIAL SOURCES"))
+           + (" INDICATORS" if not fr else " INDICATEURS")
+           + (" \u00b7 OFFICIAL SOURCES" if not fr else " \u00b7 SOURCES OFFICIELLES"))
     return f"""
 <div class="masthead">
   <div class="mh-eyebrow">MACRO-INTELLIGENCE // {today}</div>

@@ -1,17 +1,12 @@
 streamlit>=1.36
 pandas>=2.2
-langgraph>=0.2
-openai>=1.35
 xhtml2pdf>=0.2.16
 requests>=2.32
 babel
 pycountry
 plotly
-litellm
 python-dotenv
-
 # Dev & CI
 pytest>=8.0
-
 # Data fetching
 openpyxl>=3.1.0

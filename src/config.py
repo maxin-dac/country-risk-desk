@@ -31,13 +31,8 @@ LLM_MODEL = env("LLM_MODEL", "qwen/qwen-2.5-7b-instruct:free")
 LLM_TEMPERATURE = float(env("LLM_TEMPERATURE", "0.2"))
 LLM_MAX_TOKENS = int(env("LLM_MAX_TOKENS", "1600"))
 LLM_TIMEOUT = int(env("LLM_TIMEOUT", "60"))
-TAVILY_API_KEY = env("TAVILY_API_KEY", "")
 CSV_PATH = env("CSV_PATH", "data/macro_indicators.csv")
 BRIEFS_PATH = env("BRIEFS_PATH", "data/briefs.json")
-ALLOWED_SEARCH_DOMAINS = [d.strip() for d in env(
-    "ALLOWED_SEARCH_DOMAINS",
-    "reuters.com,bloomberg.com,imf.org,worldbank.org,ft.com").split(",") if d.strip()]
-MAX_SEARCH_RESULTS = int(env("MAX_SEARCH_RESULTS", "3"))
 
 INDICATOR_HINTS = {
     "Political stability": "political stability violence security risk",
@@ -60,4 +55,3 @@ INDICATOR_HINTS = {
 }
 
 import os as _os
-SEARCH_PROVIDER = _os.getenv("SEARCH_PROVIDER", "tavily")
