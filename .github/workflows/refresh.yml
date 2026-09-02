@@ -1,25 +1,36 @@
-name: refresh-library
+name: refresh-data
+
 on:
   schedule:
-    - cron: "0 6 1 * *"
+    - cron: "0 6 7 * *"   # le 7 de chaque mois, 06:00 UTC
   workflow_dispatch: {}
+
+permissions:
+  contents: write
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install -r requirements.txt
-      - run: python scripts/fetch_worldbank.py
-      - run: python scripts/generate_library.py
-        env:
-          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
-          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ secrets.LLM_MODEL }}
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: refresh data and brief library"
+          cache: pip
+
+      - name: Dependances
+        run: pip install -r requirements.txt
+
+      - name: Rafraichissement des donnees
+        run: python scripts/refresh_data.py
+
+      - name: Commit & push si changements
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && { echo "Aucun changement de donnees"; exit 0; }
+          git commit -m "data: refresh mensuel automatique (WB/WGI/IMF) [skip ci]"
+          git push
