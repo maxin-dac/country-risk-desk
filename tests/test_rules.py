@@ -38,7 +38,7 @@ def test_generate_outlook_risk_and_opp():
     assert any(r["rule_id"] == "inflation_high" for r in out["risks"])
     out2 = al.generate_outlook({"available": True, "indicator": "Inflation",
                                 "latest_value": 2.0})
-    assert any(r["rule_id"] == "low_inflation" for r in out2["opportunities"])
+    assert any(r["rule_id"] == "inflation_low" for r in out2["opportunities"])
 
 
 # ---------- Scoring ----------
