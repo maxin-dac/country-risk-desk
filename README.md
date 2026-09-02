@@ -32,6 +32,7 @@ Country Risk Desk provides a structured analysis brief for each of the 217 cover
 | - | Sovereign rating | Long-term foreign currency ratings from S&P Global Ratings, Moody's, and Fitch Ratings, along with their outlook and decision date; "Unrated" is shown when the country is not rated |
 | 01 | Key figures | Latest published value and reference date, 3- and 12-month changes, position relative to the regional median, 5-year trend, and progression chart |
 | - | Scenario analysis | Interactive slider: tests a hypothetical indicator value and shows which threshold-based risks/opportunities would trigger or clear (deterministic comparison, not a forecast) |
+| - | Scenario analysis | Interactive slider: tests a hypothetical indicator value and shows which threshold-based risks/opportunities would trigger or clear (deterministic comparison, not a forecast) |
 | 02 | 12-month risks | Signals triggered by explicit thresholds (e.g., inflation > 10%, reserves < 3 months of imports, debt > 90% of GDP) |
 | 03 | 12-month opportunities | Symmetrical signals triggered when trends cross thresholds in a favorable direction |
 | 04 | IMF Projections | Trajectory from WEO outlooks (April 2026) for 2027-2031, compared against the 12-month trend |
@@ -47,6 +48,7 @@ Country Risk Desk provides a structured analysis brief for each of the 217 cover
 | Source | Content |
 | --- | --- |
 | World Bank - WDI | Macroeconomic and social series, 2000-2024 |
+| World Bank - WGI 2024 | Political stability, control of corruption, government effectiveness, rule of law, regulatory quality (2000-2024) |
 | IMF - WEO (April 2026) | Fiscal balance, general government gross debt: historical and 2027-2031 projections |
 | Rating agencies | Ratings, outlooks, and dates sourced from Wikipedia via [List of countries by credit rating](https://en.wikipedia.org/wiki/List_of_countries_by_credit_rating) (accessed on September 1, 2026), verified against agency publications |
 
@@ -56,6 +58,13 @@ Country Risk Desk provides a structured analysis brief for each of the 217 cover
 - No missing value is estimated or filled: missing data is displayed as missing; an unrated country is shown as unrated.
 - Every signal mentions the specific rule and threshold that triggered it; every brief cites its sources and dates.
 - Agency ratings are reproduced without interpretation or aggregation.
+
+## Assumed limitations
+
+- Macroeconomic series come from annual or irregular vintages: cross-country comparisons use each country's latest available value, not a synchronized date.
+- Sovereign ratings correspond to a snapshot (September 1, 2026); only a manual revision of the CSV files updates them.
+- WGI indicators are statistical estimates with confidence intervals; the application displays the point estimate.
+- The application produces no aggregate score and no ranking: it is an analysis aid, not a credit opinion.
 
 ## Assumed limitations
 
@@ -91,13 +100,14 @@ country-risk-desk/
 │   ├── projections.py   # IMF trajectory + trend comparison
 │   ├── dashboard.py     # Ratings map, distribution, summary
 │   ├── compare.py       # Comparison charts and tables
+│   ├── analytics.py     # scenario analysis + cross-agency reading
 │   ├── ui_render.py     # HTML rendering for briefs
 │   ├── ui_theme.py      # Design system + masthead
 │   ├── plot_theme.py    # Plotly theme and units (single source of truth)
 │   ├── i18n.py          # EN/FR labels, indicator order, units
 │   └── pdf_export.py    # Bilingual PDF export
-├── scripts/             # fetch (BM, WGI, FMI), panneaux de données & générateur de doc
-├── data/                # CSV/XLSX versionnés, notations, countries.csv, panneaux intermédiaires
+├── scripts/             # fetch (WB, WGI, IMF), data panels & doc generator
+├── data/                # versioned CSV/XLSX, ratings, countries.csv, intermediate panels
 ├── docs/                # ARCHITECTURE.md + API.md
 ├── tests/               # pytest (threshold rules)
 └── assets/              # theme.css + screenshots
@@ -114,6 +124,7 @@ python scripts/fetch_risk_extras.py
 
 Sovereign ratings are updated by reviewing the `data/ratings_sp.csv`, `data/ratings_moodys.csv`, and `data/ratings_fitch.csv` files, using a new snapshot of the Wikipedia page and agency publications.
 The Rule of law and Regulatory quality indicators are extracted from the official `WGI.xlsx` extract (sheets `rl`/`rq`).
+The Rule of law and Regulatory quality indicators are extracted from the official `WGI.xlsx` extract (sheets `rl`/`rq`).
 
 ## Documentation and tests
 
@@ -123,7 +134,7 @@ The Rule of law and Regulatory quality indicators are extracted from the officia
 
 ## Author
 
-Maxime NDACLEU - Data Analyst & Business Intelligence Analyst
+Maxime NDACLEU - BI & Data Analyst
 
 <p align="left">
 <a href="https://github.com/maxin-dac"><img src="https://img.shields.io/badge/GitHub-maxin--dac-181717?style=flat&logo=github&logoColor=white" alt="GitHub" /></a>

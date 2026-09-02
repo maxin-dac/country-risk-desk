@@ -47,6 +47,7 @@ Country Risk Desk permet d'établir, pour chacune des 217 économies couvertes, 
 | Source | Contenu |
 | --- | --- |
 | Banque mondiale - WDI | Séries macroéconomiques et sociales, 2000-2024 |
+| Banque mondiale - WGI 2024 | Stabilité politique, maîtrise de la corruption, efficacité du gouvernement, état de droit, qualité réglementaire (2000-2024) |
 | FMI - WEO (avril 2026) | Solde budgétaire, dette brute générale : historique et projections 2027-2031 |
 | Agences de notation | Notations, perspectives et dates reprises sur Wikipédia depuis [List of countries by credit rating](https://en.wikipedia.org/wiki/List_of_countries_by_credit_rating) (consulté le 1er septembre 2026), contrôlées sur les publications des agences |
 
@@ -91,6 +92,7 @@ country-risk-desk/
 │   ├── projections.py   # trajectoire FMI + comparaison à la tendance
 │   ├── dashboard.py     # carte des notations, distribution, synthèse
 │   ├── compare.py       # courbes et tableaux de comparaison
+│   ├── analytics.py     # analyse de scénarios + lecture croisée des agences
 │   ├── ui_render.py     # rendu HTML des briefs
 │   ├── ui_theme.py      # charte graphique + masthead
 │   ├── plot_theme.py    # thème Plotly et unités (référence unique)
@@ -123,7 +125,7 @@ Les indicateurs État de droit et Qualité réglementaire sont extraits de l'ext
 
 ## Auteur
 
-Maxime NDACLEU - Data Analyst & Business Intelligence Analyst
+Maxime NDACLEU - BI & Data Analyst
 
 <p align="left">
 <a href="https://github.com/maxin-dac"><img src="https://img.shields.io/badge/GitHub-maxin--dac-181717?style=flat&logo=github&logoColor=white" alt="GitHub" /></a>
