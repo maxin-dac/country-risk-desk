@@ -1,6 +1,6 @@
 """Rendu HTML des briefs (sections 01 a 04) et formatage des statistiques."""
 import html
-from src.i18n import t
+from src.i18n import HIGHER_IS_WORSE,  t
 from src.projections import projections_html
 
 
@@ -20,7 +20,6 @@ def fmt_stats(s, lang):
                      f"{t('pos_' + s['regional_position'], lang)}")
     tr = s.get("trend_5y_norm")
     if tr is not None:
-        from src.risk_scoring import HIGHER_IS_WORSE
         worse = s.get("indicator") in HIGHER_IS_WORSE
         if abs(tr) < 0.02:
             lab = "stable"

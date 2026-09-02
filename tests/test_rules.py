@@ -2,7 +2,6 @@
 import pandas as pd
 
 from src import alerts as al
-from src import risk_scoring as rs
 
 
 def _df(rows):
@@ -42,40 +41,6 @@ def test_generate_outlook_risk_and_opp():
 
 
 # ---------- Scoring ----------
-def test_subscore_bounds():
-    assert rs._subscore("Inflation", 2.0) == 0.0
-    assert rs._subscore("Inflation", 20.0) == 100.0
-    assert abs(rs._subscore("Inflation", 11.0) - 50.0) < 1.0
-
-
-def test_subscore_inverse_direction():
-    assert rs._subscore("Reserves", 8.0) == 0.0
-    assert rs._subscore("Reserves", 1.5) == 100.0
-
-
-def test_subscore_clamps():
-    assert rs._subscore("Inflation", 500.0) == 100.0
-    assert rs._subscore("Reserves", -5.0) == 100.0
-
-
-def test_label_for():
-    assert rs.label_for(10)[0] == "Low"
-    assert rs.label_for(45)[0] == "Moderate"
-    assert rs.label_for(60)[0] == "Elevated"
-    assert rs.label_for(90)[0] == "Critical"
-
-
-def test_country_scores_ordering():
-    df = _df([
-        ("RIS", "Inflation", "2024-12-31", 25.0),
-        ("RIS", "Reserves", "2024-12-31", 1.0),
-        ("SAF", "Inflation", "2024-12-31", 2.0),
-        ("SAF", "Reserves", "2024-12-31", 10.0),
-    ])
-    sc = rs.country_scores(df)
-    assert sc["RIS"]["overall"] > sc["SAF"]["overall"]
-
-
 # ---------- Tendance ----------
 def test_trend_5y_in_stats():
     from src.csv_loader import get_stats

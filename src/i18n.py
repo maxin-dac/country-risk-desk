@@ -349,3 +349,13 @@ if "Debt service" not in INDICATORS:
     INDICATORS["Debt service"] = {"en": _en, "fr": _fr} if isinstance(_sample, dict) else (_en, _fr)
 if "Debt service" not in RISK_ORDER:
     RISK_ORDER = list(RISK_ORDER) + ["Debt service"]
+
+# Sens des indicateurs (hausse = deterioration)
+HIGHER_IS_WORSE = {k for k, (hiw, _, _) in ANCHORS.items() if hiw}
+
+PILLAR_WEIGHTS = {
+    "External & sovereign": 0.30,
+    "Macroeconomic": 0.30,
+    "Political & institutional": 0.20,
+    "Social & structural": 0.20,
+}
