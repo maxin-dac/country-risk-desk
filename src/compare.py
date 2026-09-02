@@ -48,6 +48,7 @@ def latest_pivot(df, countries, lang):
         base = iname(ind, lang)
         u = unit_suffix(ind, lang)
         return base if u and base.endswith(u) else base + u
+    piv = piv[[c for c in piv.columns if c in RISK_ORDER]]
     piv = piv.rename(columns={c: _lab(c) for c in piv.columns})
     return piv[[c for c in [_lab(i) for i in IND_ORDER
                             if i in df.indicator.unique()]

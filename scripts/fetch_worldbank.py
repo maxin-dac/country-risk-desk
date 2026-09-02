@@ -1,29 +1,41 @@
-import pathlib, time
+import pathlib
+import time
 import pandas as pd
 import requests
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://api.worldbank.org/v2"
+
+# Indicateurs strictement focalisés sur le Country Risk
 INDS = {
-        "Political stability": ("GOV_WGI_PV.EST", "index"),
-        "Control of corruption": ("GOV_WGI_CC.EST", "index"),
+    # --- 1. Macroéconomie & Soutenabilité Budgétaire ---
+    "GDP growth": ("NY.GDP.MKTP.KD.ZG", "%"),
+    "GDP per capita": ("NY.GDP.PCAP.CD", "USD"),
+    "Inflation": ("FP.CPI.TOTL.ZG", "%"),
+    "Interest rate": ("FR.INR.LEND", "%"),
+    "Gov debt": ("GC.DOD.TOTL.GD.ZS", "% GDP"),
+    "Tax revenue": ("GC.TAX.TOTL.GD.ZS", "% GDP"),
+    
+    # --- 2. Liquidité Externe & Balance des Paiements ---
+    "Current account": ("BN.CAB.XOKA.GD.ZS", "% GDP"),
+    "External debt": ("DT.DOD.DECT.GN.ZS", "% GNI"),
+    "Debt service": ("DT.TDS.DECT.EX.ZS", "% Exports"), 
+    "Reserves": ("FI.RES.TOTL.MO", "months"),
+    "FDI net inflows": ("BX.KLT.DINV.WD.GD.ZS", "% GDP"),
+    
+    # --- 3. Structure Économique & Résilience ---
+    "Agriculture value added": ("NV.AGR.TOTL.ZS", "% GDP"),
+    
+    # --- 4. Secteur Financier & Social ---
+    "Domestic credit": ("FS.AST.PRVT.GD.ZS", "% GDP"),
+    "Unemployment": ("SL.UEM.TOTL.ZS", "%")
+}
 
-        "CO2 per capita": ("EN.GHG.ALL.PC.CE.AR5", "t GHG/cap"),
-        "Electricity access": ("EG.ELC.ACCS.ZS", "%"),
-        "Women in workforce": ("SL.TLF.CACT.FE.ZS", "%"),
-
-        "External debt": ("DT.DOD.DECT.GN.ZS", "% GNI"),
-"GDP growth": ("NY.GDP.MKTP.KD.ZG", "%"),
-        "Inflation": ("FP.CPI.TOTL.ZG", "%"),
-        "Interest rate": ("FR.INR.LEND", "%"),
-        "Current account": ("BN.CAB.XOKA.GD.ZS", "% GDP"),
-        "Gov debt": ("GC.DOD.TOTL.GD.ZS", "% GDP"),
-        "Reserves": ("FI.RES.TOTL.MO", "months"),
-        "Unemployment": ("SL.UEM.TOTL.ZS", "%")}
 HEADERS = {"User-Agent": "country-risk-desk/1.2 (portfolio project)"}
 DATA = ROOT / "data"
 OUT = DATA / "macro_indicators.csv"
 CATALOG = DATA / "countries.csv"
+
 session = requests.Session()
 
 def get_json(url, params):
@@ -46,15 +58,20 @@ def fetch_country_list():
     p = get_json(f"{BASE}/country", {"format": "json", "per_page": 400})
     if not isinstance(p, list) or len(p) < 2 or not isinstance(p[1], list):
         raise RuntimeError(f"Unexpected country list payload: {str(p)[:200]}")
+    
     out = []
     for c in p[1]:
         iso3 = c.get("iso3Code") or c.get("id")
         region = c.get("region") or {}
         if region.get("id") == "NA" or not iso3:
             continue
-        out.append({"iso3": iso3,
-                    "name_en": (c.get("name") or "").strip(),
-                    "region_en": (region.get("value") or "").strip()})
+        out.append({
+            "iso3": iso3,
+            "iso2": c.get("iso2Code", ""), 
+            "name_en": (c.get("name") or "").strip(),
+            "region_en": (region.get("value") or "").strip()
+        })
+    
     if len(out) < 150:
         raise RuntimeError(f"Country list incomplete ({len(out)}) - meta: {str(p[0])[:200]}")
     return out
@@ -71,24 +88,35 @@ def load_country_list():
                 df = pd.read_csv(CATALOG, dtype=str).fillna("")
             except Exception:
                 df = pd.DataFrame()
+            
             if not df.empty:
-                countries = [{"iso3": r.iso3, "name_en": r.name_en, "region_en": r.region_en}
-                             for r in df.itertuples()]
+                countries = [
+                    {
+                        "iso3": r.iso3, 
+                        "iso2": getattr(r, 'iso2', ''), 
+                        "name_en": r.name_en, 
+                        "region_en": r.region_en
+                    }
+                    for r in df.itertuples()
+                ]
                 if countries:
                     print(f"[OK] using committed catalog ({len(countries)} countries)")
                     return countries
-    raise RuntimeError("No country list available")
+        raise RuntimeError("No country list available")
 
 def fetch_all_series(wb_ind):
     rows, page = [], 1
     while True:
-        p = get_json(f"{BASE}/country/all/indicator/{wb_ind}",
-                     {"format": "json", "date": "2000:2024", "per_page": 1000, "page": page})
+        p = get_json(
+            f"{BASE}/country/all/indicator/{wb_ind}",
+            {"format": "json", "date": "2000:2024", "per_page": 1000, "page": page}
+        )
         if not isinstance(p, list) or len(p) < 2:
             raise RuntimeError(f"Unexpected payload: {str(p)[:120]}")
+        
         rows.extend(p[1] or [])
         pages = int((p[0] or {}).get("pages", 1))
-        print(f"    page {page}/{pages}")
+        
         if page >= pages:
             break
         page += 1
@@ -98,46 +126,99 @@ def fetch_all_series(wb_ind):
 def main():
     DATA.mkdir(exist_ok=True)
     countries = load_country_list()
-    valid = {c["iso3"]: c for c in countries}
+    
+    # Mappings de secours pour le matching
+    valid_iso3 = {c["iso3"]: c for c in countries}
+    valid_iso2 = {c["iso2"]: c["iso3"] for c in countries if c.get("iso2")}
+    valid_name = {c["name_en"].lower(): c["iso3"] for c in countries}
+    
     print(f"{len(countries)} countries in catalog")
 
-    existing = pd.read_csv(OUT) if OUT.exists() else pd.DataFrame()
-    done = set(zip(existing.country, existing.indicator)) if not existing.empty else set()
-    rows = existing.to_dict("records") if not existing.empty else []
-    print(f"[INFO] {len(done)} country/indicator pairs already in CSV")
-    fails = []
+    if OUT.exists():
+        existing = pd.read_csv(OUT, dtype=str, low_memory=False)
+        # Nettoyage des espaces invisibles de l'ancienne version
+        existing['indicator'] = existing['indicator'].str.strip()
+        existing['country'] = existing['country'].str.strip()
+        
+        done = set(zip(existing.country, existing.indicator))
+        rows = existing.to_dict("records")
+    else:
+        existing = pd.DataFrame()
+        done = set()
+        rows = []
+
+    print(f"[INFO] {len(done)} country/indicator pairs already in CSV\n")
+    
+    warns = []
     for label, (wb_ind, unit) in INDS.items():
-        missing = [iso for iso in valid if (iso, label) not in done]
+        missing = [iso for iso in valid_iso3 if (iso, label) not in done]
         if not missing:
             print(f"[SKIP] {label}: all countries already fetched")
             continue
+        
+        print(f"[INFO] {label}: {len(missing)} countries still missing (e.g., {missing[:3]})")
+        
         try:
             series = fetch_all_series(wb_ind)
         except Exception as e:
-            fails.append(label)
+            warns.append(f"{label} (API Error: {e})")
             print(f"[FAIL] {label}: {e}")
             continue
+        
         per = {}
         for it in series:
-            iso = it.get("countryiso3code") or (it.get("country") or {}).get("id")
-            if iso in missing and it.get("value") is not None:
-                per.setdefault(iso, []).append(it)
+            country_obj = it.get("country") or {}
+            iso2 = country_obj.get("id")
+            
+            # 1. Priorité absolue : Mapping ISO2 -> ISO3
+            iso3 = valid_iso2.get(iso2)
+            
+            # 2. Fallback sur le champ ISO3 natif (en filtrant les agrégats)
+            if not iso3:
+                api_iso3 = it.get("countryiso3code")
+                if api_iso3 and api_iso3 in valid_iso3:
+                    iso3 = api_iso3
+            
+            # 3. Fallback sur le nom du pays
+            if not iso3:
+                name = country_obj.get("value", "").lower().strip()
+                iso3 = valid_name.get(name)
+            
+            if iso3 and iso3 in missing and it.get("value") is not None:
+                per.setdefault(iso3, []).append(it)
+        
         matched = sum(len(v) for v in per.values())
-        print(f"[INFO] {label}: {len(series)} items fetched, {matched} kept")
+        print(f"       -> {len(series)} items fetched, {matched} new rows kept")
+        
         if matched == 0:
-            fails.append(label)
-            print(f"[FAIL] {label}: zero rows matched - discarded, will retry next run")
+            warns.append(f"{label} (No data in API for the {len(missing)} missing countries)")
+            print(f"[WARN] No new data found for these specific countries (API has no data for them).")
             continue
+        
         for iso in missing:
             for it in per.get(iso, []):
-                rows.append({"country": iso, "indicator": label, "category": "Economic",
-                             "date": f"{it['date']}-12-31", "value": it["value"], "unit": unit,
-                             "region": valid[iso]["region_en"], "source": "World Bank"})
+                rows.append({
+                    "country": iso,
+                    "indicator": label,
+                    "category": "Economic",
+                    "date": f"{it['date']}-12-31",
+                    "value": it["value"],
+                    "unit": unit,
+                    "region": valid_iso3[iso]["region_en"],
+                    "source": "World Bank"
+                })
         time.sleep(2)
+        
     df = pd.DataFrame(rows).drop_duplicates()
     df.to_csv(OUT, index=False)
-    print(f"\n{len(df)} rows in {OUT}")
-    print(f"{len(fails)} failures - re-run to retry" if fails else "All series complete")
+    
+    print(f"\n✅ {len(df)} total rows saved in {OUT}")
+    if warns:
+        print(f"⚠️ {len(warns)} warnings (mostly missing data in WB API for specific territories/countries):")
+        for w in warns:
+            print(f"   - {w}")
+    else:
+        print("✅ All series complete and up to date!")
 
 if __name__ == "__main__":
     main()

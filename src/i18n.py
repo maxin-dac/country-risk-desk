@@ -162,7 +162,6 @@ def _country_names(lang="en"):
     return names
 
 INDICATORS.update({
-    "Debt service": ("External debt service (% of exports)", "Service de la dette externe (% exports)"),
     "Rule of law": ("Rule of law", "Etat de droit"),
     "Regulatory quality": ("Regulatory quality", "Qualite reglementaire"),
     "Gini": ("Income inequality (Gini)", "Inegalites de revenu (Gini)"),
@@ -178,7 +177,6 @@ PILLARS = {
     "Reserves": ("External & sovereign", "Externe & souverain"),
     "Current account": ("External & sovereign", "Externe & souverain"),
     "External debt": ("External & sovereign", "Externe & souverain"),
-    "Debt service": ("External & sovereign", "Externe & souverain"),
     "GDP growth": ("Macroeconomic", "Macro-economique"),
     "Inflation": ("Macroeconomic", "Macro-economique"),
     "Gov debt": ("Macroeconomic", "Macro-economique"),
@@ -208,8 +206,7 @@ STR.update({
 })
 
 RISK_ORDER = [
-    "Reserves", "Current account", "External debt", "Debt service",
-    "GDP growth", "Inflation", "Fiscal balance", "Gen gov debt", "Unemployment",
+    "Reserves", "Current account", "External debt",     "GDP growth", "Inflation", "Fiscal balance", "Gen gov debt", "Unemployment",
     "Political stability", "Control of corruption", "Rule of law", "Regulatory quality",
     "Gini", "Youth unemployment", "Dependency ratio", "Commodity dependence",
 ]
@@ -241,7 +238,6 @@ INDICATORS.update({
     "Reserves": ("Reserves", "Reserves totales"),
     "Current account": ("Current account", "Solde du compte courant"),
     "External debt": ("External debt", "Dette externe (% RNB)"),
-    "Debt service": ("Debt service", "Service de la dette externe (% exports)"),
     "GDP growth": ("GDP growth", "Croissance du PIB"),
     "Inflation": ("Inflation", "Inflation"),
     "Fiscal balance": ("Fiscal balance", "Solde budgetaire (% PIB)"),
@@ -327,3 +323,19 @@ INDICATORS['Voice & accountability'] = ('Voice & accountability', 'Expression et
 # -- Libelles dette : deux series distinctes, libelles distincts --
 INDICATORS['Gen gov debt'] = ('General government debt (% GDP)', 'Dette du gouvernement général (% PIB)')
 INDICATORS['Gov debt'] = ('Government debt (% GDP)', 'Dette publique (% PIB)')
+
+
+
+
+# -- REINTRO-WGI2 : Rule of law + Regulatory quality reactivés depuis WGI.xlsx --
+_IND_WGI2 = {
+    "Rule of law": ("Rule of law (index)", "\u00c9tat de droit (indice)"),
+    "Regulatory quality": ("Regulatory quality (index)", "Qualit\u00e9 r\u00e9glementaire (indice)"),
+}
+_sample = next(iter(INDICATORS.values()))
+for _k, (_en, _fr) in _IND_WGI2.items():
+    if _k not in INDICATORS:
+        INDICATORS[_k] = {"en": _en, "fr": _fr} if isinstance(_sample, dict) else (_en, _fr)
+_RISK_WGI2 = [k for k in ("Rule of law", "Regulatory quality") if k not in RISK_ORDER]
+if _RISK_WGI2:
+    RISK_ORDER = list(RISK_ORDER) + _RISK_WGI2

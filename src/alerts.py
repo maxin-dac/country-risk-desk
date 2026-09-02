@@ -13,8 +13,6 @@ RULES = [
          en="Reserves below 3 months of imports", fr="Réserves sous 3 mois d'importations"),
     dict(id="debt_high", indicator="Gen gov debt", cond=lambda v: v > 90, desc=True,
          en="Government debt above 90 % of GDP", fr="Dette publique au-dessus de 90 % du PIB"),
-    dict(id="debt_service_high", indicator="Debt service", cond=lambda v: v > 25, desc=True,
-         en="Debt service above 25 % of exports", fr="Service de la dette au-dessus de 25 % des exports"),
     dict(id="ca_deficit", indicator="Current account", cond=lambda v: v < -5, desc=False,
          en="Current account deficit beyond -5 % of GDP", fr="Déficit courant au-delà de -5 % du PIB"),
     dict(id="unemp_high", indicator="Unemployment", cond=lambda v: v > 15, desc=True,
@@ -148,4 +146,29 @@ if "RULES" in globals():
     RULES += [
         dict(id="fiscal_deficit", indicator="Fiscal balance", cond=lambda v: v < -5, desc=False,
              en="Fiscal deficit beyond -5 % of GDP", fr="D\u00e9ficit budg\u00e9taire au-del\u00e0 de -5 % du PIB"),
+    ]
+
+# -- REINTRO-RULES-WGI2 : regles pour Rule of law + Regulatory quality --
+if "RULES" in globals() and not any(r["id"] == "rule_of_law_low" for r in RULES):
+    RULES += [
+        dict(id="rule_of_law_low", indicator="Rule of law", cond=lambda v: v < -0.5, desc=False,
+             en="Rule of law below -0.5", fr="État de droit inférieur à -0,5"),
+        dict(id="regulatory_quality_low", indicator="Regulatory quality", cond=lambda v: v < -0.5, desc=False,
+             en="Regulatory quality below -0.5", fr="Qualité réglementaire inférieure à -0,5"),
+    ]
+    RISK_RULES += [
+        dict(id="rule_of_law_low", indicator="Rule of law", cond=lambda v: v < -0.5,
+             en=lambda v: f"Rule of law at {v:.2f}: weak legal enforcement.",
+             fr=lambda v: f"État de droit à {v:.2f} : application du droit fragile."),
+        dict(id="regulatory_quality_low", indicator="Regulatory quality", cond=lambda v: v < -0.5,
+             en=lambda v: f"Regulatory quality at {v:.2f}: weak policy framework.",
+             fr=lambda v: f"Qualité réglementaire à {v:.2f} : cadre politique fragile."),
+    ]
+    OPP_RULES += [
+        dict(id="rule_of_law_high", indicator="Rule of law", cond=lambda v: v > 0.5,
+             en=lambda v: f"Strong rule of law at {v:.2f}: solid legal enforcement.",
+             fr=lambda v: f"État de droit solide à {v:.2f} : application du droit fiable."),
+        dict(id="regulatory_quality_high", indicator="Regulatory quality", cond=lambda v: v > 0.5,
+             en=lambda v: f"Strong regulatory quality at {v:.2f}: sound policy framework.",
+             fr=lambda v: f"Qualité réglementaire solide à {v:.2f} : cadre politique sain."),
     ]
