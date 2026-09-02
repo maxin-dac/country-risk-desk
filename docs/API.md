@@ -36,7 +36,7 @@ Moteur d'alertes : règles de seuils déterministes + génération de risques/op
 
 ### `compute_alerts(df)`
 
-Bandeau d'alertes global - version defensive (ne plante jamais).
+Bandeau d'alertes global — version défensive (ne plante jamais).
 
 ### `generate_outlook(stats)`
 
@@ -45,24 +45,7 @@ _Pas de docstring._
 
 ## `src.risk_scoring`
 
-Aggregate country-risk scoring (0-100, higher = riskier). Deterministic and explainable.
-
-### `country_scores(df)`
-
-Return {country: {overall, pillars, details, coverage}}.
-
-### `label_for(score)`
-
-_Pas de docstring._
-
-### `score_html(country, scores, lang)`
-
-_Pas de docstring._
-
-### `top_risk_html(scores, lang, n=10)`
-
-Classement des n pays les plus risques (score decroissant).
-
+_Import impossible: No module named 'src.risk_scoring'_
 
 ## `src.projections`
 
@@ -118,7 +101,7 @@ _Pas de docstring._
 
 Mode comparaison - graphiques Plotly et tableau croise.
 
-### `latest_pivot(df, countries, lang)`
+### `latest_pivot(df, countries, lang, latest=None)`
 
 _Pas de docstring._
 
@@ -126,7 +109,7 @@ _Pas de docstring._
 
 _Pas de docstring._
 
-### `positioning_scatter(df, countries, lang)`
+### `positioning_scatter(df, countries, lang, latest=None)`
 
 _Pas de docstring._
 
