@@ -351,11 +351,18 @@ if "Debt service" not in RISK_ORDER:
     RISK_ORDER = list(RISK_ORDER) + ["Debt service"]
 
 # Sens des indicateurs (hausse = deterioration)
-HIGHER_IS_WORSE = {'Unemployment', 'Dependency ratio', 'CO2 per capita', 'Debt service', 'Gov debt', 'Youth unemployment', 'Gini', 'Gen gov debt', 'Commodity dependence', 'External debt', 'Inflation'}
+HIGHER_IS_WORSE = {'Inflation', 'Gini', 'Gov debt', 'External debt', 'Dependency ratio', 'Debt service', 'Youth unemployment', 'Gen gov debt', 'Commodity dependence', 'Unemployment'}
 
-PILLAR_WEIGHTS = {
-    "External & sovereign": 0.30,
-    "Macroeconomic": 0.30,
-    "Political & institutional": 0.20,
-    "Social & structural": 0.20,
-}
+
+# -- REINTRO-FINAL : perimetre 17 indicateurs --
+_sample = next(iter(INDICATORS.values()))
+for _k, (_en, _fr) in {
+    "Debt service": ("Debt service (% of exports of goods & services)", "Service de la dette (% des exports de biens & services)"),
+    "Rule of law": ("Rule of law (index)", "\u00c9tat de droit (indice)"),
+    "Regulatory quality": ("Regulatory quality (index)", "Qualit\u00e9 r\u00e9glementaire (indice)"),
+}.items():
+    if _k not in INDICATORS:
+        INDICATORS[_k] = {"en": _en, "fr": _fr} if isinstance(_sample, dict) else (_en, _fr)
+_R3 = [k for k in ("Debt service", "Rule of law", "Regulatory quality") if k not in RISK_ORDER]
+if _R3:
+    RISK_ORDER = list(RISK_ORDER) + _R3

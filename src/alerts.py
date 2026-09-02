@@ -49,10 +49,11 @@ RULES = [
 # ---------------------------------------------------------------------------
 # Règles de risques pour generate_outlook (libellés avec valeur courante)
 # ---------------------------------------------------------------------------
+_EXPLICIT_IDS = {"rule_of_law_low", "regulatory_quality_low", "fiscal_deficit", "debt_service_high"}
 RISK_RULES = [
     dict(r, en=(lambda v, _r=r: f"{_r['en']} (value: {v:.1f})"),
             fr=(lambda v, _r=r: f"{_r['fr']} (valeur : {v:.1f})"))
-    for r in RULES
+    for r in RULES if r["id"] not in _EXPLICIT_IDS
 ] + [
     dict(id="rule_of_law_low", indicator="Rule of law", cond=lambda v: v < -0.5,
          en=lambda v: f"Rule of law at {v:.2f}: weak legal enforcement.",

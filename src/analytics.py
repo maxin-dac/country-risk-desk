@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Analyses avancees, deterministes et factuelles :
 1. Analyse de scenarios  : what-if sur les regles de seuils (brief pays).
-2. Analyse temporelle    : franchissements de seuils sur 12 mois (vue globale).
 3. Lecture croisee       : divergences S&P / Moody's / Fitch (vue globale).
 Aucun score agregé : uniquement des regles documentees et des donnees publiees.
 """
@@ -77,72 +76,6 @@ def render_scenario(df, country, indicator, stats, lang):
                 st.markdown(f"- {_txt(i)}")
             if not gone_o:
                 st.caption("Aucune." if lang == "fr" else "None.")
-
-
-# ------------------------------------------------------------ 2. Temporel
-def render_temporal(df, lang):
-    from .alerts import RULES
-    d = df.assign(date=pd.to_datetime(df["date"], errors="coerce")).dropna(subset=["date"])
-    if d.empty:
-        st.caption("Historique insuffisant." if lang == "fr" else "Insufficient history.")
-        return
-    latest = d.sort_values("date").groupby(["country", "indicator"], as_index=False).tail(1)
-    cut = d["date"].max() - pd.DateOffset(months=12)
-    past = d[d["date"] <= cut].sort_values("date").groupby(["country", "indicator"], as_index=False).tail(1)
-
-    entered, exited = [], []
-    for rule in RULES:
-        ind = rule["indicator"]
-        l = pd.to_numeric(latest[latest.indicator == ind].set_index("country")["value"], errors="coerce")
-        p = pd.to_numeric(past[past.indicator == ind].set_index("country")["value"], errors="coerce")
-        common = l.dropna().index.intersection(p.dropna().index)
-        if len(common) == 0:
-            continue
-        now_t = l[common].map(rule["cond"]).fillna(False).astype(bool)
-        then_t = p[common].map(rule["cond"]).fillna(False).astype(bool)
-        for iso in now_t.index[(now_t & ~then_t).values]:
-            entered.append((iso, rule, float(p[iso]), float(l[iso])))
-        for iso in now_t.index[(~now_t & then_t).values]:
-            exited.append((iso, rule, float(p[iso]), float(l[iso])))
-
-    # Diversite : 3 signaux max par regle, pour ne pas etre domine par 1-2 regles
-    def _diverse(items):
-        by_rule = {}
-        for it in items:
-            by_rule.setdefault(it[1]["id"], []).append(it)
-        out = []
-        for its in by_rule.values():
-            its.sort(key=lambda x: abs(x[3] - x[2]), reverse=True)
-            out.extend(its[:3])
-        out.sort(key=lambda x: abs(x[3] - x[2]), reverse=True)
-        return out
-
-    entered, exited = _diverse(entered), _diverse(exited)
-    n_in = len({it[1]["id"] for it in entered})
-    n_out = len({it[1]["id"] for it in exited})
-
-    st.caption(
-        f"Comparaison de l'etat des seuils a 12 mois d'intervalle \u00b7 "
-        f"{n_in} regle(s) avec signaux apparus \u00b7 {n_out} avec signaux leves (3 max par regle)."
-        if lang == "fr" else
-        f"Threshold states compared at a 12-month interval \u00b7 "
-        f"{n_in} rule(s) with emerged signals \u00b7 {n_out} with cleared signals (3 max per rule).")
-    c1, c2 = st.columns(2)
-    with c1:
-        st.markdown("**Signaux apparus (12 mois)**" if lang == "fr" else "**Signals emerged (12 m)**")
-        if not entered:
-            st.caption("Aucun." if lang == "fr" else "None.")
-        for iso, rule, pv, nv in entered[:15]:
-            lab = rule["fr"] if lang == "fr" else rule["en"]
-            st.markdown(f"- {cname(iso, lang)} \u00b7 {lab} \u00b7 {pv:.1f} \u2192 {nv:.1f}")
-    with c2:
-        st.markdown("**Signaux leves (12 mois)**" if lang == "fr" else "**Signals cleared (12 m)**")
-        if not exited:
-            st.caption("Aucun." if lang == "fr" else "None.")
-        for iso, rule, pv, nv in exited[:15]:
-            lab = rule["fr"] if lang == "fr" else rule["en"]
-            st.markdown(f"- {cname(iso, lang)} \u00b7 {lab} \u00b7 {pv:.1f} \u2192 {nv:.1f}")
-
 
 
 # ------------------------------------------------------------ 3. Lecture croisee

@@ -31,8 +31,7 @@ Country Risk Desk provides a structured analysis brief for each of the 217 cover
 | --- | --- | --- |
 | - | Sovereign rating | Long-term foreign currency ratings from S&P Global Ratings, Moody's, and Fitch Ratings, along with their outlook and decision date; "Unrated" is shown when the country is not rated |
 | 01 | Key figures | Latest published value and reference date, 3- and 12-month changes, position relative to the regional median, 5-year trend, and progression chart |
-| - | Scenario analysis | Interactive slider: tests a hypothetical indicator value and shows which threshold-based risks/opportunities would trigger or clear (deterministic comparison, not a forecast) |
-| - | Scenario analysis | Interactive slider: tests a hypothetical indicator value and shows which threshold-based risks/opportunities would trigger or clear (deterministic comparison, not a forecast) |
+| -|Scenario analysis|Interactive slider: tests a hypothetical indicator value and shows which threshold-based risks/opportunities would trigger or clear (deterministic comparison, not a forecast)|
 | 02 | 12-month risks | Signals triggered by explicit thresholds (e.g., inflation > 10%, reserves < 3 months of imports, debt > 90% of GDP) |
 | 03 | 12-month opportunities | Symmetrical signals triggered when trends cross thresholds in a favorable direction |
 | 04 | IMF Projections | Trajectory from WEO outlooks (April 2026) for 2027-2031, compared against the 12-month trend |
@@ -122,9 +121,8 @@ python scripts/fetch_imf.py
 python scripts/fetch_risk_extras.py
 ```
 
-Sovereign ratings are updated by reviewing the `data/ratings_sp.csv`, `data/ratings_moodys.csv`, and `data/ratings_fitch.csv` files, using a new snapshot of the Wikipedia page and agency publications.
-The Rule of law and Regulatory quality indicators are extracted from the official `WGI.xlsx` extract (sheets `rl`/`rq`).
-The Rule of law and Regulatory quality indicators are extracted from the official `WGI.xlsx` extract (sheets `rl`/`rq`).
+- Sovereign ratings are updated by reviewing the `data/ratings_sp.csv`, `data/ratings_moodys.csv`, and `data/ratings_fitch.csv` files, using a new snapshot of the Wikipedia page and agency publications.
+- The Rule of law and Regulatory quality indicators are extracted from the official `WGI.xlsx` extract (sheets `rl`/`rq`).
 
 ## Documentation and tests
 
