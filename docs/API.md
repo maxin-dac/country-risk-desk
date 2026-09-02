@@ -31,6 +31,9 @@ Lire le CSV macro, valider les colonnes requises, typer date/valeur.
 
 
 ## `src.alerts`
+
+Moteur d'alertes : règles de seuils déterministes + génération de risques/opportunités.
+
 ### `compute_alerts(df)`
 
 Bandeau d'alertes global - version defensive (ne plante jamais).
@@ -69,24 +72,24 @@ IMF WEO projections (2027-2031): trajectory reading + divergence detection.
 
 _Pas de docstring._
 
-### `projections_html(country, indicator, lang, latest_value=None, change_12m=None, unit='')`
+### `projections_html(country, indicator, lang, change_12m=None, unit='')`
 
 _Pas de docstring._
 
 
 ## `src.dashboard`
 
-Dashboard global : carte, distribution, evolution temporelle des scores.
+Dashboard global : notations souveraines (donnees factuelles des agences).
 
-### `score_distribution(scores, lang)`
-
-_Pas de docstring._
-
-### `temporal_comparison(df, lang)`
+### `grade_summary(df, layer)`
 
 _Pas de docstring._
 
-### `world_map(scores, lang)`
+### `rating_distribution(layer, lang)`
+
+_Pas de docstring._
+
+### `world_map_ratings(layer, lang)`
 
 _Pas de docstring._
 
@@ -102,10 +105,9 @@ Theme centralise pour tous les graphiques Plotly.
 - Fond transparent, sans contour
 - Unites affichees dans le titre du visuel (pas de titres d'axes)
 
-### `apply_theme(fig, title='', unit=None, y_indicator=None, y_label=None, x_label=None, x_indicator=None)`
+### `apply_theme(fig, title='', unit=None, y_indicator=None)`
 
-Theme transparent + unite dans le titre. Les anciens kwargs
-(y_label, x_label, x_indicator) sont acceptes mais ignores.
+Theme transparent + unite dans le titre.
 
 ### `unit_suffix(indicator, lang='en')`
 
@@ -135,20 +137,7 @@ _Pas de docstring._
 
 ## `src.web_search`
 
-Web search (Tavily / DuckDuckGo) with homogeneous excerpts and freshness-aware ranking.
-
-### `format_sources(sources)`
-
-_Pas de docstring._
-
-### `make_excerpt(content, terms, max_chars=560)`
-
-_Pas de docstring._
-
-### `search_web_context(country_en, indicator, hint='')`
-
-_Pas de docstring._
-
+_Import impossible: No module named 'src.web_search'_
 
 ## `src.i18n`
 
@@ -177,7 +166,7 @@ _Pas de docstring._
 
 ## `src.ui_render`
 
-Rendu HTML des briefs (sections 01 a 07) et formatage des statistiques.
+Rendu HTML des briefs (sections 01 a 04) et formatage des statistiques.
 
 ### `evidence_html(items, lang, kind='', empty_msg=None)`
 
