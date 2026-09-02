@@ -2,9 +2,9 @@
 
 > Version anglaise : [README.md](README.md)
 
-Outil d'analyse macro-financière du risque pays, fondé exclusivement sur des données officielles et des règles documentées.
+Outil d'analyse macro-financière du risque pays, fondé sur des données officielles et des règles documentées. Il intègre également une analyse de scénarios qui évalue, pour chaque indicateur, l'effet d'un changement de valeur sur les signaux de risque et d'opportunité.
 
-Interface bilingue 🇫🇷/🇬🇧 · 217 économies · 16 indicateurs · notations souveraines S&P, Moody's et Fitch · sources officielles.
+Interface bilingue 🇫🇷/🇬🇧 · 217 économies · 17 indicateurs · notations souveraines S&P, Moody's et Fitch · sources officielles.
 
 ![aperçu](assets/aperçu.jpeg)
 
@@ -25,7 +25,7 @@ Interface bilingue 🇫🇷/🇬🇧 · 217 économies · 16 indicateurs · nota
 
 ## Objet de l'application
 
-Country Risk Desk permet d'établir, pour chacune des 217 économies couvertes, un dossier d'analyse structuré à partir de l'un des 16 indicateurs macroéconomiques et de gouvernance disponibles :
+Country Risk Desk permet d'établir, pour chacune des 217 économies couvertes, un dossier d'analyse structuré à partir de l'un des 17 indicateurs macroéconomiques et de gouvernance disponibles :
 
 | Repère | Section | Contenu |
 | --- | --- | --- |

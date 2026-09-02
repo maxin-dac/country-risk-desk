@@ -339,3 +339,13 @@ for _k, (_en, _fr) in _IND_WGI2.items():
 _RISK_WGI2 = [k for k in ("Rule of law", "Regulatory quality") if k not in RISK_ORDER]
 if _RISK_WGI2:
     RISK_ORDER = list(RISK_ORDER) + _RISK_WGI2
+
+
+# -- REINTRO-DS : Debt service reactive (donnees WDI disponibles via fetch_worldbank) --
+_sample = next(iter(INDICATORS.values()))
+if "Debt service" not in INDICATORS:
+    _en = "Debt service (% of exports of goods & services)"
+    _fr = "Service de la dette (% des exports de biens & services)"
+    INDICATORS["Debt service"] = {"en": _en, "fr": _fr} if isinstance(_sample, dict) else (_en, _fr)
+if "Debt service" not in RISK_ORDER:
+    RISK_ORDER = list(RISK_ORDER) + ["Debt service"]

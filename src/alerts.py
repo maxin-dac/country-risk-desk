@@ -172,3 +172,23 @@ if "RULES" in globals() and not any(r["id"] == "rule_of_law_low" for r in RULES)
              en=lambda v: f"Strong regulatory quality at {v:.2f}: sound policy framework.",
              fr=lambda v: f"Qualité réglementaire solide à {v:.2f} : cadre politique sain."),
     ]
+
+
+# -- REINTRO-DS-RULES --
+if "RULES" in globals() and not any(r["id"] == "debt_service_high" for r in RULES):
+    RULES += [
+        dict(id="debt_service_high", indicator="Debt service", cond=lambda v: v > 25, desc=True,
+             en="Debt service above 25 % of exports", fr="Service de la dette au-dessus de 25 % des exports"),
+    ]
+if "RISK_RULES" in globals() and not any(r["id"] == "debt_service_high" for r in RISK_RULES):
+    RISK_RULES += [
+        dict(id="debt_service_high", indicator="Debt service", cond=lambda v: v > 25,
+             en=lambda v: f"Debt service at {v:.1f}% of exports: heavy repayment burden.",
+             fr=lambda v: f"Service de la dette a {v:.1f}% des exports : charge de remboursement elevee."),
+    ]
+if "OPP_RULES" in globals() and not any(r["id"] == "debt_service_low" for r in OPP_RULES):
+    OPP_RULES += [
+        dict(id="debt_service_low", indicator="Debt service", cond=lambda v: v < 10,
+             en=lambda v: f"Low debt service at {v:.1f}% of exports: manageable external burden.",
+             fr=lambda v: f"Service de la dette faible a {v:.1f}% des exports : charge externe maitrisee."),
+    ]

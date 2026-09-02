@@ -11,8 +11,8 @@ import pandas as pd
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
-FETCHES = ["fetch_worldbank.py", "fetch_wgi.py", "fetch_imf.py",
-           "fetch_risk_extras.py", "extract_wgi_governance.py"]
+FETCHES = ["fetch_risk_extras.py", "fetch_worldbank.py", "fetch_wgi.py",
+           "fetch_imf.py", "extract_wgi_governance.py"]
 
 def run(script):
     print(f"\n=== {script} ===", flush=True)

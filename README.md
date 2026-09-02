@@ -2,9 +2,9 @@
 
 > French version: [README.fr.md](README.fr.md)
 
-Macro-financial country risk analysis tool, based exclusively on official data and documented rules.
+Macro-financial country risk analysis tool, based on official data and documented rules. It also includes a scenario analysis that assesses, for each indicator, how a change in value would affect the risk and opportunity signals.
 
-Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 16 indicators · sovereign ratings from S&P, Moody's, and Fitch · official sources.
+Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 17 indicators · sovereign ratings from S&P, Moody's, and Fitch · official sources.
 
 ![overview](assets/overview.jpeg)
 
@@ -25,7 +25,7 @@ Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 16 indicators · sover
 
 ## Purpose of the application
 
-Country Risk Desk provides a structured analysis brief for each of the 217 covered economies, based on any of the 16 available macroeconomic and governance indicators:
+Country Risk Desk provides a structured analysis brief for each of the 217 covered economies, based on any of the 17 available macroeconomic and governance indicators:
 
 | Ref | Section | Content |
 | --- | --- | --- |
