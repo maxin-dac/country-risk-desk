@@ -351,7 +351,7 @@ if "Debt service" not in RISK_ORDER:
     RISK_ORDER = list(RISK_ORDER) + ["Debt service"]
 
 # Sens des indicateurs (hausse = deterioration)
-HIGHER_IS_WORSE = {k for k, (hiw, _, _) in ANCHORS.items() if hiw}
+HIGHER_IS_WORSE = {'Unemployment', 'Dependency ratio', 'CO2 per capita', 'Debt service', 'Gov debt', 'Youth unemployment', 'Gini', 'Gen gov debt', 'Commodity dependence', 'External debt', 'Inflation'}
 
 PILLAR_WEIGHTS = {
     "External & sovereign": 0.30,
