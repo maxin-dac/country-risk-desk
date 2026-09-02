@@ -31,6 +31,7 @@ Country Risk Desk permet d'établir, pour chacune des 217 économies couvertes, 
 | --- | --- | --- |
 | - | Notation souveraine | Notations de long terme en devise étrangère de S&P Global Ratings, Moody's et Fitch Ratings, accompagnées de leur perspective et de leur date de décision ; mention « Non classé » lorsque le pays n'est pas noté |
 | 01 | Constat chiffré | Dernière valeur publiée et date de référence, variations à 3 et 12 mois, position par rapport à la médiane régionale, tendance quinquennale, courbe de progression |
+| - | Analyse de scénarios | Curseur interactif : teste une valeur hypothétique de l'indicateur et affiche les risques/opportunités que les seuils déclencheraient ou lèveraient (comparaison déterministe, pas une prévision) |
 | 02 | Risques à 12 mois | Signaux déclenchés par des seuils explicites (inflation supérieure à 10 %, réserves inférieures à 3 mois d'importations, dette supérieure à 90 % du PIB, etc.) |
 | 03 | Opportunités à 12 mois | Signaux symétriques lorsque l'évolution franchit les seuils dans le sens favorable |
 | 04 | Projections FMI | Trajectoire issue des perspectives WEO (avril 2026) pour 2027-2031, comparée à la tendance observée sur 12 mois |
@@ -39,7 +40,7 @@ Country Risk Desk permet d'établir, pour chacune des 217 économies couvertes, 
 
 - **Brief pays** - le dossier structuré décrit ci-dessus ; exportable aux formats PDF (français ou anglais), CSV et Excel.
 - **Comparaison** - jusqu'à 12 pays simultanément : courbes par indicateur avec unités, tableau des dernières valeurs publiées, positionnement croissance × inflation.
-- **Vue globale** - carte des notations souveraines par agence, distribution des notations, synthèse des pays couverts (pays notés, catégorie investment grade, catégorie spéculative, défaut ou notation retirée, pays non notés) et suivi des seuils ; chaque entrée renvoie vers le brief du pays concerné.
+- **Vue globale** - carte des notations souveraines par agence, distribution des notations, synthèse des pays couverts (pays notés, catégorie investment grade, catégorie spéculative, défaut ou notation retirée, pays non notés) et suivi des seuils ; chaque entrée renvoie vers le brief du pays concerné. Lecture croisée des agences incluse : divergences de classification, écarts ≥ 2 crans, perspectives opposées, avec dates de décision.
 
 ## Provenance des données
 
@@ -55,6 +56,13 @@ Country Risk Desk permet d'établir, pour chacune des 217 économies couvertes, 
 - Aucune valeur n'est estimée ni complétée : une donnée absente est présentée comme absente ; un pays non noté est présenté comme non noté.
 - Chaque signal mentionne la règle et le seuil qui le déclenchent ; chaque dossier cite ses sources et leurs dates.
 - Les notations des agences sont reproduites sans interprétation ni agrégation.
+
+## Limites assumées
+
+- Les séries macroéconomiques proviennent de millésimes annuels ou irréguliers : les comparaisons entre pays portent sur la dernière valeur disponible de chaque pays, pas sur une date synchronisée.
+- Les notations souveraines correspondent à un instantané (1er septembre 2026) ; seule une révision manuelle des CSV les actualise.
+- Les indicateurs WGI sont des estimations statistiques assorties d'intervalles de confiance ; l'application affiche l'estimation ponctuelle.
+- L'application ne produit aucun score agrégé ni classement : c'est un outil d'aide à l'analyse, pas une opinion de crédit.
 
 ## Démonstrations en ligne
 
@@ -88,8 +96,8 @@ country-risk-desk/
 │   ├── plot_theme.py    # thème Plotly et unités (référence unique)
 │   ├── i18n.py          # libellés FR/EN, ordre des indicateurs, unités
 │   └── pdf_export.py    # export PDF bilingue
-├── scripts/             # récupération des données (BM, WGI, FMI) + générateur de doc
-├── data/                # CSV/XLSX versionnés + notations souveraines
+├── scripts/             # fetch (BM, WGI, FMI), panneaux de données & générateur de doc
+├── data/                # CSV/XLSX versionnés, notations, countries.csv, panneaux intermédiaires
 ├── docs/                # ARCHITECTURE.md + API.md
 ├── tests/               # pytest (règles de seuils)
 └── assets/              # theme.css + captures
@@ -105,6 +113,7 @@ python scripts/fetch_risk_extras.py
 ```
 
 Les notations souveraines sont actualisées par révision des fichiers `data/ratings_sp.csv`, `data/ratings_moodys.csv` et `data/ratings_fitch.csv`, à partir d'un nouvel instantané de la page Wikipédia et des publications des agences.
+Les indicateurs État de droit et Qualité réglementaire sont extraits de l'extrait officiel `WGI.xlsx` (feuilles `rl`/`rq`).
 
 ## Documentation et tests
 

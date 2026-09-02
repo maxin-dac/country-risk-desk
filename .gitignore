@@ -6,3 +6,5 @@ reports/\ndata/watchlist.json\n
 *.pyc
 .pytest_cache/
 data/watchlist.json
+data/risk_panel.csv
+data/risk_panel_final.csv

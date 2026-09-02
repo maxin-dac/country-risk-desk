@@ -25,12 +25,13 @@ Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 16 indicators · sover
 
 ## Purpose of the application
 
-Country Risk Desk provides a structured analysis brief for each of the 217 covered economies, based on any of the 14 available macroeconomic and governance indicators:
+Country Risk Desk provides a structured analysis brief for each of the 217 covered economies, based on any of the 16 available macroeconomic and governance indicators:
 
 | Ref | Section | Content |
 | --- | --- | --- |
 | - | Sovereign rating | Long-term foreign currency ratings from S&P Global Ratings, Moody's, and Fitch Ratings, along with their outlook and decision date; "Unrated" is shown when the country is not rated |
 | 01 | Key figures | Latest published value and reference date, 3- and 12-month changes, position relative to the regional median, 5-year trend, and progression chart |
+| - | Scenario analysis | Interactive slider: tests a hypothetical indicator value and shows which threshold-based risks/opportunities would trigger or clear (deterministic comparison, not a forecast) |
 | 02 | 12-month risks | Signals triggered by explicit thresholds (e.g., inflation > 10%, reserves < 3 months of imports, debt > 90% of GDP) |
 | 03 | 12-month opportunities | Symmetrical signals triggered when trends cross thresholds in a favorable direction |
 | 04 | IMF Projections | Trajectory from WEO outlooks (April 2026) for 2027-2031, compared against the 12-month trend |
@@ -55,6 +56,13 @@ Country Risk Desk provides a structured analysis brief for each of the 217 cover
 - No missing value is estimated or filled: missing data is displayed as missing; an unrated country is shown as unrated.
 - Every signal mentions the specific rule and threshold that triggered it; every brief cites its sources and dates.
 - Agency ratings are reproduced without interpretation or aggregation.
+
+## Assumed limitations
+
+- Macroeconomic series come from annual or irregular vintages: cross-country comparisons use each country's latest available value, not a synchronized date.
+- Sovereign ratings correspond to a snapshot (September 1, 2026); only a manual revision of the CSV files updates them.
+- WGI indicators are statistical estimates with confidence intervals; the application displays the point estimate.
+- The application produces no aggregate score and no ranking: it is an analysis aid, not a credit opinion.
 
 ## Live demonstrations
 
@@ -88,8 +96,8 @@ country-risk-desk/
 │   ├── plot_theme.py    # Plotly theme and units (single source of truth)
 │   ├── i18n.py          # EN/FR labels, indicator order, units
 │   └── pdf_export.py    # Bilingual PDF export
-├── scripts/             # Data fetching (WB, WGI, IMF) + doc generator
-├── data/                # Versioned CSV/XLSX + sovereign ratings
+├── scripts/             # fetch (BM, WGI, FMI), panneaux de données & générateur de doc
+├── data/                # CSV/XLSX versionnés, notations, countries.csv, panneaux intermédiaires
 ├── docs/                # ARCHITECTURE.md + API.md
 ├── tests/               # pytest (threshold rules)
 └── assets/              # theme.css + screenshots
@@ -105,6 +113,7 @@ python scripts/fetch_risk_extras.py
 ```
 
 Sovereign ratings are updated by reviewing the `data/ratings_sp.csv`, `data/ratings_moodys.csv`, and `data/ratings_fitch.csv` files, using a new snapshot of the Wikipedia page and agency publications.
+The Rule of law and Regulatory quality indicators are extracted from the official `WGI.xlsx` extract (sheets `rl`/`rq`).
 
 ## Documentation and tests
 
