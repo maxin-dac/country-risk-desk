@@ -37,8 +37,8 @@ def line_chart(df, indicator, countries, lang):
                        unit=unit_suffix(indicator, lang))
 
 
-def latest_pivot(df, countries, lang):
-    lat = _latest(df)
+def latest_pivot(df, countries, lang, latest=None):
+    lat = latest if latest is not None else _latest(df)
     sub = lat[lat.country.isin(countries)]
     piv = sub.pivot(index="country", columns="indicator", values="value")
     piv = piv.reindex([c for c in countries if c in set(piv.index)])
@@ -55,8 +55,8 @@ def latest_pivot(df, countries, lang):
                 if c in piv.columns]]
 
 
-def positioning_scatter(df, countries, lang):
-    lat = _latest(df)
+def positioning_scatter(df, countries, lang, latest=None):
+    lat = latest if latest is not None else _latest(df)
     xs, ys, names, cols = [], [], [], []
     for i, c in enumerate(countries):
         g = lat[(lat.country == c) & (lat.indicator == "GDP growth")].value
@@ -84,11 +84,14 @@ def render_compare(df, countries, lang):
     if len(countries) < 2:
         st.info(t("compare_hint", lang))
         return
+    # Calculer latest une seule fois, partagé par _signal_counts, latest_pivot et positioning_scatter
+    latest = _latest(df)
     chips = " ".join(
-        f'<span class="chip" style="border-left:4px solid {COLORS[i % len(COLORS)]}">{cname(c, lang)}</span>'
+        f'<span class="chip" style="border-left:4px solid {COLORS[i % len(COLORS)]}">'
+        f'{cname(c, lang)}</span>'
         for i, c in enumerate(countries))
     st.markdown(f"<div style='margin:.5rem 0'>{chips}</div>", unsafe_allow_html=True)
-    sig_counts = _signal_counts(df, countries)
+    sig_counts = _signal_counts(latest, countries)
     ranked = sorted(countries, key=lambda c: sig_counts.get(c, 0), reverse=True)
     row = " \u00b7 ".join(
         f"{cname(c, lang)}: <b>{sig_counts.get(c, 0)}</b> "
@@ -111,10 +114,10 @@ def render_compare(df, countries, lang):
                 st.plotly_chart(line_chart(df, ind, countries, lang),
                                 width='stretch')
     st.markdown(f"<h3>{t('compare_latest', lang)}</h3>", unsafe_allow_html=True)
-    st.dataframe(_dedup(latest_pivot(df, countries, lang)).style.format("{:.1f}", na_rep="-"),
+    st.dataframe(_dedup(latest_pivot(df, countries, lang, latest=latest)).style.format("{:.1f}", na_rep="-"),
                  width='stretch')
     st.markdown(f"<h3>{t('compare_map', lang)}</h3>", unsafe_allow_html=True)
-    st.plotly_chart(positioning_scatter(df, countries, lang), width='stretch')
+    st.plotly_chart(positioning_scatter(df, countries, lang, latest=latest), width='stretch')
 
 
 def _dedup(df):
@@ -135,11 +138,11 @@ def _dedup(df):
     return df
 
 
-def _signal_counts(df, countries):
+def _signal_counts(latest, countries):
     """Nombre de regles de seuils declenchees par les dernieres valeurs publiees.
+    Accepte un DataFrame 'latest' pré-calculé pour éviter le groupby redondant.
     Decompte factuel et documente - pas un score."""
     from .alerts import RULES
-    latest = df.sort_values("date").groupby(["country", "indicator"], as_index=False).tail(1)
     out = {}
     for c in countries:
         sub = latest[latest.country == c]

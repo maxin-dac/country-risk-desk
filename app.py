@@ -21,6 +21,11 @@ def get_df():
     return load_csv(config.CSV_PATH)
 
 
+@st.cache_data(show_spinner=False)
+def get_alerts(df):
+    return compute_alerts(df)
+
+
 def render_dashboard(df, alerts, lang):
     st.markdown("### " + ("Global macroeconomic dashboard" if lang == "en"
                           else "Tableau de bord macroeconomique global"))
@@ -131,7 +136,8 @@ st.markdown(
              today, ("deterministic" if lang == "en" else "d\u00e9terministe"), lang, ticks),
     unsafe_allow_html=True)
 
-alerts = compute_alerts(df)
+alerts = get_alerts(df)
+
 
 if mode == "brief":
     st.markdown(rat.rating_card(country, lang), unsafe_allow_html=True)

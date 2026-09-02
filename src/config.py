@@ -1,4 +1,5 @@
-import os, pathlib
+import os
+import pathlib
 
 _ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -14,6 +15,7 @@ try:
 except Exception:
     _STREAMLIT_SECRETS = {}
 
+
 def env(key, default=None):
     value = os.getenv(key)
     if value:
@@ -24,13 +26,7 @@ def env(key, default=None):
         value = None
     return value if value else default
 
-LLM_PROVIDER = "openrouter"
-LLM_BASE_URL = "https://openrouter.ai/api/v1"
-LLM_API_KEY = env("LLM_API_KEY", "")
-LLM_MODEL = env("LLM_MODEL", "qwen/qwen-2.5-7b-instruct:free")
-LLM_TEMPERATURE = float(env("LLM_TEMPERATURE", "0.2"))
-LLM_MAX_TOKENS = int(env("LLM_MAX_TOKENS", "1600"))
-LLM_TIMEOUT = int(env("LLM_TIMEOUT", "60"))
+
 CSV_PATH = env("CSV_PATH", "data/macro_indicators.csv")
 BRIEFS_PATH = env("BRIEFS_PATH", "data/briefs.json")
 
@@ -53,5 +49,3 @@ INDICATOR_HINTS = {
     "Inflation": "CPI consumer price index inflation rate",
     "Interest rate": "lending interest rate central bank monetary policy",
 }
-
-import os as _os

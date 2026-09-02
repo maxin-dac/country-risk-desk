@@ -2,9 +2,11 @@
 """Moteur d'alertes : règles de seuils déterministes + génération de risques/opportunités."""
 import pandas as pd
 
-# Règles de seuils : chaque règle définit un indicateur, une condition, et des libellés FR/EN
+# ---------------------------------------------------------------------------
+# Règles de seuils — toutes déclarées ici (pas d'append conditionnel post-import)
+# ---------------------------------------------------------------------------
 RULES = [
-    # Règles macroéconomiques classiques
+    # Macroéconomie classique
     dict(id="inflation_high", indicator="Inflation", cond=lambda v: v > 10, desc=True,
          en="Inflation above 10 %", fr="Inflation supérieure à 10 %"),
     dict(id="recession", indicator="GDP growth", cond=lambda v: v < 0, desc=False,
@@ -19,32 +21,56 @@ RULES = [
          en="Unemployment above 15 %", fr="Chômage supérieur à 15 %"),
     dict(id="youth_unemp_high", indicator="Youth unemployment", cond=lambda v: v > 25, desc=True,
          en="Youth unemployment above 25 %", fr="Chômage des jeunes supérieur à 25 %"),
-    
-    # Règles de gouvernance (WGI)
+    # Gouvernance (WGI)
     dict(id="political_instability", indicator="Political stability", cond=lambda v: v < -1.0, desc=False,
          en="Political stability below -1.0", fr="Stabilité politique inférieure à -1,0"),
     dict(id="corruption_high", indicator="Control of corruption", cond=lambda v: v < -0.5, desc=False,
          en="Control of corruption below -0.5", fr="Maîtrise de la corruption inférieure à -0,5"),
     dict(id="gov_effectiveness_low", indicator="Government effectiveness", cond=lambda v: v < -0.5, desc=False,
          en="Government effectiveness below -0.5", fr="Efficacité du gouvernement inférieure à -0,5"),
-    
-    # Règles sociales
+    dict(id="rule_of_law_low", indicator="Rule of law", cond=lambda v: v < -0.5, desc=False,
+         en="Rule of law below -0.5", fr="État de droit inférieur à -0,5"),
+    dict(id="regulatory_quality_low", indicator="Regulatory quality", cond=lambda v: v < -0.5, desc=False,
+         en="Regulatory quality below -0.5", fr="Qualité réglementaire inférieure à -0,5"),
+    # Social
     dict(id="gini_high", indicator="Gini", cond=lambda v: v > 45, desc=True,
          en="Gini index above 45 (high inequality)", fr="Indice de Gini supérieur à 45 (inégalités élevées)"),
-    
-    # Règles de dette externe
+    # Dette externe
     dict(id="external_debt_high", indicator="External debt", cond=lambda v: v > 60, desc=True,
          en="External debt above 60% of GNI", fr="Dette externe supérieure à 60 % du RNB"),
+    # Budgétaire
+    dict(id="fiscal_deficit", indicator="Fiscal balance", cond=lambda v: v < -5, desc=False,
+         en="Fiscal deficit beyond -5 % of GDP", fr="Déficit budgétaire au-delà de -5 % du PIB"),
+    # Service de la dette
+    dict(id="debt_service_high", indicator="Debt service", cond=lambda v: v > 25, desc=True,
+         en="Debt service above 25 % of exports", fr="Service de la dette au-dessus de 25 % des exports"),
 ]
 
-# Regles de risques pour generate_outlook (libelles avec valeur courante)
+# ---------------------------------------------------------------------------
+# Règles de risques pour generate_outlook (libellés avec valeur courante)
+# ---------------------------------------------------------------------------
 RISK_RULES = [
     dict(r, en=(lambda v, _r=r: f"{_r['en']} (value: {v:.1f})"),
             fr=(lambda v, _r=r: f"{_r['fr']} (valeur : {v:.1f})"))
     for r in RULES
+] + [
+    dict(id="rule_of_law_low", indicator="Rule of law", cond=lambda v: v < -0.5,
+         en=lambda v: f"Rule of law at {v:.2f}: weak legal enforcement.",
+         fr=lambda v: f"État de droit à {v:.2f} : application du droit fragile."),
+    dict(id="regulatory_quality_low", indicator="Regulatory quality", cond=lambda v: v < -0.5,
+         en=lambda v: f"Regulatory quality at {v:.2f}: weak policy framework.",
+         fr=lambda v: f"Qualité réglementaire à {v:.2f} : cadre politique fragile."),
+    dict(id="fiscal_deficit", indicator="Fiscal balance", cond=lambda v: v < -5,
+         en=lambda v: f"Fiscal deficit of {abs(v):.1f}% of GDP: sustained consolidation needed.",
+         fr=lambda v: f"Déficit budgétaire de {abs(v):.1f}% du PIB : assainissement soutenu nécessaire."),
+    dict(id="debt_service_high", indicator="Debt service", cond=lambda v: v > 25,
+         en=lambda v: f"Debt service at {v:.1f}% of exports: heavy repayment burden.",
+         fr=lambda v: f"Service de la dette a {v:.1f}% des exports : charge de remboursement elevee."),
 ]
 
-# Regles miroir d'opportunites (seuils favorables)
+# ---------------------------------------------------------------------------
+# Règles d'opportunités (seuils favorables)
+# ---------------------------------------------------------------------------
 OPP_RULES = [
     dict(id="inflation_low", indicator="Inflation", cond=lambda v: v < 3,
          en=lambda v: f"Inflation contained below 3 % (value: {v:.1f})",
@@ -76,13 +102,26 @@ OPP_RULES = [
     dict(id="gov_eff_high", indicator="Government effectiveness", cond=lambda v: v > 0.5,
          en=lambda v: f"Effective government above 0.5 (value: {v:.2f})",
          fr=lambda v: f"Efficacité du gouvernement solide au-dessus de 0,5 (valeur : {v:.2f})"),
+    dict(id="rule_of_law_high", indicator="Rule of law", cond=lambda v: v > 0.5,
+         en=lambda v: f"Strong rule of law at {v:.2f}: solid legal enforcement.",
+         fr=lambda v: f"État de droit solide à {v:.2f} : application du droit fiable."),
+    dict(id="regulatory_quality_high", indicator="Regulatory quality", cond=lambda v: v > 0.5,
+         en=lambda v: f"Strong regulatory quality at {v:.2f}: sound policy framework.",
+         fr=lambda v: f"Qualité réglementaire solide à {v:.2f} : cadre politique sain."),
     dict(id="gini_low", indicator="Gini", cond=lambda v: v < 35,
          en=lambda v: f"Low inequality (Gini below 35, value: {v:.1f})",
          fr=lambda v: f"Inégalités contenues (Gini sous 35, valeur : {v:.1f})"),
     dict(id="ext_debt_low", indicator="External debt", cond=lambda v: v < 30,
          en=lambda v: f"External debt below 30 % of GNI (value: {v:.1f})",
          fr=lambda v: f"Dette externe sous 30 % du RNB (valeur : {v:.1f})"),
+    dict(id="fiscal_surplus", indicator="Fiscal balance", cond=lambda v: v > 1,
+         en=lambda v: f"Fiscal surplus of {v:.1f}% of GDP: comfortable policy space.",
+         fr=lambda v: f"Excédent budgétaire de {v:.1f}% du PIB : marge de manœuvre confortable."),
+    dict(id="debt_service_low", indicator="Debt service", cond=lambda v: v < 10,
+         en=lambda v: f"Low debt service at {v:.1f}% of exports: manageable external burden.",
+         fr=lambda v: f"Service de la dette faible a {v:.1f}% des exports : charge externe maitrisee."),
 ]
+
 
 def generate_outlook(stats):
     if not stats.get("available"):
@@ -107,9 +146,8 @@ def generate_outlook(stats):
     return {"risks": risks, "opportunities": opps, "uncertainties": uncs}
 
 
-
 def compute_alerts(df):
-    """Bandeau d'alertes global - version defensive (ne plante jamais)."""
+    """Bandeau d'alertes global — version défensive (ne plante jamais)."""
     out = []
     if df is None or "value" not in df.columns:
         return out
@@ -125,70 +163,10 @@ def compute_alerts(df):
             continue
         hit["_sort"] = pd.to_numeric(hit["value"], errors="coerce")
         hit = hit.sort_values("_sort", ascending=not rule["desc"])
-        out.append({**rule,
-                    "hits": [(r["country"], float(r["value"])) for _, r in hit.iterrows()]})
+        # Utilisation de zip sur les colonnes vectorisées — plus rapide qu'iterrows()
+        # On exclut 'cond' (lambda) car st.cache_data sérialise le résultat via pickle
+        safe = {k: v for k, v in rule.items() if k != "cond"}
+        out.append({**safe,
+                    "hits": list(zip(hit["country"].tolist(),
+                                     hit["value"].astype(float).tolist()))})
     return [a for a in out if a["hits"]]
-
-# Regles budgetaires (solde budgetaire) - sans doublon avec debt_high/debt_low
-if "RISK_RULES" in globals():
-    RISK_RULES += [
-        dict(id="fiscal_deficit", indicator="Fiscal balance", cond=lambda v: v < -5,
-             en=lambda v: f"Fiscal deficit of {abs(v):.1f}% of GDP: sustained consolidation needed.",
-             fr=lambda v: f"D\u00e9ficit budg\u00e9taire de {abs(v):.1f}% du PIB : assainissement soutenu n\u00e9cessaire."),
-    ]
-if "OPP_RULES" in globals():
-    OPP_RULES += [
-        dict(id="fiscal_surplus", indicator="Fiscal balance", cond=lambda v: v > 1,
-             en=lambda v: f"Fiscal surplus of {v:.1f}% of GDP: comfortable policy space.",
-             fr=lambda v: f"Exc\u00e9dent budg\u00e9taire de {v:.1f}% du PIB : marge de man\u0153uvre confortable."),
-    ]
-if "RULES" in globals():
-    RULES += [
-        dict(id="fiscal_deficit", indicator="Fiscal balance", cond=lambda v: v < -5, desc=False,
-             en="Fiscal deficit beyond -5 % of GDP", fr="D\u00e9ficit budg\u00e9taire au-del\u00e0 de -5 % du PIB"),
-    ]
-
-# -- REINTRO-RULES-WGI2 : regles pour Rule of law + Regulatory quality --
-if "RULES" in globals() and not any(r["id"] == "rule_of_law_low" for r in RULES):
-    RULES += [
-        dict(id="rule_of_law_low", indicator="Rule of law", cond=lambda v: v < -0.5, desc=False,
-             en="Rule of law below -0.5", fr="État de droit inférieur à -0,5"),
-        dict(id="regulatory_quality_low", indicator="Regulatory quality", cond=lambda v: v < -0.5, desc=False,
-             en="Regulatory quality below -0.5", fr="Qualité réglementaire inférieure à -0,5"),
-    ]
-    RISK_RULES += [
-        dict(id="rule_of_law_low", indicator="Rule of law", cond=lambda v: v < -0.5,
-             en=lambda v: f"Rule of law at {v:.2f}: weak legal enforcement.",
-             fr=lambda v: f"État de droit à {v:.2f} : application du droit fragile."),
-        dict(id="regulatory_quality_low", indicator="Regulatory quality", cond=lambda v: v < -0.5,
-             en=lambda v: f"Regulatory quality at {v:.2f}: weak policy framework.",
-             fr=lambda v: f"Qualité réglementaire à {v:.2f} : cadre politique fragile."),
-    ]
-    OPP_RULES += [
-        dict(id="rule_of_law_high", indicator="Rule of law", cond=lambda v: v > 0.5,
-             en=lambda v: f"Strong rule of law at {v:.2f}: solid legal enforcement.",
-             fr=lambda v: f"État de droit solide à {v:.2f} : application du droit fiable."),
-        dict(id="regulatory_quality_high", indicator="Regulatory quality", cond=lambda v: v > 0.5,
-             en=lambda v: f"Strong regulatory quality at {v:.2f}: sound policy framework.",
-             fr=lambda v: f"Qualité réglementaire solide à {v:.2f} : cadre politique sain."),
-    ]
-
-
-# -- REINTRO-DS-RULES --
-if "RULES" in globals() and not any(r["id"] == "debt_service_high" for r in RULES):
-    RULES += [
-        dict(id="debt_service_high", indicator="Debt service", cond=lambda v: v > 25, desc=True,
-             en="Debt service above 25 % of exports", fr="Service de la dette au-dessus de 25 % des exports"),
-    ]
-if "RISK_RULES" in globals() and not any(r["id"] == "debt_service_high" for r in RISK_RULES):
-    RISK_RULES += [
-        dict(id="debt_service_high", indicator="Debt service", cond=lambda v: v > 25,
-             en=lambda v: f"Debt service at {v:.1f}% of exports: heavy repayment burden.",
-             fr=lambda v: f"Service de la dette a {v:.1f}% des exports : charge de remboursement elevee."),
-    ]
-if "OPP_RULES" in globals() and not any(r["id"] == "debt_service_low" for r in OPP_RULES):
-    OPP_RULES += [
-        dict(id="debt_service_low", indicator="Debt service", cond=lambda v: v < 10,
-             en=lambda v: f"Low debt service at {v:.1f}% of exports: manageable external burden.",
-             fr=lambda v: f"Service de la dette faible a {v:.1f}% des exports : charge externe maitrisee."),
-    ]

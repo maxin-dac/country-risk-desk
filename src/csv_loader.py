@@ -31,7 +31,9 @@ def _closest(df, target, days):
     return df.loc[i] if d[i] <= pd.Timedelta(days=days) else None
 
 def _pct(cur, prev):
-    return (cur - prev) / abs(prev) * 100 if prev else None
+    if prev is None or prev == 0:
+        return None
+    return (cur - prev) / abs(prev) * 100
 
 def get_stats(df, country, indicator):
     """Statistiques du couple pays/indicateur.
@@ -50,8 +52,8 @@ def get_stats(df, country, indicator):
     p12 = _closest(s, last.date - pd.DateOffset(months=12), 120)
     out = {
         "available": True, "country": country, "indicator": indicator,
-        "category": last.get("category", ""), "unit": last.get("unit", ""),
-        "region": last.get("region", ""), "source": last.get("source", ""),
+        "category": str(last.get("category") or ""), "unit": str(last.get("unit") or ""),
+        "region": str(last.get("region") or ""), "source": str(last.get("source") or ""),
         "latest_date": last.date.date().isoformat(), "latest_value": float(last.value),
         "prev3_value": float(p3.value) if p3 is not None else None,
         "prev12_value": float(p12.value) if p12 is not None else None,

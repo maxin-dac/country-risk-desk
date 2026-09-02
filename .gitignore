@@ -2,7 +2,8 @@
 .env
 __pycache__/
 .venv/
-reports/\ndata/watchlist.json\n
+reports/
+data/watchlist.json
 *.pyc
 .pytest_cache/
 data/watchlist.json

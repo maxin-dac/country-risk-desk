@@ -77,5 +77,7 @@ footer {{margin-top: 16px; border-top: 1px solid #D8DED9; padding-top: 6px; font
 <footer>{t('fact_rule', lang)} · {t('not_advice', lang)}</footer>
 </body></html>"""
     buf = BytesIO()
-    pisa.CreatePDF(doc, dest=buf, encoding="utf-8")
-    return buf.getvalue()
+    result = pisa.CreatePDF(doc, dest=buf, encoding="utf-8")
+    if result.err:
+        raise RuntimeError(f"PDF generation failed (pisa error {result.err})")
+    return buf.getvalue()

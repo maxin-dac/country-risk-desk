@@ -82,9 +82,7 @@ def render_scenario(df, country, indicator, stats, lang):
 # ------------------------------------------------------------ 2. Temporel
 def render_temporal(df, lang):
     from .alerts import RULES
-    d = df.copy()
-    d["date"] = pd.to_datetime(d["date"], errors="coerce")
-    d = d.dropna(subset=["date"])
+    d = df.assign(date=pd.to_datetime(df["date"], errors="coerce")).dropna(subset=["date"])
     if d.empty:
         st.caption("Historique insuffisant." if lang == "fr" else "Insufficient history.")
         return

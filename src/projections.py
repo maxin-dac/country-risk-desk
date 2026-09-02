@@ -3,7 +3,7 @@ import pathlib
 
 import pandas as pd
 
-PROJ_PATH = pathlib.Path("data/imf_projections.csv")
+PROJ_PATH = pathlib.Path(__file__).resolve().parent.parent / "data" / "imf_projections.csv"
 
 # Indicators for which a rise is a deterioration
 HIGHER_IS_WORSE = {
@@ -104,7 +104,7 @@ def projections_html(country, indicator, lang, change_12m=None, unit=""):
                 " Divergence: the recent 12-month trend reverses in the IMF "
                 "trajectory - a turning point is expected.")
 
-    chips = " · ".join(f"{yr}: {series[yr]:.1f}" for yr in years) + f" {unit}"
+    chips = " · ".join(f"{yr}: {series[yr]:.1f}" for yr in years) + (f" {unit}" if unit else "")
     return (f'<p class="kv">{reading}{divergence}</p>'
-            f'<div class="deltaline" style="margin:.4rem 0">{chips} {unit}</div>'
+            f'<div class="deltaline" style="margin:.4rem 0">{chips}</div>'
             + _sparkline(series, unit))

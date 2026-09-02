@@ -1,16 +1,21 @@
 """Notation souveraine : S&P / Moody's / Fitch (donnees publiees, CSV par agence).
 Aucun calcul : chaque tuile affiche note + perspective + date telles que publiees."""
 import csv
+import html
 import pathlib
 
 DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
 _FILES = {"sp": "ratings_sp.csv", "mo": "ratings_moodys.csv", "fi": "ratings_fitch.csv"}
 AGENCIES = [("sp", "S&P"), ("fi", "Fitch"), ("mo", "Moody's")]
 
+# Cache unique partagé par toutes les fonctions du module
 _cache = None
 
 
-def load():
+def _load():
+    """Retourne {iso: {sp_r, sp_o, sp_d, mo_r, ..., fi_d}} depuis les 3 CSV.
+    Le résultat est mis en cache en mémoire pour éviter les relectures répétées.
+    """
     global _cache
     if _cache is None:
         _cache = {}
@@ -30,8 +35,13 @@ def load():
     return _cache
 
 
+# Alias publics pour la compatibilité avec dashboard.py et analytics.py
+def load():
+    return _load()
+
+
 def country_ratings(iso):
-    return load().get(iso)
+    return _load().get(iso)
 
 
 def country_rating(iso):
@@ -52,48 +62,23 @@ def rating_card(iso, lang):
         r = (row.get(key + "_r") or "").strip()
         o = (row.get(key + "_o") or "").strip()
         d = (row.get(key + "_d") or "").strip()
+        # Échappement HTML : les valeurs CSV sont insérées dans du markup unsafe_allow_html
+        r_h = html.escape(r)
+        o_h = html.escape(o)
+        d_h = html.escape(d)
         if r:
-            o_html = (f'<span class="ro out-{_out_cls(o)}">{o}</span>' if o
+            o_html = (f'<span class="ro out-{_out_cls(o)}">{o_h}</span>' if o
                       else '<span class="ro out-none">&mdash;</span>')
             tiles.append(
-                f'<div class="rate-tile has"><div class="ag">{name}</div>'
-                f'<div class="rt">{r}</div>{o_html}<div class="rd">{d}</div></div>')
+                f'<div class="rate-tile has"><div class="ag">{html.escape(name)}</div>'
+                f'<div class="rt">{r_h}</div>{o_html}<div class="rd">{d_h}</div></div>')
         else:
             tiles.append(
-                f'<div class="rate-tile no"><div class="ag">{name}</div>'
-                f'<div class="rt none">{un}</div><div class="rd">&mdash;</div></div>')
+                f'<div class="rate-tile no"><div class="ag">{html.escape(name)}</div>'
+                f'<div class="rt none">{html.escape(un)}</div><div class="rd">&mdash;</div></div>')
     src = ("Source: Wikipedia - List of countries by credit rating (snapshot 2026-09-01)."
            if lang == "en" else
            "Source : Wikipedia - List of countries by credit rating (instantan\u00e9 2026-09-01).")
-    return ('<div class="brief rating"><h3>' + title + '</h3>'
+    return ('<div class="brief rating"><h3>' + html.escape(title) + '</h3>'
             '<div class="rate-grid">' + "".join(tiles) + '</div>'
-            '<div class="rate-src">' + src + '</div></div>')
-
-
-# ---- Chargeur standard (ajoute : consomme par analytics & dashboard) ----
-_cache_all = None
-
-def _load():
-    """Retourne {iso: {sp_r, sp_o, sp_d, mo_r, ..., fi_d}} depuis les 3 CSV."""
-    global _cache_all
-    if _cache_all is None:
-        import csv as _csv
-        import pathlib as _pl
-        _data = _pl.Path(__file__).resolve().parent.parent / "data"
-        _cache_all = {}
-        for _key, _fn in (("sp", "ratings_sp.csv"),
-                          ("mo", "ratings_moodys.csv"),
-                          ("fi", "ratings_fitch.csv")):
-            _p = _data / _fn
-            if not _p.exists():
-                continue
-            with open(_p, encoding="utf-8") as _f:
-                for _row in _csv.DictReader(_f):
-                    _iso = (_row.get("iso") or "").strip()
-                    if not _iso:
-                        continue
-                    _r = _cache_all.setdefault(_iso, {"country": _row.get("country", "")})
-                    _r[_key + "_r"] = (_row.get("rating") or "").strip()
-                    _r[_key + "_o"] = (_row.get("outlook") or "").strip()
-                    _r[_key + "_d"] = (_row.get("date") or "").strip()
-    return _cache_all
+            '<div class="rate-src">' + html.escape(src) + '</div></div>')
