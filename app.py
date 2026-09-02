@@ -3,6 +3,7 @@ import streamlit as st
 from src import config
 from src import dashboard
 from src import ratings as rat
+from src import analytics
 from src.alerts import compute_alerts, generate_outlook
 from src.compare import line_chart, render_compare
 from src.csv_loader import get_stats, load_csv
@@ -62,6 +63,11 @@ def render_dashboard(df, alerts, lang):
                             key=f"al_{a['id']}_{_iso}",
                             on_click=lambda i2=_iso: st.session_state.update(
                                 {"country_sel": i2, "mode_sel": "brief"}))
+
+
+    st.markdown("#### " + ("Cross-agency reading - S&P / Moody's / Fitch divergences" if lang == "en"
+                          else "Lecture croisee des agences - divergences S&P / Moody's / Fitch"))
+    analytics.render_divergences(lang)
 
 
 def assemble_report(df, country, indicator, lang):
@@ -141,9 +147,11 @@ if mode == "brief":
                 fig = line_chart(df, indicator, [country], lang)
                 fig.update_layout(title=dict(text=f"{iname(indicator, lang)} - {cname(country, lang)}"))
                 st.plotly_chart(fig, width="stretch")
+            analytics.render_scenario(df, country, indicator, get_stats(df, country, indicator), lang)
             st.markdown(html_all[i1:], unsafe_allow_html=True)
         else:
             st.markdown(html_all, unsafe_allow_html=True)
+            analytics.render_scenario(df, country, indicator, get_stats(df, country, indicator), lang)
     else:
         st.markdown(html_all, unsafe_allow_html=True)
     if report.get("status") != "error":

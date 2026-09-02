@@ -68,3 +68,32 @@ def rating_card(iso, lang):
     return ('<div class="brief rating"><h3>' + title + '</h3>'
             '<div class="rate-grid">' + "".join(tiles) + '</div>'
             '<div class="rate-src">' + src + '</div></div>')
+
+
+# ---- Chargeur standard (ajoute : consomme par analytics & dashboard) ----
+_cache_all = None
+
+def _load():
+    """Retourne {iso: {sp_r, sp_o, sp_d, mo_r, ..., fi_d}} depuis les 3 CSV."""
+    global _cache_all
+    if _cache_all is None:
+        import csv as _csv
+        import pathlib as _pl
+        _data = _pl.Path(__file__).resolve().parent.parent / "data"
+        _cache_all = {}
+        for _key, _fn in (("sp", "ratings_sp.csv"),
+                          ("mo", "ratings_moodys.csv"),
+                          ("fi", "ratings_fitch.csv")):
+            _p = _data / _fn
+            if not _p.exists():
+                continue
+            with open(_p, encoding="utf-8") as _f:
+                for _row in _csv.DictReader(_f):
+                    _iso = (_row.get("iso") or "").strip()
+                    if not _iso:
+                        continue
+                    _r = _cache_all.setdefault(_iso, {"country": _row.get("country", "")})
+                    _r[_key + "_r"] = (_row.get("rating") or "").strip()
+                    _r[_key + "_o"] = (_row.get("outlook") or "").strip()
+                    _r[_key + "_d"] = (_row.get("date") or "").strip()
+    return _cache_all
