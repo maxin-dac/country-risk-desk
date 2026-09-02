@@ -80,14 +80,6 @@ def positioning_scatter(df, countries, lang):
                        unit="(%)")
 
 
-@st.cache_data(show_spinner=False)
-def _scores():
-    from src import config
-    from src.csv_loader import load_csv
-    from src.risk_scoring import country_scores
-    return country_scores(load_csv(config.CSV_PATH))
-
-
 def render_compare(df, countries, lang):
     if len(countries) < 2:
         st.info(t("compare_hint", lang))
@@ -96,16 +88,20 @@ def render_compare(df, countries, lang):
         f'<span class="chip" style="border-left:4px solid {COLORS[i % len(COLORS)]}">{cname(c, lang)}</span>'
         for i, c in enumerate(countries))
     st.markdown(f"<div style='margin:.5rem 0'>{chips}</div>", unsafe_allow_html=True)
-    sc = _scores()
-    ranked = sorted([c for c in countries if c in sc],
-                    key=lambda c: sc[c]["overall"], reverse=True)
-    if ranked:
-        row = " · ".join(
-            f"{cname(c, lang)}: <b>{sc[c]['overall']:.0f}</b>{unit_suffix('Risk score')}"
-            for c in ranked)
-        st.markdown("#### " + ("Risque relatif (decroissant)" if lang == "fr"
-                               else "Relative risk (descending)"))
-        st.markdown(row, unsafe_allow_html=True)
+    sig_counts = _signal_counts(df, countries)
+    ranked = sorted(countries, key=lambda c: sig_counts.get(c, 0), reverse=True)
+    row = " \u00b7 ".join(
+        f"{cname(c, lang)}: <b>{sig_counts.get(c, 0)}</b> "
+        + ("signaux" if lang == "fr" else "signals")
+        for c in ranked)
+    st.markdown("#### " + ("Signaux de seuils actifs (d\u00e9croissant)" if lang == "fr"
+                           else "Active threshold signals (descending)"))
+    st.markdown(row, unsafe_allow_html=True)
+    st.caption(("Nombre de r\u00e8gles document\u00e9es d\u00e9clench\u00e9es par les derni\u00e8res valeurs "
+                "publi\u00e9es \u2014 d\u00e9compte factuel, pas un score."
+                if lang == "fr" else
+                "Number of documented rules triggered by the latest published values "
+                "\u2014 a factual count, not a score."))
     inds = [i for i in IND_ORDER if i in set(df.indicator)]
     for start in range(0, len(inds), 2):
         pair = inds[start:start + 2]
@@ -137,3 +133,19 @@ def _dedup(df):
     df = df.copy()
     df.columns = cols
     return df
+
+
+def _signal_counts(df, countries):
+    """Nombre de regles de seuils declenchees par les dernieres valeurs publiees.
+    Decompte factuel et documente - pas un score."""
+    from .alerts import RULES
+    latest = df.sort_values("date").groupby(["country", "indicator"], as_index=False).tail(1)
+    out = {}
+    for c in countries:
+        sub = latest[latest.country == c]
+        n = 0
+        for rule in RULES:
+            v = pd.to_numeric(sub[sub.indicator == rule["indicator"]]["value"], errors="coerce")
+            n += int(v.map(rule["cond"]).fillna(False).sum())
+        out[c] = n
+    return out
