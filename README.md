@@ -23,6 +23,21 @@ Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 17 indicators · sover
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat&logo=opensourceinitiative&logoColor=white" alt="License" />
 </p>
 
+## Table of contents
+
+- [Purpose of the application](#purpose-of-the-application)
+- [Three reading modes](#three-reading-modes)
+- [Data sources](#data-sources)
+- [Methodological principles](#methodological-principles)
+- [Assumed limitations](#assumed-limitations)
+- [Live demonstrations](#live-demonstrations)
+- [Local installation](#local-installation)
+- [Project structure](#project-structure)
+- [Data refresh](#data-refresh)
+- [Documentation and tests](#documentation-and-tests)
+- [Author](#author)
+- [License](#license)
+
 ## Purpose of the application
 
 Country Risk Desk provides a structured analysis brief for each of the 217 covered economies, based on any of the 17 available macroeconomic and governance indicators:

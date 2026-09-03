@@ -23,6 +23,21 @@ Interface bilingue 🇫🇷/🇬🇧 · 217 économies · 17 indicateurs · nota
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat&logo=opensourceinitiative&logoColor=white" alt="License" />
 </p>
 
+## Table des matières
+
+- [Objet de l'application](#objet-de-lapplication)
+- [Trois modes de lecture](#trois-modes-de-lecture)
+- [Provenance des données](#provenance-des-données)
+- [Principes méthodologiques](#principes-méthodologiques)
+- [Limites assumées](#limites-assumées)
+- [Démonstrations en ligne](#démonstrations-en-ligne)
+- [Installation locale](#installation-locale)
+- [Structure du projet](#structure-du-projet)
+- [Actualisation des données](#actualisation-des-données)
+- [Documentation et tests](#documentation-et-tests)
+- [Auteur](#auteur)
+- [Licence](#licence)
+
 ## Objet de l'application
 
 Country Risk Desk permet d'établir, pour chacune des 217 économies couvertes, un dossier d'analyse structuré à partir de l'un des 17 indicateurs macroéconomiques et de gouvernance disponibles :
