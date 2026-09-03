@@ -114,8 +114,8 @@ python scripts/fetch_imf.py
 python scripts/fetch_risk_extras.py
 ```
 
-Les notations souveraines sont actualisées par révision des fichiers `data/ratings_sp.csv`, `data/ratings_moodys.csv` et `data/ratings_fitch.csv`, à partir d'un nouvel instantané de la page Wikipédia et des publications des agences.
-Les indicateurs État de droit et Qualité réglementaire sont extraits de l'extrait officiel `WGI.xlsx` (feuilles `rl`/`rq`).
+- Les notations souveraines sont actualisées par révision des fichiers `data/ratings_sp.csv`, `data/ratings_moodys.csv` et `data/ratings_fitch.csv`, à partir d'un nouvel instantané de la page Wikipédia et des publications des agences.
+- Les indicateurs État de droit et Qualité réglementaire sont extraits de l'extrait officiel `WGI.xlsx` (feuilles `rl`/`rq`).
 
 ## Documentation et tests
 

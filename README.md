@@ -65,13 +65,6 @@ Country Risk Desk provides a structured analysis brief for each of the 217 cover
 - WGI indicators are statistical estimates with confidence intervals; the application displays the point estimate.
 - The application produces no aggregate score and no ranking: it is an analysis aid, not a credit opinion.
 
-## Assumed limitations
-
-- Macroeconomic series come from annual or irregular vintages: cross-country comparisons use each country's latest available value, not a synchronized date.
-- Sovereign ratings correspond to a snapshot (September 1, 2026); only a manual revision of the CSV files updates them.
-- WGI indicators are statistical estimates with confidence intervals; the application displays the point estimate.
-- The application produces no aggregate score and no ranking: it is an analysis aid, not a credit opinion.
-
 ## Live demonstrations
 
 <a href="https://country-risk-desk.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/▶_Live_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo" /></a> on Streamlit Cloud
