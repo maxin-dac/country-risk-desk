@@ -1,0 +1,23 @@
+{
+  "types": [
+    { "type": "feat", "section": "✨ Nouveautés", "hidden": false },
+    { "type": "feature", "section": "✨ Nouveautés", "hidden": false },
+    { "type": "fix", "section": "🐛 Corrections", "hidden": false },
+    { "type": "perf", "section": "⚡ Performances", "hidden": false },
+    { "type": "refactor", "section": "♻️ Refactoring", "hidden": false },
+    { "type": "docs", "section": "📚 Documentation", "hidden": false },
+    { "type": "test", "section": "🧪 Tests", "hidden": false },
+    { "type": "build", "section": "🏗️ Build", "hidden": false },
+    { "type": "ci", "section": "🔧 CI/CD", "hidden": false },
+    { "type": "chore", "section": "📦 Chores", "hidden": true },
+    { "type": "data", "section": "📊 Données", "hidden": false },
+    { "type": "style", "section": "🎨 Style", "hidden": true },
+    { "type": "revert", "section": "↩️ Retours en arrière", "hidden": false }
+  ],
+  "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+  "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+  "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+  "releaseCommitMessageFormat": "chore(release): {{currentTag}}",
+  "tagPrefix": "v",
+  "versionFile": "./VERSION"
+}

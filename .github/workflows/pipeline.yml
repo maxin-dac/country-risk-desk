@@ -7,7 +7,6 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    
     - cron: "0 4 1 * *"
 
 permissions:
@@ -49,6 +48,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.AUTO_VERSIONING_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Python 3.11
         uses: actions/setup-python@v5
@@ -97,7 +97,7 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit & push data + docs
+      - name: Commit & push data + docs (conventional format)
         if: steps.diff.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -107,28 +107,14 @@ jobs:
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
 
-
-  release:
-    name: Release mensuelle
-    needs: refresh
-    if: github.event_name == 'schedule'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Creer tag + release vYYYY.MM
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Trigger versioning workflow (fallback si PAT non defini)
+        if: steps.diff.outputs.changed == 'true' && !secrets.AUTO_VERSIONING_PAT
+        uses: actions/github-script@v7
         with:
-          tag_name: v$(date -u +%Y.%m)
-          release_name: "Release $(date -u +'%B %Y')"
-          body: |
-            Donnees officielles mises a jour :
-            - Banque Mondiale WDI / WGI 2024
-            - FMI WEO (derniere edition)
-            - Scoring & alertes recalcules sur la base fraiche
-
-            Voir le commit `data:` dans l'historique pour le detail.
-          draft: false
-          prerelease: false
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'versioning.yml',
+              ref: 'main'
+            })

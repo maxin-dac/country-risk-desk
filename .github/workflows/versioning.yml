@@ -1,0 +1,95 @@
+name: Versioning automatique (Conventional Commits)
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "VERSION"
+      - "CHANGELOG.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: versioning-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  version:
+    name: Bump version & Release
+    runs-on: ubuntu-latest
+    outputs:
+      new_tag: ${{ steps.bump.outputs.new_tag }}
+      version: ${{ steps.bump.outputs.version }}
+      changelog: ${{ steps.changelog.outputs.clean_changelog }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          git-message: "chore(release): {version}"
+          preset: "conventionalcommits"
+          tag-prefix: "v"
+          output-file: "CHANGELOG.md"
+          release-count: "0"
+          skip-on-empty: "true"
+          skip-version-file: "false"
+          skip-commit: "false"
+          version-file: "./VERSION"
+          version-path: ""
+
+      - name: Extraire la version finale
+        if: steps.changelog.outputs.skipped != 'true'
+        id: bump
+        run: |
+          VERSION=$(cat VERSION | tr -d '\n')
+          TAG="v${VERSION}"
+          echo "new_tag=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Lire le CHANGELOG pour le corps de release
+        if: steps.changelog.outputs.skipped != 'true'
+        id: changelog_body
+        run: |
+          python - <<'PY'
+          import re, pathlib
+          text = pathlib.Path("CHANGELOG.md").read_text(encoding="utf-8")
+          match = re.search(r"## \[?\d+\.\d+\.\d+\]?.*?\n(.*?)(?=\n## |\Z)", text, re.DOTALL)
+          body = match.group(1).strip() if match else ""
+          pathlib.Path("/tmp/release_body.md").write_text(body, encoding="utf-8")
+          print(body[:2000])
+          PY
+
+      - name: Create GitHub Release
+        if: steps.changelog.outputs.skipped != 'true'
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.bump.outputs.new_tag }}
+          release_name: "Release ${{ steps.bump.outputs.new_tag }}"
+          body_path: /tmp/release_body.md
+          draft: false
+          prerelease: false

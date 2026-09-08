@@ -4,6 +4,7 @@ from src import config
 from src import dashboard
 from src import ratings as rat
 from src import analytics
+from src import version as ver
 from src.alerts import compute_alerts, generate_outlook
 from src.compare import line_chart, render_compare
 from src.csv_loader import get_stats, load_csv
@@ -188,10 +189,13 @@ elif mode == "compare":
 else:
     render_dashboard(df, alerts, lang)
 
-st.sidebar.markdown("""
+version_display = ver.version_string()
+st.sidebar.markdown(f"""
 <div style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(148,163,184,.2);
 text-align:center;color:#8fa3b8;font-size:.75rem;">
-<p style="margin:0 0 .75rem 0;font-weight:600;letter-spacing:.05em;">\u00a9 2026 Maxime NDACLEU</p>
+<p style="margin:0 0 .5rem 0;font-family:monospace;font-size:.7rem;letter-spacing:.05em;
+padding:4px 10px;background:rgba(148,163,184,.08);border-radius:6px;display:inline-block;">{version_display}</p>
+<p style="margin:.75rem 0 .75rem 0;font-weight:600;letter-spacing:.05em;">© 2026 Maxime NDACLEU</p>
 <div style="display:flex;justify-content:center;gap:1.25rem;">
 <a href="https://github.com/maxin-dac" target="_blank" style="color:#8fa3b8;">GitHub</a>
 <a href="https://www.linkedin.com/in/maximendacleu" target="_blank" style="color:#8fa3b8;">LinkedIn</a>

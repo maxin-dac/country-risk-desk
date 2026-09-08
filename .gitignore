@@ -9,3 +9,6 @@ data/watchlist.json
 data/watchlist.json
 data/risk_panel.csv
 data/risk_panel_final.csv
+node_modules/
+package-lock.json
+package.json
