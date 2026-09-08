@@ -22,7 +22,7 @@
 #MainMenu, footer, header{visibility:hidden}
 html, body{font-family:var(--body);line-height:1.6}
 
-/* Fond avec noise + halos + grille */
+
 [data-testid="stAppViewContainer"]{
   background:
     radial-gradient(1200px 600px at 85% -5%, rgba(88,166,255,.12), transparent 55%),
@@ -52,7 +52,7 @@ p, span, label{color:var(--text);line-height:1.6}
 ::-webkit-scrollbar-thumb{background:rgba(148,163,184,.3);border-radius:10px;border:2px solid var(--surface)}
 ::-webkit-scrollbar-thumb:hover{background:rgba(148,163,184,.5)}
 
-/* ---------- Sidebar (agencement restructure) ---------- */
+
 [data-testid="stSidebar"]{
   background:linear-gradient(180deg,#0d1424 0%,#0a0f1c 100%);
   border-right:1px solid var(--line);
@@ -60,7 +60,7 @@ p, span, label{color:var(--text);line-height:1.6}
 }
 [data-testid="stSidebar"] > div{padding-top:1.5rem}
 
-/* Sections de sidebar */
+
 [data-testid="stSidebar"] h3{
   font-family:var(--mono);font-size:.72rem;font-weight:600;
   letter-spacing:.2em;text-transform:uppercase;color:var(--accent2);
@@ -76,7 +76,7 @@ label, [data-testid="stSidebar"] label{
   margin-bottom:.3rem !important;
 }
 
-/* Inputs */
+
 [data-testid="stSelectbox"] > div, [data-testid="stMultiSelect"] > div,
 [data-testid="stTextInput"] input, [data-testid="stRadio"] > div{
   background:var(--surface2) !important;
@@ -92,7 +92,7 @@ label, [data-testid="stSidebar"] label{
   background:var(--surface3) !important;
 }
 
-/* Radio buttons */
+
 [data-testid="stRadio"] label{
   padding:.6rem .8rem !important;margin:.2rem 0 !important;
   border-radius:8px !important;transition:all .15s ease;
@@ -103,7 +103,7 @@ label, [data-testid="stSidebar"] label{
   border-left:3px solid var(--accent);
 }
 
-/* ---------- Boutons (plus sophistiques) ---------- */
+
 [data-testid="stButton"] > button{
   background:var(--surface2);border:1px solid var(--line);border-radius:10px;
   color:var(--text);font-family:var(--body);font-weight:600;font-size:.82rem;
@@ -132,7 +132,7 @@ label, [data-testid="stSidebar"] label{
   border-color:rgba(88,166,255,.7);
 }
 
-/* ---------- Conteneurs (glassmorphism) ---------- */
+
 [data-testid="stExpander"]{
   background:var(--glass);
   backdrop-filter:blur(12px);
@@ -166,7 +166,7 @@ label, [data-testid="stSidebar"] label{
   background:var(--surface);
 }
 
-/* ---------- Masthead (plus impactant) ---------- */
+
 .masthead{
   padding:1.5rem 0 .5rem;position:relative;
 }
@@ -223,7 +223,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
 .mh-ticks:hover .mh-ticks-track{animation-play-state:paused}
 @keyframes crd-ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* ---------- Cartes de brief (hierarchie visuelle) ---------- */
+
 .brief{
   background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%);
   border:1px solid var(--line);border-radius:16px;
@@ -295,14 +295,14 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   backdrop-filter:blur(6px);
 }
 
-/* ---------- Divers ---------- */
+
 .js-plotly-plot .main-svg, .js-plotly-plot .plot-container{
   background:transparent !important;
   border-radius:14px;
 }
 .alerts-flag{display:none}
 
-/* ---------- Alertes seuil (boutons rouges avec halo) ---------- */
+
 [data-testid="stVerticalBlock"] > div:has(.alerts-red-flag) ~ div [data-testid="stButton"]{
   border:none !important;background:transparent !important;outline:none !important;
 }
@@ -319,15 +319,15 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   box-shadow:0 0 18px rgba(231,76,60,.5) !important;color:#ff8a7a !important;
 }
 
-/* ---------- Animations subtiles ---------- */
+
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .brief, .mh-chip, [data-testid="stExpander"]{animation:fadeIn .3s ease}
 
-/* Overrides: visuels sans contour */
+
 .js-plotly-plot .plot-container{border:none !important;box-shadow:none !important}
 .spark-box{border:none;background:transparent}
 
-/* ---- Coherence typo : score = bignum, titres a barres paralleles ---- */
+
 .bignum.solid{
   background:none !important;
   -webkit-background-clip:initial !important;
@@ -349,7 +349,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
     linear-gradient(90deg,transparent,var(--accent),var(--gold),transparent) bottom left/100% 1px no-repeat;
 }
 
-/* ---- Resultats de recherche (section 02) ---- */
+
 .sr-item{padding:.75rem .2rem;border-bottom:1px solid var(--line2)}
 .sr-item:last-child{border-bottom:none}
 .sr-line{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap}
@@ -358,7 +358,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
 .sr-words{margin:.4rem 0 .2rem}
 .sr-snip{color:var(--muted);font-size:.84rem;line-height:1.65;margin:.25rem 0 0}
 
-/* Brief pays : visuel sur fond solide, coherent avec les cartes */
+
 .chart-solid-flag{display:none}
 [data-testid="stVerticalBlock"] div:has(.chart-solid-flag) .js-plotly-plot .plot-container{
   background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
@@ -368,7 +368,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   padding:.5rem !important;
 }
 
-/* ---- Fusion : constat chiffre + graphique dans une seule carte ---- */
+
 .fused-flag{display:none}
 [data-testid="stVerticalBlock"]:has(.fused-flag):not(:has([data-testid="stVerticalBlock"] .fused-flag)){
   background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%);
@@ -390,7 +390,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   box-shadow:none !important;padding:.2rem .6rem .6rem;
 }
 
-/* ---- Titre singulier : composition en 2 niveaux + animation ---- */
+
 .mh-title-block{
   margin:.8rem 0 1.2rem;
   animation:fadeInUp .6s cubic-bezier(.4,0,.2,1);
@@ -427,7 +427,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   50%{opacity:.6;transform:scale(1.15)}
 }
 
-/* ---- Lockup titre : COUNTRY fuse avec RISK.DESK ---- */
+
 .mh-title-block{
   display:flex;align-items:baseline;gap:1.1rem;flex-wrap:wrap;
 }
@@ -435,7 +435,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   margin-bottom:0;font-size:1.05rem;letter-spacing:.42em;
 }
 
-/* ---- Lockup final : COUNTRY colle au-dessus, barres paralleles, bichromie ---- */
+
 .mh-title-block{
   display:block;position:relative;
   margin:.9rem 0 1.2rem;padding:.75rem 0 .85rem;
@@ -464,7 +464,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
 }
 .mh-title-dot{-webkit-text-fill-color:var(--risk);color:var(--risk)}
 
-/* ---- COUNTRY sur la meme ligne que RISK.DESK (lockup horizontal) ---- */
+
 .mh-title-block{
   display:flex;align-items:baseline;gap:1.3rem;flex-wrap:wrap;
 }
@@ -474,7 +474,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
 }
 .mh-title-main{line-height:1}
 
-/* ---- Titre uniforme : meme taille, meme police, un seul degrade ---- */
+
 .mh-title-main{
   background:linear-gradient(90deg,var(--accent3) 0%,var(--accent) 45%,var(--gold) 100%) !important;
   -webkit-background-clip:text !important;
@@ -484,7 +484,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
 }
 .mh-title-dot{-webkit-text-fill-color:var(--risk);color:var(--risk)}
 
-/* ---- Harmonie : tous les visuels en cartes pleines (comme les briefs) ---- */
+
 .js-plotly-plot .plot-container{
   background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
   border:1px solid var(--line) !important;
@@ -500,7 +500,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   box-shadow:var(--shadow-md) !important;
 }
 
-/* ---- Coins arrondis complets (racine + overflow) + tables en cartes ---- */
+
 .js-plotly-plot{
   background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
   border:1px solid var(--line) !important;
@@ -515,7 +515,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   border:none !important;
   box-shadow:none !important;
 }
-/* Tableaux : meme traitement que les cartes */
+
 [data-testid="stDataFrame"]{
   background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
   border:1px solid var(--line) !important;
@@ -527,7 +527,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   border-radius:16px !important;
   overflow:hidden !important;
 }
-/* Exception : la carte fusionnee 01 reste integree (pas de carte dans la carte) */
+
 [data-testid="stVerticalBlock"]:has(.fused-flag) .js-plotly-plot{
   background:transparent !important;
   border:none !important;
@@ -535,7 +535,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   padding:0;
 }
 
-/* ==== CORRECTION FINALE : cartes pleines, coins 4 cotes, tables ==== */
+
 .js-plotly-plot{
   background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%) !important;
   border:1px solid var(--line) !important;
@@ -572,7 +572,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
 .sr-title:hover{text-decoration:underline}
 [data-testid="stVerticalBlock"]:has(.fused-flag) .brief.data:hover{transform:none}
 
-/* ==== ULTIME : une seule bordure, 4 coins arrondis, zero double ==== */
+
 [data-testid="stPlotlyChart"]{
   background:linear-gradient(180deg,var(--surface2) 0%,var(--surface) 100%);
   border:1px solid var(--line);
@@ -590,7 +590,7 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   box-shadow:none !important;
   border-radius:0 !important;
 }
-/* Carte fusionnee 01 : pas de carte dans la carte */
+
 [data-testid="stVerticalBlock"]:has(.fused-flag) [data-testid="stPlotlyChart"]{
   background:transparent !important;
   border:none !important;
@@ -598,10 +598,10 @@ color:var(--muted2);animation:crd-ticker 70s linear infinite}
   padding:0;
 }
 
-/* ---- Titre : une seule barre basse, pas de trait entre eyebrow et titre ---- */
+
 .mh-title-block::before{content:none}
 
-/* ---- Section 08 : notation souveraine ---- */
+
 .brief.rating{border-left:4px solid var(--gold2);box-shadow:0 4px 20px rgba(232,192,120,.15)}
 .rate-line{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap;margin:.2rem 0 .4rem}
 .rate-big{font-family:var(--mono);font-size:2.4rem;font-weight:700;color:var(--gold2);line-height:1}
@@ -613,7 +613,7 @@ background:linear-gradient(90deg,var(--opp) 0%,var(--warn) 55%,var(--risk) 100%)
 .rate-tbl td{padding:.28rem .4rem;border-bottom:1px solid var(--line2);color:var(--text2)}
 .rate-tbl td:last-child{text-align:right}
 
-/* ---- Notation souveraine : grille d'agences ---- */
+
 .brief.rating{border-left:4px solid var(--gold2);box-shadow:0 4px 20px rgba(232,192,120,.15)}
 .rate-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
 @media (max-width:1100px){.rate-grid{grid-template-columns:repeat(2,1fr)}}
@@ -630,7 +630,7 @@ background:linear-gradient(90deg,var(--opp) 0%,var(--warn) 55%,var(--risk) 100%)
 .rd{margin-top:.3rem;font-family:var(--mono);font-size:.62rem;color:var(--muted2)}
 .rate-src{margin-top:.7rem;font-size:.72rem;color:var(--muted2)}
 
-/* ---- Analyse temporelle : cartes de franchissements ---- */
+
 .tmp-head{display:flex;align-items:center;gap:.5rem;font-family:var(--mono);
 font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin:.4rem 0 .6rem}
 .tmp-count{font-family:var(--mono);font-size:.65rem;padding:.05rem .55rem;

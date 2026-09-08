@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 """Orchestrateur de rafraichissement des donnees (GitHub Actions).
 Fetch WB/WGI/IMF/extras -> extraction gouvernance -> filtre agregats
 -> controles de coherence. Ne committe rien : le workflow s'en charge."""
@@ -27,7 +27,7 @@ def main():
     for s in FETCHES:
         run(s)
 
-    # Filtre defensif des agregats Banque mondiale (EAP, ECA, WLD...)
+    
     allowed = set(pd.read_csv(DATA / "countries.csv")["iso3"])
     df = pd.read_csv(DATA / "macro_indicators.csv", low_memory=False)
     n_raw = len(df)
@@ -36,7 +36,7 @@ def main():
         print(f"[OK] agregats filtres : {n_raw - len(df)} lignes")
         df.to_csv(DATA / "macro_indicators.csv", index=False)
 
-    # Controles de coherence (le workflow echoue sinon -> pas de commit)
+    
     n_after = len(df)
     inds = set(df["indicator"].unique())
     print(f"\n[check] lignes : {n_before} -> {n_after}")

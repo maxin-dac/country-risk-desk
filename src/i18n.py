@@ -5,7 +5,7 @@ RISK_ORDER est la liste blanche des indicateurs du cadre de risque
 UNITS/plot_theme portent les unites affichees dans les titres de visuels.
 """
 import pathlib
-# ISO3 -> (en, fr, world_bank_code, region)
+# ISO3 (en, fr, world_bank_code, region)
 COUNTRIES = {
     "VNM": ("Vietnam", "Vietnam", "VN", "East Asia & Pacific"),
     "BRA": ("Brazil", "Brésil", "BR", "Latin America & Caribbean"),
@@ -29,7 +29,7 @@ COUNTRIES = {
     "SAU": ("Saudi Arabia", "Arabie saoudite", "SA", "Middle East & North Africa"),
 }
 
-# CSV key -> (en, fr)
+# CSV key (en, fr)
 INDICATORS = {
     "Political stability": ("Political stability", "Stabilité politique"),
     "Control of corruption": ("Control of corruption", "Contrôle de la corruption"),
@@ -52,7 +52,7 @@ INDICATORS = {
     "GDP growth": ("GDP growth", "Croissance du PIB"),
 }
 
-# UI strings -> (en, fr)
+# UI strings (en, fr)
 STR = {
 
     "mode": ("Mode", "Mode"),
@@ -221,7 +221,7 @@ STR.update({
 })
 
 
-# ---- Traduction des unites (source CSV en anglais) ----
+
 UNIT_FR = {
     "months": "mois", "months of imports": "mois d'importations",
     "% GDP": "% PIB", "% GNI": "% RNB", "% exports": "% exports",
@@ -266,7 +266,7 @@ STR.update({
     "rate_live": ("Web echo (DuckDuckGo, to verify)", "Echo web (DuckDuckGo, a verifier)"),
 })
 
-# -- Traduction revue : FR avec accents, EN propre (auto-genere) --
+
 STR['params'] = ('Parameters', 'Paramètres')
 STR['mode'] = ('Mode', 'Mode')
 STR['mode_brief'] = ('Country brief', 'Brief pays')
@@ -320,14 +320,14 @@ INDICATORS['Control of corruption'] = ('Control of corruption', 'Maîtrise de la
 INDICATORS['Regulatory quality'] = ('Regulatory quality', 'Qualité réglementaire')
 INDICATORS['Voice & accountability'] = ('Voice & accountability', 'Expression et responsabilité')
 
-# -- Libelles dette : deux series distinctes, libelles distincts --
+
 INDICATORS['Gen gov debt'] = ('General government debt (% GDP)', 'Dette du gouvernement général (% PIB)')
 INDICATORS['Gov debt'] = ('Government debt (% GDP)', 'Dette publique (% PIB)')
 
 
 
 
-# -- REINTRO-WGI2 : Rule of law + Regulatory quality reactivés depuis WGI.xlsx --
+
 _IND_WGI2 = {
     "Rule of law": ("Rule of law (index)", "\u00c9tat de droit (indice)"),
     "Regulatory quality": ("Regulatory quality (index)", "Qualit\u00e9 r\u00e9glementaire (indice)"),
@@ -341,7 +341,7 @@ if _RISK_WGI2:
     RISK_ORDER = list(RISK_ORDER) + _RISK_WGI2
 
 
-# -- REINTRO-DS : Debt service reactive (donnees WDI disponibles via fetch_worldbank) --
+
 _sample = next(iter(INDICATORS.values()))
 if "Debt service" not in INDICATORS:
     _en = "Debt service (% of exports of goods & services)"
@@ -350,11 +350,11 @@ if "Debt service" not in INDICATORS:
 if "Debt service" not in RISK_ORDER:
     RISK_ORDER = list(RISK_ORDER) + ["Debt service"]
 
-# Sens des indicateurs (hausse = deterioration)
+
 HIGHER_IS_WORSE = {'Inflation', 'Gini', 'Gov debt', 'External debt', 'Dependency ratio', 'Debt service', 'Youth unemployment', 'Gen gov debt', 'Commodity dependence', 'Unemployment'}
 
 
-# -- REINTRO-FINAL : perimetre 17 indicateurs --
+
 _sample = next(iter(INDICATORS.values()))
 for _k, (_en, _fr) in {
     "Debt service": ("Debt service (% of exports of goods & services)", "Service de la dette (% des exports de biens & services)"),

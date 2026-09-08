@@ -11,7 +11,7 @@ def _df(rows):
          for c, i, d, v in rows])
 
 
-# ---------- Alertes ----------
+
 def test_inflation_high():
     df = _df([("FRA", "Inflation", "2024-12-31", 12.0),
               ("DEU", "Inflation", "2024-12-31", 2.0)])
@@ -40,8 +40,7 @@ def test_generate_outlook_risk_and_opp():
     assert any(r["rule_id"] == "inflation_low" for r in out2["opportunities"])
 
 
-# ---------- Scoring ----------
-# ---------- Tendance ----------
+
 def test_trend_5y_in_stats():
     from src.csv_loader import get_stats
     dates = pd.to_datetime([f"{y}-12-31" for y in range(2015, 2025)])

@@ -5,7 +5,7 @@ import pandas as pd
 
 PROJ_PATH = pathlib.Path(__file__).resolve().parent.parent / "data" / "imf_projections.csv"
 
-# Indicators for which a rise is a deterioration
+
 HIGHER_IS_WORSE = {
     "Inflation", "Gen gov debt", "Gov debt", "External debt", "Debt service",
     "Unemployment", "Youth unemployment", "Gini", "Dependency ratio",

@@ -22,7 +22,7 @@ BROWSER = {
 CATEGORY = "Macroeconomic"
 SOURCE = "IMF (WEO)"
 
-# WEO subject code -> (our name, merge historical?, unit)
+
 CODES = {
     "GGXCNL_NGDP": ("Fiscal balance", True, "% GDP"),
     "GGXWDG_NGDP": ("Gen gov debt", True, "% GDP"),
@@ -35,7 +35,7 @@ def _match(code, desc):
     code = str(code).strip()
     parts = code.split(".")
     if len(parts) == 3 and len(parts[1]) > 2:
-        code = parts[1]  # SERIES_CODE form: ISO.INDICATOR.FREQ
+        code = parts[1]  
     d = " ".join(str(desc).lower().split())
     if code in CODES:
         return CODES[code]

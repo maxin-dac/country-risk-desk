@@ -8,7 +8,7 @@ DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
 _FILES = {"sp": "ratings_sp.csv", "mo": "ratings_moodys.csv", "fi": "ratings_fitch.csv"}
 AGENCIES = [("sp", "S&P"), ("fi", "Fitch"), ("mo", "Moody's")]
 
-# Cache unique partagé par toutes les fonctions du module
+
 _cache = None
 
 
@@ -35,7 +35,7 @@ def _load():
     return _cache
 
 
-# Alias publics pour la compatibilité avec dashboard.py et analytics.py
+
 def load():
     return _load()
 
@@ -62,7 +62,7 @@ def rating_card(iso, lang):
         r = (row.get(key + "_r") or "").strip()
         o = (row.get(key + "_o") or "").strip()
         d = (row.get(key + "_d") or "").strip()
-        # Échappement HTML : les valeurs CSV sont insérées dans du markup unsafe_allow_html
+        
         r_h = html.escape(r)
         o_h = html.escape(o)
         d_h = html.escape(d)

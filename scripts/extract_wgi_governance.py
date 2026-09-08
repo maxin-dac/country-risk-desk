@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8
 """Extrait Rule of law + Regulatory quality depuis l'extrait officiel WGI.xlsx
 (feuilles rl/rq) et les injecte dans macro_indicators.csv. Idempotent."""
 import pathlib

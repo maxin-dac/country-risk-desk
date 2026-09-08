@@ -2,9 +2,8 @@
 """Moteur d'alertes : règles de seuils déterministes + génération de risques/opportunités."""
 import pandas as pd
 
-# ---------------------------------------------------------------------------
-# Règles de seuils — toutes déclarées ici (pas d'append conditionnel post-import)
-# ---------------------------------------------------------------------------
+
+# Règles de seuils
 RULES = [
     # Macroéconomie classique
     dict(id="inflation_high", indicator="Inflation", cond=lambda v: v > 10, desc=True,
@@ -46,9 +45,8 @@ RULES = [
          en="Debt service above 25 % of exports", fr="Service de la dette au-dessus de 25 % des exports"),
 ]
 
-# ---------------------------------------------------------------------------
-# Règles de risques pour generate_outlook (libellés avec valeur courante)
-# ---------------------------------------------------------------------------
+
+# Règles de risques (seuils défavorables)
 _EXPLICIT_IDS = {"rule_of_law_low", "regulatory_quality_low", "fiscal_deficit", "debt_service_high"}
 RISK_RULES = [
     dict(r, en=(lambda v, _r=r: f"{_r['en']} (value: {v:.1f})"),
@@ -69,9 +67,8 @@ RISK_RULES = [
          fr=lambda v: f"Service de la dette a {v:.1f}% des exports : charge de remboursement elevee."),
 ]
 
-# ---------------------------------------------------------------------------
+
 # Règles d'opportunités (seuils favorables)
-# ---------------------------------------------------------------------------
 OPP_RULES = [
     dict(id="inflation_low", indicator="Inflation", cond=lambda v: v < 3,
          en=lambda v: f"Inflation contained below 3 % (value: {v:.1f})",
@@ -164,8 +161,7 @@ def compute_alerts(df):
             continue
         hit["_sort"] = pd.to_numeric(hit["value"], errors="coerce")
         hit = hit.sort_values("_sort", ascending=not rule["desc"])
-        # Utilisation de zip sur les colonnes vectorisées — plus rapide qu'iterrows()
-        # On exclut 'cond' (lambda) car st.cache_data sérialise le résultat via pickle
+        
         safe = {k: v for k, v in rule.items() if k != "cond"}
         out.append({**safe,
                     "hits": list(zip(hit["country"].tolist(),

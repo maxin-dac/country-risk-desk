@@ -134,7 +134,7 @@ def detect_iso_col(df):
     if col is not None:
         return col
 
-    # Fallback: inspect columns values looking for 3-letter uppercase codes
+    
     for c in df.columns:
         s = df[c].dropna().astype(str).head(500)
         if len(s) == 0:
@@ -151,7 +151,7 @@ def detect_year_col(df):
 
 
 def detect_value_col(df):
-    # Prefer "Estimate", avoid rank/lower/upper/std columns
+    
     preferred = ["estimate", "value"]
     for c in df.columns:
         nc = norm(c)
@@ -172,7 +172,7 @@ def sheet_target(sheet_name):
         if all(k in ns for k in kws if len(k) > 2):
             return target
 
-    # More permissive fallbacks
+    
     if "rule" in ns and "law" in ns:
         return "Rule of law"
     if "regulatory" in ns and "quality" in ns:
@@ -203,7 +203,7 @@ def rows_from_long(df, target=None):
     work = df.copy()
 
     if target is None and indicator_col is not None:
-        # Combined sheet: filter rows by indicator label
+        
         for tname, spec in TARGETS.items():
             kws = spec["indicator_keywords"]
             mask = work[indicator_col].astype(str).str.lower().apply(
@@ -276,10 +276,10 @@ def main():
 
         print(f"Reading sheet '{sheet}' -> target={target}")
 
-        # Try long format first
+        
         part = rows_from_long(df, target=target)
 
-        # If long format fails, try wide format
+        
         if not part:
             part = rows_from_wide(df, target=target)
 

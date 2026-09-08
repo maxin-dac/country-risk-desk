@@ -6,9 +6,9 @@ import requests
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://api.worldbank.org/v2"
 
-# Indicateurs strictement focalisés sur le Country Risk
+
 INDS = {
-    # --- 1. Macroéconomie & Soutenabilité Budgétaire ---
+    
     "GDP growth": ("NY.GDP.MKTP.KD.ZG", "%"),
     "GDP per capita": ("NY.GDP.PCAP.CD", "USD"),
     "Inflation": ("FP.CPI.TOTL.ZG", "%"),
@@ -16,17 +16,17 @@ INDS = {
     "Gov debt": ("GC.DOD.TOTL.GD.ZS", "% GDP"),
     "Tax revenue": ("GC.TAX.TOTL.GD.ZS", "% GDP"),
     
-    # --- 2. Liquidité Externe & Balance des Paiements ---
+    
     "Current account": ("BN.CAB.XOKA.GD.ZS", "% GDP"),
     "External debt": ("DT.DOD.DECT.GN.ZS", "% GNI"),
     "Debt service": ("DT.TDS.DECT.EX.ZS", "% Exports"), 
     "Reserves": ("FI.RES.TOTL.MO", "months"),
     "FDI net inflows": ("BX.KLT.DINV.WD.GD.ZS", "% GDP"),
     
-    # --- 3. Structure Économique & Résilience ---
+    
     "Agriculture value added": ("NV.AGR.TOTL.ZS", "% GDP"),
     
-    # --- 4. Secteur Financier & Social ---
+    
     "Domestic credit": ("FS.AST.PRVT.GD.ZS", "% GDP"),
     "Unemployment": ("SL.UEM.TOTL.ZS", "%")
 }
@@ -127,7 +127,7 @@ def main():
     DATA.mkdir(exist_ok=True)
     countries = load_country_list()
     
-    # Mappings de secours pour le matching
+    
     valid_iso3 = {c["iso3"]: c for c in countries}
     valid_iso2 = {c["iso2"]: c["iso3"] for c in countries if c.get("iso2")}
     valid_name = {c["name_en"].lower(): c["iso3"] for c in countries}
@@ -136,7 +136,7 @@ def main():
 
     if OUT.exists():
         existing = pd.read_csv(OUT, dtype=str, low_memory=False)
-        # Nettoyage des espaces invisibles de l'ancienne version
+        
         existing['indicator'] = existing['indicator'].str.strip()
         existing['country'] = existing['country'].str.strip()
         
@@ -170,16 +170,16 @@ def main():
             country_obj = it.get("country") or {}
             iso2 = country_obj.get("id")
             
-            # 1. Priorité absolue : Mapping ISO2 -> ISO3
+            
             iso3 = valid_iso2.get(iso2)
             
-            # 2. Fallback sur le champ ISO3 natif (en filtrant les agrégats)
+            
             if not iso3:
                 api_iso3 = it.get("countryiso3code")
                 if api_iso3 and api_iso3 in valid_iso3:
                     iso3 = api_iso3
             
-            # 3. Fallback sur le nom du pays
+            
             if not iso3:
                 name = country_obj.get("value", "").lower().strip()
                 iso3 = valid_name.get(name)

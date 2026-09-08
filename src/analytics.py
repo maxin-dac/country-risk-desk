@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 """Analyses avancees, deterministes et factuelles :
 1. Analyse de scenarios  : what-if sur les regles de seuils (brief pays).
 3. Lecture croisee       : divergences S&P / Moody's / Fitch (vue globale).
@@ -10,7 +10,7 @@ import streamlit as st
 from .i18n import cname
 
 
-# ------------------------------------------------------------ 1. Scenarios
+
 def render_scenario(df, country, indicator, stats, lang):
     from .alerts import generate_outlook
     if not stats.get("available"):
@@ -78,7 +78,7 @@ def render_scenario(df, country, indicator, stats, lang):
                 st.caption("Aucune." if lang == "fr" else "None.")
 
 
-# ------------------------------------------------------------ 3. Lecture croisee
+
 _ORD = {
     "AAA": 0, "AA+": 1, "AA": 2, "AA-": 3, "A+": 4, "A": 5, "A-": 6,
     "BBB+": 7, "BBB": 8, "BBB-": 9, "BB+": 10, "BB": 11, "BB-": 12,

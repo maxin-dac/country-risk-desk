@@ -43,7 +43,7 @@ def latest_pivot(df, countries, lang, latest=None):
     piv = sub.pivot(index="country", columns="indicator", values="value")
     piv = piv.reindex([c for c in countries if c in set(piv.index)])
     piv.index = [f"{cname(c, lang)} ({c})" for c in piv.index]
-    # Colonnes avec unites (sans doublon si le nom en contient deja une)
+    
     def _lab(ind):
         base = iname(ind, lang)
         u = unit_suffix(ind, lang)
@@ -84,7 +84,7 @@ def render_compare(df, countries, lang):
     if len(countries) < 2:
         st.info(t("compare_hint", lang))
         return
-    # Calculer latest une seule fois, partagé par _signal_counts, latest_pivot et positioning_scatter
+    
     latest = _latest(df)
     chips = " ".join(
         f'<span class="chip" style="border-left:4px solid {COLORS[i % len(COLORS)]}">'

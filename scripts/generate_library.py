@@ -23,7 +23,7 @@ def main():
                 r = agent.invoke({"country": country, "indicator": indicator,
                                   "lang": lang}).get("final_report", {})
                 if r.get("status") in ("done", "done_degraded"):
-                    r.pop("stats", None)  # figures come from CSV at display time
+                    r.pop("stats", None)  
                     briefs[key] = r
                     print(f"[OK]   {key}: {r.get('status')}, {len(r.get('sources', []))} sources")
                 else:

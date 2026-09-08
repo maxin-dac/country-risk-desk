@@ -7,16 +7,14 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    # Le 1er de chaque mois a 04:00 UTC
+    
     - cron: "0 4 1 * *"
 
 permissions:
   contents: write
 
 jobs:
-  # ------------------------------------------------
-  # JOB 1 : CI a chaque push / PR
-  # ------------------------------------------------
+
   ci:
     name: Tests unitaires
     runs-on: ubuntu-latest
@@ -41,9 +39,7 @@ jobs:
       - name: Build docs (verification)
         run: python scripts/build_docs.py
 
-  # ------------------------------------------------
-  # JOB 2 : Refresh mensuel des donnees officielles
-  # ------------------------------------------------
+
   refresh:
     name: Refresh donnees officielles
     needs: ci
@@ -111,9 +107,7 @@ jobs:
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
 
-  # ------------------------------------------------
-  # JOB 3 : Release mensuelle automatique
-  # ------------------------------------------------
+
   release:
     name: Release mensuelle
     needs: refresh
