@@ -1,3 +1,10 @@
+## [0.4.0](https://github.com/maxin-dac/country-risk-desk/compare/v0.3.0...v0.4.0) (2026-09-09)
+
+
+### Features
+
+* implement DAX measures and documentation for country risk analysis in Power BI ([ad36e80](https://github.com/maxin-dac/country-risk-desk/commit/ad36e802d536de4afca234623f26876ac324e653))
+
 ## [0.3.0](https://github.com/maxin-dac/country-risk-desk/compare/v0.2.0...v0.3.0) (2026-09-09)
 
 
