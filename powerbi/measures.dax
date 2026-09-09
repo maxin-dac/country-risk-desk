@@ -1,0 +1,455 @@
+// ============================================================================
+// BIBLIOTHEQUE DAX - JUMEAU POWER BI
+// Source de verite : scripts/export_powerbi.py + src/alerts.py
+// Philosophie : aucun score - uniquement des decomptes factuels de regles documentees
+// ============================================================================
+
+// ============================================================================
+// 1. MESURES DE BASE : dernieres valeurs et variations
+// ============================================================================
+
+Latest Value = 
+VAR _country = SELECTEDVALUE(dim_country[iso3])
+VAR _indicator = SELECTEDVALUE(dim_indicator[indicator])
+VAR _lastDate = 
+    CALCULATE(
+        MAX(fact_indicators[date]),
+        ALLEXCEPT(fact_indicators, fact_indicators[country], fact_indicators[indicator])
+    )
+RETURN 
+    CALCULATE(
+        SELECTEDVALUE(fact_indicators[value]),
+        fact_indicators[date] = _lastDate
+    )
+
+Latest Date = 
+VAR _country = SELECTEDVALUE(dim_country[iso3])
+VAR _indicator = SELECTEDVALUE(dim_indicator[indicator])
+RETURN
+    CALCULATE(
+        MAX(fact_indicators[date]),
+        ALLEXCEPT(fact_indicators, fact_indicators[country], fact_indicators[indicator])
+    )
+
+Value 12m Ago = 
+VAR _country = SELECTEDVALUE(dim_country[iso3])
+VAR _indicator = SELECTEDVALUE(dim_indicator[indicator])
+VAR _lastDate = [Latest Date]
+VAR _date12m = EDATE(_lastDate, -12)
+RETURN
+    CALCULATE(
+        SELECTEDVALUE(fact_indicators[value]),
+        fact_indicators[country] = _country,
+        fact_indicators[indicator] = _indicator,
+        fact_indicators[date] <= _date12m,
+        LASTNONBLANK(fact_indicators[date], fact_indicators[value])
+    )
+
+Change 12m (%) = 
+VAR _current = [Latest Value]
+VAR _past = [Value 12m Ago]
+RETURN
+    IF(
+        NOT ISBLANK(_current) && NOT ISBLANK(_past) && _past <> 0,
+        DIVIDE(_current - _past, ABS(_past), BLANK()),
+        BLANK()
+    )
+
+Regional Median = 
+VAR _country = SELECTEDVALUE(dim_country[iso3])
+VAR _indicator = SELECTEDVALUE(dim_indicator[indicator])
+VAR _region = 
+    CALCULATE(
+        SELECTEDVALUE(dim_country[region]),
+        dim_country[iso3] = _country
+    )
+VAR _countriesInRegion = 
+    CALCULATETABLE(
+        VALUES(dim_country[iso3]),
+        dim_country[region] = _region,
+        ALL(dim_country)
+    )
+RETURN
+    MEDIANX(
+        _countriesInRegion,
+        [Latest Value]
+    )
+
+Position vs Regional Median = 
+VAR _current = [Latest Value]
+VAR _median = [Regional Median]
+RETURN
+    SWITCH(
+        TRUE(),
+        ISBLANK(_current) || ISBLANK(_median), BLANK(),
+        _current > _median * 1.1, "above regional median",
+        _current < _median * 0.9, "below regional median",
+        "near median"
+    )
+
+// ============================================================================
+// 2. MESURES DE SIGNAUX : decomptes factuels de regles declenchees
+// ============================================================================
+
+Risk Signals = 
+VAR _currentValue = [Latest Value]
+VAR _indicator = SELECTEDVALUE(dim_indicator[indicator])
+VAR _rules = 
+    FILTER(
+        dim_rules,
+        dim_rules[indicator] = _indicator &&
+        dim_rules[side] = "risk"
+    )
+RETURN
+    SUMX(
+        _rules,
+        VAR _op = dim_rules[operator]
+        VAR _thr = dim_rules[threshold]
+        RETURN
+            SWITCH(
+                _op,
+                ">", IF(_currentValue > _thr, 1, 0),
+                "<", IF(_currentValue < _thr, 1, 0),
+                0
+            )
+    )
+
+Opportunity Signals = 
+VAR _currentValue = [Latest Value]
+VAR _indicator = SELECTEDVALUE(dim_indicator[indicator])
+VAR _rules = 
+    FILTER(
+        dim_rules,
+        dim_rules[indicator] = _indicator &&
+        dim_rules[side] = "opportunity"
+    )
+RETURN
+    SUMX(
+        _rules,
+        VAR _op = dim_rules[operator]
+        VAR _thr = dim_rules[threshold]
+        RETURN
+            SWITCH(
+                _op,
+                ">", IF(_currentValue > _thr, 1, 0),
+                "<", IF(_currentValue < _thr, 1, 0),
+                0
+            )
+    )
+
+Total Signals = [Risk Signals] + [Opportunity Signals]
+
+Risk Signals (All Indicators) = 
+VAR _country = SELECTEDVALUE(dim_country[iso3])
+VAR _allIndicators = 
+    FILTER(
+        ALL(dim_indicator),
+        NOT ISBLANK(
+            CALCULATE(
+                [Latest Value],
+                fact_indicators[country] = _country,
+                fact_indicators[indicator] = dim_indicator[indicator]
+            )
+        )
+    )
+RETURN
+    SUMX(
+        _allIndicators,
+        VAR _ind = dim_indicator[indicator]
+        VAR _currentValue = 
+            CALCULATE(
+                [Latest Value],
+                fact_indicators[country] = _country,
+                fact_indicators[indicator] = _ind
+            )
+        VAR _rules = 
+            FILTER(
+                dim_rules,
+                dim_rules[indicator] = _ind &&
+                dim_rules[side] = "risk"
+            )
+        RETURN
+            SUMX(
+                _rules,
+                VAR _op = dim_rules[operator]
+                VAR _thr = dim_rules[threshold]
+                RETURN
+                    SWITCH(
+                        _op,
+                        ">", IF(_currentValue > _thr, 1, 0),
+                        "<", IF(_currentValue < _thr, 1, 0),
+                        0
+                    )
+            )
+    )
+
+Opportunity Signals (All Indicators) = 
+VAR _country = SELECTEDVALUE(dim_country[iso3])
+VAR _allIndicators = 
+    FILTER(
+        ALL(dim_indicator),
+        NOT ISBLANK(
+            CALCULATE(
+                [Latest Value],
+                fact_indicators[country] = _country,
+                fact_indicators[indicator] = dim_indicator[indicator]
+            )
+        )
+    )
+RETURN
+    SUMX(
+        _allIndicators,
+        VAR _ind = dim_indicator[indicator]
+        VAR _currentValue = 
+            CALCULATE(
+                [Latest Value],
+                fact_indicators[country] = _country,
+                fact_indicators[indicator] = _ind
+            )
+        VAR _rules = 
+            FILTER(
+                dim_rules,
+                dim_rules[indicator] = _ind &&
+                dim_rules[side] = "opportunity"
+            )
+        RETURN
+            SUMX(
+                _rules,
+                VAR _op = dim_rules[operator]
+                VAR _thr = dim_rules[threshold]
+                RETURN
+                    SWITCH(
+                        _op,
+                        ">", IF(_currentValue > _thr, 1, 0),
+                        "<", IF(_currentValue < _thr, 1, 0),
+                        0
+                    )
+            )
+    )
+
+Total Signals (All Indicators) = 
+    [Risk Signals (All Indicators)] + [Opportunity Signals (All Indicators)]
+
+// ============================================================================
+// 3. ANALYSE DE SCENARIOS : parametre what-if + comparaison
+// ============================================================================
+
+// Parametre what-if : Scenario Value (a creer manuellement dans Power BI)
+// Modeling > New Parameter > What-If Parameter
+// Name: Scenario Value
+// Data type: Decimal number
+// Minimum: -100
+// Maximum: 200
+// Increment: 1
+// Default: 0
+
+Scenario Value = SELECTEDVALUE('Scenario Value'[Scenario Value], 0)
+
+Scenario Risk Signals = 
+VAR _scenarioValue = [Scenario Value]
+VAR _indicator = SELECTEDVALUE(dim_indicator[indicator])
+VAR _rules = 
+    FILTER(
+        dim_rules,
+        dim_rules[indicator] = _indicator &&
+        dim_rules[side] = "risk"
+    )
+RETURN
+    SUMX(
+        _rules,
+        VAR _op = dim_rules[operator]
+        VAR _thr = dim_rules[threshold]
+        RETURN
+            SWITCH(
+                _op,
+                ">", IF(_scenarioValue > _thr, 1, 0),
+                "<", IF(_scenarioValue < _thr, 1, 0),
+                0
+            )
+    )
+
+Scenario Opportunity Signals = 
+VAR _scenarioValue = [Scenario Value]
+VAR _indicator = SELECTEDVALUE(dim_indicator[indicator])
+VAR _rules = 
+    FILTER(
+        dim_rules,
+        dim_rules[indicator] = _indicator &&
+        dim_rules[side] = "opportunity"
+    )
+RETURN
+    SUMX(
+        _rules,
+        VAR _op = dim_rules[operator]
+        VAR _thr = dim_rules[threshold]
+        RETURN
+            SWITCH(
+                _op,
+                ">", IF(_scenarioValue > _thr, 1, 0),
+                "<", IF(_scenarioValue < _thr, 1, 0),
+                0
+            )
+    )
+
+New Risks (Scenario) = 
+VAR _base = [Risk Signals]
+VAR _scenario = [Scenario Risk Signals]
+RETURN
+    MAX(0, _scenario - _base)
+
+Cleared Risks (Scenario) = 
+VAR _base = [Risk Signals]
+VAR _scenario = [Scenario Risk Signals]
+RETURN
+    MAX(0, _base - _scenario)
+
+New Opportunities (Scenario) = 
+VAR _base = [Opportunity Signals]
+VAR _scenario = [Scenario Opportunity Signals]
+RETURN
+    MAX(0, _scenario - _base)
+
+Lost Opportunities (Scenario) = 
+VAR _base = [Opportunity Signals]
+VAR _scenario = [Scenario Opportunity Signals]
+RETURN
+    MAX(0, _base - _scenario)
+
+// ============================================================================
+// 4. LECTURE CROISEE DES AGENCES : divergences
+// ============================================================================
+
+S&P Rating = 
+CALCULATE(
+    SELECTEDVALUE(dim_rating[rating]),
+    dim_rating[agency] = "S&P"
+)
+
+Moody's Rating = 
+CALCULATE(
+    SELECTEDVALUE(dim_rating[rating]),
+    dim_rating[agency] = "Moody's"
+)
+
+Fitch Rating = 
+CALCULATE(
+    SELECTEDVALUE(dim_rating[rating]),
+    dim_rating[agency] = "Fitch"
+)
+
+S&P Outlook = 
+CALCULATE(
+    SELECTEDVALUE(dim_rating[outlook]),
+    dim_rating[agency] = "S&P"
+)
+
+Moody's Outlook = 
+CALCULATE(
+    SELECTEDVALUE(dim_rating[outlook]),
+    dim_rating[agency] = "Moody's"
+)
+
+Fitch Outlook = 
+CALCULATE(
+    SELECTEDVALUE(dim_rating[outlook]),
+    dim_rating[agency] = "Fitch"
+)
+
+Notch Gap = 
+VAR _ord = {
+    ("AAA", 0), ("AA+", 1), ("AA", 2), ("AA-", 3),
+    ("A+", 4), ("A", 5), ("A-", 6),
+    ("BBB+", 7), ("BBB", 8), ("BBB-", 9),
+    ("BB+", 10), ("BB", 11), ("BB-", 12),
+    ("B+", 13), ("B", 14), ("B-", 15),
+    ("CCC+", 16), ("CCC", 17), ("CCC-", 18),
+    ("CC", 19), ("C", 20), ("D", 21),
+    ("Aaa", 0), ("Aa1", 1), ("Aa2", 2), ("Aa3", 3),
+    ("A1", 4), ("A2", 5), ("A3", 6),
+    ("Baa1", 7), ("Baa2", 8), ("Baa3", 9),
+    ("Ba1", 10), ("Ba2", 11), ("Ba3", 12),
+    ("B1", 13), ("B2", 14), ("B3", 15),
+    ("Caa1", 16), ("Caa2", 17), ("Caa3", 18),
+    ("Ca", 19)
+}
+VAR _sp = [S&P Rating]
+VAR _mo = [Moody's Rating]
+VAR _fi = [Fitch Rating]
+VAR _spOrd = MAXX(FILTER(_ord, [Value1] = _sp), [Value2])
+VAR _moOrd = MAXX(FILTER(_ord, [Value1] = _mo), [Value2])
+VAR _fiOrd = MAXX(FILTER(_ord, [Value1] = _fi), [Value2])
+VAR _allOrds = {_spOrd, _moOrd, _fiOrd}
+RETURN
+    IF(
+        NOT ISBLANK(_spOrd) && NOT ISBLANK(_moOrd) && NOT ISBLANK(_fiOrd),
+        MAXX(_allOrds, [Value]) - MINX(_allOrds, [Value]),
+        BLANK()
+    )
+
+Opposite Outlooks = 
+VAR _sp = [S&P Outlook]
+VAR _mo = [Moody's Outlook]
+VAR _fi = [Fitch Outlook]
+VAR _hasPositive = _sp = "Positive" || _mo = "Positive" || _fi = "Positive"
+VAR _hasNegative = _sp = "Negative" || _mo = "Negative" || _fi = "Negative"
+RETURN
+    IF(_hasPositive && _hasNegative, 1, 0)
+
+Classification Divergence = 
+VAR _sp = [S&P Rating]
+VAR _mo = [Moody's Rating]
+VAR _fi = [Fitch Rating]
+VAR _ord = {
+    ("AAA", 0), ("AA+", 1), ("AA", 2), ("AA-", 3),
+    ("A+", 4), ("A", 5), ("A-", 6),
+    ("BBB+", 7), ("BBB", 8), ("BBB-", 9),
+    ("BB+", 10), ("BB", 11), ("BB-", 12)
+}
+VAR _spOrd = MAXX(FILTER(_ord, [Value1] = _sp), [Value2])
+VAR _moOrd = MAXX(FILTER(_ord, [Value1] = _mo), [Value2])
+VAR _fiOrd = MAXX(FILTER(_ord, [Value1] = _fi), [Value2])
+VAR _spIG = IF(NOT ISBLANK(_spOrd), _spOrd <= 9, BLANK())
+VAR _moIG = IF(NOT ISBLANK(_moOrd), _moOrd <= 9, BLANK())
+VAR _fiIG = IF(NOT ISBLANK(_fiOrd), _fiOrd <= 9, BLANK())
+RETURN
+    IF(
+        NOT ISBLANK(_spIG) && NOT ISBLANK(_moIG) && NOT ISBLANK(_fiIG),
+        IF(
+            (_spIG && NOT _moIG) || (_spIG && NOT _fiIG) ||
+            (_moIG && NOT _spIG) || (_moIG && NOT _fiIG) ||
+            (_fiIG && NOT _spIG) || (_fiIG && NOT _moIG),
+            1,
+            0
+        ),
+        BLANK()
+    )
+
+Has Divergence = 
+    ([Notch Gap] >= 2) ||
+    ([Opposite Outlooks] = 1) ||
+    ([Classification Divergence] = 1)
+
+// ============================================================================
+// 5. MESURES DE MISE EN FORME CONDITIONNELLE
+// ============================================================================
+
+Signal Color = 
+VAR _risks = [Risk Signals]
+VAR _opps = [Opportunity Signals]
+RETURN
+    SWITCH(
+        TRUE(),
+        _risks > 0, "#dc2626",  // rouge pour risque
+        _opps > 0, "#059669",  // vert pour opportunite
+        "#64748b"              // gris neutre
+    )
+
+Notch Gap Color = 
+VAR _gap = [Notch Gap]
+RETURN
+    SWITCH(
+        TRUE(),
+        _gap >= 4, "#dc2626",   // rouge fonce : ecart majeur
+        _gap >= 2, "#f59e0b",   // orange : ecart notable
+        "#059669"                // vert : accord
+    )
