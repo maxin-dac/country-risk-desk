@@ -1,0 +1,65 @@
+// ============================================================================
+// ADDENDUM PAGES - mesures complementaires pour les 4 pages du jumeau
+// ============================================================================
+
+// --- Colonne calculee a creer dans dim_rating (New Column, pas Measure) ---
+Rating Category = 
+VAR r = dim_rating[rating]
+VAR is_default = r IN {"D", "SD", "RD"}
+VAR is_ig = r IN {"AAA","AA+","AA","AA-","A+","A","A-","BBB+","BBB","BBB-",
+                  "Aaa","Aa1","Aa2","Aa3","A1","A2","A3","Baa1","Baa2","Baa3"}
+RETURN SWITCH(TRUE(),
+    ISBLANK(r) || r = "", "Unrated",
+    is_default, "Default / withdrawn",
+    is_ig, "Investment grade",
+    "Speculative")
+
+// --- Notation selectionnee (slicer d'agence mono-selection) ---
+Selected Rating = SELECTEDVALUE(dim_rating[rating])
+Selected Outlook = SELECTEDVALUE(dim_rating[outlook])
+Selected Category = SELECTEDVALUE(dim_rating[Rating Category])
+Selected Rating Date = SELECTEDVALUE(dim_rating[date])
+
+// --- Synthese vue globale ---
+Rated Countries = CALCULATE(DISTINCTCOUNT(dim_rating[country]), dim_rating[rating] <> "")
+Investment Grade Countries = CALCULATE([Rated Countries], dim_rating[Rating Category] = "Investment grade")
+Speculative Countries = CALCULATE([Rated Countries], dim_rating[Rating Category] = "Speculative")
+Default Countries = CALCULATE([Rated Countries], dim_rating[Rating Category] = "Default / withdrawn")
+Unrated Countries = COUNTROWS(dim_country) - [Rated Countries]
+
+// --- Valeur brute pour graphiques (1 ligne = 1 observation) ---
+Value = SUM(fact_indicators[value])
+Projection Value = SUM(fact_projections[value])
+
+// --- Tendance 5 ans (difference derniere valeur / valeur il y a 60 mois) ---
+Trend 5y = 
+VAR _v1 = [Latest Value]
+VAR _d0 = EDATE([Latest Date], -60)
+VAR _v0 = CALCULATE([Latest Value], fact_indicators[date] <= _d0)
+RETURN IF(ISBLANK(_v0) || ISBLANK(_v1), BLANK(), _v1 - _v0)
+
+// --- Positionnement croissance x inflation (nuage de points) ---
+GDP Growth Latest = CALCULATE([Latest Value], dim_indicator[indicator] = "GDP growth")
+Inflation Latest = CALCULATE([Latest Value], dim_indicator[indicator] = "Inflation")
+
+// --- Matrice de suivi des seuils (pays x regle) ---
+Rule Triggered = 
+VAR v = [Latest Value]
+VAR op = SELECTEDVALUE(dim_rules[operator])
+VAR thr = SELECTEDVALUE(dim_rules[threshold])
+RETURN SWITCH(TRUE(),
+    ISBLANK(v) || ISBLANK(op), BLANK(),
+    op = ">", IF(v > thr, 1, 0),
+    op = "<", IF(v < thr, 1, 0),
+    BLANK())
+
+Rule Color = 
+VAR t = [Rule Triggered]
+VAR side = SELECTEDVALUE(dim_rules[side])
+RETURN SWITCH(TRUE(),
+    ISBLANK(t), "#1e293b",
+    t = 1 && side = "risk", "#dc2626",
+    t = 1, "#059669",
+    "#1e293b")
+
+Active Signals = CALCULATE(SUMX(VALUES(dim_rules), [Rule Triggered]))
