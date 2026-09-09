@@ -1,3 +1,10 @@
+## [0.3.0](https://github.com/maxin-dac/country-risk-desk/compare/v0.2.0...v0.3.0) (2026-09-09)
+
+
+### Features
+
+* initialize PowerBI data directory with dimension and fact schemas and add export script ([68999f1](https://github.com/maxin-dac/country-risk-desk/commit/68999f18b26d3d9eea6863fd99483ad43284a32e))
+
 ## [0.2.0](https://github.com/maxin-dac/country-risk-desk/compare/v1.0.0...v0.2.0) (2026-09-08)
 
 
