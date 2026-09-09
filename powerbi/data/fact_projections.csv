@@ -1,0 +1,4608 @@
+country,indicator,year,value
+AND,GDP growth,2027,1.84
+AND,GDP growth,2028,1.7
+AND,GDP growth,2029,1.6
+AND,GDP growth,2030,1.5
+AND,GDP growth,2031,1.5
+AND,Inflation,2027,2.257
+AND,Inflation,2028,2.0
+AND,Inflation,2029,2.0
+AND,Inflation,2030,2.0
+AND,Inflation,2031,2.0
+AND,Fiscal balance,2027,1.86
+AND,Fiscal balance,2028,1.876
+AND,Fiscal balance,2029,1.892
+AND,Fiscal balance,2030,1.881
+AND,Fiscal balance,2031,1.75
+AND,Fiscal balance,2027,2.534
+AND,Fiscal balance,2028,2.534
+AND,Fiscal balance,2029,2.534
+AND,Fiscal balance,2030,2.534
+AND,Fiscal balance,2031,2.534
+AND,Gen gov debt,2027,26.947
+AND,Gen gov debt,2028,26.307
+AND,Gen gov debt,2029,25.681
+AND,Gen gov debt,2030,25.092
+AND,Gen gov debt,2031,24.503
+AUS,GDP growth,2027,1.698
+AUS,GDP growth,2028,1.855
+AUS,GDP growth,2029,2.057
+AUS,GDP growth,2030,2.259
+AUS,GDP growth,2031,2.325
+AUS,Inflation,2027,3.154
+AUS,Inflation,2028,2.584
+AUS,Inflation,2029,2.526
+AUS,Inflation,2030,2.498
+AUS,Inflation,2031,2.429
+AUS,Fiscal balance,2027,-2.052
+AUS,Fiscal balance,2028,-1.883
+AUS,Fiscal balance,2029,-1.657
+AUS,Fiscal balance,2030,-1.482
+AUS,Fiscal balance,2031,-1.448
+AUS,Fiscal balance,2027,-1.038
+AUS,Fiscal balance,2028,-0.935
+AUS,Fiscal balance,2029,-0.713
+AUS,Fiscal balance,2030,-0.55
+AUS,Fiscal balance,2031,-0.53
+AUS,Gen gov debt,2027,50.657
+AUS,Gen gov debt,2028,50.541
+AUS,Gen gov debt,2029,50.206
+AUS,Gen gov debt,2030,49.676
+AUS,Gen gov debt,2031,49.124
+AUT,GDP growth,2027,1.004
+AUT,GDP growth,2028,1.319
+AUT,GDP growth,2029,1.079
+AUT,GDP growth,2030,0.83
+AUT,GDP growth,2031,0.785
+AUT,Inflation,2027,2.561
+AUT,Inflation,2028,2.095
+AUT,Inflation,2029,2.093
+AUT,Inflation,2030,2.093
+AUT,Inflation,2031,2.093
+AUT,Fiscal balance,2027,-3.776
+AUT,Fiscal balance,2028,-3.848
+AUT,Fiscal balance,2029,-3.694
+AUT,Fiscal balance,2030,-3.644
+AUT,Fiscal balance,2031,-3.644
+AUT,Fiscal balance,2027,-2.221
+AUT,Fiscal balance,2028,-2.161
+AUT,Fiscal balance,2029,-1.917
+AUT,Fiscal balance,2030,-1.892
+AUT,Fiscal balance,2031,-1.902
+AUT,Gen gov debt,2027,82.651
+AUT,Gen gov debt,2028,83.42
+AUT,Gen gov debt,2029,84.192
+AUT,Gen gov debt,2030,85.212
+AUT,Gen gov debt,2031,86.424
+BEL,GDP growth,2027,1.059
+BEL,GDP growth,2028,1.144
+BEL,GDP growth,2029,1.247
+BEL,GDP growth,2030,1.311
+BEL,GDP growth,2031,1.261
+BEL,Inflation,2027,2.23
+BEL,Inflation,2028,2.083
+BEL,Inflation,2029,1.963
+BEL,Inflation,2030,1.829
+BEL,Inflation,2031,1.814
+BEL,Fiscal balance,2027,-5.191
+BEL,Fiscal balance,2028,-5.316
+BEL,Fiscal balance,2029,-5.41
+BEL,Fiscal balance,2030,-5.662
+BEL,Fiscal balance,2031,-5.78
+BEL,Fiscal balance,2027,-3.122
+BEL,Fiscal balance,2028,-3.1
+BEL,Fiscal balance,2029,-2.873
+BEL,Fiscal balance,2030,-2.9
+BEL,Fiscal balance,2031,-3.134
+BEL,Gen gov debt,2027,111.515
+BEL,Gen gov debt,2028,114.215
+BEL,Gen gov debt,2029,116.643
+BEL,Gen gov debt,2030,119.491
+BEL,Gen gov debt,2031,122.339
+CAN,GDP growth,2027,1.896
+CAN,GDP growth,2028,1.655
+CAN,GDP growth,2029,1.728
+CAN,GDP growth,2030,1.665
+CAN,GDP growth,2031,1.754
+CAN,Inflation,2027,2.095
+CAN,Inflation,2028,1.993
+CAN,Inflation,2029,2.032
+CAN,Inflation,2030,2.007
+CAN,Inflation,2031,1.954
+CAN,Fiscal balance,2027,-2.489
+CAN,Fiscal balance,2028,-2.211
+CAN,Fiscal balance,2029,-1.985
+CAN,Fiscal balance,2030,-1.731
+CAN,Fiscal balance,2031,-1.524
+CAN,Fiscal balance,2027,-2.012
+CAN,Fiscal balance,2028,-1.568
+CAN,Fiscal balance,2029,-1.277
+CAN,Fiscal balance,2030,-0.983
+CAN,Fiscal balance,2031,-0.847
+CAN,Gen gov debt,2027,109.454
+CAN,Gen gov debt,2028,108.088
+CAN,Gen gov debt,2029,106.685
+CAN,Gen gov debt,2030,105.167
+CAN,Gen gov debt,2031,103.525
+HRV,GDP growth,2027,2.638
+HRV,GDP growth,2028,2.6
+HRV,GDP growth,2029,2.5
+HRV,GDP growth,2030,2.5
+HRV,GDP growth,2031,2.5
+HRV,Inflation,2027,2.732
+HRV,Inflation,2028,2.502
+HRV,Inflation,2029,2.532
+HRV,Inflation,2030,2.523
+HRV,Inflation,2031,2.48
+HRV,Fiscal balance,2027,-2.856
+HRV,Fiscal balance,2028,-2.769
+HRV,Fiscal balance,2029,-2.62
+HRV,Fiscal balance,2030,-2.465
+HRV,Fiscal balance,2031,-2.442
+HRV,Fiscal balance,2027,-1.805
+HRV,Fiscal balance,2028,-1.765
+HRV,Fiscal balance,2029,-1.641
+HRV,Fiscal balance,2030,-1.493
+HRV,Fiscal balance,2031,-1.464
+HRV,Gen gov debt,2027,56.936
+HRV,Gen gov debt,2028,57.576
+HRV,Gen gov debt,2029,58.095
+HRV,Gen gov debt,2030,58.404
+HRV,Gen gov debt,2031,58.68
+CYP,GDP growth,2027,2.985
+CYP,GDP growth,2028,3.01
+CYP,GDP growth,2029,3.001
+CYP,GDP growth,2030,2.992
+CYP,GDP growth,2031,3.0
+CYP,Inflation,2027,1.623
+CYP,Inflation,2028,2.0
+CYP,Inflation,2029,2.0
+CYP,Inflation,2030,2.0
+CYP,Inflation,2031,2.0
+CYP,Fiscal balance,2027,2.5
+CYP,Fiscal balance,2028,2.406
+CYP,Fiscal balance,2029,2.21
+CYP,Fiscal balance,2030,1.811
+CYP,Fiscal balance,2031,1.611
+CYP,Fiscal balance,2027,3.624
+CYP,Fiscal balance,2028,3.467
+CYP,Fiscal balance,2029,3.226
+CYP,Fiscal balance,2030,2.86
+CYP,Fiscal balance,2031,2.6
+CYP,Gen gov debt,2027,46.556
+CYP,Gen gov debt,2028,42.434
+CYP,Gen gov debt,2029,38.723
+CYP,Gen gov debt,2030,35.135
+CYP,Gen gov debt,2031,32.052
+CZE,GDP growth,2027,2.215
+CZE,GDP growth,2028,2.091
+CZE,GDP growth,2029,1.89
+CZE,GDP growth,2030,1.807
+CZE,GDP growth,2031,1.808
+CZE,Inflation,2027,2.224
+CZE,Inflation,2028,2.468
+CZE,Inflation,2029,2.0
+CZE,Inflation,2030,2.0
+CZE,Inflation,2031,2.0
+CZE,Fiscal balance,2027,-2.456
+CZE,Fiscal balance,2028,-2.663
+CZE,Fiscal balance,2029,-2.877
+CZE,Fiscal balance,2030,-3.063
+CZE,Fiscal balance,2031,-3.064
+CZE,Fiscal balance,2027,-1.785
+CZE,Fiscal balance,2028,-1.992
+CZE,Fiscal balance,2029,-2.206
+CZE,Fiscal balance,2030,-2.393
+CZE,Fiscal balance,2031,-2.393
+CZE,Gen gov debt,2027,47.579
+CZE,Gen gov debt,2028,48.762
+CZE,Gen gov debt,2029,50.246
+CZE,Gen gov debt,2030,51.927
+CZE,Gen gov debt,2031,53.624
+DNK,GDP growth,2027,1.55
+DNK,GDP growth,2028,1.55
+DNK,GDP growth,2029,1.54
+DNK,GDP growth,2030,1.54
+DNK,GDP growth,2031,1.45
+DNK,Inflation,2027,2.2
+DNK,Inflation,2028,2.223
+DNK,Inflation,2029,2.0
+DNK,Inflation,2030,2.0
+DNK,Inflation,2031,2.0
+DNK,Fiscal balance,2027,-0.375
+DNK,Fiscal balance,2028,-0.281
+DNK,Fiscal balance,2029,-0.515
+DNK,Fiscal balance,2030,-0.54
+DNK,Fiscal balance,2031,-0.507
+DNK,Fiscal balance,2027,-0.975
+DNK,Fiscal balance,2028,-0.906
+DNK,Fiscal balance,2029,-1.14
+DNK,Fiscal balance,2030,-1.165
+DNK,Fiscal balance,2031,-1.157
+DNK,Gen gov debt,2027,27.833
+DNK,Gen gov debt,2028,28.185
+DNK,Gen gov debt,2029,28.783
+DNK,Gen gov debt,2030,29.351
+DNK,Gen gov debt,2031,29.836
+EST,GDP growth,2027,1.933
+EST,GDP growth,2028,2.333
+EST,GDP growth,2029,2.073
+EST,GDP growth,2030,1.702
+EST,GDP growth,2031,1.667
+EST,Inflation,2027,3.035
+EST,Inflation,2028,2.8
+EST,Inflation,2029,2.349
+EST,Inflation,2030,2.349
+EST,Inflation,2031,2.349
+EST,Fiscal balance,2027,-4.547
+EST,Fiscal balance,2028,-4.227
+EST,Fiscal balance,2029,-3.598
+EST,Fiscal balance,2030,-3.615
+EST,Fiscal balance,2031,-3.583
+EST,Fiscal balance,2027,-4.139
+EST,Fiscal balance,2028,-3.687
+EST,Fiscal balance,2029,-2.94
+EST,Fiscal balance,2030,-2.959
+EST,Fiscal balance,2031,-2.884
+EST,Gen gov debt,2027,31.344
+EST,Gen gov debt,2028,34.247
+EST,Gen gov debt,2029,36.589
+EST,Gen gov debt,2030,38.963
+EST,Gen gov debt,2031,41.211
+FIN,GDP growth,2027,1.506
+FIN,GDP growth,2028,1.38
+FIN,GDP growth,2029,1.397
+FIN,GDP growth,2030,1.189
+FIN,GDP growth,2031,1.173
+FIN,Inflation,2027,2.204
+FIN,Inflation,2028,2.0
+FIN,Inflation,2029,2.0
+FIN,Inflation,2030,2.0
+FIN,Inflation,2031,2.0
+FIN,Fiscal balance,2027,-4.25
+FIN,Fiscal balance,2028,-4.05
+FIN,Fiscal balance,2029,-3.828
+FIN,Fiscal balance,2030,-3.678
+FIN,Fiscal balance,2031,-3.71
+FIN,Fiscal balance,2027,-3.129
+FIN,Fiscal balance,2028,-2.716
+FIN,Fiscal balance,2029,-2.413
+FIN,Fiscal balance,2030,-2.22
+FIN,Fiscal balance,2031,-2.212
+FIN,Gen gov debt,2027,94.193
+FIN,Gen gov debt,2028,96.169
+FIN,Gen gov debt,2029,97.874
+FIN,Gen gov debt,2030,99.301
+FIN,Gen gov debt,2031,100.789
+FRA,GDP growth,2027,0.876
+FRA,GDP growth,2028,1.217
+FRA,GDP growth,2029,1.16
+FRA,GDP growth,2030,1.106
+FRA,GDP growth,2031,1.058
+FRA,Inflation,2027,1.721
+FRA,Inflation,2028,1.855
+FRA,Inflation,2029,1.871
+FRA,Inflation,2030,1.91
+FRA,Inflation,2031,1.814
+FRA,Fiscal balance,2027,-4.789
+FRA,Fiscal balance,2028,-4.26
+FRA,Fiscal balance,2029,-3.809
+FRA,Fiscal balance,2030,-3.356
+FRA,Fiscal balance,2031,-2.895
+FRA,Fiscal balance,2027,-2.308
+FRA,Fiscal balance,2028,-1.576
+FRA,Fiscal balance,2029,-0.998
+FRA,Fiscal balance,2030,-0.313
+FRA,Fiscal balance,2031,0.388
+FRA,Gen gov debt,2027,120.476
+FRA,Gen gov debt,2028,121.113
+FRA,Gen gov debt,2029,121.342
+FRA,Gen gov debt,2030,121.18
+FRA,Gen gov debt,2031,120.736
+DEU,GDP growth,2027,1.183
+DEU,GDP growth,2028,1.196
+DEU,GDP growth,2029,0.944
+DEU,GDP growth,2030,0.655
+DEU,GDP growth,2031,0.623
+DEU,Inflation,2027,2.295
+DEU,Inflation,2028,1.965
+DEU,Inflation,2029,2.157
+DEU,Inflation,2030,2.187
+DEU,Inflation,2031,2.097
+DEU,Fiscal balance,2027,-4.229
+DEU,Fiscal balance,2028,-4.061
+DEU,Fiscal balance,2029,-3.898
+DEU,Fiscal balance,2030,-3.834
+DEU,Fiscal balance,2031,-3.66
+DEU,Fiscal balance,2027,-3.152
+DEU,Fiscal balance,2028,-2.849
+DEU,Fiscal balance,2029,-2.555
+DEU,Fiscal balance,2030,-2.351
+DEU,Fiscal balance,2031,-2.144
+DEU,Gen gov debt,2027,66.527
+DEU,Gen gov debt,2028,68.393
+DEU,Gen gov debt,2029,70.157
+DEU,Gen gov debt,2030,71.991
+DEU,Gen gov debt,2031,73.671
+GRC,GDP growth,2027,1.66
+GRC,GDP growth,2028,1.597
+GRC,GDP growth,2029,1.602
+GRC,GDP growth,2030,1.601
+GRC,GDP growth,2031,1.599
+GRC,Inflation,2027,2.723
+GRC,Inflation,2028,2.465
+GRC,Inflation,2029,2.1
+GRC,Inflation,2030,2.1
+GRC,Inflation,2031,2.1
+GRC,Fiscal balance,2027,-0.176
+GRC,Fiscal balance,2028,-0.204
+GRC,Fiscal balance,2029,-0.472
+GRC,Fiscal balance,2030,-0.586
+GRC,Fiscal balance,2031,-0.696
+GRC,Fiscal balance,2027,3.103
+GRC,Fiscal balance,2028,3.074
+GRC,Fiscal balance,2029,2.906
+GRC,Fiscal balance,2030,2.793
+GRC,Fiscal balance,2031,2.683
+GRC,Gen gov debt,2027,130.309
+GRC,Gen gov debt,2028,125.182
+GRC,Gen gov debt,2029,120.377
+GRC,Gen gov debt,2030,115.502
+GRC,Gen gov debt,2031,110.935
+HKG,GDP growth,2027,2.353
+HKG,GDP growth,2028,2.308
+HKG,GDP growth,2029,2.278
+HKG,GDP growth,2030,2.19
+HKG,GDP growth,2031,2.17
+HKG,Inflation,2027,1.8
+HKG,Inflation,2028,2.1
+HKG,Inflation,2029,2.2
+HKG,Inflation,2030,2.38
+HKG,Inflation,2031,2.48
+HKG,Fiscal balance,2027,-3.251
+HKG,Fiscal balance,2028,-1.341
+HKG,Fiscal balance,2029,-0.761
+HKG,Fiscal balance,2030,-0.752
+HKG,Fiscal balance,2031,-0.752
+HKG,Fiscal balance,2027,-3.651
+HKG,Fiscal balance,2028,-1.5
+HKG,Fiscal balance,2029,-0.879
+HKG,Fiscal balance,2030,-0.792
+HKG,Fiscal balance,2031,-0.775
+HKG,Gen gov debt,2027,15.643
+HKG,Gen gov debt,2028,17.453
+HKG,Gen gov debt,2029,18.362
+HKG,Gen gov debt,2030,19.159
+HKG,Gen gov debt,2031,19.825
+ISL,GDP growth,2027,2.101
+ISL,GDP growth,2028,2.379
+ISL,GDP growth,2029,2.413
+ISL,GDP growth,2030,2.401
+ISL,GDP growth,2031,2.375
+ISL,Inflation,2027,2.817
+ISL,Inflation,2028,2.513
+ISL,Inflation,2029,2.5
+ISL,Inflation,2030,2.5
+ISL,Inflation,2031,2.5
+ISL,Fiscal balance,2027,-0.49
+ISL,Fiscal balance,2028,-0.243
+ISL,Fiscal balance,2029,-0.124
+ISL,Fiscal balance,2030,-0.084
+ISL,Fiscal balance,2031,-0.048
+ISL,Fiscal balance,2027,1.661
+ISL,Fiscal balance,2028,1.945
+ISL,Fiscal balance,2029,2.147
+ISL,Fiscal balance,2030,2.223
+ISL,Fiscal balance,2031,2.303
+ISL,Gen gov debt,2027,51.704
+ISL,Gen gov debt,2028,49.913
+ISL,Gen gov debt,2029,47.758
+ISL,Gen gov debt,2030,45.434
+ISL,Gen gov debt,2031,42.956
+IRL,GDP growth,2027,2.351
+IRL,GDP growth,2028,2.56
+IRL,GDP growth,2029,2.404
+IRL,GDP growth,2030,2.31
+IRL,GDP growth,2031,2.29
+IRL,Inflation,2027,2.357
+IRL,Inflation,2028,1.868
+IRL,Inflation,2029,2.035
+IRL,Inflation,2030,2.035
+IRL,Inflation,2031,2.035
+IRL,Fiscal balance,2027,0.689
+IRL,Fiscal balance,2028,0.69
+IRL,Fiscal balance,2029,0.545
+IRL,Fiscal balance,2030,0.37
+IRL,Fiscal balance,2031,0.418
+IRL,Fiscal balance,2027,1.025
+IRL,Fiscal balance,2028,1.096
+IRL,Fiscal balance,2029,1.024
+IRL,Fiscal balance,2030,0.917
+IRL,Fiscal balance,2031,1.054
+IRL,Gen gov debt,2027,30.309
+IRL,Gen gov debt,2028,29.116
+IRL,Gen gov debt,2029,28.381
+IRL,Gen gov debt,2030,28.038
+IRL,Gen gov debt,2031,28.024
+ISR,GDP growth,2027,4.39
+ISR,GDP growth,2028,3.742
+ISR,GDP growth,2029,3.46
+ISR,GDP growth,2030,3.388
+ISR,GDP growth,2031,3.385
+ISR,Inflation,2027,2.055
+ISR,Inflation,2028,1.972
+ISR,Inflation,2029,2.018
+ISR,Inflation,2030,2.018
+ISR,Inflation,2031,2.018
+ISR,Fiscal balance,2027,-4.863
+ISR,Fiscal balance,2028,-5.087
+ISR,Fiscal balance,2029,-4.849
+ISR,Fiscal balance,2030,-4.833
+ISR,Fiscal balance,2031,-4.94
+ISR,Fiscal balance,2027,-2.236
+ISR,Fiscal balance,2028,-2.38
+ISR,Fiscal balance,2029,-2.097
+ISR,Fiscal balance,2030,-2.041
+ISR,Fiscal balance,2031,-2.117
+ISR,Gen gov debt,2027,70.168
+ISR,Gen gov debt,2028,71.021
+ISR,Gen gov debt,2029,71.712
+ISR,Gen gov debt,2030,72.44
+ISR,Gen gov debt,2031,73.238
+ITA,GDP growth,2027,0.5
+ITA,GDP growth,2028,0.835
+ITA,GDP growth,2029,0.739
+ITA,GDP growth,2030,0.716
+ITA,GDP growth,2031,0.7
+ITA,Inflation,2027,2.357
+ITA,Inflation,2028,2.3
+ITA,Inflation,2029,2.0
+ITA,Inflation,2030,2.0
+ITA,Inflation,2031,2.0
+ITA,Fiscal balance,2027,-2.577
+ITA,Fiscal balance,2028,-2.383
+ITA,Fiscal balance,2029,-2.515
+ITA,Fiscal balance,2030,-2.489
+ITA,Fiscal balance,2031,-2.712
+ITA,Fiscal balance,2027,1.244
+ITA,Fiscal balance,2028,1.626
+ITA,Fiscal balance,2029,1.631
+ITA,Fiscal balance,2030,1.659
+ITA,Fiscal balance,2031,1.615
+ITA,Gen gov debt,2027,138.809
+ITA,Gen gov debt,2028,137.611
+ITA,Gen gov debt,2029,137.138
+ITA,Gen gov debt,2030,136.49
+ITA,Gen gov debt,2031,136.1
+JPN,GDP growth,2027,0.623
+JPN,GDP growth,2028,0.625
+JPN,GDP growth,2029,0.614
+JPN,GDP growth,2030,0.614
+JPN,GDP growth,2031,0.608
+JPN,Inflation,2027,2.34
+JPN,Inflation,2028,1.978
+JPN,Inflation,2029,1.979
+JPN,Inflation,2030,1.968
+JPN,Inflation,2031,1.969
+JPN,Fiscal balance,2027,-2.365
+JPN,Fiscal balance,2028,-2.945
+JPN,Fiscal balance,2029,-3.288
+JPN,Fiscal balance,2030,-3.695
+JPN,Fiscal balance,2031,-4.039
+JPN,Fiscal balance,2027,-1.699
+JPN,Fiscal balance,2028,-1.932
+JPN,Fiscal balance,2029,-2.033
+JPN,Fiscal balance,2030,-2.205
+JPN,Fiscal balance,2031,-2.307
+JPN,Gen gov debt,2027,200.125
+JPN,Gen gov debt,2028,197.725
+JPN,Gen gov debt,2029,195.65
+JPN,Gen gov debt,2030,193.883
+JPN,Gen gov debt,2031,192.805
+KOR,GDP growth,2027,2.124
+KOR,GDP growth,2028,2.16
+KOR,GDP growth,2029,1.969
+KOR,GDP growth,2030,1.883
+KOR,GDP growth,2031,1.887
+KOR,Inflation,2027,1.867
+KOR,Inflation,2028,2.0
+KOR,Inflation,2029,2.0
+KOR,Inflation,2030,2.0
+KOR,Inflation,2031,2.0
+KOR,Fiscal balance,2027,-1.316
+KOR,Fiscal balance,2028,-1.276
+KOR,Fiscal balance,2029,-1.083
+KOR,Fiscal balance,2030,-1.088
+KOR,Fiscal balance,2031,-1.079
+KOR,Fiscal balance,2027,-1.259
+KOR,Fiscal balance,2028,-1.147
+KOR,Fiscal balance,2029,-0.923
+KOR,Fiscal balance,2030,-0.895
+KOR,Fiscal balance,2031,-0.855
+KOR,Gen gov debt,2027,56.585
+KOR,Gen gov debt,2028,58.497
+KOR,Gen gov debt,2029,60.107
+KOR,Gen gov debt,2030,61.712
+KOR,Gen gov debt,2031,63.146
+LVA,GDP growth,2027,2.373
+LVA,GDP growth,2028,2.38
+LVA,GDP growth,2029,2.381
+LVA,GDP growth,2030,2.368
+LVA,GDP growth,2031,2.365
+LVA,Inflation,2027,2.722
+LVA,Inflation,2028,2.856
+LVA,Inflation,2029,2.211
+LVA,Inflation,2030,2.162
+LVA,Inflation,2031,2.2
+LVA,Fiscal balance,2027,-3.882
+LVA,Fiscal balance,2028,-3.728
+LVA,Fiscal balance,2029,-3.663
+LVA,Fiscal balance,2030,-3.922
+LVA,Fiscal balance,2031,-4.015
+LVA,Fiscal balance,2027,-2.511
+LVA,Fiscal balance,2028,-2.319
+LVA,Fiscal balance,2029,-2.184
+LVA,Fiscal balance,2030,-2.443
+LVA,Fiscal balance,2031,-2.536
+LVA,Gen gov debt,2027,48.539
+LVA,Gen gov debt,2028,49.637
+LVA,Gen gov debt,2029,50.826
+LVA,Gen gov debt,2030,52.2
+LVA,Gen gov debt,2031,53.49
+LIE,GDP growth,2027,0.4
+LIE,GDP growth,2028,1.2
+LIE,GDP growth,2029,1.5
+LIE,GDP growth,2030,1.5
+LIE,GDP growth,2031,1.5
+LIE,Inflation,2027,0.65
+LIE,Inflation,2028,0.717
+LIE,Inflation,2029,0.711
+LIE,Inflation,2030,0.709
+LIE,Inflation,2031,0.7
+LIE,Fiscal balance,2027,3.201
+LIE,Fiscal balance,2028,3.301
+LIE,Fiscal balance,2029,3.301
+LIE,Fiscal balance,2030,3.301
+LIE,Fiscal balance,2031,3.301
+LIE,Fiscal balance,2027,3.207
+LIE,Fiscal balance,2028,3.307
+LIE,Fiscal balance,2029,3.306
+LIE,Fiscal balance,2030,3.306
+LIE,Fiscal balance,2031,3.306
+LIE,Gen gov debt,2027,0.519
+LIE,Gen gov debt,2028,0.51
+LIE,Gen gov debt,2029,0.499
+LIE,Gen gov debt,2030,0.488
+LIE,Gen gov debt,2031,0.478
+LTU,GDP growth,2027,2.228
+LTU,GDP growth,2028,2.642
+LTU,GDP growth,2029,2.474
+LTU,GDP growth,2030,2.444
+LTU,GDP growth,2031,2.403
+LTU,Inflation,2027,2.667
+LTU,Inflation,2028,2.682
+LTU,Inflation,2029,2.487
+LTU,Inflation,2030,2.495
+LTU,Inflation,2031,2.495
+LTU,Fiscal balance,2027,-3.032
+LTU,Fiscal balance,2028,-3.313
+LTU,Fiscal balance,2029,-3.817
+LTU,Fiscal balance,2030,-4.339
+LTU,Fiscal balance,2031,-4.31
+LTU,Fiscal balance,2027,-2.18
+LTU,Fiscal balance,2028,-2.367
+LTU,Fiscal balance,2029,-2.819
+LTU,Fiscal balance,2030,-3.268
+LTU,Fiscal balance,2031,-3.164
+LTU,Gen gov debt,2027,48.859
+LTU,Gen gov debt,2028,50.786
+LTU,Gen gov debt,2029,52.731
+LTU,Gen gov debt,2030,54.403
+LTU,Gen gov debt,2031,56.251
+LUX,GDP growth,2027,1.66
+LUX,GDP growth,2028,2.141
+LUX,GDP growth,2029,2.071
+LUX,GDP growth,2030,2.03
+LUX,GDP growth,2031,1.99
+LUX,Inflation,2027,2.202
+LUX,Inflation,2028,2.126
+LUX,Inflation,2029,2.035
+LUX,Inflation,2030,2.035
+LUX,Inflation,2031,2.035
+LUX,Fiscal balance,2027,-1.238
+LUX,Fiscal balance,2028,-2.444
+LUX,Fiscal balance,2029,-2.691
+LUX,Fiscal balance,2030,-2.886
+LUX,Fiscal balance,2031,-3.073
+LUX,Fiscal balance,2027,-1.119
+LUX,Fiscal balance,2028,-2.231
+LUX,Fiscal balance,2029,-2.362
+LUX,Fiscal balance,2030,-2.442
+LUX,Fiscal balance,2031,-2.517
+LUX,Gen gov debt,2027,28.854
+LUX,Gen gov debt,2028,30.535
+LUX,Gen gov debt,2029,32.178
+LUX,Gen gov debt,2030,33.73
+LUX,Gen gov debt,2031,35.2
+MAC,GDP growth,2027,3.073
+MAC,GDP growth,2028,3.083
+MAC,GDP growth,2029,3.005
+MAC,GDP growth,2030,3.01
+MAC,GDP growth,2031,3.015
+MAC,Inflation,2027,1.924
+MAC,Inflation,2028,2.066
+MAC,Inflation,2029,2.127
+MAC,Inflation,2030,2.177
+MAC,Inflation,2031,2.2
+MAC,Fiscal balance,2027,4.851
+MAC,Fiscal balance,2028,5.309
+MAC,Fiscal balance,2029,5.555
+MAC,Fiscal balance,2030,5.584
+MAC,Fiscal balance,2031,5.429
+MLT,GDP growth,2027,3.8
+MLT,GDP growth,2028,4.0
+MLT,GDP growth,2029,4.0
+MLT,GDP growth,2030,4.0
+MLT,GDP growth,2031,4.0
+MLT,Inflation,2027,2.383
+MLT,Inflation,2028,1.968
+MLT,Inflation,2029,2.008
+MLT,Inflation,2030,1.974
+MLT,Inflation,2031,1.975
+MLT,Fiscal balance,2027,-2.695
+MLT,Fiscal balance,2028,-2.583
+MLT,Fiscal balance,2029,-2.555
+MLT,Fiscal balance,2030,-2.581
+MLT,Fiscal balance,2031,-2.624
+MLT,Fiscal balance,2027,-1.444
+MLT,Fiscal balance,2028,-1.329
+MLT,Fiscal balance,2029,-1.258
+MLT,Fiscal balance,2030,-1.286
+MLT,Fiscal balance,2031,-1.287
+MLT,Gen gov debt,2027,47.493
+MLT,Gen gov debt,2028,47.45
+MLT,Gen gov debt,2029,47.375
+MLT,Gen gov debt,2030,47.313
+MLT,Gen gov debt,2031,47.288
+NLD,GDP growth,2027,1.422
+NLD,GDP growth,2028,1.377
+NLD,GDP growth,2029,1.281
+NLD,GDP growth,2030,1.191
+NLD,GDP growth,2031,1.185
+NLD,Inflation,2027,2.364
+NLD,Inflation,2028,2.31
+NLD,Inflation,2029,2.0
+NLD,Inflation,2030,2.0
+NLD,Inflation,2031,2.0
+NLD,Fiscal balance,2027,-2.064
+NLD,Fiscal balance,2028,-2.067
+NLD,Fiscal balance,2029,-2.386
+NLD,Fiscal balance,2030,-2.459
+NLD,Fiscal balance,2031,-2.611
+NLD,Fiscal balance,2027,-1.265
+NLD,Fiscal balance,2028,-1.158
+NLD,Fiscal balance,2029,-1.402
+NLD,Fiscal balance,2030,-1.431
+NLD,Fiscal balance,2031,-1.532
+NLD,Gen gov debt,2027,44.535
+NLD,Gen gov debt,2028,44.948
+NLD,Gen gov debt,2029,45.851
+NLD,Gen gov debt,2030,46.875
+NLD,Gen gov debt,2031,48.028
+NZL,GDP growth,2027,2.383
+NZL,GDP growth,2028,2.367
+NZL,GDP growth,2029,2.3
+NZL,GDP growth,2030,2.191
+NZL,GDP growth,2031,2.187
+NZL,Inflation,2027,2.265
+NZL,Inflation,2028,2.116
+NZL,Inflation,2029,2.015
+NZL,Inflation,2030,2.015
+NZL,Inflation,2031,2.015
+NZL,Fiscal balance,2027,-3.147
+NZL,Fiscal balance,2028,-2.127
+NZL,Fiscal balance,2029,-1.305
+NZL,Fiscal balance,2030,-0.918
+NZL,Fiscal balance,2031,-0.625
+NZL,Fiscal balance,2027,-2.211
+NZL,Fiscal balance,2028,-1.157
+NZL,Fiscal balance,2029,-0.335
+NZL,Fiscal balance,2030,0.032
+NZL,Fiscal balance,2031,0.326
+NZL,Gen gov debt,2027,57.832
+NZL,Gen gov debt,2028,57.775
+NZL,Gen gov debt,2029,57.104
+NZL,Gen gov debt,2030,55.473
+NZL,Gen gov debt,2031,54.771
+NOR,GDP growth,2027,1.33
+NOR,GDP growth,2028,1.134
+NOR,GDP growth,2029,1.138
+NOR,GDP growth,2030,1.142
+NOR,GDP growth,2031,1.146
+NOR,Inflation,2027,2.6
+NOR,Inflation,2028,2.2
+NOR,Inflation,2029,2.0
+NOR,Inflation,2030,2.0
+NOR,Inflation,2031,2.0
+NOR,Fiscal balance,2027,8.264
+NOR,Fiscal balance,2028,7.573
+NOR,Fiscal balance,2029,7.204
+NOR,Fiscal balance,2030,6.805
+NOR,Fiscal balance,2031,6.326
+NOR,Fiscal balance,2027,5.342
+NOR,Fiscal balance,2028,5.015
+NOR,Fiscal balance,2029,5.021
+NOR,Fiscal balance,2030,5.005
+NOR,Fiscal balance,2031,4.906
+NOR,Gen gov debt,2027,39.44
+NOR,Gen gov debt,2028,35.946
+NOR,Gen gov debt,2029,32.451
+NOR,Gen gov debt,2030,28.956
+NOR,Gen gov debt,2031,25.462
+PRT,GDP growth,2027,1.8
+PRT,GDP growth,2028,1.76
+PRT,GDP growth,2029,1.7
+PRT,GDP growth,2030,1.65
+PRT,GDP growth,2031,1.6
+PRT,Inflation,2027,2.275
+PRT,Inflation,2028,2.396
+PRT,Inflation,2029,2.2
+PRT,Inflation,2030,1.982
+PRT,Inflation,2031,1.983
+PRT,Fiscal balance,2027,-0.163
+PRT,Fiscal balance,2028,-0.524
+PRT,Fiscal balance,2029,-0.861
+PRT,Fiscal balance,2030,-1.213
+PRT,Fiscal balance,2031,-1.583
+PRT,Fiscal balance,2027,1.462
+PRT,Fiscal balance,2028,1.089
+PRT,Fiscal balance,2029,0.746
+PRT,Fiscal balance,2030,0.391
+PRT,Fiscal balance,2031,0.034
+PRT,Gen gov debt,2027,82.157
+PRT,Gen gov debt,2028,79.254
+PRT,Gen gov debt,2029,77.042
+PRT,Gen gov debt,2030,75.476
+PRT,Gen gov debt,2031,74.38
+PRI,GDP growth,2027,1.0
+PRI,GDP growth,2028,0.6
+PRI,GDP growth,2029,0.8
+PRI,GDP growth,2030,0.8
+PRI,GDP growth,2031,0.8
+PRI,Inflation,2027,2.385
+PRI,Inflation,2028,2.384
+PRI,Inflation,2029,2.165
+PRI,Inflation,2030,2.072
+PRI,Inflation,2031,2.073
+PRI,Fiscal balance,2027,-0.352
+PRI,Fiscal balance,2028,-0.552
+PRI,Fiscal balance,2029,-0.166
+PRI,Fiscal balance,2030,-0.154
+PRI,Fiscal balance,2031,-0.142
+PRI,Fiscal balance,2027,0.368
+PRI,Fiscal balance,2028,0.13
+PRI,Fiscal balance,2029,0.497
+PRI,Fiscal balance,2030,0.491
+PRI,Fiscal balance,2031,0.484
+PRI,Gen gov debt,2027,19.343
+PRI,Gen gov debt,2028,19.46
+PRI,Gen gov debt,2029,19.186
+PRI,Gen gov debt,2030,18.921
+PRI,Gen gov debt,2031,18.648
+SMR,GDP growth,2027,1.184
+SMR,GDP growth,2028,1.28
+SMR,GDP growth,2029,1.28
+SMR,GDP growth,2030,1.28
+SMR,GDP growth,2031,1.28
+SMR,Inflation,2027,2.6
+SMR,Inflation,2028,2.0
+SMR,Inflation,2029,2.0
+SMR,Inflation,2030,2.0
+SMR,Inflation,2031,2.0
+SMR,Fiscal balance,2027,-0.123
+SMR,Fiscal balance,2028,0.543
+SMR,Fiscal balance,2029,0.622
+SMR,Fiscal balance,2030,0.489
+SMR,Fiscal balance,2031,0.599
+SMR,Fiscal balance,2027,1.45
+SMR,Fiscal balance,2028,2.084
+SMR,Fiscal balance,2029,2.107
+SMR,Fiscal balance,2030,1.931
+SMR,Fiscal balance,2031,1.968
+SMR,Gen gov debt,2027,58.433
+SMR,Gen gov debt,2028,55.628
+SMR,Gen gov debt,2029,52.86
+SMR,Gen gov debt,2030,50.308
+SMR,Gen gov debt,2031,47.725
+SGP,GDP growth,2027,2.667
+SGP,GDP growth,2028,2.518
+SGP,GDP growth,2029,2.486
+SGP,GDP growth,2030,2.507
+SGP,GDP growth,2031,2.5
+SGP,Inflation,2027,1.871
+SGP,Inflation,2028,1.971
+SGP,Inflation,2029,1.971
+SGP,Inflation,2030,1.971
+SGP,Inflation,2031,1.971
+SGP,Fiscal balance,2027,2.926
+SGP,Fiscal balance,2028,2.492
+SGP,Fiscal balance,2029,2.073
+SGP,Fiscal balance,2030,1.804
+SGP,Fiscal balance,2031,1.835
+SGP,Gen gov debt,2027,172.655
+SGP,Gen gov debt,2028,173.421
+SGP,Gen gov debt,2029,173.86
+SGP,Gen gov debt,2030,174.301
+SGP,Gen gov debt,2031,174.745
+SVK,GDP growth,2027,1.649
+SVK,GDP growth,2028,2.573
+SVK,GDP growth,2029,2.485
+SVK,GDP growth,2030,2.226
+SVK,GDP growth,2031,1.8
+SVK,Inflation,2027,3.273
+SVK,Inflation,2028,2.945
+SVK,Inflation,2029,2.365
+SVK,Inflation,2030,2.0
+SVK,Inflation,2031,1.975
+SVK,Fiscal balance,2027,-4.978
+SVK,Fiscal balance,2028,-5.099
+SVK,Fiscal balance,2029,-5.126
+SVK,Fiscal balance,2030,-5.289
+SVK,Fiscal balance,2031,-5.449
+SVK,Fiscal balance,2027,-3.503
+SVK,Fiscal balance,2028,-3.489
+SVK,Fiscal balance,2029,-3.486
+SVK,Fiscal balance,2030,-3.572
+SVK,Fiscal balance,2031,-3.644
+SVK,Gen gov debt,2027,65.458
+SVK,Gen gov debt,2028,67.182
+SVK,Gen gov debt,2029,69.378
+SVK,Gen gov debt,2030,72.028
+SVK,Gen gov debt,2031,75.033
+SVN,GDP growth,2027,2.1
+SVN,GDP growth,2028,2.2
+SVN,GDP growth,2029,2.1
+SVN,GDP growth,2030,2.1
+SVN,GDP growth,2031,2.1
+SVN,Inflation,2027,2.086
+SVN,Inflation,2028,2.282
+SVN,Inflation,2029,2.096
+SVN,Inflation,2030,2.096
+SVN,Inflation,2031,2.096
+SVN,Fiscal balance,2027,-2.763
+SVN,Fiscal balance,2028,-2.789
+SVN,Fiscal balance,2029,-2.885
+SVN,Fiscal balance,2030,-2.928
+SVN,Fiscal balance,2031,-2.939
+SVN,Fiscal balance,2027,-1.792
+SVN,Fiscal balance,2028,-1.72
+SVN,Fiscal balance,2029,-1.74
+SVN,Fiscal balance,2030,-1.759
+SVN,Fiscal balance,2031,-1.797
+SVN,Gen gov debt,2027,65.381
+SVN,Gen gov debt,2028,65.406
+SVN,Gen gov debt,2029,65.842
+SVN,Gen gov debt,2030,66.328
+SVN,Gen gov debt,2031,67.075
+ESP,GDP growth,2027,1.819
+ESP,GDP growth,2028,1.825
+ESP,GDP growth,2029,1.702
+ESP,GDP growth,2030,1.702
+ESP,GDP growth,2031,1.7
+ESP,Inflation,2027,2.259
+ESP,Inflation,2028,2.5
+ESP,Inflation,2029,2.0
+ESP,Inflation,2030,2.0
+ESP,Inflation,2031,2.0
+ESP,Fiscal balance,2027,-2.264
+ESP,Fiscal balance,2028,-2.171
+ESP,Fiscal balance,2029,-2.158
+ESP,Fiscal balance,2030,-2.155
+ESP,Fiscal balance,2031,-2.153
+ESP,Fiscal balance,2027,0.144
+ESP,Fiscal balance,2028,0.295
+ESP,Fiscal balance,2029,0.346
+ESP,Fiscal balance,2030,0.373
+ESP,Fiscal balance,2031,0.373
+ESP,Gen gov debt,2027,96.189
+ESP,Gen gov debt,2028,94.21
+ESP,Gen gov debt,2029,92.943
+ESP,Gen gov debt,2030,91.668
+ESP,Gen gov debt,2031,90.443
+SWE,GDP growth,2027,1.906
+SWE,GDP growth,2028,2.123
+SWE,GDP growth,2029,1.863
+SWE,GDP growth,2030,1.833
+SWE,GDP growth,2031,1.754
+SWE,Inflation,2027,1.833
+SWE,Inflation,2028,2.632
+SWE,Inflation,2029,2.0
+SWE,Inflation,2030,2.0
+SWE,Inflation,2031,2.0
+SWE,Fiscal balance,2027,-1.87
+SWE,Fiscal balance,2028,-1.191
+SWE,Fiscal balance,2029,-0.548
+SWE,Fiscal balance,2030,-0.548
+SWE,Fiscal balance,2031,-0.548
+SWE,Fiscal balance,2027,-1.95
+SWE,Fiscal balance,2028,-1.31
+SWE,Fiscal balance,2029,-0.684
+SWE,Fiscal balance,2030,-0.701
+SWE,Fiscal balance,2031,-0.717
+SWE,Gen gov debt,2027,38.155
+SWE,Gen gov debt,2028,38.273
+SWE,Gen gov debt,2029,37.804
+SWE,Gen gov debt,2030,37.189
+SWE,Gen gov debt,2031,36.561
+CHE,GDP growth,2027,1.344
+CHE,GDP growth,2028,1.83
+CHE,GDP growth,2029,1.225
+CHE,GDP growth,2030,1.835
+CHE,GDP growth,2031,1.225
+CHE,Inflation,2027,0.535
+CHE,Inflation,2028,0.646
+CHE,Inflation,2029,0.742
+CHE,Inflation,2030,0.709
+CHE,Inflation,2031,0.7
+CHE,Fiscal balance,2027,0.321
+CHE,Fiscal balance,2028,0.263
+CHE,Fiscal balance,2029,0.231
+CHE,Fiscal balance,2030,0.179
+CHE,Fiscal balance,2031,0.179
+CHE,Fiscal balance,2027,0.428
+CHE,Fiscal balance,2028,0.359
+CHE,Fiscal balance,2029,0.318
+CHE,Fiscal balance,2030,0.256
+CHE,Fiscal balance,2031,0.248
+CHE,Gen gov debt,2027,37.472
+CHE,Gen gov debt,2028,36.301
+CHE,Gen gov debt,2029,35.371
+CHE,Gen gov debt,2030,34.3
+CHE,Gen gov debt,2031,33.458
+GBR,GDP growth,2027,1.297
+GBR,GDP growth,2028,1.633
+GBR,GDP growth,2029,1.615
+GBR,GDP growth,2030,1.539
+GBR,GDP growth,2031,1.411
+GBR,Inflation,2027,2.418
+GBR,Inflation,2028,2.0
+GBR,Inflation,2029,2.0
+GBR,Inflation,2030,2.0
+GBR,Inflation,2031,2.0
+GBR,Fiscal balance,2027,-3.121
+GBR,Fiscal balance,2028,-2.624
+GBR,Fiscal balance,2029,-1.966
+GBR,Fiscal balance,2030,-1.702
+GBR,Fiscal balance,2031,-1.605
+GBR,Fiscal balance,2027,-0.393
+GBR,Fiscal balance,2028,0.241
+GBR,Fiscal balance,2029,1.041
+GBR,Fiscal balance,2030,1.344
+GBR,Fiscal balance,2031,1.356
+GBR,Gen gov debt,2027,104.078
+GBR,Gen gov debt,2028,103.918
+GBR,Gen gov debt,2029,103.499
+GBR,Gen gov debt,2030,102.935
+GBR,Gen gov debt,2031,102.552
+USA,GDP growth,2027,2.1
+USA,GDP growth,2028,2.1
+USA,GDP growth,2029,1.881
+USA,GDP growth,2030,1.753
+USA,GDP growth,2031,1.755
+USA,Inflation,2027,2.141
+USA,Inflation,2028,2.184
+USA,Inflation,2029,2.188
+USA,Inflation,2030,2.19
+USA,Inflation,2031,2.184
+USA,Fiscal balance,2027,-7.374
+USA,Fiscal balance,2028,-7.595
+USA,Fiscal balance,2029,-7.453
+USA,Fiscal balance,2030,-7.465
+USA,Fiscal balance,2031,-7.389
+USA,Fiscal balance,2027,-3.517
+USA,Fiscal balance,2028,-3.656
+USA,Fiscal balance,2029,-3.369
+USA,Fiscal balance,2030,-3.266
+USA,Fiscal balance,2031,-3.081
+USA,Gen gov debt,2027,128.576
+USA,Gen gov debt,2028,132.134
+USA,Gen gov debt,2029,135.527
+USA,Gen gov debt,2030,138.897
+USA,Gen gov debt,2031,142.113
+BGD,GDP growth,2027,4.258
+BGD,GDP growth,2028,4.548
+BGD,GDP growth,2029,5.704
+BGD,GDP growth,2030,5.75
+BGD,GDP growth,2031,6.07
+BGD,Inflation,2027,5.97
+BGD,Inflation,2028,4.971
+BGD,Inflation,2029,5.327
+BGD,Inflation,2030,5.472
+BGD,Inflation,2031,5.5
+BGD,Fiscal balance,2027,-4.705
+BGD,Fiscal balance,2028,-5.485
+BGD,Fiscal balance,2029,-5.61
+BGD,Fiscal balance,2030,-5.728
+BGD,Fiscal balance,2031,-5.654
+BGD,Fiscal balance,2027,-2.2
+BGD,Fiscal balance,2028,-2.6
+BGD,Fiscal balance,2029,-2.6
+BGD,Fiscal balance,2030,-2.6
+BGD,Fiscal balance,2031,-2.6
+BGD,Gen gov debt,2027,43.171
+BGD,Gen gov debt,2028,45.278
+BGD,Gen gov debt,2029,46.633
+BGD,Gen gov debt,2030,47.888
+BGD,Gen gov debt,2031,48.799
+BTN,GDP growth,2027,6.327
+BTN,GDP growth,2028,5.844
+BTN,GDP growth,2029,7.163
+BTN,GDP growth,2030,6.439
+BTN,GDP growth,2031,5.557
+BTN,Inflation,2027,4.25
+BTN,Inflation,2028,4.0
+BTN,Inflation,2029,4.0
+BTN,Inflation,2030,4.0
+BTN,Inflation,2031,4.0
+BTN,Fiscal balance,2027,-4.284
+BTN,Fiscal balance,2028,-4.162
+BTN,Fiscal balance,2029,-5.636
+BTN,Fiscal balance,2030,-4.6
+BTN,Fiscal balance,2031,-5.032
+BTN,Fiscal balance,2027,-1.774
+BTN,Fiscal balance,2028,-0.647
+BTN,Fiscal balance,2029,-1.226
+BTN,Fiscal balance,2030,0.499
+BTN,Fiscal balance,2031,0.2
+BTN,Gen gov debt,2027,122.909
+BTN,Gen gov debt,2028,122.45
+BTN,Gen gov debt,2029,136.865
+BTN,Gen gov debt,2030,130.962
+BTN,Gen gov debt,2031,123.962
+BRN,GDP growth,2027,2.65
+BRN,GDP growth,2028,2.5
+BRN,GDP growth,2029,2.6
+BRN,GDP growth,2030,3.0
+BRN,GDP growth,2031,2.9
+BRN,Inflation,2027,1.1
+BRN,Inflation,2028,1.0
+BRN,Inflation,2029,1.0
+BRN,Inflation,2030,1.0
+BRN,Inflation,2031,1.0
+BRN,Fiscal balance,2027,-9.803
+BRN,Fiscal balance,2028,-9.602
+BRN,Fiscal balance,2029,-9.25
+BRN,Fiscal balance,2030,-9.11
+BRN,Fiscal balance,2031,-9.022
+BRN,Fiscal balance,2027,-9.803
+BRN,Fiscal balance,2028,-9.602
+BRN,Fiscal balance,2029,-9.25
+BRN,Fiscal balance,2030,-9.11
+BRN,Fiscal balance,2031,-9.022
+BRN,Gen gov debt,2027,1.426
+BRN,Gen gov debt,2028,1.373
+BRN,Gen gov debt,2029,1.326
+BRN,Gen gov debt,2030,1.277
+BRN,Gen gov debt,2031,1.227
+KHM,GDP growth,2027,4.721
+KHM,GDP growth,2028,4.991
+KHM,GDP growth,2029,5.259
+KHM,GDP growth,2030,5.361
+KHM,GDP growth,2031,5.461
+KHM,Inflation,2027,1.939
+KHM,Inflation,2028,2.5
+KHM,Inflation,2029,2.9
+KHM,Inflation,2030,3.0
+KHM,Inflation,2031,3.0
+KHM,Fiscal balance,2027,-3.564
+KHM,Fiscal balance,2028,-3.501
+KHM,Fiscal balance,2029,-3.423
+KHM,Fiscal balance,2030,-3.345
+KHM,Fiscal balance,2031,-3.31
+KHM,Fiscal balance,2027,-3.248
+KHM,Fiscal balance,2028,-3.178
+KHM,Fiscal balance,2029,-3.105
+KHM,Fiscal balance,2030,-3.029
+KHM,Fiscal balance,2031,-2.95
+KHM,Gen gov debt,2027,27.187
+KHM,Gen gov debt,2028,27.268
+KHM,Gen gov debt,2029,27.074
+KHM,Gen gov debt,2030,27.234
+KHM,Gen gov debt,2031,27.783
+CHN,GDP growth,2027,4.033
+CHN,GDP growth,2028,4.0
+CHN,GDP growth,2029,3.665
+CHN,GDP growth,2030,3.348
+CHN,GDP growth,2031,3.291
+CHN,Inflation,2027,1.514
+CHN,Inflation,2028,1.805
+CHN,Inflation,2029,1.902
+CHN,Inflation,2030,1.997
+CHN,Inflation,2031,1.992
+CHN,Fiscal balance,2027,-8.358
+CHN,Fiscal balance,2028,-8.208
+CHN,Fiscal balance,2029,-8.031
+CHN,Fiscal balance,2030,-7.976
+CHN,Fiscal balance,2031,-8.014
+CHN,Fiscal balance,2027,-7.11
+CHN,Fiscal balance,2028,-6.866
+CHN,Fiscal balance,2029,-6.601
+CHN,Fiscal balance,2030,-6.457
+CHN,Fiscal balance,2031,-6.407
+CHN,Gen gov debt,2027,112.475
+CHN,Gen gov debt,2028,116.742
+CHN,Gen gov debt,2029,120.348
+CHN,Gen gov debt,2030,123.789
+CHN,Gen gov debt,2031,126.786
+FJI,GDP growth,2027,2.71
+FJI,GDP growth,2028,2.959
+FJI,GDP growth,2029,3.107
+FJI,GDP growth,2030,3.269
+FJI,GDP growth,2031,3.384
+FJI,Inflation,2027,3.0
+FJI,Inflation,2028,2.5
+FJI,Inflation,2029,2.5
+FJI,Inflation,2030,2.5
+FJI,Inflation,2031,2.5
+FJI,Fiscal balance,2027,-5.061
+FJI,Fiscal balance,2028,-3.848
+FJI,Fiscal balance,2029,-2.727
+FJI,Fiscal balance,2030,-2.266
+FJI,Fiscal balance,2031,-1.758
+FJI,Fiscal balance,2027,-0.973
+FJI,Fiscal balance,2028,0.356
+FJI,Fiscal balance,2029,1.497
+FJI,Fiscal balance,2030,1.98
+FJI,Fiscal balance,2031,2.467
+FJI,Gen gov debt,2027,83.562
+FJI,Gen gov debt,2028,83.026
+FJI,Gen gov debt,2029,81.368
+FJI,Gen gov debt,2030,79.255
+FJI,Gen gov debt,2031,76.027
+IND,GDP growth,2027,6.529
+IND,GDP growth,2028,6.5
+IND,GDP growth,2029,6.52
+IND,GDP growth,2030,6.503
+IND,GDP growth,2031,6.514
+IND,Inflation,2027,4.0
+IND,Inflation,2028,4.0
+IND,Inflation,2029,4.0
+IND,Inflation,2030,4.0
+IND,Inflation,2031,4.0
+IND,Fiscal balance,2027,-7.308
+IND,Fiscal balance,2028,-7.113
+IND,Fiscal balance,2029,-6.907
+IND,Fiscal balance,2030,-6.74
+IND,Fiscal balance,2031,-6.552
+IND,Fiscal balance,2027,-1.851
+IND,Fiscal balance,2028,-1.759
+IND,Fiscal balance,2029,-1.668
+IND,Fiscal balance,2030,-1.577
+IND,Fiscal balance,2031,-1.515
+IND,Gen gov debt,2027,82.546
+IND,Gen gov debt,2028,81.663
+IND,Gen gov debt,2029,80.609
+IND,Gen gov debt,2030,79.465
+IND,Gen gov debt,2031,77.689
+IDN,GDP growth,2027,5.07
+IDN,GDP growth,2028,5.169
+IDN,GDP growth,2029,5.185
+IDN,GDP growth,2030,5.223
+IDN,GDP growth,2031,5.232
+IDN,Inflation,2027,2.578
+IDN,Inflation,2028,2.517
+IDN,Inflation,2029,2.517
+IDN,Inflation,2030,2.517
+IDN,Inflation,2031,2.517
+IDN,Fiscal balance,2027,-2.935
+IDN,Fiscal balance,2028,-2.906
+IDN,Fiscal balance,2029,-2.877
+IDN,Fiscal balance,2030,-2.838
+IDN,Fiscal balance,2031,-2.833
+IDN,Fiscal balance,2027,-0.651
+IDN,Fiscal balance,2028,-0.603
+IDN,Fiscal balance,2029,-0.584
+IDN,Fiscal balance,2030,-0.526
+IDN,Fiscal balance,2031,-0.544
+IDN,Gen gov debt,2027,41.788
+IDN,Gen gov debt,2028,42.002
+IDN,Gen gov debt,2029,42.142
+IDN,Gen gov debt,2030,42.196
+IDN,Gen gov debt,2031,42.217
+KIR,GDP growth,2027,2.407
+KIR,GDP growth,2028,2.157
+KIR,GDP growth,2029,2.151
+KIR,GDP growth,2030,2.101
+KIR,GDP growth,2031,2.109
+KIR,Inflation,2027,3.1
+KIR,Inflation,2028,2.5
+KIR,Inflation,2029,2.0
+KIR,Inflation,2030,2.0
+KIR,Inflation,2031,1.8
+KIR,Fiscal balance,2027,-15.25
+KIR,Fiscal balance,2028,-12.572
+KIR,Fiscal balance,2029,-14.659
+KIR,Fiscal balance,2030,-14.532
+KIR,Fiscal balance,2031,-14.72
+KIR,Fiscal balance,2027,-15.159
+KIR,Fiscal balance,2028,-12.402
+KIR,Fiscal balance,2029,-14.439
+KIR,Fiscal balance,2030,-14.241
+KIR,Fiscal balance,2031,-14.385
+KIR,Gen gov debt,2027,15.805
+KIR,Gen gov debt,2028,21.163
+KIR,Gen gov debt,2029,28.619
+KIR,Gen gov debt,2030,33.16
+KIR,Gen gov debt,2031,37.75
+LAO,GDP growth,2027,3.959
+LAO,GDP growth,2028,3.503
+LAO,GDP growth,2029,3.002
+LAO,GDP growth,2030,2.983
+LAO,GDP growth,2031,2.97
+LAO,Inflation,2027,8.485
+LAO,Inflation,2028,8.01
+LAO,Inflation,2029,8.143
+LAO,Inflation,2030,8.697
+LAO,Inflation,2031,8.998
+LAO,Fiscal balance,2027,1.785
+LAO,Fiscal balance,2028,1.716
+LAO,Fiscal balance,2029,1.684
+LAO,Fiscal balance,2030,1.762
+LAO,Fiscal balance,2031,1.677
+LAO,Fiscal balance,2027,3.661
+LAO,Fiscal balance,2028,3.494
+LAO,Fiscal balance,2029,3.29
+LAO,Fiscal balance,2030,3.212
+LAO,Fiscal balance,2031,3.019
+LAO,Gen gov debt,2027,68.626
+LAO,Gen gov debt,2028,63.104
+LAO,Gen gov debt,2029,58.76
+LAO,Gen gov debt,2030,54.721
+LAO,Gen gov debt,2031,51.683
+MYS,GDP growth,2027,4.3
+MYS,GDP growth,2028,4.3
+MYS,GDP growth,2029,4.3
+MYS,GDP growth,2030,4.3
+MYS,GDP growth,2031,4.3
+MYS,Inflation,2027,2.01
+MYS,Inflation,2028,1.994
+MYS,Inflation,2029,1.994
+MYS,Inflation,2030,1.994
+MYS,Inflation,2031,1.994
+MYS,Fiscal balance,2027,-3.019
+MYS,Fiscal balance,2028,-2.745
+MYS,Fiscal balance,2029,-2.74
+MYS,Fiscal balance,2030,-2.734
+MYS,Fiscal balance,2031,-2.722
+MYS,Fiscal balance,2027,-0.799
+MYS,Fiscal balance,2028,-0.523
+MYS,Fiscal balance,2029,-0.519
+MYS,Fiscal balance,2030,-0.51
+MYS,Fiscal balance,2031,-0.496
+MYS,Gen gov debt,2027,68.701
+MYS,Gen gov debt,2028,67.75
+MYS,Gen gov debt,2029,66.866
+MYS,Gen gov debt,2030,66.106
+MYS,Gen gov debt,2031,65.448
+MDV,GDP growth,2027,4.587
+MDV,GDP growth,2028,4.152
+MDV,GDP growth,2029,4.019
+MDV,GDP growth,2030,3.985
+MDV,GDP growth,2031,4.013
+MDV,Inflation,2027,2.0
+MDV,Inflation,2028,2.0
+MDV,Inflation,2029,2.0
+MDV,Inflation,2030,2.0
+MDV,Inflation,2031,2.3
+MDV,Fiscal balance,2027,-9.087
+MDV,Fiscal balance,2028,-8.88
+MDV,Fiscal balance,2029,-8.673
+MDV,Fiscal balance,2030,-8.356
+MDV,Fiscal balance,2031,-6.721
+MDV,Fiscal balance,2027,-5.817
+MDV,Fiscal balance,2028,-5.379
+MDV,Fiscal balance,2029,-5.09
+MDV,Fiscal balance,2030,-4.797
+MDV,Fiscal balance,2031,-2.888
+MDV,Gen gov debt,2027,130.272
+MDV,Gen gov debt,2028,131.428
+MDV,Gen gov debt,2029,132.473
+MDV,Gen gov debt,2030,133.212
+MDV,Gen gov debt,2031,131.9
+MHL,GDP growth,2027,1.965
+MHL,GDP growth,2028,1.916
+MHL,GDP growth,2029,1.79
+MHL,GDP growth,2030,1.605
+MHL,GDP growth,2031,1.605
+MHL,Inflation,2027,5.48
+MHL,Inflation,2028,2.434
+MHL,Inflation,2029,2.422
+MHL,Inflation,2030,2.422
+MHL,Inflation,2031,2.422
+MHL,Fiscal balance,2027,0.238
+MHL,Fiscal balance,2028,0.121
+MHL,Fiscal balance,2029,0.056
+MHL,Fiscal balance,2030,0.019
+MHL,Fiscal balance,2031,-3.707
+MHL,Fiscal balance,2027,0.447
+MHL,Fiscal balance,2028,0.318
+MHL,Fiscal balance,2029,0.243
+MHL,Fiscal balance,2030,0.199
+MHL,Fiscal balance,2031,-3.534
+MHL,Gen gov debt,2027,15.349
+MHL,Gen gov debt,2028,14.588
+MHL,Gen gov debt,2029,13.943
+MHL,Gen gov debt,2030,13.384
+MHL,Gen gov debt,2031,16.572
+FSM,GDP growth,2027,1.09
+FSM,GDP growth,2028,1.438
+FSM,GDP growth,2029,1.045
+FSM,GDP growth,2030,0.662
+FSM,GDP growth,2031,0.662
+FSM,Inflation,2027,4.032
+FSM,Inflation,2028,1.674
+FSM,Inflation,2029,2.0
+FSM,Inflation,2030,2.0
+FSM,Inflation,2031,2.0
+FSM,Fiscal balance,2027,-0.258
+FSM,Fiscal balance,2028,-0.645
+FSM,Fiscal balance,2029,-0.849
+FSM,Fiscal balance,2030,-0.932
+FSM,Fiscal balance,2031,-1.194
+FSM,Fiscal balance,2027,-0.115
+FSM,Fiscal balance,2028,-0.514
+FSM,Fiscal balance,2029,-0.739
+FSM,Fiscal balance,2030,-0.841
+FSM,Fiscal balance,2031,-1.106
+FSM,Gen gov debt,2027,7.35
+FSM,Gen gov debt,2028,7.743
+FSM,Gen gov debt,2029,8.351
+FSM,Gen gov debt,2030,9.072
+FSM,Gen gov debt,2031,9.538
+MNG,GDP growth,2027,5.287
+MNG,GDP growth,2028,5.198
+MNG,GDP growth,2029,5.002
+MNG,GDP growth,2030,5.008
+MNG,GDP growth,2031,5.014
+MNG,Inflation,2027,7.15
+MNG,Inflation,2028,6.9
+MNG,Inflation,2029,6.65
+MNG,Inflation,2030,6.4
+MNG,Inflation,2031,6.25
+MNG,Fiscal balance,2027,-2.595
+MNG,Fiscal balance,2028,-3.002
+MNG,Fiscal balance,2029,-2.966
+MNG,Fiscal balance,2030,-3.0
+MNG,Fiscal balance,2031,-3.076
+MNG,Fiscal balance,2027,-0.618
+MNG,Fiscal balance,2028,-0.951
+MNG,Fiscal balance,2029,-0.831
+MNG,Fiscal balance,2030,-0.707
+MNG,Fiscal balance,2031,-0.602
+MNG,Gen gov debt,2027,45.821
+MNG,Gen gov debt,2028,49.949
+MNG,Gen gov debt,2029,50.733
+MNG,Gen gov debt,2030,51.816
+MNG,Gen gov debt,2031,52.335
+MMR,GDP growth,2027,2.998
+MMR,GDP growth,2028,2.522
+MMR,GDP growth,2029,2.168
+MMR,GDP growth,2030,1.812
+MMR,GDP growth,2031,1.814
+MMR,Inflation,2027,16.0
+MMR,Inflation,2028,10.0
+MMR,Inflation,2029,7.8
+MMR,Inflation,2030,7.8
+MMR,Inflation,2031,7.8
+MMR,Fiscal balance,2027,-4.991
+MMR,Fiscal balance,2028,-4.345
+MMR,Fiscal balance,2029,-3.648
+MMR,Fiscal balance,2030,-3.485
+MMR,Fiscal balance,2031,-3.309
+MMR,Fiscal balance,2027,-2.511
+MMR,Fiscal balance,2028,-1.835
+MMR,Fiscal balance,2029,-1.17
+MMR,Fiscal balance,2030,-1.14
+MMR,Fiscal balance,2031,-1.03
+MMR,Gen gov debt,2027,51.901
+MMR,Gen gov debt,2028,51.362
+MMR,Gen gov debt,2029,50.165
+MMR,Gen gov debt,2030,49.423
+MMR,Gen gov debt,2031,48.517
+NRU,GDP growth,2027,2.0
+NRU,GDP growth,2028,1.976
+NRU,GDP growth,2029,2.0
+NRU,GDP growth,2030,1.984
+NRU,GDP growth,2031,2.028
+NRU,Inflation,2027,4.157
+NRU,Inflation,2028,3.44
+NRU,Inflation,2029,2.707
+NRU,Inflation,2030,2.459
+NRU,Inflation,2031,2.5
+NRU,Fiscal balance,2027,10.322
+NRU,Fiscal balance,2028,13.366
+NRU,Fiscal balance,2029,13.869
+NRU,Fiscal balance,2030,15.001
+NRU,Fiscal balance,2031,15.515
+NRU,Gen gov debt,2027,10.478
+NRU,Gen gov debt,2028,8.952
+NRU,Gen gov debt,2029,7.583
+NRU,Gen gov debt,2030,6.485
+NRU,Gen gov debt,2031,5.461
+NPL,GDP growth,2027,4.564
+NPL,GDP growth,2028,5.307
+NPL,GDP growth,2029,5.149
+NPL,GDP growth,2030,5.047
+NPL,GDP growth,2031,5.042
+NPL,Inflation,2027,5.029
+NPL,Inflation,2028,5.0
+NPL,Inflation,2029,5.0
+NPL,Inflation,2030,5.0
+NPL,Inflation,2031,5.0
+NPL,Fiscal balance,2027,-3.32
+NPL,Fiscal balance,2028,-3.178
+NPL,Fiscal balance,2029,-3.096
+NPL,Fiscal balance,2030,-2.993
+NPL,Fiscal balance,2031,-2.978
+NPL,Fiscal balance,2027,-1.789
+NPL,Fiscal balance,2028,-1.663
+NPL,Fiscal balance,2029,-1.582
+NPL,Fiscal balance,2030,-1.47
+NPL,Fiscal balance,2031,-1.479
+NPL,Gen gov debt,2027,49.362
+NPL,Gen gov debt,2028,48.274
+NPL,Gen gov debt,2029,47.166
+NPL,Gen gov debt,2030,46.149
+NPL,Gen gov debt,2031,45.312
+PLW,GDP growth,2027,2.8
+PLW,GDP growth,2028,3.173
+PLW,GDP growth,2029,2.621
+PLW,GDP growth,2030,1.968
+PLW,GDP growth,2031,1.972
+PLW,Inflation,2027,2.645
+PLW,Inflation,2028,2.113
+PLW,Inflation,2029,2.14
+PLW,Inflation,2030,2.1
+PLW,Inflation,2031,2.1
+PLW,Fiscal balance,2027,0.948
+PLW,Fiscal balance,2028,0.743
+PLW,Fiscal balance,2029,0.543
+PLW,Fiscal balance,2030,0.071
+PLW,Fiscal balance,2031,0.109
+PLW,Gen gov debt,2027,50.524
+PLW,Gen gov debt,2028,44.891
+PLW,Gen gov debt,2029,39.89
+PLW,Gen gov debt,2030,35.264
+PLW,Gen gov debt,2031,28.219
+PNG,GDP growth,2027,3.798
+PNG,GDP growth,2028,3.232
+PNG,GDP growth,2029,3.1
+PNG,GDP growth,2030,3.1
+PNG,GDP growth,2031,3.1
+PNG,Inflation,2027,4.4
+PNG,Inflation,2028,4.5
+PNG,Inflation,2029,4.5
+PNG,Inflation,2030,4.5
+PNG,Inflation,2031,4.5
+PNG,Fiscal balance,2027,-0.147
+PNG,Fiscal balance,2028,-0.062
+PNG,Fiscal balance,2029,0.2
+PNG,Fiscal balance,2030,0.155
+PNG,Fiscal balance,2031,0.173
+PNG,Fiscal balance,2027,2.321
+PNG,Fiscal balance,2028,2.226
+PNG,Fiscal balance,2029,2.274
+PNG,Fiscal balance,2030,2.039
+PNG,Fiscal balance,2031,1.893
+PNG,Gen gov debt,2027,46.428
+PNG,Gen gov debt,2028,43.221
+PNG,Gen gov debt,2029,40.109
+PNG,Gen gov debt,2030,37.2
+PNG,Gen gov debt,2031,34.371
+PHL,GDP growth,2027,5.774
+PHL,GDP growth,2028,6.078
+PHL,GDP growth,2029,6.056
+PHL,GDP growth,2030,6.007
+PHL,GDP growth,2031,6.006
+PHL,Inflation,2027,3.243
+PHL,Inflation,2028,3.044
+PHL,Inflation,2029,3.0
+PHL,Inflation,2030,3.0
+PHL,Inflation,2031,3.0
+PHL,Fiscal balance,2027,-2.841
+PHL,Fiscal balance,2028,-2.521
+PHL,Fiscal balance,2029,-2.097
+PHL,Fiscal balance,2030,-1.648
+PHL,Fiscal balance,2031,-1.537
+PHL,Fiscal balance,2027,-0.022
+PHL,Fiscal balance,2028,0.307
+PHL,Fiscal balance,2029,0.628
+PHL,Fiscal balance,2030,1.064
+PHL,Fiscal balance,2031,1.124
+PHL,Gen gov debt,2027,59.921
+PHL,Gen gov debt,2028,59.155
+PHL,Gen gov debt,2029,57.99
+PHL,Gen gov debt,2030,56.396
+PHL,Gen gov debt,2031,54.737
+WSM,GDP growth,2027,2.823
+WSM,GDP growth,2028,2.467
+WSM,GDP growth,2029,2.226
+WSM,GDP growth,2030,2.055
+WSM,GDP growth,2031,1.985
+WSM,Inflation,2027,3.2
+WSM,Inflation,2028,3.0
+WSM,Inflation,2029,3.0
+WSM,Inflation,2030,3.0
+WSM,Inflation,2031,3.0
+WSM,Fiscal balance,2027,-0.404
+WSM,Fiscal balance,2028,-1.286
+WSM,Fiscal balance,2029,-1.456
+WSM,Fiscal balance,2030,-1.537
+WSM,Fiscal balance,2031,-1.544
+WSM,Gen gov debt,2027,16.635
+WSM,Gen gov debt,2028,17.166
+WSM,Gen gov debt,2029,17.746
+WSM,Gen gov debt,2030,18.512
+WSM,Gen gov debt,2031,19.173
+SLB,GDP growth,2027,2.876
+SLB,GDP growth,2028,2.955
+SLB,GDP growth,2029,2.974
+SLB,GDP growth,2030,3.037
+SLB,GDP growth,2031,2.978
+SLB,Inflation,2027,2.5
+SLB,Inflation,2028,2.5
+SLB,Inflation,2029,2.625
+SLB,Inflation,2030,2.875
+SLB,Inflation,2031,3.0
+SLB,Fiscal balance,2027,-3.201
+SLB,Fiscal balance,2028,-3.211
+SLB,Fiscal balance,2029,-3.011
+SLB,Fiscal balance,2030,-2.875
+SLB,Fiscal balance,2031,-2.948
+SLB,Fiscal balance,2027,-2.6
+SLB,Fiscal balance,2028,-2.505
+SLB,Fiscal balance,2029,-2.341
+SLB,Fiscal balance,2030,-2.109
+SLB,Fiscal balance,2031,-2.146
+SLB,Gen gov debt,2027,31.254
+SLB,Gen gov debt,2028,32.455
+SLB,Gen gov debt,2029,33.373
+SLB,Gen gov debt,2030,34.087
+SLB,Gen gov debt,2031,34.94
+THA,GDP growth,2027,2.101
+THA,GDP growth,2028,2.292
+THA,GDP growth,2029,2.456
+THA,GDP growth,2030,2.497
+THA,GDP growth,2031,2.5
+THA,Inflation,2027,1.006
+THA,Inflation,2028,1.2
+THA,Inflation,2029,1.4
+THA,Inflation,2030,1.5
+THA,Inflation,2031,1.8
+THA,Fiscal balance,2027,-1.942
+THA,Fiscal balance,2028,-2.044
+THA,Fiscal balance,2029,-2.189
+THA,Fiscal balance,2030,-2.204
+THA,Fiscal balance,2031,-2.216
+THA,Fiscal balance,2027,-0.723
+THA,Fiscal balance,2028,-0.751
+THA,Fiscal balance,2029,-0.766
+THA,Fiscal balance,2030,-0.775
+THA,Fiscal balance,2031,-0.781
+THA,Gen gov debt,2027,67.82
+THA,Gen gov debt,2028,68.561
+THA,Gen gov debt,2029,69.123
+THA,Gen gov debt,2030,69.518
+THA,Gen gov debt,2031,69.699
+TLS,GDP growth,2027,3.8
+TLS,GDP growth,2028,3.6
+TLS,GDP growth,2029,3.4
+TLS,GDP growth,2030,3.3
+TLS,GDP growth,2031,3.2
+TLS,Inflation,2027,1.989
+TLS,Inflation,2028,2.0
+TLS,Inflation,2029,2.0
+TLS,Inflation,2030,2.0
+TLS,Inflation,2031,2.0
+TLS,Fiscal balance,2027,-50.647
+TLS,Fiscal balance,2028,-51.032
+TLS,Fiscal balance,2029,-51.272
+TLS,Fiscal balance,2030,-51.496
+TLS,Fiscal balance,2031,-51.733
+TLS,Fiscal balance,2027,-50.262
+TLS,Fiscal balance,2028,-50.664
+TLS,Fiscal balance,2029,-50.919
+TLS,Fiscal balance,2030,-51.158
+TLS,Fiscal balance,2031,-51.555
+TLS,Gen gov debt,2027,14.882
+TLS,Gen gov debt,2028,14.761
+TLS,Gen gov debt,2029,14.726
+TLS,Gen gov debt,2030,14.747
+TLS,Gen gov debt,2031,16.001
+TON,GDP growth,2027,1.335
+TON,GDP growth,2028,1.304
+TON,GDP growth,2029,1.252
+TON,GDP growth,2030,1.253
+TON,GDP growth,2031,1.254
+TON,Inflation,2027,6.2
+TON,Inflation,2028,3.591
+TON,Inflation,2029,3.643
+TON,Inflation,2030,3.571
+TON,Inflation,2031,3.626
+TON,Fiscal balance,2027,-8.013
+TON,Fiscal balance,2028,-9.269
+TON,Fiscal balance,2029,-10.349
+TON,Fiscal balance,2030,-11.71
+TON,Fiscal balance,2031,-11.636
+TON,Fiscal balance,2027,-7.561
+TON,Fiscal balance,2028,-8.733
+TON,Fiscal balance,2029,-9.71
+TON,Fiscal balance,2030,-10.933
+TON,Fiscal balance,2031,-10.709
+TON,Gen gov debt,2027,41.109
+TON,Gen gov debt,2028,48.947
+TON,Gen gov debt,2029,57.613
+TON,Gen gov debt,2030,67.342
+TON,Gen gov debt,2031,76.65
+TUV,GDP growth,2027,2.379
+TUV,GDP growth,2028,2.316
+TUV,GDP growth,2029,2.013
+TUV,GDP growth,2030,1.806
+TUV,GDP growth,2031,1.645
+TUV,Inflation,2027,2.691
+TUV,Inflation,2028,2.53
+TUV,Inflation,2029,2.474
+TUV,Inflation,2030,2.452
+TUV,Inflation,2031,2.466
+TUV,Fiscal balance,2027,-4.539
+TUV,Fiscal balance,2028,-5.825
+TUV,Fiscal balance,2029,-6.929
+TUV,Fiscal balance,2030,-7.903
+TUV,Fiscal balance,2031,-8.776
+TUV,Fiscal balance,2027,-7.51
+TUV,Fiscal balance,2028,-8.8
+TUV,Fiscal balance,2029,-9.907
+TUV,Fiscal balance,2030,-10.884
+TUV,Fiscal balance,2031,-11.761
+TUV,Gen gov debt,2027,2.912
+TUV,Gen gov debt,2028,2.618
+TUV,Gen gov debt,2029,2.353
+TUV,Gen gov debt,2030,2.11
+TUV,Gen gov debt,2031,1.888
+VUT,GDP growth,2027,3.15
+VUT,GDP growth,2028,2.796
+VUT,GDP growth,2029,2.548
+VUT,GDP growth,2030,2.531
+VUT,GDP growth,2031,2.457
+VUT,Inflation,2027,3.36
+VUT,Inflation,2028,2.298
+VUT,Inflation,2029,2.253
+VUT,Inflation,2030,2.253
+VUT,Inflation,2031,2.253
+VUT,Fiscal balance,2027,-3.966
+VUT,Fiscal balance,2028,-3.88
+VUT,Fiscal balance,2029,-3.818
+VUT,Fiscal balance,2030,-3.705
+VUT,Fiscal balance,2031,-3.762
+VUT,Fiscal balance,2027,-2.559
+VUT,Fiscal balance,2028,-2.317
+VUT,Fiscal balance,2029,-2.078
+VUT,Fiscal balance,2030,-1.827
+VUT,Fiscal balance,2031,-1.81
+VUT,Gen gov debt,2027,45.252
+VUT,Gen gov debt,2028,47.336
+VUT,Gen gov debt,2029,49.347
+VUT,Gen gov debt,2030,51.142
+VUT,Gen gov debt,2031,52.929
+VNM,GDP growth,2027,6.7
+VNM,GDP growth,2028,6.2
+VNM,GDP growth,2029,5.6
+VNM,GDP growth,2030,5.39
+VNM,GDP growth,2031,5.39
+VNM,Inflation,2027,4.559
+VNM,Inflation,2028,3.663
+VNM,Inflation,2029,3.6
+VNM,Inflation,2030,3.6
+VNM,Inflation,2031,3.6
+VNM,Fiscal balance,2027,-1.555
+VNM,Fiscal balance,2028,-1.402
+VNM,Fiscal balance,2029,-1.316
+VNM,Fiscal balance,2030,-1.316
+VNM,Fiscal balance,2031,-1.251
+VNM,Fiscal balance,2027,-0.671
+VNM,Fiscal balance,2028,-0.5
+VNM,Fiscal balance,2029,-0.395
+VNM,Fiscal balance,2030,-0.373
+VNM,Fiscal balance,2031,-0.303
+VNM,Gen gov debt,2027,29.049
+VNM,Gen gov debt,2028,28.277
+VNM,Gen gov debt,2029,27.664
+VNM,Gen gov debt,2030,27.166
+VNM,Gen gov debt,2031,26.634
+ALB,GDP growth,2027,3.195
+ALB,GDP growth,2028,3.239
+ALB,GDP growth,2029,3.185
+ALB,GDP growth,2030,3.178
+ALB,GDP growth,2031,3.177
+ALB,Inflation,2027,3.117
+ALB,Inflation,2028,2.974
+ALB,Inflation,2029,2.999
+ALB,Inflation,2030,2.999
+ALB,Inflation,2031,3.007
+ALB,Fiscal balance,2027,-2.241
+ALB,Fiscal balance,2028,-2.254
+ALB,Fiscal balance,2029,-2.218
+ALB,Fiscal balance,2030,-2.293
+ALB,Fiscal balance,2031,-2.25
+ALB,Fiscal balance,2027,-0.005
+ALB,Fiscal balance,2028,0.004
+ALB,Fiscal balance,2029,0.009
+ALB,Fiscal balance,2030,-0.012
+ALB,Fiscal balance,2031,0.006
+ALB,Gen gov debt,2027,50.702
+ALB,Gen gov debt,2028,49.941
+ALB,Gen gov debt,2029,49.222
+ALB,Gen gov debt,2030,48.611
+ALB,Gen gov debt,2031,47.994
+BLR,GDP growth,2027,0.989
+BLR,GDP growth,2028,1.041
+BLR,GDP growth,2029,0.943
+BLR,GDP growth,2030,0.97
+BLR,GDP growth,2031,0.918
+BLR,Inflation,2027,6.167
+BLR,Inflation,2028,5.72
+BLR,Inflation,2029,5.127
+BLR,Inflation,2030,5.029
+BLR,Inflation,2031,4.978
+BLR,Fiscal balance,2027,-0.167
+BLR,Fiscal balance,2028,-0.137
+BLR,Fiscal balance,2029,-0.163
+BLR,Fiscal balance,2030,-0.192
+BLR,Fiscal balance,2031,-0.252
+BLR,Fiscal balance,2027,0.926
+BLR,Fiscal balance,2028,0.92
+BLR,Fiscal balance,2029,0.852
+BLR,Fiscal balance,2030,0.791
+BLR,Fiscal balance,2031,0.703
+BLR,Gen gov debt,2027,31.543
+BLR,Gen gov debt,2028,30.708
+BLR,Gen gov debt,2029,29.693
+BLR,Gen gov debt,2030,28.885
+BLR,Gen gov debt,2031,28.158
+BIH,GDP growth,2027,2.7
+BIH,GDP growth,2028,3.0
+BIH,GDP growth,2029,3.0
+BIH,GDP growth,2030,3.0
+BIH,GDP growth,2031,3.0
+BIH,Inflation,2027,2.882
+BIH,Inflation,2028,2.041
+BIH,Inflation,2029,2.047
+BIH,Inflation,2030,2.022
+BIH,Inflation,2031,1.984
+BIH,Fiscal balance,2027,-4.256
+BIH,Fiscal balance,2028,-4.521
+BIH,Fiscal balance,2029,-4.607
+BIH,Fiscal balance,2030,-4.613
+BIH,Fiscal balance,2031,-4.626
+BIH,Fiscal balance,2027,-2.883
+BIH,Fiscal balance,2028,-2.961
+BIH,Fiscal balance,2029,-2.845
+BIH,Fiscal balance,2030,-2.68
+BIH,Fiscal balance,2031,-2.465
+BIH,Gen gov debt,2027,32.528
+BIH,Gen gov debt,2028,34.834
+BIH,Gen gov debt,2029,37.101
+BIH,Gen gov debt,2030,39.355
+BIH,Gen gov debt,2031,41.703
+BGR,GDP growth,2027,2.476
+BGR,GDP growth,2028,2.758
+BGR,GDP growth,2029,2.638
+BGR,GDP growth,2030,2.64
+BGR,GDP growth,2031,2.637
+BGR,Inflation,2027,3.714
+BGR,Inflation,2028,3.446
+BGR,Inflation,2029,2.546
+BGR,Inflation,2030,2.407
+BGR,Inflation,2031,2.246
+BGR,Fiscal balance,2027,-3.552
+BGR,Fiscal balance,2028,-3.343
+BGR,Fiscal balance,2029,-3.372
+BGR,Fiscal balance,2030,-3.363
+BGR,Fiscal balance,2031,-3.335
+BGR,Fiscal balance,2027,-2.712
+BGR,Fiscal balance,2028,-2.39
+BGR,Fiscal balance,2029,-2.518
+BGR,Fiscal balance,2030,-2.448
+BGR,Fiscal balance,2031,-2.359
+BGR,Gen gov debt,2027,29.738
+BGR,Gen gov debt,2028,30.872
+BGR,Gen gov debt,2029,32.725
+BGR,Gen gov debt,2030,34.354
+BGR,Gen gov debt,2031,35.852
+HUN,GDP growth,2027,2.05
+HUN,GDP growth,2028,2.268
+HUN,GDP growth,2029,2.511
+HUN,GDP growth,2030,2.511
+HUN,GDP growth,2031,2.511
+HUN,Inflation,2027,3.467
+HUN,Inflation,2028,3.065
+HUN,Inflation,2029,2.983
+HUN,Inflation,2030,2.996
+HUN,Inflation,2031,3.009
+HUN,Fiscal balance,2027,-5.723
+HUN,Fiscal balance,2028,-5.847
+HUN,Fiscal balance,2029,-5.71
+HUN,Fiscal balance,2030,-5.605
+HUN,Fiscal balance,2031,-5.487
+HUN,Fiscal balance,2027,-1.975
+HUN,Fiscal balance,2028,-1.805
+HUN,Fiscal balance,2029,-1.425
+HUN,Fiscal balance,2030,-1.022
+HUN,Fiscal balance,2031,-0.724
+HUN,Gen gov debt,2027,80.265
+HUN,Gen gov debt,2028,82.778
+HUN,Gen gov debt,2029,84.985
+HUN,Gen gov debt,2030,87.014
+HUN,Gen gov debt,2031,88.793
+MDA,GDP growth,2027,3.2
+MDA,GDP growth,2028,3.65
+MDA,GDP growth,2029,3.6
+MDA,GDP growth,2030,3.55
+MDA,GDP growth,2031,3.5
+MDA,Inflation,2027,5.463
+MDA,Inflation,2028,4.961
+MDA,Inflation,2029,5.0
+MDA,Inflation,2030,5.0
+MDA,Inflation,2031,5.0
+MDA,Fiscal balance,2027,-4.7
+MDA,Fiscal balance,2028,-4.306
+MDA,Fiscal balance,2029,-4.026
+MDA,Fiscal balance,2030,-3.594
+MDA,Fiscal balance,2031,-3.369
+MDA,Fiscal balance,2027,-3.041
+MDA,Fiscal balance,2028,-2.634
+MDA,Fiscal balance,2029,-2.314
+MDA,Fiscal balance,2030,-1.865
+MDA,Fiscal balance,2031,-1.64
+MDA,Gen gov debt,2027,40.832
+MDA,Gen gov debt,2028,41.719
+MDA,Gen gov debt,2029,42.34
+MDA,Gen gov debt,2030,42.493
+MDA,Gen gov debt,2031,42.527
+MNE,GDP growth,2027,2.7
+MNE,GDP growth,2028,3.2
+MNE,GDP growth,2029,3.005
+MNE,GDP growth,2030,2.99
+MNE,GDP growth,2031,3.0
+MNE,Inflation,2027,2.856
+MNE,Inflation,2028,2.25
+MNE,Inflation,2029,2.208
+MNE,Inflation,2030,2.218
+MNE,Inflation,2031,2.218
+MNE,Fiscal balance,2027,-3.999
+MNE,Fiscal balance,2028,-3.797
+MNE,Fiscal balance,2029,-3.893
+MNE,Fiscal balance,2030,-4.041
+MNE,Fiscal balance,2031,-4.331
+MNE,Fiscal balance,2027,-1.399
+MNE,Fiscal balance,2028,-1.224
+MNE,Fiscal balance,2029,-1.32
+MNE,Fiscal balance,2030,-1.464
+MNE,Fiscal balance,2031,-1.428
+MNE,Gen gov debt,2027,62.788
+MNE,Gen gov debt,2028,63.125
+MNE,Gen gov debt,2029,64.096
+MNE,Gen gov debt,2030,64.973
+MNE,Gen gov debt,2031,66.052
+MKD,GDP growth,2027,3.0
+MKD,GDP growth,2028,3.0
+MKD,GDP growth,2029,3.0
+MKD,GDP growth,2030,3.0
+MKD,GDP growth,2031,3.0
+MKD,Inflation,2027,4.1
+MKD,Inflation,2028,3.2
+MKD,Inflation,2029,2.5
+MKD,Inflation,2030,2.2
+MKD,Inflation,2031,2.0
+MKD,Fiscal balance,2027,-3.868
+MKD,Fiscal balance,2028,-3.559
+MKD,Fiscal balance,2029,-3.259
+MKD,Fiscal balance,2030,-2.959
+MKD,Fiscal balance,2031,-2.965
+MKD,Fiscal balance,2027,-1.914
+MKD,Fiscal balance,2028,-1.314
+MKD,Fiscal balance,2029,-1.014
+MKD,Fiscal balance,2030,-0.714
+MKD,Fiscal balance,2031,-0.715
+MKD,Gen gov debt,2027,53.356
+MKD,Gen gov debt,2028,53.594
+MKD,Gen gov debt,2029,53.994
+MKD,Gen gov debt,2030,53.838
+MKD,Gen gov debt,2031,53.82
+POL,GDP growth,2027,2.38
+POL,GDP growth,2028,2.631
+POL,GDP growth,2029,2.553
+POL,GDP growth,2030,2.482
+POL,GDP growth,2031,2.481
+POL,Inflation,2027,3.284
+POL,Inflation,2028,3.85
+POL,Inflation,2029,2.7
+POL,Inflation,2030,2.5
+POL,Inflation,2031,2.5
+POL,Fiscal balance,2027,-6.365
+POL,Fiscal balance,2028,-5.72
+POL,Fiscal balance,2029,-5.392
+POL,Fiscal balance,2030,-5.023
+POL,Fiscal balance,2031,-4.811
+POL,Fiscal balance,2027,-3.637
+POL,Fiscal balance,2028,-3.049
+POL,Fiscal balance,2029,-2.657
+POL,Fiscal balance,2030,-2.248
+POL,Fiscal balance,2031,-2.029
+POL,Gen gov debt,2027,69.573
+POL,Gen gov debt,2028,71.568
+POL,Gen gov debt,2029,73.859
+POL,Gen gov debt,2030,75.846
+POL,Gen gov debt,2031,77.574
+ROU,GDP growth,2027,2.452
+ROU,GDP growth,2028,2.701
+ROU,GDP growth,2029,2.863
+ROU,GDP growth,2030,3.084
+ROU,GDP growth,2031,3.069
+ROU,Inflation,2027,3.857
+ROU,Inflation,2028,4.295
+ROU,Inflation,2029,2.994
+ROU,Inflation,2030,2.797
+ROU,Inflation,2031,2.537
+ROU,Fiscal balance,2027,-5.763
+ROU,Fiscal balance,2028,-5.748
+ROU,Fiscal balance,2029,-5.63
+ROU,Fiscal balance,2030,-5.377
+ROU,Fiscal balance,2031,-5.242
+ROU,Fiscal balance,2027,-2.865
+ROU,Fiscal balance,2028,-2.643
+ROU,Fiscal balance,2029,-2.179
+ROU,Fiscal balance,2030,-1.872
+ROU,Fiscal balance,2031,-1.579
+ROU,Gen gov debt,2027,63.876
+ROU,Gen gov debt,2028,65.292
+ROU,Gen gov debt,2029,67.253
+ROU,Gen gov debt,2030,68.835
+ROU,Gen gov debt,2031,70.394
+RUS,GDP growth,2027,1.088
+RUS,GDP growth,2028,1.0
+RUS,GDP growth,2029,1.0
+RUS,GDP growth,2030,1.0
+RUS,GDP growth,2031,1.0
+RUS,Inflation,2027,4.278
+RUS,Inflation,2028,4.0
+RUS,Inflation,2029,4.0
+RUS,Inflation,2030,4.0
+RUS,Inflation,2031,4.0
+RUS,Fiscal balance,2027,-2.424
+RUS,Fiscal balance,2028,-3.133
+RUS,Fiscal balance,2029,-2.395
+RUS,Fiscal balance,2030,-2.5
+RUS,Fiscal balance,2031,-2.756
+RUS,Fiscal balance,2027,-1.387
+RUS,Fiscal balance,2028,-1.875
+RUS,Fiscal balance,2029,-0.93
+RUS,Fiscal balance,2030,-0.896
+RUS,Fiscal balance,2031,-0.997
+RUS,Gen gov debt,2027,21.165
+RUS,Gen gov debt,2028,23.623
+RUS,Gen gov debt,2029,25.375
+RUS,Gen gov debt,2030,27.2
+RUS,Gen gov debt,2031,29.131
+SRB,GDP growth,2027,3.538
+SRB,GDP growth,2028,3.481
+SRB,GDP growth,2029,3.491
+SRB,GDP growth,2030,3.546
+SRB,GDP growth,2031,3.546
+SRB,Inflation,2027,4.865
+SRB,Inflation,2028,2.98
+SRB,Inflation,2029,2.97
+SRB,Inflation,2030,2.97
+SRB,Inflation,2031,2.97
+SRB,Fiscal balance,2027,-2.905
+SRB,Fiscal balance,2028,-2.466
+SRB,Fiscal balance,2029,-2.413
+SRB,Fiscal balance,2030,-1.927
+SRB,Fiscal balance,2031,-1.928
+SRB,Fiscal balance,2027,-0.985
+SRB,Fiscal balance,2028,-0.57
+SRB,Fiscal balance,2029,-0.51
+SRB,Fiscal balance,2030,-0.065
+SRB,Fiscal balance,2031,-0.048
+SRB,Gen gov debt,2027,42.968
+SRB,Gen gov debt,2028,42.74
+SRB,Gen gov debt,2029,42.595
+SRB,Gen gov debt,2030,42.351
+SRB,Gen gov debt,2031,42.103
+TUR,GDP growth,2027,3.472
+TUR,GDP growth,2028,3.839
+TUR,GDP growth,2029,4.009
+TUR,GDP growth,2030,4.033
+TUR,GDP growth,2031,4.023
+TUR,Inflation,2027,21.357
+TUR,Inflation,2028,16.986
+TUR,Inflation,2029,15.004
+TUR,Inflation,2030,15.004
+TUR,Inflation,2031,15.004
+TUR,Fiscal balance,2027,-3.666
+TUR,Fiscal balance,2028,-3.514
+TUR,Fiscal balance,2029,-2.895
+TUR,Fiscal balance,2030,-2.788
+TUR,Fiscal balance,2031,-2.683
+TUR,Fiscal balance,2027,-0.266
+TUR,Fiscal balance,2028,-0.322
+TUR,Fiscal balance,2029,-0.304
+TUR,Fiscal balance,2030,-0.275
+TUR,Fiscal balance,2031,-0.268
+TUR,Gen gov debt,2027,26.894
+TUR,Gen gov debt,2028,27.315
+TUR,Gen gov debt,2029,27.411
+TUR,Gen gov debt,2030,28.042
+TUR,Gen gov debt,2031,27.486
+UKR,GDP growth,2027,3.5
+UKR,GDP growth,2028,4.2
+UKR,GDP growth,2029,3.9
+UKR,GDP growth,2030,3.7
+UKR,GDP growth,2031,3.6
+UKR,Inflation,2027,7.657
+UKR,Inflation,2028,5.699
+UKR,Inflation,2029,5.181
+UKR,Inflation,2030,5.0
+UKR,Inflation,2031,4.998
+UKR,Fiscal balance,2027,-17.676
+UKR,Fiscal balance,2028,-7.425
+UKR,Fiscal balance,2029,-2.871
+UKR,Fiscal balance,2030,-1.996
+UKR,Fiscal balance,2031,-1.299
+UKR,Fiscal balance,2027,-14.109
+UKR,Fiscal balance,2028,-3.514
+UKR,Fiscal balance,2029,0.892
+UKR,Fiscal balance,2030,1.382
+UKR,Fiscal balance,2031,1.825
+UKR,Gen gov debt,2027,137.104
+UKR,Gen gov debt,2028,135.472
+UKR,Gen gov debt,2029,131.888
+UKR,Gen gov debt,2030,125.703
+UKR,Gen gov debt,2031,119.609
+ATG,GDP growth,2027,2.398
+ATG,GDP growth,2028,2.497
+ATG,GDP growth,2029,2.503
+ATG,GDP growth,2030,2.508
+ATG,GDP growth,2031,2.514
+ATG,Inflation,2027,2.057
+ATG,Inflation,2028,1.958
+ATG,Inflation,2029,1.958
+ATG,Inflation,2030,1.958
+ATG,Inflation,2031,1.958
+ATG,Fiscal balance,2027,-1.149
+ATG,Fiscal balance,2028,-0.982
+ATG,Fiscal balance,2029,-0.96
+ATG,Fiscal balance,2030,-0.958
+ATG,Fiscal balance,2031,-0.946
+ATG,Fiscal balance,2027,0.864
+ATG,Fiscal balance,2028,1.0
+ATG,Fiscal balance,2029,1.0
+ATG,Fiscal balance,2030,1.0
+ATG,Fiscal balance,2031,1.0
+ATG,Gen gov debt,2027,65.208
+ATG,Gen gov debt,2028,63.899
+ATG,Gen gov debt,2029,62.263
+ATG,Gen gov debt,2030,60.423
+ATG,Gen gov debt,2031,58.411
+ARG,GDP growth,2027,4.003
+ARG,GDP growth,2028,3.768
+ARG,GDP growth,2029,3.537
+ARG,GDP growth,2030,3.151
+ARG,GDP growth,2031,3.04
+ARG,Inflation,2027,15.667
+ARG,Inflation,2028,9.554
+ARG,Inflation,2029,7.5
+ARG,Inflation,2030,7.5
+ARG,Inflation,2031,7.5
+ARG,Fiscal balance,2027,0.374
+ARG,Fiscal balance,2028,0.28
+ARG,Fiscal balance,2029,0.824
+ARG,Fiscal balance,2030,1.144
+ARG,Fiscal balance,2031,1.28
+ARG,Fiscal balance,2027,2.254
+ARG,Fiscal balance,2028,2.311
+ARG,Fiscal balance,2029,3.077
+ARG,Fiscal balance,2030,3.315
+ARG,Fiscal balance,2031,3.405
+ARG,Gen gov debt,2027,68.062
+ARG,Gen gov debt,2028,63.035
+ARG,Gen gov debt,2029,59.32
+ARG,Gen gov debt,2030,55.366
+ARG,Gen gov debt,2031,52.158
+ABW,GDP growth,2027,2.029
+ABW,GDP growth,2028,1.48
+ABW,GDP growth,2029,1.435
+ABW,GDP growth,2030,1.413
+ABW,GDP growth,2031,1.329
+ABW,Inflation,2027,2.0
+ABW,Inflation,2028,2.0
+ABW,Inflation,2029,2.0
+ABW,Inflation,2030,2.0
+ABW,Inflation,2031,2.0
+ABW,Fiscal balance,2027,1.064
+ABW,Fiscal balance,2028,1.064
+ABW,Fiscal balance,2029,1.063
+ABW,Fiscal balance,2030,1.062
+ABW,Fiscal balance,2031,1.087
+ABW,Fiscal balance,2027,4.554
+ABW,Fiscal balance,2028,4.557
+ABW,Fiscal balance,2029,4.413
+ABW,Fiscal balance,2030,4.214
+ABW,Fiscal balance,2031,3.919
+ABW,Gen gov debt,2027,57.484
+ABW,Gen gov debt,2028,54.988
+ABW,Gen gov debt,2029,52.583
+ABW,Gen gov debt,2030,50.262
+ABW,Gen gov debt,2031,48.028
+BHS,GDP growth,2027,1.9
+BHS,GDP growth,2028,1.8
+BHS,GDP growth,2029,1.55
+BHS,GDP growth,2030,1.5
+BHS,GDP growth,2031,1.5
+BHS,Inflation,2027,1.885
+BHS,Inflation,2028,1.987
+BHS,Inflation,2029,2.029
+BHS,Inflation,2030,2.009
+BHS,Inflation,2031,1.974
+BHS,Fiscal balance,2027,-0.338
+BHS,Fiscal balance,2028,-0.273
+BHS,Fiscal balance,2029,0.108
+BHS,Fiscal balance,2030,0.161
+BHS,Fiscal balance,2031,0.25
+BHS,Fiscal balance,2027,3.622
+BHS,Fiscal balance,2028,3.665
+BHS,Fiscal balance,2029,3.737
+BHS,Fiscal balance,2030,3.668
+BHS,Fiscal balance,2031,3.6
+BHS,Gen gov debt,2027,70.215
+BHS,Gen gov debt,2028,68.461
+BHS,Gen gov debt,2029,66.301
+BHS,Gen gov debt,2030,64.129
+BHS,Gen gov debt,2031,61.934
+BRB,GDP growth,2027,2.228
+BRB,GDP growth,2028,2.0
+BRB,GDP growth,2029,2.0
+BRB,GDP growth,2030,2.0
+BRB,GDP growth,2031,2.0
+BRB,Inflation,2027,2.174
+BRB,Inflation,2028,2.198
+BRB,Inflation,2029,2.364
+BRB,Inflation,2030,2.369
+BRB,Inflation,2031,2.405
+BRB,Fiscal balance,2027,0.167
+BRB,Fiscal balance,2028,0.136
+BRB,Fiscal balance,2029,0.289
+BRB,Fiscal balance,2030,0.389
+BRB,Fiscal balance,2031,0.604
+BRB,Fiscal balance,2027,4.105
+BRB,Fiscal balance,2028,4.126
+BRB,Fiscal balance,2029,4.13
+BRB,Fiscal balance,2030,4.093
+BRB,Fiscal balance,2031,4.146
+BRB,Gen gov debt,2027,85.078
+BRB,Gen gov debt,2028,81.17
+BRB,Gen gov debt,2029,77.032
+BRB,Gen gov debt,2030,73.099
+BRB,Gen gov debt,2031,69.109
+BLZ,GDP growth,2027,2.118
+BLZ,GDP growth,2028,2.0
+BLZ,GDP growth,2029,2.0
+BLZ,GDP growth,2030,2.0
+BLZ,GDP growth,2031,2.0
+BLZ,Inflation,2027,1.549
+BLZ,Inflation,2028,1.26
+BLZ,Inflation,2029,1.26
+BLZ,Inflation,2030,1.26
+BLZ,Inflation,2031,1.26
+BLZ,Fiscal balance,2027,-1.786
+BLZ,Fiscal balance,2028,-1.64
+BLZ,Fiscal balance,2029,-1.276
+BLZ,Fiscal balance,2030,-1.128
+BLZ,Fiscal balance,2031,-1.087
+BLZ,Fiscal balance,2027,0.686
+BLZ,Fiscal balance,2028,0.839
+BLZ,Fiscal balance,2029,1.166
+BLZ,Fiscal balance,2030,1.245
+BLZ,Fiscal balance,2031,1.245
+BLZ,Gen gov debt,2027,62.728
+BLZ,Gen gov debt,2028,62.372
+BLZ,Gen gov debt,2029,61.664
+BLZ,Gen gov debt,2030,60.831
+BLZ,Gen gov debt,2031,59.983
+BRA,GDP growth,2027,1.961
+BRA,GDP growth,2028,2.352
+BRA,GDP growth,2029,2.503
+BRA,GDP growth,2030,2.503
+BRA,GDP growth,2031,2.503
+BRA,Inflation,2027,3.353
+BRA,Inflation,2028,2.996
+BRA,Inflation,2029,2.989
+BRA,Inflation,2030,3.0
+BRA,Inflation,2031,2.995
+BRA,Fiscal balance,2027,-6.871
+BRA,Fiscal balance,2028,-6.169
+BRA,Fiscal balance,2029,-6.041
+BRA,Fiscal balance,2030,-6.086
+BRA,Fiscal balance,2031,-6.109
+BRA,Fiscal balance,2027,-0.444
+BRA,Fiscal balance,2028,0.082
+BRA,Fiscal balance,2029,0.429
+BRA,Fiscal balance,2030,0.509
+BRA,Fiscal balance,2031,0.575
+BRA,Gen gov debt,2027,99.997
+BRA,Gen gov debt,2028,102.288
+BRA,Gen gov debt,2029,104.142
+BRA,Gen gov debt,2030,105.505
+BRA,Gen gov debt,2031,106.52
+CHL,GDP growth,2027,2.572
+CHL,GDP growth,2028,2.329
+CHL,GDP growth,2029,2.312
+CHL,GDP growth,2030,2.265
+CHL,GDP growth,2031,2.265
+CHL,Inflation,2027,3.329
+CHL,Inflation,2028,3.0
+CHL,Inflation,2029,3.0
+CHL,Inflation,2030,3.0
+CHL,Inflation,2031,3.0
+CHL,Fiscal balance,2027,-1.883
+CHL,Fiscal balance,2028,-1.785
+CHL,Fiscal balance,2029,-1.99
+CHL,Fiscal balance,2030,-2.039
+CHL,Fiscal balance,2031,-2.005
+CHL,Fiscal balance,2027,-1.003
+CHL,Fiscal balance,2028,-0.684
+CHL,Fiscal balance,2029,-0.772
+CHL,Fiscal balance,2030,-0.748
+CHL,Fiscal balance,2031,-0.769
+CHL,Gen gov debt,2027,44.437
+CHL,Gen gov debt,2028,45.527
+CHL,Gen gov debt,2029,46.818
+CHL,Gen gov debt,2030,48.068
+CHL,Gen gov debt,2031,49.169
+COL,GDP growth,2027,2.542
+COL,GDP growth,2028,2.62
+COL,GDP growth,2029,2.74
+COL,GDP growth,2030,2.76
+COL,GDP growth,2031,2.76
+COL,Inflation,2027,5.198
+COL,Inflation,2028,3.378
+COL,Inflation,2029,3.018
+COL,Inflation,2030,2.988
+COL,Inflation,2031,2.988
+COL,Fiscal balance,2027,-4.323
+COL,Fiscal balance,2028,-2.741
+COL,Fiscal balance,2029,-2.509
+COL,Fiscal balance,2030,-2.389
+COL,Fiscal balance,2031,-2.412
+COL,Fiscal balance,2027,-0.868
+COL,Fiscal balance,2028,0.593
+COL,Fiscal balance,2029,0.816
+COL,Fiscal balance,2030,0.803
+COL,Fiscal balance,2031,0.724
+COL,Gen gov debt,2027,61.311
+COL,Gen gov debt,2028,60.961
+COL,Gen gov debt,2029,60.45
+COL,Gen gov debt,2030,59.815
+COL,Gen gov debt,2031,59.229
+CRI,GDP growth,2027,3.567
+CRI,GDP growth,2028,3.556
+CRI,GDP growth,2029,3.51
+CRI,GDP growth,2030,3.46
+CRI,GDP growth,2031,3.46
+CRI,Inflation,2027,2.047
+CRI,Inflation,2028,2.3
+CRI,Inflation,2029,2.5
+CRI,Inflation,2030,3.0
+CRI,Inflation,2031,3.0
+CRI,Fiscal balance,2027,-3.501
+CRI,Fiscal balance,2028,-3.161
+CRI,Fiscal balance,2029,-2.825
+CRI,Fiscal balance,2030,-2.481
+CRI,Fiscal balance,2031,-2.195
+CRI,Fiscal balance,2027,0.921
+CRI,Fiscal balance,2028,1.126
+CRI,Fiscal balance,2029,1.283
+CRI,Fiscal balance,2030,1.448
+CRI,Fiscal balance,2031,1.537
+CRI,Gen gov debt,2027,61.443
+CRI,Gen gov debt,2028,61.38
+CRI,Gen gov debt,2029,60.847
+CRI,Gen gov debt,2030,59.906
+CRI,Gen gov debt,2031,58.597
+DMA,GDP growth,2027,2.839
+DMA,GDP growth,2028,2.733
+DMA,GDP growth,2029,2.425
+DMA,GDP growth,2030,2.132
+DMA,GDP growth,2031,2.0
+DMA,Inflation,2027,2.3
+DMA,Inflation,2028,2.2
+DMA,Inflation,2029,2.2
+DMA,Inflation,2030,2.2
+DMA,Inflation,2031,2.2
+DMA,Fiscal balance,2027,-0.993
+DMA,Fiscal balance,2028,-0.862
+DMA,Fiscal balance,2029,-0.548
+DMA,Fiscal balance,2030,-0.049
+DMA,Fiscal balance,2031,-0.007
+DMA,Fiscal balance,2027,1.076
+DMA,Fiscal balance,2028,1.224
+DMA,Fiscal balance,2029,1.542
+DMA,Fiscal balance,2030,2.03
+DMA,Fiscal balance,2031,2.023
+DMA,Gen gov debt,2027,94.716
+DMA,Gen gov debt,2028,91.4
+DMA,Gen gov debt,2029,88.219
+DMA,Gen gov debt,2030,84.846
+DMA,Gen gov debt,2031,81.579
+DOM,GDP growth,2027,4.397
+DOM,GDP growth,2028,4.681
+DOM,GDP growth,2029,4.856
+DOM,GDP growth,2030,4.952
+DOM,GDP growth,2031,5.004
+DOM,Inflation,2027,4.473
+DOM,Inflation,2028,4.022
+DOM,Inflation,2029,3.973
+DOM,Inflation,2030,4.021
+DOM,Inflation,2031,4.034
+DOM,Fiscal balance,2027,-3.223
+DOM,Fiscal balance,2028,-2.897
+DOM,Fiscal balance,2029,-2.624
+DOM,Fiscal balance,2030,-2.262
+DOM,Fiscal balance,2031,-2.002
+DOM,Fiscal balance,2027,0.477
+DOM,Fiscal balance,2028,0.784
+DOM,Fiscal balance,2029,1.007
+DOM,Fiscal balance,2030,1.298
+DOM,Fiscal balance,2031,1.462
+DOM,Gen gov debt,2027,56.654
+DOM,Gen gov debt,2028,55.375
+DOM,Gen gov debt,2029,54.02
+DOM,Gen gov debt,2030,52.379
+DOM,Gen gov debt,2031,50.015
+ECU,GDP growth,2027,2.5
+ECU,GDP growth,2028,2.6
+ECU,GDP growth,2029,2.8
+ECU,GDP growth,2030,3.0
+ECU,GDP growth,2031,3.0
+ECU,Inflation,2027,1.61
+ECU,Inflation,2028,1.5
+ECU,Inflation,2029,1.5
+ECU,Inflation,2030,1.5
+ECU,Inflation,2031,1.5
+SLV,GDP growth,2027,3.0
+SLV,GDP growth,2028,3.0
+SLV,GDP growth,2029,3.0
+SLV,GDP growth,2030,3.0
+SLV,GDP growth,2031,3.0
+SLV,Inflation,2027,2.0
+SLV,Inflation,2028,1.8
+SLV,Inflation,2029,1.8
+SLV,Inflation,2030,1.8
+SLV,Inflation,2031,1.8
+SLV,Fiscal balance,2027,-1.927
+SLV,Fiscal balance,2028,-2.259
+SLV,Fiscal balance,2029,-2.006
+SLV,Fiscal balance,2030,-1.826
+SLV,Fiscal balance,2031,-1.437
+SLV,Fiscal balance,2027,3.709
+SLV,Fiscal balance,2028,3.725
+SLV,Fiscal balance,2029,3.713
+SLV,Fiscal balance,2030,3.73
+SLV,Fiscal balance,2031,3.726
+SLV,Gen gov debt,2027,82.204
+SLV,Gen gov debt,2028,80.284
+SLV,Gen gov debt,2029,78.351
+SLV,Gen gov debt,2030,76.556
+SLV,Gen gov debt,2031,74.359
+GRD,GDP growth,2027,3.076
+GRD,GDP growth,2028,2.965
+GRD,GDP growth,2029,2.735
+GRD,GDP growth,2030,2.735
+GRD,GDP growth,2031,2.735
+GRD,Inflation,2027,1.6
+GRD,Inflation,2028,2.0
+GRD,Inflation,2029,2.0
+GRD,Inflation,2030,2.0
+GRD,Inflation,2031,2.0
+GRD,Fiscal balance,2027,-0.088
+GRD,Fiscal balance,2028,-0.013
+GRD,Fiscal balance,2029,0.035
+GRD,Fiscal balance,2030,0.333
+GRD,Fiscal balance,2031,0.357
+GRD,Fiscal balance,2027,1.503
+GRD,Fiscal balance,2028,1.497
+GRD,Fiscal balance,2029,1.502
+GRD,Fiscal balance,2030,1.501
+GRD,Fiscal balance,2031,1.501
+GRD,Gen gov debt,2027,69.479
+GRD,Gen gov debt,2028,69.769
+GRD,Gen gov debt,2029,69.892
+GRD,Gen gov debt,2030,69.674
+GRD,Gen gov debt,2031,66.751
+GTM,GDP growth,2027,3.98
+GTM,GDP growth,2028,3.92
+GTM,GDP growth,2029,3.84
+GTM,GDP growth,2030,3.88
+GTM,GDP growth,2031,3.92
+GTM,Inflation,2027,4.049
+GTM,Inflation,2028,3.639
+GTM,Inflation,2029,3.85
+GTM,Inflation,2030,4.006
+GTM,Inflation,2031,4.001
+GTM,Fiscal balance,2027,-2.525
+GTM,Fiscal balance,2028,-2.543
+GTM,Fiscal balance,2029,-2.465
+GTM,Fiscal balance,2030,-2.489
+GTM,Fiscal balance,2031,-2.446
+GTM,Fiscal balance,2027,-0.843
+GTM,Fiscal balance,2028,-0.815
+GTM,Fiscal balance,2029,-0.693
+GTM,Fiscal balance,2030,-0.687
+GTM,Fiscal balance,2031,-0.618
+GTM,Gen gov debt,2027,28.057
+GTM,Gen gov debt,2028,28.601
+GTM,Gen gov debt,2029,28.986
+GTM,Gen gov debt,2030,29.322
+GTM,Gen gov debt,2031,29.574
+GUY,GDP growth,2027,19.664
+GUY,GDP growth,2028,22.087
+GUY,GDP growth,2029,12.798
+GUY,GDP growth,2030,11.521
+GUY,GDP growth,2031,1.057
+GUY,Inflation,2027,5.145
+GUY,Inflation,2028,5.214
+GUY,Inflation,2029,5.408
+GUY,Inflation,2030,5.529
+GUY,Inflation,2031,5.529
+GUY,Fiscal balance,2027,-3.831
+GUY,Fiscal balance,2028,-4.19
+GUY,Fiscal balance,2029,-3.336
+GUY,Fiscal balance,2030,-2.217
+GUY,Fiscal balance,2031,-1.099
+GUY,Fiscal balance,2027,-3.354
+GUY,Fiscal balance,2028,-3.67
+GUY,Fiscal balance,2029,-2.812
+GUY,Fiscal balance,2030,-1.63
+GUY,Fiscal balance,2031,-0.476
+GUY,Gen gov debt,2027,27.956
+GUY,Gen gov debt,2028,28.271
+GUY,Gen gov debt,2029,28.602
+GUY,Gen gov debt,2030,29.525
+GUY,Gen gov debt,2031,28.894
+HTI,GDP growth,2027,0.48
+HTI,GDP growth,2028,1.2
+HTI,GDP growth,2029,1.3
+HTI,GDP growth,2030,1.5
+HTI,GDP growth,2031,1.5
+HTI,Inflation,2027,19.714
+HTI,Inflation,2028,12.909
+HTI,Inflation,2029,9.437
+HTI,Inflation,2030,7.982
+HTI,Inflation,2031,7.982
+HTI,Fiscal balance,2027,-0.644
+HTI,Fiscal balance,2028,-1.245
+HTI,Fiscal balance,2029,-1.427
+HTI,Fiscal balance,2030,-1.447
+HTI,Fiscal balance,2031,-1.497
+HTI,Fiscal balance,2027,-0.308
+HTI,Fiscal balance,2028,-0.89
+HTI,Fiscal balance,2029,-1.056
+HTI,Fiscal balance,2030,-1.058
+HTI,Fiscal balance,2031,-1.078
+HTI,Gen gov debt,2027,9.589
+HTI,Gen gov debt,2028,9.726
+HTI,Gen gov debt,2029,10.288
+HTI,Gen gov debt,2030,10.995
+HTI,Gen gov debt,2031,11.772
+HND,GDP growth,2027,3.7
+HND,GDP growth,2028,3.8
+HND,GDP growth,2029,3.8
+HND,GDP growth,2030,3.8
+HND,GDP growth,2031,3.8
+HND,Inflation,2027,4.494
+HND,Inflation,2028,4.0
+HND,Inflation,2029,4.0
+HND,Inflation,2030,4.0
+HND,Inflation,2031,4.0
+HND,Fiscal balance,2027,-1.088
+HND,Fiscal balance,2028,-0.851
+HND,Fiscal balance,2029,-0.677
+HND,Fiscal balance,2030,-0.626
+HND,Fiscal balance,2031,-0.645
+HND,Fiscal balance,2027,-0.617
+HND,Fiscal balance,2028,-0.362
+HND,Fiscal balance,2029,-0.082
+HND,Fiscal balance,2030,0.117
+HND,Fiscal balance,2031,0.06
+HND,Gen gov debt,2027,40.135
+HND,Gen gov debt,2028,40.026
+HND,Gen gov debt,2029,39.127
+HND,Gen gov debt,2030,35.542
+HND,Gen gov debt,2031,34.461
+JAM,GDP growth,2027,3.143
+JAM,GDP growth,2028,1.846
+JAM,GDP growth,2029,1.5
+JAM,GDP growth,2030,1.5
+JAM,GDP growth,2031,1.5
+JAM,Inflation,2027,5.537
+JAM,Inflation,2028,5.016
+JAM,Inflation,2029,5.0
+JAM,Inflation,2030,5.0
+JAM,Inflation,2031,5.0
+JAM,Fiscal balance,2027,-3.088
+JAM,Fiscal balance,2028,-2.052
+JAM,Fiscal balance,2029,-1.727
+JAM,Fiscal balance,2030,-1.636
+JAM,Fiscal balance,2031,-1.539
+JAM,Fiscal balance,2027,1.88
+JAM,Fiscal balance,2028,2.646
+JAM,Fiscal balance,2029,2.848
+JAM,Fiscal balance,2030,2.804
+JAM,Fiscal balance,2031,2.797
+JAM,Gen gov debt,2027,65.017
+JAM,Gen gov debt,2028,63.801
+JAM,Gen gov debt,2029,62.807
+JAM,Gen gov debt,2030,61.626
+JAM,Gen gov debt,2031,60.527
+MEX,GDP growth,2027,2.186
+MEX,GDP growth,2028,2.106
+MEX,GDP growth,2029,2.015
+MEX,GDP growth,2030,2.015
+MEX,GDP growth,2031,2.015
+MEX,Inflation,2027,3.421
+MEX,Inflation,2028,3.0
+MEX,Inflation,2029,3.0
+MEX,Inflation,2030,3.0
+MEX,Inflation,2031,3.0
+MEX,Fiscal balance,2027,-3.5
+MEX,Fiscal balance,2028,-3.0
+MEX,Fiscal balance,2029,-3.0
+MEX,Fiscal balance,2030,-3.0
+MEX,Fiscal balance,2031,-3.0
+MEX,Fiscal balance,2027,2.112
+MEX,Fiscal balance,2028,2.351
+MEX,Fiscal balance,2029,2.171
+MEX,Fiscal balance,2030,2.055
+MEX,Fiscal balance,2031,2.012
+MEX,Gen gov debt,2027,63.112
+MEX,Gen gov debt,2028,63.109
+MEX,Gen gov debt,2029,63.274
+MEX,Gen gov debt,2030,63.377
+MEX,Gen gov debt,2031,63.588
+NIC,GDP growth,2027,3.8
+NIC,GDP growth,2028,3.53
+NIC,GDP growth,2029,3.53
+NIC,GDP growth,2030,3.53
+NIC,GDP growth,2031,3.53
+NIC,Inflation,2027,3.0
+NIC,Inflation,2028,3.0
+NIC,Inflation,2029,3.0
+NIC,Inflation,2030,3.0
+NIC,Inflation,2031,3.0
+NIC,Fiscal balance,2027,1.583
+NIC,Fiscal balance,2028,1.812
+NIC,Fiscal balance,2029,2.011
+NIC,Fiscal balance,2030,2.015
+NIC,Fiscal balance,2031,2.117
+NIC,Fiscal balance,2027,3.093
+NIC,Fiscal balance,2028,3.32
+NIC,Fiscal balance,2029,3.525
+NIC,Fiscal balance,2030,3.523
+NIC,Fiscal balance,2031,3.626
+NIC,Gen gov debt,2027,32.593
+NIC,Gen gov debt,2028,32.455
+NIC,Gen gov debt,2029,32.012
+NIC,Gen gov debt,2030,31.005
+NIC,Gen gov debt,2031,30.588
+PAN,GDP growth,2027,4.54
+PAN,GDP growth,2028,4.54
+PAN,GDP growth,2029,4.754
+PAN,GDP growth,2030,4.54
+PAN,GDP growth,2031,4.54
+PAN,Inflation,2027,2.0
+PAN,Inflation,2028,2.0
+PAN,Inflation,2029,2.0
+PAN,Inflation,2030,2.0
+PAN,Inflation,2031,2.0
+PAN,Fiscal balance,2027,-2.977
+PAN,Fiscal balance,2028,-2.525
+PAN,Fiscal balance,2029,-2.024
+PAN,Fiscal balance,2030,-1.499
+PAN,Fiscal balance,2031,-1.446
+PAN,Fiscal balance,2027,-0.056
+PAN,Fiscal balance,2028,0.327
+PAN,Fiscal balance,2029,0.733
+PAN,Fiscal balance,2030,1.265
+PAN,Fiscal balance,2031,1.275
+PAN,Gen gov debt,2027,57.534
+PAN,Gen gov debt,2028,57.085
+PAN,Gen gov debt,2029,56.271
+PAN,Gen gov debt,2030,55.261
+PAN,Gen gov debt,2031,53.925
+PRY,GDP growth,2027,3.5
+PRY,GDP growth,2028,3.5
+PRY,GDP growth,2029,3.5
+PRY,GDP growth,2030,3.5
+PRY,GDP growth,2031,3.5
+PRY,Inflation,2027,3.475
+PRY,Inflation,2028,3.5
+PRY,Inflation,2029,3.5
+PRY,Inflation,2030,3.5
+PRY,Inflation,2031,3.5
+PRY,Fiscal balance,2027,-1.28
+PRY,Fiscal balance,2028,-1.34
+PRY,Fiscal balance,2029,-1.384
+PRY,Fiscal balance,2030,-1.433
+PRY,Fiscal balance,2031,-1.421
+PRY,Fiscal balance,2027,0.356
+PRY,Fiscal balance,2028,0.265
+PRY,Fiscal balance,2029,0.176
+PRY,Fiscal balance,2030,0.098
+PRY,Fiscal balance,2031,0.074
+PRY,Gen gov debt,2027,37.595
+PRY,Gen gov debt,2028,37.369
+PRY,Gen gov debt,2029,37.186
+PRY,Gen gov debt,2030,36.881
+PRY,Gen gov debt,2031,36.637
+PER,GDP growth,2027,2.8
+PER,GDP growth,2028,2.802
+PER,GDP growth,2029,2.796
+PER,GDP growth,2030,2.803
+PER,GDP growth,2031,2.801
+PER,Inflation,2027,1.768
+PER,Inflation,2028,1.964
+PER,Inflation,2029,1.956
+PER,Inflation,2030,2.018
+PER,Inflation,2031,2.018
+PER,Fiscal balance,2027,-1.968
+PER,Fiscal balance,2028,-1.927
+PER,Fiscal balance,2029,-1.799
+PER,Fiscal balance,2030,-1.762
+PER,Fiscal balance,2031,-1.696
+PER,Fiscal balance,2027,-0.415
+PER,Fiscal balance,2028,-0.306
+PER,Fiscal balance,2029,-0.152
+PER,Fiscal balance,2030,-0.074
+PER,Fiscal balance,2031,-0.02
+PER,Gen gov debt,2027,30.927
+PER,Gen gov debt,2028,31.583
+PER,Gen gov debt,2029,32.109
+PER,Gen gov debt,2030,32.061
+PER,Gen gov debt,2031,32.177
+KNA,GDP growth,2027,2.522
+KNA,GDP growth,2028,2.635
+KNA,GDP growth,2029,2.728
+KNA,GDP growth,2030,2.574
+KNA,GDP growth,2031,2.461
+KNA,Inflation,2027,2.126
+KNA,Inflation,2028,2.01
+KNA,Inflation,2029,2.044
+KNA,Inflation,2030,2.044
+KNA,Inflation,2031,2.044
+KNA,Fiscal balance,2027,-7.513
+KNA,Fiscal balance,2028,-5.591
+KNA,Fiscal balance,2029,-5.739
+KNA,Fiscal balance,2030,-5.875
+KNA,Fiscal balance,2031,-6.003
+KNA,Fiscal balance,2027,-5.391
+KNA,Fiscal balance,2028,-3.241
+KNA,Fiscal balance,2029,-3.241
+KNA,Fiscal balance,2030,-3.241
+KNA,Fiscal balance,2031,-3.241
+KNA,Gen gov debt,2027,68.709
+KNA,Gen gov debt,2028,71.299
+KNA,Gen gov debt,2029,73.828
+KNA,Gen gov debt,2030,76.458
+KNA,Gen gov debt,2031,79.225
+LCA,GDP growth,2027,1.701
+LCA,GDP growth,2028,1.646
+LCA,GDP growth,2029,1.568
+LCA,GDP growth,2030,1.488
+LCA,GDP growth,2031,1.5
+LCA,Inflation,2027,2.415
+LCA,Inflation,2028,2.222
+LCA,Inflation,2029,2.131
+LCA,Inflation,2030,2.061
+LCA,Inflation,2031,2.017
+LCA,Fiscal balance,2027,-2.923
+LCA,Fiscal balance,2028,-2.692
+LCA,Fiscal balance,2029,-2.536
+LCA,Fiscal balance,2030,-2.348
+LCA,Fiscal balance,2031,-2.427
+LCA,Fiscal balance,2027,0.625
+LCA,Fiscal balance,2028,0.984
+LCA,Fiscal balance,2029,1.264
+LCA,Fiscal balance,2030,1.556
+LCA,Fiscal balance,2031,1.455
+LCA,Gen gov debt,2027,77.686
+LCA,Gen gov debt,2028,77.718
+LCA,Gen gov debt,2029,77.697
+LCA,Gen gov debt,2030,77.558
+LCA,Gen gov debt,2031,77.374
+VCT,GDP growth,2027,2.7
+VCT,GDP growth,2028,2.7
+VCT,GDP growth,2029,2.7
+VCT,GDP growth,2030,2.7
+VCT,GDP growth,2031,2.7
+VCT,Inflation,2027,1.998
+VCT,Inflation,2028,1.989
+VCT,Inflation,2029,1.989
+VCT,Inflation,2030,1.989
+VCT,Inflation,2031,1.989
+VCT,Fiscal balance,2027,-11.082
+VCT,Fiscal balance,2028,-10.233
+VCT,Fiscal balance,2029,-9.394
+VCT,Fiscal balance,2030,-9.519
+VCT,Fiscal balance,2031,-9.642
+VCT,Fiscal balance,2027,-7.384
+VCT,Fiscal balance,2028,-6.334
+VCT,Fiscal balance,2029,-5.334
+VCT,Fiscal balance,2030,-5.334
+VCT,Fiscal balance,2031,-5.334
+VCT,Gen gov debt,2027,126.126
+VCT,Gen gov debt,2028,131.34
+VCT,Gen gov debt,2029,135.639
+VCT,Gen gov debt,2030,140.061
+VCT,Gen gov debt,2031,144.677
+SUR,GDP growth,2027,4.378
+SUR,GDP growth,2028,28.538
+SUR,GDP growth,2029,43.456
+SUR,GDP growth,2030,3.075
+SUR,GDP growth,2031,2.858
+SUR,Inflation,2027,10.574
+SUR,Inflation,2028,5.793
+SUR,Inflation,2029,5.0
+SUR,Inflation,2030,5.0
+SUR,Inflation,2031,5.0
+SUR,Fiscal balance,2027,-4.236
+SUR,Fiscal balance,2028,-0.098
+SUR,Fiscal balance,2029,5.135
+SUR,Fiscal balance,2030,4.927
+SUR,Fiscal balance,2031,3.073
+SUR,Fiscal balance,2027,0.086
+SUR,Fiscal balance,2028,3.327
+SUR,Fiscal balance,2029,7.565
+SUR,Fiscal balance,2030,7.199
+SUR,Fiscal balance,2031,5.176
+SUR,Gen gov debt,2027,76.954
+SUR,Gen gov debt,2028,58.441
+SUR,Gen gov debt,2029,41.009
+SUR,Gen gov debt,2030,36.203
+SUR,Gen gov debt,2031,35.43
+TTO,GDP growth,2027,2.95
+TTO,GDP growth,2028,3.501
+TTO,GDP growth,2029,2.834
+TTO,GDP growth,2030,2.094
+TTO,GDP growth,2031,1.79
+TTO,Inflation,2027,2.76
+TTO,Inflation,2028,2.227
+TTO,Inflation,2029,2.088
+TTO,Inflation,2030,2.041
+TTO,Inflation,2031,1.99
+TTO,Fiscal balance,2027,-2.505
+TTO,Fiscal balance,2028,-1.708
+TTO,Fiscal balance,2029,-2.195
+TTO,Fiscal balance,2030,-2.462
+TTO,Fiscal balance,2031,-2.732
+TTO,Fiscal balance,2027,1.309
+TTO,Fiscal balance,2028,1.998
+TTO,Fiscal balance,2029,1.465
+TTO,Fiscal balance,2030,1.212
+TTO,Fiscal balance,2031,0.984
+TTO,Gen gov debt,2027,82.848
+TTO,Gen gov debt,2028,80.746
+TTO,Gen gov debt,2029,80.74
+TTO,Gen gov debt,2030,81.202
+TTO,Gen gov debt,2031,82.074
+URY,GDP growth,2027,2.599
+URY,GDP growth,2028,2.311
+URY,GDP growth,2029,2.231
+URY,GDP growth,2030,2.218
+URY,GDP growth,2031,2.218
+URY,Inflation,2027,4.493
+URY,Inflation,2028,4.482
+URY,Inflation,2029,4.5
+URY,Inflation,2030,4.513
+URY,Inflation,2031,4.516
+URY,Fiscal balance,2027,-3.158
+URY,Fiscal balance,2028,-2.673
+URY,Fiscal balance,2029,-2.229
+URY,Fiscal balance,2030,-2.118
+URY,Fiscal balance,2031,-2.117
+URY,Fiscal balance,2027,-0.81
+URY,Fiscal balance,2028,-0.269
+URY,Fiscal balance,2029,0.258
+URY,Fiscal balance,2030,0.362
+URY,Fiscal balance,2031,0.351
+URY,Gen gov debt,2027,67.658
+URY,Gen gov debt,2028,68.209
+URY,Gen gov debt,2029,68.002
+URY,Gen gov debt,2030,67.642
+URY,Gen gov debt,2031,67.305
+VEN,GDP growth,2027,5.997
+VEN,Inflation,2027,94.372
+DZA,GDP growth,2027,2.873
+DZA,GDP growth,2028,2.674
+DZA,GDP growth,2029,2.705
+DZA,GDP growth,2030,2.634
+DZA,GDP growth,2031,2.627
+DZA,Inflation,2027,3.016
+DZA,Inflation,2028,2.955
+DZA,Inflation,2029,3.334
+DZA,Inflation,2030,3.311
+DZA,Inflation,2031,3.252
+DZA,Fiscal balance,2027,-9.689
+DZA,Fiscal balance,2028,-9.509
+DZA,Fiscal balance,2029,-8.829
+DZA,Fiscal balance,2030,-8.621
+DZA,Fiscal balance,2031,-8.601
+DZA,Fiscal balance,2027,-8.67
+DZA,Fiscal balance,2028,-8.271
+DZA,Fiscal balance,2029,-7.412
+DZA,Fiscal balance,2030,-6.977
+DZA,Fiscal balance,2031,-6.692
+DZA,Gen gov debt,2027,66.43
+DZA,Gen gov debt,2028,72.716
+DZA,Gen gov debt,2029,77.34
+DZA,Gen gov debt,2030,81.724
+DZA,Gen gov debt,2031,85.904
+ARM,GDP growth,2027,5.451
+ARM,GDP growth,2028,4.951
+ARM,GDP growth,2029,4.951
+ARM,GDP growth,2030,4.951
+ARM,GDP growth,2031,4.951
+ARM,Inflation,2027,3.413
+ARM,Inflation,2028,3.34
+ARM,Inflation,2029,2.999
+ARM,Inflation,2030,2.974
+ARM,Inflation,2031,3.027
+ARM,Fiscal balance,2027,-3.523
+ARM,Fiscal balance,2028,-2.852
+ARM,Fiscal balance,2029,-2.348
+ARM,Fiscal balance,2030,-1.815
+ARM,Fiscal balance,2031,-1.321
+ARM,Fiscal balance,2027,-0.328
+ARM,Fiscal balance,2028,0.31
+ARM,Fiscal balance,2029,0.758
+ARM,Fiscal balance,2030,1.103
+ARM,Fiscal balance,2031,1.378
+ARM,Gen gov debt,2027,51.208
+ARM,Gen gov debt,2028,51.365
+ARM,Gen gov debt,2029,50.447
+ARM,Gen gov debt,2030,48.821
+ARM,Gen gov debt,2031,46.722
+AZE,GDP growth,2027,2.479
+AZE,GDP growth,2028,2.467
+AZE,GDP growth,2029,2.469
+AZE,GDP growth,2030,2.498
+AZE,GDP growth,2031,2.528
+AZE,Inflation,2027,5.1
+AZE,Inflation,2028,4.1
+AZE,Inflation,2029,4.0
+AZE,Inflation,2030,4.0
+AZE,Inflation,2031,4.0
+AZE,Fiscal balance,2027,0.181
+AZE,Fiscal balance,2028,-0.562
+AZE,Fiscal balance,2029,-0.483
+AZE,Fiscal balance,2030,-0.606
+AZE,Fiscal balance,2031,-0.488
+AZE,Fiscal balance,2027,0.898
+AZE,Fiscal balance,2028,0.207
+AZE,Fiscal balance,2029,0.32
+AZE,Fiscal balance,2030,0.214
+AZE,Fiscal balance,2031,0.375
+AZE,Gen gov debt,2027,19.998
+AZE,Gen gov debt,2028,19.932
+AZE,Gen gov debt,2029,19.914
+AZE,Gen gov debt,2030,20.049
+AZE,Gen gov debt,2031,20.236
+BHR,GDP growth,2027,4.502
+BHR,GDP growth,2028,2.778
+BHR,GDP growth,2029,2.902
+BHR,GDP growth,2030,3.098
+BHR,GDP growth,2031,3.256
+BHR,Inflation,2027,1.2
+BHR,Inflation,2028,1.6
+BHR,Inflation,2029,1.8
+BHR,Inflation,2030,2.0
+BHR,Inflation,2031,2.0
+BHR,Fiscal balance,2027,-9.086
+BHR,Fiscal balance,2028,-8.628
+BHR,Fiscal balance,2029,-8.218
+BHR,Fiscal balance,2030,-8.474
+BHR,Fiscal balance,2031,-8.721
+BHR,Fiscal balance,2027,-1.893
+BHR,Fiscal balance,2028,-1.341
+BHR,Fiscal balance,2029,-0.865
+BHR,Fiscal balance,2030,-0.938
+BHR,Fiscal balance,2031,-1.109
+BHR,Gen gov debt,2027,154.507
+BHR,Gen gov debt,2028,157.344
+BHR,Gen gov debt,2029,158.869
+BHR,Gen gov debt,2030,160.025
+BHR,Gen gov debt,2031,161.228
+DJI,GDP growth,2027,6.0
+DJI,GDP growth,2028,5.5
+DJI,GDP growth,2029,5.5
+DJI,GDP growth,2030,5.5
+DJI,GDP growth,2031,5.5
+DJI,Inflation,2027,1.241
+DJI,Inflation,2028,0.943
+DJI,Inflation,2029,0.934
+DJI,Inflation,2030,0.925
+DJI,Inflation,2031,0.917
+DJI,Fiscal balance,2027,-0.286
+DJI,Fiscal balance,2028,-0.049
+DJI,Fiscal balance,2029,0.049
+DJI,Fiscal balance,2030,0.039
+DJI,Fiscal balance,2031,0.025
+DJI,Fiscal balance,2027,-0.057
+DJI,Fiscal balance,2028,0.12
+DJI,Fiscal balance,2029,0.195
+DJI,Fiscal balance,2030,0.168
+DJI,Fiscal balance,2031,0.139
+DJI,Gen gov debt,2027,26.733
+DJI,Gen gov debt,2028,24.122
+DJI,Gen gov debt,2029,21.186
+DJI,Gen gov debt,2030,18.541
+DJI,Gen gov debt,2031,16.224
+EGY,GDP growth,2027,4.829
+EGY,GDP growth,2028,5.535
+EGY,GDP growth,2029,5.227
+EGY,GDP growth,2030,4.842
+EGY,GDP growth,2031,4.789
+EGY,Inflation,2027,11.108
+EGY,Inflation,2028,8.119
+EGY,Inflation,2029,6.203
+EGY,Inflation,2030,5.363
+EGY,Inflation,2031,5.324
+EGY,Fiscal balance,2027,-8.87
+EGY,Fiscal balance,2028,-6.957
+EGY,Fiscal balance,2029,-4.384
+EGY,Fiscal balance,2030,-3.561
+EGY,Fiscal balance,2031,-3.077
+EGY,Fiscal balance,2027,3.523
+EGY,Fiscal balance,2028,3.489
+EGY,Fiscal balance,2029,3.467
+EGY,Fiscal balance,2030,3.453
+EGY,Fiscal balance,2031,3.44
+EGY,Gen gov debt,2027,84.889
+EGY,Gen gov debt,2028,81.977
+EGY,Gen gov debt,2029,78.048
+EGY,Gen gov debt,2030,74.511
+EGY,Gen gov debt,2031,70.92
+GEO,GDP growth,2027,5.019
+GEO,GDP growth,2028,4.993
+GEO,GDP growth,2029,4.992
+GEO,GDP growth,2030,5.0
+GEO,GDP growth,2031,4.994
+GEO,Inflation,2027,3.048
+GEO,Inflation,2028,3.0
+GEO,Inflation,2029,3.0
+GEO,Inflation,2030,3.0
+GEO,Inflation,2031,3.0
+GEO,Fiscal balance,2027,-2.321
+GEO,Fiscal balance,2028,-2.319
+GEO,Fiscal balance,2029,-2.218
+GEO,Fiscal balance,2030,-2.213
+GEO,Fiscal balance,2031,-2.212
+GEO,Fiscal balance,2027,-0.628
+GEO,Fiscal balance,2028,-0.674
+GEO,Fiscal balance,2029,-0.595
+GEO,Fiscal balance,2030,-0.681
+GEO,Fiscal balance,2031,-0.708
+GEO,Gen gov debt,2027,34.525
+GEO,Gen gov debt,2028,34.03
+GEO,Gen gov debt,2029,33.307
+GEO,Gen gov debt,2030,33.006
+GEO,Gen gov debt,2031,32.983
+IRN,GDP growth,2027,3.215
+IRN,GDP growth,2028,1.478
+IRN,GDP growth,2029,1.813
+IRN,GDP growth,2030,2.055
+IRN,GDP growth,2031,2.06
+IRN,Inflation,2027,39.598
+IRN,Inflation,2028,33.75
+IRN,Inflation,2029,28.75
+IRN,Inflation,2030,25.0
+IRN,Inflation,2031,25.0
+IRN,Fiscal balance,2027,-4.712
+IRN,Fiscal balance,2028,-4.277
+IRN,Fiscal balance,2029,-4.068
+IRN,Fiscal balance,2030,-3.84
+IRN,Fiscal balance,2031,-3.609
+IRN,Fiscal balance,2027,-2.747
+IRN,Fiscal balance,2028,-2.283
+IRN,Fiscal balance,2029,-2.165
+IRN,Fiscal balance,2030,-1.908
+IRN,Fiscal balance,2031,-1.69
+IRN,Gen gov debt,2027,38.173
+IRN,Gen gov debt,2028,39.755
+IRN,Gen gov debt,2029,41.554
+IRN,Gen gov debt,2030,42.966
+IRN,Gen gov debt,2031,44.146
+IRQ,GDP growth,2027,11.303
+IRQ,GDP growth,2028,3.47
+IRQ,GDP growth,2029,3.334
+IRQ,GDP growth,2030,3.395
+IRQ,GDP growth,2031,3.457
+IRQ,Inflation,2027,3.269
+IRQ,Inflation,2028,3.28
+IRQ,Inflation,2029,3.578
+IRQ,Inflation,2030,4.23
+IRQ,Inflation,2031,4.816
+IRQ,Fiscal balance,2027,-2.664
+IRQ,Fiscal balance,2028,-4.404
+IRQ,Fiscal balance,2029,-5.681
+IRQ,Fiscal balance,2030,-6.32
+IRQ,Fiscal balance,2031,-7.275
+IRQ,Fiscal balance,2027,-1.693
+IRQ,Fiscal balance,2028,-3.314
+IRQ,Fiscal balance,2029,-4.437
+IRQ,Fiscal balance,2030,-4.907
+IRQ,Fiscal balance,2031,-5.676
+IRQ,Gen gov debt,2027,58.726
+IRQ,Gen gov debt,2028,60.93
+IRQ,Gen gov debt,2029,63.839
+IRQ,Gen gov debt,2030,66.927
+IRQ,Gen gov debt,2031,70.575
+JOR,GDP growth,2027,3.1
+JOR,GDP growth,2028,3.0
+JOR,GDP growth,2029,3.0
+JOR,GDP growth,2030,3.0
+JOR,GDP growth,2031,3.0
+JOR,Inflation,2027,2.17
+JOR,Inflation,2028,2.186
+JOR,Inflation,2029,2.195
+JOR,Inflation,2030,2.203
+JOR,Inflation,2031,2.203
+JOR,Fiscal balance,2027,-5.32
+JOR,Fiscal balance,2028,-4.299
+JOR,Fiscal balance,2029,-4.11
+JOR,Fiscal balance,2030,-4.123
+JOR,Fiscal balance,2031,-4.299
+JOR,Fiscal balance,2027,0.446
+JOR,Fiscal balance,2028,1.483
+JOR,Fiscal balance,2029,1.487
+JOR,Fiscal balance,2030,1.316
+JOR,Fiscal balance,2031,1.064
+JOR,Gen gov debt,2027,81.068
+JOR,Gen gov debt,2028,79.692
+JOR,Gen gov debt,2029,78.217
+JOR,Gen gov debt,2030,76.787
+JOR,Gen gov debt,2031,75.686
+KAZ,GDP growth,2027,4.4
+KAZ,GDP growth,2028,3.309
+KAZ,GDP growth,2029,3.596
+KAZ,GDP growth,2030,3.598
+KAZ,GDP growth,2031,3.613
+KAZ,Inflation,2027,10.053
+KAZ,Inflation,2028,8.783
+KAZ,Inflation,2029,7.6
+KAZ,Inflation,2030,5.849
+KAZ,Inflation,2031,5.0
+KAZ,Fiscal balance,2027,-1.777
+KAZ,Fiscal balance,2028,-2.019
+KAZ,Fiscal balance,2029,-1.967
+KAZ,Fiscal balance,2030,-1.74
+KAZ,Fiscal balance,2031,-1.717
+KAZ,Fiscal balance,2027,-1.31
+KAZ,Fiscal balance,2028,-1.418
+KAZ,Fiscal balance,2029,-1.349
+KAZ,Fiscal balance,2030,-1.065
+KAZ,Fiscal balance,2031,-0.977
+KAZ,Gen gov debt,2027,26.31
+KAZ,Gen gov debt,2028,27.991
+KAZ,Gen gov debt,2029,29.516
+KAZ,Gen gov debt,2030,30.828
+KAZ,Gen gov debt,2031,32.106
+KWT,GDP growth,2027,2.811
+KWT,GDP growth,2028,2.505
+KWT,GDP growth,2029,2.421
+KWT,GDP growth,2030,2.384
+KWT,GDP growth,2031,2.389
+KWT,Inflation,2027,2.494
+KWT,Inflation,2028,2.175
+KWT,Inflation,2029,1.888
+KWT,Inflation,2030,1.74
+KWT,Inflation,2031,1.631
+KWT,Fiscal balance,2027,29.492
+KWT,Fiscal balance,2028,29.397
+KWT,Fiscal balance,2029,29.068
+KWT,Fiscal balance,2030,28.883
+KWT,Fiscal balance,2031,28.707
+KWT,Fiscal balance,2027,-0.233
+KWT,Fiscal balance,2028,-0.985
+KWT,Fiscal balance,2029,-1.77
+KWT,Fiscal balance,2030,-2.373
+KWT,Fiscal balance,2031,-2.964
+KWT,Gen gov debt,2027,27.491
+KWT,Gen gov debt,2028,32.072
+KWT,Gen gov debt,2029,34.91
+KWT,Gen gov debt,2030,36.699
+KWT,Gen gov debt,2031,37.848
+KGZ,GDP growth,2027,6.076
+KGZ,GDP growth,2028,5.672
+KGZ,GDP growth,2029,5.371
+KGZ,GDP growth,2030,5.291
+KGZ,GDP growth,2031,5.191
+KGZ,Inflation,2027,9.952
+KGZ,Inflation,2028,8.94
+KGZ,Inflation,2029,7.942
+KGZ,Inflation,2030,6.981
+KGZ,Inflation,2031,6.549
+KGZ,Fiscal balance,2027,-3.099
+KGZ,Fiscal balance,2028,-2.814
+KGZ,Fiscal balance,2029,-2.463
+KGZ,Fiscal balance,2030,-2.324
+KGZ,Fiscal balance,2031,-2.526
+KGZ,Fiscal balance,2027,-1.554
+KGZ,Fiscal balance,2028,-1.042
+KGZ,Fiscal balance,2029,-0.501
+KGZ,Fiscal balance,2030,-0.211
+KGZ,Fiscal balance,2031,-0.328
+KGZ,Gen gov debt,2027,37.676
+KGZ,Gen gov debt,2028,38.081
+KGZ,Gen gov debt,2029,38.363
+KGZ,Gen gov debt,2030,38.742
+KGZ,Gen gov debt,2031,38.787
+LBY,GDP growth,2027,4.501
+LBY,GDP growth,2028,4.461
+LBY,GDP growth,2029,4.182
+LBY,GDP growth,2030,3.973
+LBY,GDP growth,2031,3.759
+LBY,Inflation,2027,10.2
+LBY,Inflation,2028,10.2
+LBY,Inflation,2029,10.2
+LBY,Inflation,2030,10.2
+LBY,Inflation,2031,10.2
+LBY,Fiscal balance,2027,-23.841
+LBY,Fiscal balance,2028,-23.885
+LBY,Fiscal balance,2029,-22.668
+LBY,Fiscal balance,2030,-21.383
+LBY,Fiscal balance,2031,-20.368
+LBY,Fiscal balance,2027,-23.841
+LBY,Fiscal balance,2028,-23.885
+LBY,Fiscal balance,2029,-22.668
+LBY,Fiscal balance,2030,-21.383
+LBY,Fiscal balance,2031,-20.368
+MRT,GDP growth,2027,4.472
+MRT,GDP growth,2028,5.673
+MRT,GDP growth,2029,4.928
+MRT,GDP growth,2030,3.004
+MRT,GDP growth,2031,2.976
+MRT,Inflation,2027,4.1
+MRT,Inflation,2028,4.0
+MRT,Inflation,2029,4.0
+MRT,Inflation,2030,4.0
+MRT,Inflation,2031,4.0
+MRT,Fiscal balance,2027,0.519
+MRT,Fiscal balance,2028,0.596
+MRT,Fiscal balance,2029,0.72
+MRT,Fiscal balance,2030,0.651
+MRT,Fiscal balance,2031,0.69
+MRT,Fiscal balance,2027,1.199
+MRT,Fiscal balance,2028,1.341
+MRT,Fiscal balance,2029,1.493
+MRT,Fiscal balance,2030,1.476
+MRT,Fiscal balance,2031,1.602
+MRT,Gen gov debt,2027,37.603
+MRT,Gen gov debt,2028,37.254
+MRT,Gen gov debt,2029,36.992
+MRT,Gen gov debt,2030,37.933
+MRT,Gen gov debt,2031,40.759
+MAR,GDP growth,2027,4.5
+MAR,GDP growth,2028,4.499
+MAR,GDP growth,2029,4.401
+MAR,GDP growth,2030,4.101
+MAR,GDP growth,2031,4.004
+MAR,Inflation,2027,1.647
+MAR,Inflation,2028,1.965
+MAR,Inflation,2029,2.039
+MAR,Inflation,2030,2.016
+MAR,Inflation,2031,1.983
+MAR,Fiscal balance,2027,-3.366
+MAR,Fiscal balance,2028,-3.278
+MAR,Fiscal balance,2029,-3.24
+MAR,Fiscal balance,2030,-3.148
+MAR,Fiscal balance,2031,-3.044
+MAR,Fiscal balance,2027,-1.229
+MAR,Fiscal balance,2028,-1.215
+MAR,Fiscal balance,2029,-1.137
+MAR,Fiscal balance,2030,-1.065
+MAR,Fiscal balance,2031,-0.999
+MAR,Gen gov debt,2027,64.881
+MAR,Gen gov debt,2028,63.877
+MAR,Gen gov debt,2029,62.824
+MAR,Gen gov debt,2030,61.893
+MAR,Gen gov debt,2031,61.041
+OMN,GDP growth,2027,3.416
+OMN,GDP growth,2028,3.717
+OMN,GDP growth,2029,3.476
+OMN,GDP growth,2030,3.27
+OMN,GDP growth,2031,2.676
+OMN,Inflation,2027,1.9
+OMN,Inflation,2028,2.0
+OMN,Inflation,2029,2.0
+OMN,Inflation,2030,2.0
+OMN,Inflation,2031,2.0
+OMN,Fiscal balance,2027,4.297
+OMN,Fiscal balance,2028,4.655
+OMN,Fiscal balance,2029,4.544
+OMN,Fiscal balance,2030,4.737
+OMN,Fiscal balance,2031,4.619
+OMN,Fiscal balance,2027,4.501
+OMN,Fiscal balance,2028,5.213
+OMN,Fiscal balance,2029,5.216
+OMN,Fiscal balance,2030,5.295
+OMN,Fiscal balance,2031,5.189
+OMN,Gen gov debt,2027,32.698
+OMN,Gen gov debt,2028,31.889
+OMN,Gen gov debt,2029,30.8
+OMN,Gen gov debt,2030,29.611
+OMN,Gen gov debt,2031,29.091
+PAK,GDP growth,2027,3.5
+PAK,GDP growth,2028,4.3
+PAK,GDP growth,2029,4.5
+PAK,GDP growth,2030,4.5
+PAK,GDP growth,2031,4.5
+PAK,Inflation,2027,8.355
+PAK,Inflation,2028,6.553
+PAK,Inflation,2029,6.466
+PAK,Inflation,2030,6.466
+PAK,Inflation,2031,6.466
+PAK,Fiscal balance,2027,-3.228
+PAK,Fiscal balance,2028,-3.009
+PAK,Fiscal balance,2029,-2.806
+PAK,Fiscal balance,2030,-3.648
+PAK,Fiscal balance,2031,-4.594
+PAK,Fiscal balance,2027,2.008
+PAK,Fiscal balance,2028,2.047
+PAK,Fiscal balance,2029,2.046
+PAK,Fiscal balance,2030,1.052
+PAK,Fiscal balance,2031,0.055
+PAK,Gen gov debt,2027,67.141
+PAK,Gen gov debt,2028,64.024
+PAK,Gen gov debt,2029,60.836
+PAK,Gen gov debt,2030,59.02
+PAK,Gen gov debt,2031,58.214
+QAT,GDP growth,2027,8.59
+QAT,GDP growth,2028,5.836
+QAT,GDP growth,2029,7.837
+QAT,GDP growth,2030,5.919
+QAT,GDP growth,2031,4.977
+QAT,Inflation,2027,2.477
+QAT,Inflation,2028,2.048
+QAT,Inflation,2029,1.98
+QAT,Inflation,2030,1.972
+QAT,Inflation,2031,1.967
+QAT,Fiscal balance,2027,-4.815
+QAT,Fiscal balance,2028,-4.667
+QAT,Fiscal balance,2029,-0.393
+QAT,Fiscal balance,2030,1.844
+QAT,Fiscal balance,2031,2.861
+QAT,Fiscal balance,2027,-3.564
+QAT,Fiscal balance,2028,-3.452
+QAT,Fiscal balance,2029,0.762
+QAT,Fiscal balance,2030,2.96
+QAT,Fiscal balance,2031,3.948
+QAT,Gen gov debt,2027,40.887
+QAT,Gen gov debt,2028,39.708
+QAT,Gen gov debt,2029,37.745
+QAT,Gen gov debt,2030,36.453
+QAT,Gen gov debt,2031,35.476
+SAU,GDP growth,2027,4.454
+SAU,GDP growth,2028,3.645
+SAU,GDP growth,2029,3.543
+SAU,GDP growth,2030,3.52
+SAU,GDP growth,2031,3.55
+SAU,Inflation,2027,2.114
+SAU,Inflation,2028,2.0
+SAU,Inflation,2029,2.0
+SAU,Inflation,2030,2.0
+SAU,Inflation,2031,2.0
+SAU,Fiscal balance,2027,-3.401
+SAU,Fiscal balance,2028,-3.562
+SAU,Fiscal balance,2029,-3.34
+SAU,Fiscal balance,2030,-3.211
+SAU,Fiscal balance,2031,-3.173
+SAU,Fiscal balance,2027,-2.829
+SAU,Fiscal balance,2028,-2.849
+SAU,Fiscal balance,2029,-2.5
+SAU,Fiscal balance,2030,-2.25
+SAU,Fiscal balance,2031,-2.096
+SAU,Gen gov debt,2027,34.769
+SAU,Gen gov debt,2028,37.073
+SAU,Gen gov debt,2029,38.921
+SAU,Gen gov debt,2030,40.63
+SAU,Gen gov debt,2031,42.219
+SOM,GDP growth,2027,3.1
+SOM,GDP growth,2028,3.6
+SOM,GDP growth,2029,4.0
+SOM,GDP growth,2030,4.1
+SOM,GDP growth,2031,4.2
+SOM,Inflation,2027,4.5
+SOM,Inflation,2028,4.0
+SOM,Inflation,2029,3.8
+SOM,Inflation,2030,3.5
+SOM,Inflation,2031,3.2
+SOM,Fiscal balance,2027,-0.777
+SOM,Fiscal balance,2028,-1.218
+SOM,Fiscal balance,2029,-1.972
+SOM,Fiscal balance,2030,-1.99
+SOM,Fiscal balance,2031,-2.108
+SOM,Fiscal balance,2027,-0.7
+SOM,Fiscal balance,2028,-1.141
+SOM,Fiscal balance,2029,-1.87
+SOM,Fiscal balance,2030,-1.872
+SOM,Fiscal balance,2031,-1.987
+SDN,GDP growth,2027,8.126
+SDN,GDP growth,2028,12.848
+SDN,GDP growth,2029,8.341
+SDN,GDP growth,2030,6.001
+SDN,GDP growth,2031,4.507
+SDN,Inflation,2027,44.606
+SDN,Inflation,2028,27.576
+SDN,Inflation,2029,16.415
+SDN,Inflation,2030,13.778
+SDN,Inflation,2031,12.487
+SDN,Fiscal balance,2027,-5.002
+SDN,Fiscal balance,2028,-4.105
+SDN,Fiscal balance,2029,-3.704
+SDN,Fiscal balance,2030,-3.112
+SDN,Fiscal balance,2031,-2.7
+SDN,Fiscal balance,2027,-4.606
+SDN,Fiscal balance,2028,-3.756
+SDN,Fiscal balance,2029,-3.411
+SDN,Fiscal balance,2030,-2.867
+SDN,Fiscal balance,2031,-2.453
+SDN,Gen gov debt,2027,153.017
+SDN,Gen gov debt,2028,134.487
+SDN,Gen gov debt,2029,128.898
+SDN,Gen gov debt,2030,124.418
+SDN,Gen gov debt,2031,116.263
+TJK,GDP growth,2027,4.8
+TJK,GDP growth,2028,4.5
+TJK,GDP growth,2029,4.5
+TJK,GDP growth,2030,4.5
+TJK,GDP growth,2031,4.5
+TJK,Inflation,2027,4.75
+TJK,Inflation,2028,5.0
+TJK,Inflation,2029,5.0
+TJK,Inflation,2030,5.0
+TJK,Inflation,2031,5.0
+TJK,Fiscal balance,2027,-2.5
+TJK,Fiscal balance,2028,-2.5
+TJK,Fiscal balance,2029,-2.5
+TJK,Fiscal balance,2030,-2.5
+TJK,Fiscal balance,2031,-2.5
+TJK,Fiscal balance,2027,-1.809
+TJK,Fiscal balance,2028,-1.765
+TJK,Fiscal balance,2029,-1.676
+TJK,Fiscal balance,2030,-1.593
+TJK,Fiscal balance,2031,-1.533
+TJK,Gen gov debt,2027,22.305
+TJK,Gen gov debt,2028,23.388
+TJK,Gen gov debt,2029,24.374
+TJK,Gen gov debt,2030,25.085
+TJK,Gen gov debt,2031,25.654
+TUN,GDP growth,2027,1.623
+TUN,GDP growth,2028,1.542
+TUN,GDP growth,2029,1.537
+TUN,GDP growth,2030,1.536
+TUN,GDP growth,2031,1.53
+TUN,Inflation,2027,7.153
+TUN,Inflation,2028,8.103
+TUN,Inflation,2029,8.4
+TUN,Inflation,2030,9.012
+TUN,Inflation,2031,9.6
+TUN,Fiscal balance,2027,-6.525
+TUN,Fiscal balance,2028,-5.985
+TUN,Fiscal balance,2029,-6.075
+TUN,Fiscal balance,2030,-6.454
+TUN,Fiscal balance,2031,-6.801
+TUN,Fiscal balance,2027,-2.65
+TUN,Fiscal balance,2028,-2.5
+TUN,Fiscal balance,2029,-2.55
+TUN,Fiscal balance,2030,-2.7
+TUN,Fiscal balance,2031,-2.75
+TUN,Gen gov debt,2027,88.73
+TUN,Gen gov debt,2028,90.183
+TUN,Gen gov debt,2029,90.939
+TUN,Gen gov debt,2030,91.108
+TUN,Gen gov debt,2031,91.054
+TKM,GDP growth,2027,1.999
+TKM,GDP growth,2028,2.304
+TKM,GDP growth,2029,2.298
+TKM,GDP growth,2030,2.297
+TKM,GDP growth,2031,2.305
+TKM,Inflation,2027,4.75
+TKM,Inflation,2028,5.0
+TKM,Inflation,2029,5.0
+TKM,Inflation,2030,5.0
+TKM,Inflation,2031,5.0
+TKM,Fiscal balance,2027,-0.068
+TKM,Fiscal balance,2028,-0.246
+TKM,Fiscal balance,2029,-0.397
+TKM,Fiscal balance,2030,-0.548
+TKM,Fiscal balance,2031,-0.702
+TKM,Gen gov debt,2027,3.739
+TKM,Gen gov debt,2028,3.953
+TKM,Gen gov debt,2029,4.272
+TKM,Gen gov debt,2030,4.591
+TKM,Gen gov debt,2031,4.895
+ARE,GDP growth,2027,5.266
+ARE,GDP growth,2028,4.629
+ARE,GDP growth,2029,4.373
+ARE,GDP growth,2030,4.032
+ARE,GDP growth,2031,4.039
+ARE,Inflation,2027,2.0
+ARE,Inflation,2028,2.0
+ARE,Inflation,2029,2.0
+ARE,Inflation,2030,2.0
+ARE,Inflation,2031,2.0
+ARE,Fiscal balance,2027,4.83
+ARE,Fiscal balance,2028,4.708
+ARE,Fiscal balance,2029,4.694
+ARE,Fiscal balance,2030,4.576
+ARE,Fiscal balance,2031,4.489
+ARE,Fiscal balance,2027,5.526
+ARE,Fiscal balance,2028,5.361
+ARE,Fiscal balance,2029,5.302
+ARE,Fiscal balance,2030,5.16
+ARE,Fiscal balance,2031,5.062
+ARE,Gen gov debt,2027,30.121
+ARE,Gen gov debt,2028,28.768
+ARE,Gen gov debt,2029,27.237
+ARE,Gen gov debt,2030,26.699
+ARE,Gen gov debt,2031,26.007
+UZB,GDP growth,2027,5.864
+UZB,GDP growth,2028,5.772
+UZB,GDP growth,2029,5.758
+UZB,GDP growth,2030,5.69
+UZB,GDP growth,2031,5.701
+UZB,Inflation,2027,5.57
+UZB,Inflation,2028,4.99
+UZB,Inflation,2029,5.027
+UZB,Inflation,2030,5.022
+UZB,Inflation,2031,5.0
+UZB,Fiscal balance,2027,-2.063
+UZB,Fiscal balance,2028,-2.076
+UZB,Fiscal balance,2029,-2.077
+UZB,Fiscal balance,2030,-2.075
+UZB,Fiscal balance,2031,-2.071
+UZB,Fiscal balance,2027,-1.071
+UZB,Fiscal balance,2028,-1.123
+UZB,Fiscal balance,2029,-1.201
+UZB,Fiscal balance,2030,-1.194
+UZB,Fiscal balance,2031,-1.099
+UZB,Gen gov debt,2027,26.982
+UZB,Gen gov debt,2028,26.977
+UZB,Gen gov debt,2029,26.78
+UZB,Gen gov debt,2030,26.801
+UZB,Gen gov debt,2031,26.768
+YEM,GDP growth,2027,1.452
+YEM,GDP growth,2028,2.508
+YEM,GDP growth,2029,2.53
+YEM,GDP growth,2030,2.549
+YEM,GDP growth,2031,2.549
+YEM,Inflation,2027,18.749
+YEM,Inflation,2028,16.765
+YEM,Inflation,2029,14.029
+YEM,Inflation,2030,12.683
+YEM,Inflation,2031,10.099
+YEM,Fiscal balance,2027,-0.938
+YEM,Fiscal balance,2028,0.187
+YEM,Fiscal balance,2029,0.076
+YEM,Fiscal balance,2030,0.057
+YEM,Fiscal balance,2031,0.267
+YEM,Fiscal balance,2027,1.784
+YEM,Fiscal balance,2028,2.637
+YEM,Fiscal balance,2029,2.308
+YEM,Fiscal balance,2030,2.097
+YEM,Fiscal balance,2031,2.161
+AGO,GDP growth,2027,2.637
+AGO,GDP growth,2028,2.817
+AGO,GDP growth,2029,2.97
+AGO,GDP growth,2030,3.029
+AGO,GDP growth,2031,3.091
+AGO,Inflation,2027,12.79
+AGO,Inflation,2028,10.294
+AGO,Inflation,2029,10.034
+AGO,Inflation,2030,9.926
+AGO,Inflation,2031,9.766
+AGO,Fiscal balance,2027,-3.609
+AGO,Fiscal balance,2028,-3.936
+AGO,Fiscal balance,2029,-3.972
+AGO,Fiscal balance,2030,-3.831
+AGO,Fiscal balance,2031,-3.88
+AGO,Fiscal balance,2027,0.174
+AGO,Fiscal balance,2028,0.034
+AGO,Fiscal balance,2029,0.138
+AGO,Fiscal balance,2030,0.32
+AGO,Fiscal balance,2031,0.315
+AGO,Gen gov debt,2027,53.517
+AGO,Gen gov debt,2028,55.216
+AGO,Gen gov debt,2029,56.563
+AGO,Gen gov debt,2030,57.113
+AGO,Gen gov debt,2031,57.718
+BEN,GDP growth,2027,6.698
+BEN,GDP growth,2028,6.587
+BEN,GDP growth,2029,6.482
+BEN,GDP growth,2030,6.042
+BEN,GDP growth,2031,6.026
+BEN,Inflation,2027,2.0
+BEN,Inflation,2028,2.0
+BEN,Inflation,2029,2.0
+BEN,Inflation,2030,2.0
+BEN,Inflation,2031,2.0
+BEN,Fiscal balance,2027,-2.9
+BEN,Fiscal balance,2028,-2.9
+BEN,Fiscal balance,2029,-2.9
+BEN,Fiscal balance,2030,-2.9
+BEN,Fiscal balance,2031,-2.9
+BEN,Fiscal balance,2027,-1.245
+BEN,Fiscal balance,2028,-1.387
+BEN,Fiscal balance,2029,-1.369
+BEN,Fiscal balance,2030,-1.352
+BEN,Fiscal balance,2031,-1.343
+BEN,Gen gov debt,2027,55.62
+BEN,Gen gov debt,2028,53.175
+BEN,Gen gov debt,2029,51.965
+BEN,Gen gov debt,2030,51.104
+BEN,Gen gov debt,2031,50.304
+BWA,GDP growth,2027,2.227
+BWA,GDP growth,2028,2.96
+BWA,GDP growth,2029,3.932
+BWA,GDP growth,2030,3.949
+BWA,GDP growth,2031,3.96
+BWA,Inflation,2027,5.7
+BWA,Inflation,2028,4.8
+BWA,Inflation,2029,4.5
+BWA,Inflation,2030,4.5
+BWA,Inflation,2031,4.5
+BWA,Fiscal balance,2027,-7.793
+BWA,Fiscal balance,2028,-7.592
+BWA,Fiscal balance,2029,-7.494
+BWA,Fiscal balance,2030,-7.083
+BWA,Fiscal balance,2031,-7.458
+BWA,Fiscal balance,2027,-4.482
+BWA,Fiscal balance,2028,-3.785
+BWA,Fiscal balance,2029,-3.325
+BWA,Fiscal balance,2030,-2.563
+BWA,Fiscal balance,2031,-2.62
+BWA,Gen gov debt,2027,51.923
+BWA,Gen gov debt,2028,55.467
+BWA,Gen gov debt,2029,58.634
+BWA,Gen gov debt,2030,61.228
+BWA,Gen gov debt,2031,64.367
+BFA,GDP growth,2027,4.8
+BFA,GDP growth,2028,4.782
+BFA,GDP growth,2029,4.806
+BFA,GDP growth,2030,4.83
+BFA,GDP growth,2031,4.854
+BFA,Inflation,2027,2.061
+BFA,Inflation,2028,2.031
+BFA,Inflation,2029,2.0
+BFA,Inflation,2030,2.0
+BFA,Inflation,2031,2.0
+BFA,Fiscal balance,2027,-3.044
+BFA,Fiscal balance,2028,-3.0
+BFA,Fiscal balance,2029,-3.0
+BFA,Fiscal balance,2030,-3.0
+BFA,Fiscal balance,2031,-3.0
+BFA,Fiscal balance,2027,-0.824
+BFA,Fiscal balance,2028,-0.79
+BFA,Fiscal balance,2029,-1.036
+BFA,Fiscal balance,2030,-1.099
+BFA,Fiscal balance,2031,-1.115
+BFA,Gen gov debt,2027,47.127
+BFA,Gen gov debt,2028,46.85
+BFA,Gen gov debt,2029,46.605
+BFA,Gen gov debt,2030,46.45
+BFA,Gen gov debt,2031,46.385
+BDI,GDP growth,2027,4.168
+BDI,GDP growth,2028,4.028
+BDI,GDP growth,2029,4.063
+BDI,GDP growth,2030,4.11
+BDI,GDP growth,2031,4.175
+BDI,Inflation,2027,15.335
+BDI,Inflation,2028,13.498
+BDI,Inflation,2029,12.794
+BDI,Inflation,2030,10.655
+BDI,Inflation,2031,9.831
+BDI,Fiscal balance,2027,-2.943
+BDI,Fiscal balance,2028,-3.46
+BDI,Fiscal balance,2029,-3.24
+BDI,Fiscal balance,2030,-3.906
+BDI,Fiscal balance,2031,-3.16
+BDI,Fiscal balance,2027,-1.857
+BDI,Fiscal balance,2028,-2.188
+BDI,Fiscal balance,2029,-1.986
+BDI,Fiscal balance,2030,-2.503
+BDI,Fiscal balance,2031,-1.619
+BDI,Gen gov debt,2027,37.093
+BDI,Gen gov debt,2028,35.248
+BDI,Gen gov debt,2029,33.537
+BDI,Gen gov debt,2030,32.764
+BDI,Gen gov debt,2031,31.332
+CPV,GDP growth,2027,5.037
+CPV,GDP growth,2028,5.003
+CPV,GDP growth,2029,5.061
+CPV,GDP growth,2030,5.067
+CPV,GDP growth,2031,5.064
+CPV,Inflation,2027,2.1
+CPV,Inflation,2028,2.0
+CPV,Inflation,2029,2.0
+CPV,Inflation,2030,2.0
+CPV,Inflation,2031,2.0
+CPV,Fiscal balance,2027,-0.044
+CPV,Fiscal balance,2028,0.05
+CPV,Fiscal balance,2029,0.111
+CPV,Fiscal balance,2030,0.162
+CPV,Fiscal balance,2031,0.194
+CPV,Fiscal balance,2027,1.359
+CPV,Fiscal balance,2028,1.273
+CPV,Fiscal balance,2029,1.324
+CPV,Fiscal balance,2030,1.317
+CPV,Fiscal balance,2031,1.332
+CPV,Gen gov debt,2027,90.737
+CPV,Gen gov debt,2028,85.818
+CPV,Gen gov debt,2029,81.078
+CPV,Gen gov debt,2030,76.109
+CPV,Gen gov debt,2031,71.406
+CMR,GDP growth,2027,3.768
+CMR,GDP growth,2028,4.223
+CMR,GDP growth,2029,4.301
+CMR,GDP growth,2030,4.424
+CMR,GDP growth,2031,4.578
+CMR,Inflation,2027,3.188
+CMR,Inflation,2028,2.977
+CMR,Inflation,2029,2.908
+CMR,Inflation,2030,2.86
+CMR,Inflation,2031,2.827
+CMR,Fiscal balance,2027,-1.357
+CMR,Fiscal balance,2028,-1.284
+CMR,Fiscal balance,2029,-1.236
+CMR,Fiscal balance,2030,-1.227
+CMR,Fiscal balance,2031,-1.202
+CMR,Fiscal balance,2027,-0.047
+CMR,Fiscal balance,2028,0.032
+CMR,Fiscal balance,2029,0.053
+CMR,Fiscal balance,2030,0.041
+CMR,Fiscal balance,2031,-0.247
+CMR,Gen gov debt,2027,38.608
+CMR,Gen gov debt,2028,36.995
+CMR,Gen gov debt,2029,35.384
+CMR,Gen gov debt,2030,33.366
+CMR,Gen gov debt,2031,31.861
+CAF,GDP growth,2027,2.987
+CAF,GDP growth,2028,3.227
+CAF,GDP growth,2029,3.531
+CAF,GDP growth,2030,3.488
+CAF,GDP growth,2031,3.497
+CAF,Inflation,2027,2.546
+CAF,Inflation,2028,2.643
+CAF,Inflation,2029,3.015
+CAF,Inflation,2030,3.0
+CAF,Inflation,2031,3.0
+CAF,Fiscal balance,2027,-6.217
+CAF,Fiscal balance,2028,-7.08
+CAF,Fiscal balance,2029,-7.825
+CAF,Fiscal balance,2030,-8.719
+CAF,Fiscal balance,2031,-9.553
+CAF,Fiscal balance,2027,-3.648
+CAF,Fiscal balance,2028,-3.56
+CAF,Fiscal balance,2029,-3.323
+CAF,Fiscal balance,2030,-3.311
+CAF,Fiscal balance,2031,-3.27
+CAF,Gen gov debt,2027,66.544
+CAF,Gen gov debt,2028,69.655
+CAF,Gen gov debt,2029,72.96
+CAF,Gen gov debt,2030,76.98
+CAF,Gen gov debt,2031,81.569
+TCD,GDP growth,2027,4.934
+TCD,GDP growth,2028,4.83
+TCD,GDP growth,2029,5.052
+TCD,GDP growth,2030,5.167
+TCD,GDP growth,2031,5.28
+TCD,Inflation,2027,3.941
+TCD,Inflation,2028,2.742
+TCD,Inflation,2029,3.008
+TCD,Inflation,2030,2.976
+TCD,Inflation,2031,2.98
+TCD,Fiscal balance,2027,-1.301
+TCD,Fiscal balance,2028,-0.256
+TCD,Fiscal balance,2029,-0.705
+TCD,Fiscal balance,2030,-0.929
+TCD,Fiscal balance,2031,-1.168
+TCD,Fiscal balance,2027,-0.315
+TCD,Fiscal balance,2028,0.622
+TCD,Fiscal balance,2029,0.122
+TCD,Fiscal balance,2030,-0.118
+TCD,Fiscal balance,2031,-0.335
+TCD,Gen gov debt,2027,29.946
+TCD,Gen gov debt,2028,28.643
+TCD,Gen gov debt,2029,27.495
+TCD,Gen gov debt,2030,26.466
+TCD,Gen gov debt,2031,25.678
+COM,GDP growth,2027,4.117
+COM,GDP growth,2028,3.846
+COM,GDP growth,2029,3.621
+COM,GDP growth,2030,3.636
+COM,GDP growth,2031,3.641
+COM,Inflation,2027,2.504
+COM,Inflation,2028,2.504
+COM,Inflation,2029,2.504
+COM,Inflation,2030,2.504
+COM,Inflation,2031,2.504
+COM,Fiscal balance,2027,-1.681
+COM,Fiscal balance,2028,-1.918
+COM,Fiscal balance,2029,-1.134
+COM,Fiscal balance,2030,-1.167
+COM,Fiscal balance,2031,-1.391
+COM,Fiscal balance,2027,-1.247
+COM,Fiscal balance,2028,-1.417
+COM,Fiscal balance,2029,-0.661
+COM,Fiscal balance,2030,-0.636
+COM,Fiscal balance,2031,-0.842
+COM,Gen gov debt,2027,33.795
+COM,Gen gov debt,2028,32.112
+COM,Gen gov debt,2029,30.017
+COM,Gen gov debt,2030,28.507
+COM,Gen gov debt,2031,26.809
+COD,GDP growth,2027,5.365
+COD,GDP growth,2028,5.397
+COD,GDP growth,2029,5.444
+COD,GDP growth,2030,5.415
+COD,GDP growth,2031,5.401
+COD,Inflation,2027,6.382
+COD,Inflation,2028,7.001
+COD,Inflation,2029,6.952
+COD,Inflation,2030,6.952
+COD,Inflation,2031,6.952
+COD,Fiscal balance,2027,-2.388
+COD,Fiscal balance,2028,-1.497
+COD,Fiscal balance,2029,-1.457
+COD,Fiscal balance,2030,-1.273
+COD,Fiscal balance,2031,-1.151
+COD,Fiscal balance,2027,-1.8
+COD,Fiscal balance,2028,-0.864
+COD,Fiscal balance,2029,-0.826
+COD,Fiscal balance,2030,-0.592
+COD,Fiscal balance,2031,-0.418
+COD,Gen gov debt,2027,27.824
+COD,Gen gov debt,2028,29.499
+COD,Gen gov debt,2029,31.234
+COD,Gen gov debt,2030,32.743
+COD,Gen gov debt,2031,33.496
+COG,GDP growth,2027,3.245
+COG,GDP growth,2028,3.74
+COG,GDP growth,2029,3.689
+COG,GDP growth,2030,3.583
+COG,GDP growth,2031,3.578
+COG,Inflation,2027,3.0
+COG,Inflation,2028,3.0
+COG,Inflation,2029,3.0
+COG,Inflation,2030,3.0
+COG,Inflation,2031,3.0
+COG,Fiscal balance,2027,2.938
+COG,Fiscal balance,2028,3.894
+COG,Fiscal balance,2029,4.454
+COG,Fiscal balance,2030,4.713
+COG,Fiscal balance,2031,4.648
+COG,Fiscal balance,2027,6.388
+COG,Fiscal balance,2028,6.931
+COG,Fiscal balance,2029,7.114
+COG,Fiscal balance,2030,7.117
+COG,Fiscal balance,2031,6.707
+COG,Gen gov debt,2027,85.836
+COG,Gen gov debt,2028,79.12
+COG,Gen gov debt,2029,72.314
+COG,Gen gov debt,2030,66.106
+COG,Gen gov debt,2031,60.438
+CIV,GDP growth,2027,6.3
+CIV,GDP growth,2028,6.6
+CIV,GDP growth,2029,7.0
+CIV,GDP growth,2030,6.8
+CIV,GDP growth,2031,6.5
+CIV,Inflation,2027,2.0
+CIV,Inflation,2028,2.0
+CIV,Inflation,2029,2.0
+CIV,Inflation,2030,2.0
+CIV,Inflation,2031,2.0
+CIV,Fiscal balance,2027,-3.046
+CIV,Fiscal balance,2028,-2.989
+CIV,Fiscal balance,2029,-3.048
+CIV,Fiscal balance,2030,-3.002
+CIV,Fiscal balance,2031,-2.998
+CIV,Fiscal balance,2027,-0.52
+CIV,Fiscal balance,2028,-0.507
+CIV,Fiscal balance,2029,-0.648
+CIV,Fiscal balance,2030,-0.672
+CIV,Fiscal balance,2031,-0.739
+CIV,Gen gov debt,2027,53.967
+CIV,Gen gov debt,2028,52.298
+CIV,Gen gov debt,2029,51.162
+CIV,Gen gov debt,2030,49.788
+CIV,Gen gov debt,2031,48.572
+GNQ,GDP growth,2027,-1.338
+GNQ,GDP growth,2028,1.105
+GNQ,GDP growth,2029,2.095
+GNQ,GDP growth,2030,2.393
+GNQ,GDP growth,2031,2.538
+GNQ,Inflation,2027,2.875
+GNQ,Inflation,2028,2.576
+GNQ,Inflation,2029,2.5
+GNQ,Inflation,2030,2.5
+GNQ,Inflation,2031,2.5
+GNQ,Fiscal balance,2027,-3.661
+GNQ,Fiscal balance,2028,-3.907
+GNQ,Fiscal balance,2029,-3.55
+GNQ,Fiscal balance,2030,-2.52
+GNQ,Fiscal balance,2031,-2.234
+GNQ,Fiscal balance,2027,-2.198
+GNQ,Fiscal balance,2028,-2.219
+GNQ,Fiscal balance,2029,-1.705
+GNQ,Fiscal balance,2030,-0.568
+GNQ,Fiscal balance,2031,-0.23
+GNQ,Gen gov debt,2027,42.297
+GNQ,Gen gov debt,2028,44.676
+GNQ,Gen gov debt,2029,45.412
+GNQ,Gen gov debt,2030,44.578
+GNQ,Gen gov debt,2031,44.694
+SWZ,GDP growth,2027,3.458
+SWZ,GDP growth,2028,2.919
+SWZ,GDP growth,2029,2.886
+SWZ,GDP growth,2030,2.781
+SWZ,GDP growth,2031,2.731
+SWZ,Inflation,2027,3.8
+SWZ,Inflation,2028,3.4
+SWZ,Inflation,2029,3.2
+SWZ,Inflation,2030,3.0
+SWZ,Inflation,2031,3.0
+SWZ,Fiscal balance,2027,-5.067
+SWZ,Fiscal balance,2028,-4.118
+SWZ,Fiscal balance,2029,-3.52
+SWZ,Fiscal balance,2030,-3.111
+SWZ,Fiscal balance,2031,-2.659
+SWZ,Fiscal balance,2027,-1.143
+SWZ,Fiscal balance,2028,-0.111
+SWZ,Fiscal balance,2029,0.352
+SWZ,Fiscal balance,2030,0.847
+SWZ,Fiscal balance,2031,1.327
+SWZ,Gen gov debt,2027,52.725
+SWZ,Gen gov debt,2028,54.004
+SWZ,Gen gov debt,2029,55.688
+SWZ,Gen gov debt,2030,55.886
+SWZ,Gen gov debt,2031,55.626
+ETH,GDP growth,2027,7.913
+ETH,GDP growth,2028,8.233
+ETH,GDP growth,2029,8.463
+ETH,GDP growth,2030,7.998
+ETH,GDP growth,2031,7.675
+ETH,Inflation,2027,10.704
+ETH,Inflation,2028,8.255
+ETH,Inflation,2029,7.462
+ETH,Inflation,2030,7.462
+ETH,Inflation,2031,7.462
+ETH,Fiscal balance,2027,-1.026
+ETH,Fiscal balance,2028,-1.687
+ETH,Fiscal balance,2029,-1.492
+ETH,Fiscal balance,2030,-1.486
+ETH,Fiscal balance,2031,-1.525
+ETH,Fiscal balance,2027,0.096
+ETH,Fiscal balance,2028,-0.617
+ETH,Fiscal balance,2029,-0.399
+ETH,Fiscal balance,2030,-0.337
+ETH,Fiscal balance,2031,-0.286
+ETH,Gen gov debt,2027,36.069
+ETH,Gen gov debt,2028,33.566
+ETH,Gen gov debt,2029,31.147
+ETH,Gen gov debt,2030,29.07
+ETH,Gen gov debt,2031,27.033
+GAB,GDP growth,2027,2.809
+GAB,GDP growth,2028,2.848
+GAB,GDP growth,2029,2.849
+GAB,GDP growth,2030,2.845
+GAB,GDP growth,2031,2.87
+GAB,Inflation,2027,2.416
+GAB,Inflation,2028,2.271
+GAB,Inflation,2029,2.272
+GAB,Inflation,2030,2.275
+GAB,Inflation,2031,2.28
+GAB,Fiscal balance,2027,-11.151
+GAB,Fiscal balance,2028,-11.955
+GAB,Fiscal balance,2029,-10.474
+GAB,Fiscal balance,2030,-11.127
+GAB,Fiscal balance,2031,-11.813
+GAB,Fiscal balance,2027,-7.195
+GAB,Fiscal balance,2028,-7.632
+GAB,Fiscal balance,2029,-5.739
+GAB,Fiscal balance,2030,-6.022
+GAB,Fiscal balance,2031,-6.353
+GAB,Gen gov debt,2027,94.316
+GAB,Gen gov debt,2028,102.126
+GAB,Gen gov debt,2029,108.02
+GAB,Gen gov debt,2030,114.311
+GAB,Gen gov debt,2031,121.05
+GMB,GDP growth,2027,5.024
+GMB,GDP growth,2028,5.019
+GMB,GDP growth,2029,5.019
+GMB,GDP growth,2030,5.019
+GMB,GDP growth,2031,5.019
+GMB,Inflation,2027,5.0
+GMB,Inflation,2028,5.0
+GMB,Inflation,2029,5.0
+GMB,Inflation,2030,5.0
+GMB,Inflation,2031,5.0
+GMB,Fiscal balance,2027,-0.427
+GMB,Fiscal balance,2028,-0.608
+GMB,Fiscal balance,2029,-0.543
+GMB,Fiscal balance,2030,-0.465
+GMB,Fiscal balance,2031,-0.498
+GMB,Fiscal balance,2027,2.224
+GMB,Fiscal balance,2028,1.539
+GMB,Fiscal balance,2029,1.386
+GMB,Fiscal balance,2030,1.272
+GMB,Fiscal balance,2031,1.121
+GMB,Gen gov debt,2027,61.566
+GMB,Gen gov debt,2028,56.377
+GMB,Gen gov debt,2029,51.837
+GMB,Gen gov debt,2030,48.118
+GMB,Gen gov debt,2031,44.289
+GHA,GDP growth,2027,4.928
+GHA,GDP growth,2028,4.999
+GHA,GDP growth,2029,5.0
+GHA,GDP growth,2030,5.0
+GHA,GDP growth,2031,5.0
+GHA,Inflation,2027,7.765
+GHA,Inflation,2028,8.0
+GHA,Inflation,2029,8.0
+GHA,Inflation,2030,8.0
+GHA,Inflation,2031,8.0
+GHA,Fiscal balance,2027,-1.832
+GHA,Fiscal balance,2028,-1.669
+GHA,Fiscal balance,2029,-1.826
+GHA,Fiscal balance,2030,-2.23
+GHA,Fiscal balance,2031,-2.174
+GHA,Fiscal balance,2027,1.5
+GHA,Fiscal balance,2028,1.5
+GHA,Fiscal balance,2029,1.5
+GHA,Fiscal balance,2030,1.0
+GHA,Fiscal balance,2031,1.0
+GHA,Gen gov debt,2027,50.664
+GHA,Gen gov debt,2028,48.118
+GHA,Gen gov debt,2029,45.746
+GHA,Gen gov debt,2030,44.0
+GHA,Gen gov debt,2031,42.327
+GIN,GDP growth,2027,9.332
+GIN,GDP growth,2028,9.837
+GIN,GDP growth,2029,10.226
+GIN,GDP growth,2030,8.515
+GIN,GDP growth,2031,7.245
+GIN,Inflation,2027,5.639
+GIN,Inflation,2028,4.586
+GIN,Inflation,2029,4.012
+GIN,Inflation,2030,3.999
+GIN,Inflation,2031,4.0
+GIN,Fiscal balance,2027,-4.173
+GIN,Fiscal balance,2028,-3.5
+GIN,Fiscal balance,2029,-3.0
+GIN,Fiscal balance,2030,-2.7
+GIN,Fiscal balance,2031,-2.5
+GIN,Fiscal balance,2027,-2.36
+GIN,Fiscal balance,2028,-1.225
+GIN,Fiscal balance,2029,-0.427
+GIN,Fiscal balance,2030,-0.116
+GIN,Fiscal balance,2031,0.079
+GIN,Gen gov debt,2027,41.399
+GIN,Gen gov debt,2028,37.897
+GIN,Gen gov debt,2029,33.045
+GIN,Gen gov debt,2030,31.387
+GIN,Gen gov debt,2031,28.925
+GNB,GDP growth,2027,4.9
+GNB,GDP growth,2028,4.5
+GNB,GDP growth,2029,4.5
+GNB,GDP growth,2030,4.204
+GNB,GDP growth,2031,4.21
+GNB,Inflation,2027,2.1
+GNB,Inflation,2028,2.1
+GNB,Inflation,2029,2.1
+GNB,Inflation,2030,2.1
+GNB,Inflation,2031,2.1
+GNB,Fiscal balance,2027,-3.548
+GNB,Fiscal balance,2028,-3.001
+GNB,Fiscal balance,2029,-2.972
+GNB,Fiscal balance,2030,-3.023
+GNB,Fiscal balance,2031,-2.981
+GNB,Fiscal balance,2027,-0.163
+GNB,Fiscal balance,2028,0.286
+GNB,Fiscal balance,2029,0.052
+GNB,Fiscal balance,2030,-0.232
+GNB,Fiscal balance,2031,-0.287
+GNB,Gen gov debt,2027,71.811
+GNB,Gen gov debt,2028,69.883
+GNB,Gen gov debt,2029,68.031
+GNB,Gen gov debt,2030,66.355
+GNB,Gen gov debt,2031,65.237
+KEN,GDP growth,2027,4.662
+KEN,GDP growth,2028,5.061
+KEN,GDP growth,2029,5.0
+KEN,GDP growth,2030,5.008
+KEN,GDP growth,2031,5.015
+KEN,Inflation,2027,5.892
+KEN,Inflation,2028,5.7
+KEN,Inflation,2029,5.724
+KEN,Inflation,2030,5.25
+KEN,Inflation,2031,5.0
+KEN,Fiscal balance,2027,-5.969
+KEN,Fiscal balance,2028,-5.959
+KEN,Fiscal balance,2029,-6.052
+KEN,Fiscal balance,2030,-6.159
+KEN,Fiscal balance,2031,-6.319
+KEN,Fiscal balance,2027,-0.2
+KEN,Fiscal balance,2028,-0.052
+KEN,Fiscal balance,2029,-0.026
+KEN,Fiscal balance,2030,0.013
+KEN,Fiscal balance,2031,0.017
+KEN,Gen gov debt,2027,72.392
+KEN,Gen gov debt,2028,73.344
+KEN,Gen gov debt,2029,73.55
+KEN,Gen gov debt,2030,74.218
+KEN,Gen gov debt,2031,75.134
+LSO,GDP growth,2027,0.827
+LSO,GDP growth,2028,1.404
+LSO,GDP growth,2029,1.503
+LSO,GDP growth,2030,1.505
+LSO,GDP growth,2031,1.512
+LSO,Inflation,2027,3.916
+LSO,Inflation,2028,4.0
+LSO,Inflation,2029,4.0
+LSO,Inflation,2030,4.0
+LSO,Inflation,2031,4.0
+LSO,Fiscal balance,2027,4.493
+LSO,Fiscal balance,2028,4.376
+LSO,Fiscal balance,2029,3.962
+LSO,Fiscal balance,2030,3.713
+LSO,Fiscal balance,2031,3.42
+LSO,Fiscal balance,2027,6.53
+LSO,Fiscal balance,2028,6.499
+LSO,Fiscal balance,2029,6.129
+LSO,Fiscal balance,2030,5.979
+LSO,Fiscal balance,2031,5.738
+LSO,Gen gov debt,2027,48.565
+LSO,Gen gov debt,2028,48.095
+LSO,Gen gov debt,2029,47.883
+LSO,Gen gov debt,2030,48.599
+LSO,Gen gov debt,2031,50.01
+LBR,GDP growth,2027,5.386
+LBR,GDP growth,2028,5.611
+LBR,GDP growth,2029,5.576
+LBR,GDP growth,2030,5.626
+LBR,GDP growth,2031,5.498
+LBR,Inflation,2027,6.211
+LBR,Inflation,2028,5.445
+LBR,Inflation,2029,5.07
+LBR,Inflation,2030,4.946
+LBR,Inflation,2031,4.964
+LBR,Fiscal balance,2027,-1.07
+LBR,Fiscal balance,2028,-1.379
+LBR,Fiscal balance,2029,-2.184
+LBR,Fiscal balance,2030,-0.975
+LBR,Fiscal balance,2031,-0.947
+LBR,Fiscal balance,2027,0.01
+LBR,Fiscal balance,2028,-0.426
+LBR,Fiscal balance,2029,-1.341
+LBR,Fiscal balance,2030,-0.189
+LBR,Fiscal balance,2031,-0.239
+LBR,Gen gov debt,2027,53.253
+LBR,Gen gov debt,2028,50.494
+LBR,Gen gov debt,2029,48.724
+LBR,Gen gov debt,2030,45.855
+LBR,Gen gov debt,2031,43.1
+MDG,GDP growth,2027,4.131
+MDG,GDP growth,2028,4.627
+MDG,GDP growth,2029,4.729
+MDG,GDP growth,2030,4.834
+MDG,GDP growth,2031,4.848
+MDG,Inflation,2027,7.029
+MDG,Inflation,2028,6.0
+MDG,Inflation,2029,6.0
+MDG,Inflation,2030,6.0
+MDG,Inflation,2031,5.0
+MDG,Fiscal balance,2027,-3.944
+MDG,Fiscal balance,2028,-3.853
+MDG,Fiscal balance,2029,-3.917
+MDG,Fiscal balance,2030,-3.814
+MDG,Fiscal balance,2031,-3.596
+MDG,Fiscal balance,2027,-3.034
+MDG,Fiscal balance,2028,-2.984
+MDG,Fiscal balance,2029,-2.995
+MDG,Fiscal balance,2030,-3.038
+MDG,Fiscal balance,2031,-2.97
+MDG,Gen gov debt,2027,50.363
+MDG,Gen gov debt,2028,50.628
+MDG,Gen gov debt,2029,50.556
+MDG,Gen gov debt,2030,48.69
+MDG,Gen gov debt,2031,48.309
+MWI,GDP growth,2027,2.432
+MWI,GDP growth,2028,2.719
+MWI,GDP growth,2029,2.888
+MWI,GDP growth,2030,3.0
+MWI,GDP growth,2031,3.0
+MWI,Inflation,2027,22.048
+MWI,Inflation,2028,20.933
+MWI,Inflation,2029,18.627
+MWI,Inflation,2030,17.606
+MWI,Inflation,2031,16.371
+MWI,Fiscal balance,2027,-11.973
+MWI,Fiscal balance,2028,-11.374
+MWI,Fiscal balance,2029,-11.467
+MWI,Fiscal balance,2030,-11.5
+MWI,Fiscal balance,2031,-11.288
+MWI,Fiscal balance,2027,-3.116
+MWI,Fiscal balance,2028,-2.512
+MWI,Fiscal balance,2029,-2.29
+MWI,Fiscal balance,2030,-2.527
+MWI,Fiscal balance,2031,-2.292
+MWI,Gen gov debt,2027,72.586
+MWI,Gen gov debt,2028,70.242
+MWI,Gen gov debt,2029,68.812
+MWI,Gen gov debt,2030,67.678
+MWI,Gen gov debt,2031,68.236
+MLI,GDP growth,2027,5.7
+MLI,GDP growth,2028,5.5
+MLI,GDP growth,2029,5.25
+MLI,GDP growth,2030,5.25
+MLI,GDP growth,2031,5.25
+MLI,Inflation,2027,2.0
+MLI,Inflation,2028,2.0
+MLI,Inflation,2029,2.0
+MLI,Inflation,2030,2.0
+MLI,Inflation,2031,2.0
+MLI,Fiscal balance,2027,-2.269
+MLI,Fiscal balance,2028,-2.369
+MLI,Fiscal balance,2029,-2.364
+MLI,Fiscal balance,2030,-2.38
+MLI,Fiscal balance,2031,-2.38
+MLI,Fiscal balance,2027,-0.593
+MLI,Fiscal balance,2028,-0.452
+MLI,Fiscal balance,2029,-0.532
+MLI,Fiscal balance,2030,-0.64
+MLI,Fiscal balance,2031,-0.64
+MLI,Gen gov debt,2027,39.672
+MLI,Gen gov debt,2028,38.937
+MLI,Gen gov debt,2029,38.499
+MLI,Gen gov debt,2030,38.177
+MLI,Gen gov debt,2031,37.917
+MUS,GDP growth,2027,3.4
+MUS,GDP growth,2028,3.4
+MUS,GDP growth,2029,3.4
+MUS,GDP growth,2030,3.4
+MUS,GDP growth,2031,3.4
+MUS,Inflation,2027,3.815
+MUS,Inflation,2028,3.584
+MUS,Inflation,2029,3.511
+MUS,Inflation,2030,3.485
+MUS,Inflation,2031,3.476
+MUS,Fiscal balance,2027,-1.85
+MUS,Fiscal balance,2028,-1.509
+MUS,Fiscal balance,2029,-0.788
+MUS,Fiscal balance,2030,-0.467
+MUS,Fiscal balance,2031,-0.027
+MUS,Fiscal balance,2027,0.874
+MUS,Fiscal balance,2028,1.193
+MUS,Fiscal balance,2029,1.599
+MUS,Fiscal balance,2030,1.722
+MUS,Fiscal balance,2031,1.927
+MUS,Gen gov debt,2027,85.032
+MUS,Gen gov debt,2028,83.52
+MUS,Gen gov debt,2029,81.561
+MUS,Gen gov debt,2030,79.775
+MUS,Gen gov debt,2031,78.303
+MOZ,GDP growth,2027,2.731
+MOZ,GDP growth,2028,2.184
+MOZ,GDP growth,2029,3.072
+MOZ,GDP growth,2030,12.102
+MOZ,GDP growth,2031,13.038
+MOZ,Inflation,2027,5.25
+MOZ,Inflation,2028,5.0
+MOZ,Inflation,2029,5.0
+MOZ,Inflation,2030,5.0
+MOZ,Inflation,2031,5.0
+MOZ,Fiscal balance,2027,-7.262
+MOZ,Fiscal balance,2028,-8.351
+MOZ,Fiscal balance,2029,-9.421
+MOZ,Fiscal balance,2030,-9.788
+MOZ,Fiscal balance,2031,-10.962
+MOZ,Fiscal balance,2027,-2.029
+MOZ,Fiscal balance,2028,-1.978
+MOZ,Fiscal balance,2029,-2.007
+MOZ,Fiscal balance,2030,-1.965
+MOZ,Fiscal balance,2031,-2.751
+MOZ,Gen gov debt,2027,113.343
+MOZ,Gen gov debt,2028,120.475
+MOZ,Gen gov debt,2029,126.202
+MOZ,Gen gov debt,2030,122.626
+MOZ,Gen gov debt,2031,111.483
+NAM,GDP growth,2027,2.744
+NAM,GDP growth,2028,3.033
+NAM,GDP growth,2029,3.144
+NAM,GDP growth,2030,2.997
+NAM,GDP growth,2031,3.007
+NAM,Inflation,2027,3.401
+NAM,Inflation,2028,3.001
+NAM,Inflation,2029,3.0
+NAM,Inflation,2030,3.0
+NAM,Inflation,2031,3.0
+NAM,Fiscal balance,2027,-5.387
+NAM,Fiscal balance,2028,-5.032
+NAM,Fiscal balance,2029,-4.978
+NAM,Fiscal balance,2030,-5.13
+NAM,Fiscal balance,2031,-5.258
+NAM,Fiscal balance,2027,0.166
+NAM,Fiscal balance,2028,0.565
+NAM,Fiscal balance,2029,0.644
+NAM,Fiscal balance,2030,0.625
+NAM,Fiscal balance,2031,0.622
+NAM,Gen gov debt,2027,71.157
+NAM,Gen gov debt,2028,72.444
+NAM,Gen gov debt,2029,73.293
+NAM,Gen gov debt,2030,74.481
+NAM,Gen gov debt,2031,75.712
+NER,GDP growth,2027,6.549
+NER,GDP growth,2028,6.008
+NER,GDP growth,2029,6.007
+NER,GDP growth,2030,6.017
+NER,GDP growth,2031,6.0
+NER,Inflation,2027,2.0
+NER,Inflation,2028,2.0
+NER,Inflation,2029,2.0
+NER,Inflation,2030,2.0
+NER,Inflation,2031,2.0
+NER,Fiscal balance,2027,-2.985
+NER,Fiscal balance,2028,-2.993
+NER,Fiscal balance,2029,-3.0
+NER,Fiscal balance,2030,-3.038
+NER,Fiscal balance,2031,-3.045
+NER,Fiscal balance,2027,-1.137
+NER,Fiscal balance,2028,-1.165
+NER,Fiscal balance,2029,-1.438
+NER,Fiscal balance,2030,-1.525
+NER,Fiscal balance,2031,-1.608
+NER,Gen gov debt,2027,44.939
+NER,Gen gov debt,2028,44.729
+NER,Gen gov debt,2029,44.605
+NER,Gen gov debt,2030,44.444
+NER,Gen gov debt,2031,44.281
+NGA,GDP growth,2027,4.324
+NGA,GDP growth,2028,4.133
+NGA,GDP growth,2029,4.236
+NGA,GDP growth,2030,4.186
+NGA,GDP growth,2031,4.181
+NGA,Inflation,2027,15.854
+NGA,Inflation,2028,12.75
+NGA,Inflation,2029,10.0
+NGA,Inflation,2030,10.0
+NGA,Inflation,2031,10.0
+NGA,Fiscal balance,2027,-2.906
+NGA,Fiscal balance,2028,-2.345
+NGA,Fiscal balance,2029,-2.164
+NGA,Fiscal balance,2030,-2.092
+NGA,Fiscal balance,2031,-1.872
+NGA,Fiscal balance,2027,-0.599
+NGA,Fiscal balance,2028,-0.133
+NGA,Fiscal balance,2029,-0.082
+NGA,Fiscal balance,2030,-0.075
+NGA,Fiscal balance,2031,0.017
+NGA,Gen gov debt,2027,33.091
+NGA,Gen gov debt,2028,32.488
+NGA,Gen gov debt,2029,31.727
+NGA,Gen gov debt,2030,30.938
+NGA,Gen gov debt,2031,30.105
+RWA,GDP growth,2027,7.599
+RWA,GDP growth,2028,6.753
+RWA,GDP growth,2029,6.796
+RWA,GDP growth,2030,6.84
+RWA,GDP growth,2031,6.8
+RWA,Inflation,2027,5.0
+RWA,Inflation,2028,5.0
+RWA,Inflation,2029,5.0
+RWA,Inflation,2030,5.0
+RWA,Inflation,2031,5.0
+RWA,Fiscal balance,2027,-3.005
+RWA,Fiscal balance,2028,-2.797
+RWA,Fiscal balance,2029,-3.074
+RWA,Fiscal balance,2030,-1.979
+RWA,Fiscal balance,2031,-3.642
+RWA,Fiscal balance,2027,-0.848
+RWA,Fiscal balance,2028,-0.778
+RWA,Fiscal balance,2029,-1.223
+RWA,Fiscal balance,2030,-0.64
+RWA,Fiscal balance,2031,-1.947
+RWA,Gen gov debt,2027,67.399
+RWA,Gen gov debt,2028,67.416
+RWA,Gen gov debt,2029,67.185
+RWA,Gen gov debt,2030,65.212
+RWA,Gen gov debt,2031,61.598
+STP,GDP growth,2027,3.9
+STP,GDP growth,2028,3.251
+STP,GDP growth,2029,3.251
+STP,GDP growth,2030,3.256
+STP,GDP growth,2031,3.25
+STP,Inflation,2027,7.85
+STP,Inflation,2028,5.95
+STP,Inflation,2029,5.0
+STP,Inflation,2030,5.0
+STP,Inflation,2031,5.0
+STP,Fiscal balance,2027,1.611
+STP,Fiscal balance,2028,2.9
+STP,Fiscal balance,2029,2.699
+STP,Fiscal balance,2030,2.894
+STP,Fiscal balance,2031,2.651
+STP,Fiscal balance,2027,2.168
+STP,Fiscal balance,2028,3.461
+STP,Fiscal balance,2029,3.226
+STP,Fiscal balance,2030,3.4
+STP,Fiscal balance,2031,3.138
+STP,Gen gov debt,2027,47.417
+STP,Gen gov debt,2028,45.303
+STP,Gen gov debt,2029,43.202
+STP,Gen gov debt,2030,40.332
+STP,Gen gov debt,2031,38.309
+SEN,GDP growth,2027,2.284
+SEN,GDP growth,2028,3.015
+SEN,GDP growth,2029,2.901
+SEN,GDP growth,2030,4.269
+SEN,GDP growth,2031,4.589
+SEN,Inflation,2027,2.243
+SEN,Inflation,2028,2.0
+SEN,Inflation,2029,2.0
+SEN,Inflation,2030,2.0
+SEN,Inflation,2031,2.0
+SEN,Fiscal balance,2027,-5.702
+SEN,Fiscal balance,2028,-4.0
+SEN,Fiscal balance,2029,-3.0
+SEN,Fiscal balance,2030,-3.0
+SEN,Fiscal balance,2031,-3.0
+SEN,Fiscal balance,2027,-0.318
+SEN,Fiscal balance,2028,1.561
+SEN,Fiscal balance,2029,2.658
+SEN,Fiscal balance,2030,2.626
+SEN,Fiscal balance,2031,2.468
+SEN,Gen gov debt,2027,133.443
+SEN,Gen gov debt,2028,131.995
+SEN,Gen gov debt,2029,130.545
+SEN,Gen gov debt,2030,125.985
+SEN,Gen gov debt,2031,121.406
+SYC,GDP growth,2027,4.013
+SYC,GDP growth,2028,3.291
+SYC,GDP growth,2029,3.291
+SYC,GDP growth,2030,3.291
+SYC,GDP growth,2031,3.291
+SYC,Inflation,2027,1.735
+SYC,Inflation,2028,2.057
+SYC,Inflation,2029,2.366
+SYC,Inflation,2030,2.503
+SYC,Inflation,2031,2.502
+SYC,Fiscal balance,2027,-1.218
+SYC,Fiscal balance,2028,-0.774
+SYC,Fiscal balance,2029,-0.871
+SYC,Fiscal balance,2030,-0.807
+SYC,Fiscal balance,2031,-0.633
+SYC,Fiscal balance,2027,0.982
+SYC,Fiscal balance,2028,1.345
+SYC,Fiscal balance,2029,1.187
+SYC,Fiscal balance,2030,1.204
+SYC,Fiscal balance,2031,1.237
+SYC,Gen gov debt,2027,54.047
+SYC,Gen gov debt,2028,52.416
+SYC,Gen gov debt,2029,50.591
+SYC,Gen gov debt,2030,48.907
+SYC,Gen gov debt,2031,46.601
+SLE,GDP growth,2027,4.679
+SLE,GDP growth,2028,4.643
+SLE,GDP growth,2029,4.554
+SLE,GDP growth,2030,4.582
+SLE,GDP growth,2031,4.464
+SLE,Inflation,2027,9.0
+SLE,Inflation,2028,9.0
+SLE,Inflation,2029,9.0
+SLE,Inflation,2030,9.0
+SLE,Inflation,2031,9.0
+SLE,Fiscal balance,2027,-0.238
+SLE,Fiscal balance,2028,-0.203
+SLE,Fiscal balance,2029,-0.68
+SLE,Fiscal balance,2030,-0.433
+SLE,Fiscal balance,2031,-0.104
+SLE,Fiscal balance,2027,2.293
+SLE,Fiscal balance,2028,2.342
+SLE,Fiscal balance,2029,1.748
+SLE,Fiscal balance,2030,1.813
+SLE,Fiscal balance,2031,1.92
+SLE,Gen gov debt,2027,41.2
+SLE,Gen gov debt,2028,38.375
+SLE,Gen gov debt,2029,36.167
+SLE,Gen gov debt,2030,34.087
+SLE,Gen gov debt,2031,31.77
+ZAF,GDP growth,2027,1.25
+ZAF,GDP growth,2028,1.549
+ZAF,GDP growth,2029,1.67
+ZAF,GDP growth,2030,1.83
+ZAF,GDP growth,2031,1.808
+ZAF,Inflation,2027,3.401
+ZAF,Inflation,2028,3.001
+ZAF,Inflation,2029,3.0
+ZAF,Inflation,2030,3.0
+ZAF,Inflation,2031,3.0
+ZAF,Fiscal balance,2027,-4.338
+ZAF,Fiscal balance,2028,-4.362
+ZAF,Fiscal balance,2029,-4.089
+ZAF,Fiscal balance,2030,-3.932
+ZAF,Fiscal balance,2031,-3.915
+ZAF,Fiscal balance,2027,1.085
+ZAF,Fiscal balance,2028,1.047
+ZAF,Fiscal balance,2029,1.254
+ZAF,Fiscal balance,2030,1.4
+ZAF,Fiscal balance,2031,1.427
+ZAF,Gen gov debt,2027,79.707
+ZAF,Gen gov debt,2028,80.867
+ZAF,Gen gov debt,2029,81.674
+ZAF,Gen gov debt,2030,82.172
+ZAF,Gen gov debt,2031,82.615
+SSD,GDP growth,2027,3.331
+SSD,GDP growth,2028,3.638
+SSD,GDP growth,2029,3.481
+SSD,GDP growth,2030,3.782
+SSD,GDP growth,2031,3.037
+SSD,Inflation,2027,9.981
+SSD,Inflation,2028,5.761
+SSD,Inflation,2029,5.885
+SSD,Inflation,2030,4.764
+SSD,Inflation,2031,4.549
+SSD,Fiscal balance,2027,-0.223
+SSD,Fiscal balance,2028,-1.027
+SSD,Fiscal balance,2029,-1.104
+SSD,Fiscal balance,2030,-1.055
+SSD,Fiscal balance,2031,-0.935
+SSD,Fiscal balance,2027,1.809
+SSD,Fiscal balance,2028,1.027
+SSD,Fiscal balance,2029,0.945
+SSD,Fiscal balance,2030,0.973
+SSD,Fiscal balance,2031,1.036
+SSD,Gen gov debt,2027,49.939
+SSD,Gen gov debt,2028,47.614
+SSD,Gen gov debt,2029,45.843
+SSD,Gen gov debt,2030,43.992
+SSD,Gen gov debt,2031,42.752
+TZA,GDP growth,2027,6.104
+TZA,GDP growth,2028,6.305
+TZA,GDP growth,2029,6.303
+TZA,GDP growth,2030,6.258
+TZA,GDP growth,2031,6.274
+TZA,Inflation,2027,4.274
+TZA,Inflation,2028,4.043
+TZA,Inflation,2029,4.01
+TZA,Inflation,2030,4.01
+TZA,Inflation,2031,4.01
+TZA,Fiscal balance,2027,-3.213
+TZA,Fiscal balance,2028,-3.191
+TZA,Fiscal balance,2029,-3.214
+TZA,Fiscal balance,2030,-3.202
+TZA,Fiscal balance,2031,-3.156
+TZA,Fiscal balance,2027,-0.539
+TZA,Fiscal balance,2028,-0.532
+TZA,Fiscal balance,2029,-0.56
+TZA,Fiscal balance,2030,-0.562
+TZA,Fiscal balance,2031,-0.558
+TZA,Gen gov debt,2027,47.498
+TZA,Gen gov debt,2028,46.203
+TZA,Gen gov debt,2029,45.057
+TZA,Gen gov debt,2030,44.014
+TZA,Gen gov debt,2031,42.633
+TGO,GDP growth,2027,5.3
+TGO,GDP growth,2028,5.5
+TGO,GDP growth,2029,5.5
+TGO,GDP growth,2030,5.5
+TGO,GDP growth,2031,5.5
+TGO,Inflation,2027,2.3
+TGO,Inflation,2028,2.0
+TGO,Inflation,2029,2.0
+TGO,Inflation,2030,2.0
+TGO,Inflation,2031,2.0
+TGO,Fiscal balance,2027,-3.031
+TGO,Fiscal balance,2028,-3.032
+TGO,Fiscal balance,2029,-3.031
+TGO,Fiscal balance,2030,-3.024
+TGO,Fiscal balance,2031,-3.001
+TGO,Fiscal balance,2027,-0.4
+TGO,Fiscal balance,2028,-0.484
+TGO,Fiscal balance,2029,-0.7
+TGO,Fiscal balance,2030,-0.8
+TGO,Fiscal balance,2031,-0.9
+TGO,Gen gov debt,2027,63.053
+TGO,Gen gov debt,2028,61.543
+TGO,Gen gov debt,2029,60.212
+TGO,Gen gov debt,2030,58.262
+TGO,Gen gov debt,2031,56.713
+UGA,GDP growth,2027,8.196
+UGA,GDP growth,2028,7.01
+UGA,GDP growth,2029,6.667
+UGA,GDP growth,2030,6.212
+UGA,GDP growth,2031,5.887
+UGA,Inflation,2027,4.869
+UGA,Inflation,2028,4.849
+UGA,Inflation,2029,5.0
+UGA,Inflation,2030,5.0
+UGA,Inflation,2031,5.0
+UGA,Fiscal balance,2027,-4.919
+UGA,Fiscal balance,2028,-4.562
+UGA,Fiscal balance,2029,-5.151
+UGA,Fiscal balance,2030,-4.554
+UGA,Fiscal balance,2031,-4.64
+UGA,Fiscal balance,2027,-0.252
+UGA,Fiscal balance,2028,0.347
+UGA,Fiscal balance,2029,-0.053
+UGA,Fiscal balance,2030,0.582
+UGA,Fiscal balance,2031,0.701
+UGA,Gen gov debt,2027,54.368
+UGA,Gen gov debt,2028,53.937
+UGA,Gen gov debt,2029,53.452
+UGA,Gen gov debt,2030,53.402
+UGA,Gen gov debt,2031,53.294
+ZMB,GDP growth,2027,4.677
+ZMB,GDP growth,2028,5.06
+ZMB,GDP growth,2029,5.29
+ZMB,GDP growth,2030,5.318
+ZMB,GDP growth,2031,5.293
+ZMB,Inflation,2027,8.0
+ZMB,Inflation,2028,7.0
+ZMB,Inflation,2029,7.0
+ZMB,Inflation,2030,7.0
+ZMB,Inflation,2031,7.0
+ZMB,Fiscal balance,2027,-4.416
+ZMB,Fiscal balance,2028,-3.117
+ZMB,Fiscal balance,2029,-1.88
+ZMB,Fiscal balance,2030,-1.511
+ZMB,Fiscal balance,2031,-1.963
+ZMB,Fiscal balance,2027,2.022
+ZMB,Fiscal balance,2028,2.548
+ZMB,Fiscal balance,2029,3.038
+ZMB,Fiscal balance,2030,3.02
+ZMB,Fiscal balance,2031,2.989
+ZWE,GDP growth,2027,4.186
+ZWE,GDP growth,2028,4.197
+ZWE,GDP growth,2029,4.212
+ZWE,GDP growth,2030,4.229
+ZWE,GDP growth,2031,4.246
+ZWE,Inflation,2027,7.984
+ZWE,Inflation,2028,8.034
+ZWE,Inflation,2029,8.034
+ZWE,Inflation,2030,8.034
+ZWE,Inflation,2031,8.034
+ZWE,Fiscal balance,2027,-0.867
+ZWE,Fiscal balance,2028,-0.901
+ZWE,Fiscal balance,2029,-0.894
+ZWE,Fiscal balance,2030,-0.905
+ZWE,Fiscal balance,2031,-0.911
+ZWE,Fiscal balance,2027,0.526
+ZWE,Fiscal balance,2028,0.525
+ZWE,Fiscal balance,2029,0.525
+ZWE,Fiscal balance,2030,0.525
+ZWE,Fiscal balance,2031,0.525
+ZWE,Gen gov debt,2027,41.355
+ZWE,Gen gov debt,2028,40.403
+ZWE,Gen gov debt,2029,39.454
+ZWE,Gen gov debt,2030,38.521
+ZWE,Gen gov debt,2031,37.608

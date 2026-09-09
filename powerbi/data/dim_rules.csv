@@ -1,0 +1,33 @@
+rule_id,side,indicator,operator,threshold,label_en,label_fr
+inflation_high,risk,Inflation,>,10.0,Inflation above 10 %,Inflation supérieure à 10 %
+recession,risk,GDP growth,<,0.0,Negative GDP growth,Croissance du PIB négative
+reserves_low,risk,Reserves,<,3.0,Reserves below 3 months of imports,Réserves sous 3 mois d'importations
+debt_high,risk,Gen gov debt,>,90.0,Government debt above 90 % of GDP,Dette publique au-dessus de 90 % du PIB
+ca_deficit,risk,Current account,<,-5.0,Current account deficit beyond -5 % of GDP,Déficit courant au-delà de -5 % du PIB
+unemp_high,risk,Unemployment,>,15.0,Unemployment above 15 %,Chômage supérieur à 15 %
+youth_unemp_high,risk,Youth unemployment,>,25.0,Youth unemployment above 25 %,Chômage des jeunes supérieur à 25 %
+political_instability,risk,Political stability,<,-1.0,Political stability below -1.0,"Stabilité politique inférieure à -1,0"
+corruption_high,risk,Control of corruption,<,-0.5,Control of corruption below -0.5,"Maîtrise de la corruption inférieure à -0,5"
+gov_effectiveness_low,risk,Government effectiveness,<,-0.5,Government effectiveness below -0.5,"Efficacité du gouvernement inférieure à -0,5"
+rule_of_law_low,risk,Rule of law,<,-0.5,Rule of law below -0.5,"État de droit inférieur à -0,5"
+regulatory_quality_low,risk,Regulatory quality,<,-0.5,Regulatory quality below -0.5,"Qualité réglementaire inférieure à -0,5"
+gini_high,risk,Gini,>,45.0,Gini index above 45 (high inequality),Indice de Gini supérieur à 45 (inégalités élevées)
+external_debt_high,risk,External debt,>,60.0,External debt above 60% of GNI,Dette externe supérieure à 60 % du RNB
+fiscal_deficit,risk,Fiscal balance,<,-5.0,Fiscal deficit beyond -5 % of GDP,Déficit budgétaire au-delà de -5 % du PIB
+debt_service_high,risk,Debt service,>,25.0,Debt service above 25 % of exports,Service de la dette au-dessus de 25 % des exports
+inflation_low,opportunity,Inflation,<,3.0,Inflation contained below 3 %,Inflation contenue sous 3 %
+growth_strong,opportunity,GDP growth,>,5.0,Strong GDP growth above 5 %,Croissance du PIB soutenue au-dessus de 5 %
+reserves_high,opportunity,Reserves,>,6.0,Comfortable reserves above 6 months of imports,Réserves confortables au-dessus de 6 mois d'importations
+debt_low,opportunity,Gen gov debt,<,40.0,Government debt below 40 % of GDP,Dette publique sous 40 % du PIB
+ca_surplus,opportunity,Current account,>,3.0,Current account surplus above 3 % of GDP,Excédent courant au-dessus de 3 % du PIB
+unemp_low,opportunity,Unemployment,<,5.0,Low unemployment below 5 %,Chômage faible sous 5 %
+youth_unemp_low,opportunity,Youth unemployment,<,12.0,Youth unemployment below 12 %,Chômage des jeunes sous 12 %
+pol_stability_high,opportunity,Political stability,>,0.5,Strong political stability above 0.5,"Stabilité politique solide au-dessus de 0,5"
+corruption_ctrl_high,opportunity,Control of corruption,>,0.5,Good control of corruption above 0.5,"Maîtrise de la corruption solide au-dessus de 0,5"
+gov_eff_high,opportunity,Government effectiveness,>,0.5,Effective government above 0.5,"Efficacité du gouvernement solide au-dessus de 0,5"
+rule_of_law_high,opportunity,Rule of law,>,0.5,Strong rule of law at 1.50: solid legal enforcement.,État de droit solide à 1.50 : application du droit fiable.
+regulatory_quality_high,opportunity,Regulatory quality,>,0.5,Strong regulatory quality at 1.50: sound policy framework.,Qualité réglementaire solide à 1.50 : cadre politique sain.
+gini_low,opportunity,Gini,<,35.0,"Low inequality (Gini below 35, value: 34.0)","Inégalités contenues (Gini sous 35, valeur : 34.0)"
+ext_debt_low,opportunity,External debt,<,30.0,External debt below 30 % of GNI,Dette externe sous 30 % du RNB
+fiscal_surplus,opportunity,Fiscal balance,>,1.0,Fiscal surplus of 2.0% of GDP: comfortable policy space.,Excédent budgétaire de 2.0% du PIB : marge de manœuvre confortable.
+debt_service_low,opportunity,Debt service,<,10.0,Low debt service at 9.0% of exports: manageable external burden.,Service de la dette faible a 9.0% des exports : charge externe maitrisee.
