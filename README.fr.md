@@ -88,7 +88,7 @@ Country Risk Desk permet d'établir, pour chacune des 217 économies couvertes, 
 
 ## Installation locale
 
-```bash
+```
 git clone https://github.com/maxin-dac/country-risk-desk.git
 cd country-risk-desk
 pip install -r requirements.txt
@@ -97,7 +97,7 @@ streamlit run app.py
 
 ## Structure du projet
 
-```text
+```
 country-risk-desk/
 ├── app.py               # entrée Streamlit (brief / comparaison / vue globale)
 ├── src/
@@ -122,7 +122,7 @@ country-risk-desk/
 
 ## Actualisation des données
 
-```bash
+```
 python scripts/fetch_worldbank.py
 python scripts/fetch_wgi.py
 python scripts/fetch_imf.py
@@ -140,7 +140,7 @@ python scripts/fetch_risk_extras.py
 
 ## Auteur
 
-Maxime NDACLEU - BI & Data Analyst
+Maxime NDACLEU - Data Analyst & BI Analyst
 
 <p align="left">
 <a href="https://github.com/maxin-dac"><img src="https://img.shields.io/badge/GitHub-maxin--dac-181717?style=flat&logo=github&logoColor=white" alt="GitHub" /></a>

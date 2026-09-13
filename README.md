@@ -88,7 +88,7 @@ Country Risk Desk provides a structured analysis brief for each of the 217 cover
 
 ## Local installation
 
-```bash
+```
 git clone https://github.com/maxin-dac/country-risk-desk.git
 cd country-risk-desk
 pip install -r requirements.txt
@@ -97,7 +97,7 @@ streamlit run app.py
 
 ## Project structure
 
-```text
+```
 country-risk-desk/
 ├── app.py               # Streamlit entry point (brief / compare / dashboard)
 ├── src/
@@ -122,7 +122,7 @@ country-risk-desk/
 
 ## Data refresh
 
-```bash
+```
 python scripts/fetch_worldbank.py
 python scripts/fetch_wgi.py
 python scripts/fetch_imf.py
@@ -140,7 +140,7 @@ python scripts/fetch_risk_extras.py
 
 ## Author
 
-Maxime NDACLEU - BI & Data Analyst
+Maxime NDACLEU - Data Analyst & BI Analyst
 
 <p align="left">
 <a href="https://github.com/maxin-dac"><img src="https://img.shields.io/badge/GitHub-maxin--dac-181717?style=flat&logo=github&logoColor=white" alt="GitHub" /></a>
