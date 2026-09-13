@@ -1,26 +1,3 @@
-# Jumeau Power BI / Power BI twin (strategie "thin")
-
-Principe : Python calcule tout, Power BI ne fait qu'afficher. Zero DAX, zero mesure.
-Source de verite : scripts/export_powerbi.py (data/ + src/alerts.py + src/i18n.py + src/ratings.py + src/analytics.py).
-Regeneration : python scripts/export_powerbi.py apres chaque refresh mensuel.
-
-Tables (powerbi/data/pbi_*.csv) :
-| Table | Grain | Contenu |
-|---|---|---|
-| pbi_countries | 1 ligne / economie | iso3, noms FR/EN, regions FR/EN |
-| pbi_indicators | 1 ligne / indicateur | libelles, unite, pilier, sens, cadre de risque |
-| pbi_latest | 1 ligne / pays x indicateur | derniere valeur + date, variations 3/12 mois, mediane regionale, position, tendance 5 ans + sens |
-| pbi_signals | 1 ligne / signal declenche | cote risk/opportunity, regle, libelles, valeur |
-| pbi_counts | 1 ligne / pays | n_risks, n_opps, n_total |
-| pbi_position | 1 ligne / pays | croissance x inflation (pre-pivote pour le nuage de points) |
-| pbi_ratings_long | 1 ligne / pays x agence | notation, perspective, date ISO, categorie FR/EN |
-| pbi_ratings_wide | 1 ligne / pays | 3 notations cote a cote, notch gap, divergences, has_divergence |
-| pbi_history | 1 ligne / pays x indicateur x date | serie historique |
-| pbi_projections | 1 ligne / pays x indicateur x annee | projections FMI 2027-2031 |
-
-Relations : auto-detectees a l'import (colonnes iso3 et indicator portent le meme nom partout).
-Repartition des roles : Streamlit = interactif (brief, scenarios, exports) ; Power BI = restitution (cartes, comparaisons, seuils, notations).
-
 # Construction du .pbix (10 minutes, zero DAX)
 
 1. Power BI Desktop > Obtenir les donnees > Texte/CSV : importer les 10 tables pbi_*.csv.
@@ -46,3 +23,5 @@ Repartition des roles : Streamlit = interactif (brief, scenarios, exports) ; Pow
 | | table divergences | pbi_ratings_wide, filtre visuel has_divergence = 1 |
 | Suivi seuils | matrice | lignes pbi_countries[country_fr], colonnes pbi_signals[rule_id], valeurs Nombre de rule_id |
 | | slicers | pbi_signals[side], pbi_indicators[label_fr] |
+
+Un canvas blanc = CSV vide ou slicer hors page : verifiable en une ligne de pandas, jamais un mystere.

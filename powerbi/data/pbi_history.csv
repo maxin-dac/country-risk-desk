@@ -1,4 +1,4 @@
-country,indicator,date,value
+iso3,indicator,date,value
 NGA,Inflation,2025-12-31,23.0101235833333
 NGA,Inflation,2024-12-31,33.2416590552749
 NGA,Inflation,2023-12-31,24.659550203114
