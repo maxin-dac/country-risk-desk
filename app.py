@@ -190,12 +190,26 @@ elif mode == "compare":
 else:
     render_dashboard(df, alerts, lang)
 
-st.sidebar.markdown(f"""
-<div style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(148,163,184,.2);
-text-align:center;color:#8fa3b8;font-size:.75rem;">
-<p style="margin:.75rem 0 .75rem 0;font-weight:600;letter-spacing:.05em;">© 2026 Maxime NDACLEU</p>
-<div style="display:flex;justify-content:center;gap:1.25rem;">
-<a href="https://github.com/maxin-dac" target="_blank" style="color:#8fa3b8;">GitHub</a>
-<a href="https://www.linkedin.com/in/maximendacleu" target="_blank" style="color:#8fa3b8;">LinkedIn</a>
-</div></div>
+st.sidebar.markdown("""
+<div style="margin-top:3rem;padding-top:1.25rem;border-top:1px solid rgba(148,163,184,.18);text-align:center;color:#8fa3b8;font-size:.75rem;">
+<p style="margin:0 0 .75rem 0;font-weight:600;letter-spacing:.05em;color:#94a3b8;">© 2026 Maxime NDACLEU</p>
+<div class="sidebar-social-container">
+  <a href="https://github.com/maxin-dac" target="_blank" class="sidebar-social-btn github">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+      <path d="M9 18c-4.51 2-5-2-7-2"></path>
+    </svg>
+    GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/maximendacleu" target="_blank" class="sidebar-social-btn linkedin">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+      <rect x="2" y="9" width="4" height="12"></rect>
+      <circle cx="4" cy="4" r="2"></circle>
+    </svg>
+    LinkedIn
+  </a>
+</div>
+</div>
 """, unsafe_allow_html=True)
+

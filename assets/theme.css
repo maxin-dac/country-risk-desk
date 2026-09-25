@@ -646,3 +646,58 @@ padding:.5rem .7rem;margin-bottom:.5rem;background:rgba(15,22,38,.4)}
 .tmp-vals{font-family:var(--mono);font-size:.78rem;color:var(--text2)}
 .tmp-bad .tmp-arrow{color:var(--risk2)}
 .tmp-good .tmp-arrow{color:var(--opp2)}
+
+/* Sidebar Social Buttons */
+.sidebar-social-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.sidebar-social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-family: var(--mono, monospace);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: rgba(30, 41, 59, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: var(--text2, #c8d6e5) !important;
+  text-decoration: none !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-social-btn svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, stroke 0.2s ease, fill 0.2s ease;
+}
+
+.sidebar-social-btn.github:hover {
+  background: rgba(88, 166, 255, 0.15);
+  border-color: rgba(88, 166, 255, 0.45);
+  color: #58a6ff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.25);
+}
+
+.sidebar-social-btn.linkedin:hover {
+  background: rgba(10, 102, 194, 0.2);
+  border-color: rgba(10, 102, 194, 0.55);
+  color: #38bdf8 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
+}
+
+.sidebar-social-btn:hover svg {
+  transform: scale(1.1);
+}
+
