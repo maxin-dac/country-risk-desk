@@ -28,9 +28,11 @@ jobs:
 
       - name: Commit & push si changements
         run: |
+          python scripts/update_build_info.py || true
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ src/_build_info.json
           git diff --cached --quiet && { echo "Aucun changement de donnees"; exit 0; }
           git commit -m "data: refresh mensuel automatique (WB/WGI/IMF) [skip ci]"
           git push
+

@@ -98,11 +98,15 @@ jobs:
 
       - name: Commit & push data + docs (conventional format)
         if: steps.diff.outputs.changed == 'true'
+        run: python scripts/update_build_info.py || true
+
+      - name: Commit & push data + docs (conventional format)
+        if: steps.diff.outputs.changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "data: refresh mensuel sources officielles (WB + WGI + IMF)"
           branch: main
-          file_pattern: "data/* docs/API.md"
+          file_pattern: "data/* docs/API.md src/_build_info.json"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
 

@@ -61,6 +61,7 @@ jobs:
           skip-commit: "false"
           version-file: "./pyproject.toml"
           version-path: "project.version"
+          pre-commit: "python scripts/update_build_info.py"
           git-user-name: "github-actions[bot]"
           git-user-email: "github-actions[bot]@users.noreply.github.com"
 
