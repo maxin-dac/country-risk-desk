@@ -9,7 +9,8 @@ Interface bilingue 🇫🇷/🇬🇧 · 217 économies · 17 indicateurs · nota
 ![aperçu](assets/aperçu.jpeg)
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Power%20BI-Jumeau%20reporting-F2C811?style=flat&logo=powerbi&logoColor=white" alt="Power BI" />
+<img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Streamlit-1.45%2B-FF4B4B?style=flat&logo=streamlit&logoColor=white" alt="Streamlit" />
   <img src="https://img.shields.io/badge/pandas-2.x-150458?style=flat&logo=pandas&logoColor=white" alt="pandas" />
   <img src="https://img.shields.io/badge/Plotly-5.x-636AFD?style=flat&logo=plotly&logoColor=white" alt="Plotly" />
@@ -35,6 +36,7 @@ Interface bilingue 🇫🇷/🇬🇧 · 217 économies · 17 indicateurs · nota
 - [Structure du projet](#structure-du-projet)
 - [Actualisation des données](#actualisation-des-données)
 - [Documentation et tests](#documentation-et-tests)
+- [Jumeau Power BI](#jumeau-power-bi)
 - [Auteur](#auteur)
 - [Licence](#licence)
 
@@ -99,25 +101,34 @@ streamlit run app.py
 
 ```
 country-risk-desk/
-├── app.py               # entrée Streamlit (brief / comparaison / vue globale)
+├── app.py                  # Entrée Streamlit (brief / comparaison / vue globale / suivi seuils)
 ├── src/
-│   ├── csv_loader.py    # chargement CSV + statistiques (variations, médiane, tendance)
-│   ├── ratings.py       # lecture des notations souveraines (S&P, Moody's, Fitch)
-│   ├── alerts.py        # règles de seuils : signaux de risque et d'opportunité
-│   ├── projections.py   # trajectoire FMI + comparaison à la tendance
-│   ├── dashboard.py     # carte des notations, distribution, synthèse
-│   ├── compare.py       # courbes et tableaux de comparaison
-│   ├── analytics.py     # analyse de scénarios + lecture croisée des agences
-│   ├── ui_render.py     # rendu HTML des briefs
-│   ├── ui_theme.py      # charte graphique + masthead
-│   ├── plot_theme.py    # thème Plotly et unités (référence unique)
-│   ├── i18n.py          # libellés FR/EN, ordre des indicateurs, unités
-│   └── pdf_export.py    # export PDF bilingue
-├── scripts/             # fetch (BM, WGI, FMI), panneaux de données & générateur de doc
-├── data/                # CSV/XLSX versionnés, notations, countries.csv, panneaux intermédiaires
-├── docs/                # ARCHITECTURE.md + API.md
-├── tests/               # pytest (règles de seuils)
-└── assets/              # theme.css + captures
+│   ├── csv_loader.py       # Chargement CSV + statistiques (variations, médiane, tendance)
+│   ├── ratings.py          # Lecture des notations souveraines (S&P, Moody's, Fitch)
+│   ├── alerts.py           # Règles de seuils : signaux de risque et d'opportunité
+│   ├── projections.py      # Trajectoire FMI + comparaison à la tendance
+│   ├── dashboard.py        # Carte des notations, distribution, synthèse
+│   ├── compare.py          # Courbes et tableaux de comparaison
+│   ├── analytics.py        # Analyse de scénarios + lecture croisée des agences
+│   ├── ui_render.py        # Rendu HTML des briefs
+│   ├── ui_theme.py         # Charte graphique + masthead
+│   ├── plot_theme.py       # Thème Plotly et unités (référence unique)
+│   ├── i18n.py             # Libellés FR/EN, ordre des indicateurs (RISK_ORDER), unités
+│   ├── version.py          # Version sémantique (source de vérité unique)
+│   └── pdf_export.py       # Export PDF bilingue
+├── scripts/
+│   ├── export_powerbi.py   # Export du jumeau Power BI (tables pbi_* pré-calculées)
+│   └── …                   # fetch (BM, WGI, FMI), panneaux de données & générateur de doc
+├── powerbi/
+│   └── data/               # 10 tables pbi_*.csv générées, prêtes à afficher
+├── data/                   # CSV/XLSX versionnés, notations, countries.csv, panneaux intermédiaires
+├── docs/                   # ARCHITECTURE.md + API.md
+├── tests/                  # pytest (règles de seuils)
+├── assets/                 # theme.css + captures
+├── .github/workflows/      # refresh-data.yml (refresh mensuel automatisé)
+├── CHANGELOG.md            # Journal des versions (Keep a Changelog)
+├── README.md / README.fr.md
+└── requirements.txt
 ```
 
 ## Actualisation des données
@@ -138,9 +149,28 @@ python scripts/fetch_risk_extras.py
 - `docs/API.md` - référence générée par `python scripts/build_docs.py`.
 - `pytest` - tests unitaires des règles de seuils.
 
+## Jumeau Power BI
+
+> En français uniquemeent
+
+![Aperçu](assets/vue_globale.png)
+
+En complément de l'application Streamlit (interactive), un jumeau Power BI restitue le même cadre de risque en mode reporting : dossier `powerbi/`.
+
+| Tables `powerbi/data/pbi_*.csv` | Grain |
+|---|---|
+| pbi_countries / pbi_indicators | dimensions : noms FR/EN, régions, unités, piliers |
+| pbi_latest | 1 ligne / pays × indicateur : valeur + date, variations, médiane, position, tendance |
+| pbi_signals / pbi_counts | signaux déclenchés (1 ligne = 1 signal) et décomptes par pays |
+| pbi_position | croissance × inflation pré-pivoté (nuage de points) |
+| pbi_ratings_long / pbi_ratings_wide | notations par agence, catégories, divergences |
+| pbi_history / pbi_projections | séries historiques et projections FMI 2027-2031 |
+
+Pages du rapport : Brief pays (cartes, courbe historique, projections), Comparaison (courbes, nuage croissance × inflation, barres de signaux), Vue globale (choroplèthe, distribution, Suivi des seuils).
+
 ## Auteur
 
-Maxime NDACLEU - Data Analyst & BI Analyst
+Maxime NDACLEU - Data Analyst & BI
 
 <p align="left">
 <a href="https://github.com/maxin-dac"><img src="https://img.shields.io/badge/GitHub-maxin--dac-181717?style=flat&logo=github&logoColor=white" alt="GitHub" /></a>
