@@ -1,3 +1,10 @@
+## [0.8.1](https://github.com/maxin-dac/country-risk-desk/compare/v0.8.0...v0.8.1) (2026-09-25)
+
+
+### Bug Fixes
+
+* resolve console unicode encoding in update_build_info ([8a10bb6](https://github.com/maxin-dac/country-risk-desk/commit/8a10bb6d2ec87e98a8d22d816c13f3fcef38cf20))
+
 ## [0.8.0](https://github.com/maxin-dac/country-risk-desk/compare/v1.1.0...v0.8.0) (2026-09-25)
 
 
