@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/maxin-dac/country-risk-desk/compare/v0.5.0...v0.5.1) (2026-09-13)
+
+
+### Bug Fixes
+
+* correct code block formatting in README files ([3b71856](https://github.com/maxin-dac/country-risk-desk/commit/3b7185608379d5be20dc52b72e8bb8c1e92011f3))
+
 ## [0.5.0](https://github.com/maxin-dac/country-risk-desk/compare/v0.4.0...v0.5.0) (2026-09-09)
 
 
