@@ -28,7 +28,7 @@ def update_build_info():
     }
     target = root / "src" / "_build_info.json"
     target.write_text(json.dumps(info, indent=2) + "\n", encoding="utf-8")
-    print(f"✅ Build info mis a jour dans {target}: {info}")
+    print(f"[INFO] Build info mis a jour dans {target}: {info}")
 
 
 if __name__ == "__main__":
