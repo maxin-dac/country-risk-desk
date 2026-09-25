@@ -3,7 +3,9 @@
 Zero DAX cote PBI ; cles iso3/indicator identiques partout (auto-detection des relations).
 Sources de verite : data/*.csv + src/alerts.py + src/i18n.py + src/ratings.py + src/analytics.py.
 """
+import inspect
 import pathlib, sys
+import re
 import pandas as pd
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -21,6 +23,7 @@ fact = pd.read_csv(DATA / "macro_indicators.csv", low_memory=False)
 fact["value"] = pd.to_numeric(fact["value"], errors="coerce")
 fact["date"] = pd.to_datetime(fact["date"], errors="coerce")
 fact = fact.dropna(subset=["value", "date"])
+fact = fact[fact["indicator"].isin(RISK_ORDER)].copy()  # perimetre = cadre de risque (17)
 countries = pd.read_csv(DATA / "countries.csv")
 
 REGION_FR = {
@@ -48,7 +51,7 @@ def _lab(k):
     return k, k
 
 rows = []
-for k in sorted(fact["indicator"].unique()):
+for k in [k for k in RISK_ORDER if k in set(fact["indicator"])]:
     en, fr = _lab(k)
     u = fact.loc[fact.indicator == k, "unit"].mode()
     p = PILLARS.get(k, ("", ""))
@@ -105,6 +108,23 @@ lat["trend_sens_en"] = lat.apply(lambda r: _sens(r, "en"), axis=1)
 lat.drop(columns=["region_en"]).to_csv(OUT / "pbi_latest.csv", index=False)
 
 # ---------------- signaux declenches (une ligne = un signal) ----------------
+def _op_thr(rule):
+    try:
+        src = inspect.getsource(rule["cond"])
+        m = re.search(r"v\s*(>|<)\s*(-?\d+(?:\.\d+)?)", src)
+        if m:
+            return m.group(1), float(m.group(2))
+    except Exception:
+        pass
+    return "?", 0
+
+_SIG_LAB = {}
+for _rules in (RULES, OPP_RULES):
+    for _rule in _rules:
+        _op, _thr = _op_thr(_rule)
+        _en_i, _fr_i = _lab(_rule["indicator"])
+        _SIG_LAB[_rule["id"]] = (f"{_en_i} {_op} {_thr:g}", f"{_fr_i} {_op} {_thr:g}")
+
 sig = []
 for r in lat.itertuples():
     for side, rules in (("risk", RULES), ("opportunity", OPP_RULES)):
@@ -114,8 +134,9 @@ for r in lat.itertuples():
                 fr = rule["fr"] if isinstance(rule["fr"], str) else rule["fr"](r.latest_value)
                 sig.append({"iso3": r.iso3, "indicator": r.indicator, "side": side,
                             "rule_id": rule["id"], "label_en": en, "label_fr": fr,
+                            "rule_en": _SIG_LAB[rule["id"]][0], "rule_fr": _SIG_LAB[rule["id"]][1],
                             "value": r.latest_value})
-sig = pd.DataFrame(sig, columns=["iso3", "indicator", "side", "rule_id", "label_en", "label_fr", "value"])
+sig = pd.DataFrame(sig, columns=["iso3", "indicator", "side", "rule_id", "label_en", "label_fr", "rule_en", "rule_fr", "value"])
 sig.to_csv(OUT / "pbi_signals.csv", index=False)
 
 cnt = sig.groupby(["iso3", "side"]).size().unstack(fill_value=0)
@@ -135,6 +156,28 @@ pos = pd.DataFrame({"iso3": piv.index,
 pos.to_csv(OUT / "pbi_position.csv", index=False)
 
 # ---------------- notations : long + wide + categories + divergences ----------------
+def _lerp(c1, c2, u):
+    return tuple(round(c1[i] + (c2[i] - c1[i]) * u) for i in range(3))
+
+def _hx(c):
+    return "#%02x%02x%02x" % c
+
+_TXT_BLUE, _TXT_MID, _TXT_RED = (29, 78, 216), (100, 116, 139), (185, 28, 28)
+_BG_BLUE, _BG_MID, _BG_RED = (219, 234, 254), (226, 232, 240), (254, 226, 226)
+
+def rating_colors(rating):
+    """Degradé bleu (AAA) -> rouge (D), gris si non note. Base : _ORD (src.analytics)."""
+    r = (rating or "").strip()
+    o = _ORD.get(r) if r else None
+    if o is None:
+        return "#64748b", "#f1f5f9"
+    tt = min(o, 21) / 21.0
+    if tt <= 0.5:
+        u = tt / 0.5
+        return _hx(_lerp(_TXT_BLUE, _TXT_MID, u)), _hx(_lerp(_BG_BLUE, _BG_MID, u))
+    u = (tt - 0.5) / 0.5
+    return _hx(_lerp(_TXT_MID, _TXT_RED, u)), _hx(_lerp(_BG_MID, _BG_RED, u))
+
 def _cat(r):
     r = (r or "").strip()
     if not r:
@@ -142,6 +185,14 @@ def _cat(r):
     if r in ("D", "SD", "RD"):
         return "Default / withdrawn", "Defaut / retire"
     return ("Investment grade", "Investment grade") if _ORD.get(r, 99) <= 9 else ("Speculative", "Speculatif")
+
+LONG_COLS = ["iso3", "agency", "rating", "outlook", "date_iso",
+             "category_en", "category_fr", "color_text", "color_bg"]
+WIDE_COLS = ["iso3",
+             "sp_rating", "sp_outlook", "sp_date", "sp_category_fr", "sp_color_text", "sp_color_bg",
+             "mo_rating", "mo_outlook", "mo_date", "mo_category_fr", "mo_color_text", "mo_color_bg",
+             "fi_rating", "fi_outlook", "fi_date", "fi_category_fr", "fi_color_text", "fi_color_bg",
+             "notch_gap", "divergence_en", "divergence_fr", "has_divergence"]
 
 long_r, wide = [], {}
 for iso, r in rat._load().items():
@@ -154,10 +205,13 @@ for iso, r in rat._load().items():
         d = pd.to_datetime(dt, errors="coerce")
         dto = d.strftime("%Y-%m-%d") if pd.notna(d) else dt
         en, fr = _cat(rt)
+        ct, cb = rating_colors(rt)
         long_r.append({"iso3": iso, "agency": agency, "rating": rt, "outlook": ol,
-                       "date_iso": dto, "category_en": en, "category_fr": fr})
+                       "date_iso": dto, "category_en": en, "category_fr": fr,
+                       "color_text": ct, "color_bg": cb})
         wide[iso].update({f"{pre}_rating": rt, f"{pre}_outlook": ol, f"{pre}_date": dto,
-                          f"{pre}_category_fr": fr})
+                          f"{pre}_category_fr": fr,
+                          f"{pre}_color_text": ct, f"{pre}_color_bg": cb})
         if rt and _ORD.get(rt) is not None and _ORD.get(rt) < 21:
             ords[agency] = _ORD[rt]
     kinds_en, kinds_fr = [], []
@@ -174,8 +228,8 @@ for iso, r in rat._load().items():
     wide[iso]["divergence_en"] = " + ".join(kinds_en)
     wide[iso]["divergence_fr"] = " + ".join(kinds_fr)
     wide[iso]["has_divergence"] = 1 if kinds_en else 0
-pd.DataFrame(long_r).to_csv(OUT / "pbi_ratings_long.csv", index=False)
-pd.DataFrame(list(wide.values())).to_csv(OUT / "pbi_ratings_wide.csv", index=False)
+pd.DataFrame(long_r).reindex(columns=LONG_COLS).to_csv(OUT / "pbi_ratings_long.csv", index=False)
+pd.DataFrame(list(wide.values())).reindex(columns=WIDE_COLS).to_csv(OUT / "pbi_ratings_wide.csv", index=False)
 
 # ---------------- historique + projections ----------------
 h = fact[["country", "indicator", "date", "value"]].rename(columns={"country": "iso3"})
@@ -196,6 +250,7 @@ if p.exists():
         proj = proj.rename(columns={"country": "iso3"})
     proj["value"] = pd.to_numeric(proj["value"], errors="coerce")
     proj = proj.dropna(subset=["value"])
+    proj = proj[proj["indicator"].isin(RISK_ORDER)]
     proj[["iso3", "indicator", "year", "value"]].to_csv(OUT / "pbi_projections.csv", index=False)
 
 print("[OK] export thin Power BI :")

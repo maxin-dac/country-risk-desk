@@ -1,28 +1,18 @@
 indicator,label_en,label_fr,unit,pillar_en,pillar_fr,higher_is_worse,in_risk_framework
-Agriculture value added,Agriculture value added,Agriculture value added,% GDP,,,False,False
-CO2 per capita,CO2 per capita,CO2 par habitant,t GHG/cap,,,False,False
-Commodity dependence,Commodity dependence,Dependance matieres premieres,%,Social & structural,Social & structurel,True,True
-Control of corruption,Control of corruption,Maîtrise de la corruption,index,Political & institutional,Politique & institutionnel,False,True
-Current account,Current account (% GDP),Compte courant (% PIB),% GDP,External & sovereign,Externe & souverain,False,True
-Debt service,Debt service (% of exports),Service de la dette (% exportations),% Exports,,,True,True
-Dependency ratio,Dependency ratio,Ratio de dependance,%,Social & structural,Social & structurel,True,True
-Domestic credit,Domestic credit,Domestic credit,% GDP,,,False,False
-Electricity access,Electricity access,Acces a l'electricite,%,,,False,False
-External debt,External debt (% GDP),Dette externe (% PIB),%,External & sovereign,Externe & souverain,True,True
-FDI net inflows,FDI net inflows,FDI net inflows,% GDP,,,False,False
-Fiscal balance,Fiscal balance (% GDP),Solde budgétaire (% PIB),% GDP,Macroeconomic,Macro-economique,False,True
-GDP growth,GDP growth (%),Croissance du PIB (%),%,Macroeconomic,Macro-economique,False,True
-GDP per capita,GDP per capita,GDP per capita,USD,,,False,False
-Gen gov debt,General government debt (% GDP),Dette du gouvernement général (% PIB),% GDP,Macroeconomic,Macro-economique,True,True
-Gini,Gini index,Indice de Gini,index,Social & structural,Social & structurel,True,True
-Gov debt,Government debt (% GDP),Dette publique (% PIB),% GDP,Macroeconomic,Macro-economique,True,False
-Inflation,Inflation (%),Inflation (%),%,Macroeconomic,Macro-economique,True,True
-Interest rate,Interest rate,Taux d'interet,%,,,False,False
-Political stability,Political stability,Stabilité politique,index,Political & institutional,Politique & institutionnel,False,True
-Regulatory quality,Regulatory quality,Qualité réglementaire,index,Political & institutional,Politique & institutionnel,False,True
 Reserves,Reserves (months of imports),Réserves (mois d'importations),months,External & sovereign,Externe & souverain,False,True
-Rule of law,Rule of law,État de droit,index,Political & institutional,Politique & institutionnel,False,True
-Tax revenue,Tax revenue,Tax revenue,% GDP,,,False,False
+Current account,Current account (% GDP),Compte courant (% PIB),% GDP,External & sovereign,Externe & souverain,False,True
+External debt,External debt (% GDP),Dette externe (% PIB),%,External & sovereign,Externe & souverain,True,True
+GDP growth,GDP growth (%),Croissance du PIB (%),%,Macroeconomic,Macro-economique,False,True
+Inflation,Inflation (%),Inflation (%),%,Macroeconomic,Macro-economique,True,True
+Fiscal balance,Fiscal balance (% GDP),Solde budgétaire (% PIB),% GDP,Macroeconomic,Macro-economique,False,True
+Gen gov debt,General government debt (% GDP),Dette du gouvernement général (% PIB),% GDP,Macroeconomic,Macro-economique,True,True
 Unemployment,Unemployment (%),Chômage (%),%,Macroeconomic,Macro-economique,True,True
-Women in workforce,Women in workforce,Femmes en activite,%,,,False,False
+Political stability,Political stability,Stabilité politique,index,Political & institutional,Politique & institutionnel,False,True
+Control of corruption,Control of corruption,Maîtrise de la corruption,index,Political & institutional,Politique & institutionnel,False,True
+Rule of law,Rule of law,État de droit,index,Political & institutional,Politique & institutionnel,False,True
+Regulatory quality,Regulatory quality,Qualité réglementaire,index,Political & institutional,Politique & institutionnel,False,True
+Gini,Gini index,Indice de Gini,index,Social & structural,Social & structurel,True,True
 Youth unemployment,Youth unemployment (%),Chômage des jeunes (%),%,Social & structural,Social & structurel,True,True
+Dependency ratio,Dependency ratio,Ratio de dependance,%,Social & structural,Social & structurel,True,True
+Commodity dependence,Commodity dependence,Dependance matieres premieres,%,Social & structural,Social & structurel,True,True
+Debt service,Debt service (% of exports),Service de la dette (% exportations),% Exports,,,True,True

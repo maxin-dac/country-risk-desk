@@ -1,162 +1,162 @@
-iso3,sp_rating,sp_outlook,sp_date,sp_category_fr,mo_rating,mo_outlook,mo_date,mo_category_fr,fi_rating,fi_outlook,fi_date,fi_category_fr,notch_gap,divergence_en,divergence_fr,has_divergence
-ALB,BB,Stable,2025-03-21,Speculatif,B1,Stable,2024-10-19,Speculatif,,,,Non note,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-AND,A-,Stable,2024-05-10,Investment grade,,,,Non note,A-,Stable,2025-04-04,Investment grade,0.0,,,0
-AGO,B-,Stable,2022-02-04,Speculatif,B3,Positive,2023-10-24,Speculatif,B-,Stable,2025-11-14,Speculatif,0.0,,,0
-ARG,B-,Stable,2026-06-10,Speculatif,B3,Positive,2026-07-21,Speculatif,B-,Stable,2026-05-05,Speculatif,0.0,,,0
-ARM,BB-,Stable,2023-08-25,Speculatif,Ba3,Stable,2023-06-22,Speculatif,BB-,Positive,2026-01-16,Speculatif,0.0,,,0
-ABW,BBB+,Stable,2025-03-24,Investment grade,,,,Non note,BBB,Positive,2026-03-03,Investment grade,1.0,,,0
-AUS,AAA,Stable,2003-02-16,Investment grade,Aaa,Stable,2022-06-28,Investment grade,AAA,Stable,2025-10-27,Investment grade,0.0,,,0
-AUT,AA+,Stable,2012-01-13,Investment grade,Aa1,Stable,2023-02-24,Investment grade,AA,Stable,2025-12-05,Investment grade,1.0,,,0
-AZE,BB+,Positive,2016-01-29,Speculatif,Ba1,Stable,2022-08-05,Speculatif,BBB-,Stable,2025-06-13,Investment grade,1.0,Investment vs speculative,Investment vs speculatif,1
-BHS,BB-,Stable,2025-09-26,Speculatif,B1,Stable,2022-10-06,Speculatif,BB-,Stable,2025-04-09,Speculatif,1.0,,,0
-BHR,B,Stable,2025-11-21,Speculatif,B2,Stable,2022-04-22,Speculatif,B,Stable,2026-02-23,Speculatif,0.0,,,0
-BGD,B+,Stable,2024-07-30,Speculatif,B1,Stable,2023-05-30,Speculatif,B+,Stable,2025-05-22,Speculatif,0.0,,,0
-BRB,B+,Stable,2025-10-24,Speculatif,B3,Stable,2023-08-03,Speculatif,B+,Positive,2025-10-09,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-BEL,AA,Negative,2025-04-25,Investment grade,Aa3,Stable,2023-04-28,Investment grade,A+,Stable,2025-06-13,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-BLZ,B-,Stable,2021-11-09,Speculatif,Caa2,Stable,2022-11-16,Speculatif,,,,Non note,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-BEN,BB-,Stable,2024-04-19,Speculatif,B1,Stable,2023-09-18,Speculatif,B+,Positive,2026-01-16,Speculatif,1.0,,,0
-BMU,A+,Stable,2015-04-28,Investment grade,A2,Stable,2022-06-21,Investment grade,,,,Non note,1.0,,,0
-BOL,CCC+,Stable,2026-03-23,Speculatif,Caa1,Negative,2023-06-30,Speculatif,CCC,,2026-01-16,Speculatif,1.0,,,0
-BIH,B+,Stable,2023-08-04,Speculatif,B3,Stable,2022-07-22,Speculatif,,,,Non note,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-BWA,BBB,Negative,2025-09-12,Investment grade,A3,Stable,2023-10-27,Investment grade,,,,Non note,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-BRA,BB,Stable,2023-12-19,Speculatif,Ba1,Positive,2024-10-07,Speculatif,BB,Stable,2025-06-25,Speculatif,1.0,,,0
-BGR,BBB+,Stable,2025-07-10,Investment grade,Baa1,Stable,2023-02-03,Investment grade,BBB+,Stable,2025-07-10,Investment grade,0.0,,,0
-BFA,CCC+,Stable,2022-01-26,Speculatif,,,,Non note,,,,Non note,,,,0
-CPV,B,Positive,2024-08-16,Speculatif,,,,Non note,B,Stable,2025-05-13,Speculatif,0.0,,,0
-CMR,B-,Stable,2024-03-22,Speculatif,Caa1,Stable,2023-07-27,Speculatif,B,Negative,2025-11-07,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-CAN,AAA,Stable,2002-07-29,Investment grade,Aaa,Stable,2022-11-03,Investment grade,AA+,Stable,2025-07-18,Investment grade,1.0,,,0
-TCD,B-,Stable,2024-10-28,Speculatif,,,,Non note,,,,Non note,,,,0
-CHL,A,Stable,2021-03-24,Investment grade,A2,Stable,2022-09-15,Investment grade,A-,Stable,2025-09-26,Investment grade,1.0,,,0
-CHN,A+,Stable,2017-09-21,Investment grade,A1,Stable,2026-04-27,Investment grade,A,Stable,2025-04-03,Investment grade,1.0,,,0
-COL,BB,Negative,2025-06-26,Speculatif,Baa2,Stable,2023-06-08,Investment grade,BB,Stable,2025-12-16,Speculatif,3.0,Investment vs speculative,Investment vs speculatif,1
-COK,B+,Positive,2020-11-11,Speculatif,,,,Non note,,,,Non note,,,,0
-CRI,BB,Stable,2025-10-22,Speculatif,Ba3,Positive,2024-09-18,Speculatif,BB,Positive,2025-12-17,Speculatif,1.0,,,0
-CIV,BB,Stable,2024-10-18,Speculatif,Ba3,Positive,2022-06-27,Speculatif,BB,Stable,2025-12-12,Speculatif,1.0,,,0
-HRV,A,Stable,2026-03-14,Investment grade,A3,Stable,2024-11-07,Investment grade,A-,Stable,2026-03-06,Investment grade,1.0,,,0
-CUW,BBB-,Stable,2022-02-22,Investment grade,,,,Non note,,,,Non note,,,,0
-CYP,A-,Positive,2026-03-20,Investment grade,A3,Stable,2024-11-22,Investment grade,A-,Positive,2025-11-21,Investment grade,0.0,,,0
-CZE,AA-,Stable,2025-03-28,Investment grade,Aa3,Stable,2023-11-24,Investment grade,AA-,Stable,2026-02-06,Investment grade,0.0,,,0
-COD,B-,Stable,2022-01-28,Speculatif,B3,Stable,2022-11-11,Speculatif,,,,Non note,0.0,,,0
-DNK,AAA,Stable,2026-02-06,Investment grade,Aaa,Stable,2022-02-11,Investment grade,AAA,Stable,2025-10-03,Investment grade,0.0,,,0
-DOM,BB,Stable,2022-12-19,Speculatif,Ba3,Positive,2023-08-10,Speculatif,BB-,Positive,2025-11-07,Speculatif,1.0,,,0
-ECU,B-,Stable,2020-09-01,Speculatif,Caa3,Stable,2023-02-27,Speculatif,B-,Stable,2026-02-25,Speculatif,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
-EGY,B,Stable,2025-10-10,Speculatif,Caa1,Negative,2024-01-18,Speculatif,B,Stable,2025-10-10,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-SLV,B-,Stable,2023-11-07,Speculatif,B3,Stable,2024-11-26,Speculatif,B-,Stable,2025-04-30,Speculatif,0.0,,,0
-EST,A+,Stable,2024-05-31,Investment grade,A1,Stable,2022-04-29,Investment grade,A+,Stable,2025-06-06,Investment grade,0.0,,,0
-ETH,SD,,2023-12-15,Defaut / retire,Caa3,Stable,2023-09-15,Speculatif,RD,,2025-10-17,Defaut / retire,,,,0
-FLK,A+,Stable,2021-09-22,Investment grade,,,,Non note,,,,Non note,,,,0
-FJI,B+,Stable,2021-09-22,Speculatif,B1,Stable,2022-10-07,Speculatif,,,,Non note,0.0,,,0
-FIN,AA+,Stable,2014-10-10,Investment grade,Aa1,Stable,2022-07-29,Investment grade,AA,Stable,2025-07-25,Investment grade,1.0,,,0
-FRA,A+,Stable,2025-10-17,Investment grade,Aa3,Stable,2024-12-14,Investment grade,A+,Stable,2026-03-06,Investment grade,1.0,,,0
-GEO,BB,Stable,2019-10-11,Speculatif,Ba2,Negative,2022-04-28,Speculatif,BB,Stable,2025-11-21,Speculatif,0.0,,,0
-DEU,AAA,Stable,1983-08-17,Investment grade,Aaa,Stable,2023-02-10,Investment grade,AAA,Stable,2025-07-11,Investment grade,0.0,,,0
-GHA,B-,Stable,2025-11-07,Speculatif,Caa3,Stable,2023-06-09,Speculatif,B-,Stable,2025-06-16,Speculatif,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
-GRC,BBB,Stable,2025-04-18,Investment grade,Baa3,Stable,2025-03-14,Investment grade,BBB,Stable,2025-11-14,Investment grade,1.0,,,0
-GTM,BB+,Stable,2025-05-23,Speculatif,Ba1,Stable,2022-06-15,Speculatif,BB+,Stable,2025-10-14,Speculatif,0.0,,,0
-GGY,A+,Stable,2023-01-13,Investment grade,,,,Non note,,,,Non note,,,,0
-GIN,B+,Stable,2025-09-18,Speculatif,,,,Non note,,,,Non note,,,,0
-HND,BB-,Negative,2017-07-19,Speculatif,B1,Stable,2023-10-03,Speculatif,,,,Non note,1.0,,,0
-HKG,AA+,Stable,2017-09-22,Investment grade,Aa3,Negative,2023-12-06,Investment grade,AA-,Stable,2025-05-23,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-HUN,BBB-,Negative,2025-04-11,Investment grade,Ba1,Negative,2025-12-30,Speculatif,BBB,Negative,2025-12-05,Investment grade,2.0,Investment vs speculative,Investment vs speculatif,1
-ISL,A+,Positive,2026-03-06,Investment grade,A1,Stable,2024-09-19,Investment grade,WD,Ratings withdrawn,2026-02-06,Speculatif,0.0,,,0
-IND,BBB,Stable,2025-08-14,Investment grade,Baa3,Stable,2023-08-18,Investment grade,BBB-,Stable,2025-08-25,Investment grade,1.0,,,0
-IDN,BBB,Stable,2019-05-31,Investment grade,Baa2,Negative,2026-02-05,Investment grade,BBB,Negative,2026-03-04,Investment grade,0.0,,,0
-IRQ,B-,Stable,2015-09-03,Speculatif,Caa1,Stable,2023-11-24,Speculatif,B-,Stable,2025-11-24,Speculatif,1.0,,,0
-IRL,AA+,Stable,2026-03-20,Investment grade,Aa3,Stable,2023-04-21,Investment grade,AA,Stable,2025-11-07,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-ISR,A,Stable,2024-10-01,Investment grade,Baa1,Negative,2024-09-27,Investment grade,A,Negative,2025-03-31,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-ITA,BBB+,Stable,2025-04-11,Investment grade,Baa2,Stable,2025-11-21,Investment grade,BBB+,Stable,2025-09-19,Investment grade,1.0,,,0
-JAM,BB,Stable,2025-09-25,Speculatif,B1,Positive,2023-10-18,Speculatif,BB-,Stable,2026-02-05,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-JPN,A+,Stable,2015-09-16,Investment grade,A1,Stable,2023-11-08,Investment grade,A,Stable,2026-01-19,Investment grade,1.0,,,0
-JEY,AA-,Stable,2021-01-16,Investment grade,,,,Non note,,,,Non note,,,,0
-JOR,BB-,Stable,2024-09-06,Speculatif,B1,Positive,2022-11-17,Speculatif,BB-,Stable,2025-05-07,Speculatif,1.0,,,0
-KAZ,BBB,Positive,2026-08-21,Investment grade,Baa1,Positive,2024-09-09,Investment grade,BBB,Stable,2025-07-15,Investment grade,1.0,,,0
-KEN,B,Stable,2025-08-22,Speculatif,B3,Negative,2023-07-28,Speculatif,B-,Stable,2026-01-23,Speculatif,1.0,,,0
-KWT,AA-,Stable,2025-11-21,Investment grade,A1,Stable,2022-05-26,Investment grade,AA-,Stable,2025-09-05,Investment grade,1.0,,,0
-KGZ,B+,Stable,2025-03-28,Speculatif,B3,Negative,2022-10-17,Speculatif,B,Stable,2025-04-24,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-LAO,CCC+,Positive,2025-10-23,Speculatif,,,,Non note,CCC+,,2025-10-21,Speculatif,0.0,,,0
-LVA,A,Stable,2024-05-31,Investment grade,A3,Stable,2022-04-29,Investment grade,A-,Stable,2025-11-07,Investment grade,1.0,,,0
-LBN,SD,,2020-03-11,Defaut / retire,C,Stable,2023-12-13,Speculatif,WD,Ratings withdrawn,2023-07-23,Speculatif,,,,0
-LIE,AAA,Stable,1996-12-02,Investment grade,,,,Non note,,,,Non note,,,,0
-LTU,A,Stable,2024-05-31,Investment grade,A2,Stable,2022-04-29,Investment grade,A,Stable,2025-10-24,Investment grade,0.0,,,0
-LUX,AAA,Stable,1994-04-28,Investment grade,Aaa,Stable,2023-03-17,Investment grade,AAA,Stable,2025-10-31,Investment grade,0.0,,,0
-MDG,B-,Negative,2022-04-11,Speculatif,,,,Non note,,,,Non note,,,,0
-MYS,A-,Stable,2025-09-19,Investment grade,A3,Stable,2023-04-14,Investment grade,BBB+,Stable,2025-12-08,Investment grade,1.0,,,0
-MLT,A-,Stable,2016-10-14,Investment grade,A2,Stable,2022-11-18,Investment grade,A+,Stable,2025-09-05,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-MUS,BBB-,Stable,2023-07-21,Investment grade,Baa3,Stable,2022-07-28,Investment grade,,,,Non note,0.0,,,0
-MEX,BBB,Stable,2020-03-26,Investment grade,Baa2,Stable,2022-07-08,Investment grade,BBB-,Stable,2025-04-16,Investment grade,1.0,,,0
-MDA,BB-,Stable,2025-10-10,Speculatif,B2,Stable,2026-04-03,Speculatif,B+,Stable,2026-02-27,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-MNG,BB-,Stable,2025-10-30,Speculatif,B3,Stable,2023-02-14,Speculatif,B+,Stable,2025-09-01,Speculatif,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
-MNE,B+,Stable,2024-08-30,Speculatif,Ba3,Stable,2024-09-27,Speculatif,,,,Non note,1.0,,,0
-MSR,BBB-,Stable,2011-09-02,Investment grade,,,,Non note,,,,Non note,,,,0
-MAR,BBB-,Stable,2025-09-26,Investment grade,Ba1,Positive,2026-03-06,Speculatif,BB+,Stable,2025-09-29,Speculatif,1.0,Investment vs speculative,Investment vs speculatif,1
-MOZ,CCC+,Negative,2019-11-22,Speculatif,Caa2,Stable,2023-09-22,Speculatif,CCC,,2025-01-30,Speculatif,1.0,,,0
-NLD,AAA,Stable,2015-11-20,Investment grade,Aaa,Stable,2023-01-27,Investment grade,AAA,Stable,2026-01-16,Investment grade,0.0,,,0
-NZL,AA+,Stable,2021-02-21,Investment grade,Aaa,Stable,2022-04-21,Investment grade,AA+,Stable,2025-08-17,Investment grade,1.0,,,0
-NIC,B+,Stable,2024-10-23,Speculatif,B3,Stable,2022-03-30,Speculatif,B,Stable,2025-05-23,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-NGA,B-,Positive,2020-03-26,Speculatif,Caa1,Positive,2023-12-08,Speculatif,B,Stable,2025-10-10,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-MKD,BB-,Stable,2013-05-24,Speculatif,,,,Non note,BB+,Stable,2025-09-19,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-NOR,AAA,Stable,1975-07-09,Investment grade,Aaa,Stable,2022-05-06,Investment grade,AAA,Stable,1995-03-13,Investment grade,0.0,,,0
-OMN,BBB-,Stable,2024-09-27,Investment grade,Baa3,Stable,2023-12-07,Investment grade,BBB-,Stable,2025-12-08,Investment grade,0.0,,,0
-PAK,B-,Stable,2025-07-24,Speculatif,Caa1,Positive,2025-08-13,Speculatif,B-,Stable,2025-04-15,Speculatif,1.0,,,0
-PAN,BBB-,Stable,2024-11-26,Investment grade,Baa3,Stable,2023-10-31,Investment grade,BB+,Stable,2024-03-28,Speculatif,1.0,Investment vs speculative,Investment vs speculatif,1
-PNG,B-,Stable,2020-04-29,Speculatif,B2,Stable,2022-11-10,Speculatif,,,,Non note,1.0,,,0
-PRY,BBB-,Stable,2025-12-17,Investment grade,Baa3,Stable,2024-07-26,Investment grade,BB+,Positive,2025-10-06,Speculatif,1.0,Investment vs speculative,Investment vs speculatif,1
-PER,BBB-,Stable,2024-04-25,Investment grade,Baa1,Negative,2023-01-31,Investment grade,BBB,Stable,2022-10-20,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-PHL,BBB+,Positive,2019-04-30,Investment grade,Baa2,Stable,2022-09-15,Investment grade,BBB,Stable,2023-05-22,Investment grade,1.0,,,0
-POL,A-,Stable,2018-10-12,Investment grade,A2,Stable,2022-04-29,Investment grade,A-,Negative,2025-09-05,Investment grade,1.0,,,0
-PRT,A+,Stable,2025-08-29,Investment grade,A3,Stable,2023-11-17,Investment grade,A,Stable,2025-09-12,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-QAT,AA,Stable,2022-11-04,Investment grade,Aa3,Positive,2022-11-02,Investment grade,AA,Stable,2024-03-20,Investment grade,1.0,,,0
-COG,CCC+,Stable,2024-10-30,Speculatif,Caa2,Stable,2023-11-03,Speculatif,CCC+,,2022-09-16,Speculatif,1.0,,,0
-ROU,BBB-,Negative,2014-05-16,Investment grade,Baa3,Stable,2023-11-03,Investment grade,BBB-,Negative,2024-12-17,Investment grade,0.0,,,0
-RWA,B+,Stable,2019-08-09,Speculatif,B2,Stable,2023-09-08,Speculatif,B+,Negative,2025-04-04,Speculatif,1.0,,,0
-SHN,BBB-,Stable,2023-03-31,Investment grade,,,,Non note,,,,Non note,,,,0
-SMR,BBB+,Stable,2025-08-01,Investment grade,,,,Non note,BBB-,Positive,2025-12-12,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-SAU,A+,Stable,2025-03-14,Investment grade,Aa3,Stable,2024-11-22,Investment grade,A+,Stable,2023-04-05,Investment grade,1.0,,,0
-SEN,CCC+,,2025-11-14,Speculatif,Ba3,Stable,2022-03-18,Speculatif,,,,Non note,4.0,Gap >= 2 notches,Ecart >= 2 crans,1
-SRB,BBB-,Stable,2024-10-04,Investment grade,Ba2,Stable,2023-09-08,Speculatif,BB+,Positive,2024-08-09,Speculatif,2.0,Investment vs speculative,Investment vs speculatif,1
-SGP,AAA,Stable,1995-03-06,Investment grade,Aaa,Stable,2022-05-17,Investment grade,AAA,Stable,2003-05-14,Investment grade,0.0,,,0
-SVK,A,Negative,2026-04-24,Investment grade,A3,Stable,2024-12-13,Investment grade,A-,Stable,2024-12-06,Investment grade,1.0,,,0
-SVN,AA,Stable,2025-06-06,Investment grade,A2,Stable,2026-02-27,Investment grade,A+,Stable,2025-10-03,Investment grade,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
-ZAF,BB,Positive,2025-11-14,Speculatif,Ba2,Stable,2022-04-01,Speculatif,BB-,Stable,2021-12-15,Speculatif,1.0,,,0
-KOR,AA,Stable,2016-08-08,Investment grade,Aa2,Stable,2022-04-21,Investment grade,AA-,Stable,2012-09-06,Investment grade,1.0,,,0
-ESP,A+,Stable,2025-09-12,Investment grade,A3,Positive,2025-09-27,Investment grade,A,Stable,2025-09-26,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-LKA,CCC+,Stable,2025-09-19,Speculatif,Caa1,Positive,2024-12-23,Speculatif,CCC+,Positive,2024-12-20,Speculatif,0.0,,,0
-SUR,CCC+,Stable,2023-12-06,Speculatif,Caa3,Stable,2023-02-17,Speculatif,WD,Ratings withdrawn,2022-01-25,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-SWE,AAA,Stable,2004-02-16,Investment grade,Aaa,Stable,2022-03-25,Investment grade,AAA,Stable,2004-03-08,Investment grade,0.0,,,0
-CHE,AAA,Stable,1988-10-01,Investment grade,Aaa,Stable,2023-02-17,Investment grade,AAA,Stable,1994-08-10,Investment grade,0.0,,,0
-TWN,AA+,Stable,2022-04-29,Investment grade,Aa3,Stable,2022-09-22,Investment grade,AA,Stable,2021-09-10,Investment grade,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-TJK,B,Stable,2024-08-16,Speculatif,B3,Stable,2023-10-12,Speculatif,,,,Non note,1.0,,,0
-THA,BBB+,Stable,2004-08-26,Investment grade,Baa1,Stable,2022-04-07,Investment grade,BBB+,Negative,2025-09-24,Investment grade,0.0,,,0
-TGO,B+,Stable,2025-04-18,Speculatif,,,,Non note,,,,Non note,,,,0
-TTO,BBB-,Negative,2020-03-26,Investment grade,Ba2,Positive,2023-07-10,Speculatif,,,,Non note,2.0,Investment vs speculative,Investment vs speculatif,1
-TUR,BB-,Stable,2024-11-01,Speculatif,B1,Positive,2024-07-19,Speculatif,BB-,Stable,2024-09-06,Speculatif,1.0,,,0
-TCA,A-,Stable,2025-02-26,Investment grade,,,,Non note,,,,Non note,,,,0
-UGA,B-,Positive,2023-10-06,Speculatif,B2,Negative,2022-11-18,Speculatif,B,Stable,2024-08-30,Speculatif,1.0,,,0
-UKR,CCC+,Stable,2026-01-22,Speculatif,Ca,Stable,2023-02-10,Speculatif,CCC,,2025-12-22,Speculatif,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
-ARE,AA,Stable,2007-07-02,Investment grade,Aa2,Stable,2023-03-21,Investment grade,AA-,Stable,2020-11-11,Investment grade,1.0,,,0
-GBR,AA,Stable,2016-06-27,Investment grade,Aa3,Stable,2023-10-20,Investment grade,AA-,Stable,2024-03-22,Investment grade,1.0,,,0
-USA,AA+,Stable,2011-08-05,Investment grade,Aa1,Stable,2025-05-16,Investment grade,AA+,Stable,2023-08-01,Investment grade,0.0,,,0
-URY,BBB+,Stable,2023-04-26,Investment grade,Baa1,Stable,2024-03-15,Investment grade,BBB,Stable,2023-06-07,Investment grade,1.0,,,0
-UZB,BB,Stable,2025-11-21,Speculatif,Ba3,Stable,2023-01-20,Speculatif,BB,Stable,2025-06-26,Speculatif,1.0,,,0
-VNM,BB+,Stable,2022-05-26,Speculatif,Ba2,Stable,2022-09-06,Speculatif,BB+,Stable,2023-12-08,Speculatif,1.0,,,0
-ZMB,CCC+,Stable,2025-11-21,Speculatif,Caa3,Stable,2022-10-21,Speculatif,B-,Stable,2025-11-28,Speculatif,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
-BLR,,,,Non note,C,Stable,2023-06-02,Speculatif,WD,Ratings withdrawn,2023-10-06,Speculatif,,,,0
-KHM,,,,Non note,B2,Negative,2022-11-15,Speculatif,,,,Non note,,,,0
-CYM,,,,Non note,Aa3,Stable,2023-06-08,Investment grade,,,,Non note,,,,0
-CUB,,,,Non note,Ca,Ratings withdrawn,2021-11-18,Speculatif,,,,Non note,,,,0
-SWZ,,,,Non note,B3,Positive,2023-12-01,Speculatif,,,,Non note,,,,0
-GAB,,,,Non note,Caa1,Negative,2023-09-12,Speculatif,CCC-,,2025-12-19,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-IMN,,,,Non note,Aa3,Stable,2023-10-27,Investment grade,,,,Non note,,,,0
-MAC,,,,Non note,Aa3,Negative,2022-12-06,Investment grade,AA,Stable,2026-02-11,Investment grade,1.0,,,0
-MDV,,,,Non note,Caa2,Stable,2024-09-11,Speculatif,CC,,2025-06-12,Speculatif,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
-MLI,,,,Non note,Caa2,Stable,2022-09-09,Speculatif,,,,Non note,,,,0
-NAM,,,,Non note,B1,Stable,2022-04-05,Speculatif,BB-,Stable,2025-11-21,Speculatif,1.0,,,0
-RUS,,,,Non note,Ca,Ratings withdrawn,2022-03-06,Speculatif,WD,Ratings withdrawn,2022-03-25,Speculatif,,,,0
-VCT,,,,Non note,B3,Stable,2022-03-01,Speculatif,,,,Non note,,,,0
-TUN,,,,Non note,Caa1,Stable,2025-02-28,Speculatif,B-,Stable,2025-09-12,Speculatif,1.0,,,0
-VEN,,,,Non note,C,Ratings withdrawn,2018-03-09,Speculatif,,,,Non note,,,,0
-LSO,,,,Non note,,,,Non note,B,Stable,2025-06-09,Speculatif,,,,0
-NPL,,,,Non note,,,,Non note,BB-,Stable,2025-11-18,Speculatif,,,,0
-SYC,,,,Non note,,,,Non note,BB,Stable,2025-09-05,Speculatif,,,,0
-TZA,,,,Non note,,,,Non note,B+,Stable,2023-06-09,Speculatif,,,,0
-TKM,,,,Non note,,,,Non note,BB-,Stable,2024-08-02,Speculatif,,,,0
+iso3,sp_rating,sp_outlook,sp_date,sp_category_fr,sp_color_text,sp_color_bg,mo_rating,mo_outlook,mo_date,mo_category_fr,mo_color_text,mo_color_bg,fi_rating,fi_outlook,fi_date,fi_category_fr,fi_color_text,fi_color_bg,notch_gap,divergence_en,divergence_fr,has_divergence
+ALB,BB,Stable,2025-03-21,Speculatif,#687086,#e3e8ef,B1,Stable,2024-10-19,Speculatif,#785f71,#e9e7ed,,,,Non note,#64748b,#f1f5f9,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+AND,A-,Stable,2024-05-10,Investment grade,#4664ac,#dfe9f6,,,,Non note,#64748b,#f1f5f9,A-,Stable,2025-04-04,Investment grade,#4664ac,#dfe9f6,0.0,,,0
+AGO,B-,Stable,2022-02-04,Speculatif,#884e5b,#eee5ea,B3,Positive,2023-10-24,Speculatif,#884e5b,#eee5ea,B-,Stable,2025-11-14,Speculatif,#884e5b,#eee5ea,0.0,,,0
+ARG,B-,Stable,2026-06-10,Speculatif,#884e5b,#eee5ea,B3,Positive,2026-07-21,Speculatif,#884e5b,#eee5ea,B-,Stable,2026-05-05,Speculatif,#884e5b,#eee5ea,0.0,,,0
+ARM,BB-,Stable,2023-08-25,Speculatif,#70677b,#e6e7ee,Ba3,Stable,2023-06-22,Speculatif,#70677b,#e6e7ee,BB-,Positive,2026-01-16,Speculatif,#70677b,#e6e7ee,0.0,,,0
+ABW,BBB+,Stable,2025-03-24,Investment grade,#4c67a5,#e0e9f5,,,,Non note,#64748b,#f1f5f9,BBB,Positive,2026-03-03,Investment grade,#536b9d,#e0e8f3,1.0,,,0
+AUS,AAA,Stable,2003-02-16,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2022-06-28,Investment grade,#1d4ed8,#dbeafe,AAA,Stable,2025-10-27,Investment grade,#1d4ed8,#dbeafe,0.0,,,0
+AUT,AA+,Stable,2012-01-13,Investment grade,#2452d1,#dceafd,Aa1,Stable,2023-02-24,Investment grade,#2452d1,#dceafd,AA,Stable,2025-12-05,Investment grade,#2b55c9,#dceafb,1.0,,,0
+AZE,BB+,Positive,2016-01-29,Speculatif,#61728f,#e2e8f1,Ba1,Stable,2022-08-05,Speculatif,#61728f,#e2e8f1,BBB-,Stable,2025-06-13,Investment grade,#5a6f96,#e1e8f2,1.0,Investment vs speculative,Investment vs speculatif,1
+BHS,BB-,Stable,2025-09-26,Speculatif,#70677b,#e6e7ee,B1,Stable,2022-10-06,Speculatif,#785f71,#e9e7ed,BB-,Stable,2025-04-09,Speculatif,#70677b,#e6e7ee,1.0,,,0
+BHR,B,Stable,2025-11-21,Speculatif,#805766,#ebe6eb,B2,Stable,2022-04-22,Speculatif,#805766,#ebe6eb,B,Stable,2026-02-23,Speculatif,#805766,#ebe6eb,0.0,,,0
+BGD,B+,Stable,2024-07-30,Speculatif,#785f71,#e9e7ed,B1,Stable,2023-05-30,Speculatif,#785f71,#e9e7ed,B+,Stable,2025-05-22,Speculatif,#785f71,#e9e7ed,0.0,,,0
+BRB,B+,Stable,2025-10-24,Speculatif,#785f71,#e9e7ed,B3,Stable,2023-08-03,Speculatif,#884e5b,#eee5ea,B+,Positive,2025-10-09,Speculatif,#785f71,#e9e7ed,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+BEL,AA,Negative,2025-04-25,Investment grade,#2b55c9,#dceafb,Aa3,Stable,2023-04-28,Investment grade,#3159c2,#dde9fa,A+,Stable,2025-06-13,Investment grade,#385cbb,#dee9f9,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+BLZ,B-,Stable,2021-11-09,Speculatif,#884e5b,#eee5ea,Caa2,Stable,2022-11-16,Speculatif,#993e46,#f3e4e7,,,,Non note,#64748b,#f1f5f9,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+BEN,BB-,Stable,2024-04-19,Speculatif,#70677b,#e6e7ee,B1,Stable,2023-09-18,Speculatif,#785f71,#e9e7ed,B+,Positive,2026-01-16,Speculatif,#785f71,#e9e7ed,1.0,,,0
+BMU,A+,Stable,2015-04-28,Investment grade,#385cbb,#dee9f9,A2,Stable,2022-06-21,Investment grade,#3f60b3,#dee9f7,,,,Non note,#64748b,#f1f5f9,1.0,,,0
+BOL,CCC+,Stable,2026-03-23,Speculatif,#914651,#f1e5e9,Caa1,Negative,2023-06-30,Speculatif,#914651,#f1e5e9,CCC,,2026-01-16,Speculatif,#993e46,#f3e4e7,1.0,,,0
+BIH,B+,Stable,2023-08-04,Speculatif,#785f71,#e9e7ed,B3,Stable,2022-07-22,Speculatif,#884e5b,#eee5ea,,,,Non note,#64748b,#f1f5f9,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+BWA,BBB,Negative,2025-09-12,Investment grade,#536b9d,#e0e8f3,A3,Stable,2023-10-27,Investment grade,#4664ac,#dfe9f6,,,,Non note,#64748b,#f1f5f9,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+BRA,BB,Stable,2023-12-19,Speculatif,#687086,#e3e8ef,Ba1,Positive,2024-10-07,Speculatif,#61728f,#e2e8f1,BB,Stable,2025-06-25,Speculatif,#687086,#e3e8ef,1.0,,,0
+BGR,BBB+,Stable,2025-07-10,Investment grade,#4c67a5,#e0e9f5,Baa1,Stable,2023-02-03,Investment grade,#4c67a5,#e0e9f5,BBB+,Stable,2025-07-10,Investment grade,#4c67a5,#e0e9f5,0.0,,,0
+BFA,CCC+,Stable,2022-01-26,Speculatif,#914651,#f1e5e9,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+CPV,B,Positive,2024-08-16,Speculatif,#805766,#ebe6eb,,,,Non note,#64748b,#f1f5f9,B,Stable,2025-05-13,Speculatif,#805766,#ebe6eb,0.0,,,0
+CMR,B-,Stable,2024-03-22,Speculatif,#884e5b,#eee5ea,Caa1,Stable,2023-07-27,Speculatif,#914651,#f1e5e9,B,Negative,2025-11-07,Speculatif,#805766,#ebe6eb,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+CAN,AAA,Stable,2002-07-29,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2022-11-03,Investment grade,#1d4ed8,#dbeafe,AA+,Stable,2025-07-18,Investment grade,#2452d1,#dceafd,1.0,,,0
+TCD,B-,Stable,2024-10-28,Speculatif,#884e5b,#eee5ea,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+CHL,A,Stable,2021-03-24,Investment grade,#3f60b3,#dee9f7,A2,Stable,2022-09-15,Investment grade,#3f60b3,#dee9f7,A-,Stable,2025-09-26,Investment grade,#4664ac,#dfe9f6,1.0,,,0
+CHN,A+,Stable,2017-09-21,Investment grade,#385cbb,#dee9f9,A1,Stable,2026-04-27,Investment grade,#385cbb,#dee9f9,A,Stable,2025-04-03,Investment grade,#3f60b3,#dee9f7,1.0,,,0
+COL,BB,Negative,2025-06-26,Speculatif,#687086,#e3e8ef,Baa2,Stable,2023-06-08,Investment grade,#536b9d,#e0e8f3,BB,Stable,2025-12-16,Speculatif,#687086,#e3e8ef,3.0,Investment vs speculative,Investment vs speculatif,1
+COK,B+,Positive,2020-11-11,Speculatif,#785f71,#e9e7ed,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+CRI,BB,Stable,2025-10-22,Speculatif,#687086,#e3e8ef,Ba3,Positive,2024-09-18,Speculatif,#70677b,#e6e7ee,BB,Positive,2025-12-17,Speculatif,#687086,#e3e8ef,1.0,,,0
+CIV,BB,Stable,2024-10-18,Speculatif,#687086,#e3e8ef,Ba3,Positive,2022-06-27,Speculatif,#70677b,#e6e7ee,BB,Stable,2025-12-12,Speculatif,#687086,#e3e8ef,1.0,,,0
+HRV,A,Stable,2026-03-14,Investment grade,#3f60b3,#dee9f7,A3,Stable,2024-11-07,Investment grade,#4664ac,#dfe9f6,A-,Stable,2026-03-06,Investment grade,#4664ac,#dfe9f6,1.0,,,0
+CUW,BBB-,Stable,2022-02-22,Investment grade,#5a6f96,#e1e8f2,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+CYP,A-,Positive,2026-03-20,Investment grade,#4664ac,#dfe9f6,A3,Stable,2024-11-22,Investment grade,#4664ac,#dfe9f6,A-,Positive,2025-11-21,Investment grade,#4664ac,#dfe9f6,0.0,,,0
+CZE,AA-,Stable,2025-03-28,Investment grade,#3159c2,#dde9fa,Aa3,Stable,2023-11-24,Investment grade,#3159c2,#dde9fa,AA-,Stable,2026-02-06,Investment grade,#3159c2,#dde9fa,0.0,,,0
+COD,B-,Stable,2022-01-28,Speculatif,#884e5b,#eee5ea,B3,Stable,2022-11-11,Speculatif,#884e5b,#eee5ea,,,,Non note,#64748b,#f1f5f9,0.0,,,0
+DNK,AAA,Stable,2026-02-06,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2022-02-11,Investment grade,#1d4ed8,#dbeafe,AAA,Stable,2025-10-03,Investment grade,#1d4ed8,#dbeafe,0.0,,,0
+DOM,BB,Stable,2022-12-19,Speculatif,#687086,#e3e8ef,Ba3,Positive,2023-08-10,Speculatif,#70677b,#e6e7ee,BB-,Positive,2025-11-07,Speculatif,#70677b,#e6e7ee,1.0,,,0
+ECU,B-,Stable,2020-09-01,Speculatif,#884e5b,#eee5ea,Caa3,Stable,2023-02-27,Speculatif,#a1353c,#f6e4e6,B-,Stable,2026-02-25,Speculatif,#884e5b,#eee5ea,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
+EGY,B,Stable,2025-10-10,Speculatif,#805766,#ebe6eb,Caa1,Negative,2024-01-18,Speculatif,#914651,#f1e5e9,B,Stable,2025-10-10,Speculatif,#805766,#ebe6eb,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+SLV,B-,Stable,2023-11-07,Speculatif,#884e5b,#eee5ea,B3,Stable,2024-11-26,Speculatif,#884e5b,#eee5ea,B-,Stable,2025-04-30,Speculatif,#884e5b,#eee5ea,0.0,,,0
+EST,A+,Stable,2024-05-31,Investment grade,#385cbb,#dee9f9,A1,Stable,2022-04-29,Investment grade,#385cbb,#dee9f9,A+,Stable,2025-06-06,Investment grade,#385cbb,#dee9f9,0.0,,,0
+ETH,SD,,2023-12-15,Defaut / retire,#b91c1c,#fee2e2,Caa3,Stable,2023-09-15,Speculatif,#a1353c,#f6e4e6,RD,,2025-10-17,Defaut / retire,#b91c1c,#fee2e2,,,,0
+FLK,A+,Stable,2021-09-22,Investment grade,#385cbb,#dee9f9,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+FJI,B+,Stable,2021-09-22,Speculatif,#785f71,#e9e7ed,B1,Stable,2022-10-07,Speculatif,#785f71,#e9e7ed,,,,Non note,#64748b,#f1f5f9,0.0,,,0
+FIN,AA+,Stable,2014-10-10,Investment grade,#2452d1,#dceafd,Aa1,Stable,2022-07-29,Investment grade,#2452d1,#dceafd,AA,Stable,2025-07-25,Investment grade,#2b55c9,#dceafb,1.0,,,0
+FRA,A+,Stable,2025-10-17,Investment grade,#385cbb,#dee9f9,Aa3,Stable,2024-12-14,Investment grade,#3159c2,#dde9fa,A+,Stable,2026-03-06,Investment grade,#385cbb,#dee9f9,1.0,,,0
+GEO,BB,Stable,2019-10-11,Speculatif,#687086,#e3e8ef,Ba2,Negative,2022-04-28,Speculatif,#687086,#e3e8ef,BB,Stable,2025-11-21,Speculatif,#687086,#e3e8ef,0.0,,,0
+DEU,AAA,Stable,1983-08-17,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2023-02-10,Investment grade,#1d4ed8,#dbeafe,AAA,Stable,2025-07-11,Investment grade,#1d4ed8,#dbeafe,0.0,,,0
+GHA,B-,Stable,2025-11-07,Speculatif,#884e5b,#eee5ea,Caa3,Stable,2023-06-09,Speculatif,#a1353c,#f6e4e6,B-,Stable,2025-06-16,Speculatif,#884e5b,#eee5ea,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
+GRC,BBB,Stable,2025-04-18,Investment grade,#536b9d,#e0e8f3,Baa3,Stable,2025-03-14,Investment grade,#5a6f96,#e1e8f2,BBB,Stable,2025-11-14,Investment grade,#536b9d,#e0e8f3,1.0,,,0
+GTM,BB+,Stable,2025-05-23,Speculatif,#61728f,#e2e8f1,Ba1,Stable,2022-06-15,Speculatif,#61728f,#e2e8f1,BB+,Stable,2025-10-14,Speculatif,#61728f,#e2e8f1,0.0,,,0
+GGY,A+,Stable,2023-01-13,Investment grade,#385cbb,#dee9f9,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+GIN,B+,Stable,2025-09-18,Speculatif,#785f71,#e9e7ed,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+HND,BB-,Negative,2017-07-19,Speculatif,#70677b,#e6e7ee,B1,Stable,2023-10-03,Speculatif,#785f71,#e9e7ed,,,,Non note,#64748b,#f1f5f9,1.0,,,0
+HKG,AA+,Stable,2017-09-22,Investment grade,#2452d1,#dceafd,Aa3,Negative,2023-12-06,Investment grade,#3159c2,#dde9fa,AA-,Stable,2025-05-23,Investment grade,#3159c2,#dde9fa,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+HUN,BBB-,Negative,2025-04-11,Investment grade,#5a6f96,#e1e8f2,Ba1,Negative,2025-12-30,Speculatif,#61728f,#e2e8f1,BBB,Negative,2025-12-05,Investment grade,#536b9d,#e0e8f3,2.0,Investment vs speculative,Investment vs speculatif,1
+ISL,A+,Positive,2026-03-06,Investment grade,#385cbb,#dee9f9,A1,Stable,2024-09-19,Investment grade,#385cbb,#dee9f9,WD,Ratings withdrawn,2026-02-06,Speculatif,#64748b,#f1f5f9,0.0,,,0
+IND,BBB,Stable,2025-08-14,Investment grade,#536b9d,#e0e8f3,Baa3,Stable,2023-08-18,Investment grade,#5a6f96,#e1e8f2,BBB-,Stable,2025-08-25,Investment grade,#5a6f96,#e1e8f2,1.0,,,0
+IDN,BBB,Stable,2019-05-31,Investment grade,#536b9d,#e0e8f3,Baa2,Negative,2026-02-05,Investment grade,#536b9d,#e0e8f3,BBB,Negative,2026-03-04,Investment grade,#536b9d,#e0e8f3,0.0,,,0
+IRQ,B-,Stable,2015-09-03,Speculatif,#884e5b,#eee5ea,Caa1,Stable,2023-11-24,Speculatif,#914651,#f1e5e9,B-,Stable,2025-11-24,Speculatif,#884e5b,#eee5ea,1.0,,,0
+IRL,AA+,Stable,2026-03-20,Investment grade,#2452d1,#dceafd,Aa3,Stable,2023-04-21,Investment grade,#3159c2,#dde9fa,AA,Stable,2025-11-07,Investment grade,#2b55c9,#dceafb,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+ISR,A,Stable,2024-10-01,Investment grade,#3f60b3,#dee9f7,Baa1,Negative,2024-09-27,Investment grade,#4c67a5,#e0e9f5,A,Negative,2025-03-31,Investment grade,#3f60b3,#dee9f7,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+ITA,BBB+,Stable,2025-04-11,Investment grade,#4c67a5,#e0e9f5,Baa2,Stable,2025-11-21,Investment grade,#536b9d,#e0e8f3,BBB+,Stable,2025-09-19,Investment grade,#4c67a5,#e0e9f5,1.0,,,0
+JAM,BB,Stable,2025-09-25,Speculatif,#687086,#e3e8ef,B1,Positive,2023-10-18,Speculatif,#785f71,#e9e7ed,BB-,Stable,2026-02-05,Speculatif,#70677b,#e6e7ee,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+JPN,A+,Stable,2015-09-16,Investment grade,#385cbb,#dee9f9,A1,Stable,2023-11-08,Investment grade,#385cbb,#dee9f9,A,Stable,2026-01-19,Investment grade,#3f60b3,#dee9f7,1.0,,,0
+JEY,AA-,Stable,2021-01-16,Investment grade,#3159c2,#dde9fa,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+JOR,BB-,Stable,2024-09-06,Speculatif,#70677b,#e6e7ee,B1,Positive,2022-11-17,Speculatif,#785f71,#e9e7ed,BB-,Stable,2025-05-07,Speculatif,#70677b,#e6e7ee,1.0,,,0
+KAZ,BBB,Positive,2026-08-21,Investment grade,#536b9d,#e0e8f3,Baa1,Positive,2024-09-09,Investment grade,#4c67a5,#e0e9f5,BBB,Stable,2025-07-15,Investment grade,#536b9d,#e0e8f3,1.0,,,0
+KEN,B,Stable,2025-08-22,Speculatif,#805766,#ebe6eb,B3,Negative,2023-07-28,Speculatif,#884e5b,#eee5ea,B-,Stable,2026-01-23,Speculatif,#884e5b,#eee5ea,1.0,,,0
+KWT,AA-,Stable,2025-11-21,Investment grade,#3159c2,#dde9fa,A1,Stable,2022-05-26,Investment grade,#385cbb,#dee9f9,AA-,Stable,2025-09-05,Investment grade,#3159c2,#dde9fa,1.0,,,0
+KGZ,B+,Stable,2025-03-28,Speculatif,#785f71,#e9e7ed,B3,Negative,2022-10-17,Speculatif,#884e5b,#eee5ea,B,Stable,2025-04-24,Speculatif,#805766,#ebe6eb,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+LAO,CCC+,Positive,2025-10-23,Speculatif,#914651,#f1e5e9,,,,Non note,#64748b,#f1f5f9,CCC+,,2025-10-21,Speculatif,#914651,#f1e5e9,0.0,,,0
+LVA,A,Stable,2024-05-31,Investment grade,#3f60b3,#dee9f7,A3,Stable,2022-04-29,Investment grade,#4664ac,#dfe9f6,A-,Stable,2025-11-07,Investment grade,#4664ac,#dfe9f6,1.0,,,0
+LBN,SD,,2020-03-11,Defaut / retire,#b91c1c,#fee2e2,C,Stable,2023-12-13,Speculatif,#b12427,#fbe3e3,WD,Ratings withdrawn,2023-07-23,Speculatif,#64748b,#f1f5f9,,,,0
+LIE,AAA,Stable,1996-12-02,Investment grade,#1d4ed8,#dbeafe,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+LTU,A,Stable,2024-05-31,Investment grade,#3f60b3,#dee9f7,A2,Stable,2022-04-29,Investment grade,#3f60b3,#dee9f7,A,Stable,2025-10-24,Investment grade,#3f60b3,#dee9f7,0.0,,,0
+LUX,AAA,Stable,1994-04-28,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2023-03-17,Investment grade,#1d4ed8,#dbeafe,AAA,Stable,2025-10-31,Investment grade,#1d4ed8,#dbeafe,0.0,,,0
+MDG,B-,Negative,2022-04-11,Speculatif,#884e5b,#eee5ea,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+MYS,A-,Stable,2025-09-19,Investment grade,#4664ac,#dfe9f6,A3,Stable,2023-04-14,Investment grade,#4664ac,#dfe9f6,BBB+,Stable,2025-12-08,Investment grade,#4c67a5,#e0e9f5,1.0,,,0
+MLT,A-,Stable,2016-10-14,Investment grade,#4664ac,#dfe9f6,A2,Stable,2022-11-18,Investment grade,#3f60b3,#dee9f7,A+,Stable,2025-09-05,Investment grade,#385cbb,#dee9f9,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+MUS,BBB-,Stable,2023-07-21,Investment grade,#5a6f96,#e1e8f2,Baa3,Stable,2022-07-28,Investment grade,#5a6f96,#e1e8f2,,,,Non note,#64748b,#f1f5f9,0.0,,,0
+MEX,BBB,Stable,2020-03-26,Investment grade,#536b9d,#e0e8f3,Baa2,Stable,2022-07-08,Investment grade,#536b9d,#e0e8f3,BBB-,Stable,2025-04-16,Investment grade,#5a6f96,#e1e8f2,1.0,,,0
+MDA,BB-,Stable,2025-10-10,Speculatif,#70677b,#e6e7ee,B2,Stable,2026-04-03,Speculatif,#805766,#ebe6eb,B+,Stable,2026-02-27,Speculatif,#785f71,#e9e7ed,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+MNG,BB-,Stable,2025-10-30,Speculatif,#70677b,#e6e7ee,B3,Stable,2023-02-14,Speculatif,#884e5b,#eee5ea,B+,Stable,2025-09-01,Speculatif,#785f71,#e9e7ed,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
+MNE,B+,Stable,2024-08-30,Speculatif,#785f71,#e9e7ed,Ba3,Stable,2024-09-27,Speculatif,#70677b,#e6e7ee,,,,Non note,#64748b,#f1f5f9,1.0,,,0
+MSR,BBB-,Stable,2011-09-02,Investment grade,#5a6f96,#e1e8f2,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+MAR,BBB-,Stable,2025-09-26,Investment grade,#5a6f96,#e1e8f2,Ba1,Positive,2026-03-06,Speculatif,#61728f,#e2e8f1,BB+,Stable,2025-09-29,Speculatif,#61728f,#e2e8f1,1.0,Investment vs speculative,Investment vs speculatif,1
+MOZ,CCC+,Negative,2019-11-22,Speculatif,#914651,#f1e5e9,Caa2,Stable,2023-09-22,Speculatif,#993e46,#f3e4e7,CCC,,2025-01-30,Speculatif,#993e46,#f3e4e7,1.0,,,0
+NLD,AAA,Stable,2015-11-20,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2023-01-27,Investment grade,#1d4ed8,#dbeafe,AAA,Stable,2026-01-16,Investment grade,#1d4ed8,#dbeafe,0.0,,,0
+NZL,AA+,Stable,2021-02-21,Investment grade,#2452d1,#dceafd,Aaa,Stable,2022-04-21,Investment grade,#1d4ed8,#dbeafe,AA+,Stable,2025-08-17,Investment grade,#2452d1,#dceafd,1.0,,,0
+NIC,B+,Stable,2024-10-23,Speculatif,#785f71,#e9e7ed,B3,Stable,2022-03-30,Speculatif,#884e5b,#eee5ea,B,Stable,2025-05-23,Speculatif,#805766,#ebe6eb,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+NGA,B-,Positive,2020-03-26,Speculatif,#884e5b,#eee5ea,Caa1,Positive,2023-12-08,Speculatif,#914651,#f1e5e9,B,Stable,2025-10-10,Speculatif,#805766,#ebe6eb,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+MKD,BB-,Stable,2013-05-24,Speculatif,#70677b,#e6e7ee,,,,Non note,#64748b,#f1f5f9,BB+,Stable,2025-09-19,Speculatif,#61728f,#e2e8f1,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+NOR,AAA,Stable,1975-07-09,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2022-05-06,Investment grade,#1d4ed8,#dbeafe,AAA,Stable,1995-03-13,Investment grade,#1d4ed8,#dbeafe,0.0,,,0
+OMN,BBB-,Stable,2024-09-27,Investment grade,#5a6f96,#e1e8f2,Baa3,Stable,2023-12-07,Investment grade,#5a6f96,#e1e8f2,BBB-,Stable,2025-12-08,Investment grade,#5a6f96,#e1e8f2,0.0,,,0
+PAK,B-,Stable,2025-07-24,Speculatif,#884e5b,#eee5ea,Caa1,Positive,2025-08-13,Speculatif,#914651,#f1e5e9,B-,Stable,2025-04-15,Speculatif,#884e5b,#eee5ea,1.0,,,0
+PAN,BBB-,Stable,2024-11-26,Investment grade,#5a6f96,#e1e8f2,Baa3,Stable,2023-10-31,Investment grade,#5a6f96,#e1e8f2,BB+,Stable,2024-03-28,Speculatif,#61728f,#e2e8f1,1.0,Investment vs speculative,Investment vs speculatif,1
+PNG,B-,Stable,2020-04-29,Speculatif,#884e5b,#eee5ea,B2,Stable,2022-11-10,Speculatif,#805766,#ebe6eb,,,,Non note,#64748b,#f1f5f9,1.0,,,0
+PRY,BBB-,Stable,2025-12-17,Investment grade,#5a6f96,#e1e8f2,Baa3,Stable,2024-07-26,Investment grade,#5a6f96,#e1e8f2,BB+,Positive,2025-10-06,Speculatif,#61728f,#e2e8f1,1.0,Investment vs speculative,Investment vs speculatif,1
+PER,BBB-,Stable,2024-04-25,Investment grade,#5a6f96,#e1e8f2,Baa1,Negative,2023-01-31,Investment grade,#4c67a5,#e0e9f5,BBB,Stable,2022-10-20,Investment grade,#536b9d,#e0e8f3,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+PHL,BBB+,Positive,2019-04-30,Investment grade,#4c67a5,#e0e9f5,Baa2,Stable,2022-09-15,Investment grade,#536b9d,#e0e8f3,BBB,Stable,2023-05-22,Investment grade,#536b9d,#e0e8f3,1.0,,,0
+POL,A-,Stable,2018-10-12,Investment grade,#4664ac,#dfe9f6,A2,Stable,2022-04-29,Investment grade,#3f60b3,#dee9f7,A-,Negative,2025-09-05,Investment grade,#4664ac,#dfe9f6,1.0,,,0
+PRT,A+,Stable,2025-08-29,Investment grade,#385cbb,#dee9f9,A3,Stable,2023-11-17,Investment grade,#4664ac,#dfe9f6,A,Stable,2025-09-12,Investment grade,#3f60b3,#dee9f7,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+QAT,AA,Stable,2022-11-04,Investment grade,#2b55c9,#dceafb,Aa3,Positive,2022-11-02,Investment grade,#3159c2,#dde9fa,AA,Stable,2024-03-20,Investment grade,#2b55c9,#dceafb,1.0,,,0
+COG,CCC+,Stable,2024-10-30,Speculatif,#914651,#f1e5e9,Caa2,Stable,2023-11-03,Speculatif,#993e46,#f3e4e7,CCC+,,2022-09-16,Speculatif,#914651,#f1e5e9,1.0,,,0
+ROU,BBB-,Negative,2014-05-16,Investment grade,#5a6f96,#e1e8f2,Baa3,Stable,2023-11-03,Investment grade,#5a6f96,#e1e8f2,BBB-,Negative,2024-12-17,Investment grade,#5a6f96,#e1e8f2,0.0,,,0
+RWA,B+,Stable,2019-08-09,Speculatif,#785f71,#e9e7ed,B2,Stable,2023-09-08,Speculatif,#805766,#ebe6eb,B+,Negative,2025-04-04,Speculatif,#785f71,#e9e7ed,1.0,,,0
+SHN,BBB-,Stable,2023-03-31,Investment grade,#5a6f96,#e1e8f2,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+SMR,BBB+,Stable,2025-08-01,Investment grade,#4c67a5,#e0e9f5,,,,Non note,#64748b,#f1f5f9,BBB-,Positive,2025-12-12,Investment grade,#5a6f96,#e1e8f2,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+SAU,A+,Stable,2025-03-14,Investment grade,#385cbb,#dee9f9,Aa3,Stable,2024-11-22,Investment grade,#3159c2,#dde9fa,A+,Stable,2023-04-05,Investment grade,#385cbb,#dee9f9,1.0,,,0
+SEN,CCC+,,2025-11-14,Speculatif,#914651,#f1e5e9,Ba3,Stable,2022-03-18,Speculatif,#70677b,#e6e7ee,,,,Non note,#64748b,#f1f5f9,4.0,Gap >= 2 notches,Ecart >= 2 crans,1
+SRB,BBB-,Stable,2024-10-04,Investment grade,#5a6f96,#e1e8f2,Ba2,Stable,2023-09-08,Speculatif,#687086,#e3e8ef,BB+,Positive,2024-08-09,Speculatif,#61728f,#e2e8f1,2.0,Investment vs speculative,Investment vs speculatif,1
+SGP,AAA,Stable,1995-03-06,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2022-05-17,Investment grade,#1d4ed8,#dbeafe,AAA,Stable,2003-05-14,Investment grade,#1d4ed8,#dbeafe,0.0,,,0
+SVK,A,Negative,2026-04-24,Investment grade,#3f60b3,#dee9f7,A3,Stable,2024-12-13,Investment grade,#4664ac,#dfe9f6,A-,Stable,2024-12-06,Investment grade,#4664ac,#dfe9f6,1.0,,,0
+SVN,AA,Stable,2025-06-06,Investment grade,#2b55c9,#dceafb,A2,Stable,2026-02-27,Investment grade,#3f60b3,#dee9f7,A+,Stable,2025-10-03,Investment grade,#385cbb,#dee9f9,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
+ZAF,BB,Positive,2025-11-14,Speculatif,#687086,#e3e8ef,Ba2,Stable,2022-04-01,Speculatif,#687086,#e3e8ef,BB-,Stable,2021-12-15,Speculatif,#70677b,#e6e7ee,1.0,,,0
+KOR,AA,Stable,2016-08-08,Investment grade,#2b55c9,#dceafb,Aa2,Stable,2022-04-21,Investment grade,#2b55c9,#dceafb,AA-,Stable,2012-09-06,Investment grade,#3159c2,#dde9fa,1.0,,,0
+ESP,A+,Stable,2025-09-12,Investment grade,#385cbb,#dee9f9,A3,Positive,2025-09-27,Investment grade,#4664ac,#dfe9f6,A,Stable,2025-09-26,Investment grade,#3f60b3,#dee9f7,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+LKA,CCC+,Stable,2025-09-19,Speculatif,#914651,#f1e5e9,Caa1,Positive,2024-12-23,Speculatif,#914651,#f1e5e9,CCC+,Positive,2024-12-20,Speculatif,#914651,#f1e5e9,0.0,,,0
+SUR,CCC+,Stable,2023-12-06,Speculatif,#914651,#f1e5e9,Caa3,Stable,2023-02-17,Speculatif,#a1353c,#f6e4e6,WD,Ratings withdrawn,2022-01-25,Speculatif,#64748b,#f1f5f9,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+SWE,AAA,Stable,2004-02-16,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2022-03-25,Investment grade,#1d4ed8,#dbeafe,AAA,Stable,2004-03-08,Investment grade,#1d4ed8,#dbeafe,0.0,,,0
+CHE,AAA,Stable,1988-10-01,Investment grade,#1d4ed8,#dbeafe,Aaa,Stable,2023-02-17,Investment grade,#1d4ed8,#dbeafe,AAA,Stable,1994-08-10,Investment grade,#1d4ed8,#dbeafe,0.0,,,0
+TWN,AA+,Stable,2022-04-29,Investment grade,#2452d1,#dceafd,Aa3,Stable,2022-09-22,Investment grade,#3159c2,#dde9fa,AA,Stable,2021-09-10,Investment grade,#2b55c9,#dceafb,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+TJK,B,Stable,2024-08-16,Speculatif,#805766,#ebe6eb,B3,Stable,2023-10-12,Speculatif,#884e5b,#eee5ea,,,,Non note,#64748b,#f1f5f9,1.0,,,0
+THA,BBB+,Stable,2004-08-26,Investment grade,#4c67a5,#e0e9f5,Baa1,Stable,2022-04-07,Investment grade,#4c67a5,#e0e9f5,BBB+,Negative,2025-09-24,Investment grade,#4c67a5,#e0e9f5,0.0,,,0
+TGO,B+,Stable,2025-04-18,Speculatif,#785f71,#e9e7ed,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+TTO,BBB-,Negative,2020-03-26,Investment grade,#5a6f96,#e1e8f2,Ba2,Positive,2023-07-10,Speculatif,#687086,#e3e8ef,,,,Non note,#64748b,#f1f5f9,2.0,Investment vs speculative,Investment vs speculatif,1
+TUR,BB-,Stable,2024-11-01,Speculatif,#70677b,#e6e7ee,B1,Positive,2024-07-19,Speculatif,#785f71,#e9e7ed,BB-,Stable,2024-09-06,Speculatif,#70677b,#e6e7ee,1.0,,,0
+TCA,A-,Stable,2025-02-26,Investment grade,#4664ac,#dfe9f6,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,,,,0
+UGA,B-,Positive,2023-10-06,Speculatif,#884e5b,#eee5ea,B2,Negative,2022-11-18,Speculatif,#805766,#ebe6eb,B,Stable,2024-08-30,Speculatif,#805766,#ebe6eb,1.0,,,0
+UKR,CCC+,Stable,2026-01-22,Speculatif,#914651,#f1e5e9,Ca,Stable,2023-02-10,Speculatif,#a92d31,#f9e3e5,CCC,,2025-12-22,Speculatif,#993e46,#f3e4e7,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
+ARE,AA,Stable,2007-07-02,Investment grade,#2b55c9,#dceafb,Aa2,Stable,2023-03-21,Investment grade,#2b55c9,#dceafb,AA-,Stable,2020-11-11,Investment grade,#3159c2,#dde9fa,1.0,,,0
+GBR,AA,Stable,2016-06-27,Investment grade,#2b55c9,#dceafb,Aa3,Stable,2023-10-20,Investment grade,#3159c2,#dde9fa,AA-,Stable,2024-03-22,Investment grade,#3159c2,#dde9fa,1.0,,,0
+USA,AA+,Stable,2011-08-05,Investment grade,#2452d1,#dceafd,Aa1,Stable,2025-05-16,Investment grade,#2452d1,#dceafd,AA+,Stable,2023-08-01,Investment grade,#2452d1,#dceafd,0.0,,,0
+URY,BBB+,Stable,2023-04-26,Investment grade,#4c67a5,#e0e9f5,Baa1,Stable,2024-03-15,Investment grade,#4c67a5,#e0e9f5,BBB,Stable,2023-06-07,Investment grade,#536b9d,#e0e8f3,1.0,,,0
+UZB,BB,Stable,2025-11-21,Speculatif,#687086,#e3e8ef,Ba3,Stable,2023-01-20,Speculatif,#70677b,#e6e7ee,BB,Stable,2025-06-26,Speculatif,#687086,#e3e8ef,1.0,,,0
+VNM,BB+,Stable,2022-05-26,Speculatif,#61728f,#e2e8f1,Ba2,Stable,2022-09-06,Speculatif,#687086,#e3e8ef,BB+,Stable,2023-12-08,Speculatif,#61728f,#e2e8f1,1.0,,,0
+ZMB,CCC+,Stable,2025-11-21,Speculatif,#914651,#f1e5e9,Caa3,Stable,2022-10-21,Speculatif,#a1353c,#f6e4e6,B-,Stable,2025-11-28,Speculatif,#884e5b,#eee5ea,3.0,Gap >= 2 notches,Ecart >= 2 crans,1
+BLR,,,,Non note,#64748b,#f1f5f9,C,Stable,2023-06-02,Speculatif,#b12427,#fbe3e3,WD,Ratings withdrawn,2023-10-06,Speculatif,#64748b,#f1f5f9,,,,0
+KHM,,,,Non note,#64748b,#f1f5f9,B2,Negative,2022-11-15,Speculatif,#805766,#ebe6eb,,,,Non note,#64748b,#f1f5f9,,,,0
+CYM,,,,Non note,#64748b,#f1f5f9,Aa3,Stable,2023-06-08,Investment grade,#3159c2,#dde9fa,,,,Non note,#64748b,#f1f5f9,,,,0
+CUB,,,,Non note,#64748b,#f1f5f9,Ca,Ratings withdrawn,2021-11-18,Speculatif,#a92d31,#f9e3e5,,,,Non note,#64748b,#f1f5f9,,,,0
+SWZ,,,,Non note,#64748b,#f1f5f9,B3,Positive,2023-12-01,Speculatif,#884e5b,#eee5ea,,,,Non note,#64748b,#f1f5f9,,,,0
+GAB,,,,Non note,#64748b,#f1f5f9,Caa1,Negative,2023-09-12,Speculatif,#914651,#f1e5e9,CCC-,,2025-12-19,Speculatif,#a1353c,#f6e4e6,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+IMN,,,,Non note,#64748b,#f1f5f9,Aa3,Stable,2023-10-27,Investment grade,#3159c2,#dde9fa,,,,Non note,#64748b,#f1f5f9,,,,0
+MAC,,,,Non note,#64748b,#f1f5f9,Aa3,Negative,2022-12-06,Investment grade,#3159c2,#dde9fa,AA,Stable,2026-02-11,Investment grade,#2b55c9,#dceafb,1.0,,,0
+MDV,,,,Non note,#64748b,#f1f5f9,Caa2,Stable,2024-09-11,Speculatif,#993e46,#f3e4e7,CC,,2025-06-12,Speculatif,#a92d31,#f9e3e5,2.0,Gap >= 2 notches,Ecart >= 2 crans,1
+MLI,,,,Non note,#64748b,#f1f5f9,Caa2,Stable,2022-09-09,Speculatif,#993e46,#f3e4e7,,,,Non note,#64748b,#f1f5f9,,,,0
+NAM,,,,Non note,#64748b,#f1f5f9,B1,Stable,2022-04-05,Speculatif,#785f71,#e9e7ed,BB-,Stable,2025-11-21,Speculatif,#70677b,#e6e7ee,1.0,,,0
+RUS,,,,Non note,#64748b,#f1f5f9,Ca,Ratings withdrawn,2022-03-06,Speculatif,#a92d31,#f9e3e5,WD,Ratings withdrawn,2022-03-25,Speculatif,#64748b,#f1f5f9,,,,0
+VCT,,,,Non note,#64748b,#f1f5f9,B3,Stable,2022-03-01,Speculatif,#884e5b,#eee5ea,,,,Non note,#64748b,#f1f5f9,,,,0
+TUN,,,,Non note,#64748b,#f1f5f9,Caa1,Stable,2025-02-28,Speculatif,#914651,#f1e5e9,B-,Stable,2025-09-12,Speculatif,#884e5b,#eee5ea,1.0,,,0
+VEN,,,,Non note,#64748b,#f1f5f9,C,Ratings withdrawn,2018-03-09,Speculatif,#b12427,#fbe3e3,,,,Non note,#64748b,#f1f5f9,,,,0
+LSO,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,B,Stable,2025-06-09,Speculatif,#805766,#ebe6eb,,,,0
+NPL,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,BB-,Stable,2025-11-18,Speculatif,#70677b,#e6e7ee,,,,0
+SYC,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,BB,Stable,2025-09-05,Speculatif,#687086,#e3e8ef,,,,0
+TZA,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,B+,Stable,2023-06-09,Speculatif,#785f71,#e9e7ed,,,,0
+TKM,,,,Non note,#64748b,#f1f5f9,,,,Non note,#64748b,#f1f5f9,BB-,Stable,2024-08-02,Speculatif,#70677b,#e6e7ee,,,,0
