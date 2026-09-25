@@ -99,6 +99,7 @@ today = datetime.date.today().isoformat()
 
 with st.sidebar:
     st.markdown(f"### {t('params', 'en')} / {t('params', 'fr')}")
+    st.markdown(f'<span style="font-family:monospace;font-size:.7rem;letter-spacing:.05em;padding:4px 10px;background:rgba(148,163,184,.12);border:1px solid rgba(148,163,184,.25);border-radius:6px;color:#8fa3b8;">{ver.version_string()}</span>', unsafe_allow_html=True)
     lang = st.selectbox(
         "Langue / Language", ["fr", "en"],
         format_func=lambda x: "\U0001f1eb\U0001f1f7 Fran\u00e7ais" if x == "fr"
@@ -189,12 +190,9 @@ elif mode == "compare":
 else:
     render_dashboard(df, alerts, lang)
 
-version_display = ver.version_string()
 st.sidebar.markdown(f"""
 <div style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(148,163,184,.2);
 text-align:center;color:#8fa3b8;font-size:.75rem;">
-<p style="margin:0 0 .5rem 0;font-family:monospace;font-size:.7rem;letter-spacing:.05em;
-padding:4px 10px;background:rgba(148,163,184,.08);border-radius:6px;display:inline-block;">{version_display}</p>
 <p style="margin:.75rem 0 .75rem 0;font-weight:600;letter-spacing:.05em;">© 2026 Maxime NDACLEU</p>
 <div style="display:flex;justify-content:center;gap:1.25rem;">
 <a href="https://github.com/maxin-dac" target="_blank" style="color:#8fa3b8;">GitHub</a>
