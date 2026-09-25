@@ -1,3 +1,10 @@
+## [0.6.0](https://github.com/maxin-dac/country-risk-desk/compare/v0.5.1...v0.6.0) (2026-09-25)
+
+
+### Features
+
+* Enhance Power BI export script with new signal rules and rating color functionality ([f6c7afd](https://github.com/maxin-dac/country-risk-desk/commit/f6c7afde50cbceb5a78dfe896d4f07eda9092ef4))
+
 ## [0.5.1](https://github.com/maxin-dac/country-risk-desk/compare/v0.5.0...v0.5.1) (2026-09-13)
 
 
