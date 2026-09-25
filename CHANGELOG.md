@@ -1,3 +1,10 @@
+## [0.7.1](https://github.com/maxin-dac/country-risk-desk/compare/v0.7.0...v0.7.1) (2026-09-25)
+
+
+### Bug Fixes
+
+* update docs to reflect Twin reporting ([2cc4ceb](https://github.com/maxin-dac/country-risk-desk/commit/2cc4ceba621d21f2853f3207036d41f97e5f0388))
+
 ## [0.7.0](https://github.com/maxin-dac/country-risk-desk/compare/v1.1.0...v0.7.0) (2026-09-25)
 
 
