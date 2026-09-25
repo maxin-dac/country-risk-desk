@@ -1,3 +1,12 @@
+## [0.7.0](https://github.com/maxin-dac/country-risk-desk/compare/v1.1.0...v0.7.0) (2026-09-25)
+
+
+### Features
+
+* display version information in the sidebar ([1da159e](https://github.com/maxin-dac/country-risk-desk/commit/1da159eb7025cbb4c5b682c5264ea738357de5e4))
+
+## [1.1.0](https://github.com/maxin-dac/country-risk-desk/compare/v0.6.0...v1.1.0) (2026-09-25)
+
 ## [0.6.0](https://github.com/maxin-dac/country-risk-desk/compare/v0.5.1...v0.6.0) (2026-09-25)
 
 
