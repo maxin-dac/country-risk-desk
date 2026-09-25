@@ -9,7 +9,7 @@ Bilingual interface 🇫🇷/🇬🇧 · 217 economies · 17 indicators · sover
 ![overview](assets/overview.jpeg)
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Power%20BI-Jumeau%20reporting-F2C811?style=flat&logo=powerbi&logoColor=white" alt="Power BI" />
+  <img src="https://img.shields.io/badge/Power%20BI-Twin%20reporting-F2C811?style=flat&logo=powerbi&logoColor=white" alt="Power BI" />
 <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Streamlit-1.45%2B-FF4B4B?style=flat&logo=streamlit&logoColor=white" alt="Streamlit" />
   <img src="https://img.shields.io/badge/pandas-2.x-150458?style=flat&logo=pandas&logoColor=white" alt="pandas" />
