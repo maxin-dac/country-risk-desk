@@ -1,56 +1,16 @@
+# Obsolete: le refresh mensuel est dans pipeline.yml.
+# Conservé pour que l'entrée Actions "refresh-data" affiche un message clair
+# au lieu d'un second push concurrent sur main.
 name: refresh-data
 
 on:
-  schedule:
-    - cron: "0 6 7 * *"   # le 7 de chaque mois, 06:00 UTC
-  workflow_dispatch: {}
-
-permissions:
-  contents: write
+  workflow_dispatch:
 
 jobs:
-  refresh:
+  obsolete:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-          fetch-depth: 1
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-          cache: pip
-
-      - name: Dependances
-        run: pip install -r requirements.txt
-
-      - name: Rafraichissement des donnees
-        run: python scripts/refresh_data.py
-
-      - name: Commit & push si changements
+      - name: Utiliser le workflow Pipeline
         run: |
-          set -euo pipefail
-          python scripts/update_build_info.py || true
-          if [[ -z "$(git status --porcelain data/ src/_build_info.json)" ]]; then
-            echo "Aucun changement de donnees"
-            exit 0
-          fi
-          tmpdir=$(mktemp -d)
-          mkdir -p "$tmpdir/data" "$tmpdir/src"
-          cp -a data/. "$tmpdir/data/"
-          if [ -f src/_build_info.json ]; then cp src/_build_info.json "$tmpdir/src/_build_info.json"; fi
-          git fetch origin main
-          git checkout -B main origin/main
-          mkdir -p data src
-          cp -a "$tmpdir/data/." data/
-          if [ -f "$tmpdir/src/_build_info.json" ]; then cp "$tmpdir/src/_build_info.json" src/_build_info.json; fi
-          python scripts/update_build_info.py || true
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ src/_build_info.json
-          git diff --cached --quiet && { echo "Aucun changement de donnees"; exit 0; }
-          git commit -m "data: refresh mensuel automatique (WB/WGI/IMF) [skip ci]"
-          git push origin HEAD:main
-
+          echo "::error::Ce workflow est obsolete. Actions > Pipeline (CI + refresh mensuel) > Run workflow (branche main). Ne pas Re-run un ancien job schedule."
+          exit 1

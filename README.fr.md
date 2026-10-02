@@ -125,7 +125,7 @@ country-risk-desk/
 ├── docs/                   # ARCHITECTURE.md + API.md
 ├── tests/                  # pytest (règles de seuils)
 ├── assets/                 # theme.css + captures
-├── .github/workflows/      # refresh-data.yml (refresh mensuel automatisé)
+├── .github/workflows/      # pipeline.yml (CI + refresh mensuel), release.yml
 ├── CHANGELOG.md            # Journal des versions (Keep a Changelog)
 ├── README.md / README.fr.md
 └── requirements.txt

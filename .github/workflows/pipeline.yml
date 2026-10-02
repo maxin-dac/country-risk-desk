@@ -48,6 +48,13 @@ jobs:
       group: refresh-official-data
       cancel-in-progress: false
     steps:
+      - name: Interdire Re-run (YAML fige au SHA d'origine)
+        if: github.run_attempt != 1
+        run: |
+          echo "::error::Re-run refuse (attempt ${{ github.run_attempt }}). GitHub reutilise le workflow du commit d'origine, pas celui de main."
+          echo "Ouvrir Actions > Pipeline (CI + refresh mensuel) > Run workflow, branche main."
+          exit 1
+
       - uses: actions/checkout@v4
         with:
           ref: main
@@ -76,10 +83,6 @@ jobs:
       - name: Fetch IMF WEO
         run: python scripts/fetch_imf.py
         continue-on-error: false
-
-      - name: Notations souveraines (Wikipedia)
-        run: python scripts/fetch_ratings.py
-        continue-on-error: true
 
       - name: Calcul service de la dette
         run: python scripts/fetch_risk_extras.py
