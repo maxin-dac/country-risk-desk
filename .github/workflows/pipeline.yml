@@ -44,6 +44,9 @@ jobs:
     needs: ci
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
+    concurrency:
+      group: refresh-official-data
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
         with:
@@ -97,46 +100,57 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Aligner sur origin/main (evite un push non-fast-forward)
+      - name: Commit & push data + docs sur le tip actuel de main
         if: steps.diff.outputs.changed == 'true'
         run: |
           set -euo pipefail
+
+          snapshot_data() {
+            local dest="$1"
+            mkdir -p "$dest/data" "$dest/docs" "$dest/src"
+            cp -a data/. "$dest/data/"
+            if [ -f docs/API.md ]; then cp docs/API.md "$dest/docs/API.md"; fi
+            if [ -f src/_build_info.json ]; then cp src/_build_info.json "$dest/src/_build_info.json"; fi
+          }
+
+          restore_data() {
+            local src="$1"
+            mkdir -p data docs src
+            cp -a "$src/data/." data/
+            if [ -f "$src/docs/API.md" ]; then cp "$src/docs/API.md" docs/API.md; fi
+            if [ -f "$src/src/_build_info.json" ]; then cp "$src/src/_build_info.json" src/_build_info.json; fi
+          }
+
+          commit_refresh() {
+            python scripts/update_build_info.py || true
+            git add data/ docs/API.md src/_build_info.json
+            if git diff --cached --quiet; then
+              echo "Aucun changement a committer"
+              return 1
+            fi
+            git commit -m "data: refresh mensuel sources officielles (WB + WGI + IMF)"
+            return 0
+          }
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
           tmpdir=$(mktemp -d)
-          mkdir -p "$tmpdir/data" "$tmpdir/docs" "$tmpdir/src"
-          cp -a data/. "$tmpdir/data/"
-          if [ -f docs/API.md ]; then cp docs/API.md "$tmpdir/docs/API.md"; fi
-          if [ -f src/_build_info.json ]; then cp src/_build_info.json "$tmpdir/src/_build_info.json"; fi
-          git fetch origin main
-          git checkout -B main origin/main
-          mkdir -p data docs src
-          cp -a "$tmpdir/data/." data/
-          if [ -f "$tmpdir/docs/API.md" ]; then cp "$tmpdir/docs/API.md" docs/API.md; fi
-          if [ -f "$tmpdir/src/_build_info.json" ]; then cp "$tmpdir/src/_build_info.json" src/_build_info.json; fi
+          snapshot_data "$tmpdir"
 
-      - name: Mettre a jour _build_info.json
-        if: steps.diff.outputs.changed == 'true'
-        run: python scripts/update_build_info.py || true
-
-      - name: Commit & push data + docs (conventional format)
-        if: steps.diff.outputs.changed == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "data: refresh mensuel sources officielles (WB + WGI + IMF)"
-          branch: main
-          file_pattern: "data/* docs/API.md src/_build_info.json"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "github-actions[bot]@users.noreply.github.com"
-          skip_fetch: true
-          skip_checkout: true
-
-      - name: Trigger versioning workflow
-        if: steps.diff.outputs.changed == 'true'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'versioning.yml',
-              ref: 'main'
-            })
+          for i in 1 2 3; do
+            git fetch origin main
+            git checkout -B main origin/main
+            restore_data "$tmpdir"
+            if ! commit_refresh; then
+              exit 0
+            fi
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push refuse (tentative $i/3) : main a encore bouge, on recale"
+            git reset --hard origin/main
+            sleep 2
+          done
+          echo "Echec du push apres 3 tentatives"
+          exit 1
