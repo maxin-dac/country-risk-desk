@@ -14,6 +14,9 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
 
       - uses: actions/setup-python@v5
         with:
@@ -28,11 +31,26 @@ jobs:
 
       - name: Commit & push si changements
         run: |
+          set -euo pipefail
+          python scripts/update_build_info.py || true
+          if [[ -z "$(git status --porcelain data/ src/_build_info.json)" ]]; then
+            echo "Aucun changement de donnees"
+            exit 0
+          fi
+          tmpdir=$(mktemp -d)
+          mkdir -p "$tmpdir/data" "$tmpdir/src"
+          cp -a data/. "$tmpdir/data/"
+          if [ -f src/_build_info.json ]; then cp src/_build_info.json "$tmpdir/src/_build_info.json"; fi
+          git fetch origin main
+          git checkout -B main origin/main
+          mkdir -p data src
+          cp -a "$tmpdir/data/." data/
+          if [ -f "$tmpdir/src/_build_info.json" ]; then cp "$tmpdir/src/_build_info.json" src/_build_info.json; fi
           python scripts/update_build_info.py || true
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ src/_build_info.json
           git diff --cached --quiet && { echo "Aucun changement de donnees"; exit 0; }
           git commit -m "data: refresh mensuel automatique (WB/WGI/IMF) [skip ci]"
-          git push
+          git push origin HEAD:main
 

@@ -47,7 +47,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main
+          fetch-depth: 1
 
       - name: Python 3.11
         uses: actions/setup-python@v5
@@ -96,7 +97,23 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit & push data + docs (conventional format)
+      - name: Aligner sur origin/main (evite un push non-fast-forward)
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          tmpdir=$(mktemp -d)
+          mkdir -p "$tmpdir/data" "$tmpdir/docs" "$tmpdir/src"
+          cp -a data/. "$tmpdir/data/"
+          if [ -f docs/API.md ]; then cp docs/API.md "$tmpdir/docs/API.md"; fi
+          if [ -f src/_build_info.json ]; then cp src/_build_info.json "$tmpdir/src/_build_info.json"; fi
+          git fetch origin main
+          git checkout -B main origin/main
+          mkdir -p data docs src
+          cp -a "$tmpdir/data/." data/
+          if [ -f "$tmpdir/docs/API.md" ]; then cp "$tmpdir/docs/API.md" docs/API.md; fi
+          if [ -f "$tmpdir/src/_build_info.json" ]; then cp "$tmpdir/src/_build_info.json" src/_build_info.json; fi
+
+      - name: Mettre a jour _build_info.json
         if: steps.diff.outputs.changed == 'true'
         run: python scripts/update_build_info.py || true
 
@@ -109,6 +126,8 @@ jobs:
           file_pattern: "data/* docs/API.md src/_build_info.json"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          skip_fetch: true
+          skip_checkout: true
 
       - name: Trigger versioning workflow
         if: steps.diff.outputs.changed == 'true'
