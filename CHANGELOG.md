@@ -143,4 +143,3 @@
 ### Reverts
 
 * remove reliability score (domain chips + validation carry the trust signal) ([2302af3](https://github.com/maxin-dac/country-risk-desk/commit/2302af31db71ed0633c725902553bf811b6c70d4))
-
